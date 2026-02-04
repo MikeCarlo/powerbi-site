@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+const posts = await getCollection('blog');
+const base = import.meta.env.BASE_URL;
+
+// Extract all unique tags with counts
+const tagMap = new Map();
+
+posts.forEach(post => {
+  post.data.tags?.forEach(tag => {
+    const slug = tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    if (!tagMap.has(slug)) {
+      tagMap.set(slug, { name: tag, slug, posts: [] });
+    }
+    tagMap.get(slug).posts.push(post);
+  });
+});
+
+// Sort tags by count (descending)
+const tags = Array.from(tagMap.values()).sort((a, b) => b.posts.length - a.posts.length);
+
+// Get 5 most recent posts per tag
+const tagSections = tags.map(tag => ({
+  ...tag,
+  recentPosts: tag.posts
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 5)
+}));
+---
+
+<BaseLayout title="Tags | PowerBI.tips" description="Browse all tags on PowerBI.tips">
+  <section class="mb-12">
+    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">PowerBI.tips</p>
+    <h1 class="mt-3 text-4xl font-semibold tracking-tight text-neutral-900">
+      Tags
+    </h1>
+    <p class="mt-4 text-lg text-neutral-600">
+      Browse posts by topic
+    </p>
+  </section>
+
+  <!-- Tag Cloud -->
+  <section class="mb-12">
+    <div class="flex flex-wrap gap-3">
+      {tags.map((tag) => (
+        <a 
+          href={`#${tag.slug}`}
+          class="rounded-full border border-neutral-200 px-4 py-2 text-sm transition-colors hover:border-blue-300 hover:bg-blue-50"
+        >
+          <span class="font-medium text-neutral-700">{tag.name}</span>
+          <span class="ml-2 text-neutral-400">({tag.posts.length})</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Tag Sections with Recent Posts -->
+  <div class="space-y-16">
+    {tagSections.map((tag) => (
+      <section id={tag.slug}>
+        <div class="flex items-center justify-between border-b border-neutral-200 pb-4">
+          <h2 class="text-2xl font-semibold text-neutral-900">
+            {tag.name}
+          </h2>
+          <span class="text-sm text-neutral-500">
+            {tag.posts.length} {tag.posts.length === 1 ? 'post' : 'posts'}
+          </span>
+        </div>
+        
+        <div class="mt-6 grid gap-4">
+          {tag.recentPosts.map((post) => {
+            const slug = post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+            return (
+              <article class="flex items-center gap-4 rounded-lg border border-neutral-200 p-4">
+                {post.data.featuredImage && (
+                  <a href={`${base}${slug}/`} class="shrink-0">
+                    <Image 
+                      src={post.data.featuredImage} 
+                      alt={post.data.title}
+                      width={120}
+                      height={68}
+                      class="h-[60px] w-[107px] rounded object-cover"
+                    />
+                  </a>
+                )}
+                <div class="flex-1 min-w-0">
+                  <p class="text-xs text-neutral-500">
+                    {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                  </p>
+                  <h3 class="mt-1 font-medium truncate">
+                    <a class="text-blue-600 hover:text-blue-700" href={`${base}${slug}/`}>
+                      {post.data.title}
+                    </a>
+                  </h3>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
