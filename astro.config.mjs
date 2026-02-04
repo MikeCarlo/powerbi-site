@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
-import sitemap from '@astrojs/sitemap';
+import organizedSitemap from './src/integrations/organized-sitemap.mjs';
 
 const site = process.env.SITE || 'https://mikecarlo.github.io';
 const base = process.env.BASE_PATH || '/powerbi-site';
@@ -18,5 +18,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  integrations: [mdx(), sitemap()]
+  integrations: [mdx(), organizedSitemap()]
 });
