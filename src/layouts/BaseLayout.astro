@@ -1,0 +1,24 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { title = 'PowerBI.tips', description = 'PowerBI.tips blog and resources.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white text-neutral-900">
+    <Header />
+    <main class="mx-auto min-h-[60vh] w-full max-w-6xl px-6 py-10">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const categoryMap = new Map();
+
+posts.forEach((post) => {
+  post.data.categories?.forEach((category) => {
+    const key = category.toLowerCase().replace(/\s+/g, '-');
+    categoryMap.set(key, category);
+  });
+});
+
+const categories = Array.from(categoryMap.entries()).map(([slug, name]) => ({ slug, name }));
+---
+
+<BaseLayout title="Categories | PowerBI.tips" description="Browse posts by category.">
+  <h1 class="text-3xl font-semibold">Categories</h1>
+  <div class="mt-6 grid gap-4 md:grid-cols-2">
+    {categories.map((category) => (
+      <a
+        class="flex items-center justify-between rounded-xl border border-neutral-200 p-4 text-neutral-800 hover:border-blue-500"
+        href={`/category/${category.slug}/`}
+      >
+        <span class="font-semibold">{category.name}</span>
+        <span class="text-sm text-neutral-500">View posts</span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

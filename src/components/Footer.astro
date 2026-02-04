@@ -1,0 +1,53 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const leftLinks = [
+  { label: 'Podcast', href: `${base}podcast/` },
+  { label: 'Power Designer', href: `${base}power-designer/` },
+  { label: 'Themes', href: 'https://themes.powerbi.tips' },
+  { label: 'Events', href: `${base}events/` }
+];
+
+const rightLinks = [
+  { label: 'Training', href: `${base}training/` },
+  { label: 'About', href: `${base}about/` },
+  { label: 'Search', href: `${base}search/` },
+  { label: 'Categories', href: `${base}category/` }
+];
+---
+
+<footer class="bg-neutral-900 text-neutral-200">
+  <div class="mx-auto w-full max-w-6xl px-6 py-12">
+    <div class="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-semibold">Tips</div>
+          <div>
+            <p class="text-lg font-semibold">PowerBI.tips</p>
+            <p class="text-sm text-neutral-400">Act Business – Think I.T.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">Explore</p>
+        <ul class="space-y-2 text-sm">
+          {leftLinks.map((link) => (
+            <li><a class="hover:text-white" href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">Resources</p>
+        <ul class="space-y-2 text-sm">
+          {rightLinks.map((link) => (
+            <li><a class="hover:text-white" href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-neutral-400 md:flex-row md:items-center md:justify-between">
+      <p>powerbi.tips llc</p>
+      <p>designed with data</p>
+    </div>
+  </div>
+</footer>
