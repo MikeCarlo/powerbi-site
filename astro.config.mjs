@@ -6,8 +6,8 @@ import mdx from '@astrojs/mdx';
 
 import sitemap from '@astrojs/sitemap';
 
-const site = process.env.SITE || 'https://your-username.github.io/powerbi-tips-site/';
-const base = process.env.BASE_PATH || '/powerbi-tips-site';
+const site = process.env.SITE || 'https://mikecarlo.github.io';
+const base = process.env.BASE_PATH || '/powerbi-site';
 
 // https://astro.build/config
 export default defineConfig({
