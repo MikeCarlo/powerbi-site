@@ -69,38 +69,38 @@ export default function organizedSitemap() {
         
         // Generate individual sitemaps
         if (posts.length > 0) {
-          writeFileSync(join(outDir, 'sitemap-posts-1.xml'), generateUrlSet(posts));
-          sitemapsGenerated.push('sitemap-posts-1.xml');
-          logger.info(`Generated sitemap-posts-1.xml (${posts.length} URLs)`);
+          writeFileSync(join(outDir, 'wp-sitemap-posts-post-1.xml'), generateUrlSet(posts));
+          sitemapsGenerated.push('wp-sitemap-posts-post-1.xml');
+          logger.info(`Generated wp-sitemap-posts-post-1.xml (${posts.length} URLs)`);
         }
         
         if (staticPages.length > 0) {
-          writeFileSync(join(outDir, 'sitemap-pages-1.xml'), generateUrlSet(staticPages));
-          sitemapsGenerated.push('sitemap-pages-1.xml');
-          logger.info(`Generated sitemap-pages-1.xml (${staticPages.length} URLs)`);
+          writeFileSync(join(outDir, 'wp-sitemap-posts-page-1.xml'), generateUrlSet(staticPages));
+          sitemapsGenerated.push('wp-sitemap-posts-page-1.xml');
+          logger.info(`Generated wp-sitemap-posts-page-1.xml (${staticPages.length} URLs)`);
         }
         
         if (categories.length > 0) {
-          writeFileSync(join(outDir, 'sitemap-taxonomies-category-1.xml'), generateUrlSet(categories));
-          sitemapsGenerated.push('sitemap-taxonomies-category-1.xml');
-          logger.info(`Generated sitemap-taxonomies-category-1.xml (${categories.length} URLs)`);
+          writeFileSync(join(outDir, 'wp-sitemap-taxonomies-category-1.xml'), generateUrlSet(categories));
+          sitemapsGenerated.push('wp-sitemap-taxonomies-category-1.xml');
+          logger.info(`Generated wp-sitemap-taxonomies-category-1.xml (${categories.length} URLs)`);
         }
         
         if (tags.length > 0) {
-          writeFileSync(join(outDir, 'sitemap-taxonomies-post_tag-1.xml'), generateUrlSet(tags));
-          sitemapsGenerated.push('sitemap-taxonomies-post_tag-1.xml');
-          logger.info(`Generated sitemap-taxonomies-post_tag-1.xml (${tags.length} URLs)`);
+          writeFileSync(join(outDir, 'wp-sitemap-taxonomies-post_tag-1.xml'), generateUrlSet(tags));
+          sitemapsGenerated.push('wp-sitemap-taxonomies-post_tag-1.xml');
+          logger.info(`Generated wp-sitemap-taxonomies-post_tag-1.xml (${tags.length} URLs)`);
         }
         
         if (authors.length > 0) {
-          writeFileSync(join(outDir, 'sitemap-users-1.xml'), generateUrlSet(authors));
-          sitemapsGenerated.push('sitemap-users-1.xml');
-          logger.info(`Generated sitemap-users-1.xml (${authors.length} URLs)`);
+          writeFileSync(join(outDir, 'wp-sitemap-users-1.xml'), generateUrlSet(authors));
+          sitemapsGenerated.push('wp-sitemap-users-1.xml');
+          logger.info(`Generated wp-sitemap-users-1.xml (${authors.length} URLs)`);
         }
         
         // Generate sitemap index
-        writeFileSync(join(outDir, 'sitemap.xml'), generateSitemapIndex(sitemapsGenerated, siteUrl));
-        logger.info(`Generated sitemap.xml index with ${sitemapsGenerated.length} sitemaps`);
+        writeFileSync(join(outDir, 'wp-sitemap.xml'), generateSitemapIndex(sitemapsGenerated, siteUrl));
+        logger.info(`Generated wp-sitemap.xml index with ${sitemapsGenerated.length} sitemaps`);
       }
     }
   };
