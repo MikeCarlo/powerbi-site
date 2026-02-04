@@ -1,0 +1,7 @@
+# Clawdbot Evolves: Power BI Automation
+
+**YouTube:** https://www.youtube.com/watch?v=sy6wqN7TQb4
+
+## Transcript
+
+I had this epiphany what I'm learning from this project and I I I literally implemented last night. I had some work I had to get done. I had to do some this is for the PowerBI people on the on the channel. This is a semantic model I was playing with. I'm using an MCP server for PowerBI desktop. So PowerBI desktop comes on your machine. I can MCP my way into the server and um the the MCP talks to the PowerBI desktop and I'm able to command it to do different things. Uh, hey, make a measure, add some folders. Any column that is a number, hide it, and add a measure that does a sum on top of that column. So, really neat things, super powerful. But then I had this epiphany. Uh, Armando thankfully had a couple days before showed me this. At the time we installed Claudebot, since it's installed, it has now changed to Maltbot. And now, currently, it is now OpenClaw as the the name of the system or the infrastructure. And there was a learning for me that okay, I've given a large language model full control of a machine. And you'll see a lot of people right now going out and I'm buying a Mac Mini. I'm buying this computer. I'm putting these things together. And the reason they're doing this is because they don't want it to be on their main machine and they want to treat it like a different employee.
