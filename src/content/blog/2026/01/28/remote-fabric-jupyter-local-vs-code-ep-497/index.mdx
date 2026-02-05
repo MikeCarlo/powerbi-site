@@ -1,0 +1,91 @@
+---
+title: "Remote Fabric Jupyter & Local VS Code – Ep. 497"
+date: "2026-01-28"
+authors:
+  - "Mike Carlo"
+  - "Tommy Puglia"
+categories:
+  - "Podcast"
+  - "Microsoft Fabric"
+tags:
+  - "Podcast"
+  - "Microsoft Fabric"
+  - "Jupyter Notebooks"
+  - "VS Code"
+  - "Spark"
+  - "Development"
+excerpt: "Learn how to connect your local VS Code to Microsoft Fabric's remote Jupyter notebooks and Spark engine for a better development experience."
+featuredImage: "./assets/featured.png"
+---
+
+In this episode of the Explicit Measures podcast, Mike and Tommy dive deep into a technical topic that's gaining traction in the Microsoft Fabric community: connecting your local VS Code installation to remote Fabric Jupyter notebooks and the Spark engine.
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/sl0xpCyiDxI" 
+  title="Remote Fabric Jupyter & Local VS Code - Ep. 497"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+## The Power of Local Development with Remote Compute
+
+VS Code is an application you install locally on your machine, but with the right extensions, you can remotely connect to the Spark engine and notebooks that live inside Microsoft Fabric. This gives you the best of both worlds: the familiar, powerful VS Code development environment with the scalability of Fabric's cloud compute.
+
+### Why This Matters
+
+There are several compelling reasons to adopt this workflow:
+
+- **Better development experience** – VS Code offers superior editing, debugging, and extension support compared to the browser-based notebook interface
+- **Cost optimization** – You can develop and test locally, then only use Fabric compute when you need to run against production data
+- **Offline development** – Work on your notebooks even when you don't have access to the Fabric service
+- **Version control** – More easily integrate your notebooks with Git and your existing DevOps workflows
+
+## The Extension Ecosystem
+
+There's already an extension available today that helps bridge the gap between your local VS Code and Fabric notebooks. The extension enables you to:
+
+1. Connect to your Fabric workspace
+2. Pull down notebooks for local editing
+3. Run code against the remote Spark engine
+4. Push changes back to the service
+
+## Cost Considerations
+
+Mike and Tommy discuss an interesting pattern around cost management. When you're developing notebooks, you're consuming Fabric capacity units (CUs) every time you spin up a Spark session. By developing locally and only connecting to the remote Spark engine when necessary, you can significantly reduce your development costs.
+
+### The Local Spark Pattern
+
+One community member has even created a Git repo that demonstrates an advanced pattern:
+
+1. Mirror files from your OneLake to your local machine
+2. Run a local Spark engine for development
+3. Test and iterate on your notebooks offline
+4. Publish the finished notebook back to Fabric for production use
+
+This approach is particularly valuable for teams doing heavy notebook development who want to minimize their Fabric compute costs during the development phase.
+
+## News Roundup
+
+### Modern Visual Tooltips – Generally Available
+
+The episode also covers the news that Modern Visual Tooltips are now generally available in Power BI. This feature has been in preview since around May 2021 – a nearly five-year preview period! The modern tooltips provide a cleaner, more informative hover experience on visuals.
+
+### DAX Performance Tip from Chris Webb
+
+The team highlights an article from Chris Webb about a performance optimization involving `CALCULATE` with filters on zero. If you're filtering a numeric column where one of the filter values is zero, there's a potential performance consideration worth understanding. Check out Chris's blog at [Cross Join](https://blog.crossjoin.co.uk) for the full details.
+
+## Watch the Full Episode
+
+For the complete technical walkthrough and discussion, watch the full episode above. Mike and Tommy go into much more detail on the setup process, troubleshooting tips, and best practices for this workflow.
+
+---
+
+**Links mentioned in this episode:**
+
+- [Modern Visual Tooltips Blog Post](https://powerbi.microsoft.com/en-us/blog/modern-visual-tooltips-in-power-bi-generally-available/)
+- [Chris Webb's CALCULATE DAX Fusion Article](https://blog.crossjoin.co.uk/2026/01/25/calculate-dax-fusion-and-filters-on-0-in-power-bi/)
+- [Subscribe to the Podcast](https://powerbi.tips/podcast)
+- [Join Tips+ for the Theme Generator](https://bit.ly/3Ymso48)
