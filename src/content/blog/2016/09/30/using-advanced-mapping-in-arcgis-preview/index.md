@@ -2,7 +2,7 @@
 title: "Using Advanced Mapping in ArcGIS Preview"
 excerpt: "Explore the ArcGIS Maps visual in Power BI with heat maps, reference layers, and advanced selection tools. Add demographic overlays like household income."
 date: "2016-09-30"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Mapping", "ArcGIS", "Visuals", "Tutorial"]
 ---

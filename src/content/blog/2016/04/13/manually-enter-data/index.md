@@ -2,7 +2,7 @@
 title: "Manually Enter Data"
 date: "2016-04-13"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

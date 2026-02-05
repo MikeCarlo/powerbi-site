@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Howdy folks, and Happy New Year!  We’ve just released Business Ops 3.0.2, which contains long-awaited updates for the following External Tools:  *   [..."
 date: "2022-02-03"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

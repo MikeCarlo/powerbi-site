@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Trolling… we should clear up the definition of this right off the bat. We aren’t talking about the type of trolling where we spend a bunch of time fin..."
 date: "2021-12-02"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

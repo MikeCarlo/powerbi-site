@@ -2,7 +2,7 @@
 title: "Measures – Month to Month Percent Change"
 excerpt: "Learn how to calculate month-to-month percent change in Power BI using DAX. Use PREVIOUSMONTH to compare current month sales against prior month values."
 date: "2016-07-14"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Time Intelligence", "Tutorial"]
 ---

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "PowerBI.tips is excited to announce our new tool to help you build the best looking reports, **[Scrims](https://powerbi.tips/tools/scrims/)**.  We’ve..."
 date: "2019-12-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

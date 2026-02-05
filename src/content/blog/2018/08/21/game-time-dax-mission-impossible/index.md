@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "PowerBI.Tips and Phil Seamark are proud to release our third game written in Power BI, DAX Mission Impossible.  This game is similar to the game play..."
 date: "2018-08-21"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

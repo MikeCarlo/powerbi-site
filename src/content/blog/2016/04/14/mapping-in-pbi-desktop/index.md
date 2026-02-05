@@ -2,7 +2,7 @@
 title: "Map it, Map it Real Good"
 date: "2016-04-14"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

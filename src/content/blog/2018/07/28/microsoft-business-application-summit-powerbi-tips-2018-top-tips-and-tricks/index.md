@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Want to give a special thanks to the Microsoft PowerBI team for allowing PowerBI.Tips to participate in the 2018 Microsoft Business Application Summit..."
 date: "2018-07-28"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -2,7 +2,7 @@
 title: "Query Editor – Editing M Code"
 excerpt: "Learn how to copy and paste queries to and from the Query Editor using the Advanced Editor. Master the M language to share and model your Power BI data."
 date: "2016-05-19"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Query Editor", "Tutorial"]
 ---

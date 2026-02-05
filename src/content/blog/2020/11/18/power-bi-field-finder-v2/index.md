@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The Power BI Field Finder created by Stephanie Bruno was just updated. In this recent update the HTML viewer has been updated since the old custom vis..."
 date: "2020-11-18"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

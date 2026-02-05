@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "# Grouping with Style  The release of grouping visuals was an extremely welcomed feature. As one who builds lots of reports grouping elements together..."
 date: "2019-09-26"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

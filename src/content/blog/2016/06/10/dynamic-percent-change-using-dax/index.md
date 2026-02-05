@@ -2,7 +2,7 @@
 title: "Measures – Dynamic Percent Change – Using DAX"
 excerpt: "Build a DAX measure that dynamically calculates percent change as you select different items in Power BI visuals. Learn to use DIVIDE and FILTER functions."
 date: "2016-06-10"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Tutorial", "Percent Change"]
 ---

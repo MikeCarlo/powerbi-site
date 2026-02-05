@@ -2,7 +2,7 @@
 title: "Import CSV file to Power BI"
 date: "2016-04-01"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

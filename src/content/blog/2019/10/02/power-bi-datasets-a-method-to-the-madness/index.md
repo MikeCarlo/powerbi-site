@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "As report authors we sometimes get caught up in how easy it is to create a report and provide value to the business. Each report is an opportunity to..."
 date: "2019-10-02"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "### **Introducing the New PowerBI.Tips WireFrames Feature**  In the dynamic landscape of data visualization, staying ahead of the curve is crucial. Th..."
 date: "2023-08-14"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

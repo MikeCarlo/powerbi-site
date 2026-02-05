@@ -2,7 +2,7 @@
 title: "Measures – Calculating a Sum"
 excerpt: "Learn how to create measures in Power BI to calculate totals using the SUM function in DAX. Watch how totals dynamically change as you select different data points."
 date: "2016-05-07"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Tutorial", "Beginner"]
 ---

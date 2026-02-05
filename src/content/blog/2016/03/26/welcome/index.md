@@ -2,7 +2,7 @@
 title: "Welcome to my Site"
 date: "2016-03-26"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Getting Started"

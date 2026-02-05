@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "DAX (Database Access Expressions) can be quite complex.  It is essential to being able to appropriately manipulate the Power BI data model for the vis..."
 date: "2017-10-12"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

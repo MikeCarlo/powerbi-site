@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "As a report author it is important that you build the necessary context for your end users. The main areas most often needing context either relate to..."
 date: "2020-02-17"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

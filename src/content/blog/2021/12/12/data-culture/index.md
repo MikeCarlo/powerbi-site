@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month we partnered with the relaunch of the Des Moines user group to host Matthew Roche. This month’s topic is all about data culture. If you don..."
 date: "2021-12-12"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

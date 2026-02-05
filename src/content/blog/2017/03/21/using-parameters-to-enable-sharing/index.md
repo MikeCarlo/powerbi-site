@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This week I had a number of team members tell me how difficult it was to share a PBIX file and the corresponding data between team members.  The depar..."
 date: "2017-03-21"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

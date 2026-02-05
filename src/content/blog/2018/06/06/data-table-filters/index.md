@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Hands down best feature this year to date, Data Table Filtering!  In the June 2018 Power BI Desktop Microsoft released the ability for you to navigate..."
 date: "2018-06-06"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

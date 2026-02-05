@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Ever need two different scales on the Y-Axis of a line chart? If so, then this tutorial is for you. While creating a [dual y-axis line chart](https://..."
 date: "2019-09-11"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

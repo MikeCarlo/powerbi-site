@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The Monkey Tools add-in for excel is really amazing. As a developer for Power BI for many years I’ve learn a ton of tips and tricks while working with..."
 date: "2020-08-07"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

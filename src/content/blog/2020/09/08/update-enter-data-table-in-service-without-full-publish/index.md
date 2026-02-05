@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This tip outlines an easy deployment method for data tables that have been manually added to a model via “Enter data” in Power BI Desktop. This is a v..."
 date: "2020-09-08"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

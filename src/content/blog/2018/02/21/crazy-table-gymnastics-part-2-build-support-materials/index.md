@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This is part 2 in the 3 part series on developing super cool tables using some fancy measures.  In part 1 we walked through how to build a table that..."
 date: "2018-02-21"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "When you have really large data models loaded in powerbi.com there are challenges around quickly loading gigs of data into a data model. This is parti..."
 date: "2022-09-20"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

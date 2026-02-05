@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Maps are a fantastic way to communicate spatial data – and lucky for us Power BI has loads of awesome mapping visuals to choose from. However, the Map..."
 date: "2020-04-07"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

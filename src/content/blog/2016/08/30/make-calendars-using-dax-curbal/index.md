@@ -2,7 +2,7 @@
 title: "Make Calendars Using DAX – Curbal"
 excerpt: "Learn how to create custom calendars in Power BI using DAX with Calendar() and CalendarAuto() functions. Video tutorial from Ruth Pozuelo at Curbal."
 date: "2016-08-30"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Date Table", "Tutorial", "Video"]
 ---

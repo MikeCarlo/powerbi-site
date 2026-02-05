@@ -2,7 +2,7 @@
 title: "Import an Excel file into PowerBI"
 date: "2016-03-29"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

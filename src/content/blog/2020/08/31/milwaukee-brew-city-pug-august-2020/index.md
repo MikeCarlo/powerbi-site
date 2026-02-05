@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Back again with another Power BI User group for Milwaukee. This month Mike and Seth walk through the beta release of external tools. If you didn’t see..."
 date: "2020-08-31"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

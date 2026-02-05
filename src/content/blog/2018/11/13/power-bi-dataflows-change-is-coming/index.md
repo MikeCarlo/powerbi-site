@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "I have been holding on to a copy of Satya Nadella’s book “Hit Refresh” for quite some time. With all the Power BI goodness, the job, etc.… I just hadn..."
 date: "2018-11-13"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

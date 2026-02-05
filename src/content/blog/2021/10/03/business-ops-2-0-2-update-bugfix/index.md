@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "**UPDATE**: All downloads for business ops has moved to github releases page dedicated to this project here: [https://github.com/MikeCarlo/BusinessOps..."
 date: "2021-10-03"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

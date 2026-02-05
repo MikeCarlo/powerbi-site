@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The Power BI Tips Theme Generator tool already allows you to easily interact with, and adjust, all the visual properties, wireframes, etc… How could w..."
 date: "2023-10-04"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

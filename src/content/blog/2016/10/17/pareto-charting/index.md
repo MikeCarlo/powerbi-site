@@ -2,7 +2,7 @@
 title: "Pareto Charting in PowerBI"
 excerpt: "Build a Pareto chart in Power BI using DAX measures for cumulative totals and percentages. Identify which products comprise the majority of your sales."
 date: "2016-10-17"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Visuals", "Tutorial", "Analysis"]
 ---

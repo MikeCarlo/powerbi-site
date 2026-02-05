@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Daniel Marsh-Patrick is a custom visual developer who recently released the HTML Content, a custom visual. This month we go over this visual in detail..."
 date: "2020-10-26"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

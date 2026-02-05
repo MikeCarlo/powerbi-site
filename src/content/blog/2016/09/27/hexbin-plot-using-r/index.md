@@ -2,7 +2,7 @@
 title: "HexBin Plot using R"
 excerpt: "Create beautiful hexagonal bin plots in Power BI using R and ggplot2. Visualize data density with heat map style honeycomb patterns."
 date: "2016-09-27"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Visuals", "ggplot2", "Tutorial"]
 ---

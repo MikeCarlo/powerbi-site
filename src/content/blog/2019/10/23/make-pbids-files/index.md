@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In October of 2019 Power BI released a new file type, PBIDS. The Power BI Desktop Source (PBIDS) file is a JSON object file that aids users connecting..."
 date: "2019-10-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Themes are the bedrock of consistency. As report authors it is important to create a consistent experience in a single, series or multitude of reports..."
 date: "2021-12-22"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

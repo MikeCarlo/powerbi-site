@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Here we are, jumping in to 2020. This Month PowerBI.Tips is kicking off and sponsoring the next year of Power BI user groups (PUGs) for Milwaukee. If..."
 date: "2020-02-04"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

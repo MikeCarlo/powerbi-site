@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "There are often questions surrounding Publish to Web.  What is it?  How can I use it to share my reports?  This video walks through the proper usage f..."
 date: "2018-04-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

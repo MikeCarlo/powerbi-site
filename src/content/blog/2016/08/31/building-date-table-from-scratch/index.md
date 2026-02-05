@@ -2,7 +2,7 @@
 title: "Building Date Table from Scratch"
 excerpt: "Create a custom dynamic date table in Power BI Query Editor using M language. Build week-based selectors that automatically update when refreshed."
 date: "2016-08-31"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Date Table", "Tutorial"]
 ---

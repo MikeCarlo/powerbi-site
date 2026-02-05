@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "I’ve been using Power BI since it was released back in 2015, and I’ve found that when talking with other PowerBI users there is always a little confus..."
 date: "2017-08-14"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

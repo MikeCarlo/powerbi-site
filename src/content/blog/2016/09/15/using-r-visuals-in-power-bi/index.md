@@ -2,7 +2,7 @@
 title: "Using R Visuals in Power BI"
 excerpt: "Get started with R visuals in Power BI Desktop. Install Microsoft R Open, configure Power BI, and create your first correlation plot using the corrplot package."
 date: "2016-09-15"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Visuals", "Tutorial", "Data Science"]
 ---

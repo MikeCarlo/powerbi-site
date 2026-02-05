@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Thanks for your interest in our product Scrims. For more details on what is a scrim click this link to Learn More.  **Download** a scrim from the prod..."
 date: "2019-12-21"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

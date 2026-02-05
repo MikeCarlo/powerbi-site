@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month at our Power BI User group in Milwaukee Seth and myself walk through some of the basics of Power BI. We digest how can we leverage Power BI..."
 date: "2019-10-30"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

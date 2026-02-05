@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "We were excited to welcome a good friend of PowerBI.Tips [Alex Powers](https://itsnotaboutthecell.com/about/) to speak with us at this months PUG meet..."
 date: "2020-09-30"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

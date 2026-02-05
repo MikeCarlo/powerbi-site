@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "## **The Power BI Tips Theme Generator: Your Ultimate Theming Tool**  The Power BI Tips Theme Generator is the go-to resource for users aiming to crea..."
 date: "2023-10-15"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

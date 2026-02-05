@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Shared datasets are a great way to share data models across the organization. This enables users to maintain one source of the truth and increase effi..."
 date: "2020-06-08"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

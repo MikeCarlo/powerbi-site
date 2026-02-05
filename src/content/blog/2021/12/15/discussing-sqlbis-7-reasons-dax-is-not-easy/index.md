@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "First of all, go read this amazing blog put out by Alberto Ferrari over at SQLBI that he posted awhile ago. It is the context for the conversation we..."
 date: "2021-12-15"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

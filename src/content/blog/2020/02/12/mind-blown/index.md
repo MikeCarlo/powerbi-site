@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This report is just over the top amazing cool! Check out the work done by the Microsoft team to make this incredible report. It is called the Microsof..."
 date: "2020-02-12"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

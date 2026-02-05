@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "We just completed an amazing webinar from [Parker Stevens](https://www.linkedin.com/in/pstevens33/) over at [https://bielite.com/](https://bielite.com..."
 date: "2020-11-18"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

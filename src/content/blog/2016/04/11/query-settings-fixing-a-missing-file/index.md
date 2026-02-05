@@ -2,7 +2,7 @@
 title: "Query Settings – Fixing a Missing File"
 date: "2016-04-11"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

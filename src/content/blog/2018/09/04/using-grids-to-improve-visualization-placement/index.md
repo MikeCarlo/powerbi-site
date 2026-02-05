@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "When you design a report, there are a number of things to consider.  For example, the types of visuals, the colors used within the visuals, and the lo..."
 date: "2018-09-04"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

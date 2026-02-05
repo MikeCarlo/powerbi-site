@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "March is an exciting month, and with this release of Power BI we have been given some long asked for features. One such feature is the ability to impo..."
 date: "2017-03-06"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

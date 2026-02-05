@@ -2,7 +2,7 @@
 title: "Power BI Histogram with Bins – Includes DAX"
 date: "2016-04-27"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 tags:
   - "Power BI"
   - "DAX"

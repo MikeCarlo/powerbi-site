@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Howdy, folks!  This past weekend, I was a man on a mission. There were two pressing reasons for a new release of Business Ops:  1.  The authors of man..."
 date: "2021-10-19"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

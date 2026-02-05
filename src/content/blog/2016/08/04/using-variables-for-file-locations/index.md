@@ -2,7 +2,7 @@
 title: "Using Variables for File Locations"
 excerpt: "Learn how to create a variable query in Power BI to manage file locations. When you move files, update one query instead of changing every source path."
 date: "2016-08-04"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Tutorial", "Best Practices"]
 ---

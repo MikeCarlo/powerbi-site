@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "I am working on a project that uses Power BI embedded to display reports to external users via an application. I’ve used the progression of A sku’s (e..."
 date: "2020-06-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

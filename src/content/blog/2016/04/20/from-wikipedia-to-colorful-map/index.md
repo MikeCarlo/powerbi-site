@@ -2,7 +2,7 @@
 title: "From Wikipedia to a Colorful Map"
 date: "2016-04-20"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

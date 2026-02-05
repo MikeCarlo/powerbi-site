@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This weeks tutorial focuses on the need to control groups of visuals independently.  This recently came up in a project where I needed to adjust all t..."
 date: "2018-06-20"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -2,7 +2,7 @@
 title: "Measures – Calculating % Change"
 date: "2016-05-02"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "If you have spent any time working in Power BI, your very first step is to, wait for it… Get Data.  Using Get Data will start loading your data into t..."
 date: "2018-01-31"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

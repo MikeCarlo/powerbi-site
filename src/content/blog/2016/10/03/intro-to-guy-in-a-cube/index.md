@@ -2,7 +2,7 @@
 title: "Intro to Guy In a Cube"
 excerpt: "Discover Guy In a Cube, one of the best Power BI video content creators. Adam Saxton from Microsoft delivers short, packed tutorials that are incredibly helpful."
 date: "2016-10-03"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Video", "Community", "Resources"]
 ---

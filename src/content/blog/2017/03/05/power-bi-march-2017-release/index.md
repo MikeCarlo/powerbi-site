@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month it is a major game changer.  PowerBI has introduced the ability to change the color theme of your Power BI reports.  What does this mean fo..."
 date: "2017-03-05"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

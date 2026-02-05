@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The more you work with Power BI Desktop it is more than likely you will find some tool limitations that impact your overall design pursuits.  As I hav..."
 date: "2017-11-14"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

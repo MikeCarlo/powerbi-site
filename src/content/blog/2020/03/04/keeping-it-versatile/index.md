@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "I was recently working on some new ideas for a Scrim when I stumbled upon something interesting. A scrim is pretty specific in its layout, and this on..."
 date: "2020-03-04"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

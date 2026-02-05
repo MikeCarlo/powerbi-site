@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month we got the Power BI desktop update a little bit later because it was released during the [2020 Ignite conference](https://myignite.microsof..."
 date: "2020-09-29"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

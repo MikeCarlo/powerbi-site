@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This past week I was talking with the big guy up north, jolly old fella, and the discussion came up about his toy production levels.  Santa was compla..."
 date: "2016-12-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

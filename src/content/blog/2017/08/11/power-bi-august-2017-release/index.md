@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "I love these updates, it’s like Christmas comes every month!!  This month we get a ton of really great features, I for one am super pumped to get into..."
 date: "2017-08-11"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

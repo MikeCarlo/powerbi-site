@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "PowerBI.tips is extremely happy to be part of, and contribute to, the Power BI Community. We’re constantly trying to think of new and interesting ways..."
 date: "2018-01-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

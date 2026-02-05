@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "If you want to start learning Power BI, or are looking to improve your skills, there are lots of areas you can start. However, learning itself is a sk..."
 date: "2022-02-10"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Where does the Power BI Mobile app fit within your report building plan? This topic is widely un-discussed within the Power BI community. Many blogs a..."
 date: "2021-09-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

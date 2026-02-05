@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Power BI has been an continually evolving tool over the last year.  The Matrix visual is powerful and mimics much of the functionality of a Pivot Tabl..."
 date: "2017-02-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

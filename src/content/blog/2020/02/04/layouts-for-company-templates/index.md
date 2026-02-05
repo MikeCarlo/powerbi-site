@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Recently I had the privilege of working with Microsoft doing a Webinar on layouts. One thing we are passionate about at PowerBI.Tips is good looking r..."
 date: "2020-02-04"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

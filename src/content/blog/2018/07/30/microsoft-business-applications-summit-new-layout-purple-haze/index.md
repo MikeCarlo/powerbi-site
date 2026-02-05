@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In honor of the 2018 Business Applications Summit, PowerBI.Tips has published a new layout, Purple Haze.  Purple Haze is the brain child of Seth Bauer..."
 date: "2018-07-30"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "What does it take to design and create a great looking report in Power BI? Do you have a clear understanding of what tools and techniques you should u..."
 date: "2020-09-29"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

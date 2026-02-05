@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month I had the privilege of participating in the Power BI Quiz. If you don’t know about the Power BI Quiz show, this is an event that is put on..."
 date: "2020-10-15"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

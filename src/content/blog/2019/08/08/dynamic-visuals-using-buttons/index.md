@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Sometimes, we want the users to see different metrics, but do not want to take up too much space on our page. The scenario we are going to walk throug..."
 date: "2019-08-08"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

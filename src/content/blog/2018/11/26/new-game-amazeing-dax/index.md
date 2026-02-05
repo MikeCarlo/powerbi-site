@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "If you haven’t had your mind melted over the past few games that Phil Seamark has developed here is one more, aMAZEing DAX.  This month’s game is a Ga..."
 date: "2018-11-26"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

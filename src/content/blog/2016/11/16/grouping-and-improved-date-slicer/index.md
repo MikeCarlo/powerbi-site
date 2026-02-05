@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In the October update of PowerBI Desktop we were given a number of really useful features, ranging from a new Date Slicer, Grid lines, Grouping, Binni..."
 date: "2016-11-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

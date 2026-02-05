@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Howdy, folks!  A few months ago, I was writing and running various PowerShell scripts to manipulate the connected data models in my Power BI Desktop f..."
 date: "2021-09-12"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

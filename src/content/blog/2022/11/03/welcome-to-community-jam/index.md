@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "_PowerBI.Tips LOVES community. And we are out to prove it._  We are so proud to announce [Community Jam by PowerBI.Tips](https://jam.powerbi.tips/), t..."
 date: "2022-11-03"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "It’s that exciting time of month again.  Time for another power BI desktop release.  This month here are a couple of good highlights you should check..."
 date: "2017-05-03"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

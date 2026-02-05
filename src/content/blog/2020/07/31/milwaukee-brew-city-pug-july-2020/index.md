@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Welcome to July! This month we have Tommy Puglia from the Chicago Power BI User Group joining us to discuss and talk about driving organizational succ..."
 date: "2020-07-31"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

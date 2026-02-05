@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This topic was gleaned from the absolute wealth of knowledge put down in the MSFT [Power BI Adoption Roadmap](https://docs.microsoft.com/en-us/power-b..."
 date: "2021-12-09"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

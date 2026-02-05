@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Tabular Editor is an incredible Tool that enables users to manipulate a Tabular model at lighting speeds.  Daniel Otykier is the creator of the Tabula..."
 date: "2020-04-02"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

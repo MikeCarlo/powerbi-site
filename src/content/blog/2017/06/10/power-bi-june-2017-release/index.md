@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month we have a big release for Power BI Desktop and for the Power BI service.  There are a number of great new features.  For the everyday user..."
 date: "2017-06-10"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

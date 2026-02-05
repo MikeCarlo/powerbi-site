@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The Milwaukee Brew City PUG for April kicks off with some quick updates and highlights of upcoming events. We spend a quick minute on why we’re so exc..."
 date: "2020-05-08"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

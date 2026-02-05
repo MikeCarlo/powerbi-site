@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In Power BI reports various features are used to enhance the reporting experience.  Drillthrough allows users to navigate to different report pages wi..."
 date: "2018-09-10"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

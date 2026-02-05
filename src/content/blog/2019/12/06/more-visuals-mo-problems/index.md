@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In some recent conversations the notion of minimizing the number of required visuals came up as a topic. While I know from talking with the Microsoft..."
 date: "2019-12-06"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

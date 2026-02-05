@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "If you’re like me, building a data model in Power BI is an iterative process.  Sometimes, you try out different ways of writing measures before you hi..."
 date: "2020-01-29"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

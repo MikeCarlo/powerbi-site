@@ -2,7 +2,7 @@
 title: "Load Multiple Excel (xls or xlsx) Files"
 excerpt: "Learn how to load multiple Excel files from a folder into Power BI using a custom function. Combine workbooks with multiple sheets into a single query."
 date: "2016-08-10"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "Excel", "Data Loading", "Tutorial"]
 ---

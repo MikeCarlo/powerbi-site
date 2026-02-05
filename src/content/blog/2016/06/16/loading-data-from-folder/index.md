@@ -2,7 +2,7 @@
 title: "Loading Data From Folder"
 excerpt: "Learn how to automatically load only the most recent file from a folder in Power BI. Perfect for automated reports that receive daily data files."
 date: "2016-06-16"
-authors: ["mike-carlo"]
+authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "Data Loading", "Tutorial", "Automation"]
 ---

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Power BI Version Control is a free, fully-packaged solution that lets users apply version control, local editing, and manage PBIX or PBIT files. The s..."
 date: "2021-02-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

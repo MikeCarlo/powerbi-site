@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "A common ask from users is the ability to view data related to visuals in excel. While there is an option to export data, the format is often unfriend..."
 date: "2020-07-22"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

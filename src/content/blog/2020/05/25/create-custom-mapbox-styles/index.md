@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "If you’ve played around with MapBox in Power BI – you’ll know that it has loads of great features to create really rich and beautiful maps, including..."
 date: "2020-05-25"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

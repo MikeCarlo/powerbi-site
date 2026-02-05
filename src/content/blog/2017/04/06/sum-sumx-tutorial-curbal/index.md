@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Learn how to use SUM() and SUMX() with this great video from Curbal. As you become more familiar with PowerBI you will increase your understanding of..."
 date: "2017-04-06"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

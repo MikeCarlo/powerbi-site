@@ -2,7 +2,7 @@
 title: "Folder of Files Loaded to Power BI Desktop"
 date: "2016-04-07"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "Power BI"

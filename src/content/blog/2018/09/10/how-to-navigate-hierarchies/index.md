@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "In Power BI reports various features are used to enhance the reporting experience.  A hierarchy is a ordered set of values that are linked to the leve..."
 date: "2018-09-10"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

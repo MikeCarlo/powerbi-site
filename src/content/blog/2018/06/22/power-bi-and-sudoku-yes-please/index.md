@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This week Philip Seamark, an avid Power BI developer has released a joint project with PowerBI.Tips, a full Sudoku game in Power BI.  To be totally ho..."
 date: "2018-06-22"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Power BI took the BI world by storm 5 years ago, there has been a release of the Power BI Desktop almost every single month. The infant that was Power..."
 date: "2021-02-11"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

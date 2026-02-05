@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "With the release of the custom visuals building tool [Charts.PowerBI.Tips](http://charts.powerbi.tips/) we received a number of comments requesting tu..."
 date: "2019-02-12"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

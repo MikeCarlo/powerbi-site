@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month we are trying something brand new. We are introducing a new series called MVPs react. As you may already know Power BI has monthly desktop..."
 date: "2020-07-21"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

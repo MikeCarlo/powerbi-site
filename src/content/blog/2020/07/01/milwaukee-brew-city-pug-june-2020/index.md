@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "This month’s Milwaukee Power BI User group we have Reza Rad from [Radacad.com](https://radacad.com/). Reza has a long history within the Power BI MVP..."
 date: "2020-07-01"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

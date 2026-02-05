@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "The long awaited PowerBI Desktop release is here.  I’d like to point out a couple of key features that will help you improve your reports.  First, the..."
 date: "2017-02-07"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

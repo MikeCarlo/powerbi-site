@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Over the course of time Power BI has come to encompass a wide variety of technologies and tools. One such product that has been integrated into the su..."
 date: "2019-11-27"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

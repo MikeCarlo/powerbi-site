@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Here is a super helpful video from Guy in a Cube about how to have multiple logins using Google Chrome.  Often I find my self juggling between a work..."
 date: "2017-03-28"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

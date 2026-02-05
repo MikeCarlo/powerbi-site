@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "### Get Data – Power BI Connection Types: An Introduction  [![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/..."
 date: "2017-10-16"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

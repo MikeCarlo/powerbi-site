@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Power BI is a powerful business intelligence tool that helps organizations to gain insights into their data. With its ability to create stunning visua..."
 date: "2023-02-28"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

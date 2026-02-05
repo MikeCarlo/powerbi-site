@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Power BI requires a gateway for refreshing on premises data sources. There are a myriad of different data sources that you can create and two differen..."
 date: "2019-10-29"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

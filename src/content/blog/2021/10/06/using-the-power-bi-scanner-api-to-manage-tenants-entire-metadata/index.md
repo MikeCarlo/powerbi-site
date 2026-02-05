@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "_Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_ _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for..."
 date: "2021-10-06"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

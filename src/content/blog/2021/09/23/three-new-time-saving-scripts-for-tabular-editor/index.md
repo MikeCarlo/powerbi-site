@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "Howdy folks!  I just published three new scripts for [Tabular Editor](https://tabulareditor.com/) to [the PowerBI.tips “TabularEditor-Scripts” reposit..."
 date: "2021-09-23"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"

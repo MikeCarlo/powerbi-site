@@ -3,7 +3,7 @@ title: "PowerBI.tips"
 excerpt: "When I teach Power BI to new users, there are typically questions about how to get Power BI to act more like Pivot Tables in Excel.  Through my discus..."
 date: "2018-02-14"
 authors:
-  - "mike-carlo"
+  - "Mike Carlo"
 categories: []
 tags:
   - "power-bi"
