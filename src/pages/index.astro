@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const base = import.meta.env.BASE_URL;
 
@@ -32,6 +33,17 @@ const posts = (await getCollection('blog'))
     <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
         <article class="rounded-xl border border-neutral-200 p-5 transition hover:-translate-y-1 hover:shadow-lg">
+          {post.data.featuredImage && (
+            <a href={`${base}${post.slug}/`} class="block mb-4">
+              <Image 
+                src={post.data.featuredImage} 
+                alt={post.data.title}
+                class="w-full h-40 object-cover rounded-lg"
+                width={400}
+                height={225}
+              />
+            </a>
+          )}
           <p class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
             {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
           </p>
