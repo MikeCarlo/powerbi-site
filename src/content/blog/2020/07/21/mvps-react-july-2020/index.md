@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "MVPs React July 2020"
 excerpt: "This month we are trying something brand new. We are introducing a new series called MVPs react. As you may already know Power BI has monthly desktop..."
 date: "2020-07-21"
 authors:

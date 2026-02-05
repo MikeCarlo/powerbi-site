@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI May 2017 Release"
 excerpt: "It’s that exciting time of month again.  Time for another power BI desktop release.  This month here are a couple of good highlights you should check..."
 date: "2017-05-03"
 authors:

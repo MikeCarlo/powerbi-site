@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Keeping it Versatile"
 excerpt: "I was recently working on some new ideas for a Scrim when I stumbled upon something interesting. A scrim is pretty specific in its layout, and this on..."
 date: "2020-03-04"
 authors:

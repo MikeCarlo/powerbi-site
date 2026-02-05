@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Introduction to DAX Studio"
 excerpt: "Darren Gosbell & Marco Russo join PowerBI.Tips in a 4 part series on how and why to use DAX Studio! They show us why **DAX Studio is the ultimate tool..."
 date: "2020-05-14"
 authors:

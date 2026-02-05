@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Apply a Filter to a Slicer"
 excerpt: "Often when working with a Power BI report you will add a slicer that has a “Blank” item in the selection criteria.  From a usability standpoint you mi..."
 date: "2018-05-17"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Data Table Filters"
 excerpt: "Hands down best feature this year to date, Data Table Filtering!  In the June 2018 Power BI Desktop Microsoft released the ability for you to navigate..."
 date: "2018-06-06"
 authors:

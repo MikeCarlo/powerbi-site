@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "New Layout – September 2018 Blog Layout"
 excerpt: "In the September 2018 blog post the Microsoft team released a new layout.  This layout has a number of really nice design elements.  However, upon rev..."
 date: "2018-10-02"
 authors:

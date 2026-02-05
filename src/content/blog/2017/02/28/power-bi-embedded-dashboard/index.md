@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Embedded Dashboard"
 excerpt: "For a while now I have been longing to spend more time learning all the ins and out of Power BI embedded.  From the line of work that I do, I can see..."
 date: "2017-02-28"
 authors:

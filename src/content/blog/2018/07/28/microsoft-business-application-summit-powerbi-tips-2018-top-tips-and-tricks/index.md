@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Microsoft Business Application Summit – PowerBI.Tips 2018 Top Tips and Tricks"
 excerpt: "Want to give a special thanks to the Microsoft PowerBI team for allowing PowerBI.Tips to participate in the 2018 Microsoft Business Application Summit..."
 date: "2018-07-28"
 authors:

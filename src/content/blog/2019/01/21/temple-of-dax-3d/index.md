@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Temple of DAX – 3D"
 excerpt: "To celebrate joining the Power BI Cat team next week, I thought I would update a DAX game I built last November (2018) which was a DAX-based maze game..."
 date: "2019-01-21"
 authors:

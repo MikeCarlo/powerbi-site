@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Dynamic Filters in PowerBI"
 excerpt: "This video talks about how to create custom links that apply report level filters.  This is super cool and provides a ton of wide flexibility when bui..."
 date: "2017-04-05"
 authors:

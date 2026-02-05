@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI February 2017 Release"
 excerpt: "The long awaited PowerBI Desktop release is here.  I’d like to point out a couple of key features that will help you improve your reports.  First, the..."
 date: "2017-02-07"
 authors:

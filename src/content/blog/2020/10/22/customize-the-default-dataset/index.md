@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Customize the Default Dataset"
 excerpt: "In the October 2020 release of Power BI desktop you have the ability to load a dataset from the splash page. For this tutorial we dig in on how Micros..."
 date: "2020-10-22"
 authors:

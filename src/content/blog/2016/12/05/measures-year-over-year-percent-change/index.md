@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Measures – Year Over Year Percent Change"
 excerpt: "This tutorial is a variation on the [month to month percent change tutorial](http://powerbi.tips/2016/07/measures-month-to-month-percent-change/).  Th..."
 date: "2016-12-05"
 authors:

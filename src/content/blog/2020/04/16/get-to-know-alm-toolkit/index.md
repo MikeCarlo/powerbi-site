@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Get to know ALM Toolkit"
 excerpt: "The ALM Toolkit is an excellent tool for aiding users with Tabular Model management. Christian Wade has been generous enough to provide us with a deta..."
 date: "2020-04-16"
 authors:

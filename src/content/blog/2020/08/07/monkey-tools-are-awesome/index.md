@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Monkey Tools are AWESOME"
 excerpt: "The Monkey Tools add-in for excel is really amazing. As a developer for Power BI for many years I’ve learn a ton of tips and tricks while working with..."
 date: "2020-08-07"
 authors:

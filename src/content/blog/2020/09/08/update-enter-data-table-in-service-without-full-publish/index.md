@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Update 'Enter Data' Table in Service without full Publish"
 excerpt: "This tip outlines an easy deployment method for data tables that have been manually added to a model via “Enter data” in Power BI Desktop. This is a v..."
 date: "2020-09-08"
 authors:

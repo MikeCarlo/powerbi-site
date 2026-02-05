@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "2019 Microsoft Business Application Summit Retrospective"
 excerpt: "This year the Microsoft Business Application Summit (MBAS) was held in Atlanta Georgia. Despite some travel snafu’s (3 rebooking’s and 9 delays), we m..."
 date: "2019-06-20"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Connections: Direct Query"
 excerpt: "Now that we’ve solidly gotten through the basics in terms of what connection types are in the opening blog, found [here](https://powerbi.tips/2017/10/..."
 date: "2017-12-29"
 authors:

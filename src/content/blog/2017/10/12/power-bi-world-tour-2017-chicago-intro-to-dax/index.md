@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI World Tour 2017 – Chicago – Intro to DAX"
 excerpt: "DAX (Database Access Expressions) can be quite complex.  It is essential to being able to appropriately manipulate the Power BI data model for the vis..."
 date: "2017-10-12"
 authors:

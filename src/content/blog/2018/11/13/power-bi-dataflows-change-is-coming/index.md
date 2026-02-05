@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Dataflows: Change is Coming"
 excerpt: "I have been holding on to a copy of Satya Nadella’s book “Hit Refresh” for quite some time. With all the Power BI goodness, the job, etc.… I just hadn..."
 date: "2018-11-13"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Filled Donut Chart, Yumm.."
 excerpt: "We are starting today off with a fun chart. We will be making a filled donut chart. Typically, I don’t use donut charts but in this case I think we ha..."
 date: "2019-10-08"
 authors:

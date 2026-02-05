@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "MVPs React October 2020"
 excerpt: "Horary! The Power BI desktop for October finally arrived and it is packed with tons of updates. I’m super excited about this month’s release. We ralli..."
 date: "2020-10-23"
 authors:

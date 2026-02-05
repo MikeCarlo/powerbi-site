@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "UseRelationship DAX Tutorial – Curbal"
 excerpt: "Here is another great tutorial from Curbal.  This tutorial teaches you how to use the DAX function UserRelationship.  This is important when your deal..."
 date: "2017-07-03"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Direct Query Composite Models = Amazing"
 excerpt: "Well Microsoft has done it again. They have added a great feature in the Power BI desktop release for December 2020. Direct Query to Power BI data sou..."
 date: "2020-12-16"
 authors:

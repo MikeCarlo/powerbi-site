@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Get Your OData Here"
 excerpt: "For those of you who are following my tutorials, you are most likely to understand that each tutorial comes with it’s own data source.  This has been..."
 date: "2017-02-21"
 authors:

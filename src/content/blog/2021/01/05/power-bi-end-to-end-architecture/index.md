@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI End-to-End Architecture"
 excerpt: "Melissa Coates of Coates Data Strategies has produced a new version of the Power BI End-to-End architecture document. If you haven’t seen this documen..."
 date: "2021-01-05"
 authors:

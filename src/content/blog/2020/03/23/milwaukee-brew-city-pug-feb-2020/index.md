@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Milwaukee Brew City PUG – Feb 2020"
 excerpt: "The Milwaukee Brew City PUG for February had tons of rich demo content. Steve Campbell delivered quite a session for an hour and a half. We were able..."
 date: "2020-03-23"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Milwaukee Brew City PUG – Jan 2020"
 excerpt: "Here we are, jumping in to 2020. This Month PowerBI.Tips is kicking off and sponsoring the next year of Power BI user groups (PUGs) for Milwaukee. If..."
 date: "2020-02-04"
 authors:

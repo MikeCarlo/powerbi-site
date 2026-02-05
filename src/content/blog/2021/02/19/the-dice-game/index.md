@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "The Dice Game"
 excerpt: "Well, it’s Friday, time to take a little break and play the Dice Game! The Power BI community is creative and is always developing amazing ideas. This..."
 date: "2021-02-19"
 authors:

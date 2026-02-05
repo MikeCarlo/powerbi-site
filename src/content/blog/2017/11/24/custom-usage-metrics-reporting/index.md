@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Custom Usage Metrics Reporting"
 excerpt: "One of the really cool features contained within the PowerBI.com service is the ability to monitor how often your dashboard or report is being viewed...."
 date: "2017-11-24"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Microsoft Business Applications Summit – New Layout – Purple Haze"
 excerpt: "In honor of the 2018 Business Applications Summit, PowerBI.Tips has published a new layout, Purple Haze.  Purple Haze is the brain child of Seth Bauer..."
 date: "2018-07-30"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Hot Swap Report Connections – External Tools"
 excerpt: "### Latest Version Download:  ### [Download the latest version of Hot Swap Connections using Business Ops](https://powerbi.tips/product/business-ops/)..."
 date: "2020-08-13"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Ranking Values with Measures"
 excerpt: "In many reports we produce we often need a method to score or rank data.  For example, we may need to list the sales totals for the sales team and ran..."
 date: "2017-07-25"
 authors:

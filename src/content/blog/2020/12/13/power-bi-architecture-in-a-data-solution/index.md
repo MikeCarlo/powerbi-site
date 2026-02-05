@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Architecture in a Data Solution"
 excerpt: "This article will focus on Power BI architecture within a data solution.   In this context, Power BI architecture describes how Power BI can slot in a..."
 date: "2020-12-13"
 authors:

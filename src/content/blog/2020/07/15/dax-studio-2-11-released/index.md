@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "DAX Studio 2.11 Released"
 excerpt: "If you haven’t heard about DAX Studio, well now you have. DAX studio is an essential tool for Power BI developers. It enables you to explore and tune..."
 date: "2020-07-15"
 authors:

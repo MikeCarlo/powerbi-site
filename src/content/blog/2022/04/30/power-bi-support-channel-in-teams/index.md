@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Support Channel: Microsoft Teams Tips"
 excerpt: "When organisations deploy Power BI, it is important to offer support to users. Often this can be in the form of formal help desk and tickets. In addit..."
 date: "2022-04-30"
 authors:

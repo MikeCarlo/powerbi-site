@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI is part of the greater data solution"
 excerpt: "Power BI is a powerful reporting tool that has been dominating the market and rapidly evolving. Yet, in many organizations people seem unaware of its..."
 date: "2020-10-23"
 authors:

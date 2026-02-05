@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Adding Contextual Help for End Users"
 excerpt: "As a report author it is important that you build the necessary context for your end users. The main areas most often needing context either relate to..."
 date: "2020-02-17"
 authors:

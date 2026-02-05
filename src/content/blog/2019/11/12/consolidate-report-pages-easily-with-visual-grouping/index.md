@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Consolidate Report Pages Easily with Visual Grouping"
 excerpt: "We do a ton of [Layouts](https://powerbi.tips/tools-2/layouts/) here at powerbi.tips and with the introduction of the new visual grouping feature I wa..."
 date: "2019-11-12"
 authors:

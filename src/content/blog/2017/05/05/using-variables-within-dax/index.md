@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Using Variables within DAX"
 excerpt: "Every so often you find a hidden gem, something so valuable, just hiding there in plain sight.  Recently, I found out that I LOVE the using Variables..."
 date: "2017-05-05"
 authors:

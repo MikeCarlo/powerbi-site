@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Building a Power BI Admin View using Power BI APIs"
 excerpt: "We just completed an amazing webinar from [Parker Stevens](https://www.linkedin.com/in/pstevens33/) over at [https://bielite.com/](https://bielite.com..."
 date: "2020-11-18"
 authors:

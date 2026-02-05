@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Hot Swap Power BI Report Connections"
 excerpt: "Let’s say you have a Power BI file connected to an Analysis Services machine. Then you want to change the data source to PowerBI.com using a Live Conn..."
 date: "2020-05-29"
 authors:

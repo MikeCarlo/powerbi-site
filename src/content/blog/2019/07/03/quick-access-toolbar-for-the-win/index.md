@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Quick Access Toolbar for the Win"
 excerpt: "I’m a lazy engineer.  Let me qualify my statement.  In lazy I mean I like to find the path of least resistance, the shortest distance between two poin..."
 date: "2019-07-03"
 authors:

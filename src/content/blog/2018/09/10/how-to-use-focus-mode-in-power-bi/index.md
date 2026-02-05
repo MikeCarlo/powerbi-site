@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "How to use Focus Mode in Power BI"
 excerpt: "In Power BI reports various features are used to enhance the reporting experience.  Focus mode allows for a single visual to expand for dedicated inte..."
 date: "2018-09-10"
 authors:

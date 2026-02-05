@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Business Ops: New and Updated External Tools"
 excerpt: "Howdy, folks!  This past weekend, I was a man on a mission. There were two pressing reasons for a new release of Business Ops:  1.  The authors of man..."
 date: "2021-10-19"
 authors:

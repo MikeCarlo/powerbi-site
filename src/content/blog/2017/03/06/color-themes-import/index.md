@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Import Color Theme & Color Theme Generator"
 excerpt: "March is an exciting month, and with this release of Power BI we have been given some long asked for features. One such feature is the ability to impo..."
 date: "2017-03-06"
 authors:

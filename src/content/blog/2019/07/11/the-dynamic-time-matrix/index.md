@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "The Dynamic Time Matrix"
 excerpt: "Time and time again when I begin talking with Excel users and ask to see what current reports they are using, they usually show me a table with a mixe..."
 date: "2019-07-11"
 authors:

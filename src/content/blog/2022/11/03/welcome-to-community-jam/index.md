@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Welcome to Community Jam"
 excerpt: "_PowerBI.Tips LOVES community. And we are out to prove it._  We are so proud to announce [Community Jam by PowerBI.Tips](https://jam.powerbi.tips/), t..."
 date: "2022-11-03"
 authors:

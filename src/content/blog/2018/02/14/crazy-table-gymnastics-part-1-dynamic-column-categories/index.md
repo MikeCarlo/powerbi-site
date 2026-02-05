@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Crazy Table Gymnastics – Part 1 – Dynamic Column Categories"
 excerpt: "When I teach Power BI to new users, there are typically questions about how to get Power BI to act more like Pivot Tables in Excel.  Through my discus..."
 date: "2018-02-14"
 authors:

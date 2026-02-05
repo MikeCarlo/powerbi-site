@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Santa Loves Power BI and R"
 excerpt: "This past week I was talking with the big guy up north, jolly old fella, and the discussion came up about his toy production levels.  Santa was compla..."
 date: "2016-12-23"
 authors:

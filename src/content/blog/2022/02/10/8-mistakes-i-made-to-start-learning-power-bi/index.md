@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "8 Mistakes I made to Start Learning Power BI"
 excerpt: "If you want to start learning Power BI, or are looking to improve your skills, there are lots of areas you can start. However, learning itself is a sk..."
 date: "2022-02-10"
 authors:

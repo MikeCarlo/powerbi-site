@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Tic Tac Power BI"
 excerpt: "I am proud to announce another joint development game between Philip Seamark and myself (Mike Carlo) of a Tic Tac Toe game.  To read about how this ga..."
 date: "2018-07-17"
 authors:

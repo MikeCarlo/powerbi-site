@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Microsoft Data Insights Summit"
 excerpt: "This year I had the wonderful privilege to attend the Microsoft Data Insights summit for 2017 as a speaker.  My topic was the Top Ten Tutorials from P..."
 date: "2017-06-13"
 authors:

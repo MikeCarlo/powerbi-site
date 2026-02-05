@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Using Multiple User Accounts"
 excerpt: "Here is a super helpful video from Guy in a Cube about how to have multiple logins using Google Chrome.  Often I find my self juggling between a work..."
 date: "2017-03-28"
 authors:

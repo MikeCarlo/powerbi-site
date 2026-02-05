@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power Query API Considerations"
 excerpt: "This article is the second part in a series on API calls. It will look at some best practices and considerations when using API calls in Power Query...."
 date: "2020-02-10"
 authors:

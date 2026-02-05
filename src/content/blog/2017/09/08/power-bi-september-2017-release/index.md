@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI September 2017 Release"
 excerpt: "September is here and there is a new update for Power BI desktop!  I’m so excited for this month’s update as there are many solid features.  One of th..."
 date: "2017-09-08"
 authors:

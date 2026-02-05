@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Milwaukee Brew City PUG – August 2020"
 excerpt: "Back again with another Power BI User group for Milwaukee. This month Mike and Seth walk through the beta release of external tools. If you didn’t see..."
 date: "2020-08-31"
 authors:

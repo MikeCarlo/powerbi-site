@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Handle Errors in Data Refreshes with Power Automate"
 excerpt: "This article examines using the advanced editor in Power Query to better handle when things go wrong. It will also allow custom actions to be triggere..."
 date: "2020-01-16"
 authors:

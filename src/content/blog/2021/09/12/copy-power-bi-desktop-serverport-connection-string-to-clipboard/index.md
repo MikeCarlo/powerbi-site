@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Copy Power BI Desktop Server:Port Connection String to Clipboard"
 excerpt: "Howdy, folks!  A few months ago, I was writing and running various PowerShell scripts to manipulate the connected data models in my Power BI Desktop f..."
 date: "2021-09-12"
 authors:

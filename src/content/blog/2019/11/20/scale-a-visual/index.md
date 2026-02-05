@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Scale a Visual"
 excerpt: "For each visual in Power BI Desktop there is a button called Focus Mode. This feature highlights a single visual. While this can be helpful, it does r..."
 date: "2019-11-20"
 authors:

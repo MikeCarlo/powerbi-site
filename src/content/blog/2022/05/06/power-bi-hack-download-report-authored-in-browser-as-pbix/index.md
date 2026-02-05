@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Hack: Download Report Authored in Browser as PBIX"
 excerpt: "## The Problem  Most of you have probably run into a situation where someone in your organization has authored a report in the Power BI web service, a..."
 date: "2022-05-06"
 authors:

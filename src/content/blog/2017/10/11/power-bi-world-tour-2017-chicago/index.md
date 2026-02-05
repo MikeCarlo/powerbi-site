@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI World Tour 2017 – Chicago – Top Tips"
 excerpt: "To everyone who was able to attend the Power BI World Tour 2017, Thank you!  It has been a pleasure presenting my favorite tips and trips.  This post..."
 date: "2017-10-11"
 authors:

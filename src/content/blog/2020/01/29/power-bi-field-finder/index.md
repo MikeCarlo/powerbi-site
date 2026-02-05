@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Field Finder"
 excerpt: "If you’re like me, building a data model in Power BI is an iterative process.  Sometimes, you try out different ways of writing measures before you hi..."
 date: "2020-01-29"
 authors:

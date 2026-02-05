@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Historical Stock Price Function in Power Query"
 excerpt: "This post will walk through how to pull daily stock price from Yahoo! Finance, then transform the data using a technique called a query branch. It wil..."
 date: "2019-10-22"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Start of Month DAX Calendar"
 excerpt: "While on a recent project I needed to build a variation of the DAX date table.  In my previous post, found here [Creating DAX Date Tables](https://pow..."
 date: "2017-12-20"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "How to use Tooltips in Power BI"
 excerpt: "In Power BI reports various features are used to enhance the reporting experience.  Tooltips appear when the cursor is hovering over a visual.  Not al..."
 date: "2018-09-10"
 authors:

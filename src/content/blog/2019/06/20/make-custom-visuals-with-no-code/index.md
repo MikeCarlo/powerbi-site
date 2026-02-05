@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Make Custom Visuals with no Code"
 excerpt: "Welcome to another installment of building custom visuals with the [Charts](http://charts.powerbi.tips/) tool from [PowerBI.Tips](https://powerbi.tips..."
 date: "2019-06-20"
 authors:

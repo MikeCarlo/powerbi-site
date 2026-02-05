@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Split an existing Power BI file into a model and report"
 excerpt: "Shared datasets are a great way to share data models across the organization. This enables users to maintain one source of the truth and increase effi..."
 date: "2020-06-08"
 authors:

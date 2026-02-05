@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Move Visuals Between Reports"
 excerpt: "There are cases when working with Power BI files, that you would want to transfer a visual from one report to another report.  While this feature is n..."
 date: "2018-01-15"
 authors:

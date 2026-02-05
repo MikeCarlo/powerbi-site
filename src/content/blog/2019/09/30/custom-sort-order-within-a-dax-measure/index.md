@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Custom Sort Order Within a DAX Measure"
 excerpt: "This post will answer how to sort a measure that returns text values to a custom order, without affecting other columns. It will utilize the DAX funct..."
 date: "2019-09-30"
 authors:

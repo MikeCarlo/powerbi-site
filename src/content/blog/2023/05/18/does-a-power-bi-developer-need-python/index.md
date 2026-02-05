@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Does a Power BI developer need Python?"
 excerpt: "In this episode of the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/), we discuss the values of adding Python k..."
 date: "2023-05-18"
 authors:

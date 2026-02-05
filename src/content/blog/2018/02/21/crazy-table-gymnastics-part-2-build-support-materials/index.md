@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Crazy Table Gymnastics – Part 2 – Build Support Materials"
 excerpt: "This is part 2 in the 3 part series on developing super cool tables using some fancy measures.  In part 1 we walked through how to build a table that..."
 date: "2018-02-21"
 authors:

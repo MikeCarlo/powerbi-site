@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Average Household Income Function in Power Query"
 excerpt: "This post will walk through how to pull an estimated household income from a US address. It will be completed all in the Power Query Editor. We will c..."
 date: "2019-11-09"
 authors:

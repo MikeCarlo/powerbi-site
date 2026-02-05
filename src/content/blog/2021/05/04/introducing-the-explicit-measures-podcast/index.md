@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Introducing the Explicit Measures Podcast"
 excerpt: "![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2021/05/1620103524867.jpg)  Welcome to a new podcast from PowerBI..."
 date: "2021-05-04"
 authors:

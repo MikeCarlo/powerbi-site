@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Power BI Quiz – Themes"
 excerpt: "This month I had the privilege of participating in the Power BI Quiz. If you don’t know about the Power BI Quiz show, this is an event that is put on..."
 date: "2020-10-15"
 authors:

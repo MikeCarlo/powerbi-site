@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "How to Represent Your Power BI Skills"
 excerpt: "This is part 3 of 3 in a series designed to help Power BI users and enthusiasts. The [first post](https://powerbi.tips/2021/02/power-bi-skills-matrix/..."
 date: "2021-05-11"
 authors:

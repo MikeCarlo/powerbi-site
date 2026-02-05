@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Buy and Apply Power BI Premium P license"
 excerpt: "I am working on a project that uses Power BI embedded to display reports to external users via an application. I’ve used the progression of A sku’s (e..."
 date: "2020-06-16"
 authors:

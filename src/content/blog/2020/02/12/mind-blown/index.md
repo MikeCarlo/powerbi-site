@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Mind Blown"
 excerpt: "This report is just over the top amazing cool! Check out the work done by the Microsoft team to make this incredible report. It is called the Microsof..."
 date: "2020-02-12"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Using the Power BI Scanner API to Manage Tenant's Entire Metadata"
 excerpt: "_Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_ _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for..."
 date: "2021-10-06"
 authors:

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "New Layout – Splash o Red"
 excerpt: "First off, let me say WOW!  The announcement of Layouts was well received by the Power BI Community.  Thank you so much for the positive feedback.  So..."
 date: "2018-01-19"
 authors:

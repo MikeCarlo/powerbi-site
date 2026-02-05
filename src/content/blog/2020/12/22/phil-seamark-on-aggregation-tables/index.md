@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Phil Seamark on Aggregation Tables"
 excerpt: "I was having a candid conversation with Phil Seamark from [DAX.tips](https://dax.tips/) about Aggregation Tables. During that conversation, I was aski..."
 date: "2020-12-22"
 authors:

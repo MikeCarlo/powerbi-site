@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Unlock Your Creativity with the Power BI Tips Designer: Exciting New Features!"
 excerpt: "At Power BI Tips, we’re committed to providing you with the best tools and resources to enhance your report building experience. That’s why we’re thri..."
 date: "2023-06-07"
 authors:

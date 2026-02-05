@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Using Lasso with New Shortcuts"
 excerpt: "The April 2020 Power BI desktop release is an amazing release. This month the Power BI team has released a new lasso feature to enable users to select..."
 date: "2020-05-06"
 authors:

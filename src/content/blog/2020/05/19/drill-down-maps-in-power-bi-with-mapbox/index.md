@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Drill Down Maps in Power BI with MapBox"
 excerpt: "If you’ve played around with MapBox in Power BI – you’ll know that it has loads of great features to create really rich and beautiful maps! One featur..."
 date: "2020-05-19"
 authors:

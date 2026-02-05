@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Mirabile Notitia – Power BI with Harry Potter"
 excerpt: "I was recently contacted by Power BI Community member Gomathy Viswanathan and Ashwini Nayak. Thus, it is my pleasure share with you their incredible r..."
 date: "2020-10-30"
 authors:

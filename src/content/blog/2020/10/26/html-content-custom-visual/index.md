@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "HTML Content Custom Visual"
 excerpt: "Daniel Marsh-Patrick is a custom visual developer who recently released the HTML Content, a custom visual. This month we go over this visual in detail..."
 date: "2020-10-26"
 authors:

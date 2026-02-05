@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Standardizing KPI’s around a Business Intelligence Team"
 excerpt: "_This article follows from Episode 5 of the new Explicit Measures Podcast, a whole new way to talk about Power BI. If this article strikes you as rele..."
 date: "2021-05-19"
 authors:

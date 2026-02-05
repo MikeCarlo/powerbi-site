@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Using Power Apps, Power BI and Power Automate Together"
 excerpt: "Using Power Apps Power BI and Power Automate together can unleash huge benefits and enhance your solutions. Creating an end-user-centric dashboard and..."
 date: "2021-03-09"
 authors:

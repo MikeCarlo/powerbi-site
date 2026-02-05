@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Icons upon Icons"
 excerpt: "I am just bursting with excitement!! This month the amazing Power BI team has yet again come out with a great new feature, Icon sets. In addition to t..."
 date: "2019-07-18"
 authors:

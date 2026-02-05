@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Use Multiple Connections Between Tables"
 excerpt: "For those of you who work in supply chain management this tutorial will be right up your alley.  In my previous job position I had a lot of interactio..."
 date: "2017-07-05"
 authors:

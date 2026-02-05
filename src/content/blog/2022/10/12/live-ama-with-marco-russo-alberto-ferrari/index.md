@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.tips"
+title: "Live AMA with Marco Russo & Alberto Ferrari"
 excerpt: "When the moon hits your eye… If Dean Martin were still alive and loved Power BI as much as we do… Do you think he might change up the lyrics of his so..."
 date: "2022-10-12"
 authors:
