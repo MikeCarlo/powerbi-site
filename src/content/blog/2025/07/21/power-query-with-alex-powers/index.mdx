@@ -1,47 +1,25 @@
 ---
-title: "Power Query with Alex Powers"
+title: "Max Performance in Power Query – Ep. 422"
 date: "2025-07-21"
 authors:
   - "Alex Powers"
   - "Mike Carlo"
+  - "Tommy Puglia"
 categories:
   - "Power Query"
   - "Microsoft Fabric"
 tags:
   - "Power Query"
-  - "M"
-  - "ETL"
   - "Performance"
+  - "Dataflows"
+  - "Query Folding"
+  - "Fabric"
   - "Podcast"
-excerpt: "Alex Powers joins Power BI Tips to explore advanced techniques and essential skills in Power Query, aimed at maximizing performance and deepening understanding of this data engineering tool."
+excerpt: "Alex Powers joins the Explicit Measures podcast to deep dive into optimizing Power Query for maximum performance, covering dataflows Gen 1 vs Gen 2, query folding, staging patterns, and the evolving role of Power Query in Microsoft Fabric."
 featuredImage: "./assets/featured.jpg"
 ---
 
-## Power Query with the original Power[s]
-
-Alex Powers is a staple in the Power BI community. Especially when it comes to working with Power Query. We had a super fun time unpacking all the rich features of Power Query with Alex in this series.
-
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/videoseries?list=PLn1m_aBmgsbH56WiQgJCaoWWUjuoqOYjv" 
-  title="Power Query with Alex Powers - Playlist"
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen
-></iframe>
-
-## 📋 Playlist Summary
-
-Alex Powers joins Power BI Tips to explore advanced techniques and essential skills in Power Query, aimed at maximizing performance and deepening understanding of this data engineering tool.
-
-## ▶️ Videos in the Playlist
-
-### Max Performance in Power Query – Ep. 422
-
-A deep dive into optimizing Power Query for maximum performance.
-
-**Duration:** 1:09:00
+Alex Powers is a staple in the Power BI community, especially when it comes to Power Query. In this episode, we had a super fun time unpacking performance optimization strategies and the evolving landscape of dataflows in Microsoft Fabric.
 
 <iframe 
   width="560" 
@@ -53,23 +31,110 @@ A deep dive into optimizing Power Query for maximum performance.
   allowfullscreen
 ></iframe>
 
-### Power Query, Skills to Know and Learn – Ep. 421
+## The Power Query Landscape in Fabric
 
-Covers essential skills and knowledge areas for mastering Power Query.
+Power Query lives in many places—Power BI Desktop, Excel, Dataflows Gen 1, Dataflows Gen 2, and now deeply integrated into Microsoft Fabric. With over 30 million Power BI users and Excel's massive 700-800 million user base, Power Query has become the de facto tool for data transformation.
 
-**Duration:** 1:03:09
+But here's the thing: **Power Query in Fabric isn't just ETL anymore—it's ELT** (Extract, Load, Transform). This paradigm shift changes how we should think about performance optimization.
 
-<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/_JmrI-a-7iw" 
-  title="Power Query, Skills to Know and Learn – Ep. 421"
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen
-></iframe>
+## Dataflows Gen 1 vs Gen 2: What's the Difference?
 
-## Listen on Your Favorite Platform
+One of the most confusing aspects of the current landscape is understanding when to use Gen 1 vs Gen 2 dataflows:
+
+### Gen 1 Dataflows
+- Traditional ETL approach
+- Writes to internal storage
+- Works with Power BI semantic models directly
+- Enhanced compute engine available (tenant setting)
+- Still relevant for many Power BI-centric scenarios
+
+### Gen 2 Dataflows
+- Native to Fabric
+- Supports ELT patterns—load first, transform later
+- Integrates with Lakehouses and Warehouses
+- Uses Fabric CUs (Capacity Units) for compute
+- Better for large-scale data engineering scenarios
+
+Alex made an important point: **"The UI is exactly the same, but the execution engines are vastly different."** This can be deceptively confusing for users who expect identical behavior.
+
+## Query Folding: The #1 Performance Lever
+
+If there's one thing to take away from this episode, it's this: **maintain query folding at all costs**.
+
+Query folding pushes your transformations back to the source database, letting SQL Server, Snowflake, or whatever your source is do the heavy lifting. The moment you break the fold, Power Query has to pull all the data locally and process it—which is dramatically slower.
+
+### Tips for Maintaining Query Folding
+
+1. **Keep transformations simple and SQL-compatible** — Complex M functions often break folding
+2. **Check folding status** — Right-click on steps to see if they fold
+3. **Order matters** — Do foldable operations first, non-foldable operations last
+4. **Use native queries when needed** — Sometimes writing raw SQL is the right answer
+
+## The Staging Pattern
+
+Alex advocates for a **staging approach** in Fabric:
+
+1. **Copy Job / Fast Copy** — Move data from source to Lakehouse or Warehouse as quickly as possible
+2. **Staging Dataflow** — Light transformations, maintain folding
+3. **Final Dataflow** — Business logic, complex transforms
+4. **Semantic Model** — Ready for reporting
+
+This ELT pattern means you're not waiting for transformations to complete before data lands in your lake. The data is there, and you transform it in place using the power of Fabric's compute.
+
+## Performance Optimization Strategies
+
+### 1. Don't Over-Engineer
+
+> "There's a deception in it being too easy. You can do everything with dataflows, but you shouldn't."
+
+Just because Power Query *can* do something doesn't mean it *should*. For massive data volumes, consider:
+- Copy Jobs for bulk data movement
+- Notebooks for complex Python/Spark transformations
+- SQL views for heavy aggregations
+
+### 2. Understand Your CU Consumption
+
+In Fabric, everything costs CUs. Dataflow Gen 2 execution consumes compute resources. Alex recommends:
+- Monitor your CU usage
+- Understand which operations are expensive
+- Optimize refresh patterns (incremental refresh where possible)
+
+### 3. V-Order Optimization
+
+Dataflows Gen 2 can apply V-Order compression when writing to Lakehouses. This Vertipaq-style optimization significantly improves Direct Lake performance downstream. The feature exists but isn't always obvious—check your dataflow settings.
+
+### 4. Know When NOT to Use Dataflows
+
+- **High-volume copy operations** → Use Copy Jobs
+- **Complex data engineering** → Consider Notebooks
+- **Real-time scenarios** → Look at Eventstreams
+- **Simple staging** → Maybe just a shortcut or linked table
+
+## The AI Angle
+
+The conversation touched on how AI (Copilot) is evolving in the Power Query space. While it's getting better at writing M code, Alex noted:
+
+> "I don't want it to be too easy. You still need to understand what you're building."
+
+The concern is that AI makes it easy to create queries that *work* but aren't *optimal*. Understanding the fundamentals of query folding and execution patterns remains critical.
+
+## Key Takeaways
+
+1. **Dataflows Gen 1 ≠ Gen 2** — Same UI, different engines, different use cases
+2. **Query folding is everything** — Maintain it, monitor it, optimize for it
+3. **Think ELT, not ETL** — In Fabric, load first, transform in place
+4. **Use the right tool** — Dataflows are amazing but not for everything
+5. **Staging patterns win** — Break complex pipelines into logical steps
+6. **Monitor CU consumption** — Performance and cost go hand in hand
+
+## Listen & Subscribe
+
+Catch the full episode and subscribe to the Explicit Measures podcast:
 
 - [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083)
 - [Spotify](https://open.spotify.com/show/explicit-measures)
+- [YouTube](https://www.youtube.com/playlist?list=PLn1m_aBmgsbH56WiQgJCaoWWUjuoqOYjv)
+
+---
+
+Want to dive deeper into Power Query? Check out [Training.tips](https://training.tips) for comprehensive courses on Power BI, Power Query, and Microsoft Fabric.
