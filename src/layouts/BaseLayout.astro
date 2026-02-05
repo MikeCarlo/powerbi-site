@@ -14,9 +14,9 @@ const { title = 'PowerBI.tips', description = 'PowerBI.tips blog and resources.'
     <meta name="description" content={description} />
     <title>{title}</title>
   </head>
-  <body class="bg-white text-neutral-900">
+  <body class="bg-white text-neutral-900 min-h-screen flex flex-col">
     <Header />
-    <main class={`mx-auto min-h-[60vh] w-full px-6 py-10 ${fullWidth ? '' : 'max-w-6xl'}`}>
+    <main class={`mx-auto w-full px-6 py-10 flex-grow ${fullWidth ? '' : 'max-w-6xl'}`}>
       <slot />
     </main>
     <Footer />
