@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map((post) => ({
+    ...post,
+    slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')
+  }));
+
+// Group posts by year
+const postsByYear = new Map<number, typeof posts>();
+
+posts.forEach((post) => {
+  const year = post.data.date.getFullYear();
+  if (!postsByYear.has(year)) {
+    postsByYear.set(year, []);
+  }
+  postsByYear.get(year)!.push(post);
+});
+
+// Sort years descending
+const sortedYears = Array.from(postsByYear.entries())
+  .sort(([a], [b]) => b - a);
+
+const totalPosts = posts.length;
+---
+
+<BaseLayout title="All Posts | PowerBI.tips" description="Complete archive of all PowerBI.tips blog posts organized by year.">
+  <section class="mb-8">
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">All Posts</h1>
+    <p class="mt-4 text-lg text-neutral-600">
+      {totalPosts} posts from {sortedYears[sortedYears.length - 1]?.[0]} to {sortedYears[0]?.[0]}
+    </p>
+  </section>
+
+  <section class="space-y-4">
+    {sortedYears.map(([year, yearPosts], index) => (
+      <details class="group rounded-xl border border-neutral-200 bg-white" open={index === 0}>
+        <summary class="flex cursor-pointer items-center justify-between p-5 font-semibold text-neutral-900 hover:bg-neutral-50">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-bold text-blue-600">{year}</span>
+            <span class="text-sm text-neutral-500">({yearPosts.length} post{yearPosts.length !== 1 ? 's' : ''})</span>
+          </div>
+          <svg class="h-5 w-5 text-neutral-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="border-t border-neutral-100 p-5">
+          <ul class="space-y-3">
+            {yearPosts.map((post) => (
+              <li class="flex items-start gap-4">
+                <span class="text-xs text-neutral-400 whitespace-nowrap pt-1 w-20">
+                  {post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                </span>
+                <div class="flex-1">
+                  <a href={`${base}${post.slug}/`} class="text-blue-600 hover:text-blue-700 hover:underline font-medium">
+                    {post.data.title}
+                  </a>
+                  {post.data.authors?.length > 0 && (
+                    <span class="text-xs text-neutral-400 ml-2">
+                      by {post.data.authors.join(', ')}
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </details>
+    ))}
+  </section>
+</BaseLayout>
