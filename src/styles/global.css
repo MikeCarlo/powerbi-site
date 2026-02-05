@@ -4,8 +4,13 @@
   color-scheme: light;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  min-height: 100%;
 }
 
 a {
