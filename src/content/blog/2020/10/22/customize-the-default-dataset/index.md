@@ -16,6 +16,8 @@ Quite often I need to prototype a visual, or work on some sample data to design 
 
 ## Watch the YouTube Video
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iV371zX100s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Additional Thoughts
 
 In this video I explain that the dataset does not auto load with datatypes enabled. This was due to my default setting within Power BI desktop. If you’d like you can make Power BI Desktop auto detect your datatypes for you.

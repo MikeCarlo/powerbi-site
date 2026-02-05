@@ -16,6 +16,8 @@ Obviously working with so many companies you can see what works and what does no
 
 Check out the full video below. [Link for YouTube Video](https://youtu.be/ynF_9MS2ktw).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ynF_9MS2ktw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Thank You and Follow
 
 Massive thank you to Matthew our presenter. Huge shout out to James Bartlett and Dipo Thompson for the planning. Be sure to follow our presenters on LinkedIn.

@@ -16,6 +16,8 @@ Welcome to today’s tutorial where we dive into the powerful capabilities of th
 
 If you prefer to follow along via video, you can check out the full walkthrough on the PowerBI.tips YouTube video here:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TBQFtlFvsFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Step 1: Copy and Edit Project File
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2024/02/image-1024x585.png)

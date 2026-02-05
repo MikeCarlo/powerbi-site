@@ -25,3 +25,5 @@ The Milwaukee Brew City PUG for February had tons of rich demo content. Steve Ca
 *   [Making Custom Analyze in Excel Files – Part 9](https://youtu.be/lXZeva5L8jc)
 
 ### View the YouTube Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mfFMafo-JCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

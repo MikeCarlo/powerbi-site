@@ -14,6 +14,8 @@ Welcome to today’s tutorial where we’ll explore the Power BI Tips+ Theme Gen
 
 If you prefer to follow along via video, you can check out the full walkthrough on the PowerBI.tips YouTube video here:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pcjrk3wStVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Accessing Power BI Tips+ Gallery
 
 **Step 1:** To begin, head over to [powerbi.tips](https://powerbi.tips/) and navigate to Tools > “Themes New” section. Select the “Gallery” and you will notice the collection of Gallery Projects _(A Gallery Project is comprised of a background, theme, and Power BI visuals all in one package)_. Highlight the Sunset theme for today’s demonstration, and select the “download .pbip Project”

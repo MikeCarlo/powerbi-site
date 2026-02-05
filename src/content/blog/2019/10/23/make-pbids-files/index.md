@@ -16,6 +16,8 @@ In October of 2019 Power BI released a new file type, PBIDS. The Power BI Deskto
 
 Today we release the new tool called Connections. It can be found at [https://connections.powerbi.tips/](https://connections.powerbi.tips/) . With this tool you can use our predefined templates or customize one of your own file. To learn more about this sweet sweet JSON editing tool check out the following YouTube Video:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0ZRbipyigng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Technical Details
 
 For more information on the Power BI Desktop Source file check out these links:

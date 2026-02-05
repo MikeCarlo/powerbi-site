@@ -14,6 +14,8 @@ Welcome to today’s tutorial where we’ll explore an exciting feature implemen
 
 If you prefer to follow along via video, you can check out the full walkthrough on the PowerBI.tips YouTube video here:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YvY8gJlSqRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Background
 
 Designing the look & feel of a report typically begins with tools like PowerPoint, Adobe XD, Illustrator, or Figma, where we craft our initial background designs. Whether simple boxes or intricate layouts, these designs serve as the canvas for our data stories. We decide what visuals we want, how many objects we want on a page, and how much real estate to assign. A lot of time is spent doing this. However, once you have this background image, you still have to create all the visual objects and nudge them into place.

@@ -16,7 +16,11 @@ To read about the full release from Microsoft hit the [link here](https://powerb
 
 The April 2017 Update:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AWMaIaI8G2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Check out the Add Column by Example demo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For other great Power BI videos click the image below:
 
