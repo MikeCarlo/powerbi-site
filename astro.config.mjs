@@ -15,8 +15,20 @@ export default defineConfig({
   base,
   output: 'static',
   trailingSlash: 'always',
-  vite: {
-    plugins: [tailwindcss()]
+  image: {
+    formats: ['avif', 'webp'],
   },
-  integrations: [mdx(), organizedSitemap()]
+  vite: {
+    plugins: [tailwindcss()],
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
+  },
+  integrations: [mdx(), organizedSitemap()],
+  compressHTML: true,
 });
