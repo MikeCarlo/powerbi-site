@@ -1,8 +1,8 @@
 ---
-title: "Getting Started with Git for Data Engineers"
+title: "BI Engineer Training Plan: Git-Backed Workspaces & CI/CD"
 date: "2026-02-06"
 authors:
-  - "Mike Carlo"
+  - "Dan Meissner"
 categories:
   - "Microsoft Fabric"
   - "DevOps"
@@ -12,194 +12,533 @@ tags:
   - "CI/CD"
   - "Version Control"
   - "Training"
-excerpt: "A complete training plan for BI Engineers to master Git-backed Fabric workspaces—from basic concepts to confident commits."
+  - "Deployment Pipelines"
+excerpt: "A complete phased training plan for BI Engineers to master Git-integrated Fabric workspaces, from basic commits to branching strategies and CI/CD."
 featuredImage: "./assets/featured.png"
 ---
 
-If you're a BI Engineer who's heard "we're moving to Git" and felt a twinge of panic, this guide is for you. Git-integrated Fabric workspaces are becoming the standard, and understanding version control is now an essential skill for data professionals.
+This training plan supports your phased rollout of Git-integrated Fabric workspaces. Each phase builds on the previous, allowing BI Engineers to develop confidence before adding complexity.
 
-This training plan walks you through everything you need to know—no prior Git experience required.
+**Audience:** BI Engineers with Power BI/Fabric experience but limited or no Git background
 
-## Why Git Matters for BI Work
+**Prerequisites:** Access to Azure DevOps, Fabric workspace contributor rights
 
-Before diving into buttons and commands, let's understand *why* organizations are adopting Git for their Fabric workspaces:
+![Training phases overview](./assets/phases-overview.png)
 
-### Track Who Changed What and When
+---
 
-Ever opened a report and wondered "who changed this measure?" With Git, every change is recorded with a timestamp, author, and description. No more detective work.
+## Phase 1: Foundation — Main Branch & Basic Sync
 
-### Safely Experiment Without Breaking Production
+**Goal:** Engineers can commit changes from Development workspace to Git and understand the sync relationship.
 
-Git lets you try new approaches without risking your production reports. If an experiment fails, you simply don't save it. Your stable version remains untouched.
+### Training Module 1.1: Git Fundamentals for BI Professionals
 
-### Enable Collaboration Without Overwriting Each Other's Work
+*Duration: 2 hours — Conceptual training, no hands-on coding required yet*
 
-Multiple developers can work on the same project simultaneously. Git helps merge changes together and alerts you when two people modified the same item.
+#### Topics to Cover
 
-## The "Snapshot" Mental Model
+**What is version control and why it matters for BI work:**
 
-Here's the key concept that makes Git click: **each commit captures the entire state of your workspace items**.
+- **Track who changed what and when** — No more detective work wondering who modified that measure
+- **Safely experiment without breaking production** — Try new approaches with a safety net
+- **Enable collaboration without overwriting each other's work** — Multiple developers, one source of truth
 
-Think of it like a photograph of your entire workspace at a moment in time. Git efficiently stores only what changed between photos, but you can restore any full snapshot whenever needed.
+**The "snapshot" mental model:**
 
-This is dramatically better than the old approach of saving files as "Report_v1", "Report_v2", "Report_FINAL", "Report_FINAL_v2"—you know the chaos.
+- Each commit captures the entire state of your workspace items
+- Git efficiently stores only what changed, but you can restore any full snapshot
+- Contrast with "save as v1, v2, v3" file naming chaos
 
-## Core Vocabulary
+**Core vocabulary (keep it simple):**
 
-Git has its own language, but you only need a handful of terms to get started:
-
-| Term | What It Means |
-|------|---------------|
+| Term | Definition |
+|------|------------|
 | **Repository (repo)** | The container for all your workspace items and their history |
 | **Commit** | A saved snapshot with a message describing what changed |
-| **Branch** | A parallel line of development (we'll start with just "main") |
+| **Branch** | A parallel line of development (Phase 1 uses only "main") |
 | **Sync** | Bidirectional—push your changes up, pull others' changes down |
 
-That's it. Four terms to start.
+**What gets stored in Git vs. what doesn't:**
 
-## What Git Stores (and What It Doesn't)
+| ✅ Stored | ❌ Not Stored |
+|-----------|---------------|
+| Semantic models | Data itself |
+| Reports | Refresh schedules |
+| Notebooks | Workspace settings |
+| Data pipelines | Some connection credentials |
 
-Understanding what actually lives in Git helps set expectations:
+**Delivery Method:** Instructor-led session with visual diagrams. Avoid command-line examples—focus on concepts.
 
-### Stored in Git
-- Semantic models (as JSON metadata)
-- Reports (as JSON metadata)
-- Notebooks
-- Data pipelines
-- Dataflows
+**Assessment:** Short quiz on terminology and concepts.
 
-### NOT Stored in Git
-- The actual data (just the model definition)
-- Refresh schedules
-- Workspace settings
-- Some connection credentials
+---
 
-This means Git captures *how* your reports and models are built, not the data flowing through them.
+### Training Module 1.2: Azure DevOps Navigation
 
-## Phase 1: Foundation Training
+*Duration: 1 hour*
 
-Let's break down the training into digestible modules. This first phase focuses on using a single "main" branch—no complex branching yet.
+Engineers need basic familiarity with where their work lives in Azure DevOps.
 
-### Module 1: Azure DevOps Navigation
+#### Topics to Cover
 
-Before touching Fabric's Git integration, get comfortable with where your work lives in Azure DevOps.
+- Logging into Azure DevOps and finding your project/repo
+- Viewing commit history — Who made changes and when
+- Reading commit messages
+- Viewing what changed in a commit (the "diff")
+- Understanding the repo structure — How Fabric items appear as folders/files
 
-**Skills to practice:**
+#### Hands-On Exercise
 
-1. Log into Azure DevOps and find your project/repo
-2. View commit history—see who made changes and when
-3. Read commit messages to understand what changed
-4. View the "diff" (what changed in a specific commit)
-5. Navigate the repo structure to find specific reports or models
+1. Navigate to your team's repo
+2. Find a recent commit and identify: who made it, when, what changed
+3. Locate a specific semantic model or report in the repo file structure
 
-**Exercise:** Find a recent commit in your team's repo. Identify who made it, when, and what changed.
+**Delivery Method:** Screen-share walkthrough followed by guided exploration.
 
-### Module 2: The Source Control Panel in Fabric
+---
 
-This is where you'll spend most of your time. The Source Control panel shows:
+### Training Module 1.3: Fabric Git Integration — Connecting & Committing
 
-- **Synced**: Your workspace matches what's in Git
-- **Changes pending**: You have uncommitted work
-- **Update required**: Others have committed and you need to pull
-- **Conflicts**: You and someone else changed the same item
+*Duration: 2 hours — This is the critical hands-on session for Phase 1*
 
-Understanding these status indicators prevents confusion and frustration.
+![Daily Git workflow](./assets/daily-workflow.png)
 
-### Module 3: Committing Your Changes
+#### Topics to Cover
 
-The most common action you'll take. Here's the workflow:
+**Connecting a workspace to a Git repo (demo by admin, engineers observe):**
+- This is typically a one-time setup by leads/admins
+- Engineers understand the connection exists but won't configure it themselves
 
-1. Make changes to your reports or models in Fabric
-2. Open the Source Control panel
-3. Review what changed
-4. Write a clear commit message
-5. Commit your changes
+**The Source Control panel in Fabric:**
+- Where to find it
+- Understanding the status indicators:
+  - ✅ **Synced** — Your workspace matches Git
+  - 📝 **Changes pending** — You have uncommitted work
+  - ⬇️ **Update required** — Others have committed changes
+  - ⚠️ **Conflicts** — You and someone else changed the same item
 
-**Writing Good Commit Messages**
+**Committing your changes:**
+- When to commit (logical units of work, not every tiny edit)
+- Selecting which items to include in a commit
 
-Bad messages tell you nothing:
-- ❌ "updates"
-- ❌ "fixed stuff"
-- ❌ "changes"
+**Writing good commit messages:**
 
-Good messages are specific:
-- ✅ "Add YTD calculation to Sales semantic model"
-- ✅ "Fix incorrect date filter on Regional Report"
-- ✅ "Update customer dimension with new geography columns"
+| ❌ Bad | ✅ Good |
+|--------|---------|
+| "updates" | "Add YTD calculation to Sales semantic model" |
+| "fixed stuff" | "Fix incorrect date filter on Regional Report" |
+| "changes" | "Update customer dimension with new geography columns" |
 
-Future you (and your teammates) will thank you for descriptive messages.
+**Pulling changes from Git (Sync/Update):**
+- When others have committed, you need to pull before you can push
+- Understanding the "update required" status
+- Handling the "your workspace has changes AND the repo has changes" scenario:
+  1. Commit your work first
+  2. Then update
 
-### When to Commit
+#### Hands-On Exercise (in a sandbox/training workspace)
 
-Commit in **logical units of work**, not after every tiny edit:
+1. Make a small change to a report or semantic model
+2. Open Source Control, review what changed
+3. Write a descriptive commit message and commit
+4. Have a partner make and commit a different change
+5. Pull/sync to receive your partner's changes
 
-- ✅ After completing a new measure or measure group
-- ✅ After fixing a bug
-- ✅ After adding a new report page
-- ✅ Before leaving for the day (if work is stable)
+**Delivery Method:** Instructor-led with immediate hands-on practice. Pair engineers up.
 
-Don't commit half-finished work to the main branch—it affects everyone.
+---
 
-## Pulling Changes from Others
+### Training Module 1.4: Understanding Deployment Pipelines
 
-When teammates commit changes, you'll see "update required" in your Source Control panel. Before you can push your own changes, you need to pull theirs.
+*Duration: 1.5 hours — In Phase 1, engineers primarily observe the pipeline; the Release Manager operates it*
 
-**The workflow when both you and the repo have changes:**
+![Deployment pipeline](./assets/deployment-pipeline.png)
 
-1. Commit your local changes first
-2. Pull (sync) from the repo
-3. Resolve any conflicts if prompted
-4. Your workspace now has everyone's changes
+#### Topics to Cover
 
-> **Pro Tip:** Pull frequently, even if you don't have changes to push. This keeps you in sync and reduces merge conflicts.
+**The three-environment model:** Development → Test → Production
+- Why we separate them (protect production, enable testing)
+- What "deploy" means (copying workspace items between environments)
 
-## Common Scenarios
+**Fabric Deployment Pipelines overview:**
+- Visual walkthrough of the pipeline interface
+- Understanding deployment status indicators
+- What gets deployed vs. what's environment-specific
 
-### "I made changes but someone else did too"
+**The Release Manager role:**
+- Who triggers deployments and when
+- The approval process at merge time
 
-1. Commit your changes with a clear message
-2. Click Update/Sync
-3. Git will merge the changes automatically if they don't conflict
-4. If they do conflict, you'll be prompted to choose which version to keep
+**Engineer responsibilities in Phase 1:**
+- Make changes only in Development workspace
+- Commit changes to Git with clear messages
+- Communicate with Release Manager when features are ready
 
-### "I want to undo my local changes"
+**Delivery Method:** Demo/walkthrough by Release Manager or Admin. Q&A focused.
 
-If you made experimental changes and want to discard them:
+---
 
-1. In the Source Control panel, find the changed items
-2. Select "Undo" or "Discard changes"
-3. Your workspace reverts to match what's in Git
+### Phase 1 Reinforcement Activities
 
-### "I committed something I shouldn't have"
+**Weekly for first month:**
+- 15-minute "Git check-in" during team standup
+- Engineers share: one commit they made, one thing they learned or found confusing
 
-Talk to your team lead or admin. There are ways to revert commits, but it's better to be careful than to need this often.
+**Documentation to Provide:**
+- One-page quick reference: "How to Commit Your Changes"
+- Commit message guidelines with examples relevant to BI work
+- Who to contact when something goes wrong
 
-## Building Good Habits
+**Success Metrics:**
+- ✅ All engineers have made at least 5 commits independently
+- ✅ Commit messages are descriptive (spot-check by leads)
+- ✅ No incidents of lost work due to sync issues
 
-As you get comfortable with Git, these habits will serve you well:
+---
 
-1. **Pull before you start work each day** — Get everyone's latest changes
-2. **Commit often, but meaningfully** — Logical chunks, not every keystroke
-3. **Write clear commit messages** — Your future self will thank you
-4. **Don't fear the Source Control panel** — Check it regularly
-5. **Ask for help with conflicts** — Until you're confident, get a second opinion
+## Phase 2: Deployment Pipeline Proficiency
 
-## What's Next: Beyond Phase 1
+**Goal:** Engineers understand the full deployment lifecycle and can participate in release planning. Release Manager handles execution.
 
-Once you're comfortable with basic commits and syncing on the main branch, Phase 2 introduces:
+### Training Module 2.1: Deep Dive on Deployment Pipelines
 
-- **Feature branches**: Work in isolation, merge when ready
-- **Pull requests**: Code review before changes go live
-- **CI/CD pipelines**: Automated testing and deployment
+*Duration: 2 hours*
 
-But those are topics for another post. For now, focus on mastering the fundamentals.
+#### Topics to Cover
+
+**Detailed pipeline mechanics:**
+- Comparing items across stages (what's different between Dev and Test?)
+- Understanding "newer in source" vs. "newer in target" indicators
+- Selective deployment (deploying specific items, not everything)
+
+**Deployment rules and parameters:**
+- Environment-specific connection strings
+- Parameter rules (how the same model connects to different data sources per environment)
+- Why Test might point to a copy of production data
+
+**Deployment history and rollback concepts:**
+- Viewing what was deployed when
+- If something breaks in Test, how do we recover?
+
+**Common deployment scenarios:**
+- Deploying a new report (exists in Dev, doesn't exist in Test yet)
+- Deploying updates to an existing semantic model
+- What happens to user-created content in downstream workspaces
+
+#### Hands-On Exercise
+
+- Walk through a staged deployment with the Release Manager
+- Engineers observe and ask questions
+- Review deployment history after completion
+
+---
+
+### Training Module 2.2: Environment-Aware Development
+
+*Duration: 1.5 hours*
+
+#### Topics to Cover
+
+**Designing for deployment:**
+- Using parameters instead of hardcoded values
+- Understanding what will and won't transfer cleanly
+
+**Testing responsibilities:**
+- When your work reaches Test, who validates it?
+- Communicating with business users about Test environment access
+
+**The feedback loop:**
+- Issues found in Test → fixes made in Dev → redeploy
+- Documenting what was tested and approved
+
+**Production considerations:**
+- Refresh schedules in Production
+- Impact on existing reports and dashboards
+- Communicating releases to end users
+
+#### Discussion Exercise
+
+Walk through a real example: "We need to add three new measures to the Sales model and update two reports. Map out the journey from development to production."
+
+---
+
+### Phase 2 Reinforcement Activities
+
+**Bi-weekly:**
+- Engineers participate in deployment planning meetings
+- Review of any deployment issues and lessons learned
+
+**Documentation to Provide:**
+- Environment comparison chart (what's different in Dev/Test/Prod)
+- Checklist: "Is my feature ready for deployment?"
+- Parameter and connection rule reference
+
+**Success Metrics:**
+- ✅ Engineers can explain the deployment path for their changes
+- ✅ Reduction in deployment failures due to environment-specific issues
+- ✅ Engineers proactively flag deployment considerations during development
+
+---
+
+## Phase 3: Branching & Collaborative Development
+
+**Goal:** Engineers work in isolated feature branches and workspaces, submitting changes via pull requests.
+
+### Training Module 3.1: Branching Concepts
+
+*Duration: 2 hours — This is a significant conceptual leap—take time here*
+
+![Branch lifecycle](./assets/branch-lifecycle.png)
+
+#### Topics to Cover
+
+**Why branches?**
+- Multiple engineers working simultaneously without conflicts
+- Isolate experimental or risky changes
+- Enable review before changes reach Main
+
+**Branch mental model:**
+- **Main branch** = the "blessed" version that syncs to Dev workspace
+- **Feature branch** = your personal copy to work in
+- Branches share history until they diverge
+
+**The feature branch lifecycle:**
+
+1. Create branch from Main
+2. Work in your Feature Workspace (synced to your branch)
+3. Commit changes to your branch
+4. When ready, request to merge back to Main
+5. After merge, your branch can be deleted
+
+**Visualizing branches:**
+- Show Azure DevOps branch visualization
+- Trace a feature from branch creation through merge
+
+#### Hands-On Exercise
+
+- View existing branches in Azure DevOps
+- Look at the commit history and identify where branches diverged
+- Trace a completed feature branch from creation to merge
+
+**Delivery Method:** Heavy use of diagrams and visualization. This is abstract—make it concrete.
+
+---
+
+### Training Module 3.2: Working with Feature Workspaces
+
+*Duration: 2.5 hours*
+
+#### Topics to Cover
+
+**Feature Workspace setup:**
+- How your feature branch connects to a dedicated workspace
+- Naming conventions (e.g., "Feature-SalesReporting-JSmith")
+- Who creates these? (Likely leads/admins initially)
+
+**Daily workflow in a feature workspace:**
+- This is now your sandbox—experiment freely
+- Commit regularly (even work-in-progress is okay on a feature branch)
+- Keep your branch updated with changes from Main
+
+**When you're ready to merge:**
+- Final testing in your feature workspace
+- Clean up any experimental commits if needed
+- Notify the team/Release Manager
+
+**After the merge:**
+- Your Feature Workspace may be deleted or recycled
+- Your changes appear in the Dev workspace (synced to Main)
+- Normal deployment pipeline takes over from there
+
+#### Hands-On Exercise (in training environment)
+
+1. Receive access to a feature workspace connected to a feature branch
+2. Make a series of changes, committing as you go
+3. Review your commit history in Azure DevOps
+
+---
+
+### Training Module 3.3: Pull Requests & Code Review
+
+*Duration: 2 hours*
+
+#### Topics to Cover
+
+**What is a Pull Request (PR)?**
+- A formal request to merge your branch into Main
+- Includes all your commits and a summary of changes
+- Opportunity for review before integration
+
+**Creating a Pull Request in Azure DevOps:**
+- Selecting source (your feature branch) and target (Main)
+- Writing a good PR description:
+  - What does this change accomplish?
+  - Any special testing needed?
+  - Related work items or requirements
+
+**The review process:**
+- Who reviews? (Leads, peers, Release Manager)
+- What reviewers look for:
+  - Does it meet requirements?
+  - Any obvious errors or issues?
+  - Naming conventions, documentation
+- Responding to feedback and making updates
+
+**Completing the merge:**
+- Approval requirements (your org's policy)
+- The merge itself (often done by Release Manager)
+- Deleting the feature branch after merge
+
+#### Hands-On Exercise
+
+1. Create a Pull Request for the work done in Module 3.2
+2. Practice reviewing a partner's PR and leaving comments
+3. Respond to comments on your own PR
+4. (Admin completes the merge in training environment)
+
+---
+
+### Training Module 3.4: Handling Sync and Merge Conflicts
+
+*Duration: 1.5 hours — Conflicts are rare in BI artifacts but engineers should know what to do*
+
+#### Topics to Cover
+
+**Why conflicts happen:**
+- Two people changed the same item in different branches
+- When branches are merged, Git can't automatically reconcile
+
+**Preventing conflicts:**
+- Communicate with teammates about who's working on what
+- Keep feature branches short-lived
+- Pull updates from Main regularly
+
+**When conflicts occur:**
+- Recognizing conflict indicators in Fabric and Azure DevOps
+- General approaches: who has the "right" version?
+- When to escalate to leads/admins
+
+**Practical resolution:**
+- For most BI artifacts, this may mean choosing one version
+- In some cases, manual re-creation of combined changes
+- Documentation: what was the conflict, how was it resolved?
+
+#### Discussion Exercise
+
+"You and a colleague both modified the Sales semantic model in separate feature branches. A conflict is detected when you try to merge. Walk through how you would handle this."
+
+---
+
+### Phase 3 Reinforcement Activities
+
+**Ongoing:**
+- Peer PR reviews (engineers review each other's work)
+- Monthly retrospective: what's working, what's confusing about the branching workflow
+
+**Documentation to Provide:**
+- Feature branch workflow diagram
+- PR template with prompts for good descriptions
+- Conflict escalation process
+
+**Success Metrics:**
+- ✅ Engineers independently create and work in feature branches
+- ✅ PRs include clear descriptions and pass review efficiently
+- ✅ Conflicts are rare and handled without major disruption
+
+---
+
+## Supporting Resources Across All Phases
+
+### Quick Reference Cards (one page each)
+
+1. Git vocabulary cheat sheet
+2. How to commit (with screenshots)
+3. Commit message examples for BI work
+4. Feature branch workflow checklist
+5. PR creation guide
+
+### Office Hours
+
+- Weekly drop-in session (30 min) for questions
+- Particularly important in first month of each phase
+
+### Champions/Mentors
+
+- Identify 1-2 engineers who pick it up quickly
+- They become first-line support for peers
+- Reduces bottleneck on leads/admins
+
+### Sandbox Environment
+
+- Maintain a training workspace/repo
+- Engineers can experiment without fear
+- Use for all hands-on exercises
+
+---
+
+## Suggested Timeline
+
+| Phase | Duration | Key Milestone |
+|-------|----------|---------------|
+| Phase 1 | 4-6 weeks | All engineers committing independently to Main |
+| Phase 2 | 3-4 weeks | Engineers participate in deployment planning |
+| Phase 3 | 6-8 weeks | Engineers using feature branches and PRs for all work |
+
+**Total estimated training time per engineer:**
+- Phase 1: ~6.5 hours instruction + practice
+- Phase 2: ~3.5 hours instruction + practice
+- Phase 3: ~8 hours instruction + practice
+
+> **Pro Tip:** Allow 2-4 weeks between phases for skills to solidify before introducing new concepts.
+
+---
+
+## Common Pitfalls to Address Proactively
+
+### 1. "I'll just commit everything at the end"
+
+- Leads to massive, hard-to-review commits
+- Risk of losing work if something goes wrong
+- **Solution:** Encourage small, frequent commits with clear messages
+
+### 2. Fear of "breaking" Git
+
+- Reassure: Git is very hard to truly break
+- Everything is recoverable (that's the point!)
+- **Solution:** Encourage experimentation in sandbox
+
+### 3. Forgetting to pull before starting work
+
+- Build habit: first thing each day, sync/update
+- **Solution:** Reduces conflicts and ensures you have latest changes
+
+### 4. Vague communication about what's ready
+
+- Establish clear signals: "committed" ≠ "ready for deployment"
+- **Solution:** Use work item states or explicit communication
+
+### 5. Long-lived feature branches
+
+- Branches open for weeks accumulate conflicts
+- **Solution:** Encourage smaller, incremental features; merge frequently to Main
+
+---
+
+## Conclusion
+
+This phased approach lets your BI Engineers build confidence incrementally:
+
+- **Phase 1** establishes the foundation of version control thinking
+- **Phase 2** connects their work to the broader release process
+- **Phase 3** enables true parallel development with professional software practices
+
+The key is patience—these concepts are second nature to software developers but genuinely new to many BI professionals. Invest in the fundamentals, provide safe spaces to practice, and celebrate early wins.
+
+---
 
 ## Resources
 
 - [Microsoft Fabric Git Integration Documentation](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
 - [Azure DevOps Repos Documentation](https://learn.microsoft.com/azure/devops/repos/)
+- [Fabric Deployment Pipelines](https://learn.microsoft.com/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)
 - [Training.tips](https://training.tips) — For hands-on Power BI and Fabric training
-
----
-
-Git might feel unfamiliar at first, but it's a skill that pays dividends. Every data professional working with Fabric will benefit from understanding version control. Start with the basics, build confidence, and soon you'll wonder how you ever worked without it.
