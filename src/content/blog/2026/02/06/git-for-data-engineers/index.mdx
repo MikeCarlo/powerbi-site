@@ -1,0 +1,205 @@
+---
+title: "Getting Started with Git for Data Engineers"
+date: "2026-02-06"
+authors:
+  - "Mike Carlo"
+categories:
+  - "Microsoft Fabric"
+  - "DevOps"
+tags:
+  - "Git"
+  - "Azure DevOps"
+  - "CI/CD"
+  - "Version Control"
+  - "Training"
+excerpt: "A complete training plan for BI Engineers to master Git-backed Fabric workspaces—from basic concepts to confident commits."
+featuredImage: "./assets/featured.png"
+---
+
+If you're a BI Engineer who's heard "we're moving to Git" and felt a twinge of panic, this guide is for you. Git-integrated Fabric workspaces are becoming the standard, and understanding version control is now an essential skill for data professionals.
+
+This training plan walks you through everything you need to know—no prior Git experience required.
+
+## Why Git Matters for BI Work
+
+Before diving into buttons and commands, let's understand *why* organizations are adopting Git for their Fabric workspaces:
+
+### Track Who Changed What and When
+
+Ever opened a report and wondered "who changed this measure?" With Git, every change is recorded with a timestamp, author, and description. No more detective work.
+
+### Safely Experiment Without Breaking Production
+
+Git lets you try new approaches without risking your production reports. If an experiment fails, you simply don't save it. Your stable version remains untouched.
+
+### Enable Collaboration Without Overwriting Each Other's Work
+
+Multiple developers can work on the same project simultaneously. Git helps merge changes together and alerts you when two people modified the same item.
+
+## The "Snapshot" Mental Model
+
+Here's the key concept that makes Git click: **each commit captures the entire state of your workspace items**.
+
+Think of it like a photograph of your entire workspace at a moment in time. Git efficiently stores only what changed between photos, but you can restore any full snapshot whenever needed.
+
+This is dramatically better than the old approach of saving files as "Report_v1", "Report_v2", "Report_FINAL", "Report_FINAL_v2"—you know the chaos.
+
+## Core Vocabulary
+
+Git has its own language, but you only need a handful of terms to get started:
+
+| Term | What It Means |
+|------|---------------|
+| **Repository (repo)** | The container for all your workspace items and their history |
+| **Commit** | A saved snapshot with a message describing what changed |
+| **Branch** | A parallel line of development (we'll start with just "main") |
+| **Sync** | Bidirectional—push your changes up, pull others' changes down |
+
+That's it. Four terms to start.
+
+## What Git Stores (and What It Doesn't)
+
+Understanding what actually lives in Git helps set expectations:
+
+### Stored in Git
+- Semantic models (as JSON metadata)
+- Reports (as JSON metadata)
+- Notebooks
+- Data pipelines
+- Dataflows
+
+### NOT Stored in Git
+- The actual data (just the model definition)
+- Refresh schedules
+- Workspace settings
+- Some connection credentials
+
+This means Git captures *how* your reports and models are built, not the data flowing through them.
+
+## Phase 1: Foundation Training
+
+Let's break down the training into digestible modules. This first phase focuses on using a single "main" branch—no complex branching yet.
+
+### Module 1: Azure DevOps Navigation
+
+Before touching Fabric's Git integration, get comfortable with where your work lives in Azure DevOps.
+
+**Skills to practice:**
+
+1. Log into Azure DevOps and find your project/repo
+2. View commit history—see who made changes and when
+3. Read commit messages to understand what changed
+4. View the "diff" (what changed in a specific commit)
+5. Navigate the repo structure to find specific reports or models
+
+**Exercise:** Find a recent commit in your team's repo. Identify who made it, when, and what changed.
+
+### Module 2: The Source Control Panel in Fabric
+
+This is where you'll spend most of your time. The Source Control panel shows:
+
+- **Synced**: Your workspace matches what's in Git
+- **Changes pending**: You have uncommitted work
+- **Update required**: Others have committed and you need to pull
+- **Conflicts**: You and someone else changed the same item
+
+Understanding these status indicators prevents confusion and frustration.
+
+### Module 3: Committing Your Changes
+
+The most common action you'll take. Here's the workflow:
+
+1. Make changes to your reports or models in Fabric
+2. Open the Source Control panel
+3. Review what changed
+4. Write a clear commit message
+5. Commit your changes
+
+**Writing Good Commit Messages**
+
+Bad messages tell you nothing:
+- ❌ "updates"
+- ❌ "fixed stuff"
+- ❌ "changes"
+
+Good messages are specific:
+- ✅ "Add YTD calculation to Sales semantic model"
+- ✅ "Fix incorrect date filter on Regional Report"
+- ✅ "Update customer dimension with new geography columns"
+
+Future you (and your teammates) will thank you for descriptive messages.
+
+### When to Commit
+
+Commit in **logical units of work**, not after every tiny edit:
+
+- ✅ After completing a new measure or measure group
+- ✅ After fixing a bug
+- ✅ After adding a new report page
+- ✅ Before leaving for the day (if work is stable)
+
+Don't commit half-finished work to the main branch—it affects everyone.
+
+## Pulling Changes from Others
+
+When teammates commit changes, you'll see "update required" in your Source Control panel. Before you can push your own changes, you need to pull theirs.
+
+**The workflow when both you and the repo have changes:**
+
+1. Commit your local changes first
+2. Pull (sync) from the repo
+3. Resolve any conflicts if prompted
+4. Your workspace now has everyone's changes
+
+> **Pro Tip:** Pull frequently, even if you don't have changes to push. This keeps you in sync and reduces merge conflicts.
+
+## Common Scenarios
+
+### "I made changes but someone else did too"
+
+1. Commit your changes with a clear message
+2. Click Update/Sync
+3. Git will merge the changes automatically if they don't conflict
+4. If they do conflict, you'll be prompted to choose which version to keep
+
+### "I want to undo my local changes"
+
+If you made experimental changes and want to discard them:
+
+1. In the Source Control panel, find the changed items
+2. Select "Undo" or "Discard changes"
+3. Your workspace reverts to match what's in Git
+
+### "I committed something I shouldn't have"
+
+Talk to your team lead or admin. There are ways to revert commits, but it's better to be careful than to need this often.
+
+## Building Good Habits
+
+As you get comfortable with Git, these habits will serve you well:
+
+1. **Pull before you start work each day** — Get everyone's latest changes
+2. **Commit often, but meaningfully** — Logical chunks, not every keystroke
+3. **Write clear commit messages** — Your future self will thank you
+4. **Don't fear the Source Control panel** — Check it regularly
+5. **Ask for help with conflicts** — Until you're confident, get a second opinion
+
+## What's Next: Beyond Phase 1
+
+Once you're comfortable with basic commits and syncing on the main branch, Phase 2 introduces:
+
+- **Feature branches**: Work in isolation, merge when ready
+- **Pull requests**: Code review before changes go live
+- **CI/CD pipelines**: Automated testing and deployment
+
+But those are topics for another post. For now, focus on mastering the fundamentals.
+
+## Resources
+
+- [Microsoft Fabric Git Integration Documentation](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration)
+- [Azure DevOps Repos Documentation](https://learn.microsoft.com/azure/devops/repos/)
+- [Training.tips](https://training.tips) — For hands-on Power BI and Fabric training
+
+---
+
+Git might feel unfamiliar at first, but it's a skill that pays dividends. Every data professional working with Fabric will benefit from understanding version control. Start with the basics, build confidence, and soon you'll wonder how you ever worked without it.
