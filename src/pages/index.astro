@@ -27,7 +27,7 @@ const posts = (await getCollection('blog'))
       <a class="text-sm font-semibold text-blue-600 hover:text-blue-700" href={`${base}search/`}>Search</a>
     </div>
     <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post) => (
+      {posts.map((post, index) => (
         <article class="rounded-xl border border-neutral-200 p-5 transition hover:-translate-y-1 hover:shadow-lg">
           {post.data.featuredImage && (
             <a href={`${base}${post.slug}/`} class="block mb-4">
@@ -37,6 +37,8 @@ const posts = (await getCollection('blog'))
                 class="w-full h-40 object-cover rounded-lg"
                 width={400}
                 height={225}
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchpriority={index === 0 ? "high" : "auto"}
               />
             </a>
           )}

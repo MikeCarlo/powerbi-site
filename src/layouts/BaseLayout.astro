@@ -13,6 +13,12 @@ const { title = 'PowerBI.tips', description = 'PowerBI.tips blog and resources.'
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+    <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+    <!-- DNS prefetch for additional domains -->
+    <link rel="dns-prefetch" href="https://open.spotify.com" />
   </head>
   <body class="bg-white text-neutral-900 min-h-screen flex flex-col">
     <Header />
