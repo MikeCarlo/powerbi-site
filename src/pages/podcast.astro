@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="The Podcast | PowerBI.tips" description="The Explicit Measures Podcast - a Power BI centric show with Mike Carlo and Tommy Puglia. Live every Tuesday and Thursday at 7:30 AM CST.">
@@ -9,7 +11,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </h1>
 
     <img
-      src="/images/podcast/podcast-hero.jpg"
+      src={`${base}images/podcast/podcast-hero.jpg`}
       alt="Explicit Measures Podcast"
       class="rounded-2xl w-full max-w-4xl mt-6"
       loading="lazy"
@@ -107,7 +109,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       rel="noopener noreferrer"
     >
       <img
-        src="/images/podcast/mailbag.jpg"
+        src={`${base}images/podcast/mailbag.jpg`}
         alt="Mail Bag - click to submit a question"
         class="rounded-xl max-w-sm w-full"
         loading="lazy"
