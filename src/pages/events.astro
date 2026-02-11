@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Events | PowerBI.tips" description="Upcoming PowerBI.tips events, workshops, and community gatherings.">
@@ -11,6 +13,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <p class="mt-4 max-w-2xl text-lg text-neutral-600">
       Join us at upcoming workshops, conferences, and community events.
     </p>
+
+    <a
+      href="https://www.meetup.com/milwaukee-brew-city-fabric/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block mt-6"
+      aria-label="Milwaukee Brew City Fabric Meetup"
+    >
+      <img
+        src={`${base}/images/events/mke-brew-city-fabric.png`}
+        alt="Milwaukee Brew City Fabric User Group"
+        class="rounded-2xl w-full max-w-4xl"
+        loading="lazy"
+      />
+    </a>
   </section>
 
   <section class="prose max-w-none">
