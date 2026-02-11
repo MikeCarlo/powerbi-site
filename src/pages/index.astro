@@ -14,6 +14,25 @@ const posts = (await getCollection('blog'))
     ...post,
     slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')
   }));
+
+function plainTextExcerpt(value) {
+  if (!value) return '';
+  return String(value)
+    // images: ![alt](url) → alt
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '$1')
+    // links: [text](url) → text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+    // strip headings/blockquote markers
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/^\s{0,3}>\s?/gm, '')
+    // strip common inline markdown tokens
+    .replace(/[*_`~]/g, '')
+    // strip any HTML tags that might sneak in
+    .replace(/<[^>]+>/g, '')
+    // collapse whitespace
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 ---
 
 <BaseLayout title="PowerBI.tips" description="PowerBI.tips blog and resources." fullWidth={true}>
@@ -55,7 +74,9 @@ const posts = (await getCollection('blog'))
               {post.data.title}
             </a>
           </h3>
-          {post.data.excerpt && <p class="mt-2 text-sm text-neutral-600">{post.data.excerpt}</p>}
+          {post.data.excerpt && (
+            <p class="mt-2 text-sm text-neutral-600">{plainTextExcerpt(post.data.excerpt)}</p>
+          )}
           {post.data.categories?.length ? (
             <div class="mt-4 flex flex-wrap gap-2">
               {post.data.categories.map((category) => (
