@@ -136,8 +136,43 @@ Your content goes here...
 
 ### Adding Images
 
-1. Place images in `public/images/`
-2. Reference them in your post: `![Alt text](/images/your-image.jpg)`
+There are two common cases: **MDX/Markdown content** and **Astro pages/components**.
+
+#### 1) Blog posts (MDX / Markdown)
+
+1. Put images in `public/images/` (or a subfolder like `public/images/podcast/`).
+2. Reference them like this:
+
+```md
+![Alt text](/images/your-image.jpg)
+```
+
+Astro will automatically apply the GitHub Pages base path at build time.
+
+#### 2) Astro pages / components (`.astro`)
+
+Because this site is deployed on GitHub Pages under a base path (see `astro.config.mjs`), **avoid hard-coding absolute paths** like:
+
+```html
+<img src="/images/podcast/mailbag.jpg" />
+```
+
+On GitHub Pages that can break because `/images/...` resolves at the domain root.
+
+Instead, prefix static-asset paths with Astro’s base URL:
+
+```astro
+---
+const base = import.meta.env.BASE_URL; // e.g. "/powerbi-site/"
+---
+
+<img src={`${base}/images/podcast/mailbag.jpg`} alt="Mail Bag" />
+```
+
+Notes:
+- `import.meta.env.BASE_URL` usually **includes a trailing slash** (example: `/powerbi-site/`).
+- To be safe, use `${base}/images/...` (ensures you don’t accidentally create `/powerbi-siteimages/...`).
+
 
 ---
 
