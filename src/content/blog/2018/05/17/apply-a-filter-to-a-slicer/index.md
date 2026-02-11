@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Often when working with a Power BI report you will add a slicer that has a “Blank” item in the selection criteria.  From a usability standpoint you might not want this item shown.  Or maybe you have multiple items in the slicer that you would like to hide from the report consumers.  The video, linked below, walks you through why the “Blank” item is shown and how to remove it.

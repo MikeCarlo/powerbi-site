@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 As report authors we sometimes get caught up in how easy it is to create a report and provide value to the business. Each report is an opportunity to make a big contribution to the organization. Power BI makes it easier than ever to turn many of those reports around quickly. This is a good thing of course. But, sometimes we can get caught up in the madness of turning out another report with only a flash of recall that we could have used the same or similar model done in a different report. The internal monologue kicks in.

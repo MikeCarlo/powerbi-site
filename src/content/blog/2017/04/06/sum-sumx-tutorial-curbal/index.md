@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Learn how to use SUM() and SUMX() with this great video from Curbal. As you become more familiar with PowerBI you will increase your understanding of DAX (Database Analysis Expressions). Microsoft has an extensive list of all the expressions you can use [found here](https://msdn.microsoft.com/en-us/library/gg413422.aspx).  One of the more common expressions you will use is SUM and SUMX.

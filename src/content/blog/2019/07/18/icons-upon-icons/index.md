@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I am just bursting with excitement!! This month the amazing Power BI team has yet again come out with a great new feature, Icon sets. In addition to this you can enhance these icon sets by adding your own custom icons to your Power BI reports. Woo Hoo….

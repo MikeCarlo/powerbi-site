@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 When you design a report, there are a number of things to consider.  For example, the types of visuals, the colors used within the visuals, and the location of the visuals.  The orientation and alignment of the visuals is a subtle but important aspect of your report build.  Doing a good job aligning the items removes distractions from the report page and allows users to engaged with your data story.

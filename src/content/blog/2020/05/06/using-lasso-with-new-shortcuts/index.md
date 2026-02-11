@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The April 2020 Power BI desktop release is an amazing release. This month the Power BI team has released a new lasso feature to enable users to select multiple visuals at a time. For me working in reports with lots of strategically placed visuals, this is HUGE!! How many times have I struggled to select a visual. Or, better yet needed to open up the visualization pane to select visuals from a list. The Lasso feature is a very welcome addition to the Power BI toolkit.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In Power BI reports various features are used to enhance the reporting experience.  Focus mode allows for a single visual to expand for dedicated interaction and review.  This video walks you though how to use the Focus Mode button on a Power BI visual.

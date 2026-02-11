@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This post will answer how to sort a measure that returns text values to a custom order, without affecting other columns. It will utilize the DAX functions of REPT() and UNICHAR(8203) – a Zero width space.

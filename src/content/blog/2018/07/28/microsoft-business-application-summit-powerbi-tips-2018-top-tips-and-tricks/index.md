@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Want to give a special thanks to the Microsoft PowerBI team for allowing PowerBI.Tips to participate in the 2018 Microsoft Business Application Summit. If you were not able to make it to this event don’t worry, we are bringing the PowerBI.Tips session to you.

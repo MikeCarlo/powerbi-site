@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 There are often questions surrounding Publish to Web.  What is it?  How can I use it to share my reports?  This video walks through the proper usage for Publish to Web and how to manage the Power BI tenant settings.

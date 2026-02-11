@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Hands down best feature this year to date, Data Table Filtering!  In the June 2018 Power BI Desktop Microsoft released the ability for you to navigate to the Data Table view.  While on this view drop down icons now appear which enable filtering of the Data Table.  This is super helpful when looking at the raw data that has been loaded into your data model.  Check out the video below to see how the feature works.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month it is a major game changer.  PowerBI has introduced the ability to change the color theme of your Power BI reports.  What does this mean for you?  Well, this means hours of time saved.  Previously when you needed to style a report you would need to click on every visual and change the colors.  This is useful when you have a specific theme or product you want to match colors with.  Now all this can be done with a couple clicks for all visuals across the entire report.  Wow!!!

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This tutorial is a variation on the [month to month percent change tutorial](http://powerbi.tips/2016/07/measures-month-to-month-percent-change/).  This specific exploration in year over year performance was born out of reviewing my google analytics information.  The specific analysis question I am trying to answer is, how did this current month of website visitors compare to the same month last year.  For example I want to compare the number of visitors for November 2016 to November 2015.  Did I have more users this year in this month or last year?  What was my percent changed between the two months?

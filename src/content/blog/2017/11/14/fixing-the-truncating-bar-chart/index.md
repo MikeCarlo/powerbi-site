@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The more you work with Power BI Desktop it is more than likely you will find some tool limitations that impact your overall design pursuits.  As I have worked with data visualization software, I find there is always a balance between what I want to make and what is possible.  The more you become familiar with your visualization tool, the better you think of report designs that are both beautiful and feasible.  One such design style that I use is to limit the use of slicers on the report page as much as possible.  My solution for removing slicers is adding a stacked bar chart or a stacked column chart.  The chart can be used as a slicer because you can click on the data bars and filter the page of data.  One of the visualization limitations I’ve had to work around was the ability to make a stacked bar chart with long y-axis titles. In order to overcome this limitation we need to fire up our creativity to figure out another way to more accurately control the y-axis labels and the associated bar chart.

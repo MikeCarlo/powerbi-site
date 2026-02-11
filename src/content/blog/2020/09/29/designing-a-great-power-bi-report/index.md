@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 What does it take to design and create a great looking report in Power BI? Do you have a clear understanding of what tools and techniques you should use every time? Recently the owners of PowerBI.Tips had the pleasure of speaking with [Reza Rad’s](https://radacad.com/about-us) user group on the fundamentals we use to build great looking reports every day.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 To everyone who was able to attend the Power BI World Tour 2017, Thank you!  It has been a pleasure presenting my favorite tips and trips.  This post consolidates all the links for each topic that was discussed.  All the links to the content are below, if you want to go through the tutorials at your own pace hit a link below.   When going through 7 topics in an hour, it is difficult to completely learn everything.  So, if your like me, you learn by doing, making mistakes and gritting it out until you understand.  Enjoy and have fun.

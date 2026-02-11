@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 “Square One” utilizes the color theme as a background component that adds a pop of accent color only. This gives you the end user the maximum flexibility to incorporate color themes that match your needs without drawing to much attention on the main part of the page. [Click here to download](https://powerbi.tips/product/layouts-square-one/)

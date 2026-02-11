@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This article examines using the advanced editor in Power Query to better handle when things go wrong. It will also allow custom actions to be triggered using Power Automate, allowing the rest of the data to be refreshed while alerting the owner by email of data source errors.

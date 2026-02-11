@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 March is an exciting month, and with this release of Power BI we have been given some long asked for features. One such feature is the ability to import a color theme. The color theme defines the starting colors for your visuals. Before the ability to import a theme one would have to first define each color that they want to use in a Power BI report by changing each visual to have the correct color scheme. Color themes are useful when trying to make a dashboard and you want to use colors that resemble a company’s product or logo. Alright, let’s get started and make and add our own color theme to a report.

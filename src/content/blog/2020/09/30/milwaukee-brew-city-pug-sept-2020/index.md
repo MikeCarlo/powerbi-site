@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 We were excited to welcome a good friend of PowerBI.Tips [Alex Powers](https://itsnotaboutthecell.com/about/) to speak with us at this months PUG meeting. Alex blew a bunch of minds by diving into the depths of Calculated Columns and the love or hate relationship we should have with them.

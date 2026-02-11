@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Here we are, jumping in to 2020. This Month PowerBI.Tips is kicking off and sponsoring the next year of Power BI user groups (PUGs) for Milwaukee. If you are not participating in your Local Power BI User Group we highly recommend that you get plugged in. Power BI User groups are intended for like minded Power BI individuals to get together and learn from each other.

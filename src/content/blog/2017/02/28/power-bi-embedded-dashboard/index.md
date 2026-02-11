@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 For a while now I have been longing to spend more time learning all the ins and out of Power BI embedded.  From the line of work that I do, I can see a number of different development applications where an embedded solution would be perfect.  Microsoft has been spending more time developing and feature enhancing the embedded experience.  The Guy in a Cube (Adam Saxton) has another great video walking through how to embed a dashboard.  Great video, and a really good walk through.  Thanks Adam.

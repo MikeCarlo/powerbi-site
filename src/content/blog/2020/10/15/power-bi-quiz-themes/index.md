@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month I had the privilege of participating in the Power BI Quiz. If you don’t know about the Power BI Quiz show, this is an event that is put on by Just Blindbaek. Just does a great job of creating a Season of Quizzes. Experts from across the Power BI community are co-hosts and submit questions about a specific topic.

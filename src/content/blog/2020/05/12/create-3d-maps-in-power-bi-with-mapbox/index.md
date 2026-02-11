@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you’ve played around with MapBox in Power BI – you’ll know that it has loads of great features to create really rich and beautiful maps! And one of my favorite ways to get a new client excited about Power BI is to create an awesome 3D map of their city. Now, I know that 3D features get a bit of a bad wrap in traditional data viz circles (don’t even think about creating a 3D pie chart!!!), so why then are 3D maps different?

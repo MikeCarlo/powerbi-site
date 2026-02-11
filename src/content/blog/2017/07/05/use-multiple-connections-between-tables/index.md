@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 For those of you who work in supply chain management this tutorial will be right up your alley.  In my previous job position I had a lot of interaction with our shipping department.  We would look at when orders were placed from the customer, and conduct a comparison to what orders were actually shipped or cancelled prior to shipment.  Our analytics team would produce reports and metrics to our customers about orders and shipment information.

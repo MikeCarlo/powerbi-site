@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 While on a recent project I needed to build a variation of the DAX date table.  In my previous post, found here [Creating DAX Date Tables](https://powerbi.tips/2017/11/creating-a-dax-calendar/) I was built a date table for every day of the month for multiple years.  I’ve only ever needed to consume a fully populated date calendar, but in this instance because the data I was collecting was already aggregated to the first of the month I only needed a date calendar with each month’s start date.  After some playing around with my previous DAX functions I think I was able to come up with an elegant solution.

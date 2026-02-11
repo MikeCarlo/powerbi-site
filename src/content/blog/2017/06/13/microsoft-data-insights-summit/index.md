@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This year I had the wonderful privilege to attend the Microsoft Data Insights summit for 2017 as a speaker.  My topic was the Top Ten Tutorials from PowerBI.Tips.  So, let me say thank you to all those who attended you provided a very fun audience and were very positive, Thanks.   For those of you who couldn’t make it to the Data Insights Summit below is the actual talk:

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I love these updates, it’s like Christmas comes every month!!  This month we get a ton of really great features, I for one am super pumped to get into the tool and checking it out.

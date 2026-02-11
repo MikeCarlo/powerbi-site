@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Sometimes when your working on a line chart you want the x-axis to stay centered on a chart. This tutorial will walk you through how to create an X-Axis that will always center it’s self on the graph.

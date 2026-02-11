@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Tabular Editor is an incredible Tool that enables users to manipulate a Tabular model at lighting speeds.  Daniel Otykier is the creator of the Tabular Editor program. We are producing a video series to enable users of Power BI and data modelers for Analysis Services to learn more about this program.

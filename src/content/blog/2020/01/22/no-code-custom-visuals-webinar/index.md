@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month we did a webinar with the Microsoft team on how to build different custom visuals in [Charts.PowerBI.Tips](https://charts.powerbi.tips/) a version of [Charticulator](https://charticulator.com/).

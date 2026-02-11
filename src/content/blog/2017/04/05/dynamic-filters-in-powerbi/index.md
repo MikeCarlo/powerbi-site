@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This video talks about how to create custom links that apply report level filters.  This is super cool and provides a ton of wide flexibility when building drill down reports.  In this example Patrick talks to filtering a report based on a Sales Person (Lilly Code).  Great technique for drilling down into subsets of data within a report.  If implemented in correctly this will enhance the user experience.

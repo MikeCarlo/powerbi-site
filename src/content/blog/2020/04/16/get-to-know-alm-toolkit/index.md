@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The ALM Toolkit is an excellent tool for aiding users with Tabular Model management. Christian Wade has been generous enough to provide us with a detailed tutorial on the ALM ToolKit.

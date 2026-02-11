@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This report is just over the top amazing cool! Check out the work done by the Microsoft team to make this incredible report. It is called the Microsoft Sales & Returns report. We love this one so much we have produced over **48 HIGH RESOLUTION** scrims based on this report design. [Download all of them for free](https://powerbi.tips/product/scrims-msft-skateboard-report-free/).

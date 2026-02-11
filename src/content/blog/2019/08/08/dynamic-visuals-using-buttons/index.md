@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Sometimes, we want the users to see different metrics, but do not want to take up too much space on our page. The scenario we are going to walk through is how to build just one visual (in this case a bar graph). It will include a toggle that allows the user to select their desired calculation, either the sum of Volume, Dollars or Margin.

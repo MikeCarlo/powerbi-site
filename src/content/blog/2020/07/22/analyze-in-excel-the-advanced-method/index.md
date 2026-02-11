@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 A common ask from users is the ability to view data related to visuals in excel. While there is an option to export data, the format is often unfriendly and has limitations. What’s more, this data becomes disconnected and is not updated if a user looks at after the data is refreshed.

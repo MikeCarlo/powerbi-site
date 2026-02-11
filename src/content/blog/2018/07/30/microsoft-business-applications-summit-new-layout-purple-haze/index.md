@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In honor of the 2018 Business Applications Summit, PowerBI.Tips has published a new layout, Purple Haze.  Purple Haze is the brain child of Seth Bauer, and utilizes the latest features of the July 2018 Power BI Desktop.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This tip outlines an easy deployment method for data tables that have been manually added to a model via “Enter data” in Power BI Desktop. This is a very effective method especially as it relates to large model deployments. The scenario is typically seen when you build data tables to support slicer/measure interactions. As those selections are made, each one of the values will generate a different DAX calculation to drive a different insight.

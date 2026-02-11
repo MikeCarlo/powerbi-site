@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 There are different ways you can connect to a multitude of different data sources. I’ve written about the different connection types before and you can find those articles [here](https://powerbi.tips/?s=Power+bi+connection) if you are unfamiliar with what I’m talking about.

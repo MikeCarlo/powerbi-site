@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This post will walk through how to pull an estimated household income from a US address. It will be completed all in the Power Query Editor. We will convert this to a function to reuse on any address we want.  

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Here is another great tutorial from Curbal.  This tutorial teaches you how to use the DAX function UserRelationship.  This is important when your dealing with a tables in your data model that have multiple relationships.  Power BI by design can only handle one relationship between two different tables.  This will also be an important function to use when you have source tables that contain multiple date columns.  This is a pretty slick function when handling supply chain type data sets.

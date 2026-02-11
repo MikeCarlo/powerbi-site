@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 As a user that builds Power BI reports, did you know the different technologies that come into play when you interact with the tool? This is one of the first questions I ask to new audiences or people I’m training on Power BI. Why is this important? The reason is that it is crucial to understand what part of the tool you are in so that you can separate out the different tasks that you should be doing or trying to accomplish in each area. The other biggest reason is you need to know what you should be searching for in your favorite web browser when you are looking for answers to your current problem.

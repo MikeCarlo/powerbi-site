@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In Power BI reports various features are used to enhance the reporting experience.  The Ellipsis allows users to open an option menu specific to a visual.  In this video we walk through how to use the various features found when the ellipsis is clicked.

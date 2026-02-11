@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you have spent any time working in Power BI, your very first step is to, wait for it… Get Data.  Using Get Data will start loading your data into the Query Editor for Extracting, Transforming and Loading (ETL).  When you start out in Power BI it is likely that you don’t spend much time in the Query Editor.  However, the longer you use Power BI desktop, and the more you learn, you find that the Query Editor is highly under-rated.  There are so many amazing transformations that you can perform on your data.  After some time getting comfortable you’ll be building larger queries with many, many, steps.  Eventually, it may look something like this:

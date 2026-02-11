@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you’ve played around with MapBox in Power BI – you’ll know that it has loads of great features to create really rich and beautiful maps, including some great ‘out of the box’ map styles (i.e. base maps).   However, you might not be aware that it also gives you the ability to design custom Mapbox styles with your own spatial layers. I discovered this feature on a recent project where my client wanted to include Victoria’s Catchment Management Authority (or CMA) boundaries on their base-map to provide greater context to help interpret their data. Up until this point, the only option I knew of was to purchase an expensive ArcGIS Online licence to create custom map styles. So, you can imagine just how excited I was when I discovered that I could also do this in MapBox – for FREE!!!

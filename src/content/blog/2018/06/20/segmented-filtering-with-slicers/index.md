@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This weeks tutorial focuses on the need to control groups of visuals independently.  This recently came up in a project where I needed to adjust all the items on the left side of the screen independently from the right side.  By using the **Edit Interactions** button found on the **Format** ribbon you are able to adjust how different visuals interact with each other.  Finally, adding multiple Slicers to the page for controls finishes out the report.  I hope you enjoy this weeks tutorial.

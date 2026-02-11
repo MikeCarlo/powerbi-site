@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 There are many cases when you will need to create a date table within Power BI desktop.  This could be as simple as creating a master date table or more complex such as creating a monthly or weekly index number tied to a date.  To create a date table there are two methods for creating a date table.  Method one, create the table directly in the Power BI Desktop, or method two load the date table from the data source.

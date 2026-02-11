@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I’m a lazy engineer.  Let me qualify my statement.  In lazy I mean I like to find the path of least resistance, the shortest distance between two points.  Everyday I challenge myself to be lazy, or efficient how ever you want to view it.  As I have built many reports in Power BI over the years here is a fantastic trick, I use almost every day, Customizing the Quick Access Toolbar.

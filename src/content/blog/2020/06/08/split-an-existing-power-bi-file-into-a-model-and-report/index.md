@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Shared datasets are a great way to share data models across the organization. This enables users to maintain one source of the truth and increase efficiency. However, models should be built separate to reports. Meaning it can be difficult to transform an existing report into a shared dataset.

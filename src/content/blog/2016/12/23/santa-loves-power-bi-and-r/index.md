@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This past week I was talking with the big guy up north, jolly old fella, and the discussion came up about his toy production levels.  Santa was complaining about how hard it was to measure the performance of all his elves.  Naturally I started babbling about how much I enjoy Power BI and that I use it on all kinds of sources of data, google analytics, excel sheets, sharepoint, and SQL data warehouses just to name a few.  Now by this point most people would have wandered off looking for another conversation, but I must have struck a chord with Santa.  He jumped right in the conversation and told me how he had just moved all his local data centers into Azure and more specifically SQL data warehouses.  It was saving him loads of money in addition it has freed up all his I.T. elves to move to more important tasks, building the [NES Classic](http://www.nintendo.com/nes-classic/) for Nintendo, they are [way behind in production](http://www.cnbc.com/2016/12/16/nintendo-sells-196000-nes-classic-edition-retro-console.html).  To make a long story longer, I was able to convince Santa to give me a small sample of data so I could show him how to use R to visualize his data in PowerBI.  Here is what I came up with:

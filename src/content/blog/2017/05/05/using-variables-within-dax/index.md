@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Every so often you find a hidden gem, something so valuable, just hiding there in plain sight.  Recently, I found out that I LOVE the using Variables with in a DAX expression.  Ok, brief introduction, I was trying to calculate sales changes between different years.  The data looked similar to the following table:

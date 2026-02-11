@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This year the Microsoft Business Application Summit (MBAS) was held in Atlanta Georgia. Despite some travel snafu’s (3 rebooking’s and 9 delays), we made it into Atlanta late the night before the preconference sessions. Which was good, because we were presenting one!

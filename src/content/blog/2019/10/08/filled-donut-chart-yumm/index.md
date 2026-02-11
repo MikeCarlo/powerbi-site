@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 We are starting today off with a fun chart. We will be making a filled donut chart. Typically, I don’t use donut charts but in this case I think we have a good reason, and it’s delicious…

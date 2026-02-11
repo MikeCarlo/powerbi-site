@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I’ve been using Power BI since it was released back in 2015, and I’ve found that when talking with other PowerBI users there is always a little confusion about how to share Power BI reports.  My experience has been that most people are first introduced to the service and go directly to PowerBI.com, login and start playing around.  They explore a little and find a cool data source to connect to, such as a SQL database or some good old google analytics data.  Typically they will begin making a dashboard and really get into making visuals on a report.

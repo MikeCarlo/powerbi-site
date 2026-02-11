@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 PowerBI.tips is extremely happy to be part of, and contribute to, the Power BI Community. We’re constantly trying to think of new and interesting ways we can enhance the Power BI experience for everyone by providing helpful tips & tools. Some examples of what we’ve done so far are Power BI Desktop Theme generator, and the Power BI toolbox:

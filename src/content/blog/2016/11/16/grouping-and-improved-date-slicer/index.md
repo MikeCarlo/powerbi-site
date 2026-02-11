@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In the October update of PowerBI Desktop we were given a number of really useful features, ranging from a new Date Slicer, Grid lines, Grouping, Binning, Top N Filters, and R-powered custom visuals.  For the full release on the October 2016 software release you can read more [here](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-october-feature-summary/).

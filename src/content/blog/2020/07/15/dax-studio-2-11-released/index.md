@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you haven’t heard about DAX Studio, well now you have. DAX studio is an essential tool for Power BI developers. It enables you to explore and tune your tabular model with ease. This month we are pleased to have the creator of this tool Darren Gosbell present to us the latest updates for DAX Studio.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Time and time again when I begin talking with Excel users and ask to see what current reports they are using, they usually show me a table with a mixed bag of columns split by different time ranges. A comparison of month over month, or year over year, mixed in with a few daily totals or cumulative totals all rolled up from values on other tabs to produce their preferred view (or dashboard). Typically, the first approach I take is to describe how we can break up this single table view of things and start looking at the aggregations of these values in easily digestible pieces and slice and dice them in different times ranges. I’ve explained that the goal should be to produce easy to consume visuals for comparison using measures and plotting these out in different ways to glean insights quicker. Most of the time, this works, but other times… it is second best to what the analyst or uber Excel user wants to see… they want to see their numbers, and they want to see them the same way they have them in Excel.

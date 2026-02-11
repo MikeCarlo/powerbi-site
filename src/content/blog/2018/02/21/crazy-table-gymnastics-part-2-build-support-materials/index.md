@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This is part 2 in the 3 part series on developing super cool tables using some fancy measures.  In part 1 we walked through how to build a table that uses an un-pivoted data source in the Query Editor.  This technique allows you to change the types of categorical values in a table.  If you missed part 1 and want to get caught up [follow this link](https://powerbi.tips/2018/02/crazy-table-gymnastics-part-1-dynamic-column-categories/).  Now, continuing with the series, Part 2, we will build the supporting materials (Selector Table, What If Slicers, and measures) for the report.

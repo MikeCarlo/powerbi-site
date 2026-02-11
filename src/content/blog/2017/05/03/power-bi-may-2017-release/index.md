@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 It’s that exciting time of month again.  Time for another power BI desktop release.  This month here are a couple of good highlights you should check out.

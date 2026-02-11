@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 We are excited to announce a new tool from PowerBI.tips The Business Ops tool. To get this tool [Download it here](https://powerbi.tips/product/business-ops-beta/).

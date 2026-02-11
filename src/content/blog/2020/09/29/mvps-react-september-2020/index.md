@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month we got the Power BI desktop update a little bit later because it was released during the [2020 Ignite conference](https://myignite.microsoft.com/home). As always the MVPs are super excited to talk about the latest Power BI features.

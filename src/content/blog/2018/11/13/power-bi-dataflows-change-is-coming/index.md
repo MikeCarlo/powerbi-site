@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I have been holding on to a copy of Satya Nadella’s book “Hit Refresh” for quite some time. With all the Power BI goodness, the job, etc.… I just hadn’t gotten around to it. However, it made its way into my bag on a recent flight and I found it to be an exceptional story and a very clear view into how Satya plans to take Microsoft into the future. You might say he “open sourced” his plans. After reading this and comparing it to what I’ve been hearing and seeing regarding the fundamental changes in culture and products coming out of Microsoft, I think I’m in a familiar group of those that say he appears to be an exceptional leader who has the talent, vision, and focus to achieve the goals he has set out for himself and Microsoft.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 We do a ton of [Layouts](https://powerbi.tips/tools-2/layouts/) here at powerbi.tips and with the introduction of the new visual grouping feature I was looking for different ways I could utilize that functionality to make templates for different reporting scenarios. First, if you aren’t familiar with how to build a visual group, be sure to check out a [blog](https://powerbi.tips/2019/09/grouping-with-style/) Mike wrote on this a little while ago on the subject.

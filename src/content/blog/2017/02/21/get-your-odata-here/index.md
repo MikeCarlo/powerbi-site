@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 For those of you who are following my tutorials, you are most likely to understand that each tutorial comes with it’s own data source.  This has been intentional so we can both walk through the example and learn by doing.  Whenever, I am learning new things I find it’s helpful to do two things.   First, make examples and demos of what I am trying to learn.  Simply reading about a tool such as PowerBI, while engaging, it isn’t how I learn.  I learn by getting my hands dirty, opening up PowerBI and creating something.  You have to get utterly frustrated and stumped before that light bulb pops on and things become clear.  Secondly, after I’ve taken the time to learn a new feature or method I find it extremely helpful to teach someone else what I’ve learned.  By doing so, I am able share in the enthusiasm of others who also are learning.  Teaching others also makes you remove all the cluttered ideas away from the essential lesson.

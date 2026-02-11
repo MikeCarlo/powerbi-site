@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 September is here and there is a new update for Power BI desktop!  I’m so excited for this month’s update as there are many solid features.  One of the more anticipated features, Drillthrough.  This allows a user to right click on items in a table and drill to more detailed pages within the report with applied filters specific to the user’s need.  This feature was initially announced at the 2017 Data Insight’s summit.

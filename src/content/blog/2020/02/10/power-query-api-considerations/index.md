@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This article is the second part in a series on API calls. It will look at some best practices and considerations when using API calls in Power Query. While it does not serve as a definitive list, it is an important start to consider performance when using such queries.

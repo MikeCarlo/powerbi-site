@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Here is a super helpful video from Guy in a Cube about how to have multiple logins using Google Chrome.  Often I find my self juggling between a work account and my PowerBI.Tips accounts to test out various Power BI features.  This little trick definitely saves you time and headache when jumping between accounts.

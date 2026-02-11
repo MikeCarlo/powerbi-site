@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Over the course of time Power BI has come to encompass a wide variety of technologies and tools. One such product that has been integrated into the suite of Power BI is paginated reports. Before Power BI, paginated reports were served up in SQL Server Reporting Services. That product was the major reporting tool used by businesses using Microsoft products. Now, Power BI brings us the best in visualization, analysis and insight. Paginated reports give you pixel perfect outputs that can be easily printed, emailed, and output to Excel. It strikes me as a bit peculiar that over the years while the focus has been to push into Power BI visualizations heavily, almost every client I’ve ever worked with has always asked for outputs of Power BI reports that are best served up in a paginated way.

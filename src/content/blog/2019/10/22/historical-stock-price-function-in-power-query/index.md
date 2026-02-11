@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This post will walk through how to pull daily stock price from Yahoo! Finance, then transform the data using a technique called a query branch. It will be completed all in the Power Query Editor. We will convert this to a function to reuse on any stock we want.

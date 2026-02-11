@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In many reports we produce we often need a method to score or rank data.  For example, we may need to list the sales totals for the sales team and rank them from highest sales to lowest sales.  Ranking can be done as a calculated column, or as a measure.  When using a measure, the ranking becomes dynamic and takes on the filter context of the table, or visual, that is showing the data.  Calculating a rank as a measure can be useful if you want to allow the user to select different categorical values such as product type and then have the report automatically rank the selected items.  When the report filter context changes the items are automatically re-ranked.

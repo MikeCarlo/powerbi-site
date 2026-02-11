@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 One of the really cool features contained within the PowerBI.com service is the ability to monitor how often your dashboard or report is being viewed.  You’ll find this feature by opening up either a Dashboard or a Report, then clicking the button called **Usage Metrics**.  Clicking this button will generate a custom usage report.  For more details on Report Usage Metrics see [the following article from Microsoft](https://docs.microsoft.com/en-us/power-bi/service-usage-metrics).

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I was recently working on some new ideas for a Scrim when I stumbled upon something interesting. A scrim is pretty specific in its layout, and this one is no different. The images are set so that the report author can easily snap the visual sizes into the space. This makes the most sense as it is easy and delivers great looking results. However, I believe that some designs will allow us to get much more mileage out of a single Scrim. In this Scrim I have changed the shape of visual spaces and this has led to some interesting outcomes. I’ll be interested if my excitement around the possible use cases for this Scrim are as significant as I think they are. With that said here are some of the biggest highlights of my latest Scrim – Versatile.

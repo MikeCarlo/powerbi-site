@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month we are trying something brand new. We are introducing a new series called MVPs react. As you may already know Power BI has monthly desktop releases. If you are as excited about these releases as I am I love talking about all the new features. So, why not get a fun group of MVPs together to discuss everything.

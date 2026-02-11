@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 There are cases when working with Power BI files, that you would want to transfer a visual from one report to another report.  While this feature is not available within the Power BI desktop program as of today, this is available within the PowerBI.com service.

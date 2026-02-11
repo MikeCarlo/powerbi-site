@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The long awaited PowerBI Desktop release is here.  I’d like to point out a couple of key features that will help you improve your reports.  First, the addition of word wrap on row headers.  The tutorial for working with row headers is [found here](https://powerbi.tips/2017/02/improved-matrix-headers/).  A second feature that will help beginner users is the addition of two new Quick Calcs.  The Quick Calcs allow you run calculations within a visual without the need to write a DAX measure.  It’s nice to see some of the more common calculations being added as standard features.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Back again with another Power BI User group for Milwaukee. This month Mike and Seth walk through the beta release of external tools. If you didn’t see the announcement from Microsoft but in July of 2020 was the release of External tools.

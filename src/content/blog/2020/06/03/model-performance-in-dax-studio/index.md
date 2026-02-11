@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Understand more about your model then you thought possible! This is part two in our series on DAX Studio. If you missed part one be sure to check out the [Introduction to DAX Studio](https://powerbi.tips/2020/05/introduction-to-dax-studio/).  

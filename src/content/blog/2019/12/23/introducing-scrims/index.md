@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 PowerBI.tips is excited to announce our new tool to help you build the best looking reports, **[Scrims](https://powerbi.tips/tools/scrims/)**.

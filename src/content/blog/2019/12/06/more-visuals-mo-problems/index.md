@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In some recent conversations the notion of minimizing the number of required visuals came up as a topic. While I know from talking with the Microsoft development team more visuals on a report page increases load time. But I haven’t been able to find any substantial numbers on how performance is impacted by increasing the visual count on a page. Spoiler alert, adding a ton of visuals to a page slows it down.

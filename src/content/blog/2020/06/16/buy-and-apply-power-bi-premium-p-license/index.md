@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I am working on a project that uses Power BI embedded to display reports to external users via an application. I’ve used the progression of A sku’s (embedded license via Azure) to support the various reports. I love using the A sku for various reasons, it has a low point of entry offered in the A1. It is easy to scale up to the higher tiers as I need to. It has the ability to pause a capacity at any time. I also enjoy the flexibility of pay-by-the-hour the license provides. However, I just got to the point where one of our capacities is about to exceed the 10GB of RAM I get on the A3. As a result, I started to compare the A4 sku to the P1 sku. They are the same in terms of cores and RAM (8/25), but the P1 has an option to be cheaper.

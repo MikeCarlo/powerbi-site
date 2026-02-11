@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 First off, let me say WOW!  The announcement of Layouts was well received by the Power BI Community.  Thank you so much for the positive feedback.  So much so, that I got excited and developed another Layout, Splash o Red.

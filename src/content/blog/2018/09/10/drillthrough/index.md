@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 In Power BI reports various features are used to enhance the reporting experience.  Drillthrough allows users to navigate to different report pages within a report.  Below is a demo of Drillthrough.

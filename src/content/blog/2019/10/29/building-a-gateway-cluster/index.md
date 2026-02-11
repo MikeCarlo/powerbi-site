@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Power BI requires a gateway for refreshing on premises data sources. There are a myriad of different data sources that you can create and two different ways you can set up the gateway. The first way you can install a gateway is in the “personal mode”. The second method for installation uses the “On-premises data gateway (recommended)” (OPDG), this used to be called the “Enterprise Gateway”. The second gateway method is what you need to set up and configure appropriately in order to manage permissions. The recommended gateway to use when deploying reports to a wider audience is the OPDG.

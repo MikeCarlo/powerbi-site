@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Ever need two different scales on the Y-Axis of a line chart? If so, then this tutorial is for you. While creating a [dual y-axis line chart](https://www.youtube.com/watch?v=8vzhSjNGcSo) is pretty common in excel, it is not as easy in power BI. The only standard chart that comes with Power BI Desktop that enables dual y-axis is the Column and line combo chart types.

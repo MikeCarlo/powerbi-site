@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Welcome to another installment of building custom visuals with the [Charts](http://charts.powerbi.tips/) tool from [PowerBI.Tips](https://powerbi.tips/). In this edition we make the following custom visual.

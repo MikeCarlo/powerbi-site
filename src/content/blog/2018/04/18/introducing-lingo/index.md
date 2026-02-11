@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 **Update**: This tool has been deprecated as of 2024-11-27. You can now find this as a downloadable HTML file at the following [Github page](https://github.com/PowerBI-tips/website-downloads/tree/main/lingo).

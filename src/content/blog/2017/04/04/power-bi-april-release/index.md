@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 With another month comes another exciting release of PowerBI desktop.  This month we have a number of really interesting features releases.  One of the more interesting feature releases you should definitely check out is the Add Column by Example.  I have seen a demo of [this feature](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-april-feature-summary/#addColumnByExample) and can definitely see the potential for speeding up the data cleansing process in the query editor.  I’ve also included the [YouTube video](https://youtu.be/-ykbVW9wQfw) below for this feature.

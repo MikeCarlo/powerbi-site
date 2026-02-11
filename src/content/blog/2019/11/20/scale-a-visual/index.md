@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 For each visual in Power BI Desktop there is a button called Focus Mode. This feature highlights a single visual. While this can be helpful, it does remove the ability to change or adjust the visual based on filters or slicers. I’d like to introduce to you the concept of Scaling a visual.

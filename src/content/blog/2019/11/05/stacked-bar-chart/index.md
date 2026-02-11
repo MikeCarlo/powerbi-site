@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 For this week we are building a stacked bar chart on [https://Charts.PowerBI.Tips](https://charts.powerbi.tips). While you can build this type of chart within Power BI Desktop this video is more of an example showing how you can build a similar custom visual chart. There are two areas that i’d like to point out.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I am proud to announce another joint development game between Philip Seamark and myself (Mike Carlo) of a Tic Tac Toe game.  To read about how this game was made jump over to [Phil’s blog post found here](http://radacad.com/fun-with-dax-tic-tac-toe).  If you just want to play the Tic Tact Toe game you can do so below in this Embedded sample found below:

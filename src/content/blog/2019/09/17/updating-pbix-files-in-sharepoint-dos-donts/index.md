@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 I recently encountered a really frustrating experience related to a set of reports seeming to not update after some data source changes. I’d done this change before, and had another co-worker take on the task of updating some of the other reports in the same fashion. After a bit he reached out and explained that a few of the reports wouldn’t update while the others had… This was odd since we were making the same type of change. Queue hours of testing, changing, fixing one report without any idea how I did it, and then hitting a brick wall with the remaining two.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Recently I had the privilege of working with Microsoft doing a Webinar on layouts. One thing we are passionate about at PowerBI.Tips is good looking reports that drive action. Often as report authors we spend a ton of time working on the data model, and the calculations. While these things are important, we must also consider the user experience.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 When I teach Power BI to new users, there are typically questions about how to get Power BI to act more like Pivot Tables in Excel.  Through my discussions, two key pieces of functionality stand out to me that people want.

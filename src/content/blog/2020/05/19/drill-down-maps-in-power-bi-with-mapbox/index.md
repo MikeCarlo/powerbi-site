@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you’ve played around with MapBox in Power BI – you’ll know that it has loads of great features to create really rich and beautiful maps! One feature I love is the ability to ‘drill down’ to dynamically uncover different layers of your spatial data hierarchy, just in the same way that you can drill down on a standard column chart or matrix in Power BI.

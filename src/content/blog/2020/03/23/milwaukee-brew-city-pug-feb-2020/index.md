@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The Milwaukee Brew City PUG for February had tons of rich demo content. Steve Campbell delivered quite a session for an hour and a half. We were able to record this session and are happy to announce all the videos are now up on YouTube.

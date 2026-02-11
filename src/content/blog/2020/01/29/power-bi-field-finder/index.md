@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you’re like me, building a data model in Power BI is an iterative process.  Sometimes, you try out different ways of writing measures before you hit on the one that’s right.  You end up with temporary measures that don’t actually end up being used in visuals.  You may also pull in more columns than you might end up needing, just in case.  The final result is your report masterpiece with measures and visuals, there are probably quite a few that you don’t need.  Two problems with this are that having extraneous columns and measures (1) can slow down your model and (2) can make it more difficult to maintain.  You may also want to know where on your report a change to a measure will have an impact. 

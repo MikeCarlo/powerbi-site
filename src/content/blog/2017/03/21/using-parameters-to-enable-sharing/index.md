@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This week I had a number of team members tell me how difficult it was to share a PBIX file and the corresponding data between team members.  The department hasn’t committed 100% to the idea of using PowerBI.com, and thus wanted to share the actual report.  I pointed my team mates to my earlier tutorial about [using variables for file locations](https://powerbi.tips/2016/08/using-variables-for-file-locations/).  After reading the tutorial the team came back with a bunch of griping about how they didn’t want to go into the query editor, people name variables different things, and thus it’s hard to understand what another team member was doing, blah, blah, blah…

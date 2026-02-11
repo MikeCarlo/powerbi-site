@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Power BI has been an continually evolving tool over the last year.  The Matrix visual is powerful and mimics much of the functionality of a Pivot Table within Excel.  I will admit, the Matrix visual has some features that are left to be desired.  One such feature, the ability to word wrap row headers, has been resolved in the February 2017 update of PowerBI.  See the [official release notes](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-february-feature-summary/#wordWrap) for details.  In my company we have traditionally been an excel driven business.  All you other heavy analytics people you know what I’m talking about.  Emails upon emails about an excel analysis, then power point presentations of those excel documents.  Inevitably a pivot table or table will end up on a power point slide.  Icky, if you ask me, especially when you have to “refresh” the data… I digress, Power BI fills a great gap in this area where the Analytics leaders within your company can make reports that easily refresh, and look dang sexy.

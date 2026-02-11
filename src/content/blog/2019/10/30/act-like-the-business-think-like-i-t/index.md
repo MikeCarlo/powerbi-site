@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month at our Power BI User group in Milwaukee Seth and myself walk through some of the basics of Power BI. We digest how can we leverage Power BI to Act like the business, and Think like I.T. Discuss the concept of global and local measures within a data model. As well as some tips and tricks while working in the power query editor. Check out our presentation that we recorded for this month.

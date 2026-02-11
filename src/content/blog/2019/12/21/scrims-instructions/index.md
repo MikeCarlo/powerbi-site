@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Thanks for your interest in our product Scrims. For more details on what is a scrim click this link to Learn More.

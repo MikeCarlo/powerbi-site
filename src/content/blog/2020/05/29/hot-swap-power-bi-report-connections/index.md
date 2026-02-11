@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Let’s say you have a Power BI file connected to an Analysis Services machine. Then you want to change the data source to PowerBI.com using a Live Connection. Well, you are out of luck. Until NOW!!

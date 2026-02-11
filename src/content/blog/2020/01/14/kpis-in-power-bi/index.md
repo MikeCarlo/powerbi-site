@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 KPIs are a key visualization type used to convey high level metrics to the end users. They provide an at-a-glance metric that allows business users to know whether they are on track or off-track. Over the course of time that single metric number has been enhanced to include lines to showcase trends, date stamps, variance and many other metrics to convey key metrics in a compact and concise way. There are a number of different takes on what a KPI can or should look like. If you would like to take a look at all the different KPI visuals you can download from [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals&category=kpi&page=1) you can find those here there.

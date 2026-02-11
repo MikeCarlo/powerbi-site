@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Of all the connection types, I’ve always gravitated towards this one. I imagine it is because I come from the database developer side of things. I’m a big fan of doing things one time, and having one version that controls many reports is extremely appealing. In fact, this topic was my first blog on Power BI so long ago ([here](http://www.concurrency.com/blog/w/power-bi-analysis-services-connector-rises-to-the) for those feeling nostalgic). The live connection is the most powerful of all the connections that Power BI has to offer in my opinion.

@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 PowerBI.Tips and Phil Seamark are proud to release our third game written in Power BI, DAX Mission Impossible.  This game is similar to the game play of the old game of Hang Man.  However, Phil and I decided that was a bit morbid so instead we decided to change the style of the game a bit.  Your mission, should you choose to accept it is to disarm the bomb by guess letters that comprise a DAX formula.  You have 5 chances, to guess the expression correctly.  If you guess the wrong letter, the Power BI Logo will slowly dis-appear, and once it is all gone… Boom…

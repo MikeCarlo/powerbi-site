@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 If you haven’t had your mind melted over the past few games that Phil Seamark has developed here is one more, aMAZEing DAX.  This month’s game is a Gauntlet styled game that uses SVGs, and some fun DAX to allow you to navigate through a maze.  Game play engine developed by Phil Seamark, and Graphics Design by Seth Bauer.

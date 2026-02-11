@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 DAX (Database Access Expressions) can be quite complex.  It is essential to being able to appropriately manipulate the Power BI data model for the visuals.  The following information was discussed at the Power BI World Tour 2017 and if you’d like to review the content or learn more about DAX hit some of the links below.  For all who were able to attend, you were a great audience and super fun!  I hope you learn some fun facts and tricks.

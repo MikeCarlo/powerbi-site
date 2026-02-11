@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 The Monkey Tools add-in for excel is really amazing. As a developer for Power BI for many years I’ve learn a ton of tips and tricks while working with Power Query. Watching Ken demo the high level of automation that Monkey Tools really blew my mind. How did I not know about this tool earlier?! My development patterns have now forever changed.

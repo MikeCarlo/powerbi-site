@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Maps are a fantastic way to communicate spatial data – and lucky for us Power BI has loads of awesome mapping visuals to choose from. However, the MapBox Custom Visual is definitely my favorite!

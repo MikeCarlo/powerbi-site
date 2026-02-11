@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 To celebrate joining the Power BI Cat team next week, I thought I would update a DAX game I built last November (2018) which was a DAX-based maze game in Power BI that allowed you to navigate a character through a series of user-created maps in a top-down view.

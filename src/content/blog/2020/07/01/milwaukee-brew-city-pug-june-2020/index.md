@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month’s Milwaukee Power BI User group we have Reza Rad from [Radacad.com](https://radacad.com/). Reza has a long history within the Power BI MVP community. His presentation this month is about how to use dataflows and shared datasets.

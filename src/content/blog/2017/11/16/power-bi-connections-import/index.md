@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Power BI’s default connection type is Import. In fact, if you have never dealt with a data source that handles multiple loading methods, you may never know that there are different loading methods because Power BI automatically connects via import. However, if you’ve ever worked with sourcing information from databases or models, then you have seen the option to select Import vs. Direct Query or Live Connection.

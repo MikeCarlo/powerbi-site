@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Now that we've solidly gotten through the basics in terms of what connection types are in the opening blog, found [here](https://powerbi.tips/2017/10/power-bi-connection-types/), and detailed out what is included in the default connection type of Import found [here](https://powerbi.tips/2017/11/power-bi-connections-import/), let's get on with some of the more interesting connections.

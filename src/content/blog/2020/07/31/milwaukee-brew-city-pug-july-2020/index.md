@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 Welcome to July! This month we have Tommy Puglia from the Chicago Power BI User Group joining us to discuss and talk about driving organizational success with Power BI.

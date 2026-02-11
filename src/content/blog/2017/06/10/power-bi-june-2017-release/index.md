@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: "./assets/featured.png"
 ---
 
 This month we have a big release for Power BI Desktop and for the Power BI service.  There are a number of great new features.  For the everyday user you will love the new Data bars for the new table & matrix visualizations.  For me this really feels like a feature that is making tables and the matrix views feel more like the pivot table and formatting that can be done in excel.  Great Job Microsoft!
