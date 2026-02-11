@@ -79,8 +79,8 @@ def pick_best_image(urls: list[str], post_dt: datetime) -> Optional[str]:
 
     Priorities:
     - Prefer uploads that match the post's year/month folder.
-    - Prefer filenames that look like featured images (blog/featured/hero).
-    - Avoid generic site promos (store merch) and logos.
+    - Prefer filenames that look like featured images (blog/featured/hero/header).
+    - Strongly avoid generic promos/merch images (t-shirts/hoodies/store).
     - Prefer original (non -300x169 etc) and larger images.
     """
     candidates = []
@@ -88,27 +88,45 @@ def pick_best_image(urls: list[str], post_dt: datetime) -> Optional[str]:
     ym = f"/{post_dt.year}/{post_dt.month:02d}/"
 
     for u in urls:
-        if '*' in u:
+        if "*" in u:
             continue
         if EXCLUDE_RE.search(u):
             continue
 
         u = u.replace("\\u0026", "&")
-        u_no_q = u.split('?', 1)[0]
+        u_no_q = u.split("?", 1)[0]
         filename = os.path.basename(u_no_q).lower()
         ext = os.path.splitext(filename)[1]
-        if ext not in ['.png', '.jpg', '.jpeg', '.webp']:
+        if ext not in [".png", ".jpg", ".jpeg", ".webp"]:
             continue
 
         score = 0
+
         if ym in u_no_q:
             score += 1000
-        if any(k in filename for k in ["blog", "featured", "feature", "hero", "header"]):
-            score += 400
-        if "store-merch" in filename:
-            score -= 800
+
+        # common featured patterns
+        if any(k in filename for k in ["blog", "featured", "feature", "hero", "header", "banner"]):
+            score += 500
+        if filename in ["blog.png", "feature-image.png", "featured-image.png", "featured.png"]:
+            score += 700
+
+        # hard-avoid merch/promos (these were incorrectly selected for some posts)
+        if any(k in filename for k in [
+            "store-merch",
+            "merch",
+            "tshirt",
+            "t-shirt",
+            "shirt",
+            "hoodie",
+            "sweatshirt",
+            "apparel",
+            "swag",
+        ]):
+            score -= 5000
+
         if "logo" in filename:
-            score -= 800
+            score -= 1500
 
         m = SIZE_SUFFIX_RE.search(u_no_q)
         if m:
@@ -210,9 +228,15 @@ def make_derivatives(src_path: Path, featured_path: Path, thumb_path: Path) -> N
     )
 
 
-def gather_posts() -> list[Post]:
+def gather_posts(force: bool = False, only: Optional[list[str]] = None) -> list[Post]:
     posts: list[Post] = []
+    only = only or []
+
     for p in list(BLOG_ROOT.rglob("index.md")) + list(BLOG_ROOT.rglob("index.mdx")):
+        # optional filter for targeted re-scrapes
+        if only and not any(s in str(p) for s in only):
+            continue
+
         txt = p.read_text(encoding="utf-8", errors="ignore")
         fm = read_frontmatter(txt)
         if not fm:
@@ -224,7 +248,8 @@ def gather_posts() -> list[Post]:
             continue
 
         fi = fm.get("featuredImage")
-        if fi is None or (isinstance(fi, str) and fi.strip() == ""):
+        needs = fi is None or (isinstance(fi, str) and fi.strip() == "")
+        if force or needs:
             url = legacy_url_for_post(p)
             if url:
                 posts.append(Post(dt=dt, path=p, url=url, featured_image=fi))
@@ -285,10 +310,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=20)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="Process posts even if featuredImage is already set (use with --only for targeted re-scrapes)",
+    )
+    ap.add_argument(
+        "--only",
+        action="append",
+        default=[],
+        help="Only process posts whose path contains this substring (repeatable)",
+    )
     args = ap.parse_args()
 
-    posts = gather_posts()
-    print(f"Found {len(posts)} posts missing/empty featuredImage")
+    posts = gather_posts(force=args.force, only=args.only)
+    if args.force:
+        print(f"Found {len(posts)} posts (force mode)")
+    else:
+        print(f"Found {len(posts)} posts missing/empty featuredImage")
 
     ok = 0
     for i, post in enumerate(posts[: args.limit], 1):
