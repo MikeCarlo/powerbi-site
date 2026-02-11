@@ -1,0 +1,18 @@
+---
+const {
+  alt = 'PowerBI.tips',
+  class: className = 'h-8 w-auto',
+  href,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const src = `${base}/images/brand/powerbitips-logo.png`;
+---
+
+{href ? (
+  <a href={href} class="inline-flex items-center" aria-label={alt}>
+    <img src={src} alt={alt} class={className} loading="eager" />
+  </a>
+) : (
+  <img src={src} alt={alt} class={className} loading="eager" />
+)}

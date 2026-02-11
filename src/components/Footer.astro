@@ -1,4 +1,6 @@
 ---
+import Logo from './Logo.astro';
+
 const base = import.meta.env.BASE_URL;
 
 const leftLinks = [
@@ -26,7 +28,7 @@ const rightLinks = [
         <div class="flex items-center gap-3">
           <div class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-semibold">Tips</div>
           <div>
-            <p class="text-lg font-semibold">PowerBI.tips</p>
+            <Logo href={base} class="h-8 w-auto" alt="PowerBI.tips" />
             <p class="text-sm text-neutral-400">Act Business – Think I.T.</p>
           </div>
         </div>
@@ -49,7 +51,7 @@ const rightLinks = [
       </div>
     </div>
     <div class="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-neutral-400 md:flex-row md:items-center md:justify-between">
-      <p>powerbi.tips llc</p>
+      <p>PowerBI.tips LLC</p>
       <p>designed with data</p>
     </div>
   </div>
