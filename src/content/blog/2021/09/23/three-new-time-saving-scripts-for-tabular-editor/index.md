@@ -1,7 +1,6 @@
 ---
 title: Three New Time-Saving Scripts for Tabular Editor
-excerpt: Howdy folks!  I just published three new scripts for [Tabular Editor](https://tabulareditor.com/)
-  to [the PowerBI.tips “TabularEditor-Scripts” reposit...
+excerpt: "Howdy folks! I just published three new time-saving scripts for Tabular Editor to the PowerBI.tips TabularEditor-Scripts repository."
 date: '2021-09-23'
 authors:
 - Mike Carlo
@@ -13,7 +12,7 @@ featuredImage: ./assets/featured.png
 
 Howdy folks!
 
-I just published three new scripts for [Tabular Editor](https://tabulareditor.com/) to [the PowerBI.tips “TabularEditor-Scripts” repository on GitHub](https://github.com/PowerBI-tips/TabularEditor-Scripts) yesterday. So, I wanted to take a moment to explain what they do, and why you should have them in your Tabular Editor Scripts arsenal.
+I just published three new scripts for [Tabular Editor](https://tabulareditor.com/) to [the PowerBI.tips "TabularEditor-Scripts" repository on GitHub](https://github.com/PowerBI-tips/TabularEditor-Scripts) yesterday. So, I wanted to take a moment to explain what they do, and why you should have them in your Tabular Editor Scripts arsenal.
 
 1.  **[Replace String Across All Power Queries](https://github.com/PowerBI-tips/TabularEditor-Scripts/blob/master/Basic/Replace%20String%20Across%20All%20Power%20Queries.csx)**
     *   Replaces a string in Power Query on all partitions in the model

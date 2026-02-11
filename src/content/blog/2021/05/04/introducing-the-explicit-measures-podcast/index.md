@@ -1,7 +1,6 @@
 ---
 title: Introducing the Explicit Measures Podcast
-excerpt: '![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2021/05/1620103524867.jpg)  Welcome
-  to a new podcast from PowerBI...'
+excerpt: "Welcome to a new podcast from PowerBI.tips — the Explicit Measures Podcast featuring Mike Carlo, Tommy Puglia, and Seth Bauer."
 date: '2021-05-04'
 authors:
 - Mike Carlo

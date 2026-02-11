@@ -1,6 +1,6 @@
 ---
 title: "Building a Power BI Admin View using Power BI APIs"
-excerpt: "We just completed an amazing webinar from [Parker Stevens](https://www.linkedin.com/in/pstevens33/) over at [https://bielite.com/](https://bielite.com..."
+excerpt: "We just completed an amazing webinar from Parker Stevens over at BI Elite. In this webinar, Parker walks us through how to connect to the Power BI Admin APIs."
 date: "2020-11-18"
 authors:
   - "Mike Carlo"

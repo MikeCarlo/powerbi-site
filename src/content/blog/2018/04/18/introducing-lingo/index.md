@@ -1,6 +1,6 @@
 ---
 title: "Introducing Lingo"
-excerpt: "**Update**: This tool has been deprecated as of 2024-11-27. You can now find this as a downloadable HTML file at the following [Github page](https://g..."
+excerpt: "Update: This tool has been deprecated as of 2024-11-27. You can now find this as a downloadable HTML file on GitHub."
 date: "2018-04-18"
 authors:
   - "Mike Carlo"

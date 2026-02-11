@@ -1,6 +1,6 @@
 ---
 title: "Start of Month DAX Calendar"
-excerpt: "While on a recent project I needed to build a variation of the DAX date table.  In my previous post, found here [Creating DAX Date Tables](https://pow..."
+excerpt: "While on a recent project I needed to build a variation of the DAX date table with start-of-month dates. Here's how to create one."
 date: "2017-12-20"
 authors:
   - "Mike Carlo"

@@ -1,6 +1,6 @@
 ---
 title: "MVPs React September 2020"
-excerpt: "This month we got the Power BI desktop update a little bit later because it was released during the [2020 Ignite conference](https://myignite.microsof..."
+excerpt: "This month we got the Power BI desktop update a little bit later because it was released during the 2020 Ignite conference. Here's our MVPs React recap."
 date: "2020-09-29"
 authors:
   - "Mike Carlo"

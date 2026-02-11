@@ -1,7 +1,6 @@
 ---
 title: Using the Power BI Scanner API to Manage Tenant's Entire Metadata
-excerpt: _Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_
-  _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for...
+excerpt: "Learn how to use the Power BI Scanner API to manage your tenant's entire metadata. Thanks to Ferry Bouwman and Rui Romano for their contributions."
 date: '2021-10-06'
 authors:
 - Mike Carlo

@@ -1,6 +1,6 @@
 ---
 title: "Power BI Connection Types"
-excerpt: "### Get Data – Power BI Connection Types: An Introduction  [![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/..."
+excerpt: "Get Data – Power BI Connection Types: An Introduction to understanding Import, Direct Query, and Live connections."
 date: "2017-10-16"
 authors:
   - "Seth Bauer"

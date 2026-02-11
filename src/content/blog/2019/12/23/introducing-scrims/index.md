@@ -1,6 +1,6 @@
 ---
 title: "Introducing Scrims"
-excerpt: "PowerBI.tips is excited to announce our new tool to help you build the best looking reports, **[Scrims](https://powerbi.tips/tools/scrims/)**.  We’ve..."
+excerpt: "PowerBI.tips is excited to announce our new tool to help you build the best looking reports, Scrims. We’ve..."
 date: "2019-12-23"
 authors:
   - "Seth Bauer"

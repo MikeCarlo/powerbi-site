@@ -1,6 +1,6 @@
 ---
 title: "No Code Custom Visuals – Webinar"
-excerpt: "This month we did a webinar with the Microsoft team on how to build different custom visuals in [Charts.PowerBI.Tips](https://charts.powerbi.tips/) a..."
+excerpt: "This month we did a webinar with the Microsoft team on how to build different custom visuals in Charts.PowerBI.Tips a..."
 date: "2020-01-22"
 authors:
   - "Mike Carlo"

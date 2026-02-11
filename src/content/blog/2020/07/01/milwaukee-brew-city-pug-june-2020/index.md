@@ -1,6 +1,6 @@
 ---
 title: "Milwaukee Brew City PUG – June 2020"
-excerpt: "This month’s Milwaukee Power BI User group we have Reza Rad from [Radacad.com](https://radacad.com/). Reza has a long history within the Power BI MVP..."
+excerpt: "This month’s Milwaukee Power BI User group we have Reza Rad from Radacad.com. Reza has a long history within the Power BI MVP..."
 date: "2020-07-01"
 authors:
   - "Mike Carlo"

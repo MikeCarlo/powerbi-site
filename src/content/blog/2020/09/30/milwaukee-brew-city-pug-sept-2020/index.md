@@ -1,6 +1,6 @@
 ---
 title: "Milwaukee Brew City PUG – Sept 2020"
-excerpt: "We were excited to welcome a good friend of PowerBI.Tips [Alex Powers](https://itsnotaboutthecell.com/about/) to speak with us at this months PUG meet..."
+excerpt: "We were excited to welcome a good friend of PowerBI.Tips Alex Powers to speak with us at this months PUG meet..."
 date: "2020-09-30"
 authors:
   - "Seth Bauer"

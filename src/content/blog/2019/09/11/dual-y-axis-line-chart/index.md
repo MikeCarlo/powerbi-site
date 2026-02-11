@@ -1,6 +1,6 @@
 ---
 title: "Dual Y-Axis Line Chart"
-excerpt: "Ever need two different scales on the Y-Axis of a line chart? If so, then this tutorial is for you. While creating a [dual y-axis line chart](https://..."
+excerpt: "Ever need two different scales on the Y-Axis of a line chart? If so, then this tutorial is for you. Learn how to create a dual y-axis line chart."
 date: "2019-09-11"
 authors:
   - "Mike Carlo"

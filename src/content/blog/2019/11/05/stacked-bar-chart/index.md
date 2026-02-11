@@ -1,6 +1,6 @@
 ---
 title: "Stacked Bar Chart"
-excerpt: "For this week we are building a stacked bar chart on [https://Charts.PowerBI.Tips](https://charts.powerbi.tips). While you can build this type of char..."
+excerpt: "For this week we are building a stacked bar chart on https://Charts.PowerBI.Tips. While you can build this type of char..."
 date: "2019-11-05"
 authors:
   - "Mike Carlo"
