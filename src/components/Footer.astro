@@ -4,24 +4,24 @@ import Logo from './Logo.astro';
 const base = import.meta.env.BASE_URL;
 
 const leftLinks = [
-  { label: 'Podcast', href: `${base}podcast/` },
-  { label: 'Power Designer', href: `${base}power-designer/` },
+  { label: 'Podcast', href: `${base}/podcast/` },
+  { label: 'Power Designer', href: `${base}/power-designer/` },
   { label: 'Themes', href: 'https://themes.powerbi.tips' },
-  { label: 'Events', href: `${base}events/` },
-  { label: 'All Posts', href: `${base}posts/` }
+  { label: 'Events', href: `${base}/events/` },
+  { label: 'All Posts', href: `${base}/posts/` }
 ];
 
 const rightLinks = [
-  { label: 'Training', href: `${base}training/` },
-  { label: 'About', href: `${base}about/` },
-  { label: 'Authors', href: `${base}authors/` },
-  { label: 'Search', href: `${base}search/` },
-  { label: 'Categories', href: `${base}category/` },
-  { label: 'Tags', href: `${base}tag/` }
+  { label: 'Training', href: `${base}/training/` },
+  { label: 'About', href: `${base}/about/` },
+  { label: 'Authors', href: `${base}/authors/` },
+  { label: 'Search', href: `${base}/search/` },
+  { label: 'Categories', href: `${base}/category/` },
+  { label: 'Tags', href: `${base}/tag/` }
 ];
 ---
 
-<footer class="bg-neutral-900 text-neutral-200">
+<footer class="bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 text-white">
   <div class="mx-auto w-full max-w-6xl px-6 py-12">
     <div class="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
       <div>
@@ -29,28 +29,28 @@ const rightLinks = [
           <div class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-semibold">Tips</div>
           <div>
             <Logo href={base} class="h-8 w-auto" alt="PowerBI.tips" />
-            <p class="text-sm text-neutral-400">Act Business – Think I.T.</p>
+            <p class="text-sm text-white/80">Act Business – Think I.T.</p>
           </div>
         </div>
       </div>
       <div>
-        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">Explore</p>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">Explore</p>
         <ul class="space-y-2 text-sm">
           {leftLinks.map((link) => (
-            <li><a class="hover:text-white" href={link.href}>{link.label}</a></li>
+            <li><a class="text-white/90 hover:text-white hover:underline" href={link.href}>{link.label}</a></li>
           ))}
         </ul>
       </div>
       <div>
-        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-400">Resources</p>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">Resources</p>
         <ul class="space-y-2 text-sm">
           {rightLinks.map((link) => (
-            <li><a class="hover:text-white" href={link.href}>{link.label}</a></li>
+            <li><a class="text-white/90 hover:text-white hover:underline" href={link.href}>{link.label}</a></li>
           ))}
         </ul>
       </div>
     </div>
-    <div class="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-neutral-400 md:flex-row md:items-center md:justify-between">
+    <div class="mt-10 flex flex-col gap-2 border-t border-white/20 pt-6 text-xs text-white/80 md:flex-row md:items-center md:justify-between">
       <div class="flex items-center gap-2">
         <Logo href={base} class="h-4 w-auto opacity-80" alt="PowerBI.tips" />
         <span>LLC</span>
