@@ -3,7 +3,7 @@ title: "PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex The
 excerpt: "Power BI is a powerful business intelligence tool that helps organizations to gain insights into their data. With its ability to create stunning visua..."
 date: "2023-02-28"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

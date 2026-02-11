@@ -3,7 +3,7 @@ title: "Power BI Connections: Import"
 excerpt: "Power BI’s default connection type is Import. In fact, if you have never dealt with a data source that handles multiple loading methods, you may never..."
 date: "2017-11-16"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

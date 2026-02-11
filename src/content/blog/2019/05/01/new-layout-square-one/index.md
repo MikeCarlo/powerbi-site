@@ -3,7 +3,7 @@ title: "New Layout – Square One"
 excerpt: "“Square One” utilizes the color theme as a background component that adds a pop of accent color only. This gives you the end user the maximum flexibil..."
 date: "2019-05-01"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

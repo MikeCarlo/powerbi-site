@@ -3,7 +3,7 @@ title: "Power BI Themes"
 excerpt: "Themes are the bedrock of consistency. As report authors it is important to create a consistent experience in a single, series or multitude of reports..."
 date: "2021-12-22"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

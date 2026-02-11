@@ -3,7 +3,7 @@ title: "Tips+ Designer and Theme Generator Tutorial: Automatic Visual Objects wi
 excerpt: "Welcome to today’s tutorial where we’ll explore an exciting feature implemented to streamline your background creation process in Power BI. If you’ve..."
 date: "2024-04-29"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

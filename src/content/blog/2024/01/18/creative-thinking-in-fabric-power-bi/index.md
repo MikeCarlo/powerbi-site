@@ -3,7 +3,7 @@ title: "Creative Thinking in Fabric & Power BI"
 excerpt: "In podcast #286 we take the time to review an older video of John Cleese giving a talk about the Creative Process in Management. We thought this would..."
 date: "2024-01-18"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

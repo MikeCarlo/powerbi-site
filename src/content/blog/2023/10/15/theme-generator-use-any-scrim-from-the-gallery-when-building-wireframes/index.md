@@ -3,7 +3,7 @@ title: "Designer: Use any Scrim from the Gallery when Building Wireframes"
 excerpt: "## **The Power BI Tips Theme Generator: Your Ultimate Theming Tool**  The Power BI Tips Theme Generator is the go-to resource for users aiming to crea..."
 date: "2023-10-15"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "Milwaukee Brew City PUG – April 2020"
 excerpt: "The Milwaukee Brew City PUG for April kicks off with some quick updates and highlights of upcoming events. We spend a quick minute on why we’re so exc..."
 date: "2020-05-08"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "KPIs in Power BI"
 excerpt: "KPIs are a key visualization type used to convey high level metrics to the end users. They provide an at-a-glance metric that allows business users to..."
 date: "2020-01-14"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "Building a Gateway Cluster"
 excerpt: "Power BI requires a gateway for refreshing on premises data sources. There are a myriad of different data sources that you can create and two differen..."
 date: "2019-10-29"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

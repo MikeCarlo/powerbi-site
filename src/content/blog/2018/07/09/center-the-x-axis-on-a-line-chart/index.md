@@ -3,7 +3,7 @@ title: "Center the X-Axis on a Line Chart"
 excerpt: "Sometimes when your working on a line chart you want the x-axis to stay centered on a chart. This tutorial will walk you through how to create an X-Ax..."
 date: "2018-07-09"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

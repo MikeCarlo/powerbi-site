@@ -3,7 +3,7 @@ title: "Respect Layers"
 excerpt: "If you are like me and you like making your reports look extra good with different visual elements you’ve probably come across the issue before where..."
 date: "2018-12-04"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

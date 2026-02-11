@@ -3,7 +3,7 @@ title: "One Tool to Install them ALL"
 excerpt: "We are excited to announce a new tool from PowerBI.tips The Business Ops tool. To get this tool [Download it here](https://powerbi.tips/product/busine..."
 date: "2020-08-13"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

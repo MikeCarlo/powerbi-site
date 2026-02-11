@@ -3,7 +3,7 @@ title: "Power BI Connections: Live Connection"
 excerpt: "Of all the connection types, I’ve always gravitated towards this one. I imagine it is because I come from the database developer side of things. I’m a..."
 date: "2018-02-26"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

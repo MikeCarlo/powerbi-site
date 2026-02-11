@@ -3,7 +3,7 @@ title: "New Layout – Smooth Operator"
 excerpt: "Hey everyone! We’re excited to release our latest layout “Smooth Operator”. [Click here to download.](https://powerbi.tips/product/layouts-smooth-oper..."
 date: "2019-03-21"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

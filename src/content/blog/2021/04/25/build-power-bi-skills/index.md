@@ -3,7 +3,7 @@ title: "How to Build Your Power BI Skills"
 excerpt: "**One of the biggest improvements you can make to your life and career is embracing a learning mentality.** If you are here, I assume one of your inte..."
 date: "2021-04-25"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

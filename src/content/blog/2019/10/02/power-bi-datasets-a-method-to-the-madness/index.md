@@ -3,7 +3,7 @@ title: "Power BI datasets: A Method to the Madness"
 excerpt: "As report authors we sometimes get caught up in how easy it is to create a report and provide value to the business. Each report is an opportunity to..."
 date: "2019-10-02"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

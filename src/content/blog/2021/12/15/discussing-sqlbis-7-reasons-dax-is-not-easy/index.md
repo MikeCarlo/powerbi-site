@@ -3,7 +3,7 @@ title: "Discussing SQLBI's 7 Reasons DAX is Not Easy"
 excerpt: "First of all, go read this amazing blog put out by Alberto Ferrari over at SQLBI that he posted awhile ago. It is the context for the conversation we..."
 date: "2021-12-15"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

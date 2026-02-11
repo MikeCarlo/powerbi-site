@@ -3,7 +3,7 @@ title: "Certified vs. Promoted Dataset?"
 excerpt: "Power BI continues to grow and strengthen its position in the enterprise space. A feature that you may not be aware of, but can be extremely valuable,..."
 date: "2022-02-10"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

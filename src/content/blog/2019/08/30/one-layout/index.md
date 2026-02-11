@@ -3,7 +3,7 @@ title: "New Layout – One"
 excerpt: "This layout continues to deliver fantastic visual guides to make your reports look top notch. This layout utilizes buttons for navigation without lock..."
 date: "2019-08-30"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

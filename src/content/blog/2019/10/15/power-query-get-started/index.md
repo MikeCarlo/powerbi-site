@@ -3,7 +3,7 @@ title: "Power Query – Get Started!"
 excerpt: "As a user that builds Power BI reports, did you know the different technologies that come into play when you interact with the tool? This is one of th..."
 date: "2019-10-15"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

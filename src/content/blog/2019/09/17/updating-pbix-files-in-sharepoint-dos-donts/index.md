@@ -3,7 +3,7 @@ title: "Updating PBIX Files in SharePoint: Do’s & Don’ts"
 excerpt: "I recently encountered a really frustrating experience related to a set of reports seeming to not update after some data source changes. I’d done this..."
 date: "2019-09-17"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

@@ -3,7 +3,7 @@ title: "Model Performance in DAX Studio"
 excerpt: "Understand more about your model then you thought possible! This is part two in our series on DAX Studio. If you missed part one be sure to check out..."
 date: "2020-06-03"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

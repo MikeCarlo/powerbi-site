@@ -3,7 +3,7 @@ title: "Unlock Your Creativity with the Power BI Tips Designer: Exciting New Fea
 excerpt: "At Power BI Tips, we’re committed to providing you with the best tools and resources to enhance your report building experience. That’s why we’re thri..."
 date: "2023-06-07"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

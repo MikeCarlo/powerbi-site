@@ -3,7 +3,7 @@ title: "Power BI Formal vs. Self-Training"
 excerpt: "We’ve been having an amazing amount of fun having conversations on our podcast “[Explicit Measures](https://powerbi.tips/explicit-measures-power-bi-po..."
 date: "2021-11-27"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

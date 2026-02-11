@@ -3,7 +3,7 @@ title: "Power BI Refresh Overview"
 excerpt: "There are different ways you can connect to a multitude of different data sources. I’ve written about the different connection types before and you ca..."
 date: "2019-09-03"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

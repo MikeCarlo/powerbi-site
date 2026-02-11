@@ -3,7 +3,7 @@ title: "Tips+ Designer and Theme Generator Tutorial: Gallery Project Download fo
 excerpt: "Welcome to today’s tutorial where we’ll explore the Power BI Tips+ Theme Generator and its incredible features designed to streamline your Power BI re..."
 date: "2024-01-29"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

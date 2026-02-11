@@ -3,7 +3,7 @@ title: "Continuously Improving User Experience"
 excerpt: "In the day to day operations of businesses speed of delivery, cost effectiveness, and satisfaction of outcome is a trifecta of challenges we run again..."
 date: "2022-01-09"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories: []
 tags:
   - "power-bi"

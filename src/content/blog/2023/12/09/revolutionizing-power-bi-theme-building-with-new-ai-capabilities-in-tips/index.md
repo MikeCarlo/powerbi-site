@@ -3,7 +3,7 @@ title: "Revolutionizing Power BI Theme Building with New AI Capabilities in Tips
 date: "2023-12-09"
 slug: "revolutionizing-power-bi-theme-building-with-new-ai-capabilities-in-tips"
 authors:
-  - "Mike Carlo"
+  - "Seth Bauer"
 categories:
   - "Power BI"
   - "Theme Generator"
