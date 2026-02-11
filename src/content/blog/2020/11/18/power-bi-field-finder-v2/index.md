@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 The Power BI Field Finder created by Stephanie Bruno was just updated. In this recent update the HTML viewer has been updated since the old custom visual has been deprecated.

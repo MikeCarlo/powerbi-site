@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 Daniel Marsh-Patrick is a custom visual developer who recently released the HTML Content, a custom visual. This month we go over this visual in detail with it’s creator himself.

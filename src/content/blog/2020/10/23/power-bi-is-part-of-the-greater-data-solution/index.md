@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 Power BI is a powerful reporting tool that has been dominating the market and rapidly evolving. Yet, in many organizations people seem unaware of its true potential or core purpose. As a result, too often it is deployed to simply extract or visualize data points in an ad hoc reporting manner.

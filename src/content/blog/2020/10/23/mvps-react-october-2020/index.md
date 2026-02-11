@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 Horary! The Power BI desktop for October finally arrived and it is packed with tons of updates. I’m super excited about this month’s release. We rallied the troops and have a ton of MVPs talking about the latest release of Power BI desktop

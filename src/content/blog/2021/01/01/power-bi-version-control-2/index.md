@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 ## **Please navigate to the following page to see Power BI Version Control:**

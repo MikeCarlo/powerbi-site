@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 We just completed an amazing webinar from [Parker Stevens](https://www.linkedin.com/in/pstevens33/) over at [https://bielite.com/](https://bielite.com/) . In this webinar, Parker walks us through how to connect to the Power BI Admin APIs. The Admin API contains a wealth of knowledge for all activity within your Power BI tenant.

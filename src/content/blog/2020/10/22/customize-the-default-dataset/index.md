@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 In the October 2020 release of Power BI desktop you have the ability to load a dataset from the splash page. For this tutorial we dig in on how Microsoft enables a default dataset. Additionally we show you how to customize the default dataset for your needs.

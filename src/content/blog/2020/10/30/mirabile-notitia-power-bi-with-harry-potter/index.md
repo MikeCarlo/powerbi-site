@@ -7,7 +7,7 @@ authors:
 categories: []
 tags:
   - "power-bi"
-featuredImage: ""
+featuredImage: ./assets/featured.png
 ---
 
 I was recently contacted by Power BI Community member Gomathy Viswanathan and Ashwini Nayak. Thus, it is my pleasure share with you their incredible report. The Harry Potter Escape room. If you are as curious as I was you will enjoy this fun and light hearted puzzle.
