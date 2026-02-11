@@ -1,13 +1,14 @@
 ---
-title: "All Columns have Data Types in DAX, Or do they?"
-excerpt: "To say this another way. Not all columns have datatypes in DAX, specifically speaking to using dynamic ranking with an “Other” category. Let me explai..."
-date: "2021-12-07"
+title: All Columns have Data Types in DAX, Or do they?
+excerpt: To say this another way. Not all columns have datatypes in DAX, specifically
+  speaking to using dynamic ranking with an “Other” category. Let me explai...
+date: '2021-12-07'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 To say this another way. Not all columns have datatypes in DAX, specifically speaking to using dynamic ranking with an “Other” category. Let me explain.

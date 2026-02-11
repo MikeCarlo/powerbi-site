@@ -1,13 +1,14 @@
 ---
-title: "Using Power Apps, Power BI and Power Automate Together"
-excerpt: "Using Power Apps Power BI and Power Automate together can unleash huge benefits and enhance your solutions. Creating an end-user-centric dashboard and..."
-date: "2021-03-09"
+title: Using Power Apps, Power BI and Power Automate Together
+excerpt: Using Power Apps Power BI and Power Automate together can unleash huge benefits
+  and enhance your solutions. Creating an end-user-centric dashboard and...
+date: '2021-03-09'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Using Power Apps Power BI and Power Automate together can unleash huge benefits and enhance your solutions. Creating an end-user-centric dashboard and power app creates a simplified user experience. We will understand who will be visiting the reporting solution, the value they will receive from it, and take action through the actions below.  

@@ -1,13 +1,14 @@
 ---
-title: "Trolling the Power BI Ideas Site"
-excerpt: "Trolling… we should clear up the definition of this right off the bat. We aren’t talking about the type of trolling where we spend a bunch of time fin..."
-date: "2021-12-02"
+title: Trolling the Power BI Ideas Site
+excerpt: Trolling… we should clear up the definition of this right off the bat. We
+  aren’t talking about the type of trolling where we spend a bunch of time fin...
+date: '2021-12-02'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Trolling… we should clear up the definition of this right off the bat. We aren’t talking about the type of trolling where we spend a bunch of time finding things on the [Power BI Ideas site](https://ideas.powerbi.com/ideas/) and say obnoxious things about them to elicit a response. We may say obnoxious things, but not in that context. In any case, what we spend time doing periodically is seeing what fantastic ideas people are coming up with and requesting for future feature enhancement. Today we’re going to dive into some of our favorites and would encourage you to give them a look. If you agree with us, be sure to vote them up!

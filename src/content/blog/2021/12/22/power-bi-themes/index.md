@@ -1,13 +1,14 @@
 ---
-title: "Power BI Themes"
-excerpt: "Themes are the bedrock of consistency. As report authors it is important to create a consistent experience in a single, series or multitude of reports..."
-date: "2021-12-22"
+title: Power BI Themes
+excerpt: Themes are the bedrock of consistency. As report authors it is important
+  to create a consistent experience in a single, series or multitude of reports...
+date: '2021-12-22'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Themes are the bedrock of consistency. As report authors it is important to create a consistent experience in a single, series or multitude of reports. With a little forethought you can easily build reports that exhibit the same fonts, properties and many other aspects with a Power BI Theme. If you aren’t using a theme and you build reports, its time you learn about them and put them into your arsenal.

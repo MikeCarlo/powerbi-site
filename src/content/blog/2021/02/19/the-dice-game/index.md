@@ -1,13 +1,14 @@
 ---
-title: "The Dice Game"
-excerpt: "Well, it’s Friday, time to take a little break and play the Dice Game! The Power BI community is creative and is always developing amazing ideas. This..."
-date: "2021-02-19"
+title: The Dice Game
+excerpt: Well, it’s Friday, time to take a little break and play the Dice Game! The
+  Power BI community is creative and is always developing amazing ideas. This...
+date: '2021-02-19'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Well, it’s Friday, time to take a little break and play the Dice Game! The Power BI community is creative and is always developing amazing ideas. This is another incredible example that you can play right in Power BI! The brain child of this game is [Kerry Kolosko](https://www.linkedin.com/in/kerrykolosko/), an Analyst out of of Australia.

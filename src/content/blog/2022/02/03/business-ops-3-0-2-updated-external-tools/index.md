@@ -1,13 +1,14 @@
 ---
-title: "Business Ops 3.0.2: Updated External Tools"
-excerpt: "Howdy folks, and Happy New Year!  We’ve just released Business Ops 3.0.2, which contains long-awaited updates for the following External Tools:  *   [..."
-date: "2022-02-03"
+title: 'Business Ops 3.0.2: Updated External Tools'
+excerpt: 'Howdy folks, and Happy New Year!  We’ve just released Business Ops 3.0.2,
+  which contains long-awaited updates for the following External Tools:  *   [...'
+date: '2022-02-03'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Howdy folks, and Happy New Year!

@@ -1,13 +1,14 @@
 ---
-title: "Phil Seamark on Aggregation Tables"
-excerpt: "I was having a candid conversation with Phil Seamark from [DAX.tips](https://dax.tips/) about Aggregation Tables. During that conversation, I was aski..."
-date: "2020-12-22"
+title: Phil Seamark on Aggregation Tables
+excerpt: I was having a candid conversation with Phil Seamark from [DAX.tips](https://dax.tips/)
+  about Aggregation Tables. During that conversation, I was aski...
+date: '2020-12-22'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 I was having a candid conversation with Phil Seamark from [DAX.tips](https://dax.tips/) about Aggregation Tables. During that conversation, I was asking about patterns in using Aggregation tables. Within that 10 minute conversation I was blow away by all the possible patterns. Because of this, we pleaded for Phil to present these patterns to the [Milwaukee Brew City User Group](https://www.linkedin.com/company/milwaukee-brew-city-pug).

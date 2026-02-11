@@ -1,13 +1,14 @@
 ---
-title: "Discussing SQLBI's 7 Reasons DAX is Not Easy"
-excerpt: "First of all, go read this amazing blog put out by Alberto Ferrari over at SQLBI that he posted awhile ago. It is the context for the conversation we..."
-date: "2021-12-15"
+title: Discussing SQLBI's 7 Reasons DAX is Not Easy
+excerpt: First of all, go read this amazing blog put out by Alberto Ferrari over at
+  SQLBI that he posted awhile ago. It is the context for the conversation we...
+date: '2021-12-15'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 First of all, go read this amazing blog put out by Alberto Ferrari over at SQLBI that he posted awhile ago. It is the context for the conversation we had and is well worth the read. [7 Reason DAX is Not Easy](https://www.sqlbi.com/blog/alberto/2020/06/20/7-reasons-dax-is-not-easy/) If you are new to DAX you will find a wealth of deep, insightful and helpful content in anything you find on SQLBI. Marco and Alberto are amazing guru’s in DAX and tabular models and have been perfecting their craft and helping the wider community hone their skills for many years.

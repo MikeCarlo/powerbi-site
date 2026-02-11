@@ -1,13 +1,14 @@
 ---
-title: "Data Culture with Matthew Roche"
-excerpt: "This month we partnered with the relaunch of the Des Moines user group to host Matthew Roche. This month’s topic is all about data culture. If you don..."
-date: "2021-12-12"
+title: Data Culture with Matthew Roche
+excerpt: This month we partnered with the relaunch of the Des Moines user group to
+  host Matthew Roche. This month’s topic is all about data culture. If you don...
+date: '2021-12-12'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 This month we partnered with the relaunch of the Des Moines user group to host Matthew Roche. This month’s topic is all about data culture. If you don’t know Matthew you should get to know him. His experience in developing enterprise data access is second to none. Along this journey of working with the largest Microsoft clients Matthew has learned a lot about their data cultures.

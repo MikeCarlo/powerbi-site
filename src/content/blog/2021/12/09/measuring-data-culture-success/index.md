@@ -1,13 +1,14 @@
 ---
-title: "Measuring Data Culture Success"
-excerpt: "This topic was gleaned from the absolute wealth of knowledge put down in the MSFT [Power BI Adoption Roadmap](https://docs.microsoft.com/en-us/power-b..."
-date: "2021-12-09"
+title: Measuring Data Culture Success
+excerpt: This topic was gleaned from the absolute wealth of knowledge put down in
+  the MSFT [Power BI Adoption Roadmap](https://docs.microsoft.com/en-us/power-b...
+date: '2021-12-09'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 This topic was gleaned from the absolute wealth of knowledge put down in the MSFT [Power BI Adoption Roadmap](https://docs.microsoft.com/en-us/power-bi/guidance/powerbi-adoption-roadmap-overview). We highly recommend you check the full roadmap. In this episode, we focused in on [Data Culture](https://docs.microsoft.com/en-us/power-bi/guidance/powerbi-adoption-roadmap-data-culture), this topic is a bit ambiguous as it relates to how you measure the outcome or success of your organizations data culture. Despite that, we took a good shot and covered quite a bit of ground and came up with some good ideas of how to better measure and determine how to build, how to measure and challenges organizations face when embarking on increasing the value of decision making based on data.

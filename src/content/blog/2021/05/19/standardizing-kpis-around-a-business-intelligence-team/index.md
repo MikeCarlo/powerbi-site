@@ -1,13 +1,14 @@
 ---
-title: "Standardizing KPI’s around a Business Intelligence Team"
-excerpt: "_This article follows from Episode 5 of the new Explicit Measures Podcast, a whole new way to talk about Power BI. If this article strikes you as rele..."
-date: "2021-05-19"
+title: Standardizing KPI’s around a Business Intelligence Team
+excerpt: _This article follows from Episode 5 of the new Explicit Measures Podcast,
+  a whole new way to talk about Power BI. If this article strikes you as rele...
+date: '2021-05-19'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 _This article follows from Episode 5 of the new Explicit Measures Podcast, a whole new way to talk about Power BI. If this article strikes you as relevant, [subscribe to the podcast on Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple](https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083), or [wherever you listen](https://anchor.fm/explicitmeasures). You can also watch [live at 7:30am CST every Tuesday and Thursday morning on YouTube](https://youtube.com/playlist?list=PLn1m_aBmgsbHr83c1P6uqaWF5PLdFzOjj)._

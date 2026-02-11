@@ -1,13 +1,14 @@
 ---
-title: "PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes"
-excerpt: "Power BI is a powerful business intelligence tool that helps organizations to gain insights into their data. With its ability to create stunning visua..."
-date: "2023-02-28"
+title: 'PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes'
+excerpt: Power BI is a powerful business intelligence tool that helps organizations
+  to gain insights into their data. With its ability to create stunning visua...
+date: '2023-02-28'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Power BI is a powerful business intelligence tool that helps organizations to gain insights into their data. With its ability to create stunning visualizations, it’s no wonder that it’s become a popular tool among businesses. However, creating the perfect visualization requires more than just dragging and dropping data points onto a canvas. It requires a good understanding of design principles and a keen eye for detail. The time it takes to create a visual can be drastically reduced if a Theme is used.

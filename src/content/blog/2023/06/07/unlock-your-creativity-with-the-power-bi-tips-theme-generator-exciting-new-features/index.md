@@ -1,13 +1,14 @@
 ---
-title: "Unlock Your Creativity with the Power BI Tips Designer: Exciting New Features!"
-excerpt: "At Power BI Tips, we’re committed to providing you with the best tools and resources to enhance your report building experience. That’s why we’re thri..."
-date: "2023-06-07"
+title: 'Unlock Your Creativity with the Power BI Tips Designer: Exciting New Features!'
+excerpt: At Power BI Tips, we’re committed to providing you with the best tools and
+  resources to enhance your report building experience. That’s why we’re thri...
+date: '2023-06-07'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 At Power BI Tips, we’re committed to providing you with the best tools and resources to enhance your report building experience. That’s why we’re thrilled to announce a range of exciting new features to the Power BI Tips Theme Generator! With these new additions, we’re taking theme customization to a whole new level and empowering you to create consistent, visually stunning reports and dashboards like never before.

@@ -1,13 +1,14 @@
 ---
-title: "Power BI Support Channel: Microsoft Teams Tips"
-excerpt: "When organisations deploy Power BI, it is important to offer support to users. Often this can be in the form of formal help desk and tickets. In addit..."
-date: "2022-04-30"
+title: 'Power BI Support Channel: Microsoft Teams Tips'
+excerpt: When organisations deploy Power BI, it is important to offer support to users.
+  Often this can be in the form of formal help desk and tickets. In addit...
+date: '2022-04-30'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 When organisations deploy Power BI, it is important to offer support to users. Often this can be in the form of formal help desk and tickets. In addition to this, many companies use Microsoft Teams to set up specialised support channels. Teams offers a quick and straightforward way for users to get answers to questions. However, best practices should be followed when setting these up. This article focuses on some communication tips in Microsoft teams to help create a successful support channel.

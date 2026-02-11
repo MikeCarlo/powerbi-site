@@ -1,13 +1,15 @@
 ---
-title: "Tips+ Designer and Theme Generator Tutorial: Automatic Visual Objects with AI"
-excerpt: "Welcome to today’s tutorial where we’ll explore an exciting feature implemented to streamline your background creation process in Power BI. If you’ve..."
-date: "2024-04-29"
+title: 'Tips+ Designer and Theme Generator Tutorial: Automatic Visual Objects with
+  AI'
+excerpt: Welcome to today’s tutorial where we’ll explore an exciting feature implemented
+  to streamline your background creation process in Power BI. If you’ve...
+date: '2024-04-29'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Welcome to today’s tutorial where we’ll explore an exciting feature implemented to streamline your background creation process in Power BI. If you’ve ever found yourself spending too much time tweaking and aligning visual elements, this AI-powered solution will be a game-changer for you. This new feature continues to simplify the report visualization experience and open doors for other teams to decide on the visualizations, develop the look & feel, and pass off a pbip object to Data Engineers or BI Developers to easily add data into.

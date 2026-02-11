@@ -1,13 +1,14 @@
 ---
-title: "Power BI Version Control – Ready to use solution"
-excerpt: "Power BI Version Control is a free, fully-packaged solution that lets users apply version control, local editing, and manage PBIX or PBIT files. The s..."
-date: "2021-02-16"
+title: Power BI Version Control – Ready to use solution
+excerpt: Power BI Version Control is a free, fully-packaged solution that lets users
+  apply version control, local editing, and manage PBIX or PBIT files. The s...
+date: '2021-02-16'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Power BI Version Control is a free, fully-packaged solution that lets users apply version control, local editing, and manage PBIX or PBIT files. The solution runs entirely on Power Apps (Power Platform) and SharePoint. Power BI Version Control can give business users or smaller organizations the ability to easily implement and utilize version control for their Power BI projects.

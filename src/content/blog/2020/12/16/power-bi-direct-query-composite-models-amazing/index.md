@@ -1,13 +1,14 @@
 ---
-title: "Power BI Direct Query Composite Models = Amazing"
-excerpt: "Well Microsoft has done it again. They have added a great feature in the Power BI desktop release for December 2020. Direct Query to Power BI data sou..."
-date: "2020-12-16"
+title: Power BI Direct Query Composite Models = Amazing
+excerpt: Well Microsoft has done it again. They have added a great feature in the
+  Power BI desktop release for December 2020. Direct Query to Power BI data sou...
+date: '2020-12-16'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Well Microsoft has done it again. They have added a great feature in the Power BI desktop release for December 2020. Direct Query to Power BI data sources is a thing. As a result, this means we unlock new Architectural patterns.

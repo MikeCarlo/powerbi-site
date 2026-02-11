@@ -1,13 +1,14 @@
 ---
-title: "Super Fast Data Loads to Prod"
-excerpt: "When you have really large data models loaded in powerbi.com there are challenges around quickly loading gigs of data into a data model. This is parti..."
-date: "2022-09-20"
+title: Super Fast Data Loads to Prod
+excerpt: When you have really large data models loaded in powerbi.com there are challenges
+  around quickly loading gigs of data into a data model. This is parti...
+date: '2022-09-20'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 When you have really large data models loaded in powerbi.com there are challenges around quickly loading gigs of data into a data model. This is particularly challenging when working with data models in production. When changes are made which require a full load of data tables this can take hours to refresh. This means when a production change needs to be made, this should be done in low use times, evenings or over the weekend. What if we could greatly increase the load speed? but, we can!!

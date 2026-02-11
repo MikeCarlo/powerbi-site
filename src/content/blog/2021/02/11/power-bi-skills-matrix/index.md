@@ -1,13 +1,14 @@
 ---
-title: "Assess Knowledge using the Power BI Skills Matrix"
-excerpt: "Power BI took the BI world by storm 5 years ago, there has been a release of the Power BI Desktop almost every single month. The infant that was Power..."
-date: "2021-02-11"
+title: Assess Knowledge using the Power BI Skills Matrix
+excerpt: Power BI took the BI world by storm 5 years ago, there has been a release
+  of the Power BI Desktop almost every single month. The infant that was Power...
+date: '2021-02-11'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Power BI took the BI world by storm 5 years ago, there has been a release of the Power BI Desktop almost every single month. The infant that was Power BI has grown into a fully grown behemoth of an enterprise tool. It covers the spectrum of data access and storage options. It has internal and 3rd party tools that provide capabilities that are second to none. Top that off with its flexible licensing and implementation models within organizations and it is no wonder it is in front of the pack. As a result of that pace and growth, the amount of knowledge and skills required to build, manage and implement Power BI has also grown significantly. This has resulted in “Power BI”, meaning a lot of things, to many different people. Today we aim to solve that problem by introducing the Power BI Skills Matrix.

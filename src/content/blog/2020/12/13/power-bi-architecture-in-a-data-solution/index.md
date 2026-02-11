@@ -1,13 +1,14 @@
 ---
-title: "Power BI Architecture in a Data Solution"
-excerpt: "This article will focus on Power BI architecture within a data solution.   In this context, Power BI architecture describes how Power BI can slot in a..."
-date: "2020-12-13"
+title: Power BI Architecture in a Data Solution
+excerpt: This article will focus on Power BI architecture within a data solution.   In
+  this context, Power BI architecture describes how Power BI can slot in a...
+date: '2020-12-13'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 This article will focus on Power BI architecture within a data solution.  

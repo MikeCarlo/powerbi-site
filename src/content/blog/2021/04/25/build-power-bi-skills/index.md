@@ -1,13 +1,14 @@
 ---
-title: "How to Build Your Power BI Skills"
-excerpt: "**One of the biggest improvements you can make to your life and career is embracing a learning mentality.** If you are here, I assume one of your inte..."
-date: "2021-04-25"
+title: How to Build Your Power BI Skills
+excerpt: '**One of the biggest improvements you can make to your life and career is
+  embracing a learning mentality.** If you are here, I assume one of your inte...'
+date: '2021-04-25'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 **One of the biggest improvements you can make to your life and career is embracing a learning mentality.** If you are here, I assume one of your interest areas is Power BI. This post is the 2nd in the series to help individuals identify where your current skill strengths are, and where you have room for improvement. (The first post introduces the [Power BI Skills Matrix](https://powerbi.tips/2021/02/power-bi-skills-matrix/) and is designed to assess your current state.) After reading that you can dial in on your strengths and weaknesses and your now ready to start creating learning plans to build your Power BI Skills.

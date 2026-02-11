@@ -1,13 +1,14 @@
 ---
-title: "Does a Power BI developer need Python?"
-excerpt: "In this episode of the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/), we discuss the values of adding Python k..."
-date: "2023-05-18"
+title: Does a Power BI developer need Python?
+excerpt: In this episode of the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/),
+  we discuss the values of adding Python k...
+date: '2023-05-18'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 In this episode of the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/), we discuss the values of adding Python knowledge. It is well known that more organizations are moving to cloud platforms. Because of this, we should ask the following questions:

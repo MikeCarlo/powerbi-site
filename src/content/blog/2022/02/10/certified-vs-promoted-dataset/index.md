@@ -1,13 +1,14 @@
 ---
-title: "Certified vs. Promoted Dataset?"
-excerpt: "Power BI continues to grow and strengthen its position in the enterprise space. A feature that you may not be aware of, but can be extremely valuable,..."
-date: "2022-02-10"
+title: Certified vs. Promoted Dataset?
+excerpt: Power BI continues to grow and strengthen its position in the enterprise
+  space. A feature that you may not be aware of, but can be extremely valuable,...
+date: '2022-02-10'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Power BI continues to grow and strengthen its position in the enterprise space. A feature that you may not be aware of, but can be extremely valuable, is the ability to [certify datasets](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/intelligence-platform/power-bi-service/shared-certified-datasets). This capability offers organizations a way to help end users identify that certain datasets are more concrete than others. In this episode we discuss different criteria by which we think a dataset should reach a promoted or certified level. Do you use this feature? Do you know the difference between a Certified vs. Promoted Dataset?

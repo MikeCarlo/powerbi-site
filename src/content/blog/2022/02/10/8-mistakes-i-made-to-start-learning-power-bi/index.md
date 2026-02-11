@@ -1,13 +1,14 @@
 ---
-title: "8 Mistakes I made to Start Learning Power BI"
-excerpt: "If you want to start learning Power BI, or are looking to improve your skills, there are lots of areas you can start. However, learning itself is a sk..."
-date: "2022-02-10"
+title: 8 Mistakes I made to Start Learning Power BI
+excerpt: If you want to start learning Power BI, or are looking to improve your skills,
+  there are lots of areas you can start. However, learning itself is a sk...
+date: '2022-02-10'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 If you want to start learning Power BI, or are looking to improve your skills, there are lots of areas you can start. However, learning itself is a skill. When I started out, I had a few things that slowed down my progress. These are eight common mistakes that I made when I started my journey of Power BI, and the lessons I learned along the way!

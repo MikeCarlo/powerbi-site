@@ -1,13 +1,14 @@
 ---
-title: "Continuously Improving User Experience"
-excerpt: "In the day to day operations of businesses speed of delivery, cost effectiveness, and satisfaction of outcome is a trifecta of challenges we run again..."
-date: "2022-01-09"
+title: Continuously Improving User Experience
+excerpt: In the day to day operations of businesses speed of delivery, cost effectiveness,
+  and satisfaction of outcome is a trifecta of challenges we run again...
+date: '2022-01-09'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 In the day to day operations of businesses speed of delivery, cost effectiveness, and satisfaction of outcome is a trifecta of challenges we run against as report authors. Picking and choosing what parts to deliver, and when, determines the overall success of a given report. However, we typically can’t do all at the same time. As a result, we need to keep in mind that there should be a process or cycle of continuous improvement to ensure we are making the biggest impact to the business. In this episode we dive into these areas and more to discuss how to improve upon our solutions and what tips & tricks you can use to ensure you are continuously improving user experience.

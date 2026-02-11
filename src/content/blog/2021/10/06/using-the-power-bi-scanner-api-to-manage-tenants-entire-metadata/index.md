@@ -1,13 +1,14 @@
 ---
-title: "Using the Power BI Scanner API to Manage Tenant's Entire Metadata"
-excerpt: "_Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_ _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for..."
-date: "2021-10-06"
+title: Using the Power BI Scanner API to Manage Tenant's Entire Metadata
+excerpt: _Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_
+  _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for...
+date: '2021-10-06'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 _Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_ _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for inspiration and building off the work they have done already for the use cases for the Scanner API. Ferry created the initial Microsoft Flow to automate the request and pull of data, and design ideas were taken by Rui Romano’s existing Report. Please give them a shoutout because this would not be possible without them!_

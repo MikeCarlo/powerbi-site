@@ -1,13 +1,14 @@
 ---
-title: "A better way to Mobile"
-excerpt: "Where does the Power BI Mobile app fit within your report building plan? This topic is widely un-discussed within the Power BI community. Many blogs a..."
-date: "2021-09-23"
+title: A better way to Mobile
+excerpt: Where does the Power BI Mobile app fit within your report building plan?
+  This topic is widely un-discussed within the Power BI community. Many blogs a...
+date: '2021-09-23'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Where does the Power BI Mobile app fit within your report building plan? This topic is widely un-discussed within the Power BI community. Many blogs and tutorials focus mainly on developing Power BI reports for a desktop screen.  More specifically, a report design that fits a wide screen monitor. However, building reports for the mobile app require additional considerations.

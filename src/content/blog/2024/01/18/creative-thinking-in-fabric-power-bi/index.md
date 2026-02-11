@@ -1,13 +1,14 @@
 ---
-title: "Creative Thinking in Fabric & Power BI"
-excerpt: "In podcast #286 we take the time to review an older video of John Cleese giving a talk about the Creative Process in Management. We thought this would..."
-date: "2024-01-18"
+title: Creative Thinking in Fabric & Power BI
+excerpt: 'In podcast #286 we take the time to review an older video of John Cleese
+  giving a talk about the Creative Process in Management. We thought this would...'
+date: '2024-01-18'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 In podcast #286 we take the time to review an older video of John Cleese giving a talk about the Creative Process in Management. We thought this would be an outstanding conversation to draw parallels to the Business Intelligence world. There are so many different areas we can apply creative thinking in implementing Fabric & Power BI solutions.

@@ -1,13 +1,14 @@
 ---
-title: "Power BI End-to-End Architecture"
-excerpt: "Melissa Coates of Coates Data Strategies has produced a new version of the Power BI End-to-End architecture document. If you haven’t seen this documen..."
-date: "2021-01-05"
+title: Power BI End-to-End Architecture
+excerpt: Melissa Coates of Coates Data Strategies has produced a new version of the
+  Power BI End-to-End architecture document. If you haven’t seen this documen...
+date: '2021-01-05'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Melissa Coates of Coates Data Strategies has produced a new version of the Power BI End-to-End architecture document. If you haven’t seen this document it is definitely worth a read.

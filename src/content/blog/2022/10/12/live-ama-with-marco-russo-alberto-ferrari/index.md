@@ -1,13 +1,14 @@
 ---
-title: "Live AMA with Marco Russo & Alberto Ferrari"
-excerpt: "When the moon hits your eye… If Dean Martin were still alive and loved Power BI as much as we do… Do you think he might change up the lyrics of his so..."
-date: "2022-10-12"
+title: Live AMA with Marco Russo & Alberto Ferrari
+excerpt: When the moon hits your eye… If Dean Martin were still alive and loved Power
+  BI as much as we do… Do you think he might change up the lyrics of his so...
+date: '2022-10-12'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 When the moon hits your eye… If Dean Martin were still alive and loved Power BI as much as we do… Do you think he might change up the lyrics of his song? He would likely add a location like Chicago, add a pair of Italians that rarely grace small audiences together. And mix in an evening with in person and online attendees alike. Unlucky for us, we’ll never hear that song. Fortunately for us, we have two of the foremost experts in modeling and DAX, a location in Chicago, and over an hour to host an in person AMA!

@@ -1,13 +1,14 @@
 ---
-title: "Three New Time-Saving Scripts for Tabular Editor"
-excerpt: "Howdy folks!  I just published three new scripts for [Tabular Editor](https://tabulareditor.com/) to [the PowerBI.tips “TabularEditor-Scripts” reposit..."
-date: "2021-09-23"
+title: Three New Time-Saving Scripts for Tabular Editor
+excerpt: Howdy folks!  I just published three new scripts for [Tabular Editor](https://tabulareditor.com/)
+  to [the PowerBI.tips “TabularEditor-Scripts” reposit...
+date: '2021-09-23'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Howdy folks!

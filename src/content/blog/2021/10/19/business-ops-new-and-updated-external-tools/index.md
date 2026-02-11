@@ -1,13 +1,14 @@
 ---
-title: "Business Ops: New and Updated External Tools"
-excerpt: "Howdy, folks!  This past weekend, I was a man on a mission. There were two pressing reasons for a new release of Business Ops:  1.  The authors of man..."
-date: "2021-10-19"
+title: 'Business Ops: New and Updated External Tools'
+excerpt: 'Howdy, folks!  This past weekend, I was a man on a mission. There were two
+  pressing reasons for a new release of Business Ops:  1.  The authors of man...'
+date: '2021-10-19'
 authors:
-  - "Mike Carlo"
+- Mike Carlo
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Howdy, folks!

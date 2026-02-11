@@ -1,13 +1,14 @@
 ---
-title: "How to Represent Your Power BI Skills"
-excerpt: "This is part 3 of 3 in a series designed to help Power BI users and enthusiasts. The [first post](https://powerbi.tips/2021/02/power-bi-skills-matrix/..."
-date: "2021-05-11"
+title: How to Represent Your Power BI Skills
+excerpt: This is part 3 of 3 in a series designed to help Power BI users and enthusiasts.
+  The [first post](https://powerbi.tips/2021/02/power-bi-skills-matrix/...
+date: '2021-05-11'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 This is part 3 of 3 in a series designed to help Power BI users and enthusiasts. The [first post](https://powerbi.tips/2021/02/power-bi-skills-matrix/) focuses on identifying the dizzying array of skills that make up the Power BI ecosystem. It was created to help you take a personal inventory and assess your current skills. The [Second post](https://powerbi.tips/2021/04/build-power-bi-skills/) focuses on providing ideas for building learning plans and putting that base assessment to use. Finally, we come to this post where I’m going to focus on some key areas for how you represent your skills when the time comes. This post is for job seekers, for career movers and anyone else that finds themselves in a position where you need to represent your Power BI skills effectively.

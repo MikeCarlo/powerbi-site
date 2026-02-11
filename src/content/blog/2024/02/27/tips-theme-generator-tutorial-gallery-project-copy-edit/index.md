@@ -1,13 +1,14 @@
 ---
-title: "Tips+ Designer and Theme Generator Tutorial: Gallery Project Copy & Edit"
-excerpt: "## Introduction  Welcome to today’s tutorial where we dive into the powerful capabilities of the Power BI Tips+ Theme Generator. In this post, we won’..."
-date: "2024-02-27"
+title: 'Tips+ Designer and Theme Generator Tutorial: Gallery Project Copy & Edit'
+excerpt: '## Introduction  Welcome to today’s tutorial where we dive into the powerful
+  capabilities of the Power BI Tips+ Theme Generator. In this post, we won’...'
+date: '2024-02-27'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 ## Introduction

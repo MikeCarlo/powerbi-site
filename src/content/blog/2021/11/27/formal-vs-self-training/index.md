@@ -1,13 +1,14 @@
 ---
-title: "Power BI Formal vs. Self-Training"
-excerpt: "We’ve been having an amazing amount of fun having conversations on our podcast “[Explicit Measures](https://powerbi.tips/explicit-measures-power-bi-po..."
-date: "2021-11-27"
+title: Power BI Formal vs. Self-Training
+excerpt: We’ve been having an amazing amount of fun having conversations on our podcast
+  “[Explicit Measures](https://powerbi.tips/explicit-measures-power-bi-po...
+date: '2021-11-27'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 We’ve been having an amazing amount of fun having conversations on our podcast “[Explicit Measures](https://powerbi.tips/explicit-measures-power-bi-podcast/)”. Join us live on Tuesdays and Thursdays on YouTube or listen on Spotify or Apple Podcast. During our podcast this last week, we talked about which method is better when trying to learn all the different aspects of Power BI, Formal vs. Self-Training. Given that the tool has been out 6+ years, there are plenty of resources available now to all end users. As such, we discussed in detail many aspects of what these approaches offer. We’re huge proponents of making sure that all individuals keep learning, and the time you invest in yourself increases your value personally and professionally. Above all, whether it is formal training, or self-training, we encourage everyone to keep learning.

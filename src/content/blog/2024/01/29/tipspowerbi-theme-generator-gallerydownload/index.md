@@ -1,13 +1,15 @@
 ---
-title: "Tips+ Designer and Theme Generator Tutorial: Gallery Project Download for Easy Theme Solutions"
-excerpt: "Welcome to today’s tutorial where we’ll explore the Power BI Tips+ Theme Generator and its incredible features designed to streamline your Power BI re..."
-date: "2024-01-29"
+title: 'Tips+ Designer and Theme Generator Tutorial: Gallery Project Download for
+  Easy Theme Solutions'
+excerpt: Welcome to today’s tutorial where we’ll explore the Power BI Tips+ Theme
+  Generator and its incredible features designed to streamline your Power BI re...
+date: '2024-01-29'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 Welcome to today’s tutorial where we’ll explore the Power BI Tips+ Theme Generator and its incredible features designed to streamline your Power BI report building experience. In this walkthrough, we’ll guide you through the process of getting started with the Power BI Tips+ Gallery, focusing on the Sunset theme. By the end of this tutorial, you’ll be able to effortlessly integrate our pre-configured Gallery Projects into your Power BI reports. It doesn’t get easier than this!

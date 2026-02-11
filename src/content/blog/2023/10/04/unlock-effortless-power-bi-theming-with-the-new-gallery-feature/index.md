@@ -1,13 +1,14 @@
 ---
-title: "Unlock Effortless Power BI Theming with the New Gallery Feature"
-excerpt: "The Power BI Tips Theme Generator tool already allows you to easily interact with, and adjust, all the visual properties, wireframes, etc… How could w..."
-date: "2023-10-04"
+title: Unlock Effortless Power BI Theming with the New Gallery Feature
+excerpt: The Power BI Tips Theme Generator tool already allows you to easily interact
+  with, and adjust, all the visual properties, wireframes, etc… How could w...
+date: '2023-10-04'
 authors:
-  - "Seth Bauer"
+- Seth Bauer
 categories: []
 tags:
-  - "power-bi"
-featuredImage: ""
+- power-bi
+featuredImage: ./assets/featured.png
 ---
 
 The Power BI Tips Theme Generator tool already allows you to easily interact with, and adjust, all the visual properties, wireframes, etc… How could we possibly make Power BI Theme building an effortless experience? We start with building it all for you, then letting you adjust it!  
