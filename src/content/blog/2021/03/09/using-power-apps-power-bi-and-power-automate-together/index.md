@@ -67,4 +67,6 @@ Build a power app to drive actionable outcomes through process automation. Viewi
 
 Watch the video below to learn how to use Power Apps, Power BI and Power Automate together!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7KppXpVoEYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 This was originally recorded from the Milwaukee Brew City Power Platform User Group on August 24th, 2020.
