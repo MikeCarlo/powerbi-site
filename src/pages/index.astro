@@ -5,9 +5,11 @@ import { Image } from 'astro:assets';
 
 const base = import.meta.env.BASE_URL;
 
+const INITIAL_POSTS = 12;
+const BATCH_SIZE = 12;
+
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 12)
   .map((post) => ({
     ...post,
     slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')
@@ -28,11 +30,14 @@ const posts = (await getCollection('blog'))
     </div>
     <div class="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
       {posts.map((post, index) => (
-        <article class="rounded-xl border border-neutral-200 p-4 transition hover:-translate-y-1 hover:shadow-lg">
+        <article
+          class={`rounded-xl border border-neutral-200 p-4 transition hover:-translate-y-1 hover:shadow-lg ${index >= INITIAL_POSTS ? 'hidden' : ''}`}
+          data-post-card
+        >
           {post.data.featuredImage && (
             <a href={`${base}${post.slug}/`} class="block mb-3">
-              <Image 
-                src={post.data.featuredImage} 
+              <Image
+                src={post.data.featuredImage}
                 alt={post.data.title}
                 class="w-full aspect-video object-cover rounded-lg"
                 width={320}
@@ -54,7 +59,7 @@ const posts = (await getCollection('blog'))
           {post.data.categories?.length ? (
             <div class="mt-4 flex flex-wrap gap-2">
               {post.data.categories.map((category) => (
-                <a 
+                <a
                   href={`${base}category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
                   class="rounded-full bg-neutral-200 px-3 py-1 text-xs font-medium text-neutral-700 hover:bg-blue-100 hover:text-blue-800 transition-colors"
                 >
@@ -66,5 +71,39 @@ const posts = (await getCollection('blog'))
         </article>
       ))}
     </div>
+
+    <div class="mt-8 flex justify-center">
+      <button
+        id="load-more-posts"
+        type="button"
+        class={`rounded-full bg-neutral-900 px-6 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition-colors ${posts.length > INITIAL_POSTS ? '' : 'hidden'}`}
+      >
+        More
+      </button>
+    </div>
+
+    <script define:vars={{ initialPosts: INITIAL_POSTS, batchSize: BATCH_SIZE }}>
+      (function () {
+        const btn = document.getElementById('load-more-posts');
+        if (!btn) return;
+
+        // `initialPosts` + `batchSize` injected by Astro via define:vars
+        let shown = initialPosts;
+
+        function revealNextBatch() {
+          const cards = Array.from(document.querySelectorAll('[data-post-card]'));
+          const hidden = cards.filter((el) => el.classList.contains('hidden'));
+
+          hidden.slice(0, batchSize).forEach((el) => el.classList.remove('hidden'));
+          shown = cards.length - hidden.length + Math.min(batchSize, hidden.length);
+
+          // Hide button when no more posts remain
+          const remaining = cards.filter((el) => el.classList.contains('hidden')).length;
+          if (remaining === 0) btn.classList.add('hidden');
+        }
+
+        btn.addEventListener('click', revealNextBatch);
+      })();
+    </script>
   </section>
 </BaseLayout>
