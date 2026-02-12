@@ -6,8 +6,8 @@ import mdx from '@astrojs/mdx';
 
 import organizedSitemap from './src/integrations/organized-sitemap.mjs';
 
-const site = process.env.SITE || 'https://mikecarlo.github.io';
-const base = process.env.BASE_PATH || '/powerbi-site';
+const site = process.env.SITE || 'https://powerbi.tips';
+const base = process.env.BASE_PATH || '/';
 
 // https://astro.build/config
 export default defineConfig({
