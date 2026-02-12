@@ -5,6 +5,7 @@ date: "2016-09-30"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Mapping", "ArcGIS", "Visuals", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 In the September 2016 release of PowerBI, Microsoft introduced a new visual called the ArcGIS Maps preview. For more information on the maps integration you can read the following [post from Microsoft](https://powerbi.microsoft.com/en-us/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/). This tutorial will review how to load data using Latitude and Longitude data and map those points on the ArcGIS map.

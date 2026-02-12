@@ -10,6 +10,7 @@ tags:
   - "Get Data"
   - "Tutorial"
 excerpt: "Learn how to import CSV files into Power BI Desktop, create tables and charts, and copy visuals to build compelling data visualizations."
+featuredImage: "./assets/featured.png"
 ---
 
 This post is going to be similar to my previous post about Getting Data. I figure we better cover some of the basics before going crazy with deeper topics.

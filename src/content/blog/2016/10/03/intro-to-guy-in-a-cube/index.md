@@ -5,6 +5,7 @@ date: "2016-10-03"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Video", "Community", "Resources"]
+featuredImage: "./assets/featured.png"
 ---
 
 Kicking off my video series for PowerBI.Tips I have to give incredible props to Adam Saxton. Adam is a Microsoft Employee who creates THE BEST content for PowerBI.

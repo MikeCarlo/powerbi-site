@@ -5,6 +5,7 @@ date: "2016-08-04"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Tutorial", "Best Practices"]
+featuredImage: "./assets/featured.png"
 ---
 
 This week I encountered an issue when working with multiple queries in my data model. Here's what happened.

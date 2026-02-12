@@ -11,6 +11,7 @@ tags:
   - "Power Query"
   - "Tutorial"
 excerpt: "Learn how to pull data directly from Wikipedia into Power BI and create a beautiful filled map showing US population growth by state."
+featuredImage: "./assets/featured.png"
 ---
 
 For this tutorial we are going to get some real data from the web. One of the easiest sources to acquire information from is Wikipedia. I will caveat this by saying, it is easy to get data from Wikipedia, but I don't know if you can always trust the reliability. That being said, we are going to acquire the U.S. population and growth rate from 2010 to 2015 from the Wikipedia Web page.

@@ -5,6 +5,7 @@ date: "2016-05-07"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Tutorial", "Beginner"]
+featuredImage: "./assets/featured.png"
 ---
 
 Often there are times when you will want to display a totals. Using measures to calculate a total are extremely easy to use. The power of using a measure is when you are slicing and selecting different data points on a page. As you select different data points the sum will change to reflect the selected data.

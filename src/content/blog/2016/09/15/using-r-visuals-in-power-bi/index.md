@@ -5,6 +5,7 @@ date: "2016-09-15"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Visuals", "Tutorial", "Data Science"]
+featuredImage: "./assets/featured.png"
 ---
 
 For those of you who have been hanging around PowerBI for a while you have likely heard about integration with R visuals. No, this isn't a twisted dream where Power BI now ships with Pirates… Rather, this has been a highly untapped feature.

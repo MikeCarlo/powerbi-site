@@ -5,6 +5,7 @@ date: "2016-09-27"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Visuals", "ggplot2", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Continuing on the theme with R this month, this week's tutorial will be to design a hexagonal bin plot. At first you may say what in the world is a hexagonal bin plot. I'm glad you asked, behold a sweet honey comb of data:

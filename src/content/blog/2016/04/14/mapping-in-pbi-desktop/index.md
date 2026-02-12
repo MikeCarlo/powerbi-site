@@ -10,6 +10,7 @@ tags:
   - "Visualization"
   - "Tutorial"
 excerpt: "Learn how to create impressive map visualizations in Power BI Desktop using latitude and longitude data with this step-by-step mapping tutorial."
+featuredImage: "./assets/featured.png"
 ---
 
 This tutorial is a real simple mapping exercise. I was talking with a colleague today about Power BI and I was challenged to map something using latitude and longitude. I had played with mapping before but not using latitude or longitude.

@@ -10,6 +10,7 @@ tags:
   - "Troubleshooting"
   - "Tutorial"
 excerpt: "Learn how to troubleshoot and fix broken file connections in Power BI Desktop when your data source has moved or can't be found."
+featuredImage: "./assets/featured.png"
 ---
 
 One of the most important concepts to learn within Power BI Desktop is how to build a Data Model.

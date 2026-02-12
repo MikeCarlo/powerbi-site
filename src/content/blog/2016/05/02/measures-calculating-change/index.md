@@ -10,6 +10,7 @@ tags:
   - "Measures"
   - "Tutorial"
 excerpt: "Learn how to create percent change calculations in Power BI using DAX measures with practical examples using real-world automotive production data."
+featuredImage: "./assets/featured.png"
 ---
 
 In our last post we built our first measure to make calculated buckets for our data, found [here](/2016/04/27/power-bi-histogram-with-bins/). For this tutorial we will explore the power making measures using Data Analysis Expressions (DAX).

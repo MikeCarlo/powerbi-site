@@ -9,6 +9,7 @@ tags:
   - "Visualization"
   - "Tutorial"
 excerpt: "Learn how to create histograms with custom bins in Power BI using DAX measures to categorize and visualize your data distributions."
+featuredImage: "./assets/featured.png"
 ---
 
 Alright to start this Tutorial off right we are going to incorporate the new feature released this spring from Power BI, called publish to web. Below you can view last weeks tutorial and interact with the data. Feel free to click around to see how the visualization works (you can click the shaded states or on the state names at the bottom).

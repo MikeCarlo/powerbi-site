@@ -5,6 +5,7 @@ date: "2016-09-21"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Visuals", "ggplot2", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Back by popular demand, we have another great tutorial on using R visuals. There are a number of amazing visuals that have been supplied with the PowerBI desktop tool. However, there are some limitations. For example you can't merge a scatter plot with a bar chart or with an area chart. In some cases it may be applicable to display one graph with multiple plot types.

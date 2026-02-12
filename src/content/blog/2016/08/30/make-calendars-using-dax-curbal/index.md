@@ -5,6 +5,7 @@ date: "2016-08-30"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Date Table", "Tutorial", "Video"]
+featuredImage: "./assets/featured.png"
 ---
 
 Often you will need to create some custom calendars within your PowerBI reports. Ruth Pozuelo from Curbal does a great video tutorial on using Calendar() and CalendarAuto(). I have used the Calendar() DAX function many times and find it very helpful.

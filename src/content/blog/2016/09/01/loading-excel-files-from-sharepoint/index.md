@@ -5,6 +5,7 @@ date: "2016-09-01"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["SharePoint", "Excel", "Data Loading", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 This is a quick tutorial on how to load Excel files from a SharePoint page. SharePoint is a nice landing place for your data because it can be connected to the PowerBI.com service and thus can be used to schedule refreshes of data within your company (if you already have a SharePoint O365 account).

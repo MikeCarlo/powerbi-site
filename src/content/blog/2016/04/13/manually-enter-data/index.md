@@ -9,6 +9,7 @@ tags:
   - "Enter Data"
   - "Tutorial"
 excerpt: "Learn how to manually enter data directly into Power BI Desktop to create small tables for your visualizations without needing external files."
+featuredImage: "./assets/featured.png"
 ---
 
 There are often times when you need a small data set in order to make a visual behave exactly how you want it to. This may mean you need a small table to represent a range of numbers or text values.

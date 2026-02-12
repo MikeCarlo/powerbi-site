@@ -5,6 +5,7 @@ date: "2016-10-10"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["R", "Mapping", "Visuals", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Mapping is one of the better features of PowerBI. It is one of the more distinguishing feature differences between Excel and PowerBI. You can produce a map inside an excel document [using Bing maps](https://store.office.com/en-001/app.aspx?assetid=WA102957661&ui=en-US&rs=en-001&ad=US&appredirect=false), however, the experience has always felt a little like an after-thought. Mapping within PowerBI has a planned, and thoughtful integration.

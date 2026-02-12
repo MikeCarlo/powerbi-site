@@ -10,6 +10,7 @@ tags:
   - "Get Data"
   - "Tutorial"
 excerpt: "Learn how to load data from Excel into Power BI Desktop with this simple step-by-step tutorial covering the Get Data function and basic visualizations."
+featuredImage: "./assets/featured.png"
 ---
 
 We are going to kick this blog off with a simple example of how to load data from excel into Power BI Desktop.

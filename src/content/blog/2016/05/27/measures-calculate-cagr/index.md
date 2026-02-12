@@ -5,6 +5,7 @@ date: "2016-05-27"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "CAGR", "Tutorial", "Finance"]
+featuredImage: "./assets/featured.png"
 ---
 
 This tutorial walks through calculating a dynamic Compound Annual Growth Rate (CAGR). By dynamic we mean as you select different items on a bar chart for example the CAGR calculation will update to reveal the CAGR calculation only for the selected data.

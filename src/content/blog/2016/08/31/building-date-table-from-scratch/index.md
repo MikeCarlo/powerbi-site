@@ -5,6 +5,7 @@ date: "2016-08-31"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Date Table", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Recently at work I've been working with a number of large data warehouses with time series data. Often when working on such data you need to incorporate a data calendar to compute date ranges. So, for this tutorial we will build a custom date table directly inside PowerBI.

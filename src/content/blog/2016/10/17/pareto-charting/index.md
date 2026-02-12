@@ -5,6 +5,7 @@ date: "2016-10-17"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Visuals", "Tutorial", "Analysis"]
+featuredImage: "./assets/featured.png"
 ---
 
 The Pareto chart is a handy visual, but is not so easy to build in either Excel or PowerBI. In a Pareto chart, information is provided about an individual product or category as a bar, and a cumulative scale as a line which compares all bars. This type of visual can be extremely helpful when conducting failure mode analysis, causes of a problem, or even product portfolio balances.

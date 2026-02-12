@@ -5,6 +5,7 @@ date: "2016-10-04"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Best Practices", "Data Modeling", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Often times when you're working with large data models you will have multiple tables with many relationships. It could be complex - maybe you've seen something like the following:

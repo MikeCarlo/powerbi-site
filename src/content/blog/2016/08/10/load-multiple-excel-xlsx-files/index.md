@@ -5,6 +5,7 @@ date: "2016-08-10"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "Excel", "Data Loading", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 Previously we've done a tutorial on loading multiple text files within one query. This is nice, however we will also need to import multiple Excel files. First, to understand the procedure of querying multiple excel files you have to understand the basics between the CSV (comma separated values) file and an excel (.xls or .xlsx) file.

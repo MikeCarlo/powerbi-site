@@ -5,6 +5,7 @@ date: "2016-06-10"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Tutorial", "Percent Change"]
+featuredImage: "./assets/featured.png"
 ---
 
 This tutorial will produce a measure that will dynamically calculate a percent change every time an item is selected in a visual. The previous tutorial can be found [here](/2016/05/02/measures-calculating-change/). In the previous tutorial we calculated the percent change between two time periods, 2014 and 2013. In practice it is not always desirable to force your measure to only look at two time periods. Rather it would be nice that your measure calculations change with changes in your selections on visuals. Thus, for this tutorial we will add some dynamic intelligence to the measures.

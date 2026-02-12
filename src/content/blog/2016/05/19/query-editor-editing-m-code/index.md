@@ -5,6 +5,7 @@ date: "2016-05-19"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "M Language", "Query Editor", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 In this tutorial we'll learn how to copy and paste queries to and from the Query Editor. When your working in Power BI Desktop often you will need to share and model the data before it can be applied to the visual. In my experience you'll need to add a calculated column or break out a date such as 1/5/2016 into the Year 2016 or Month 01, components to properly display a visual.

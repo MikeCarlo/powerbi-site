@@ -5,6 +5,7 @@ date: "2016-07-14"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Time Intelligence", "Tutorial"]
+featuredImage: "./assets/featured.png"
 ---
 
 I had an interesting comment come up in conversation about how to calculate a percent change within a time series data set. For this instance we have data of employee badges that have been scanned into a building by date. Thus, there is a list of Badge IDs and date fields.

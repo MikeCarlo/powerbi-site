@@ -10,6 +10,7 @@ tags:
   - "Power Query"
   - "Tutorial"
 excerpt: "Learn how to load multiple files from a folder into Power BI Desktop using the powerful automated data loading feature that will change how you work with data."
+featuredImage: "./assets/featured.png"
 ---
 
 Ok, I've got to be honest the first two tutorials ([Loading Excel Files](/2016/03/29/import-an-excel-file-into-powerbi/), [Loading CSV Files](/2016/04/01/import-csv-file-to-power-bi/)) were only there to get things kicked off. Now we are getting to some of the good stuff.

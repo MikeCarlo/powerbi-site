@@ -5,6 +5,7 @@ date: "2016-06-16"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["Power Query", "Data Loading", "Tutorial", "Automation"]
+featuredImage: "./assets/featured.png"
 ---
 
 Let me setup a scenario for you. You get a data file from an automated system, it has the same number of columns but the data changes for every new file. Being the data savvy person that you are you've spent some time working in excel to make a template where you can copy your new data into and then automatically all your equations and graphs magically work. You pat yourself on the back and happily send out your fantastic report to everyone you know. Then tomorrow when the data comes to you again you repeat the same process over again. Still enamored by your awesome report, you send it out again knowing you have saved yourself so much time not having to do the analysis or creation of your reports over and over again.

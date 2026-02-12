@@ -5,6 +5,7 @@ date: "2016-07-28"
 authors: ["Mike Carlo"]
 categories: []
 tags: ["DAX", "Measures", "Tutorial", "Visuals"]
+featuredImage: "./assets/featured.png"
 ---
 
 As I have been exploring PowerBI and building dashboards I have noticed that often the visuals can obscure your data. As you click on different visuals there is a need to highlight different pieces of data.
