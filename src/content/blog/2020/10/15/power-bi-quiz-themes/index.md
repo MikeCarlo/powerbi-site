@@ -4,7 +4,8 @@ excerpt: "This month I had the privilege of participating in the Power BI Quiz. 
 date: "2020-10-15"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

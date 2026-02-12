@@ -5,7 +5,8 @@ excerpt: When you have really large data models loaded in powerbi.com there are 
 date: '2022-09-20'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

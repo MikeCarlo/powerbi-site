@@ -5,7 +5,8 @@ excerpt: Power BI took the BI world by storm 5 years ago, there has been a relea
 date: '2021-02-11'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

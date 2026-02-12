@@ -4,7 +4,8 @@ excerpt: "This month at our Power BI User group in Milwaukee Seth and myself wal
 date: "2019-10-30"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "The Milwaukee Brew City PUG for February had tons of rich demo content
 date: "2020-03-23"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

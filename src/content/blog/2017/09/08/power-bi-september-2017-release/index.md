@@ -4,7 +4,8 @@ excerpt: "September is here and there is a new update for Power BI desktop!Â  Iâ
 date: "2017-09-08"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

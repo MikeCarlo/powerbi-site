@@ -4,7 +4,8 @@ excerpt: "One of the really cool features contained within the PowerBI.com servi
 date: "2017-11-24"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "This month’s Milwaukee Power BI User group we have Reza Rad from Rad
 date: "2020-07-01"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

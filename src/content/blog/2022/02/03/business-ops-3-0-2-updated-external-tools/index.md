@@ -5,7 +5,9 @@ excerpt: 'Howdy folks, and Happy New Year!  We’ve just released Business Ops 3
 date: '2022-02-03'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
+  - "Interesting Fun Applications"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

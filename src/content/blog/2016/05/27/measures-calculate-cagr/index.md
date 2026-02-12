@@ -3,7 +3,8 @@ title: "Measures – Dynamic CAGR Calculation in DAX"
 excerpt: "Learn how to calculate a dynamic Compound Annual Growth Rate (CAGR) in Power BI using DAX. The calculation updates automatically as you select different data points."
 date: "2016-05-27"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["DAX", "Measures", "CAGR", "Tutorial", "Finance"]
 featuredImage: "./assets/featured.png"
 ---

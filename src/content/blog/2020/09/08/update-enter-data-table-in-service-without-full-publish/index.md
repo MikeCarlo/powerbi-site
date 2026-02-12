@@ -4,7 +4,8 @@ excerpt: "This tip outlines an easy deployment method for data tables that have 
 date: "2020-09-08"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

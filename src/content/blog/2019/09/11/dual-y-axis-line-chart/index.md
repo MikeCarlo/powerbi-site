@@ -4,7 +4,8 @@ excerpt: "Ever need two different scales on the Y-Axis of a line chart? If so, t
 date: "2019-09-11"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

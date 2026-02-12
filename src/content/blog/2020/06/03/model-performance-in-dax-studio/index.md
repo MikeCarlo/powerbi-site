@@ -4,7 +4,8 @@ excerpt: "Understand more about your model then you thought possible! This is pa
 date: "2020-06-03"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

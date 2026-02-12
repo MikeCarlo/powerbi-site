@@ -3,7 +3,8 @@ title: "Manually Enter Data"
 date: "2016-04-13"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "Enter Data"

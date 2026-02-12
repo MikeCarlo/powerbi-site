@@ -5,7 +5,8 @@ excerpt: Themes are the bedrock of consistency. As report authors it is importan
 date: '2021-12-22'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

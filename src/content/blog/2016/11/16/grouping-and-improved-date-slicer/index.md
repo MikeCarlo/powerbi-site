@@ -4,7 +4,8 @@ excerpt: "In the October update of PowerBI Desktop we were given a number of rea
 date: "2016-11-16"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

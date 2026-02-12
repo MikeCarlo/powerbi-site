@@ -4,7 +4,8 @@ excerpt: "There are different ways you can connect to a multitude of different d
 date: "2019-09-03"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "When I teach Power BI to new users, there are typically questions abou
 date: "2018-02-14"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

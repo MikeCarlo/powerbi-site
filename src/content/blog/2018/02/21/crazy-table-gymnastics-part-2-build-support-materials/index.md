@@ -4,7 +4,8 @@ excerpt: "This is part 2 in the 3 part series on developing super cool tables us
 date: "2018-02-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

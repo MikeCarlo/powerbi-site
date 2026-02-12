@@ -4,7 +4,8 @@ excerpt: "In the October 2020 release of Power BI desktop you have the ability t
 date: "2020-10-22"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

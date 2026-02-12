@@ -5,7 +5,8 @@ excerpt: '**UPDATE**: All downloads for business ops has moved to github release
 date: '2021-10-03'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

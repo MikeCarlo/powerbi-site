@@ -4,7 +4,8 @@ excerpt: "The Milwaukee Crew is back at it again with the October 2020 Power BI 
 date: "2020-10-29"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

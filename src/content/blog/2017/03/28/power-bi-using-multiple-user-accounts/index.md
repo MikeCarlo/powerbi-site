@@ -4,7 +4,8 @@ excerpt: "Here is a super helpful video from Guy in a Cube about how to have mul
 date: "2017-03-28"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

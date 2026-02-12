@@ -5,7 +5,8 @@ excerpt: '## **The Power BI Tips Theme Generator: Your Ultimate Theming Tool**  
 date: '2023-10-15'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

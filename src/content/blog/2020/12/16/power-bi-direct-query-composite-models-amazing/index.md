@@ -5,7 +5,8 @@ excerpt: Well Microsoft has done it again. They have added a great feature in th
 date: '2020-12-16'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

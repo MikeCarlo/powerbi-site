@@ -4,7 +4,8 @@ excerpt: "Darren Gosbell & Marco Russo join PowerBI.Tips in a 4 part series on h
 date: "2020-05-14"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

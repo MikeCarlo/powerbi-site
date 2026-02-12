@@ -3,7 +3,8 @@ title: "Measures – Intelligent Card Visual – Using DAX"
 excerpt: "Create a smart card visual in Power BI that displays the selected item name when one item is chosen, or shows the count when multiple items are selected."
 date: "2016-07-28"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["DAX", "Measures", "Tutorial", "Visuals"]
 featuredImage: "./assets/featured.png"
 ---

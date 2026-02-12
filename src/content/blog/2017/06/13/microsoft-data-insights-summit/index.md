@@ -4,7 +4,8 @@ excerpt: "This year I had the wonderful privilege to attend the Microsoft Data I
 date: "2017-06-13"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

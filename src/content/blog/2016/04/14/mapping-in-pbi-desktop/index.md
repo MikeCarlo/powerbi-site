@@ -3,7 +3,8 @@ title: "Map it, Map it Real Good"
 date: "2016-04-14"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "Maps"

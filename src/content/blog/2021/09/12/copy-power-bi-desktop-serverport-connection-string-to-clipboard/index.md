@@ -5,7 +5,8 @@ excerpt: Howdy, folks!  A few months ago, I was writing and running various Powe
 date: '2021-09-12'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

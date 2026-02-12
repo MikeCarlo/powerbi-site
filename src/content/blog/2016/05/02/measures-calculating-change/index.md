@@ -3,7 +3,8 @@ title: "Measures – Calculating % Change"
 date: "2016-05-02"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "DAX"

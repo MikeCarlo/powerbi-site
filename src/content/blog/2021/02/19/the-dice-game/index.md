@@ -5,7 +5,8 @@ excerpt: Well, it’s Friday, time to take a little break and play the Dice Game
 date: '2021-02-19'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

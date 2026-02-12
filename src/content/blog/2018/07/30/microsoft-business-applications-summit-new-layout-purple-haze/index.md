@@ -4,7 +4,8 @@ excerpt: "In honor of the 2018 Business Applications Summit, PowerBI.Tips has pu
 date: "2018-07-30"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

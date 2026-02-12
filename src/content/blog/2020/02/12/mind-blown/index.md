@@ -4,7 +4,8 @@ excerpt: "This report is just over the top amazing cool! Check out the work done
 date: "2020-02-12"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

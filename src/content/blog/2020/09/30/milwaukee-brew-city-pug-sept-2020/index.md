@@ -4,7 +4,8 @@ excerpt: "We were excited to welcome a good friend of PowerBI.Tips Alex Powers t
 date: "2020-09-30"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

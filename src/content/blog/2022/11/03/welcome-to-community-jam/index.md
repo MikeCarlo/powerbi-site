@@ -5,7 +5,10 @@ excerpt: _PowerBI.Tips LOVES community. And we are out to prove it._  We are so 
 date: '2022-11-03'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Articles Opinions"
+  - "News Events"
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

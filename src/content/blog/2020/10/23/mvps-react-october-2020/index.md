@@ -4,7 +4,9 @@ excerpt: "Horary! The Power BI desktop for October finally arrived and it is pac
 date: "2020-10-23"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Articles Opinions"
+  - "Data Culture"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

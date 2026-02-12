@@ -4,7 +4,8 @@ excerpt: "This month we are trying something brand new. We are introducing a new
 date: "2020-07-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

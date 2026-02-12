@@ -4,7 +4,8 @@ excerpt: "Hey everyone! We're excited to release our latest layout 'Smooth Opera
 date: "2019-03-21"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

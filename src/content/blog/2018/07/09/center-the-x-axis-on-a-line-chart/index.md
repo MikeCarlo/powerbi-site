@@ -4,7 +4,8 @@ excerpt: "Sometimes when your working on a line chart you want the x-axis to sta
 date: "2018-07-09"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

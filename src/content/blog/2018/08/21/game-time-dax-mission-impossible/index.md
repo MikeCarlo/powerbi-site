@@ -4,7 +4,8 @@ excerpt: "PowerBI.Tips and Phil Seamark are proud to release our third game writ
 date: "2018-08-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

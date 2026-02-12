@@ -4,7 +4,8 @@ excerpt: "Want to give a special thanks to the Microsoft PowerBI team for allowi
 date: "2018-07-28"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

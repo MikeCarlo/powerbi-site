@@ -5,7 +5,9 @@ excerpt: Power BI Version Control is a free, fully-packaged solution that lets u
 date: '2021-02-16'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

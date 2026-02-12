@@ -4,7 +4,8 @@ excerpt: "This post will walk through how to pull daily stock price from Yahoo! 
 date: "2019-10-22"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

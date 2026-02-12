@@ -4,7 +4,8 @@ excerpt: "When you design a report, there are a number of things to consider.  
 date: "2018-09-04"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

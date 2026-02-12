@@ -4,7 +4,8 @@ excerpt: "The April 2020 Power BI desktop release is an amazing release. This mo
 date: "2020-05-06"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "I recently encountered a really frustrating experience related to a se
 date: "2019-09-17"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

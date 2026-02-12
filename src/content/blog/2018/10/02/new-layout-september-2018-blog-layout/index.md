@@ -4,7 +4,8 @@ excerpt: "In the September 2018 blog post the Microsoft team released a new layo
 date: "2018-10-02"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

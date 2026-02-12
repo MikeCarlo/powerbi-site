@@ -3,7 +3,8 @@ title: "Fixing Measure Madness"
 excerpt: "Organize your Power BI data model by creating a dedicated measures table. Group all your DAX measures in one place for cleaner, more maintainable reports."
 date: "2016-10-04"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["DAX", "Best Practices", "Data Modeling", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---

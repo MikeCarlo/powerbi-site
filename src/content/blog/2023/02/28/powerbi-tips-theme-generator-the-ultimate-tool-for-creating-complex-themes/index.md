@@ -5,7 +5,8 @@ excerpt: Power BI is a powerful business intelligence tool that helps organizati
 date: '2023-02-28'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

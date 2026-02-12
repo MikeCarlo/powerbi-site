@@ -4,7 +4,8 @@ excerpt: "First off, let me say WOW!  The announcement of Layouts was well rece
 date: "2018-01-19"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

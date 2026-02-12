@@ -4,7 +4,8 @@ excerpt: "Sometimes, we want the users to see different metrics, but do not want
 date: "2019-08-08"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

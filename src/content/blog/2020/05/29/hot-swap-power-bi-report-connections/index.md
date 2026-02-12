@@ -4,7 +4,8 @@ excerpt: "Let’s say you have a Power BI file connected to an Analysis Services
 date: "2020-05-29"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

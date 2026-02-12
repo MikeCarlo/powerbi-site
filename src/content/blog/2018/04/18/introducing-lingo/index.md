@@ -4,7 +4,8 @@ excerpt: "Update: This tool has been deprecated as of 2024-11-27. You can now fi
 date: "2018-04-18"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

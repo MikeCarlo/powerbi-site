@@ -4,7 +4,8 @@ excerpt: "To celebrate joining the Power BI Cat team next week, I thought I woul
 date: "2019-01-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

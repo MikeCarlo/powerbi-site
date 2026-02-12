@@ -3,7 +3,8 @@ title: "Digging Deeper with R Visuals for PowerBI"
 excerpt: "Create advanced R visuals in Power BI combining area plots, bar charts, and scatter points using ggplot2. Learn how R scripts respond to slicer selections."
 date: "2016-09-21"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["R", "Visuals", "ggplot2", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---

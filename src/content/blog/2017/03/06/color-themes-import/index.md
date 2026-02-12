@@ -4,7 +4,8 @@ excerpt: "March is an exciting month, and with this release of Power BI we have 
 date: "2017-03-06"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

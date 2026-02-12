@@ -5,7 +5,8 @@ excerpt: This topic was gleaned from the absolute wealth of knowledge put down i
 date: '2021-12-09'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

@@ -4,7 +4,8 @@ excerpt: "I’m a lazy engineer.  Let me qualify my statement.  In lazy I mean
 date: "2019-07-03"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

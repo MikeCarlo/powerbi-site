@@ -4,7 +4,8 @@ excerpt: "Iâ€™ve been using Power BI since it was released back in 2015, and Iâ€
 date: "2017-08-14"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "I am proud to announce another joint development game between Philip S
 date: "2018-07-17"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

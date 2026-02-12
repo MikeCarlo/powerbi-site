@@ -4,7 +4,8 @@ excerpt: "Of all the connection types, I’ve always gravitated towards this one
 date: "2018-02-26"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

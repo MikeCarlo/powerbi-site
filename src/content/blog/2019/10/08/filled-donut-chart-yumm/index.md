@@ -4,7 +4,8 @@ excerpt: "We are starting today off with a fun chart. We will be making a filled
 date: "2019-10-08"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

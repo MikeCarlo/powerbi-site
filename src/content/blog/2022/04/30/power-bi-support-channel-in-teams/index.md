@@ -5,7 +5,8 @@ excerpt: When organisations deploy Power BI, it is important to offer support to
 date: '2022-04-30'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

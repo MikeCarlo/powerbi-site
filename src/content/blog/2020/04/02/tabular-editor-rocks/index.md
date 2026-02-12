@@ -4,7 +4,8 @@ excerpt: "Tabular Editor is an incredible Tool that enables users to manipulate 
 date: "2020-04-02"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "This year the Microsoft Business Application Summit (MBAS) was held in
 date: "2019-06-20"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

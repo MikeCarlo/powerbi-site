@@ -3,7 +3,8 @@ title: "Import CSV file to Power BI"
 date: "2016-04-01"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "CSV"

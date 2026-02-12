@@ -5,7 +5,8 @@ excerpt: Using Power Apps Power BI and Power Automate together can unleash huge 
 date: '2021-03-09'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

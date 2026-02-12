@@ -3,7 +3,8 @@ title: "Loading Excel Files from SharePoint"
 excerpt: "Learn how to connect Power BI Desktop to SharePoint document libraries and load Excel files. Enable scheduled data refreshes with SharePoint O365."
 date: "2016-09-01"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["SharePoint", "Excel", "Data Loading", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---

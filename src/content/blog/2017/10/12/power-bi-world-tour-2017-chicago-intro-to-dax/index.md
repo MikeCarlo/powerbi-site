@@ -4,7 +4,8 @@ excerpt: "DAX (Database Access Expressions) can be quite complex.  It is essent
 date: "2017-10-12"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

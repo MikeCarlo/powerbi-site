@@ -5,7 +5,8 @@ excerpt: 'In podcast #286 we take the time to review an older video of John Clee
 date: '2024-01-18'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

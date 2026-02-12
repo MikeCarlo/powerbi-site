@@ -5,7 +5,8 @@ excerpt: First of all, go read this amazing blog put out by Alberto Ferrari over
 date: '2021-12-15'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

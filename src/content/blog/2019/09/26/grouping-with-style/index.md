@@ -4,7 +4,8 @@ excerpt: "# Grouping with Style  The release of grouping visuals was an extremel
 date: "2019-09-26"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

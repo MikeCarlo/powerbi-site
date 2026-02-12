@@ -4,7 +4,8 @@ excerpt: "This week I had a number of team members tell me how difficult it was 
 date: "2017-03-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

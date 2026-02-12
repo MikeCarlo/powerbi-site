@@ -4,7 +4,8 @@ excerpt: "What does it take to design and create a great looking report in Power
 date: "2020-09-29"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

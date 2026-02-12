@@ -4,7 +4,8 @@ excerpt: "Here we are, jumping in to 2020. This Month PowerBI.Tips is kicking of
 date: "2020-02-04"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

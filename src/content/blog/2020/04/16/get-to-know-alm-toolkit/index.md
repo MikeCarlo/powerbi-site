@@ -4,7 +4,8 @@ excerpt: "The ALM Toolkit is an excellent tool for aiding users with Tabular Mod
 date: "2020-04-16"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

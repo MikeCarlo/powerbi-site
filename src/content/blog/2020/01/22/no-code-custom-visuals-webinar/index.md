@@ -4,7 +4,8 @@ excerpt: "This month we did a webinar with the Microsoft team on how to build di
 date: "2020-01-22"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

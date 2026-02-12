@@ -5,7 +5,8 @@ excerpt: _This article follows from Episode 5 of the new Explicit Measures Podca
 date: '2021-05-19'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

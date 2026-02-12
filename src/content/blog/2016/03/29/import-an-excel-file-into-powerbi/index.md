@@ -3,7 +3,8 @@ title: "Import an Excel file into PowerBI"
 date: "2016-03-29"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "Excel"

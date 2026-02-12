@@ -5,7 +5,8 @@ excerpt: In the day to day operations of businesses speed of delivery, cost effe
 date: '2022-01-09'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

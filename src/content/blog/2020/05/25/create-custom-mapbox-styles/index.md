@@ -4,7 +4,8 @@ excerpt: "If you’ve played around with MapBox in Power BI – you’ll know th
 date: "2020-05-25"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -5,7 +5,8 @@ excerpt: 'Howdy, folks!  This past weekend, I was a man on a mission. There were
 date: '2021-10-19'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

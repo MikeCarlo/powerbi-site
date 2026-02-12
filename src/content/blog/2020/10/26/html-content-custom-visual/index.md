@@ -4,7 +4,8 @@ excerpt: "Daniel Marsh-Patrick is a custom visual developer who recently release
 date: "2020-10-26"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

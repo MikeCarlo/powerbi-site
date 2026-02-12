@@ -5,7 +5,8 @@ excerpt: This month we partnered with the relaunch of the Des Moines user group 
 date: '2021-12-12'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

@@ -4,7 +4,8 @@ excerpt: "In some recent conversations the notion of minimizing the number of re
 date: "2019-12-06"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

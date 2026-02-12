@@ -4,7 +4,8 @@ excerpt: "Power BI has been an continually evolving tool over the last year.  T
 date: "2017-02-16"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "There are cases when working with Power BI files, that you would want 
 date: "2018-01-15"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

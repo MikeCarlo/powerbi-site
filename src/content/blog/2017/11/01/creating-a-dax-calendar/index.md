@@ -4,7 +4,8 @@ excerpt: "There are many cases when you will need to create a date table within 
 date: "2017-11-01"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -6,7 +6,8 @@ excerpt: Welcome to today’s tutorial where we’ll explore the Power BI Tips+ 
 date: '2024-01-29'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

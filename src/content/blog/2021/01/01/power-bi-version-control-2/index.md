@@ -4,7 +4,8 @@ excerpt: "## **Please navigate to the following page to see Power BI Version Con
 date: "2021-01-01"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

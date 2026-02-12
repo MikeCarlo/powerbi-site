@@ -5,7 +5,8 @@ excerpt: '## The Problem  Most of you have probably run into a situation where s
 date: '2022-05-06'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

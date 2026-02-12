@@ -4,7 +4,8 @@ excerpt: "As a user that builds Power BI reports, did you know the different tec
 date: "2019-10-15"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

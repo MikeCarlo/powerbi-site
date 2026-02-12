@@ -5,7 +5,8 @@ excerpt: Where does the Power BI Mobile app fit within your report building plan
 date: '2021-09-23'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

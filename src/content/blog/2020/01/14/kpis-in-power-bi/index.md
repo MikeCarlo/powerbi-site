@@ -4,7 +4,8 @@ excerpt: "KPIs are a key visualization type used to convey high level metrics to
 date: "2020-01-14"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

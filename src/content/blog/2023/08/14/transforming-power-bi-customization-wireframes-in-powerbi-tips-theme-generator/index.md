@@ -5,7 +5,8 @@ excerpt: '### **Introducing the New PowerBI.Tips WireFrames Feature**  In the dy
 date: '2023-08-14'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

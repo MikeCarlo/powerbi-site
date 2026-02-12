@@ -4,7 +4,8 @@ excerpt: "For those of you who are following my tutorials, you are most likely t
 date: "2017-02-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

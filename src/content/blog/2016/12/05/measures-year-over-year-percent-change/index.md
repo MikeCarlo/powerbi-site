@@ -4,7 +4,8 @@ excerpt: "This tutorial is a variation on the month to month percent change tuto
 date: "2016-12-05"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

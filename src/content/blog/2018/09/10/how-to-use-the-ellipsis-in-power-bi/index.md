@@ -4,7 +4,8 @@ excerpt: "In Power BI reports various features are used to enhance the reporting
 date: "2018-09-10"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Consuming Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

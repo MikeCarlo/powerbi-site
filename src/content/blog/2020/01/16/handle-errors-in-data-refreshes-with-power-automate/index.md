@@ -4,7 +4,8 @@ excerpt: "This article examines using the advanced editor in Power Query to bett
 date: "2020-01-16"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

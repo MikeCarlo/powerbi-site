@@ -4,7 +4,8 @@ excerpt: "Power BI’s default connection type is Import. In fact, if you have n
 date: "2017-11-16"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

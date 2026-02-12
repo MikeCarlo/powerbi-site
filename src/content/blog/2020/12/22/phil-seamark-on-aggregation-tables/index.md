@@ -4,7 +4,8 @@ excerpt: "I was having a candid conversation with Phil Seamark from DAX.tips abo
 date: '2020-12-22'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

@@ -3,7 +3,8 @@ title: "Folder of Files Loaded to Power BI Desktop"
 date: "2016-04-07"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "Get Data"

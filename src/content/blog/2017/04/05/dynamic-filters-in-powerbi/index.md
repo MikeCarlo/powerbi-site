@@ -4,7 +4,8 @@ excerpt: "This video talks about how to create custom links that apply report l
 date: "2017-04-05"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

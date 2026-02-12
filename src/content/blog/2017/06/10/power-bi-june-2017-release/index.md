@@ -4,7 +4,8 @@ excerpt: "This month we have a big release for Power BI Desktop and for the Powe
 date: "2017-06-10"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

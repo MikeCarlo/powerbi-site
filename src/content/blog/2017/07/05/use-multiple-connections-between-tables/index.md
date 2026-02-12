@@ -4,7 +4,8 @@ excerpt: "For those of you who work in supply chain management this tutorial wil
 date: "2017-07-05"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

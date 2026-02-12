@@ -4,7 +4,8 @@ excerpt: "It’s that exciting time of month again.  Time for another power BI 
 date: "2017-05-03"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

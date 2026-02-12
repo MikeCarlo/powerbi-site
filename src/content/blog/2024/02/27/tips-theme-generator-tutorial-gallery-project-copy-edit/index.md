@@ -5,7 +5,8 @@ excerpt: '## Introduction  Welcome to today’s tutorial where we dive into the 
 date: '2024-02-27'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

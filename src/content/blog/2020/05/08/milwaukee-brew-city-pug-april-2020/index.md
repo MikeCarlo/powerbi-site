@@ -4,7 +4,8 @@ excerpt: "The Milwaukee Brew City PUG for April kicks off with some quick update
 date: "2020-05-08"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

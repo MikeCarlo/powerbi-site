@@ -5,7 +5,8 @@ excerpt: When the moon hits your eye… If Dean Martin were still alive and love
 date: '2022-10-12'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "News Events"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

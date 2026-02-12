@@ -4,7 +4,8 @@ excerpt: "This week Philip Seamark, an avid Power BI developer has released a jo
 date: "2018-06-22"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

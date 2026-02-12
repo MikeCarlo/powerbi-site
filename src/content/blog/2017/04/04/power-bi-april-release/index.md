@@ -4,7 +4,8 @@ excerpt: "With another month comes another exciting release of PowerBI desktop. 
 date: "2017-04-04"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

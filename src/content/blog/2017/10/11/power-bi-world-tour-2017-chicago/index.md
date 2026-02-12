@@ -4,7 +4,8 @@ excerpt: "To everyone who was able to attend the Power BI World Tour 2017, Thank
 date: "2017-10-11"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

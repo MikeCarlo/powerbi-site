@@ -4,7 +4,8 @@ excerpt: "As a report author it is important that you build the necessary contex
 date: "2020-02-17"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

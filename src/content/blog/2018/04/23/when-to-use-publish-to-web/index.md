@@ -4,7 +4,8 @@ excerpt: "There are often questions surrounding Publish to Web.  What is it?  
 date: "2018-04-23"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

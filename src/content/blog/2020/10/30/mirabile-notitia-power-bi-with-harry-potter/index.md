@@ -4,7 +4,8 @@ excerpt: "I was recently contacted by Power BI Community member Gomathy Viswanat
 date: "2020-10-30"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

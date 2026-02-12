@@ -3,6 +3,8 @@ title: "Power BI Histogram with Bins – Includes DAX"
 date: "2016-04-27"
 authors:
   - "Mike Carlo"
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "DAX"

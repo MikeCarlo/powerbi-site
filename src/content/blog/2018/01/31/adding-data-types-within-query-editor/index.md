@@ -4,7 +4,8 @@ excerpt: "If you have spent any time working in Power BI, your very first step i
 date: "2018-01-31"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

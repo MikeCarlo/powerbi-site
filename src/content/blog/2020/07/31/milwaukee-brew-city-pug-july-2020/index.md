@@ -4,7 +4,8 @@ excerpt: "Welcome to July! This month we have Tommy Puglia from the Chicago Powe
 date: "2020-07-31"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

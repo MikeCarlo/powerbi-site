@@ -4,7 +4,8 @@ excerpt: "In October of 2019 Power BI released a new file type, PBIDS. The Power
 date: "2019-10-23"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

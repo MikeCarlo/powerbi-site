@@ -4,7 +4,8 @@ excerpt: "This post will walk through how to pull an estimated household income 
 date: "2019-11-09"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

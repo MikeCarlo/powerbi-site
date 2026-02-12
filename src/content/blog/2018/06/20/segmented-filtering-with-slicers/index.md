@@ -4,7 +4,8 @@ excerpt: "This weeks tutorial focuses on the need to control groups of visuals i
 date: "2018-06-20"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

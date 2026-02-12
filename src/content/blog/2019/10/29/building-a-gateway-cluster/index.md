@@ -4,7 +4,8 @@ excerpt: "Power BI requires a gateway for refreshing on premises data sources. T
 date: "2019-10-29"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: This is part 3 of 3 in a series designed to help Power BI users and ent
 date: '2021-05-11'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

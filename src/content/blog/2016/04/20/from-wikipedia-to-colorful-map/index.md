@@ -3,7 +3,8 @@ title: "From Wikipedia to a Colorful Map"
 date: "2016-04-20"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "Power BI"
   - "Maps"

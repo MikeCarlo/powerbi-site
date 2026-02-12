@@ -5,7 +5,8 @@ excerpt: This article will focus on Power BI architecture within a data solution
 date: '2020-12-13'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

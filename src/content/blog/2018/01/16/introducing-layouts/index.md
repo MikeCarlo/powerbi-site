@@ -4,7 +4,8 @@ excerpt: "PowerBI.tips is extremely happy to be part of, and contribute to, the 
 date: "2018-01-16"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

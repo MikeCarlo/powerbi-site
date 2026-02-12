@@ -4,7 +4,8 @@ excerpt: "For each visual in Power BI Desktop there is a button called Focus Mod
 date: "2019-11-20"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

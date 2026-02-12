@@ -4,7 +4,8 @@ excerpt: "I love these updates, it’s like Christmas comes every month!!  This
 date: "2017-08-11"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "I have been holding on to a copy of Satya Nadella’s book “Hit Refr
 date: "2018-11-13"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

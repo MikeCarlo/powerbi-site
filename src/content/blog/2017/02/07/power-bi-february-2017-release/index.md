@@ -4,7 +4,8 @@ excerpt: "The long awaited PowerBI Desktop release is here.  I’d like to poin
 date: "2017-02-07"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "If you haven’t had your mind melted over the past few games that Phi
 date: "2018-11-26"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Interesting Fun Applications"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

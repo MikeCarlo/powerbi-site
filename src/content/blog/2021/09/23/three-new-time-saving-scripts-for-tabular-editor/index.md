@@ -4,7 +4,8 @@ excerpt: "Howdy folks! I just published three new time-saving scripts for Tabula
 date: '2021-09-23'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

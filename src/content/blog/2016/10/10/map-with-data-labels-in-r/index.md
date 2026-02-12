@@ -3,7 +3,8 @@ title: "Map with Data Labels in R"
 excerpt: "Create a US map in Power BI with state labels and year-over-year change indicators using R and ggplot2. Color-coded labels show positive and negative trends."
 date: "2016-10-10"
 authors: ["Mike Carlo"]
-categories: []
+categories:
+  - "Building Reports"
 tags: ["R", "Mapping", "Visuals", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---

@@ -4,7 +4,8 @@ excerpt: "I am just bursting with excitement!! This month the amazing Power BI t
 date: "2019-07-18"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

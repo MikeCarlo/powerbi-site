@@ -4,7 +4,8 @@ excerpt: "If you haven’t heard about DAX Studio, well now you have. DAX studio
 date: "2020-07-15"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

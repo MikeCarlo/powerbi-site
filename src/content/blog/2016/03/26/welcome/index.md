@@ -3,7 +3,8 @@ title: "Welcome to my Site"
 date: "2016-03-26"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "Getting Started"
   - "Power BI"

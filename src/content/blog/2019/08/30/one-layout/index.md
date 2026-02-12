@@ -4,7 +4,8 @@ excerpt: "This layout continues to deliver fantastic visual guides to make your 
 date: "2019-08-30"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

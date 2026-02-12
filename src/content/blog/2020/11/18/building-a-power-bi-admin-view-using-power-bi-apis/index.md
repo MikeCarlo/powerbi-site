@@ -4,7 +4,8 @@ excerpt: "We just completed an amazing webinar from Parker Stevens over at BI El
 date: "2020-11-18"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

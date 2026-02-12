@@ -4,7 +4,8 @@ excerpt: "Learn how to use SUM() and SUMX() with this great video from Curbal. A
 date: "2017-04-06"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

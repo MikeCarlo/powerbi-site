@@ -4,7 +4,8 @@ excerpt: "We are excited to announce a new tool from PowerBI.tips — The Busine
 date: "2020-08-13"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

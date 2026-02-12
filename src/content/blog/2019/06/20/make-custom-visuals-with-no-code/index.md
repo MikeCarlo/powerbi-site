@@ -4,7 +4,8 @@ excerpt: "Welcome to another installment of building custom visuals with the Cha
 date: "2019-06-20"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

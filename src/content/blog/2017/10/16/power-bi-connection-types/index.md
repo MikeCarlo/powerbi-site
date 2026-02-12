@@ -4,7 +4,8 @@ excerpt: "Get Data – Power BI Connection Types: An Introduction to understandi
 date: "2017-10-16"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "Latest Version Download: ### Download the latest version of Hot Swap C
 date: "2020-08-13"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

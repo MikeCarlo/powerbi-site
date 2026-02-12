@@ -5,7 +5,8 @@ excerpt: Melissa Coates of Coates Data Strategies has produced a new version of 
 date: '2021-01-05'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

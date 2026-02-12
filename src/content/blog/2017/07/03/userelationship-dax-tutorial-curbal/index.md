@@ -4,7 +4,8 @@ excerpt: "Here is another great tutorial from Curbal.  This tutorial teaches yo
 date: "2017-07-03"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

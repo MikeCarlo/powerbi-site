@@ -4,7 +4,8 @@ excerpt: "If you’re like me, building a data model in Power BI is an iterative
 date: "2020-01-29"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

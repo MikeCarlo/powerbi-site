@@ -4,7 +4,8 @@ excerpt: "Over the course of time Power BI has come to encompass a wide variety 
 date: "2019-11-27"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

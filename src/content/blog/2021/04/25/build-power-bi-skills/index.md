@@ -5,7 +5,8 @@ excerpt: '**One of the biggest improvements you can make to your life and career
 date: '2021-04-25'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

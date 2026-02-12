@@ -4,7 +4,8 @@ excerpt: "Now that we've covered the basics of connection types, let's dive into
 date: "2017-12-29"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "The Monkey Tools add-in for excel is really amazing. As a developer fo
 date: "2020-08-07"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

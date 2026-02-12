@@ -4,7 +4,9 @@ excerpt: "PowerBI.tips is excited to announce our new tool to help you build the
 date: "2019-12-23"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

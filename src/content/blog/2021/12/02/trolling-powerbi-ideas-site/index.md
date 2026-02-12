@@ -5,7 +5,8 @@ excerpt: Trolling… we should clear up the definition of this right off the bat
 date: '2021-12-02'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

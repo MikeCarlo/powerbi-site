@@ -4,7 +4,8 @@ excerpt: "Recently I had the privilege of working with Microsoft doing a Webinar
 date: "2020-02-04"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

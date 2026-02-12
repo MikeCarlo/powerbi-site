@@ -4,7 +4,8 @@ excerpt: "The Power BI Field Finder created by Stephanie Bruno was just updated.
 date: "2020-11-18"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

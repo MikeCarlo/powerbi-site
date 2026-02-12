@@ -4,7 +4,8 @@ excerpt: "This month we got the Power BI desktop update a little bit later becau
 date: "2020-09-29"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

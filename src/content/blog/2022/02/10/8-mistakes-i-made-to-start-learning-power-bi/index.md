@@ -5,7 +5,8 @@ excerpt: If you want to start learning Power BI, or are looking to improve your 
 date: '2022-02-10'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

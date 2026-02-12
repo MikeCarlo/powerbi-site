@@ -4,7 +4,8 @@ excerpt: "Time and time again when I begin talking with Excel users and ask to s
 date: "2019-07-11"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

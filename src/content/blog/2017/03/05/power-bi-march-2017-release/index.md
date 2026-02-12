@@ -4,7 +4,8 @@ excerpt: "This month it is a major game changer.  PowerBI has introduced the ab
 date: "2017-03-05"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

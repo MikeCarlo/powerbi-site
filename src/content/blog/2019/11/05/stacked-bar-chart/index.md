@@ -4,7 +4,8 @@ excerpt: "For this week we are building a stacked bar chart on https://Charts.Po
 date: "2019-11-05"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

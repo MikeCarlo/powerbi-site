@@ -4,7 +4,8 @@ excerpt: "“Square One” utilizes the color theme as a background component th
 date: "2019-05-01"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

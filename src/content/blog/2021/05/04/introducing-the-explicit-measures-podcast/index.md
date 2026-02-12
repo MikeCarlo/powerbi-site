@@ -4,7 +4,8 @@ excerpt: "Welcome to a new podcast from PowerBI.tips — the Explicit Measures P
 date: '2021-05-04'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

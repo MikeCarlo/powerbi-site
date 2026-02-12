@@ -4,7 +4,8 @@ excerpt: "Hands down best feature this year to date, Data Table Filtering!  In 
 date: "2018-06-06"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

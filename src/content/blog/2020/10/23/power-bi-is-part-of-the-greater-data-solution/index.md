@@ -4,7 +4,9 @@ excerpt: "Power BI is a powerful reporting tool that has been dominating the mar
 date: "2020-10-23"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Articles Opinions"
+  - "Data Culture"
 tags:
   - "power-bi"
 featuredImage: ./assets/featured.png

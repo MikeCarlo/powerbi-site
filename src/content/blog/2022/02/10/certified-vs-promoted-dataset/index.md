@@ -5,7 +5,8 @@ excerpt: Power BI continues to grow and strengthen its position in the enterpris
 date: '2022-02-10'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

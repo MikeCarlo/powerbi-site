@@ -4,7 +4,8 @@ excerpt: "This article is the second part in a series on API calls. It will look
 date: "2020-02-10"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

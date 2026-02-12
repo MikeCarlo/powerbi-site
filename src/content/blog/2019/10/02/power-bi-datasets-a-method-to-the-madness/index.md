@@ -4,7 +4,8 @@ excerpt: "As report authors we sometimes get caught up in how easy it is to crea
 date: "2019-10-02"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

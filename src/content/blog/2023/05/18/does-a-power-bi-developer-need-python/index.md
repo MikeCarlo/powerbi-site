@@ -4,7 +4,9 @@ excerpt: "In this episode of the Explicit Measures Podcast, we discuss the value
 date: '2023-05-18'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Articles Opinions"
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

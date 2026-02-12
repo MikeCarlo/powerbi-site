@@ -4,7 +4,9 @@ excerpt: "Thanks for your interest in our product Scrims. For more details on wh
 date: "2019-12-21"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
+  - "Scrims"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

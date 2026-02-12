@@ -4,7 +4,8 @@ excerpt: "Back again with another Power BI User group for Milwaukee. This month 
 date: "2020-08-31"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "News Events"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

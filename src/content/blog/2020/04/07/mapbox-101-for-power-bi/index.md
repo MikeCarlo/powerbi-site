@@ -4,7 +4,8 @@ excerpt: "Maps are a fantastic way to communicate spatial data – and lucky for
 date: "2020-04-07"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

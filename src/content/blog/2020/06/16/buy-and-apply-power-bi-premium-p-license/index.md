@@ -4,7 +4,8 @@ excerpt: "I am working on a project that uses Power BI embedded to display repor
 date: "2020-06-16"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

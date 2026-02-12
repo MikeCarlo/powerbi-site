@@ -4,7 +4,8 @@ excerpt: "Shared datasets are a great way to share data models across the organi
 date: "2020-06-08"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

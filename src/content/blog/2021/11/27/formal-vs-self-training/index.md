@@ -5,7 +5,8 @@ excerpt: We’ve been having an amazing amount of fun having conversations on ou
 date: '2021-11-27'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Articles Opinions"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

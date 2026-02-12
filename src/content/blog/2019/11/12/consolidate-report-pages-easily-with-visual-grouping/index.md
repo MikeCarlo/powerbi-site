@@ -4,7 +4,8 @@ excerpt: "We do a ton of Layouts here at powerbi.tips and with the introduction 
 date: "2019-11-12"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

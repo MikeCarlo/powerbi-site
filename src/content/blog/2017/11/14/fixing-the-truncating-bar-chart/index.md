@@ -4,7 +4,8 @@ excerpt: "The more you work with Power BI Desktop it is more than likely you wil
 date: "2017-11-14"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

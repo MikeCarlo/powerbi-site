@@ -4,7 +4,8 @@ excerpt: "This post will answer how to sort a measure that returns text values t
 date: "2019-09-30"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

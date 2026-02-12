@@ -5,7 +5,8 @@ excerpt: At Power BI Tips, we’re committed to providing you with the best tool
 date: '2023-06-07'
 authors:
 - Seth Bauer
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

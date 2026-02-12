@@ -4,7 +4,8 @@ excerpt: "With the release of the custom visuals building tool Charts.PowerBI.Ti
 date: "2019-02-12"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

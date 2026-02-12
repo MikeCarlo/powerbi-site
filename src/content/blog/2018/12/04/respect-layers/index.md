@@ -4,7 +4,8 @@ excerpt: "If you are like me and you like making your reports look extra good wi
 date: "2018-12-04"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

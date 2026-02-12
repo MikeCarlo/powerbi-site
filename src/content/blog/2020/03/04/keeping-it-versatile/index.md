@@ -4,7 +4,8 @@ excerpt: "I was recently working on some new ideas for a Scrim when I stumbled u
 date: "2020-03-04"
 authors:
   - "Seth Bauer"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

@@ -4,7 +4,8 @@ excerpt: "Learn how to use the Power BI Scanner API to manage your tenant's enti
 date: '2021-10-06'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Sharing And Administration"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

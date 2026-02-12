@@ -5,7 +5,8 @@ excerpt: To say this another way. Not all columns have datatypes in DAX, specifi
 date: '2021-12-07'
 authors:
 - Mike Carlo
-categories: []
+categories:
+  - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png

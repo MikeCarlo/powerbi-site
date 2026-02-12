@@ -4,7 +4,8 @@ excerpt: "In many reports we produce we often need a method to score or rank dat
 date: "2017-07-25"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"

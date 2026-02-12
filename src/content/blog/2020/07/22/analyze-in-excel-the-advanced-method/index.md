@@ -4,7 +4,8 @@ excerpt: "A common ask from users is the ability to view data related to visuals
 date: "2020-07-22"
 authors:
   - "Mike Carlo"
-categories: []
+categories:
+  - "Building Reports"
 tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
