@@ -5,7 +5,7 @@ const {
   href,
 } = Astro.props;
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const src = `${base}/images/brand/powerbitips-logo.png`;
 ---
 
