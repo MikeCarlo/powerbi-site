@@ -2,7 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const { entry, prev, next, morePosts } = Astro.props;
 const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;

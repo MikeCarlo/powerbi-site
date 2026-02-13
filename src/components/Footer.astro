@@ -1,7 +1,7 @@
 ---
 import Logo from './Logo.astro';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const leftLinks = [
   { label: 'Podcast', href: `${base}/podcast/` },

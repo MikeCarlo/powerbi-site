@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const pagefindCss = `${base}pagefind/pagefind-ui.css`;
 const pagefindJs = `${base}pagefind/pagefind-ui.js`;
 const bundlePath = `${base}pagefind/`;
