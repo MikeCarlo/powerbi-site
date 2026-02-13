@@ -4,18 +4,18 @@ import Logo from './Logo.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const navItems = [
-  { label: 'podcast', href: `${base}podcast/` },
-  { label: 'power designer', href: `${base}power-designer/` },
+  { label: 'podcast', href: `${base}/podcast/` },
+  { label: 'power designer', href: `${base}/power-designer/` },
   { label: 'themes', href: 'https://themes.powerbi.tips' },
-  { label: 'events', href: `${base}events/` },
-  { label: 'training', href: `${base}training/` },
-  { label: 'about', href: `${base}about/` }
+  { label: 'events', href: `${base}/events/` },
+  { label: 'training', href: `${base}/training/` },
+  { label: 'about', href: `${base}/about/` }
 ];
 ---
 
 <header class="bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] text-white">
   <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-7">
-    <Logo href={base} class="h-10 w-auto" alt="PowerBI.tips" />
+    <Logo href={`${base}/`} class="h-10 w-auto" alt="PowerBI.tips" />
     
     <!-- Desktop nav -->
     <nav class="hidden items-center gap-6 text-sm font-medium uppercase tracking-wide md:flex">
