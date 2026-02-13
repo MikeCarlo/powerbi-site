@@ -6,6 +6,7 @@ authors:
 - Mike Carlo
 categories:
   - "Sharing And Administration"
+  - "Podcast"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png
