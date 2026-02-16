@@ -1,0 +1,226 @@
+---
+title: "Trusting In Microsoft Fabric – Ep. 502"
+date: "2026-02-13"
+authors:
+  - "Mike Carlo"
+  - "Tommy Puglia"
+categories:
+  - "Podcast"
+  - "Microsoft Fabric"
+tags:
+  - "Explicit Measures"
+  - "Podcast"
+  - "Microsoft Fabric"
+  - "AI"
+  - "Semantic Link"
+  - "Lakehouse"
+  - "Trust"
+excerpt: "Mike and Tommy dive deep into whether Microsoft Fabric has earned our trust after two years. Plus, the SaaS apocalypse is here, AI intensifies work, and Semantic Link goes GA."
+featuredImage: "./assets/featured.png"
+---
+
+Mike and Tommy dive deep into whether Microsoft Fabric has earned our trust after two years. Plus, the SaaS apocalypse is here as Claude Code disrupts enterprise software, and we celebrate Semantic Link going GA.
+
+<iframe 
+  width="100%" 
+  height="415" 
+  src="https://www.youtube.com/embed/90svovLaJPM" 
+  title="Trusting In Microsoft Fabric – Ep. 502"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+## Top Shorts From Episode 502
+
+Quick highlights from this episode:
+
+### Microsoft Data Tools Evolve
+
+The evolution of Microsoft's data tooling and what it means for practitioners.
+
+<iframe 
+  width="100%" 
+  height="415" 
+  src="https://www.youtube.com/embed/MvPUIhI8B2I" 
+  title="502: Microsoft Data Tools Evolve"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+### Blending Roles for Organizational Success
+
+How the lines between data engineers and BI analysts continue to blur—and why that's a good thing.
+
+<iframe 
+  width="100%" 
+  height="415" 
+  src="https://www.youtube.com/embed/oBuXBqWhq9w" 
+  title="502: Blending Roles for Organizational Success"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+## News & Announcements
+
+### The SaaS Apocalypse Is Here
+
+Peter's viral article on how "11 free plugins exposed tech's biggest lie" sent shockwaves through enterprise software. Anthropic's Claude Code released plugins that connect to Excel, Word, and PowerPoint—doing what many expected Microsoft to build themselves. The market reaction was brutal:
+
+- **Thomson Reuters** — Down 18% in a single day, 33% year-to-date
+- **LegalZoom** — Down 20%
+- **Salesforce** — Down 26% year-to-date
+- **HubSpot** — Down 39% year-to-date
+- **Atlassian** — Down 35% year-to-date
+- **DocuSign** — Down 52% over 12 months, 85% from all-time high
+
+Mike's take: "These $100-200/month AI tools have changed how people work. If you're not already using AI, you're in a competitive race—and falling behind."
+
+### AI Doesn't Reduce Work—It Intensifies It
+
+- [Harvard Business Review: AI Doesn't Reduce Work—It Intensifies It](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it) — This HBR article explores the counterintuitive reality that AI doesn't lighten workloads—it amplifies them. While AI handles drafting documents, summarizing information, and debugging code, workers find themselves multitasking more intensely and managing AI agents alongside their regular responsibilities. Mike confirms: "I am physically working more intensely than ever before."
+
+### Semantic Link Now Generally Available
+
+Semantic Link has graduated from beta to GA in Microsoft Fabric. Built largely by Michael Kowalski and the community, this tool enables data scientists to use semantic models directly in notebooks. It's become a Swiss Army knife for:
+
+- Automating Power BI tasks against semantic models
+- Translating and migrating workloads
+- SQL and Spark integrations
+
+Mike's advice: "Microsoft should focus on API-first development. Build the infrastructure, let developers create on top of it—that's where you stay relevant."
+
+### Excel/CSV Import Deprecation
+
+The old Excel and CSV import experience in Power BI Service is being retired:
+- **May 2026** — Reports from the old experience stop refreshing
+- **July 2026** — No data syncing
+
+This is a good cleanup—we have lakehouses, OneLake, and Dataflows Gen 2 now. Time to modernize those legacy workflows.
+
+## Main Discussion: Trusting Microsoft Fabric
+
+After 500+ episodes talking about Power BI and two years with Fabric, do we trust it?
+
+### The Verdict: Yes, But It Took Time
+
+Tommy and Mike agree: Fabric has matured significantly in the last 3-6 months. The rough edges from the GA release have been smoothed out. The day-to-day experience—Git integration, notebook workflows, lakehouse operations—just works now.
+
+**Mike's trust list:**
+- ✅ Spark and Python notebooks — "By far my go-to. The notebook experience is top-notch."
+- ✅ Lakehouse — Solid foundation for data engineering
+- ✅ SQL Database — "Works like a normal SQL database. I'm actually building web apps on top of it."
+- ✅ Pay-as-you-go Spark (Autoscale) — Flexible pricing, no limits on cluster size
+
+**Tommy's trust list:**
+- ✅ Lakehouse — "The number one area where I'm finding source of truth."
+- ✅ Git integration — "The things that were buggy before just work now."
+- ✅ Direct Lake — Building semantic models this way is the preferred workflow
+
+### The Friction Points
+
+**Copilot:** Both hosts find the in-Fabric Copilot experience lacking. "Every time I see Copilot show up, it doesn't quite do what I want." The pricing/licensing model is confusing, and they often use free browser-based AI tools instead.
+
+**Service Principals:** Item ownership in Fabric is still built around individual users. "I want the service principal of the workspace to create and own the items—not individual users."
+
+**Connections:** Setting up connections properly requires more expertise than the Power BI days.
+
+**Real-time/Webhooks:** "There's nowhere in Fabric where you can turn on a webhook with basic authentication." For event-driven applications, you still need an Azure Function as middleware.
+
+### Who Thrives with Fabric?
+
+- **Data-curious teams** that blend data engineering and BI analysis
+- **Organizations with leadership** that views data as a strategic asset
+- **Teams already comfortable** with federated, collaborative approaches
+
+### Who Struggles?
+
+- **Small businesses** (under 25 people) — The ramp-up time and complexity may not be worth it
+- **Excel-centric organizations** — There's a significant trust jump from local Excel macros to cloud-based notebooks
+- **Highly centralized IT teams** — If everything must go through a single team, Fabric's self-service model creates friction
+
+### The Bottom Line
+
+"You can trust Fabric. There's a price point for any organization at any scale. But you have to learn it and think about how to improve your business differently."
+
+## FabCon 2026 Announcement
+
+Mike will be speaking at **Microsoft FabCon** in Atlanta, March 16-20, 2026. It's a combined SQL and Fabric conference—expected to be a big show. Register at [fabriccon.com](https://fabriccon.com).
+
+And yes, Mike debuted a new AI-generated song called "Expense It" about expense reports and FabCon travel. It's on Spotify under PowerBI.tips. 🎵
+
+## Episode Transcript
+
+### Introduction & Music
+
+[00:00](https://www.youtube.com/watch?v=90svovLaJPM&t=0s) — New intro song "EMP Forever" plays. PowerBI.tips is now a music production studio with about 45 songs created using AI.
+
+[00:30](https://www.youtube.com/watch?v=90svovLaJPM&t=30s) — Songs are now available on Spotify under "PowerBI.tips" or search "EMP Forever."
+
+### News: The SaaS Apocalypse
+
+[03:30](https://www.youtube.com/watch?v=90svovLaJPM&t=210s) — Discussion of Peter's article about Claude Code plugins disrupting SaaS companies. Market drops across enterprise software stocks.
+
+[06:00](https://www.youtube.com/watch?v=90svovLaJPM&t=360s) — Mike's take: AI is changing how people work. Companies need AI integrators. Those who embrace AI will be "indestructible" at work.
+
+[09:00](https://www.youtube.com/watch?v=90svovLaJPM&t=540s) — Tommy shares he created a skill for writing contracts in markdown. Mike is doing the same for statements of work.
+
+### News: AI Intensifies Work
+
+[12:00](https://www.youtube.com/watch?v=90svovLaJPM&t=720s) — HBR article discussion. Mike confirms: "I feel like I'm working more intensely than ever before. I'm multitasking more, giving agents tasks on the side."
+
+### News: Semantic Link GA
+
+[14:00](https://www.youtube.com/watch?v=90svovLaJPM&t=840s) — Semantic Link is now generally available in Microsoft Fabric. Enables data scientists to use semantic models directly in notebooks.
+
+[16:00](https://www.youtube.com/watch?v=90svovLaJPM&t=960s) — Mike: "I have an agent on my computer that creates items in Fabric. It writes notebooks in Python, documents everything."
+
+### News: Excel/CSV Deprecation
+
+[18:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1080s) — Old Excel/CSV import experience being retired. Both hosts agree this is good cleanup—use lakehouses and dataflows instead.
+
+### Main Discussion: Trusting Fabric
+
+[20:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1200s) — Main topic begins: Do we trust Fabric after two years?
+
+[22:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1320s) — Mike: "For small businesses, I pay for smaller SKUs. It's affordable. I'm not running into limits."
+
+[25:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1500s) — Discussion of how Fabric has matured in the last 3-6 months. The rough edges have been smoothed out.
+
+[28:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1680s) — Tommy's wife's company example: Built a time tracking solution using lakehouse instead of a semantic model. "I never would have dreamed of going to Python before Power Query."
+
+[32:00](https://www.youtube.com/watch?v=90svovLaJPM&t=1920s) — Git integration discussion. First commits on large workspaces can be problematic, but day-to-day experience is solid.
+
+[35:00](https://www.youtube.com/watch?v=90svovLaJPM&t=2100s) — "Fabric has blurred the line even more between data engineers and BI analysts."
+
+### FabCon & Music Break
+
+[38:00](https://www.youtube.com/watch?v=90svovLaJPM&t=2280s) — FabCon announcement: March 16-20 in Atlanta. Mike is speaking.
+
+[40:00](https://www.youtube.com/watch?v=90svovLaJPM&t=2400s) — New song "Expense It" plays—about expense reports and travel. "First class, here I come!"
+
+### Continued Trust Discussion
+
+[45:00](https://www.youtube.com/watch?v=90svovLaJPM&t=2700s) — Discussion of Fabric's flexibility vs Power BI's simplicity. "Five minutes to wow" was Power BI's promise—Fabric requires more investment.
+
+[48:00](https://www.youtube.com/watch?v=90svovLaJPM&t=2880s) — Most trusted parts: Tommy picks lakehouse, Mike picks Spark/Python notebooks.
+
+[50:00](https://www.youtube.com/watch?v=90svovLaJPM&t=3000s) — Friction points: Copilot experience, service principal ownership, real-time webhooks.
+
+[54:00](https://www.youtube.com/watch?v=90svovLaJPM&t=3240s) — Who will struggle with Fabric? Excel-heavy organizations and small businesses with limited resources.
+
+### Wrap-up
+
+[56:00](https://www.youtube.com/watch?v=90svovLaJPM&t=3360s) — Final verdict: "You can trust Fabric. There's a price point for any organization at any scale. But you have to learn it."
+
+[57:00](https://www.youtube.com/watch?v=90svovLaJPM&t=3420s) — Episode wrap-up. Join live every Tuesday and Thursday at 7:30 AM Central.
+
+## Thank You
+
+Want to catch us live? Join every Tuesday and Thursday at 7:30 AM Central on YouTube and LinkedIn.
+
+Got a question? Head to [powerbi.tips/empodcast](https://powerbi.tips/empodcast) and submit your topic ideas.
+
+Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or wherever you get your podcasts.
