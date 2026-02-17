@@ -8,84 +8,296 @@ categories:
   - "Podcast"
   - "Microsoft Fabric"
 tags:
+  - "Explicit Measures"
   - "Podcast"
-  - "Microsoft Fabric"
   - "Jupyter Notebooks"
   - "VS Code"
-  - "Spark"
-  - "Development"
-excerpt: "Learn how to connect your local VS Code to Microsoft Fabric's remote Jupyter notebooks and Spark engine for a better development experience."
+  - "PySpark"
+  - "AI"
+  - "DAX"
+  - "Data Engineering"
+  - "Suno"
+  - "DAX Fusion"
+excerpt: "Mike and Tommy dive into a listener mailbag question about connecting a local VS Code desktop to a remote Fabric Jupyter kernel — unpacking the tradeoffs of local vs. cloud development, custom environments, cost optimization, and why OneLake File Explorer might be the missing piece. Plus, AI-generated music as a metaphor for the future of data engineering."
 featuredImage: "./assets/featured.png"
 ---
 
-In this episode of the Explicit Measures podcast, Mike and Tommy dive deep into a technical topic that's gaining traction in the Microsoft Fabric community: connecting your local VS Code installation to remote Fabric Jupyter notebooks and the Spark engine.
+Mike and Tommy dive into a listener mailbag question about connecting a local VS Code desktop to a remote Fabric Jupyter kernel — unpacking the tradeoffs of local vs. cloud development, custom environments, cost optimization, and why OneLake File Explorer might be the missing piece. Plus, AI-generated music as a metaphor for the future of data engineering.
 
 <iframe 
-  width="560" 
-  height="315" 
+  width="100%" 
+  height="415" 
   src="https://www.youtube.com/embed/sl0xpCyiDxI" 
-  title="Remote Fabric Jupyter & Local VS Code - Ep. 497"
+  title="Remote Fabric Jupyter & Local VS Code – Ep. 497"
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen
 ></iframe>
 
-## The Power of Local Development with Remote Compute
+## News & Announcements
 
-VS Code is an application you install locally on your machine, but with the right extensions, you can remotely connect to the Spark engine and notebooks that live inside Microsoft Fabric. This gives you the best of both worlds: the familiar, powerful VS Code development environment with the scalability of Fabric's cloud compute.
+- [Modern Visual Tooltips in Power BI (Generally Available)](https://powerbi.microsoft.com/en-us/blog/modern-visual-tooltips-in-power-bi-generally-available/) — Power BI's modern visual tooltips are finally GA after a five-year preview stretching back to 2021. The update brings drill-down and drill-through actions directly inside tooltips via an Actions footer, plus theme-based styling and customization options. Tommy notes he's been using them for six years and is surprised it took this long to officially ship.
 
-### Why This Matters
+- [Calculate, DAX Fusion and Filters on 0 in Power BI](https://blog.crossjoin.co.uk/2026/01/25/calculate-dax-fusion-and-filters-on-0-in-power-bi/) — Chris Webb uncovers a subtle DAX performance gotcha: filtering on zero in a CALCULATE expression also matches blank/null values, which can break DAX Fusion optimization. The fix is simple — use the strict equality operator (`==`) instead of `=`. The article digs into server timings and xmSQL queries in DAX Studio to show exactly how the engine handles these filter conditions under the hood.
 
-There are several compelling reasons to adopt this workflow:
+## Beat from the Street: AI Music and Data Engineering
 
-- **Better development experience** – VS Code offers superior editing, debugging, and extension support compared to the browser-based notebook interface
-- **Cost optimization** – You can develop and test locally, then only use Fabric compute when you need to run against production data
-- **Offline development** – Work on your notebooks even when you don't have access to the Fabric service
-- **Version control** – More easily integrate your notebooks with Git and your existing DevOps workflows
+Before diving into the main topic, Mike shares a "beat from the street" about his deep dive into AI-generated music with Suno. What started as an experiment quickly became an obsession — he went from 3 songs to 36 in just a few days, writing lyrics about databases, Fabric, coding, and even family Minecraft sessions.
 
-## The Extension Ecosystem
+Mike's key insight isn't really about music — it's about the **democratization of creation**. The gap between him and a professional music producer was enormous. AI collapsed that gap almost overnight. He argues the exact same thing is about to happen in data engineering: the patterns are well-known, the transformations are repetitive, and AI will soon handle the heavy lifting while humans focus on strategy and problem identification.
 
-There's already an extension available today that helps bridge the gap between your local VS Code and Fabric notebooks. The extension enables you to:
+> *"Why wouldn't I just produce 10 songs every time and just pick the one that's the best? The same applies to data engineering — build the same pipeline pattern in five different tools, test them all, pick the winner."*
 
-1. Connect to your Fabric workspace
-2. Pull down notebooks for local editing
-3. Run code against the remote Spark engine
-4. Push changes back to the service
+Tommy pushes back slightly — he agrees AI bridges knowledge gaps but argues that experienced practitioners still provide critical value in **identifying when something is wrong**. Mike's music analogy lands perfectly here: he can hear when a song section sounds off, but a novice listener might not. The same applies to data pipelines — a new data engineer might not spot the broken step that an experienced eye catches immediately.
 
-## Cost Considerations
+## Main Discussion: Remote Fabric Jupyter & Local VS Code
 
-Mike and Tommy discuss an interesting pattern around cost management. When you're developing notebooks, you're consuming Fabric capacity units (CUs) every time you spin up a Spark session. By developing locally and only connecting to the remote Spark engine when necessary, you can significantly reduce your development costs.
+A listener mailbag question drives the core topic: *"Is there a way to connect to a Microsoft Fabric Jupyter kernel remotely from a local VS Code desktop, such that the session is aware of the local file system?"*
 
-### The Local Spark Pattern
+### The Short Answer: Yes, But With Tradeoffs
 
-One community member has even created a Git repo that demonstrates an advanced pattern:
+Mike confirms that the **Microsoft Fabric VS Code extension** lets you connect to a remote Fabric Spark kernel from your local VS Code. You can access your Fabric account, open workspaces, view items, and run notebooks against the cloud kernel while working in your desktop IDE. The kernel has full knowledge of attached lakehouses and other Fabric resources.
 
-1. Mirror files from your OneLake to your local machine
-2. Run a local Spark engine for development
-3. Test and iterate on your notebooks offline
-4. Publish the finished notebook back to Fabric for production use
+However, there's a catch: the remote kernel doesn't see your local file system. If you have custom Python packages installed locally or modules in local folders, the Fabric kernel can't access them directly.
 
-This approach is particularly valuable for teams doing heavy notebook development who want to minimize their Fabric compute costs during the development phase.
+### The Local File System Problem
 
-## News Roundup
+Tommy breaks down why this matters. Data scientists love working locally — they want their packages, their virtual environments, their custom modules right there on disk. But when you connect to Fabric's remote kernel, it only sees what's in the lakehouse, not your C: drive.
 
-### Modern Visual Tooltips – Generally Available
+The listener specifically asked about `pip install -e .` (editable installs) where code changes propagate in real time. This workflow works beautifully with SSH-connected VMs but doesn't translate directly to Fabric's managed Spark environment.
 
-The episode also covers the news that Modern Visual Tooltips are now generally available in Power BI. This feature has been in preview since around May 2021 – a nearly five-year preview period! The modern tooltips provide a cleaner, more informative hover experience on visuals.
+### Three Approaches to Bridge the Gap
 
-### DAX Performance Tip from Chris Webb
+**1. OneLake File Explorer** — Both Mike and Tommy converge on this as the pragmatic solution. Instead of bringing Fabric data down to your machine, push your local files up to OneLake. The File Explorer presents cloud data as local folders, and you can sync custom packages and modules into the lakehouse for the notebook to access.
 
-The team highlights an article from Chris Webb about a performance optimization involving `CALCULATE` with filters on zero. If you're filtering a numeric column where one of the filter values is zero, there's a potential performance consideration worth understanding. Check out Chris's blog at [Cross Join](https://blog.crossjoin.co.uk) for the full details.
+**2. Copy Data Down, Develop Locally** — Mike describes a pattern where you copy a subset of lakehouse data to your local machine, develop against a local Spark/Python kernel (free compute!), then push the finished notebook back to Fabric for production runs. This avoids burning CU capacity during development but requires some notebook reconfiguration between local and cloud paths.
 
-## Watch the Full Episode
+**3. Custom Fabric Environments** — Tommy recommends using Fabric's environment feature to pre-configure custom packages. Instead of `pip install` in every notebook session, define your dependencies in a Fabric environment and select it from the dropdown. Mike notes this works well but comes with slightly longer startup times since Microsoft can't pre-spin custom configurations the way they do with default Spark pools.
 
-For the complete technical walkthrough and discussion, watch the full episode above. Mike and Tommy go into much more detail on the setup process, troubleshooting tips, and best practices for this workflow.
+### Cost Considerations
 
----
+Mike raises an important point about compute costs. If you have a beefy local machine with 16+ cores sitting idle, it makes financial sense to develop locally rather than burning Fabric CUs on iterative development. Save the cloud compute for production pipeline runs and automation.
 
-**Links mentioned in this episode:**
+Tommy's rule of thumb: *"If you work in notebooks at least once a week, you should create a custom environment."* Mike agrees in principle but admits he mostly uses the default Spark environment for his own work — his data engineering tasks tend to stick with standard packages.
 
-- [Modern Visual Tooltips Blog Post](https://powerbi.microsoft.com/en-us/blog/modern-visual-tooltips-in-power-bi-generally-available/)
-- [Chris Webb's CALCULATE DAX Fusion Article](https://blog.crossjoin.co.uk/2026/01/25/calculate-dax-fusion-and-filters-on-0-in-power-bi/)
-- [Subscribe to the Podcast](https://powerbi.tips/podcast)
-- [Join Tips+ for the Theme Generator](https://bit.ly/3Ymso48)
+### The VS Code Experience Gap
+
+Both agree VS Code is the superior notebook development experience — primarily because of **GitHub Copilot** integration. The Fabric browser UI doesn't offer the same AI-assisted coding capabilities, which is a significant productivity gap.
+
+Mike highlights friction in the save/sync workflow: after editing a notebook locally in VS Code, it's not always clear how to push changes back to Fabric. He compares it to working on a Git branch without a clear merge path back to main.
+
+Tommy brings up **Google Colab's VS Code extension** as a comparison — it lets you use a blank local notebook with a remote kernel, no need to create the notebook in the cloud first. He'd love to see the Fabric extension reach that level of seamlessness.
+
+### The %config Cell
+
+Mike mentions the newer `%config` cell at the top of Fabric notebooks, which exposes the default lakehouse and attached lakehouses programmatically. This reduces the reliance on the Fabric UI for notebook configuration and makes notebooks more portable between local and cloud environments.
+
+## Looking Forward
+
+Mike and Tommy both see the notebook development experience as a critical area for Fabric's growth. The ideal workflow — local IDE, cloud kernel, seamless file access, AI-assisted coding — is close but not quite there. OneLake File Explorer and custom environments fill most gaps today, but there's room for Microsoft to reduce friction, especially around the save/sync workflow and local file system access from remote kernels.
+
+The broader theme from this episode: AI is collapsing the gap between what you know and what you can build — whether that's music, data pipelines, or custom developer tools. The winners will be those who can identify problems and validate solutions, not necessarily those who can write every line of code by hand.
+
+## Episode Transcript
+
+Full verbatim transcript — click any timestamp to jump to that moment:
+
+[0:00](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=0s) Good morning and welcome back to the Explicit Measures podcast with Tommy and Mike. Good morning, everyone.
+
+[0:33](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=33s) Good morning, Mike. How you doing?
+
+[0:35](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=35s) Oh, we're getting back at it again.
+
+[0:38](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=38s) We're surviving the cold. It's been bitterly cold here for the last I don't know, week, two weeks, I guess, Tommy. It's been like a two, three week stint of like minus degrees. It's -6 Fahrenheit and -6. I think we hit that one time throughout this week. Last week, it's been cold. I normally don't drive the kids to the bus stop, but the weather's just been brutal.
+
+[1:05](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=65s) It's brutal. We had a day of school canceled on Friday because it was just so cold.
+
+[1:10](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=70s) We did too. I've never heard that when it wasn't even snowing. It wasn't raining. It was just cold.
+
+[1:16](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=76s) Too cold with the windchill. I think our school system does like minus 40 with windchill is where the number hits. So if it gets down to like -6, Tommy, any wind makes it feel like -40. So they're going to just cancel things. Luckily for me my office is in my basement so all I got to do is wake up and come downstairs and that's where I am. Didn't really interrupt my work schedule too much.
+
+[1:48](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=108s) Just fine. I did turn on a lot of the heaters though, so I'm expecting quite a substantial heating bill this month just because of all the heat.
+
+[1:55](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=115s) Compared to what people used to do. I don't know what Abraham Lincoln did when he lived in Chicago, man. But you just had wood in a fire and you got to still deal with Chicago weather.
+
+[2:07](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=127s) It's funny you mentioned that, Tommy. I was thinking about this the other day. I was outside pulling in wood from our wood pile. We're in the suburbs, so we don't have a forest. We don't cut down wood in any way. We go get some wood from our stockpile outside and bring it inside the house, and I think to myself, I was down in the basement looking at the furnace going, that furnace keeps this whole house warm and it's like a nice box and it's so efficient. I couldn't even imagine the day where you had to make sure you had enough wood piled up for the winter so that you could keep your house warm.
+
+[2:52](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=172s) That was work. And my wife was like, "Yeah, people had to do a lot of heavy work just to stay alive." I'm like, "Yeah, that's so true." Wild, huh, Tommy?
+
+[3:01](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=181s) Yeah. And he was a lawyer and he did all — could you imagine? I don't know, man. That's crazy. I like my technology. You're funny too because I think this is the multiple time I've heard you bring up Abraham Lincoln.
+
+[3:23](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=203s) Maybe that's why I'm hearing more of the Abraham Lincoln stuff. I don't know about the guy very much. I know that he was a founding father of the United States, but other than that, I really haven't paid much attention to him. All right. Today's main topic — we'll be talking about a remote Fabric Jupyter notebook and using it with local VS Code.
+
+[3:57](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=237s) There's already an extension today that you can use to help you go back and forth between the notebook and the Spark engine in Fabric. We'll unpack this question. There's some cost considerations here as well. There's some interesting patterns that I think evolve from here.
+
+[4:31](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=271s) I believe someone even had a Git repo around this topic where they were taking files down from OneLake and mirroring them to your local machine. So you could have the files locally and run an offline version of your Spark engine to develop your notebooks and then publish the notebook back up to the service.
+
+[5:08](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=308s) So I think the only news that we have — we have something on the Power BI blog. We actually talked about this last week. It's officially here now though. It wasn't announced — we found it, but it wasn't really officially announced until it was on the summary of the updated notes.
+
+[5:35](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=335s) When we did our feature draft on Thursday last week, I was like, I think this is something that's been out because I've been using it for six years. It was like two paragraphs on modern visual tooltips which I've been using since my old job in Florida which was six years ago.
+
+[5:57](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=357s) So modern visual tooltips which you probably all use — they're generally available. That's cool because if you go to the service and create a new report, it used to use the old tooltips.
+
+[6:27](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=387s) I would agree and I don't know exactly how long ago this was made. Tommy, I'm looking here trying to find when was the original blog post. When were the original tooltips added?
+
+[6:47](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=407s) I see here from Enterprise DNA, new modern visual tooltips for Power BI, May 14th of 2021, which sounds about right. I also see a blog post from the community that says we want your thoughts on the modern visual tooltips and preview. So that's been out for — I'm gauging how long it's been in preview — that's a five-year preview.
+
+[7:47](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=467s) 2021 to 2026. Anyways, I think the modern tooltips are fine. I like them. I think they work well. This is great that we're just closing out this feature and getting it done. I'm actually a little disappointed because in five years they would have updated it more. My users when I was FTE — it was still hard to find. The drill through experience — I'm not sure how you make that more visible to users.
+
+[8:39](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=519s) How do you make it obvious enough that it's there, but not so obvious that it's taking up all the landscape and distracting you from the report? It's a hard feature. I think it's a good feature regardless. I like being able to drill through to a particular topic. Have you ever built a drill through button, Tommy?
+
+[9:09](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=549s) Oh yeah. You can make a button conditionally formatted. If you select something or select a single item from a list, a button can then highlight or appear and then drill through. Click here to see the details of this selected piece of data. I think the report needs some instructions to help you along there as well.
+
+[9:37](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=577s) The other news item is from our good friend Chris Webb. It's on Calculate, DAX Fusion, and filters on zero in Power BI. It's a fun performance tip where if you have measures that use Calculate with a filter on a numeric column and one of the filters is on the value zero, then it may affect you. Calculate with product ID equals zero actually filters on zero or blank, which I had no idea.
+
+[10:53](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=653s) So what you have to do is add a double equal sign — strictly equal. One of those gotchas. About three or four years ago, there was a lot of emphasis on DAX Fusion. I don't hear too many people talking about it recently. Chris is pulling out this whole DAX Fusion concept — it's really about making the engine run faster, pruning queries, more efficient, less scans, faster response times.
+
+[12:06](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=726s) Chris is highlighting the SQL-like xmSQL that comes from the scan queries inside the semantic model. This looks a lot like SQL. It's basically an evaluate query. Anyways, really good article. Chris Webb is always amazing. Definitely deep thinking things. Make sure you go check out his blog article.
+
+[13:22](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=802s) It's a little bit of a beat from the street here. I've been doing more time building fun data songs with AI. I found a program called Suno. The songs were so good that I felt like I could actually listen to the music being produced. I went from about two or three songs to about 36 songs in two or three days. I'd give a topic to an AI and have it write out the lyrics, take the lyrics over to Suno and put everything in there.
+
+[14:30](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=870s) I've been sharing this with friends and family. I'm writing songs about databases, real-time Fabric, coding, all these feelings we have when we do things. I'm getting a pretty good response back from people — they're like, "Yeah, this is pretty good. This is listenable."
+
+[15:02](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=902s) I play drums. I don't really know piano. When I hear this program building songs, it's building a full produced, mastered, remixed, well-built-out song. This is what AI is doing for people. It's taking people like me and you, Tommy — we're data people — and giving us the ability to make accessible these really interesting experiences.
+
+[15:57](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=957s) This all happens around the time a top 100 Billboard song came out that was generated with AI. The artist is called Breaking Rust, and it topped the country song charts with Walk My Walk.
+
+[17:31](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1051s) I used to have GarageBand on a Macintosh. But you're really talking about the creative side of what you can do. We're at a point now with video editing, image generation — Google's is incredible.
+
+[18:01](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1081s) I do a lot with workspaces. I've always been a big proponent of having a little icon or logo in your workspace app. I use an npm package called Snap AI — all you do is go to the command line and say snap AI prompt and it generates three icons that you can start using.
+
+[19:02](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1142s) It's gotten so good right now. I've been collecting music — stuff I've been creating, things that other people have been creating across the internet. Some songs are ones I created, one that Alex Powers created, and one called Export to Excel from the AI community. All I'm going to say is there's going to be more coming.
+
+[20:11](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1211s) My point is — it's less about the music right now. It's the commoditization of things. This is democratizing what we're talking about. We're not music producers. We can't make great music or we'd have to spend a lot of time. The AI is now shortcutting this. And I'm going to bring this back to data engineering.
+
+[22:17](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1337s) The gap between me and producing music was quite large. AI came in and narrowed the gap substantially. I think the same thing is going to occur in data engineering. The patterns are well known. Transforming common columns is well known. We have Data Wrangler, Power Query, Dataflows Gen 2. The transformations we're doing are not rocket science.
+
+[22:50](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1370s) I feel like this is going to be something where we communicate to an AI and say, "Here's my source table. Here's what I want to build on top of it. Here's the transformations I want to produce." And it will just build out a lot of things. You'll be able to go back and review and the data flow pipeline will be ready.
+
+[23:40](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1420s) You're basically talking about vibe coding now, just in Fabric and in the data world rather than in open source.
+
+[24:06](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1446s) Well, yes and no. There's small glimpses of this but there's no complete solution. I can't go to an AI and say make a pipeline, build a notebook, save the data here. Everything right now in Fabric is a single AI that does a single experience.
+
+[24:44](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1484s) Do I really want to build a pipeline? The settings, the options, the activities — that's pretty well known. It feels like I could just talk to an AI agent and say I need a pipeline that loads data incrementally. Feels like a pattern it should figure out.
+
+[25:28](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1528s) I don't like AI to go find my insights on my data. Rather, I like to talk with the AI, plan stuff out, and have it build things for me that I can run on other systems.
+
+[26:19](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1579s) The gap is continually closing. I don't need all the technical skills. Here lies maybe my problem, Tommy, in my AI and music analogy — I know what I like to listen to. I know what sounds good to me. I also know what part of a song doesn't sound good to me.
+
+[26:55](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1615s) I can build a song. 90% of it may be spot on. There may be a section that's wrong. The problem is I'm not a producer. I can't go back and re-record that. I have to identify the problem, then diagnose, fix, and either the tooling exists in AI for me to talk back to solve the problem, or I have to physically chop the song up.
+
+[27:48](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1668s) Let's take that same analogy and overlay it on data engineering. In the music world, I've been listening to music since I was a kid. I'm maybe not an expert in creating music, but I'm an expert in listening. On the flip side, when you bring in new data engineers, they may build something and not know something's off. The AI built 10 steps and step five isn't quite right. But as a new person, how do you identify it's a problem?
+
+[28:53](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1733s) We're going to democratize — bring down the ability for non-technical people to build things in a technical space. But when you bring lots of non-technical people down to a more technical level, you have to trust whatever the AI is doing. This is what I've found when I program with AI — it gets most things right, but when it makes a mistake or breaks something, it's like building a web app and it builds 90% and then adding a feature just breaks the whole app.
+
+[30:21](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1821s) Us as developers have to train ourselves to understand enough to know what it's doing and identify where there's problems. You've got to lean on the AI and understand that it is the ultimate knowledgeable thing around syntax and code. It just doesn't know how to do what you want to do in the business.
+
+[31:02](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1862s) I actually disagree with you. There's a lot of things you can do and build an app in a language you have no idea what it is, as long as the AI is proper in showing you the output. I have local command line tools on my computer. I basically said hey, create a Python package called autocompleter — all it does is feed a readme file and then auto-inject all the commands and options into PowerShell auto-suggest.
+
+[32:40](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=1960s) But you're affirming my point, Tommy. You're leveraging AI for what it's good at. It's the ultimate knowledge expert around Python. Period. It will know more than you ever will because it's been trained on the entire library.
+
+[33:47](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2027s) This tooling is going to get evolved. We're going to lose a little bit of context around what's happening in the code and we're going to do a lot more programming with it not in the actual code or the UI. We're going to talk directly to it and expect the AI to produce it. Then we could say, "Okay, now optimize it. How can we do this faster, more efficiently?"
+
+[34:20](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2060s) The amount of songs I can create at volume is horrendous. I can take the same lyrics and build eight or 10 songs in five minutes. Different genres, different music types. Why wouldn't I just produce 10 songs every time and just pick the best? Let me pull the analogy back to data engineering.
+
+[35:08](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2108s) I'm looking at cost optimizing. I'm trying to min-max my environment. I don't know as a developer which is the best way to build my pipeline — should I use a pipeline, a notebook, copy job, mirroring? You can tell the AI to build the same pattern in all the different tools and run them all together.
+
+[36:15](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2175s) Build five, six, seven different patterns and test them all. The barrier to testing almost goes away.
+
+[36:28](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2188s) I'm having a huge epiphany here. If this happens, we're going to be able to do at scale lots more things and really start tuning our environments and optimizing things to a much higher level.
+
+[36:53](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2213s) This is a good lead-in to our actual topic. In the data engineering space, what I feel like is missing today in Fabric is this overarching AI that can do everything. Everything feels like it's in a single experience. There's not one holistic AI that's talking across all the things around Fabric yet.
+
+[37:45](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2265s) Is there a way to connect to a Microsoft Fabric Jupyter kernel remotely from a local VS Code desktop, such that the session is aware of the local file system? The reason for this setup is that when developing, my source code is local so I can import my modules.
+
+[37:54](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2274s) With GCP and presumably Azure virtual machines, it's possible to create a cloud virtual machine and connect to it using SSH. The requirements are the notebook session having access to local file system. I have tried the Open in VS Code in the web portal and connecting to PySpark — however it's not aware of the local file system, which is true.
+
+[38:54](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2334s) If it's not possible, is there another way to achieve this? And if absolutely no way, how does an effective data science workflow look on Microsoft Fabric? Great question.
+
+[39:08](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2348s) I will say I like the VS Code in the web version of opening notebooks directly from Fabric. You can add extensions into VS Code which will allow you to interact with the notebook. Can you use the Microsoft Fabric Jupyter kernel locally in VS Code? The answer is yes. There is a Microsoft Fabric extension that allows you to access your Fabric account, create and open workspaces, view items, and open Fabric SQL databases using the MSSQL extension.
+
+[40:29](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2429s) You can connect your notebook locally on your machine and say go get the kernel from Fabric.com. It will spin up a kernel for you. Since you're running on the Fabric environment, it has all knowledge of what lakehouses are attached.
+
+[41:07](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2467s) There's a few limitations here because the remote kernel is a little different than the virtual machine. Most people in data science — they love their virtual machines, their containers.
+
+[41:24](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2484s) Data science people want to do stuff on their local machine. They're always running local but they have all the things running on some virtual machine somewhere.
+
+[41:55](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2515s) Connecting to local instances of a package — it's only looking for things in the lakehouse. With VS Code on the desktop, you are a bit limited. There are some packages missing. There's an article where Microsoft recommended creating a container for everything with the Fabric extension.
+
+[42:51](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2571s) Why wouldn't you use OneLake File Explorer though? I think you could do that.
+
+[43:40](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2620s) What if I want to run PySpark on my local machine and develop things locally? You need the data that's coming from OneLake. You either need to virtualize that data down to your machine or copy a subset of that data down locally.
+
+[44:27](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2667s) If you run the kernel remotely, you're spending CUs on Fabric's dime. Locally, you may have a lot of extra processors. I've got 16 cores on my local machine. I have tons of extra compute capacity that I've already paid for. So you may want to bring down a copy of the data locally, develop on your local kernel, and then publish it back up to Fabric.
+
+[46:01](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2761s) I did the same thing, Mike. I brought some of the data down and just set up my own little environment and basically did all the transformations. If you have custom Python packages, I would recommend setting up a Fabric environment. That's hands down one of the biggest things I would recommend.
+
+[46:56](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2816s) Do you use environments in Fabric for the Spark? I have. I've added custom packages. One has been Semantic Link Labs. I make an environment, set up the parameters, and then I just select it from the dropdown instead of using the default Spark environment.
+
+[48:19](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2899s) Also, another cost-saving technique — if you want smaller machines that use less compute, when you make a Fabric Spark environment, it's always making the medium-size cluster. You can turn that down to a small cluster with fewer cores and smaller memory.
+
+[48:51](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=2931s) When I use custom environments, Microsoft can't predict when that cluster will show up. So I've seen slightly longer load time when I build custom packages because Microsoft can't automatically spool it up.
+
+[50:18](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3018s) If I work in notebooks at least once a week, I should be working in a custom environment.
+
+[50:48](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3048s) But do I do it? No. I use a lot of standard notebooks. I don't use a lot of custom packages. I use whatever Microsoft provides to me, mostly.
+
+[51:05](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3065s) The one thing about local development that is really lacking — MS Spark Utilities, or notebook utilities — is not available in VS Code or on the remote. I cannot use that for getting files in OneLake. It's a lot easier with notebook utilities.
+
+[53:23](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3203s) My notebook is always using the Spark cluster from Fabric. I'm not running my own separate Spark cluster. If I'm running my own kernel locally independently of Fabric, then yes, you might need notebook utils. I'm always looking for the standard stuff because I want the experiences to be interoperable.
+
+[54:13](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3253s) The biggest parts of a notebook are connecting to a file and pushing the data. That's the big part — dealing with connecting to a lakehouse, getting the files, or pushing to a delta table.
+
+[54:33](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3273s) My point is if I'm on my local machine using a local kernel, I'm not connecting to the lakehouse. I'm copying the data down first.
+
+[55:25](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3325s) If I'm running a local notebook on the kernel inside Fabric, you don't get the lakehouse panel on the left-hand side as easily. Instead, I go into the notebook directly and say this is my lakehouse, use this reference as the location. I shift a little bit of how I build the notebook — more configuration in the cells instead of relying on the UI.
+
+[56:22](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3382s) There's a new percent config cell at the top of the notebook. Percent config exposes the default lakehouse and attached lakehouses. You don't need to do all that extra attachment of stuff. Microsoft has opened up another cell that allows more control around what the notebook can touch and talk to.
+
+[57:07](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3427s) I like the VS Code experience of notebooks. There's just something a lot smoother about it. But I initially took hours trying to get the same exact experience in VS Code as I was getting in the Fabric runtime.
+
+[57:40](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3460s) I've really switched. I started really shifting from making heaven and earth work on my local system to really using OneLake File Explorer. Especially if I'm just using Python, I can still connect to a OneLake folder. Rather than trying to bring everything to my machine, I found it a lot easier to start bringing things to Fabric through the OneLake File Explorer.
+
+[58:49](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3529s) I 100% agree. I'm favoring more of the Microsoft experience — just put everything in the lakehouse, get everything there. It's much less friction to move my content into the lakehouse and use the remote cluster.
+
+[59:38](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3578s) If you're going to do a lot of compute or trial and error, you may not want to be maxing out your Fabric capacity. Use the OneLake File Explorer — it presents the data locally so you can develop, but you're going to need to build your notebook in a way that looks at local files when you're local and switch to cloud files for production.
+
+[60:36](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3636s) I got AI to create me an app — a GitHub star search tool. It gives me a quick way to search all my starred repos. I can search the readme, description, or name. I'm working on an AI one where instead of basic search, I say what I'm looking for and it tries to find it.
+
+[61:41](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3701s) The amount of things out there now is really good. I feel like Spark is becoming a very large portion of what people do for data engineering. We've started a lot of work in Dataflows and we're moving very quickly into Spark.
+
+[62:23](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3743s) When Microsoft started promoting more that you can run a Fabric notebook with just Python too — that was great. They've amazingly improved the speed of spinning up a PySpark notebook. It used to take three minutes, which was the worst thing. Those days are gone.
+
+[63:22](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3802s) You may not need PySpark at all. You may just need to run Python and do a lot of the things you're already trying to do in the Fabric UI. It works incredibly well and incredibly fast.
+
+[64:08](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3848s) My biggest complaint around notebooks today is one of the reasons why I like to leave the Fabric experience and favor VS Code. You get a whole bunch of other rich tools. My team all gets GitHub Copilot. I know the data is secure, the AI is running inside Microsoft servers. I can use whatever version of model — Grok, ChatGPT, Claude — they're all available.
+
+[65:12](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3912s) We center our work team around VS Code. If I can do that same amount of code writing in 15 minutes that would take me half a day, that's worth my time.
+
+[65:54](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3954s) Have you ever used Google Colab? It's basically Google's notebook flavor. They had a ton of different runtimes — more than just Spark, like GPUs. The UI was pretty wonky but you could run heavy stuff on it.
+
+[66:33](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=3993s) They just released a Google Colab VS Code extension. You can choose to connect to the Google Colab kernel. You can connect to your local machine — all you're doing is connecting to the runtime. But it's seamless.
+
+[67:04](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4024s) That's what I'm looking for with the Fabric extension — a more seamless experience. The friction I found is it wasn't very clear with the icons inside the notebook. When I was done editing, I had a much harder time identifying how to save the notebook and get it back up to Fabric.
+
+[68:09](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4089s) It's almost like Fabric.com was main and I was working on a branch and I didn't know how to get my branch back into main again.
+
+[68:43](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4123s) With Google Colab, you don't even have to have a notebook from Fabric open. You can have a blank notebook and just use the Google Colab kernel.
+
+[69:22](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4162s) The Google Colab VS Code extension just came out like a month or two ago. They announced it in November.
+
+[70:34](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4234s) We've gone over time. Good topic today. I keep going back to Tommy — AI is continually changing how we think, how we do, and how we build. Jupyter notebooks are awesome. I love working in Spark. Notebook experiences are by far my favorite. Even T-SQL notebooks are amazing because I can write many different scripts and run them as I need to.
+
+[71:07](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4267s) Thank you so much for listening. If you want ad-free episodes, catch them live or become a member of our channel. Come become a member — we'd love to have you part of our community.
+
+[71:49](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4309s) You can find us on Apple, Spotify, wherever you get your podcasts. Make sure to subscribe and leave a rating. Got a question? Head over to powerbi.tips/empodcast. Join us live every Tuesday and Thursday at 7:30 AM Central.
+
+[72:16](https://www.youtube.com/watch?v=sl0xpCyiDxI&t=4336s) Thank you all so much and we'll see you next time.
+
+## Thank You
+
+Want to catch us live? Join every Tuesday and Thursday at 7:30 AM Central on YouTube and LinkedIn.
+
+Got a question? Head to [powerbi.tips/empodcast](https://powerbi.tips/empodcast) and submit your topic ideas.
+
+Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or wherever you get your podcasts.
