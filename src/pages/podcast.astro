@@ -1,7 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Get all podcast episodes
+const allPosts = await getCollection('blog');
+const podcastPosts = allPosts
+  .filter(post => post.data.categories.includes('Podcast'))
+  .map(post => {
+    // Extract episode number from title — must match "Ep. 498" or "Episode 500" patterns
+    const epMatch = post.data.title.match(/\bEp\.?\s*(\d+)\b|\bEpisode\s+(\d+)\b/i);
+    const epNumber = epMatch ? parseInt(epMatch[1] || epMatch[2]) : 0;
+    // Clean slug: strip index.mdx suffix
+    const slug = post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+    return { ...post, epNumber, slug };
+  })
+  .sort((a, b) => b.epNumber - a.epNumber || b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <BaseLayout title="The Podcast | PowerBI.tips" description="The Explicit Measures Podcast - a Power BI centric show with Mike Carlo and Tommy Puglia. Live every Tuesday and Thursday at 7:30 AM CST.">
@@ -115,5 +130,42 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         loading="lazy"
       />
     </a>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-6">Episodes</h2>
+
+    {podcastPosts.length > 0 ? (
+      <div class="space-y-4">
+        {podcastPosts.map(post => {
+          const slug = post.slug;
+          const href = `${base}/${slug}/`;
+          const dateStr = post.data.date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+          });
+          return (
+            <a href={href} class="block group">
+              <div class="flex items-baseline gap-3 py-2 border-b border-neutral-200 group-hover:border-neutral-400 transition-colors">
+                {post.epNumber > 0 && (
+                  <span class="text-sm font-medium text-neutral-400 whitespace-nowrap">
+                    Ep. {post.epNumber}
+                  </span>
+                )}
+                <span class="text-neutral-900 group-hover:text-blue-600 transition-colors font-medium">
+                  {post.data.title}
+                </span>
+                <span class="text-sm text-neutral-400 whitespace-nowrap ml-auto">
+                  {dateStr}
+                </span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    ) : (
+      <p class="text-neutral-500">No episodes found.</p>
+    )}
   </section>
 </BaseLayout>
