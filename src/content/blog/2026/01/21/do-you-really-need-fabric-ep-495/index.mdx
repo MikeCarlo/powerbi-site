@@ -1,0 +1,513 @@
+---
+title: "Do You Really Need Fabric? – Ep. 495"
+date: "2026-01-21"
+authors:
+  - "Mike Carlo"
+  - "Tommy Puglia"
+categories:
+  - "Podcast"
+  - "Microsoft Fabric"
+tags:
+  - "Explicit Measures"
+  - "Podcast"
+  - "Microsoft Fabric"
+  - "Power BI"
+  - "Licensing"
+  - "Premium Per User"
+  - "Dataflows"
+  - "Azure AI Foundry"
+  - "n8n"
+  - "Data Governance"
+excerpt: "Mike and Tommy unpack a viral LinkedIn article where a consultant saved a client $57,000 per year by moving from Fabric F64 to Premium Per User — sparking a bigger conversation about when Fabric actually makes sense, licensing confusion, and the tipping points that justify the investment."
+featuredImage: "./assets/featured.png"
+---
+
+Mike and Tommy unpack a viral LinkedIn article where a consultant saved a client $57,000 per year by moving from Fabric F64 to Premium Per User — sparking a bigger conversation about when Fabric actually makes sense, licensing confusion, and the tipping points that justify the investment.
+
+<iframe 
+  width="100%" 
+  height="415" 
+  src="https://www.youtube.com/embed/AIa2ZCY-wzM" 
+  title="Do You Really Need Fabric? – Ep. 495"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
+## News & Announcements
+
+- **Microsoft SQL Tools Investment** — The Microsoft SQL team published one of their first blog posts of 2026, outlining continued investment in SSMS, VS Code's SQL extension, and the retirement of Azure Data Studio. Tommy and Mike agree the move makes sense — Azure Data Studio was too similar to VS Code, so investing in the VS Code SQL extension directly and keeping SSMS for power users is the right call. Mike highlights the GitHub Copilot integration in VS Code as a major productivity win for SQL development.
+
+- **Getting Your Data Gen AI Ready (James Serra)** — James Serra's article walks through the stages of analytics maturity: reactive, informative, predictive, transformative, and finally Gen AI readiness. The core argument is you can't skip steps — if your organization can't explain what its data columns mean to another employee, how will an AI with no business context figure it out? Mike and Tommy discuss Azure Purview vs. OneLake Catalog, with Mike favoring OneLake Catalog for its right price point (included with Fabric) despite wanting better semantic model metadata support.
+
+- **Azure AI Foundry + n8n Workflows** — Mike shares his breakthrough connecting Azure AI Foundry models to n8n workflows. He built an automated pipeline for Intellexos demo requests: a web form submission gets read by DeepSeek (running on AI Foundry) to detect if it's legitimate, then ChatGPT 4.1 drafts a personalized response email, and a Teams message notifies Mike with the draft. He's expanding it to do company research on submissions with corporate email domains. Mike prefers n8n at $8–20/month over Power Automate for these AI-driven workflows.
+
+### Sidebar: Running Local AI Models
+
+A live chat question about local alternatives to Azure AI Foundry leads to a discussion about LM Studio and Ollama for running models locally. Tommy recommends LM Studio as the easiest starting point. Mike raises the cost question — is a $2,000 GPU card worth it when cloud API usage might only cost $8/month? Tommy points out that many specialized local models aren't available on Azure AI Foundry at all, making local hosting valuable for niche use cases.
+
+## Main Discussion: Do You Really Need Fabric?
+
+The core topic comes from Blake Edwards' LinkedIn article, "Why You Probably Don't Need Fabric," which tells the story of a consulting engagement that saved a client $57,000 per year.
+
+### The Case Study
+
+A company with **3 dashboards and ~15 users** was paying **$5,000/month** for a Fabric F64 capacity. Blake Edwards came in, evaluated their setup, and moved them to **Premium Per User with Dataflows Gen 1**. The result: costs dropped to **~$200/month** — a savings of $4,800/month or roughly $57,600/year.
+
+The client had originally been pushed toward Fabric capacity when their dashboards stopped working, and upgrading the capacity was the quick fix. A previous consultant had proposed a $12,000 optimization project that would still leave them on Fabric at ~$2,000/month.
+
+### What Actually Happened
+
+Mike breaks down two key findings:
+
+1. **Data engineering was happening in the wrong place.** All the data transformations were being done in Dataflows Gen 2 instead of being pushed back to SQL Server via query folding. The team didn't have the SQL skills to move transformations upstream, so they built everything in Power Query within Dataflows Gen 2.
+
+2. **The licensing didn't match the need.** For 3 dashboards and 15 users, an F64 capacity was massive overkill. Premium Per User ($25/user/month) gave them 100GB model sizes — more than enough for their workload.
+
+> *"I would happily take on that consulting project for at least 20 grand at one time. I'll split the savings with you, Mr. Customer, for a year if you help me come in and optimize your licensing."*
+
+### Marketing vs. Reality
+
+Mike argues there are two lenses to evaluate Fabric through:
+
+- **The marketing lens:** "Bring your data here, one place for everything, easy-to-use platform, get your AI in the same place." Leadership buys into this messaging.
+- **The reality lens:** Building the technical components of Fabric requires skills, time, and alignment between business needs and what Fabric actually provides.
+
+Tommy adds that for many organizations, Power BI is **part of someone's job**, not their entire job. Asking those people to learn lakehouses, notebooks, and Spark is a tough sell when their dashboards already work fine.
+
+### When Fabric Actually Makes Sense
+
+Mike outlines the tipping points where Fabric becomes the right investment:
+
+- **Disparate data sources** — When you're pulling from webhooks, APIs, multiple small databases, SharePoint, and flat files across the organization, Fabric's data consolidation tools shine.
+- **No upstream SQL access** — If you can't run transformations at the database level, you need a data engineering platform.
+- **Large semantic models** — Pro licenses cap at 1GB models. Premium Per User gets you to 100GB. If you need more, Fabric capacity is the path.
+- **Real-time analytics** — RTI (Real-Time Intelligence) in Fabric is purpose-built for this; SQL Server isn't.
+- **Cloud migration** — Moving from on-prem to cloud data storage and processing.
+
+### The Hidden Cost Shift
+
+Mike makes an important point that Blake's optimization isn't "free" — by pushing data transformations back into SQL Server, you're increasing demand on the SQL Server. The compute cost doesn't disappear; it shifts. For this client it was still far cheaper, but it's worth evaluating where the load lands.
+
+### Start With What Works, Optimize Later
+
+Both Mike and Tommy agree on a pragmatic approach: build what works first, then bring in a second set of eyes to optimize.
+
+> *"Sometimes you just need to build it. Sometimes you just need to figure out what works for the business... You start with what works first. Make it run. If you like the outcome, there's always the option to bring in a second set of eyes to relook at the solution and optimize it."*
+
+Mike is doing this himself — he has Dataflows Gen 2 that have been running for six months without incident, and he's now evaluating whether to migrate them to notebooks for cost savings.
+
+### AI in Excel and the Fundamentals Debate
+
+The conversation takes an interesting turn when Tommy mentions his wife learning Excel with AI assistance. Mike has a visceral reaction — part of him says "you need to learn the fundamentals first," but he recognizes this is the same reaction senior developers have toward junior devs using AI to code.
+
+He lands on a nuanced position: AI should augment what you know, bridge knowledge gaps, and summarize what it did so you learn along the way. But blindly trusting AI to do everything right every time is a mistake. Trust but verify.
+
+## Looking Forward
+
+The episode reinforces a theme Mike and Tommy keep coming back to: **do the math before migrating**. Fabric is a powerful platform, but it's not for everyone — especially small teams with simple reporting needs. The licensing landscape is confusing (Mike jokes that Satya Nadella, not Bill Gates, is the one who should make it easier), and bringing in an architect to evaluate your actual needs can save tens of thousands of dollars.
+
+For organizations already on Fabric, the advice is to continuously evaluate: are you using what you're paying for? Can you optimize data engineering to reduce capacity consumption? And if you're considering Fabric, start by identifying your biggest data problems — not by chasing marketing promises.
+
+## Episode Transcript
+
+Full verbatim transcript — click any timestamp to jump to that moment:
+
+[0:00](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=0s) [music] Good morning and welcome back to the Explicit Measures podcast with Tommy and Mike. Hello everyone and welcome back.
+
+[0:32](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=32s) Good morning, Mike. How you doing?
+
+[0:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=36s) Doing well, Tommy. It's been a cold, long weekend, but we're back in it. We had a holiday on Monday, so I still worked even though everyone else in my family had off, but it was a productive day. We're back into we're back into another week again.
+
+[0:49](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=49s) That's good. I I worked later in the afternoon because what? So many days with the kids. Uh question on holidays with the kids. Do you give assignments to your children?
+
+[1:02](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=62s) You mean like chores or are you talking above and beyond the chores?
+
+[1:07](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=67s) Chore above and beyond the chores.
+
+[1:11](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=71s) May I'm going to start the question with maybe how you determine this. Um usually there are things we want the kids to get done or clean up or something we've been asking them to do for a while. Potentially there always something out there. We will tie the rewards of what they want to do with them accomplishing something. So,
+
+[1:30](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=90s) Okay,
+
+[1:31](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=91s) We don't give them like tasks per se, but it's more like, hey, you want to watch a little bit extra TV on the break or this afternoon or when we go down for a rest in the afternoon, mom's taking a rest in the room or taking a nap or whatever, and you guys are going to wear her out. So, if you want to watch TV during that, then you got to do this, this, and this. Like, these are these are the things you've got to get done before the next thing. Because if we if we wait, they'll keep pushing the edge of like, not doing their laundry, not cleaning up their room. Like they'll just keep waiting and waiting, waiting, and all of a sudden they'll want to do something fun and
+
+[2:02](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=122s) They'll be like, "Did you do this?" And they'll be like, "No." My daughter's learning how to play piano, right? Did you practice your piano? Has that been done yet? Like if you didn't do that yet, you can't do the fun thing. So we do we tie a lot of like the reward or the fun things in front of like okay we need you to do a couple things to maintain the house. Does that make sense?
+
+[2:21](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=141s) Yeah. Yeah. Yeah. That's that's good. Uh I always make sure because if if I had a computer when I was my daughter's age for homework or like the study
+
+[2:31](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=151s) I think I would have done a lot better because yesterday like if I if they play video games their brains become mush and that's just no good for anyone. So I'm like, "All right, Laura, you got an hour on quick tables," which is like a ma like a math, thing just
+
+[2:47](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=167s) Gaming. It's like, "Okay, you're going to do an hour." And I'm just looking at her going,
+
+[2:52](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=172s) "She's doing so well." I'm like, "I would have done so well. I had paper. I we didn't when I was eight years old,
+
+[2:59](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=179s) There's graphics. There's a little character jumping across the screen helping you add math facts."
+
+[3:04](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=184s) You would you would have been a math wizard. You would have been playing the game for 12 hours a day,
+
+[3:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=188s) Dude. I could not imagine. But all I know is did you ever play the game back? There was some remember those computer games that were pretty fun. There was one called Zubinis.
+
+[3:20](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=200s) No. Yes.
+
+[3:21](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=201s) What?
+
+[3:22](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=202s) All right. It was like a You're going to have to look it up. It was like the Quest of the Zubinis and it was basically this critical thinking logical game. I don't know how many people played, but it was one of the funnest games I've ever played.
+
+[3:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=216s) Quest of the Zubinis. I've never heard of this.
+
+[3:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=223s) I'm googling this and it's only coming up with with Quest of the Zombies, [laughter]
+
+[3:47](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=227s) So that's probably not what you were playing as a kid.
+
+[3:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=230s) You'll have to give me the spelling of what that one is at some point in the future. So, I can Google that one. I did not I did not play intelligent games, Tommy, when I was a kid. I played things like Settlers. I think it was Settlers what it was. And you had to go No, Oregon Trail. That was the one I played. Oregon Trail. I'm thinking of a different game. Oregon Trail is the one I remember playing when computers were first coming out. Played them on those big CRT monitors. Zoom bins. Zoom bins.
+
+[4:17](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=257s) Zoom beanies. Yes, it was one of those CD package games. We did have pretty cool games. I do remember whenever you get it from a CD.
+
+[4:26](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=266s) That's crazy. I had never even heard of this game. Oh, yep. There it is. Yep. Zoom beanies. Huh. Okay. Yeah. I never played that one.
+
+[4:38](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=278s) All right, I think we got a lot of news to get to. I'm trying to remember those old games when I was a kid, but another day.
+
+[4:45](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=285s) I remember the game Lemmings. Do you remember that game?
+
+[4:48](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=288s) Never heard of that in my life.
+
+[4:51](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=291s) Oh, it must have been a thing. Our game near So Lemmings was a game that we played in tech class and it was these little characters, these little green characters that would fall out of this portal and they would just like walk slowly across the screen and you had to put like ones that stop them. you had to put ones that would like build a ladder and stuff like that. And so it was this challenge of like how could you get these little lemmings to get from the portal into the home base.
+
+[5:15](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=315s) And so that's that's that's another remember playing. Yeah, it was fun. It was good. You had to like protect them cuz there's like cliffs and if they fell too far they would destroy themselves and there's like lava and you couldn't step into the lava or you destroy and you had to like have a number of them successfully make it to the end of the trail. So that remember that was a a fun like building logic game that I remember growing up with. Anyways, let's move on.
+
+[5:39](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=339s) Yes, I think we we got a ton today. And Mike, you found an awesome article.
+
+[5:44](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=344s) Yeah, I found an article today that I want to go over. So the article here today is from LinkedIn. And Tommy, you and I have been talking a lot about fabric just in general, like what it does, the advantages of it, all the data engineering that we're doing. And I would say Tommy and I are probably pretty convinced there's probably some use case in your business that could require fabric, but is it for everyone? Does your organization actually need fabric? And so this is an article around why you maybe don't need fabric? And so talking through like
+
+[6:17](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=377s) What does that mean? Are there situations in your business that would push you to stay only in PowerBI or what's that tipping point to get you into fabric? So anyways, some good thoughts here. We're going to unpack this article today. I thought the the article was well written. I think there were some great conversation around licensing. I think that's part of this whole conversation around like which part of the product do you choose? How can you optimize it so it's more efficient for your spend inside that fabric or PowerBI space? Anyways, we'll talk about that one. Okay, let's jump
+
+[6:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=410s) Into some news items. Tommy, we I think you picked a number of these news items. You want to go through some of these with us? Yeah. So, we have three good ones. One is Microsoft SQL fabric blog. I think it's one of the first blog articles of the year. So, it's been pretty quiet, but what it is is how the Microsoft SQL team is investing in SQL tools and experiences. And simply what they're doing is investing in SMS, VS Code, the SQL extension for VS Code. Azure Data Studio is retiring and
+
+[7:22](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=442s) Basically being being able to use the extensions that are coming with VS Code to use SQL in the SQL database and SS SMS is still very popular. I have it always installed on my computer. Um and just another way to integrate fabric with a SQL database.
+
+[7:45](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=465s) I feel like Tommy and maybe this is just my misconception here. I thought at some point Microsoft was trying to kill the MSS M SS SMS program and give you like a new one called data studio.
+
+[7:58](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=478s) They would tried that but no one really liked data studio because it was a off it was a diet not as all the features of SMS.
+
+[8:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=488s) Yes.
+
+[8:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=488s) And it behaved very similar to VS Code and they're like why don't we just invest in the VS Code SQL extension?
+
+[8:15](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=495s) Yes.
+
+[8:16](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=496s) Which is Yeah. So, I think there was a little bit of like turmoil there around like, hey, we're going to get rid of SMS. It's an older tech stack. We're going to give you this new one called, data studio. And then I think they killed Data Studio, which I I liked the the UI, the experience of data studio. I thought it was really nice. Um, but however, Tom, I think you're right. I think instead of using data studio, since it was so similar to VS Code, I think it made a lot more sense to just make extensions for VS Code directly. And I honestly I think I would agree with that, Tommy. If you are using a lot of SQL Server and you want you're comfortable with SMS,
+
+[8:49](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=529s) Stick with it, right? Stay with Stay with the MS SMS SQL Server Management Studio. I'd also argue I like VS Code and so I'm happy to see the investment on the SQL Server extension for VS Code because that was that's what I'm liking to use more. I want to be able to connect to a server. I want to be able to use VS Code with that stuff. if I want to be able to use my co-pilot like GitHub copilot with all those SQL commands. I think that's extremely helpful for me to aid me in building better stuff there.
+
+[9:21](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=561s) 100% 100%. So yeah, it's good to know that they use it too because SMS is a pretty robust tool and you don't have to be a database administrator. Honestly, it's probably one of the better tools if you're just managing a database at all. All right. So, here's the link to the SQL tools in the chat. This is the article that we're talking about. This is one of the items for the news. Um, how the Microsoft SQL team is continuing to invest in SQL tools. So, another good article there as well. Other next news article, Tommy.
+
+[9:53](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=593s) So, the next one is getting your data gen AI ready. I think this is going to be a topic that we do, but this is from our good friend James Sarah at jamesah.com. And what he's basically talking about is really what I think what you and I have been saying and the drum beatat of you just can't add AI to your data and call it a day. There's something that we're trying to get to is gen AI readiness which is basically and what James has been doing is actually going through different stages which is like
+
+[10:24](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=624s) Reactive analytics in informative analytics predictive analytics and stage five is this Gen AI stage and those things the predictive analytics transformative analytics the things we already know in business intelligence those are things on the Microsoft PL300 exam you can't skip those steps and he talks about clean data, clear governance, all those things from the analytics side is it's interesting. His argument here is that all those
+
+[10:55](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=655s) Different stages of in informative analytics, reactive analytics, predictive, you can't skip. I would be interested your thoughts on that. Yeah, Tommy, I was I was just listening to a business team talk about two terms they had for the same well, they had they had two different columns of data and the business was asking for the same name for both columns. Remember how we've talked about this in the past, Tom? We've talked a lot about like, hey, I call something sales orders and and a different team calls something
+
+[11:28](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=688s) Slightly different sales orders or it's sales orders with some filtering attached to it, right? We're we're basically looking at the same data with maybe like a slightly different lens on why it's different. I heard the team say we need to rename one of these columns because the data is physically different. The definition of the column is not what the other team says it was. So it was basically they're both trying to use the same terminology that made sense to them, but they need to be additional information. And I as you were talking here Tommy about this
+
+[11:59](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=719s) Gen AI ready, right? some of the points that James Sarah makes in the article which I thought was really relevant right there's clean quality data it's regularly showing up it's doing good things that that makes sense that would be that's a requirement for all business intelligence tools not just gen AI right it has clear context and governance and that was the one I was thinking about here while you were talking Tommy it makes me think yeah that needs to if I can't explain to another employee of the company the difference between the
+
+[12:32](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=752s) Two columns. How on earth is an AI that has no business context of what we're doing and has no background around potentially what we're working on here to understand the difference between these two columns that are different but named the same, right? So where where does that information come from? So I think to your point, Tommy, like these are really solid steps. I like what he's like writing down here of what he's finding. And I think I would argue like clear context and governance, right? managing the management of unstructured data. [clears throat]
+
+[13:03](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=783s) I think these are really key aspects of is your company ready for Gen AI? Do you even have a good understanding of like where does your data come from? How are you consistently pulling it in a pile? And is it named the same stuff or is it different or do you have clear definitions of what stuff means? If you can't explain that to me, why are we trying to throw a whole bunch of geni stuff when you've got more fundamental problems in your business?
+
+[13:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=809s) Dude, I I love that. And [cough and clears throat] I really think though too, we need to talk about this more about stages because I think all we've done, you and I, when we've talked about companies trying to adopt and understanding the data with AI is really trying to I think talk the big picture of ontology. We've talked fabric IQ.
+
+[13:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=830s) Yep.
+
+[13:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=830s) But we haven't talked about the diff the different steps to get there. Like if you're an organization and you're still at a stage where we're doing ad hoc analysis and Excel files, can you really even get or would AI even be a fundamental potential success?
+
+[14:12](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=852s) Yeah. Yeah, I I like later on down the the article here, it starts talking about like tooling of things like the tools for the journey.
+
+[14:19](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=859s) Mhm.
+
+[14:19](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=859s) How do you get Azure Purview and Microsoft Fabric to work together to help you with Genai things? I think those are interesting things. The one area I'm just a little bit more leerary around, Tommy, is I'm I'm very leerary of Purview. I've tried it a couple times. I haven't really been impressed. It feels like a lot of extra manual work to make Purview do what I want. And maybe what I desire out of purview is not what I'm getting. Let me explain what by that. I feel like, and this could be changing, so bear with me. Like I, this has been a couple months old of knowledge of what Purview can do.
+
+[14:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=890s) But my understanding is Purview can go scan things. It can map stuff. It can then push a bunch of , data into tables and you can document what those are. here's the data I found. There's no metadata or description about them. Explain why these columns exist. add descriptions, , show related sources. That does really well for like through the lakehouse and into semantic models. But once we leave the semantic model, to me, it felt like purview fell apart, right? I can't take a semantic model and
+
+[15:21](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=921s) Bind all the data elements of the semantic model into reports that are being used downstream. I can't get information out of this is this the semantic model and this is how it's being used and what columns are being used from Excel where does that data go right so when I look at the spans of like purview it seems to do a good job of like upfront of the semantic model and earlier but it does a poor job of the semantic model downstream and I feel like most of my world lives in semantic
+
+[15:53](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=953s) Model downstream columns where they're being used Excel queries, all this stuff that's happening like the business is using that. So that's the information that we need to know and put our hands around. And this is where I think I would pitch a bit more around the Microsoft fabric one lake catalog. I think it's actually a really rich tool. Very neat in nature. Does a lot of the similar things that purview does. Wish it would do. I wish one lake catalog had a little bit more for semantic models and adding definitions and metadata. But other than that, one lake catalog, I
+
+[16:25](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=985s) Think, is a really strong contender for helping you organize and figure out your data. So, I'm just going to pause right there. What do you think about some of those tooling pieces between purview and fabric, Tommy? Is that your observation as well? You're on mute. Microphone is still good. We had to update the microphone more or less. But the big thing that you're talking about is the back end of setting it up, the development side, right? And it's funny because I think just another fundamental part of this too is also well what are
+
+[16:56](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1016s) Users going to see? What's the organization going to see? How do they discover and verify and validate? And that's another like one lake catalog is okay. Purview is not that option. It's trying to be as like business terms and all these different things, but we've still yet to really, find or come across an application that also makes it easy for users and easy for the organization to
+
+[17:27](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1047s) Find the definitions.
+
+[17:30](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1050s) Well, let me let me just take another stab at this because maybe I misinterpret maybe I didn't explain this well. I think Tommy I think I think there are tools that do it. I think the price point of them is incorrect
+
+[17:44](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1064s) Potentially. Right? So even when you use perview, you're paying more for data governance, right? So perview is an added feature, an added payment to organize or or label your data. Microsoft fabric, you're already paying for it in ways with a premium skew and it has one lake catalog built into it. The price is just right for me, right? I don't I don't want to spend if you already know all the things I have access to. If you already know all the columns in my semantic model, if you already have the descriptions, why not spend more time in my semantic models
+
+[18:15](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1095s) Describing them better, adding more descriptions, doing a better job of documenting what we already have and then just being able to leverage that same documentation back in one catalog. I really like that. So that that's the part of it's at the right price point. It's already free. It's already included in the product. Why do I want to go out and buy other thirdparty programs? you could go buy Informatica. You could go buy other solutions. Yeah. But all of those all of them cost additional money.
+
+[18:44](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1124s) Why not use the tool that is already there? And that's just where I'm at. Like I could I could deal with a couple less features if the tools that exist already just worked a little bit better.
+
+[18:55](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1135s) 100%. Um, but hopefully we'll see where the one lake catalog for me though was what I thought metric sets was going to be like a nice businessfriendly user experience for your in a sense your global definitions and the metric sets were that one like catalog you're still kinding having from a user point of view navigate into the object to get then get to the definitions a user may not know which semantic model but that's neither here nor there. I I hope maybe ontology may solve that too.
+
+[19:26](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1166s) That's a good point, Tommy. There's still probably things being built and developed here that are not quite fully formed yet. I will say this, Tommy. Um I have been extremely impressed with Azure Foundry. Azure Foundry has really piqued my interest recently. Um, one of the challenges that I have had with fabric so far has been I can't spin up any large language model and use it as an API to talk to anything that I've been doing, right? We we build products, we build software on top of fabric. There's nothing that lets me deploy any
+
+[19:58](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1198s) Large language model into fabric and then use that directly. It's lame. I'm sorry. It just is. It doesn't. It just it should be better, right? So that being said, I have found a lot of value in going over to AI foundry. I can deploy a model. Just pick one. Chat GPT 4.1. Yeah, that's the model I want to run. It has all the billing. It has all the run rates. It has all the usage. It tells you how many tokens are being used. Has all the requests. It tracks all that stuff for you. I literally want just that experience. Like I would
+
+[20:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1229s) Really like to have like just pick a model from the library of all the models that Microsoft serves and just say make this available. Here's the URL. Here's the API key. Boom. Done.
+
+[20:40](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1240s) It was so easy to integrate.
+
+[20:42](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1242s) For crying out loud in GitHub online when you're in the chat, you can choose which AI model. So, but there with notebooks there's the way but I it's good to hear that you're having success with Azure AI foundry and at least they open it up with copilot studio. Speaking of opening up you can technically in an agent and copilot studio not in fabric and copilot studio set which AI model an agent would run on but that feature is not available in fabric.
+
+[21:14](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1274s) Tommy, let me ask you a question here. Just a question just came in through chat. Mike is asking about there's no version of a local foundry available. So if you look at Foundry, Foundry has like this portal. You go to it, you can pick all these different models I believe. So one thing I've been Mike to answer your question directly and I've also been discovering and looking for this as well.
+
+[21:35](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1295s) Tommy, I know you run a handful of local models on your machine today currently. Is there a bit of software that you use to run that downloads the model and then lets you run the model locally? cuz I believe while there isn't a direct equivalent of a local foundry version of software, I think there's stuff that's close, but it's not exactly an exact replacement. Tommy,
+
+[21:57](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1317s) There's two main ones that you can use with a nice user interface. LM Studio,
+
+[22:04](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1324s) That's the one I was looking at. Yep.
+
+[22:06](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1326s) And that's a pretty pretty awesome one. And then there's also one called Olama, which is really neat. And there's a lot of it's not necessarily more de developer, but you can do a lot more with the API and Python as well.
+
+[22:20](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1340s) Okay, so I'm going to put those in the chat here for those of you who are interested in using large language models and potentially playing with them on your local machine. Now, O Lama is from
+
+[22:31](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1351s) Just open source
+
+[22:32](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1352s) Is it? It's from Facebook though. It's it Facebook makes right.
+
+[22:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1356s) So they make llama. They don't make Yes.
+
+[22:39](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1359s) Okay. So, I know it gets all
+
+[22:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1363s) It gets a little confusing and there's so many so many different random terms here. So, I'm going to go see if I can find the quick O Lama documents here as well. And so, Olama is do you just install it locally on your machine?
+
+[22:54](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1374s) You install on your Windows or Linux or Mac and then there's they now have a UI. Um you can download models on from their website. I also sent a lot of local models come from something called hugging face which is yes huge website for models and things you can do but LM Studio is a great one to get started that runs on your computer. It can then host like a server of like hey I want to run this local model. Local models are fine but check your GPU.
+
+[23:25](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1405s) Yes.
+
+[23:26](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1406s) And they're very very very large. Is it is it worth the spend? Tommy, like again, I've been debating this a little bit. I've been going back and forth about, do I want to build a little bit of a home server, a little bit of a machine here with some, very powerful GPUs in it to run stuff. Are is it is it really an advantage? Like, are you spending, is it like $8 a month to run these models if you use the service online versus on your local? So, I guess the the break point for me, Tommy, is like, do I need to buy a $2,000 GPU graphics
+
+[23:57](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1437s) Card for my machine? And then the equivalent amount of usage I would get out of it would be like eight bucks a month. Like, so at $8 a month, if I'm going to buy a $2,000 graphics card, I could do a lot of months of $8 to get to a level of where I'm buying like a thousand graphics. So, again, if you like playing with this stuff, if you already have the graphics card, it makes sense to just go get it. If you're finding a good deal on one, then that makes the home library a lot better. Like Tommy, what what's your feeling on this one?
+
+[24:28](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1468s) This is a good question. So honestly, it's not just like Anthropic and CL, and OpenAI that are these local models. They're actually models that you really can't find on Azure Foundry or on like GitHub online. A lot of them, Microsoft creates them. obviously meta. Um there's a few others where they're very very distinguished in terms of their purpose and what they do. Um some are like, super small that do particular tasks. Some are like
+
+[24:59](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1499s) The deepse ones that run pretty
+
+[25:05](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1505s) Pretty fast and then there's ones that for instruct there's ones for like instructions there's ones for chat there's one for doing certain tools with vision and honestly there's a lot of models you can get there locally that you can't run in Azure AI foundry they're not there
+
+[25:23](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1523s) Okay AI foundry has been impressive I've been impressed with how many models like all of the hugging face library is inside Azure Foundry. It is impressive how many models are there. Um, also one thing I would also just point out here as well, Tommy, how in the past I've been talking a lot about NAN and how I've been using that.
+
+[25:42](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1542s) Yes.
+
+[25:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1543s) Okay. I had this really big mental block around N and not being able to use any AI from Microsoft inside my NA workflows. I just figured out how to make it work. I just I was able to get it going. And so, , let me give you just a quick little a quick little efficiency thing gain that I've seen from this. And this is, u, this is actually us unpacking the podcast directly here and me implementing what we've been talking about in the podcast.
+
+[26:12](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1572s) Uh, an article a number of weeks ago, we talked about where does AI fit? What should it be doing? And we felt AI should be solving the gap of your next problem, right? identifying where the problems are in your business, identifying where there's a lot of human effort or manual work and what can you do to streamline that. So what I've done is I have a web form on my Intellexos website. So Intellexos is the product that I sell that helps customers get up and betting very fast. We just made a huge UI improvement which was been built heavily with AI and my dev team. Uh so that's exciting. We're going to be
+
+[26:44](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1604s) Announcing releasements of that really soon. There's going to be videos coming about the new product and how that all looks brand new, very much cleaned up. But that being said, the form, the web form that you submit things in, it goes into my little AI, my AI reads it. So I have DeepSeek picking up the AI running an AI foundry and then it says, is this is this request for a demo legitimate? So I have like a frontline worker read every single form that comes in the door and if it's just gobbledygook, don't ignore it. just move on. Like, you
+
+[27:16](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1636s) Know, xyz@gmail.com. Like, there's a lot of those just web browsers or things that scrape the internet, just put a bunch of junk into the form. But then there are legitimate people that actually say, I actually want a demo. I actually want to talk to you about the product. Great. That's the people I want to talk to.
+
+[27:31](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1651s) So, not only do I have it just detect if it's good or bad, but the N workflow also decides if it's legitimate, it then says, "Okay, now go find that user, draft me an email, and include these things in it." So, I'm using another large language model. So, a second large language model, chatgpt 4.1, and it's now drafting me a draft of an email and then sending me a team's message and says, "Hey, here's the contact from this person. Here's what they submitted. Here's the draft email I think you should send." And then I can just copy
+
+[28:03](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1683s) It from there, put it in my in my Outlook, and then I can I refine it. I I change it for what I think it's needed. I maybe do a little bit of research on the company and things, but now I'm looking to also add into my my pipeline and workflow is look, if this person's coming from a a specific company, not like a Gmail or a Yahoo or an Outlook, right? if they actually have like an actual URL at the end of their email address, I can now have it go do some deep research like who is this company, where are they from, what's some background, and so you can actually have another large language model go research a little bit of things and that
+
+[28:34](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1714s) Can be used as source information for the draft email that it's making. So, I'm I'm starting to heavily leverage AI in an automated way to go use these tools from AI Foundry, leverage them inside my workflow, and then I can make decisions, I can route things, I can have a switcher, I can all these automated steps, things that I think Power Automate should be doing, but it just doesn't do very well. So, that's something I'm exploring. I'm finding a lot of success with it right now. And I'm I'm enjoying the build experience.
+
+[29:06](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1746s) It's not too complicated to get it all wired up.
+
+[29:10](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1750s) And are you did you get a template for what you're doing here? This is all you're just building with like the Don't you have to install like via npm or whatever?
+
+[29:20](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1760s) Uh what are you talking about?
+
+[29:21](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1761s) N like so to get n so I'm there's a couple ways you can install n. I've done one where you can install nan on a container inside Azure. So that's one that I've been experimenting with. So you can run it yourself. You can put on your own machine. Not a big deal. There's some weird things around databases that you have to know how to do. The other side of this is you can pay $8 a month. Again, going back to this subscription for everything stuff. I think you can pay like $8 a month for N to run on their servers in their side. And so, when I was just starting out, I was like, I I don't have time to figure out how to run everything on a VM and
+
+[29:53](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1793s) Whatnot. So, I just let the machine run and I'm paying the $8 a month. But I have figured out recently how to run a N on your own Azure container service. So you can just run that and it's a little bit more expensive than running like the the $8 or $20 a month that NAN is charging you for their app service that runs and manages all of the distributions for you.
+
+[30:17](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1817s) Oh, that's awesome.
+
+[30:18](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1818s) It's good. I like it. Um, I'd ra to be honest with you, Tommy, I'd rather pay n the $8 or $20 a month than going to buy Power Automate. Even though it's a little bit free anyways, Power Automate just doesn't feel like this other program does. It's just I I I think it's worth it right now. Maybe Microsoft is going to catch up and figure themselves out here, but right now it's they're they're not there yet.
+
+[30:41](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1841s) Speaking of purchasing or using things you may not need. [laughter]
+
+[30:47](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1847s) You like that?
+
+[30:47](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1847s) That's good, Tommy. I like that. Okay. All right. Thank you. [snorts]
+
+[30:50](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1850s) Let's move right into our main topic. So, we're at about 30 minute mark.
+
+[30:55](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1855s) Yeah. So, this article is let me go see if I can pull it up here again. Uh this article is from Blake Blake Edwards and the article itself is why you don't need fabric. It's actually posted here on LinkedIn. So, Blake Edwards did a good job on this. Um and he gave you walk you through here what a customer was paying. So I think this is a story of licensing and appropriate usage of the fabric environment. So I'll just maybe like start there and the idea was he was looking at what
+
+[31:26](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1886s) Customers were doing. They were trying to move towards data flows gen 2. they were trying to do everything in a a fabric enabled environment and in order for them to get everything turned on they were buying like a monthly fee of like fabric f64 and really I think at the end of the day for the features they actually needed to use they were leaving a substantial amount of money on the table I think is what it boils down to
+
+[31:54](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1914s) And so that's where he goes through and he explains his situation where was the 5k a month coming from how it got a little bit worse when they started reducing to lower-end SKUs and then basically really revised the solution. How was he optimizing? What was happening? Where was he doing all this work? And he found that a lot of his data being pulled was not coming from pushback or running SQL, right? So in a lot of the engineering was being done in Power
+
+[32:26](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1946s) Query. there was no query folding putting in place and so a lot of the data engineering things were just being done inside dataf flows gen 2. So what ultimately ended up happening in this scenario is they pushed more for a premium per user license. So there wasn't a ton of people. They pushed for premium per user and they just rebuilt everything on dataf flows gen one. And so the cost dropped from $5,000 a month down to $200 a month, saving them
+
+[32:57](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=1977s) Roughly $4,800 a month, and that would be $57,000 a year. I would happily take on that consulting project for at least 20 grand at one time. Like that would that would be like an easy, I'll split the savings with you, Mr. Customer, for a year if you help me come in and help you build and optimize your licensing. A lot of this I think it was is it just was you just use what works like and again Tommy I think this is also part of the story a little bit with development inside fabric in general. You start with what works first
+
+[33:28](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2008s) Make it run. If you like the outcome there's always you could always bring in a second set of eyes to relook at the solution and then optimize it make it more efficient as a round two. So I'll just pause right there. Tommy, what are your thoughts on this article? What do you think? You're on mute again.
+
+[33:52](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2032s) You got to adjust the microphone. And then it's interesting because
+
+[33:57](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2037s) Mike, this story is not to me a story. Yeah. I don't think No, no, no, no, no. There's a lot of organizations that I worked with in the past who we talked to during user group where they're not doing that much with fabric. And this also goes back to one of our core questions when fabric came out. Organizations are hesitant because who's supposed to use fabric? Are we moving all our data engineers if
+
+[34:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2069s) We have them to fabric or are we upskilling everyone when we already were at the the cup filled over in terms of time and resources already with just PowerBI. So now are we going to upskill everyone in fabric which is fundamental questions for a lot of organizations who with PowerBI just wanted reports needed a reporting solution all this other stuff is fine but it wasn't a a fundamental need
+
+[35:02](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2102s) So this premium per user which I guess you can still go back to yeah
+
+[35:10](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2110s) Yeah so not for long and the gen one data flows Mike I had gen one data flows I my previous organization that were fundamental to a lot of things running smoothly in terms of the the organization looking viewing verifying we would never move that to Gen two if fabric came out. So if you're just doing reporting, you have a few dashboards, you have some things in data flows gen one where you're just using that in only PowerBI
+
+[35:41](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2141s) And again in terms of you're a small business, the need for fabric can be there, but it's al it requires what are we going to do with this? what what can fabric in terms not just solve but how can this expedite the things that we're struggling with data now
+
+[36:06](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2166s) But you can't just get fabric to because it we're going to upgrade and we're going to just move things into lakeouses to me you're going to run into this issue it goes to we're going to keep doing our reporting
+
+[36:18](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2178s) Because the cost is the same more or less if you're doing a capacity or not
+
+[36:22](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2182s) And then there's conversation around. Okay. Where are our biggest issues with with data in general?
+
+[36:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2189s) Yes.
+
+[36:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2189s) Can fabric be an option here?
+
+[36:32](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2192s) Yeah, Tommy. And let me let me just even like unpack a little bit. So, as you were talking, Tommy, I was I'm having a couple thoughts here. One of them is, if we're looking about do we really need fabric? What what is going on here? To me, some of the tipping points were what are the size of your data models, right? So, one of the things I'm probably going to argue here is why they had to go with the premium per user in this scenario, which I think this is I love analyzing these like, call it like a a user story or, an outcome. I think one of the reasons you have to go to premium per user is there's a pretty hard limit on the size of the semantic models in the prouser
+
+[37:04](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2224s) Level. Pro users can get up to one gigabyte size models when they unpack and and go into the memory of of the machine. At the prouser level, they can go up to like like 1.5 gigs or three gigs in memory. I think that's the maximum you can have there. But that limit of a one gig or less data model size, I don't think that fits every single semantic model. And I think that's one of the that's one of the main pushes that drive you over to a premium per user is that at premium per user level, you can get a 100 gig model that
+
+[37:35](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2255s) Runs at that level, which I think is a great deal. I think it's a really good thing. Um the other observation I think I would note here Tommy is in this article and in in this particular case study I'll call it a case study I guess is is probably more appropriate the gentleman Blake was really doing data engineering when he showed up to the customer a lot of the data engineering was occurring in dataf flows gen 2. I suspect that's because business users built it and didn't have access to run the SQL queries upstream
+
+[38:09](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2289s) And could do the data engineering in the SQL directly. So again, I'll go back to my comment earlier, Tommy, which was sometimes you just need to build it. Sometimes you just need to figure out what works for the business. And I would argue the work that they did in dataf flows gen 2 was just discovery work. Here's what we need to go get. Hey, I can easily load this table using data flows gen 2. I don't really know what transformations I need to apply. I'm just going to play with the data a bit and spend some time shaping and transforming and and and adjusting
+
+[38:41](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2321s) Things until you get to the table to a place where it's useful. Once you have that set, you're not adjusting the dataf flow gen 2 over and over and over again, right? You're you're going to get it set and if it works, you're going to leave it alone unless you need to add some more data to it or pen more information. and that's the only time you really need to change them. So I think here was you're seeing the works of a team that didn't quite fully grasp query folding. They didn't fully understand that they were doing the data engineering. So I look at
+
+[39:12](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2352s) This going the data engineering had to occur. The shaping of tables was going to happen. It just so happened to be stuck in dataf flows gen 2. All that Blake did was go back and push those data transformations up into SQL, which I thought was really interesting. So, I'm I'm going to just pause on those two items. Those are the two things that I'm seeing here as part of this story. Large model sizes and the data engineering had to be do done somewhere. Probably the skills of the team weren't robust enough to push those
+
+[39:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2383s) SQL skills down into the data and have those run against the SQL server. Now I will admit by doing this in this way you're putting more pressure on the SQL server. So the spend is coming from somewhere right?
+
+[40:01](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2401s) It's this is not this is not a get up for free thing. Someone that SQL server is now taking on more demand because of these new SQL queries and the query folding that's happening for loading this data. So let me just pause right there. Tommy, what do you think? Yeah, it's interesting you talk about the SQL database because again this is a very well again we're talking three dashboards 15 users
+
+[40:24](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2424s) This is a that small of a company fabric could do something but again you said I think you hit the nail on the head
+
+[40:32](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2432s) Y
+
+[40:33](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2433s) The skill of that company or the people already building PowerBI was probably limited to just PowerBI if you're at a company a very a small business like this
+
+[40:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2443s) I like where you're going with this Tommy. Yep.
+
+[40:45](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2445s) Like, so I already am busy as it is and I probably wasn't a business intelligence analyst before I got there. This might have be something I just taken on. Odds are a company that around that size, they're not just a business intelligence or PowerBI professional. They probably do other things, too. So now you're going to tell me with fabric I have to do lakehouse and notebooks. Heck no. when you
+
+[41:15](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2475s) I I was talking to my wife. She just she finally started working again after seven years of staying home and she's learning going back into Excel and all the things. I'm like, you are at the best time to be learning these fundamental things. Use
+
+[41:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2489s) Yeah. Like I'm like I'm almost envious of her. But for most people to build a PowerBI report when that was probably not what you had in mind when you got there or you have other responsibilities you have to sell me on if we're going to get fabric why I need to now push things into lakehouse. you and I people listening who their career is in data and their career is in Microsoft's data platform you better heck well know what lakehouse and direct lake and the work the the flow of data and best practices but for a lot
+
+[42:02](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2522s) Of organizations where powerbi is a part of your job not your job it's a tough cell to say we're going to find a solution we're going start putting things in fabric. Um even outside from the cost point of view where it's like PowerBI has been working fine. It's been working great. Yeah. There's been a few times with the refresh that people got frustrated but
+
+[42:30](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2550s) Yep. Yep.
+
+[42:31](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2551s) So let me see what are your thoughts on that.
+
+[42:34](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2554s) Wow, Tommy, there's a lot of things. So you bring up this interesting point, Tommy, and I know we're getting we're getting closer on time here, so we'll try to end on time correctly today. You bring up this point around using AI to help you build inside Excel. And this is intriguing to me because this is this is a a core this hits a nerve. This hits part of my heart, right, [laughter] Tommy? When you say something like that because I'm one who really enjoys Excel. I like working in it. I just saw a short a YouTube short from Satia Nadella the CEO of Microsoft and
+
+[43:05](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2585s) He was talking he was literally jumping into his computer and he was doing let's use co-pilot inside Excel to do some things in data engineering or or shaping some data inside Excel. I need to take these numbers and do this. I need to take these numbers and make a pivot table. I need to take these numbers and do something else. He literally was just talking to the computer and and asking it to do things and it was whipping around the Excel document and just getting stuff done. Tommy, when I look at code and coding and if I look at Excel and leveraging agents, it feels like it's the same
+
+[43:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2616s) Thing. And I had the same visceral reaction to you saying it's an exciting time today to use AI and Excel. And I'm like, no, no, no. You got to learn the fundamentals. You need to know how formulas work. You need to know how to transform data. Do I, as a user, do I really want to delegate away from me knowing how to use the tool over to an AI? Is that something I really want to delegate? And and Tommy, again, this is I think
+
+[44:07](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2647s) This is coming I'm having the same reaction, I think, as senior developers have against new developers using code and building things with Gen AI stuff. The same thing, right? No, no, no. You got to learn the fundamentals. I I'm I'm a little bit torn here, Tommy, because on one hand, I like the ability of doing things in Excel and having an AI explain what was going on or have an AI look at why is this a problem or have an AI support me with something in the Excel document. I think that makes sense. I get hesitation around
+
+[44:39](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2679s) Blindly trusting the AI to just do it right every single time. And I just feel like that's that is a misnomer as to what AI is doing. Um, however, I can definitely see the advantages of leveraging AI and Excel to get stuff done quicker. Transform this data, make these things happen, build this table, build these other things
+
+[45:01](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2701s) Or how do I do this? Here's my Excel. I'm trying to do a formula. What's the right formula?
+
+[45:06](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2706s) Hey, and I think to me, I look at that going like that's that's where I think AI is best. So, going back to my earlier comment, Tommy, like there's there's always these times in your business career or whatever you're working on through your daily workflow, you're you're on one side of a chasm and you're looking at the other side of the ridge and you say, "Look, there's just a huge gap between what I know and what needs to get done or it's time. I don't have enough time to build something. It needs to go faster." I look at this going, I'm in the Excel document. I need a drop-down cell
+
+[45:37](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2737s) That does a lookup value to something, right? I need to do some conditional formatting. I want to describe what the conditional formatting is. I don't want to go find it in Excel. I need to build this data into a table and add a couple calculations to it. you could do it, but it's going to take you longer unless you go after the AI and do it. And so, I have to continually remind myself that AI is going to augment and supplement what I already know how to do. And as back to my analogy, if I'm looking across that chasm and I know
+
+[46:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2768s) What I know where I want to arrive on the other side, AI is is trying to just build that bridge across something that may have just taken me a bit longer. It may be on the edge of my skill set. It may be something I just don't know about, but I can supplement my knowledge with what the AI did. And so one thing I will say that I like about Excel and using AI and Excel and also when I write code and using agents with writing code a lot of times the agent comes back and says let me summarize what I did for you
+
+[46:39](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2799s) And hey I wrote this formula I made this table I added this this and this. I like to see it help me but then also summarize the outcome or the outputs that it did. So that way at least I have the opportunity, it's up to me then to read through and learn something about what it did. So next time I have the right language or the terms or whatever to talk to the AI to have it get it done again. And now I'm not absolving myself of responsibility. And I think Jack, you have a really good
+
+[47:11](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2831s) Point here in the comments, right? We're still in the world in a trust but verify when using agents around AI. Here's the thing though, Mike. You can still take AI to learn. And I think going back to this conversation or at least this do you need fabric and the spend. Yeah, Satia can build an Excel doc and you can have things run. That's the agent side. But most of the AI for a lot of users too and a midsize company is to learn.
+
+[47:43](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2863s) Hey, I have this thing called, a semantic model. My formula is not doing well. Can you help me out? They may not be running it on behalf of the user and just basically building the slides or building the files. That's a little different. So, but still go [clears throat] Mike, I have a question for you. Do most of or organizations overestimate what they actually need from fabric? When you're talking to organizations
+
+[48:15](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2895s) When they're saying, "Hey, we're we're we got fabric." Are they trying to boil the ocean in fabric immediately? How do you see companies approaching
+
+[48:28](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2908s) Fabric, especially when they're just getting into it?
+
+[48:33](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2913s) Um well, so let me give you some context. I think I think there's a there's there's a noise. So, I like your question. I'm going to maybe articulate your question into two parts. Maybe there's the noise of the marketing and then there's the reality of what value it adds. And I think sometimes you see organizations coming into fabric with listening to the noise of the marketing. Bring your data here, one place to put everything. Uh easy to use platform, build build. Right? So that's like the marketing lens. Hey, get
+
+[49:05](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2945s) Your AI in the same place so you can get all your data in the same place so AI can leverage on top of it, right? That's this that's the probably part of the marketing story that you're hearing. And I think a lot of leadership is buying into the messaging of what that is. But the reality of building the technical parts of fabric and getting in and understanding, okay, let's really align business needs to what fabric is doing or does fabric really need to be applied here or can we leverage existing tooling that we already have in place to better serve reports out to our organization.
+
+[49:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=2976s) So I think this goes into like what Blake was doing here for this this client, right? Blake comes in, talks about this client, he saves them, $57,000 a year by moving away from fabric and into premium per user because there wasn't that mapping. There was this message of let's go use fabric. We know we we we think we can build things with it and they build some success with it, but it came at a higher price point. Flipping that story around, right, looking at the premium per user scenario and re-evaluating, okay, what are our core needs? What tech stacks do
+
+[50:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3008s) We have? where can we relever existing assets and this is where I would argue. A lot of what made this a success was the fact that the data was coming to them on SQL Server. Like if I think if you I think this story would have been totally different if the data was landed to you as flat files. Like if you were just given like I have no access to the database. I'm going to get emailed a file every morning. Here you go. I think I think if you had looked at this story the same way, I think you would have to redesign the system slightly because of
+
+[50:39](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3039s) How the data is being presented. The the trick of this was there was a hidden gem for them that there was a SQL server supporting their data structure and SQL server is great at like aggregating and queries and grouping and filtering all the things that you needed to do to prepare the data for semantic models. You've got a tool ready to go at your disposal. So, I think a lot of organizations have to come in listening to the marketing and evaluate the marketing against what technically they
+
+[51:10](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3070s) Need to get done and really sit down and be careful about bringing, I think they should bring in experts. I think you should bring in architects. I really do. I think that can save you a lot of money in the long run. And I think that's what Blake was doing for this company. comes in as an architect, evaluates what they're doing, applies what part of the licensing you need from fabric or Microsoft PowerBI, and then appropriately building the right systems in the right place. That's what an architect should do. Anyways, does that answer your question, Tommy, or I just talk myself in a circle here a little bit?
+
+[51:41](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3101s) No, no. of course, that's what an architect should do, but I I think the biggest thing, Mike, that I'm I'm struggling with in terms of what Blake proposes or puts on the table here is still an organ when an organization really what should they be answering when they get into fabric or they're looking at fabric and I you mentioned this in the very beginning
+
+[52:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3128s) About like putting your feet in the water. And I want to expand on that or dive deeper into that, no pun intended, because I think this is the big crux of it. When I look at the article and when I look at the situation that Blake has here, the problem is something broke. So, we're trying to migrate everything to fabric, all of our previous artifacts, their workflows.
+
+[52:35](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3155s) I don't see it that way. I I don't think I don't honestly I don't think something broke. I don't see a broken part of something that triggered the initial build of everything in fabric. I I think it was someone found fabric and said, "Look at this. Look how easy it is for me to use dataf flows gen 2 to do all my data engineering." And maybe they had done a little bit of dataf flows gen one, but it was a little bit clunky and they again I think this is where the marketing maybe made a little bit of influence. Hey, come to fabric. We've built this new thing called dataf flows gen 2. You need to use that. Hey, we hear this thing called lakehouse. you
+
+[53:07](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3187s) Need to use that. This is this is how organizations are going to market now with lakehouses and data flows gen two. I think that's the marketing that was heard by this company. And instead of sitting back and saying, let's just take a let's just take a a detailed look at like everything pro premium per user and what our process is, it was a small company. And going back to your point earlier, Tommy, small company, small company means small team size
+
+[53:34](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3214s) Means the skills in the team. Everyone's busy doing something. There's not a lot of extra time for people just to be like, "Well, let me go spend a week learning what's going on in the licensing." Like, you don't have time for that, right? There's there's no one spending time to have dedicated hours learning what the thing is. It's it's usually like someone on a side project going, "Okay, we're have this problem. I need to find a solution right now because I'm getting asked to get these reports out. Oh, look. This fabric thing is here. Oh, look how easy this is. Quick, fast, fast, fast. Great. Hey, boss. I can get this thing done. Here's a PC. Turn this
+
+[54:06](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3246s) Light up. buy this thing. Let's go. And then everyone jumps on board like, "Yep, this is the way to go." And you just step in and it solves problems. It's making things happen. But the spend wasn't equaling the value of the solution. And so that's where so I don't see this as being like something broke and then they threw down something that was fabric and that was solving a problem they should. I think it was legitimately solving a real problem the business had and helped them get to a level of performance they needed for the reporting they wanted.
+
+[54:37](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3277s) In hindsight, it would have maybe been a better idea to say, "Oh, let's re-evaluate." But this is this is why I like fabric because you can always take another step at it. You can take another swing. you could get something up and running and you could also relook at it and figure out is there a better way to optimize this like again to your point Tommy even in fabric I'm running data flows gen two and I'm going back and looking at them and going okay these data flows gen 2s have been running for six months now no incident
+
+[55:08](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3308s) Can I get rid of them and just translate them into a notebook and do the same thing with notebooks and a lakehouse
+
+[55:16](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3316s) And cut my costs like that's those are real projects that I'm taking on to allow users to just build it with data flows gen 2, get it up and running, get it working, and then we'll look at re-evaluating and can we bring down some costs by moving it over to notebooks. Does there does there additional efficiency by moving into something else that's a bit more codecentric by saving us some money? I I really like that because I think you're tackling really where do we start and like like what's
+
+[55:47](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3347s) The plan of attack rather than we're going to move everything over to me. I look at a small organization
+
+[55:54](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3354s) Or even a mid-size organization and again yeah the cost especially since there's no fabric per user it's from a capacity but before you purchase it before you assign assign it it's okay outside of PowerBI because this is not just PowerBI 2.0 know outside of PowerBI where are our biggest problems with data? Well, we do have applications and vendors and we do have all this data and we're how much are we paying for SQL databases because I guarantee you no matter how the size of the company they have a SQL database
+
+[56:25](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3385s) Or something somewhere and is looking at where are our biggest issues because we're not going to be doing all the machine learning right now or everything set up for right off the bat but if we can take all of our data that's everywhere and just push to a lakehouse. That to me is where the beginning of the winds are because all that exterior data. Listen, I'm seeing this with my wife right now. Uh small company, she's doing some of the
+
+[56:57](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3417s) Reporting is coming from everywhere. All those little systems, all those little software as a service systems.
+
+[57:05](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3425s) And what an opportunity.
+
+[57:07](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3427s) Yep. And so let me again, I want to really point out something here. Look, I'm not saying don't use fabric. That's not what I'm saying here at all. I'm really just saying evaluate what you're doing. And Tommy, I I agree with you, right? For me, I want to I want to wrap the end of this conversation with just a little positive note here because I feel like we've been ragging on things a little bit potentially here is I will say this, licensing is confusing. There's a lot of going on there. Where do I see as one who's been using fabric since day one, using PowerBI since day one, where do I see the break point of like when do I start really
+
+[57:38](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3458s) Investing in fabric versus when do I start that I stay in PowerBI or keep investing in PowerBI? To me, Tommy, I think you hit the nail on the head here at the end, right? When you have a lot of different disparate sources of small information across an organization, I'm talking to this web hook here. I'm talking to this application there. I've got this little bit of a SQL database there. Right? You're not going to bring all that data down to a single SQL server. That's just not going to be possible. And you would probably overwhelm the SQL server just depending on scaling of things, right? If you have
+
+[58:09](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3489s) A lot of data on prem and you need to get it more into the cloud, that's another great reason why you'd want to move over to a fabric experience because now you have all the data storage and data collection tools you need in one place. So consolidation of information, that makes a lot of sense. If you don't have access and can't run upstream processes like run SQL things, right? That's another to me trigger moment of like you've got to move into something that can do the data transformations.
+
+[58:36](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3516s) You're dealing with a lot of flat files or Excel sheets or SharePoint data or semi or semi unstructured data. That's another really good reason why you want to move into into fabric because fabric is data engineering for you for all these different products. like you want to do something with real- time data, real-time analytics, I'm not going to push you to a SQL server to do that. I'm going to push you more towards RTI or real-time analytics inside Fabric. I think that's a better solution. So, all this to say is I think this is a great article. You have as a company, you have
+
+[59:07](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3547s) To balance this and I think Fabric 100% serves a great purpose. I'm going to continue to use it, but I'm going to be very meticulous about going through the licensing and making sure that the licensing and our business needs align with what we're paying for at the licensing level inside Fabric. Oh, one final note here, Tommy, I want to wrap here is Blake at the very end of this. Blake, good article. Really like what you wrote here. The very last line, I think you made a miss a little bit here. Uh the last line, he goes, "Bill Gates, if you're reading
+
+[59:38](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3578s) This, please make this easier." here and he's referring to licensing and picking the right licensing. Um, I would argue Bill Gates has no knowledge of [laughter] what and does not care about how your licensing is less or more or difficult or not. That's the wrong guy to call out. The guy you want to call out is Satia Nadella. Satia, if you're reading this, make this easier for us to figure out where licensing exists between PowerBI Pro premium per user and fabric licenses. So, if anything, I would say this, Tommy, we
+
+[60:10](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3610s) You and I, part of our job is just purely figuring out licensing and making things work correctly.
+
+[60:18](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3618s) Seriously,
+
+[60:18](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3618s) It's it's a big portion of what we do. And so I think this article really highlights critical thinking and really evaluating what you're building and how you're building stuff because that really will impact what you're doing to make stuff work well or or save you money or basically charge you a lot of money if you're not really thinking through how to engineer the data into reporting and actionable insights later on.
+
+[60:45](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3645s) Anything else Tommy you want to wrap up with? Uh, no. I think honestly do the math before any migration and if you're if you're trying to up if you're trying to up your game in governance and data governance, then fabric's a no-brainer. It may not be the data governance program, but it sets you up for it. So, no, that's everything I got.
+
+[61:05](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3665s) I love it. All right, Blake, thank you so much for the article chat. Thank you so much for engaging today. Really good conversation here. A lot of going back and forth and some really good points about data, data engineering, what you're finding in real world. for those of you who are listening online. If you join us live on YouTube, you can see all the chat as well. Uh chat on YouTube actually explains a lot of these things and talks through these things. So, thank you very chat for being very engaged. We really appreciate you listening and talking with us directly there. That's super fun. Tommy, that being said, that's it for the podcast today. Um where else can you find the Explicit Measures podcast?
+
+[61:37](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3697s) You can find us on Apple, Spotify, or wherever you get your podcast. Make sure to subscribe and leave a rating. It helps us out a ton. you have a question, idea, or a topic that you want us to talk about in a future episode, head over to powerbi.tipsodcast. Leave your name and a great question. And finally, join us live every Tuesday and Thursday, 7:30 a.m. Central, and join the conversation on all of PowerB.tips social media channels.
+
+[62:02](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3722s) Thank you all so much. We really appreciate you. Have a great week, and we'll talk to you later. Bye. [music]
+
+[62:14](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3734s) [music]
+
+[62:29](https://www.youtube.com/watch?v=AIa2ZCY-wzM&t=3749s) Down.
+
+
+## Thank You
+
+Want to catch us live? Join every Tuesday and Thursday at 7:30 AM Central on YouTube and LinkedIn.
+
+Got a question? Head to [powerbi.tips/empodcast](https://powerbi.tips/empodcast) and submit your topic ideas.
+
+Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or wherever you get your podcasts.
