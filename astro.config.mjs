@@ -30,5 +30,8 @@ export default defineConfig({
     },
   },
   integrations: [mdx(), organizedSitemap()],
+  redirects: {
+    '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
+  },
   compressHTML: true,
 });
