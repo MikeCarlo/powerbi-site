@@ -46,7 +46,7 @@ const displayName = posts[0]?.data.categories?.find((cat) => slugify(cat) === ca
           {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
         </p>
         <h2 class="mt-2 text-lg font-semibold">
-          <a class="text-blue-600 hover:text-blue-700" href={`${base}${post.slug}/`}>
+          <a class="text-blue-600 hover:text-blue-700" href={`${base}/${post.slug}/`}>
             {post.data.title}
           </a>
         </h2>
