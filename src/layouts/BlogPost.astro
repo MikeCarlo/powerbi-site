@@ -50,7 +50,7 @@ const articleJsonLd = {
           By {authors.map((author, i) => (
             <>
               <a 
-                href={`${base}author/${author.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}/`}
+                href={`${base}/author/${author.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}/`}
                 class="text-blue-600 hover:text-blue-700"
               >
                 {author}
@@ -67,7 +67,7 @@ const articleJsonLd = {
         {categories.map((category) => (
           <a
             class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700"
-            href={`${base}category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
+            href={`${base}/category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
           >
             {category}
           </a>
@@ -93,7 +93,7 @@ const articleJsonLd = {
       <div class="mt-8 flex flex-wrap gap-2">
         {tags.map((tag) => (
           <a 
-            href={`${base}tag/${tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}/`}
+            href={`${base}/tag/${tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}/`}
             class="rounded-full border border-neutral-200 px-3 py-1 text-xs text-neutral-500 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 transition-colors"
           >
             #{tag}
@@ -107,7 +107,7 @@ const articleJsonLd = {
     <div>
       <p class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Previous</p>
       {prev ? (
-        <a class="mt-2 block text-lg font-semibold text-blue-600 hover:text-blue-700" href={`${base}${prev.slug}/`}>
+        <a class="mt-2 block text-lg font-semibold text-blue-600 hover:text-blue-700" href={`${base}/${prev.slug}/`}>
           {prev.data.title}
         </a>
       ) : (
@@ -117,7 +117,7 @@ const articleJsonLd = {
     <div class="md:text-right">
       <p class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Next</p>
       {next ? (
-        <a class="mt-2 block text-lg font-semibold text-blue-600 hover:text-blue-700" href={`${base}${next.slug}/`}>
+        <a class="mt-2 block text-lg font-semibold text-blue-600 hover:text-blue-700" href={`${base}/${next.slug}/`}>
           {next.data.title}
         </a>
       ) : (
@@ -136,7 +136,7 @@ const articleJsonLd = {
               {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
             </p>
             <h3 class="mt-2 text-lg font-semibold">
-              <a class="text-blue-600 hover:text-blue-700" href={`${base}${post.slug}/`}>
+              <a class="text-blue-600 hover:text-blue-700" href={`${base}/${post.slug}/`}>
                 {post.data.title}
               </a>
             </h3>

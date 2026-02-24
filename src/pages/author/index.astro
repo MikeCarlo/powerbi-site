@@ -38,7 +38,7 @@ const authors = Array.from(authorMap.values()).sort((a, b) => b.count - a.count)
   <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
     {authors.map((author) => (
       <a 
-        href={`${base}author/${author.slug}/`}
+        href={`${base}/author/${author.slug}/`}
         class="rounded-xl border border-neutral-200 p-6 transition-colors hover:border-blue-300 hover:bg-blue-50/50"
       >
         <h2 class="text-lg font-semibold text-neutral-900">{author.name}</h2>

@@ -45,7 +45,7 @@ function plainTextExcerpt(value) {
   <section>
     <div class="flex items-center justify-between">
       <h2 class="text-xl font-semibold">Recent Posts</h2>
-      <a class="text-sm font-semibold text-blue-600 hover:text-blue-700" href={`${base}search/`}>Search</a>
+      <a class="text-sm font-semibold text-blue-600 hover:text-blue-700" href={`${base}/search/`}>Search</a>
     </div>
     <div class="mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
       {posts.map((post, index) => (
@@ -54,7 +54,7 @@ function plainTextExcerpt(value) {
           data-post-card
         >
           {post.data.featuredImage && (
-            <a href={`${base}${post.slug}/`} class="block mb-3">
+            <a href={`${base}/${post.slug}/`} class="block mb-3">
               <Image
                 src={post.data.featuredImage}
                 alt={post.data.title}
@@ -70,7 +70,7 @@ function plainTextExcerpt(value) {
             {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
           </p>
           <h3 class="mt-2 text-lg font-semibold">
-            <a class="text-blue-600 hover:text-blue-700" href={`${base}${post.slug}/`}>
+            <a class="text-blue-600 hover:text-blue-700" href={`${base}/${post.slug}/`}>
               {post.data.title}
             </a>
           </h3>
@@ -81,7 +81,7 @@ function plainTextExcerpt(value) {
             <div class="mt-4 flex flex-wrap gap-2">
               {post.data.categories.map((category) => (
                 <a
-                  href={`${base}category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
+                  href={`${base}/category/${category.toLowerCase().replace(/\s+/g, '-')}/`}
                   class="rounded-full bg-neutral-200 px-3 py-1 text-xs font-medium text-neutral-700 hover:bg-blue-100 hover:text-blue-800 transition-colors"
                 >
                   {category}

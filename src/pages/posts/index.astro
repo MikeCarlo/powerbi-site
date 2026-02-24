@@ -57,7 +57,7 @@ const totalPosts = posts.length;
                   {post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                 </span>
                 <div class="flex-1">
-                  <a href={`${base}${post.slug}/`} class="text-blue-600 hover:text-blue-700 hover:underline font-medium">
+                  <a href={`${base}/${post.slug}/`} class="text-blue-600 hover:text-blue-700 hover:underline font-medium">
                     {post.data.title}
                   </a>
                   {post.data.authors?.length > 0 && (

@@ -79,7 +79,7 @@ const tagSections = tags.map(tag => ({
             return (
               <article class="flex items-center gap-4 rounded-lg border border-neutral-200 p-4">
                 {post.data.featuredImage && (
-                  <a href={`${base}${slug}/`} class="shrink-0">
+                  <a href={`${base}/${slug}/`} class="shrink-0">
                     <Image 
                       src={post.data.featuredImage} 
                       alt={post.data.title}
@@ -94,7 +94,7 @@ const tagSections = tags.map(tag => ({
                     {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
                   </p>
                   <h3 class="mt-1 font-medium truncate">
-                    <a class="text-blue-600 hover:text-blue-700" href={`${base}${slug}/`}>
+                    <a class="text-blue-600 hover:text-blue-700" href={`${base}/${slug}/`}>
                       {post.data.title}
                     </a>
                   </h3>
