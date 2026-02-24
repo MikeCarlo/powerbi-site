@@ -1,0 +1,53 @@
+# PowerBI.tips
+
+> Act like the business, Think like I.T.
+
+PowerBI.tips is the leading independent resource for Microsoft Power BI and Microsoft Fabric professionals. Founded by Mike Carlo, the site provides tutorials, developer tools, a weekly podcast, and enterprise solutions for the Power BI ecosystem.
+
+## Core Topics
+
+- **Power BI**: Report building, DAX, Power Query (M), data modeling, visualizations, themes, administration, and governance
+- **Microsoft Fabric**: End-to-end analytics platform — lakehouses, notebooks, dataflows, pipelines, and Fabric AI capabilities
+- **AI in Fabric**: AI-powered analytics, Copilot in Fabric, machine learning integration, and intelligent data engineering
+- **AI for Development**: Using AI tools to accelerate Power BI and Fabric development workflows
+- **Power BI Embedded**: Embedding analytics into custom applications at scale
+- **Data Culture**: Building data-driven organizations, BI strategy, and center of excellence practices
+
+## Developer Tools
+
+- **[Power BI Theme Generator](https://themes.powerbi.tips)**: Create custom color palettes, themes, and JSON theme files for Power BI reports. Includes AI-powered wireframe layouts, scrim galleries, and template generation.
+- **[Power Designer](https://powerbi.tips/power-designer/)**: AI-powered report design tool — generate professional themes, report pages, layouts, and embedded experiences in minutes. Includes wireframes, gallery templates, and visual object automation.
+- **[No-Code Custom Visuals](https://charts.powerbi.tips)**: Build highly customized visuals using a web app and export them for Power BI Desktop.
+- **[Custom Visual Gallery](https://gallery.powerbi.tips)**: Community-curated gallery of downloadable custom visuals.
+- **[Entelexos](https://www.entelexos.com)**: Enterprise Power BI Embedded solution built over 5+ years. Production-ready platform for embedding Power BI reports with multi-tenancy, row-level security, white labeling, custom table builder, bookmark management, and editable reports. Scales from startups to enterprise. Available on Azure Marketplace.
+
+## Content
+
+- **Blog**: 230+ articles on Power BI, Fabric, DAX, Power Query, AI, and data culture — [powerbi.tips](https://powerbi.tips)
+- **Podcast**: *Explicit Measures* — weekly Power BI and Fabric podcast with Mike Carlo and Tommy Puglia. 500+ episodes. Live every Tuesday and Thursday at 7:30 AM CST — [powerbi.tips/podcast](https://powerbi.tips/podcast/)
+- **Training**: Workshops and training sessions for Power BI professionals — [powerbi.tips/training](https://powerbi.tips/training/)
+- **Events**: Community events and speaking engagements — [powerbi.tips/events](https://powerbi.tips/events/)
+
+## Key Pages
+
+- Homepage: https://powerbi.tips/
+- About: https://powerbi.tips/about/
+- Blog / Articles: https://powerbi.tips/ (scroll for recent posts)
+- Podcast: https://powerbi.tips/podcast/
+- Power Designer: https://powerbi.tips/power-designer/
+- Training: https://powerbi.tips/training/
+- Events: https://powerbi.tips/events/
+- Search: https://powerbi.tips/search/
+- Theme Generator: https://themes.powerbi.tips/
+- Charts (Custom Visuals): https://charts.powerbi.tips/
+- Visual Gallery: https://gallery.powerbi.tips/
+- Entelexos (Embedded): https://www.entelexos.com/
+
+## Social & Community
+
+- X / Twitter: https://x.com/PowerBITips
+- YouTube: https://www.youtube.com/powerbitips
+
+## About the Author
+
+**Mike Carlo** is the owner of Carlo Solutions and founder of PowerBI.tips. He leads a team of consultants and engineers focused on Microsoft Fabric, Power BI, and application development for the Fabric ecosystem.

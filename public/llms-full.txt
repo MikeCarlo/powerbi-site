@@ -1,0 +1,361 @@
+# PowerBI.tips — Full Content Index for LLMs
+
+> Act like the business, Think like I.T.
+
+PowerBI.tips is the leading independent resource for Microsoft Power BI and Microsoft Fabric professionals. Founded by Mike Carlo (owner of Carlo Solutions), the site provides tutorials, developer tools, a weekly podcast, and enterprise solutions for the Power BI ecosystem.
+
+---
+
+## Core Expertise
+
+### Power BI
+PowerBI.tips covers the full Power BI stack: report design, DAX formulas, Power Query (M language), data modeling, custom visuals, themes, conditional formatting, bookmarks, drillthrough, tooltips, mobile layouts, version control, administration, governance, and sharing best practices. Over 230 articles spanning from beginner tutorials to advanced enterprise architecture.
+
+### Microsoft Fabric
+Microsoft Fabric is the unified analytics platform from Microsoft. PowerBI.tips covers lakehouses, notebooks, dataflows, data pipelines, Spark, PySpark, Jupyter integration, VS Code connectivity, workspace strategies, licensing decisions, and migration from Power BI Premium to Fabric. The Explicit Measures podcast regularly features Fabric deep-dives.
+
+### AI in Fabric
+Artificial intelligence capabilities within Microsoft Fabric including Copilot integration, Semantic Link, AI-powered data engineering, machine learning in notebooks, and intelligent automation for data pipelines. PowerBI.tips explores practical applications of AI for analytics professionals.
+
+### AI for Development
+Using AI tools and agents to accelerate Power BI and Fabric development workflows — vibe coding, LLM-assisted DAX writing, AI-powered report design, and the intersection of AI agents with data platform engineering.
+
+### Power BI Embedded
+Enterprise-grade Power BI embedding for custom applications, ISVs, and SaaS platforms. Row-level security, multi-tenancy, app registrations, capacity management (F SKUs), and production deployment patterns. PowerBI.tips built Entelexos, a full embedded platform, from 5+ years of hands-on embedded experience.
+
+### Data Culture
+Building data-driven organizations: center of excellence strategies, KPI standardization, BI skills assessment, formal vs. self-training approaches, and measuring data culture success.
+
+---
+
+## Developer Tools & Products
+
+### Power BI Theme Generator — themes.powerbi.tips
+URL: https://themes.powerbi.tips
+
+The most popular Power BI theming tool in the community. Create custom color palettes from HEX codes or a color picker, generate JSON theme files for Power BI Desktop, browse and download pre-built themes from the gallery, and build complete report layouts using AI-powered wireframes and scrims (background images). Features include:
+- Color palette creation and management
+- JSON theme file generation for Power BI
+- Gallery of community themes
+- AI-powered wireframe layouts
+- Scrim (background image) library
+- Visual object automation
+- Project saving, copying, and sharing
+
+### Power Designer — powerbi.tips/power-designer
+URL: https://powerbi.tips/power-designer/
+
+AI-powered report design tool that generates professional Power BI themes, report pages, layouts, and embedded experiences in minutes. Built for scalability and cost-efficiency. Power Designer empowers admins and users to manage, edit, and share reports — for both internal and external audiences.
+
+### Entelexos — Power BI Embedded Platform
+URL: https://www.entelexos.com
+
+A production-ready Power BI Embedded solution built over 5+ years of real-world embedded development. Designed to get you embedding in hours, not months. Available on the Microsoft Azure Marketplace.
+
+Key capabilities:
+- **Multi-tenancy**: Built-in support for multiple customers with grouped access controls
+- **Row-level security**: Deep integration with Power BI semantic models for data-level security
+- **White labeling**: Full brand customization for customer-facing deployments
+- **Editable reports**: Users can copy and edit reports live inside Entelexos without returning to PowerBI.com
+- **Custom Table Builder**: Uses paginated reports for hyper-scale data exporting — no row limits
+- **Bookmark management**: Create, save, and share bookmarks across teams with home page quick access
+- **User & group management**: Bulk upload users, create access groups, manage permissions
+- **Scalability**: From 10 users to 10,000+ users — startup to enterprise
+- **Azure Marketplace**: One-click deployment via Microsoft Azure Marketplace
+- **Competitive pricing**: Designed to minimize total cost per user for embedded BI
+
+### No-Code Custom Visuals — charts.powerbi.tips
+URL: https://charts.powerbi.tips
+
+Build highly customized visuals using a web application (based on Microsoft Research Charticulator), then export them as .pbiviz files for use in Power BI Desktop.
+
+### Custom Visual Gallery — gallery.powerbi.tips
+URL: https://gallery.powerbi.tips
+
+Community-curated gallery of downloadable custom visuals for Power BI.
+
+---
+
+## Content: The Explicit Measures Podcast
+
+**URL**: https://powerbi.tips/podcast/
+**Hosts**: Mike Carlo and Tommy Puglia
+**Schedule**: Live every Tuesday and Thursday at 7:30 AM CST
+**Episodes**: 500+
+
+A Power BI and Microsoft Fabric-centric podcast covering the latest features, best practices, community news, and industry trends. Topics include DAX deep-dives, Fabric architecture, AI in analytics, Power Query performance, DevOps for BI, and interviews with Microsoft MVPs and community leaders.
+
+---
+
+## Content: Blog Articles (Full Index)
+
+All articles are available at https://powerbi.tips/{slug}/
+
+### 2026
+
+- [Trusting In Microsoft Fabric – Ep. 502](https://powerbi.tips/2026/02/13/trusting-in-microsoft-fabric-ep-502/) — Podcast, Microsoft Fabric, AI, Semantic Link, Lakehouse, Trust
+- [Define the Problem Before Tools – Ep. 498](https://powerbi.tips/2026/02/13/define-the-problem-before-tools-ep-498/) — Podcast, AI, Fabric, Goal Setting, Vibe Coding
+- [Late Adopter Advantage? AI Readiness - Ep. 499](https://powerbi.tips/2026/02/12/late-adopter-advantage-ai-readiness-ep-499/) — Podcast, AI, AI Agents, Fabric
+- [Central BI & Workspace Strategies - Ep. 501](https://powerbi.tips/2026/02/12/central-bi-workspace-strategies-ep-501/) — Podcast
+- [We Made It! Episode 500 of Explicit Measures](https://powerbi.tips/2026/02/06/we-made-it-episode-500/) — Podcast, Community, Power BI, AI
+- [Two Things Happening with AI in Data Engineering](https://powerbi.tips/2026/02/04/two-things-happening-with-ai/) — AI, Data Engineering, Skills, Democratization
+- [Being a Data Analyst in the Era of AI](https://powerbi.tips/2026/02/04/being-a-data-analyst-in-the-era-of-ai/) — AI, Data Analytics, Microsoft Fabric, Copilot, LLM
+- [497 Instructions for AI: Get the Data](https://powerbi.tips/2026/02/04/ai-instructions-get-data/) — AI, Microsoft Fabric, Data Pipelines, SQL, Lakehouse, Automation
+- [OpenClaw, ClawdBot, MoltBot: Our Thoughts on AI Agents](https://powerbi.tips/2026/01/31/openclaw-thoughts/) — AI, AI Agents, LLMs, Automation
+- [Remote Fabric Jupyter & Local VS Code – Ep. 497](https://powerbi.tips/2026/01/28/remote-fabric-jupyter-local-vs-code-ep-497/) — Podcast, Microsoft Fabric, Jupyter Notebooks, VS Code, PySpark, AI, DAX
+- [Do You Really Need Fabric? – Ep. 495](https://powerbi.tips/2026/01/21/do-you-really-need-fabric-ep-495/) — Podcast, Microsoft Fabric, Power BI, Licensing
+
+### 2025
+
+- [Max Performance in Power Query – Ep. 422](https://powerbi.tips/2025/07/21/power-query-with-alex-powers/) — Power Query, Performance, Dataflows, Query Folding, Fabric
+- [DevOps with Matthias Thierbach](https://powerbi.tips/2025/07/21/devops-with-matthias-thierbach/) — DevOps, CI/CD, TMDL, DataOps
+- [Data Science with Ginger Grant](https://powerbi.tips/2025/07/21/data-science-with-ginger-grant/) — Data Science, Fabric, Python, Power BI
+
+### 2024
+
+- [Overcoming Challenges in the Center of Excellence](https://powerbi.tips/2024/07/30/overcoming-challenges-in-the-center-of-excellence/) — Center of Excellence, Data Culture, Leadership
+- [Exploring the Power of Semantic Link](https://powerbi.tips/2024/07/26/exploring-the-power-of-semantic-link/) — Microsoft Fabric, Semantic Link, Python, Notebooks
+- [Tips+ Designer Tutorial: Automatic Visual Objects with AI](https://powerbi.tips/2024/04/29/tips-theme-generator-tutorial-automatic-visual-objects-with-ai/) — Building Reports, Power BI
+- [Tips+ Designer Tutorial: Gallery Project Copy & Edit](https://powerbi.tips/2024/02/27/tips-theme-generator-tutorial-gallery-project-copy-edit/) — Building Reports, Power BI
+- [Tips+ Designer Tutorial: Gallery Project Download](https://powerbi.tips/2024/01/29/tipspowerbi-theme-generator-gallerydownload/) — Building Reports, Power BI
+- [Creative Thinking in Fabric & Power BI](https://powerbi.tips/2024/01/18/creative-thinking-in-fabric-power-bi/) — Articles, Power BI
+
+### 2023
+
+- [Revolutionizing Power BI Theme Building with New AI Capabilities](https://powerbi.tips/2023/12/09/revolutionizing-power-bi-theme-building-with-new-ai-capabilities-in-tips/) — AI, Themes, Wireframes
+- [Designer: Use any Scrim from the Gallery when Building Wireframes](https://powerbi.tips/2023/10/15/theme-generator-use-any-scrim-from-the-gallery-when-building-wireframes/) — Building Reports
+- [Unlock Effortless Power BI Theming with the New Gallery Feature](https://powerbi.tips/2023/10/04/unlock-effortless-power-bi-theming-with-the-new-gallery-feature/) — Building Reports
+- [Transforming Power BI Customization: Wire Frames in PowerBI.Tips Designer](https://powerbi.tips/2023/08/14/transforming-power-bi-customization-wireframes-in-powerbi-tips-theme-generator/) — Building Reports
+- [Unlock Your Creativity with the Power BI Tips Designer](https://powerbi.tips/2023/06/07/unlock-your-creativity-with-the-power-bi-tips-theme-generator-exciting-new-features/) — Building Reports
+- [Does a Power BI developer need Python?](https://powerbi.tips/2023/05/18/does-a-power-bi-developer-need-python/) — Articles, Power BI
+- [PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes](https://powerbi.tips/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/) — Themes, Power BI
+
+### 2022
+
+- [Welcome to Community Jam](https://powerbi.tips/2022/11/03/welcome-to-community-jam/) — Community, News
+- [Live AMA with Marco Russo & Alberto Ferrari](https://powerbi.tips/2022/10/12/live-ama-with-marco-russo-alberto-ferrari/) — News, Power BI
+- [Super Fast Data Loads to Prod](https://powerbi.tips/2022/09/20/super-fast-data-loads-to-prod/) — Administration, Power BI
+- [Power BI Hack: Download Report Authored in Browser as PBIX](https://powerbi.tips/2022/05/06/power-bi-hack-download-report-authored-in-browser-as-pbix/) — Administration
+- [Power BI Support Channel: Microsoft Teams Tips](https://powerbi.tips/2022/04/30/power-bi-support-channel-in-teams/) — Administration
+- [Certified vs. Promoted Dataset?](https://powerbi.tips/2022/02/10/certified-vs-promoted-dataset/) — Administration
+- [8 Mistakes I made to Start Learning Power BI](https://powerbi.tips/2022/02/10/8-mistakes-i-made-to-start-learning-power-bi/) — Learning, Power BI
+- [Business Ops 3.0.2: Updated External Tools](https://powerbi.tips/2022/02/03/business-ops-3-0-2-updated-external-tools/) — External Tools
+- [Continuously Improving User Experience](https://powerbi.tips/2022/01/09/continuously-improving-user-experience/) — UX, Power BI
+
+### 2021
+
+- [Power BI Themes](https://powerbi.tips/2021/12/22/power-bi-themes/) — Themes, Power BI
+- [Discussing SQLBI's 7 Reasons DAX is Not Easy](https://powerbi.tips/2021/12/15/discussing-sqlbis-7-reasons-dax-is-not-easy/) — DAX
+- [Data Culture with Matthew Roche](https://powerbi.tips/2021/12/12/data-culture/) — Data Culture
+- [Measuring Data Culture Success](https://powerbi.tips/2021/12/09/measuring-data-culture-success/) — Data Culture
+- [All Columns have Data Types in DAX, Or do they?](https://powerbi.tips/2021/12/07/dax-column-types/) — DAX
+- [Trolling the Power BI Ideas Site](https://powerbi.tips/2021/12/02/trolling-powerbi-ideas-site/) — Community
+- [Power BI Formal vs. Self-Training](https://powerbi.tips/2021/11/27/formal-vs-self-training/) — Training
+- [Business Ops: New and Updated External Tools](https://powerbi.tips/2021/10/19/business-ops-new-and-updated-external-tools/) — External Tools
+- [Using the Power BI Scanner API to Manage Tenant's Entire Metadata](https://powerbi.tips/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/) — API, Administration
+- [Three New Time-Saving Scripts for Tabular Editor](https://powerbi.tips/2021/09/23/three-new-time-saving-scripts-for-tabular-editor/) — Tabular Editor
+- [A better way to Mobile](https://powerbi.tips/2021/09/23/a-better-way-to-mobile/) — Mobile, Power BI
+- [Copy Power BI Desktop Server:Port Connection String to Clipboard](https://powerbi.tips/2021/09/12/copy-power-bi-desktop-serverport-connection-string-to-clipboard/) — Power BI Desktop
+- [Power BI Bookmarks Tips, Tricks, and Best Practices](https://powerbi.tips/2021/06/22/power-bi-bookmarks-tips/) — Bookmarks, Report Design
+- [Standardizing KPIs around a Business Intelligence Team](https://powerbi.tips/2021/05/19/standardizing-kpis-around-a-business-intelligence-team/) — KPIs, Administration
+- [How to Represent Your Power BI Skills](https://powerbi.tips/2021/05/11/represent-power-bi-skills/) — Skills, Career
+- [Introducing the Explicit Measures Podcast](https://powerbi.tips/2021/05/04/introducing-the-explicit-measures-podcast/) — Podcast Launch
+- [How to Build Your Power BI Skills](https://powerbi.tips/2021/04/25/build-power-bi-skills/) — Skills, Learning
+- [Using Power Apps, Power BI and Power Automate Together](https://powerbi.tips/2021/03/09/using-power-apps-power-bi-and-power-automate-together/) — Power Platform
+- [The Dice Game](https://powerbi.tips/2021/02/19/the-dice-game/) — Fun Applications
+- [Power BI Version Control – Ready to use solution](https://powerbi.tips/2021/02/16/power-bi-version-control/) — Version Control
+- [Assess Knowledge using the Power BI Skills Matrix](https://powerbi.tips/2021/02/11/power-bi-skills-matrix/) — Skills Assessment
+- [Power BI End-to-End Architecture](https://powerbi.tips/2021/01/05/power-bi-end-to-end-architecture/) — Architecture
+- [Power BI Version Control](https://powerbi.tips/2021/01/01/power-bi-version-control-2/) — Version Control
+
+### 2020
+
+- [Phil Seamark on Aggregation Tables](https://powerbi.tips/2020/12/22/phil-seamark-on-aggregation-tables/) — Performance, DAX
+- [Power BI Direct Query Composite Models = Amazing](https://powerbi.tips/2020/12/16/power-bi-direct-query-composite-models-amazing/) — DirectQuery, Composite Models
+- [Power BI Architecture in a Data Solution](https://powerbi.tips/2020/12/13/power-bi-architecture-in-a-data-solution/) — Architecture
+- [Power BI Field Finder V2](https://powerbi.tips/2020/11/18/power-bi-field-finder-v2/) — Tools
+- [Building a Power BI Admin View using Power BI APIs](https://powerbi.tips/2020/11/18/building-a-power-bi-admin-view-using-power-bi-apis/) — API, Administration
+- [HTML Content Custom Visual](https://powerbi.tips/2020/10/26/html-content-custom-visual/) — Custom Visuals
+- [Power BI is part of the greater data solution](https://powerbi.tips/2020/10/23/power-bi-is-part-of-the-greater-data-solution/) — Data Culture
+- [Customize the Default Dataset](https://powerbi.tips/2020/10/22/customize-the-default-dataset/) — Data Modeling
+- [Designing a Great Power BI Report](https://powerbi.tips/2020/09/29/designing-a-great-power-bi-report/) — Report Design
+- [Update 'Enter Data' Table in Service without full Publish](https://powerbi.tips/2020/09/08/update-enter-data-table-in-service-without-full-publish/) — Administration
+- [One Tool to Install them ALL](https://powerbi.tips/2020/08/13/one-tool-to-install-them-all/) — External Tools
+- [Hot Swap Report Connections – External Tools](https://powerbi.tips/2020/08/13/hot-swap-report-connections-external-tools/) — External Tools
+- [Monkey Tools are AWESOME](https://powerbi.tips/2020/08/07/monkey-tools-are-awesome/) — External Tools
+- [Analyze in Excel – the Advanced Method](https://powerbi.tips/2020/07/22/analyze-in-excel-the-advanced-method/) — Excel, Power BI
+- [DAX Studio 2.11 Released](https://powerbi.tips/2020/07/15/dax-studio-2-11-released/) — DAX Studio
+- [Buy and Apply Power BI Premium P license](https://powerbi.tips/2020/06/16/buy-and-apply-power-bi-premium-p-license/) — Licensing
+- [Split an existing Power BI file into a model and report](https://powerbi.tips/2020/06/08/split-an-existing-power-bi-file-into-a-model-and-report/) — Architecture
+- [Model Performance in DAX Studio](https://powerbi.tips/2020/06/03/model-performance-in-dax-studio/) — Performance, DAX Studio
+- [Hot Swap Power BI Report Connections](https://powerbi.tips/2020/05/29/hot-swap-power-bi-report-connections/) — Administration
+- [Create Custom Mapbox Styles](https://powerbi.tips/2020/05/25/create-custom-mapbox-styles/) — Maps, Mapbox
+- [Drill Down Maps in Power BI with MapBox](https://powerbi.tips/2020/05/19/drill-down-maps-in-power-bi-with-mapbox/) — Maps, Mapbox
+- [Introduction to DAX Studio](https://powerbi.tips/2020/05/14/introduction-to-dax-studio/) — DAX Studio
+- [Create 3D Maps in Power BI with MapBox](https://powerbi.tips/2020/05/12/create-3d-maps-in-power-bi-with-mapbox/) — Maps, Mapbox
+- [Using Lasso with New Shortcuts](https://powerbi.tips/2020/05/06/using-lasso-with-new-shortcuts/) — Tips
+- [Get to know ALM Toolkit](https://powerbi.tips/2020/04/16/get-to-know-alm-toolkit/) — ALM, External Tools
+- [MapBox 101 for Power BI](https://powerbi.tips/2020/04/07/mapbox-101-for-power-bi/) — Maps, Mapbox
+- [Tabular Editor Rocks!](https://powerbi.tips/2020/04/02/tabular-editor-rocks/) — Tabular Editor
+- [Keeping it Versatile](https://powerbi.tips/2020/03/04/keeping-it-versatile/) — Report Design
+- [Adding Contextual Help for End Users](https://powerbi.tips/2020/02/17/adding-contextual-help-for-end-users/) — UX
+- [Power Query API Considerations](https://powerbi.tips/2020/02/10/power-query-api-considerations/) — Power Query, API
+- [Layouts for Company Templates](https://powerbi.tips/2020/02/04/layouts-for-company-templates/) — Templates, Layouts
+- [Power BI Field Finder](https://powerbi.tips/2020/01/29/power-bi-field-finder/) — Tools
+- [No Code Custom Visuals – Webinar](https://powerbi.tips/2020/01/22/no-code-custom-visuals-webinar/) — Custom Visuals
+- [Handle Errors in Data Refreshes with Power Automate](https://powerbi.tips/2020/01/16/handle-errors-in-data-refreshes-with-power-automate/) — Automation, Power Automate
+- [KPIs in Power BI](https://powerbi.tips/2020/01/14/kpis-in-power-bi/) — KPIs, Report Design
+
+### 2019
+
+- [Introducing Scrims](https://powerbi.tips/2019/12/23/introducing-scrims/) — Scrims, Report Design
+- [Scrims Instructions](https://powerbi.tips/2019/12/21/scrims-instructions/) — Scrims
+- [More Visuals Mo Problems](https://powerbi.tips/2019/12/06/more-visuals-mo-problems/) — Performance
+- [Embedding Paginated Reports](https://powerbi.tips/2019/11/27/embedding-paginated-reports/) — Embedded, Paginated Reports
+- [Scale a Visual](https://powerbi.tips/2019/11/20/scale-a-visual/) — Report Design
+- [Consolidate Report Pages Easily with Visual Grouping](https://powerbi.tips/2019/11/12/consolidate-report-pages-easily-with-visual-grouping/) — Report Design
+- [Average Household Income Function in Power Query](https://powerbi.tips/2019/11/09/average-household-income-function-in-power-query/) — Power Query
+- [Stacked Bar Chart](https://powerbi.tips/2019/11/05/stacked-bar-chart/) — Visualization
+- [Act like the business, Think like I.T.](https://powerbi.tips/2019/10/30/act-like-the-business-think-like-i-t/) — Philosophy
+- [Building a Gateway Cluster](https://powerbi.tips/2019/10/29/building-a-gateway-cluster/) — Gateway, Administration
+- [Make PBIDS Files](https://powerbi.tips/2019/10/23/make-pbids-files/) — Tips
+- [Historical Stock Price Function in Power Query](https://powerbi.tips/2019/10/22/historical-stock-price-function-in-power-query/) — Power Query
+- [Power Query – Get Started!](https://powerbi.tips/2019/10/15/power-query-get-started/) — Power Query, Beginner
+- [Filled Donut Chart](https://powerbi.tips/2019/10/08/filled-donut-chart-yumm/) — Visualization
+- [Power BI datasets: A Method to the Madness](https://powerbi.tips/2019/10/02/power-bi-datasets-a-method-to-the-madness/) — Datasets
+- [Custom Sort Order Within a DAX Measure](https://powerbi.tips/2019/09/30/custom-sort-order-within-a-dax-measure/) — DAX
+- [Grouping with Style](https://powerbi.tips/2019/09/26/grouping-with-style/) — Report Design
+- [Updating PBIX Files in SharePoint: Do's & Don'ts](https://powerbi.tips/2019/09/17/updating-pbix-files-in-sharepoint-dos-donts/) — SharePoint
+- [Dual Y-Axis Line Chart](https://powerbi.tips/2019/09/11/dual-y-axis-line-chart/) — Visualization
+- [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/) — Administration
+- [Dynamic Visuals using Buttons](https://powerbi.tips/2019/08/08/dynamic-visuals-using-buttons/) — Report Design
+- [Icons upon Icons](https://powerbi.tips/2019/07/18/icons-upon-icons/) — Report Design
+- [The Dynamic Time Matrix](https://powerbi.tips/2019/07/11/the-dynamic-time-matrix/) — DAX
+- [Quick Access Toolbar for the Win](https://powerbi.tips/2019/07/03/quick-access-toolbar-for-the-win/) — Tips
+- [Make Custom Visuals with no Code](https://powerbi.tips/2019/06/20/make-custom-visuals-with-no-code/) — Custom Visuals
+- [New Layout – Square One](https://powerbi.tips/2019/05/01/new-layout-square-one/) — Layouts
+- [New Layout – Smooth Operator](https://powerbi.tips/2019/03/21/new-layout-smooth-operator/) — Layouts
+- [Make Custom Visuals – Create a Bar Chart](https://powerbi.tips/2019/02/12/make-custom-visuals-create-bar-chart/) — Custom Visuals
+- [Temple of DAX – 3D](https://powerbi.tips/2019/01/21/temple-of-dax-3d/) — DAX, Fun
+
+### 2018
+
+- [Respect Layers](https://powerbi.tips/2018/12/04/respect-layers/) — Report Design
+- [New Game – aMAZEing DAX](https://powerbi.tips/2018/11/26/new-game-amazeing-dax/) — DAX, Fun
+- [Power BI Dataflows: Change is Coming](https://powerbi.tips/2018/11/13/power-bi-dataflows-change-is-coming/) — Dataflows
+- [How to use Tooltips in Power BI](https://powerbi.tips/2018/09/10/how-to-use-tooltips-in-power-bi/) — Tooltips, Beginner
+- [How to use the Ellipsis in Power BI](https://powerbi.tips/2018/09/10/how-to-use-the-ellipsis-in-power-bi/) — Beginner
+- [How to use Focus Mode in Power BI](https://powerbi.tips/2018/09/10/how-to-use-focus-mode-in-power-bi/) — Beginner
+- [How to Navigate Hierarchies on a Visual in Power BI](https://powerbi.tips/2018/09/10/how-to-navigate-hierarchies/) — Beginner
+- [How to use Drillthrough in PowerBI](https://powerbi.tips/2018/09/10/drillthrough/) — Drillthrough, Beginner
+- [Using Grids to Improve Visualization Placement](https://powerbi.tips/2018/09/04/using-grids-to-improve-visualization-placement/) — Report Design
+- [Game Time – DAX Mission Impossible](https://powerbi.tips/2018/08/21/game-time-dax-mission-impossible/) — DAX, Fun
+- [Tic Tac Power BI](https://powerbi.tips/2018/07/17/tic-tac-power-bi/) — Fun
+- [Center the X-Axis on a Line Chart](https://powerbi.tips/2018/07/09/center-the-x-axis-on-a-line-chart/) — Visualization
+- [Power BI and Sudoku – Yes Please](https://powerbi.tips/2018/06/22/power-bi-and-sudoku-yes-please/) — Fun
+- [Segmented Filtering with Slicers](https://powerbi.tips/2018/06/20/segmented-filtering-with-slicers/) — Slicers
+- [Data Table Filters](https://powerbi.tips/2018/06/06/data-table-filters/) — Filtering
+- [Apply a Filter to a Slicer](https://powerbi.tips/2018/05/17/apply-a-filter-to-a-slicer/) — Slicers
+- [When to Use Publish to Web](https://powerbi.tips/2018/04/23/when-to-use-publish-to-web/) — Sharing
+- [Introducing Lingo](https://powerbi.tips/2018/04/18/introducing-lingo/) — Tools
+- [Power BI Connections: Live Connection](https://powerbi.tips/2018/02/26/power-bi-connections-live-connection/) — Connections
+- [Crazy Table Gymnastics – Part 2](https://powerbi.tips/2018/02/21/crazy-table-gymnastics-part-2-build-support-materials/) — DAX, Advanced
+- [Crazy Table Gymnastics – Part 1](https://powerbi.tips/2018/02/14/crazy-table-gymnastics-part-1-dynamic-column-categories/) — DAX, Advanced
+- [Adding Data Types Within Query Editor](https://powerbi.tips/2018/01/31/adding-data-types-within-query-editor/) — Power Query
+- [New Layout – Splash o Red](https://powerbi.tips/2018/01/19/new-layout-splash-o-red/) — Layouts
+- [Introducing Layouts](https://powerbi.tips/2018/01/16/introducing-layouts/) — Layouts
+- [Move Visuals Between Reports](https://powerbi.tips/2018/01/15/move-visuals-between-reports/) — Tips
+
+### 2017
+
+- [Power BI Connections: Direct Query](https://powerbi.tips/2017/12/29/power-bi-connections-direct-query/) — DirectQuery
+- [Start of Month DAX Calendar](https://powerbi.tips/2017/12/20/start-of-month-dax-calendar/) — DAX, Calendar
+- [Custom Usage Metrics Reporting](https://powerbi.tips/2017/11/24/custom-usage-metrics-reporting/) — Administration
+- [Power BI Connections: Import](https://powerbi.tips/2017/11/16/power-bi-connections-import/) — Connections
+- [Fixing the Truncating Bar Chart](https://powerbi.tips/2017/11/14/fixing-the-truncating-bar-chart/) — Visualization
+- [Creating A DAX Calendar](https://powerbi.tips/2017/11/01/creating-a-dax-calendar/) — DAX, Calendar
+- [Power BI Connection Types](https://powerbi.tips/2017/10/16/power-bi-connection-types/) — Connections
+- [Ranking Values with Measures](https://powerbi.tips/2017/07/25/ranking-values-with-measures/) — DAX
+- [Use Multiple Connections Between Tables](https://powerbi.tips/2017/07/05/use-multiple-connections-between-tables/) — Data Modeling
+- [UseRelationship DAX Tutorial](https://powerbi.tips/2017/07/03/userelationship-dax-tutorial-curbal/) — DAX
+- [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/) — DAX
+- [SUM & SUMX Tutorial](https://powerbi.tips/2017/04/06/sum-sumx-tutorial-curbal/) — DAX
+- [Dynamic Filters in PowerBI](https://powerbi.tips/2017/04/05/dynamic-filters-in-powerbi/) — Filtering
+- [Power BI Using Multiple User Accounts](https://powerbi.tips/2017/03/28/power-bi-using-multiple-user-accounts/) — Administration
+- [Using Parameters to Enable Sharing](https://powerbi.tips/2017/03/21/using-parameters-to-enable-sharing/) — Parameters
+- [Import Color Theme & Color Theme Generator](https://powerbi.tips/2017/03/06/color-themes-import/) — Themes
+- [Power BI Embedded Dashboard](https://powerbi.tips/2017/02/28/power-bi-embedded-dashboard/) — Embedded
+- [Get Your OData Here](https://powerbi.tips/2017/02/21/get-your-odata-here/) — OData, Get Data
+- [Improved Matrix Headers](https://powerbi.tips/2017/02/16/improved-matrix-headers/) — Visualization
+- [Best Practices for Sharing](https://powerbi.tips/2017/08/14/best-practices-for-sharing/) — Sharing
+
+### 2016
+
+- [Santa Loves Power BI and R](https://powerbi.tips/2016/12/23/santa-loves-power-bi-and-r/) — R, Fun
+- [Measures – Year Over Year Percent Change](https://powerbi.tips/2016/12/05/measures-year-over-year-percent-change/) — DAX
+- [Grouping and Improved Date Slicer](https://powerbi.tips/2016/11/16/grouping-and-improved-date-slicer/) — Slicers
+- [Pareto Charting in PowerBI](https://powerbi.tips/2016/10/17/pareto-charting/) — Visualization
+- [Map with Data Labels in R](https://powerbi.tips/2016/10/10/map-with-data-labels-in-r/) — R, Maps
+- [Fixing Measure Madness](https://powerbi.tips/2016/10/04/fixing-measure-madness/) — DAX
+- [Using Advanced Mapping in ArcGIS Preview](https://powerbi.tips/2016/09/30/using-advanced-mapping-in-arcgis-preview/) — Maps
+- [HexBin Plot using R](https://powerbi.tips/2016/09/27/hexbin-plot-using-r/) — R, Visualization
+- [Digging Deeper with R Visuals for PowerBI](https://powerbi.tips/2016/09/21/digging-deeper-with-r-visuals-for-powerbi/) — R
+- [Using R Visuals in Power BI](https://powerbi.tips/2016/09/15/using-r-visuals-in-power-bi/) — R
+- [Loading Excel Files from SharePoint](https://powerbi.tips/2016/09/01/loading-excel-files-from-sharepoint/) — Get Data, SharePoint
+- [Building Date Table from Scratch](https://powerbi.tips/2016/08/31/building-date-table-from-scratch/) — DAX, Calendar
+- [Make Calendars Using DAX](https://powerbi.tips/2016/08/30/make-calendars-using-dax-curbal/) — DAX, Calendar
+- [Load Multiple Excel Files](https://powerbi.tips/2016/08/10/load-multiple-excel-xlsx-files/) — Get Data
+- [Using Variables for File Locations](https://powerbi.tips/2016/08/04/using-variables-for-file-locations/) — Power Query
+- [Measures – Intelligent Card Visual – Using DAX](https://powerbi.tips/2016/07/28/measures-intelligent-card-visual-in-dax/) — DAX
+- [Measures – Month to Month Percent Change](https://powerbi.tips/2016/07/14/measures-month-to-month-percent-change/) — DAX
+- [Loading Data From Folder](https://powerbi.tips/2016/06/16/loading-data-from-folder/) — Get Data
+- [Measures – Dynamic Percent Change – Using DAX](https://powerbi.tips/2016/06/10/dynamic-percent-change-using-dax/) — DAX
+- [Measures – Dynamic CAGR Calculation in DAX](https://powerbi.tips/2016/05/27/measures-calculate-cagr/) — DAX
+- [Query Editor – Editing M Code](https://powerbi.tips/2016/05/19/query-editor-editing-m-code/) — Power Query
+- [Measures – Calculating a Sum](https://powerbi.tips/2016/05/07/measures-calculating-a-sum/) — DAX, Beginner
+- [Measures – Calculating % Change](https://powerbi.tips/2016/05/02/measures-calculating-change/) — DAX
+- [Power BI Histogram with Bins](https://powerbi.tips/2016/04/27/power-bi-histogram-with-bins/) — DAX, Visualization
+- [From Wikipedia to a Colorful Map](https://powerbi.tips/2016/04/20/from-wikipedia-to-colorful-map/) — Maps, Web Data
+- [Map it, Map it Real Good](https://powerbi.tips/2016/04/14/mapping-in-pbi-desktop/) — Maps
+- [Manually Enter Data](https://powerbi.tips/2016/04/13/manually-enter-data/) — Get Data, Beginner
+- [Query Settings – Fixing a Missing File](https://powerbi.tips/2016/04/11/query-settings-fixing-a-missing-file/) — Power Query
+- [Folder of Files Loaded to Power BI Desktop](https://powerbi.tips/2016/04/07/folder-of-files-loaded-to-power-bi-desktop/) — Get Data
+- [Import CSV file to Power BI](https://powerbi.tips/2016/04/01/import-csv-file-to-power-bi/) — Get Data, Beginner
+- [Import an Excel file into PowerBI](https://powerbi.tips/2016/03/29/import-an-excel-file-into-powerbi/) — Get Data, Beginner
+- [Welcome to my Site](https://powerbi.tips/2016/03/26/welcome/) — Getting Started
+
+---
+
+## Site Navigation
+
+| Page | URL |
+|------|-----|
+| Homepage | https://powerbi.tips/ |
+| About | https://powerbi.tips/about/ |
+| Podcast | https://powerbi.tips/podcast/ |
+| Power Designer | https://powerbi.tips/power-designer/ |
+| Training | https://powerbi.tips/training/ |
+| Events | https://powerbi.tips/events/ |
+| Search | https://powerbi.tips/search/ |
+
+## External Tools & Properties
+
+| Tool | URL |
+|------|-----|
+| Theme Generator | https://themes.powerbi.tips |
+| No-Code Custom Visuals | https://charts.powerbi.tips |
+| Custom Visual Gallery | https://gallery.powerbi.tips |
+| Entelexos (Embedded) | https://www.entelexos.com |
+
+## Social & Community
+
+- X / Twitter: https://x.com/PowerBITips
+- YouTube: https://www.youtube.com/powerbitips
+
+## About
+
+**Mike Carlo** — Owner of Carlo Solutions, founder of PowerBI.tips. Leads a team of consultants and engineers focused on Microsoft Fabric, Power BI, and application development for the Fabric ecosystem.
+
+**Tommy Puglia** — Co-host of the Explicit Measures Podcast.
+
+© PowerBI.tips LLC. All rights reserved.
