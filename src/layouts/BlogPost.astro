@@ -6,9 +6,40 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const { entry, prev, next, morePosts } = Astro.props;
 const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;
+
+const slug = entry.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+const articleUrl = `https://powerbi.tips/${slug}/`;
+
+// Build Article JSON-LD
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: excerpt || '',
+  url: articleUrl,
+  datePublished: date.toISOString(),
+  dateModified: date.toISOString(),
+  mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl },
+  publisher: {
+    '@type': 'Organization',
+    name: 'PowerBI.tips',
+    url: 'https://powerbi.tips',
+    logo: { '@type': 'ImageObject', url: `https://powerbi.tips${base}/favicon.svg` },
+  },
+  ...(authors?.length && {
+    author: authors.map((a) => ({ '@type': 'Person', name: a })),
+  }),
+  ...(featuredImage && {
+    image: typeof featuredImage === 'string'
+      ? `https://powerbi.tips${featuredImage}`
+      : undefined,
+  }),
+  ...(categories?.length && { articleSection: categories }),
+  ...(tags?.length && { keywords: tags.join(', ') }),
+};
 ---
 
-<BaseLayout title={`${title} | PowerBI.tips`} description={excerpt ?? ''}>
+<BaseLayout title={`${title} | PowerBI.tips`} description={excerpt ?? ''} jsonLd={articleJsonLd}>
   <article class="max-w-none space-y-6 text-[1.05rem] leading-relaxed">
     <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
     
