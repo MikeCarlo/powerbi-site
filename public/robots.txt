@@ -35,6 +35,9 @@ Allow: /
 # Sitemap
 Sitemap: https://powerbi.tips/sitemap-index.xml
 
+# RSS Feed
+# https://powerbi.tips/rss.xml
+
 # LLM-optimized content
 # llms.txt: https://powerbi.tips/llms.txt
 # llms-full.txt: https://powerbi.tips/llms-full.txt

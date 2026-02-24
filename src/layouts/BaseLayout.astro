@@ -49,6 +49,7 @@ const webSiteSchema = {
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="PowerBI.tips RSS Feed" href={`${base}/rss.xml`} />
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
