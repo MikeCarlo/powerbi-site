@@ -26,3 +26,6 @@ _migrate/
 
 # Legacy site mirror (local only)
 legacy-mirror/
+
+__pycache__/
+clean_vtt*.py
