@@ -239,7 +239,7 @@ Full verbatim transcript — click any timestamp to jump to that moment:
 
 <a href="https://www.youtube.com/watch?v=GmFFYVlt-b0&t=1509s" target="_blank">25:09</a> So having the data sitting in the cloud opens up the ability for you to have external tools and could simplify other features that are coming from the service. So it sounds like it doesn't fall back to direct query mode and you're directly connecting to the lakehouse tables themselves and not going through a SQL endpoint. That's quote unquote the new version. Does that make sense?
 
-<a href="https://www.youtube.com/watch?v=GmFFYVlt-b0&t=1531s" target="_blank">25:31</a> That's pretty crazy. Especially what we're having now. So, like I said, I know it doesn't sound like a ton, Mike, but holy crap. That really changes I think where a lot of people are going to be working. Really?
+<a href="https://www.youtube.com/watch?v=GmFFYVlt-b0&t=1531s" target="_blank">25:31</a> That's pretty crazy. Especially what we're having now. So, like I said, I know it doesn't sound like a ton, Mike, but holy junk. That really changes I think where a lot of people are going to be working. Really?
 
 <a href="https://www.youtube.com/watch?v=GmFFYVlt-b0&t=1549s" target="_blank">25:49</a> I don't think it's going to change. I don't think it's as revolutionary as you say it will be. I think it definitely helps. I think we are going to be able to build better models. But is that going to really change how I build things or what I do? Probably not.
 

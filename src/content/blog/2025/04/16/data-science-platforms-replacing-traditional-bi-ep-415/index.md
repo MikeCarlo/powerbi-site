@@ -391,7 +391,7 @@ Full verbatim transcript — click any timestamp to jump to that moment:
 
 <a href="https://www.youtube.com/watch?v=5ej6S0Vik5k&t=2949s" target="_blank">49:09</a> Like you have to scrape all this data and shape this data together to get it. Like any metric you have, you need the numbers from it to help you do the prediction. So where are they getting that data from? That's in my opinion pure data engineering. That's all like suck it out, Python it, put it in a lakehouse. That's the stuff that you need to be playing with.
 
-<a href="https://www.youtube.com/watch?v=5ej6S0Vik5k&t=2974s" target="_blank">49:34</a> Yeah, you're in baseball, Tommy. Baseball is nothing but stats. I remember I was watching baseball with my dad and they're like, well, this particular batter has got like a blah blah blah against pitchers that have more than three syllables in their last name. I'm like, that is crap.
+<a href="https://www.youtube.com/watch?v=5ej6S0Vik5k&t=2974s" target="_blank">49:34</a> Yeah, you're in baseball, Tommy. Baseball is nothing but stats. I remember I was watching baseball with my dad and they're like, well, this particular batter has got like a blah blah blah against pitchers that have more than three syllables in their last name. I'm like, that is junk.
 
 <a href="https://www.youtube.com/watch?v=5ej6S0Vik5k&t=2994s" target="_blank">49:54</a> A lot of data points. Tommy missed his calling. Tommy really should have tried. I tried. So that's when I started in the data space. I want to be a data scientist and I'm going to be a data scientist with the New York Yankees because I need a bunch of them.
 

@@ -458,7 +458,7 @@ Full verbatim transcript — click any timestamp to jump to that moment:
 
 <a href="https://www.youtube.com/watch?v=oYdWex9WgRk&t=2930s" target="_blank">48:50</a> This gets into how your brain works though, and that hasn't changed. I put this article up in LinkedIn today and this is how I write. I have a Remarkable. Oh, I love the Remarkable stuff. Not because I wanted to necessarily do that, but I'm all about the data.
 
-<a href="https://www.youtube.com/watch?v=oYdWex9WgRk&t=2948s" target="_blank">49:08</a> Yeah. And your brain, computers have changed everything. Your brain hasn't. If you want to remember something, you better write it down. And they're like, "Typing doesn't count." And I'm like, "That's bullshit."
+<a href="https://www.youtube.com/watch?v=oYdWex9WgRk&t=2948s" target="_blank">49:08</a> Yeah. And your brain, computers have changed everything. Your brain hasn't. If you want to remember something, you better write it down. And they're like, "Typing doesn't count." And I'm like, "That's BS."
 
 <a href="https://www.youtube.com/watch?v=oYdWex9WgRk&t=2960s" target="_blank">49:20</a> So I always say, "Put up or shut up." And so I tried it. I'm like, "All right." So if you want to remember something, you better write it. And you better use a pen or a stylus to do it because you won't remember it.
 
