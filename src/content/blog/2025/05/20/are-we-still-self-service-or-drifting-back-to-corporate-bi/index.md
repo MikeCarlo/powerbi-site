@@ -1,6 +1,6 @@
 ---
 title: "Are We Still Self Service Or Drifting Back to Corporate BI – Ep. 425"
-date: "2026-02-28"
+date: "2025-05-20"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
