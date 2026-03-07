@@ -32,6 +32,7 @@ export default defineConfig({
   integrations: [mdx(), organizedSitemap()],
   redirects: {
     '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
+    '/2026/03/07/is-power-bi-desktop-a-dev-tool-ep-376/': '/2024/11/29/is-power-bi-desktop-a-dev-tool-ep-376/',
   },
   compressHTML: true,
 });
