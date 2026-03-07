@@ -1,6 +1,6 @@
 ---
 title: "Is Power BI Desktop a Dev Tool? – Ep. 376"
-date: "2026-03-07"
+date: "2024-11-29"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
