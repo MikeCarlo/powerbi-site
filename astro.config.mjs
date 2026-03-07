@@ -33,6 +33,7 @@ export default defineConfig({
   redirects: {
     '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
     '/2026/03/07/is-power-bi-desktop-a-dev-tool-ep-376/': '/2024/11/29/is-power-bi-desktop-a-dev-tool-ep-376/',
+    '/2024/11/22/the-power-of-a-good-agenda-ep-374-power-bi-tips-ep-374/': '/2024/11/22/the-power-of-a-good-agenda-ep-374/',
   },
   compressHTML: true,
 });
