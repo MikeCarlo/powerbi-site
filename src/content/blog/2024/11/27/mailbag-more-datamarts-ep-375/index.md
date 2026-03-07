@@ -2,7 +2,9 @@
 title: "Mailbag! More Datamarts - Ep. 375"
 date: "2024-11-27"
 authors:
-  - "Mike Carlo"\n  - "Tommy Puglia"\n  - "Seth Bauer"
+  - "Mike Carlo"
+  - "Tommy Puglia"
+  - "Seth Bauer"
 categories:
   - "Podcast"
   - "Power BI"
