@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Fabric & Azure AI Foundry - Ep.389 - Power BI tips – Ep. 389"
+title: "Microsoft Fabric & Azure AI Foundry – Ep. 389"
 date: "2025-01-15"
 authors:
   - "Mike Carlo"

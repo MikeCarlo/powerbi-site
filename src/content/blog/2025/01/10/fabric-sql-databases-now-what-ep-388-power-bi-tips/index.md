@@ -1,5 +1,5 @@
 ---
-title: "Fabric SQL Databases - Now What? - Ep.388 - Power BI tips – Ep. 388"
+title: "Fabric SQL Databases - Now What? – Ep. 388"
 date: "2025-01-10"
 authors:
   - "Mike Carlo"
