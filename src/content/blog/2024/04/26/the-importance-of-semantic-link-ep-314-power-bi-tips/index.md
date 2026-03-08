@@ -30,7 +30,7 @@ The Importance of Semantic Link is the focus of this week’s Explicit Measures 
 - **[sempy.dependencies package | Microsoft Learn](https://learn.microsoft.com/en-us/python/api/semantic-link-sempy/sempy.dependencies?view=semantic-link-python&WT.mc_id=DP-MVP-5002621#sempy-dependencies-plot-dependency-metadata)** — This browser is no longer supported.
 - **[How to use notebooks - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook?WT.mc_id=DP-MVP-5002621)** — Learn how to create a new notebook, import an existing notebook, connect notebooks to lakehouses, collaborate in notebooks, and comment code cells.
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
-- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: The Importance of Semantic Link
 

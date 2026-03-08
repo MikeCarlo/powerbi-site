@@ -14,13 +14,9 @@ Uncovering Fabric Security Whitepaper – Ep. 326 is live with another Explicit 
 
 ## News & Announcements
 
-- [Link](https://learn.microsoft.com/fabric/security/white-paper-landing-page?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Microsoft Fabric security white paper - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/security/white-paper-landing-page?WT.mc_id=DP-MVP-5002621)** — Download and review the Microsoft Fabric security white paper to get an understanding of the security features and capabilities of Microsoft Fabric.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Uncovering Fabric Security Whitepaper
 

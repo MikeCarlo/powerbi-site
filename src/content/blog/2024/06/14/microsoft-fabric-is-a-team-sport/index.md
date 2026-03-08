@@ -23,7 +23,7 @@ In this episode of Explicit Measures, we discuss Microsoft Fabric is a Team Spor
 - **[Power BI enhanced report format (PBIR) in Power BI Desktop developer mode (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-enhanced-report-format-pbir-in-power-bi-desktop-developer-mode-preview/)** — Enhancing team collaboration and automation is crucial for any enterprise BI development, which is the primary goal of Power BI Desktop developer mode. The Power BI enhanced report format (PBIR) for Power BI Project...
 - **[Fabric is a team sport — DATA GOBLINS](https://data-goblins.com/power-bi/fabric-expert)** — In this article, I share some unfiltered thoughts about why it’s unrealistic to expect one person to know everything in Fabric, and concerns I have about unrealistic expectations being put in the market regarding Fabric.
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
-- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Microsoft Fabric is a Team Sport
 

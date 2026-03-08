@@ -24,7 +24,7 @@ Here’s the latest episode of the Explicit Measures Podcast—jump in for the n
 
 - **[Microsoft Fabric June 2024 Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-june-2024-update/)** — Welcome to the June 2024 update. Here are a few, select highlights of the many we have for Fabric. Fabric Spark connector for Fabric Data Warehouse in Spark runtime is now available. Query activity, a one-stop view...
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
-- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Creative Solutions & Data Products - Power BI tips
 

@@ -33,7 +33,7 @@ In this episode of the Explicit Measures podcast, Mike discuss Let's Talk Power 
 - **[Power BI Templates](https://datameerkat.com/power-bi-templates)** — ".pbit" files are well-known in the Power BI world. But this is not the only type of "template" we can encounter. It depends on the scenario we are trying to...
 - **[Chris Webb's BI Blog: Power Query Templates In Excel And Fabric](https://blog.crossjoin.co.uk/2023/06/11/power-query-templates-in-excel-and-fabric/)** — Export and import Power Query template files in Excel and Fabric
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
-- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Let's Talk Power BI Templates - Ep.306 - Power BI tips from the Real World
 

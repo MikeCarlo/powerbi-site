@@ -25,7 +25,7 @@ In this episode of Explicit Measures (Ep. 319), the crew dives into updates and 
 ## News & Announcements
 - **[The Evolution and Future of Interactive Data Visualization (Part 1) | Nightingale](https://nightingaledvs.com/the-evolution-and-future-of-interactive-data-visualization-part-1/)** — Interactive data in the pre-Web era Interactive data visualization is an essential component in the current state of our web.
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
-- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Future of Data Visualization
 

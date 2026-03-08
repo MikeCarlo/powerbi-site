@@ -14,16 +14,11 @@ In this episode of Explicit Measures, the team discusses the separation of data 
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-us/blog/exciting-news-eventhouse-is-now-generally-available?ft=All)
-- [Link](https://blog.fabric.microsoft.com/en-us/blog/unlock-the-power-of-real-time-intelligence-in-fabric-connect-and-stream-events-effortlessly-with-the-get-events-experience?ft=All)
-- [Link](https://blog.gbrueckl.at/2024/05/release-of-power-bi-studio-v2-0-vscode-extension/)
-- [Link](https://www.minceddata.info/2024/04/30/the-separation-of-data-and-content-why-this-is-the-way-to-go-part-1/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Exciting News: Eventhouse is Now Generally Available! | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/exciting-news-eventhouse-is-now-generally-available?ft=All)** — 🎉 Exciting News: Eventhouse is Now Generally Available! 🎉 We&#8217;re thrilled to announce that Eventhouse, our innovative database workspace designed to manage and store event-based data, is now officially available...
+- **[Unlock the Power of Real-Time Intelligence in Fabric: Connect and stream events effortlessly with the Get events experience (preview)! | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/unlock-the-power-of-real-time-intelligence-in-fabric-connect-and-stream-events-effortlessly-with-the-get-events-experience?ft=All)** — What is Get events Say hello to effortless data connectivity and streaming, regardless of whether your data originates from new or established sources, streams, or events. With the new Get events experience you are...
+- **[The separation of data and content - why this is the way to go (part 1) - Mincing Data - Gain Insight from Data](https://www.minceddata.info/2024/04/30/the-separation-of-data-and-content-why-this-is-the-way-to-go-part-1/)** — This article is solely about one question: what has to be done if a content creator needs to create and publish Power BI reports, but the content creator is not allowed to see all the data from the semantic model?
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: The Separation of Data & Content
 

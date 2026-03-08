@@ -14,13 +14,9 @@ Data Exploration & Spin Off Projects – Ep. 325 is live with another Explicit M
 
 ## News & Announcements
 
-- [Link](https://nightingaledvs.com/data-exploration-spin-off-projects/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Step 7 in the Data Exploration Journey: Spin-Off Projects | Nightingale](https://nightingaledvs.com/data-exploration-spin-off-projects/)** — This article is part 8 in a series on data exploration, and the common struggles that we all face when trying to learn something new.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Data Exploration & Spin Off Projects
 

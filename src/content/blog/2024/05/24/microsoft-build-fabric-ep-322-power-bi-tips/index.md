@@ -13,13 +13,9 @@ In this episode of Explicit Measures, the team discusses Microsoft Build Fabric 
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-us/blog/microsoft-fabric-may-2024-update?ft=All)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Microsoft Fabric May 2024 Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-fabric-may-2024-update?ft=All)** — Welcome to the May 2024 update. Here are a few, select highlights of the many we have for Fabric. You can now ask Copilot questions about data in your model, Model Explorer and authoring calculation groups in Power...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: Microsoft Build Fabric
 

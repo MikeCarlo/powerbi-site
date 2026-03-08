@@ -14,13 +14,9 @@ In this episode of Explicit Measures, the team discusses The Impact of Task Flow
 
 ## News & Announcements
 
-- [Link](https://learn.microsoft.com/en-us/fabric/get-started/task-flow-overview?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Task flows overview - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/fundamentals/task-flow-overview?WT.mc_id=DP-MVP-5002621)** — This article gives an overview of task flows and task flow terminology.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 ## Main Discussion: The Impact of Task Flows
 
