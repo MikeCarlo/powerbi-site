@@ -28,8 +28,17 @@ Abnormal Data Documentation is the focus of this week’s Explicit Measures epis
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Abnormal Data Documentation
+## Main Discussion
 
+This episode focuses on **abnormal data** and the often-ignored job of documenting it. The team discusses why anomalies happen, how they get misinterpreted in reports, and what teams can do to make data issues visible (without derailing trust).
+
+Key points from the conversation:
+
+- **Anomalies are inevitable**: the goal isn’t perfection—it’s fast detection and clear communication.
+- **Documentation as a product feature**: notes, known-issue logs, and ‘data health’ indicators reduce support load and confusion.
+- **Operational patterns**: who owns investigating issues, how to escalate, and how to close the loop when data is corrected.
+- **Reporting implications**: how to avoid dashboards that silently lie when upstream data changes unexpectedly.
+- **Build trust**: transparency about data quality tends to increase trust, not reduce it.
 
 ## Looking Forward
 

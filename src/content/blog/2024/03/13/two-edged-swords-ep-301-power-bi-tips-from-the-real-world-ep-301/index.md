@@ -44,7 +44,15 @@ In Episode 301, Mike and Tommy break down the key takeaways from 'Two Edged Swor
 
 ## Main Discussion
 
-This episode covers the main themes, trade-offs, and practical takeaways discussed by Mike and Tommy.
+The main theme is that self-service BI is a **two-edged sword**: it can massively accelerate insight, but it can also create duplicated logic, conflicting numbers, and governance pain if you roll it out without education and standards.
+
+Key points from the conversation:
+
+- **Data culture matters more than tooling**: a great BI platform won’t save you if the org doesn’t agree on ownership, definitions, and how decisions get made.
+- **Self-service needs training + guardrails** (not a lock-down): the goal is to enable people safely, not prevent them from doing work.
+- **Central BI vs. business-led BI isn’t either/or**: the team talks about balancing a strong semantic model/enterprise layer with flexible exploration.
+- **Governance is a practice, not a checklist**: naming, certification, documentation, and version control are what keep self-service from turning into chaos.
+- **Roach’s Maxim in practice**: push transformations upstream when it’s repeatable and shared; keep work downstream when it’s specific and exploratory.
 
 ## Looking Forward
 

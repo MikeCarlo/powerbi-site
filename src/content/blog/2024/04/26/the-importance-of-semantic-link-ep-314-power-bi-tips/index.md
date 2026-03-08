@@ -32,8 +32,17 @@ The Importance of Semantic Link is the focus of this week’s Explicit Measures 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: The Importance of Semantic Link
+## Main Discussion
 
+This episode explores why **Semantic Link** matters and how it changes the workflow between Power BI semantic models and Python-based analysis. The conversation focuses on using the semantic model as a trusted layer while still enabling deeper exploration in notebooks.
+
+Key points from the conversation:
+
+- **Why Semantic Link is useful**: it bridges the semantic model with Python workflows so analysis can be repeatable and shareable.
+- **Model-first mindset**: the semantic model remains the source of truth—even when you branch into notebooks for advanced work.
+- **Better collaboration**: analysts can experiment in Python without reinventing business definitions from scratch.
+- **Governance angle**: the more you can keep definitions centralized, the less risk you take on as self-service expands.
+- **Practical usage**: where this fits into a Fabric workflow (exploration, validation, advanced analytics).
 
 ## Looking Forward
 

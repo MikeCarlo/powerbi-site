@@ -27,9 +27,22 @@ A fresh episode of **Explicit Measures** is here—let’s dig into the latest P
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Power Query Paginated & Folders
+## Main Discussion
+
+This episode blends product updates with practical workflow topics: **Power Query in paginated report builder**, when paginated reports are the right tool, and why simple things like **folder structure** matter more than people think.
+
+Key points from the conversation:
+
+- **Power Query in Report Builder**: what it enables for paginated reports and how it changes the authoring experience.
+- **When to use paginated vs. interactive reports**: detail-heavy exports, operational printing, and ‘pixel-perfect’ needs.
+- **Organizing work**: folder patterns and consistent naming can dramatically reduce confusion as the number of reports/datasets grows.
+- **Maintainability**: why “structure” is a feature—especially when multiple people are publishing content.
+- **Pragmatic adoption**: start with one paginated use case where it clearly wins (printing/export) instead of trying to convert everything.
 
 ## Looking Forward
+
+
+If your org struggles with report sprawl, standardize folders + naming first—then layer in more advanced governance.
 
 ## Episode Transcript
 

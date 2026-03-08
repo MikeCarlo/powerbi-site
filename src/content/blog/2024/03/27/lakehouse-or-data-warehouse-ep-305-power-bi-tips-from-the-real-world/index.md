@@ -25,9 +25,17 @@ In this episode of the Explicit Measures podcast, Mike and Tommy explore whether
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Lakehouse or Data Warehouse
+## Main Discussion
 
-The conversation compares Lakehouse and Data Warehouse patterns in Fabric, focusing on real-world considerations like modeling approach, performance expectations, team workflows, and how each option supports reporting and analytics.
+Mike and Tommy compare **Lakehouse vs. Data Warehouse** choices in Fabric with a practical lens: the right answer depends on workload type, team skill set, governance needs, and how downstream reporting will consume the data.
+
+Key points from the conversation:
+
+- **Workload fit**: warehouse-first tends to shine for SQL-heavy, structured reporting workloads; lakehouse-first fits better when you need Spark/engineering patterns, semi-structured data, or data science workflows.
+- **Modeling + performance expectations**: the team talks through how your modeling approach (and how you plan to serve semantic models) should influence the decision.
+- **Team workflow and repeatability**: the “best” choice is often the one your team can deliver consistently and support over time.
+- **Governance + reuse**: where you standardize transformations and business logic determines whether you get reuse—or a pile of slightly different copies.
+- **Start simple**: pick a thin slice, prove the pattern, then expand; don’t over-architect before you’ve validated the consumption path.
 
 ## Looking Forward
 

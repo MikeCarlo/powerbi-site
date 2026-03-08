@@ -27,8 +27,17 @@ The Value of Demos Power BI tips is the focus of this week’s Explicit Measures
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: The Value of Demos Power BI tips
+## Main Discussion
 
+This episode is a practical conversation about the **value of demos**—not as flashy sales theater, but as a core tool for getting alignment and driving adoption. The team discusses how demos clarify requirements, reveal real user behavior, and accelerate iteration.
+
+Key points from the conversation:
+
+- **Demos reduce ambiguity**: showing something early surfaces hidden assumptions faster than meetings and documents.
+- **Prototype vs. production**: how to demo responsibly without turning a proof-of-concept into a fragile ‘forever solution.’
+- **User feedback loops**: demos create a natural cadence for stakeholder input and prioritization.
+- **Adoption enablement**: people support what they can see and understand—demos help build confidence.
+- **Consulting reality**: using demos to set expectations (scope, timeline, trade-offs) prevents painful surprises later.
 
 ## Looking Forward
 

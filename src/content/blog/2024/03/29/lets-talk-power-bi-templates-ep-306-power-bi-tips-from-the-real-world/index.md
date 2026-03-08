@@ -35,9 +35,17 @@ In this episode of the Explicit Measures podcast, Mike discuss Let's Talk Power 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Let's Talk Power BI Templates - Ep.306 - Power BI tips from the Real World
+## Main Discussion
 
-In this episode, the team focuses on **Let's Talk Power BI Templates - Ep.306 - Power BI tips from the Real World**.
+This episode focuses on **Power BI templates** and why they’re valuable when you’re trying to scale reporting across a team. The conversation covers what templates should include, what they should *not* include, and how to keep them maintainable as your organization grows.
+
+Key points from the conversation:
+
+- **When templates help**: consistent layout, navigation, and visual standards—especially when multiple report authors contribute.
+- **When templates hurt**: overly rigid “one template for everything” approaches that fight the business process instead of supporting it.
+- **What to standardize**: branding/themes, accessibility defaults, core page patterns, and common measures/semantic model expectations.
+- **What to keep flexible**: business-specific storytelling, domain-driven visuals, and edge-case analysis pages.
+- **Operational reality**: templates work best when paired with documentation and a clear publishing/review process.
 
 ## Looking Forward
 

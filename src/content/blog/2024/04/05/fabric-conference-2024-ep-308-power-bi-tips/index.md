@@ -31,9 +31,17 @@ In this episode of the Explicit Measures podcast, Mike discuss Fabric Conference
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Fabric Conference 2024 - Ep.308 - Power BI tips
+## Main Discussion
 
-In this episode, the team focuses on **Fabric Conference 2024 - Ep.308 - Power BI tips**.
+Mike recaps the Microsoft Fabric Community Conference announcements and what they signal about the platform’s direction. Instead of just listing features, the discussion focuses on what’s *actually actionable* for teams building on Fabric today.
+
+Key points from the conversation:
+
+- **What stood out from the announcements** and why certain items matter more than others in real deployments.
+- **Platform direction**: how the Fabric story is evolving across engineering, self-service, and governance.
+- **Adoption reality**: which features feel ready to use now vs. which need more time (or more guardrails) before you bet a project on them.
+- **Team impact**: what report developers, data engineers, and admins should pay attention to after the conference.
+- **Next steps**: turning conference excitement into a concrete rollout plan with pilots and measurable outcomes.
 
 ## Looking Forward
 

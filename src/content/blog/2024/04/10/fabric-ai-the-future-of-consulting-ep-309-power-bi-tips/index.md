@@ -27,9 +27,22 @@ A new episode of **Explicit Measures** is live—this week the team dives into M
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Fabric, AI & The Future of Consulting
+## Main Discussion
+
+This episode digs into how **AI (and Copilot-style tooling)** changes the day-to-day reality of analytics work—and what that means for consulting and internal BI teams. The big idea: AI can accelerate output, but it doesn’t replace the need for clear definitions, good modeling, and governance.
+
+Key points from the conversation:
+
+- **What consulting customers actually buy**: speed, expertise, and risk reduction—not just “hours of building reports.”
+- **AI as an accelerator**: where AI helps (drafting, exploration, boilerplate) vs. where humans still have to make the hard calls.
+- **Quality + trust still matter**: the semantic model and business definitions are what keep AI-assisted work from producing confident nonsense.
+- **New skills for teams**: prompt literacy, review workflows, and the ability to validate outputs become part of the job.
+- **The future role shift**: less time on repetitive mechanics, more time on architecture, adoption, and decision support.
 
 ## Looking Forward
+
+
+If you’re introducing AI into your BI workflow, set review standards and model governance first—then scale the productivity wins safely.
 
 ## Episode Transcript
 

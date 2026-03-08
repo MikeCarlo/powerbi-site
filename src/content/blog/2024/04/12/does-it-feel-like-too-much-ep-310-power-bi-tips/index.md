@@ -30,9 +30,22 @@ A fresh episode of **Explicit Measures** is here—let’s dig into the latest P
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Does It Feel Like Too Much?
+## Main Discussion
+
+This episode tackles a feeling a lot of Power BI/Fabric practitioners share: **the pace of change is overwhelming**. The discussion centers on how to stay productive without chasing every new feature.
+
+Key points from the conversation:
+
+- **Signal vs. noise**: how to identify which updates actually matter for your organization’s workloads.
+- **Prioritization**: when to adopt, when to wait, and when to intentionally say “no” so you can finish real projects.
+- **Process over hype**: building a repeatable evaluation routine (small pilots, success criteria, rollback plan).
+- **Team enablement**: updates don’t help if the team can’t learn and operationalize them—training and documentation are part of the work.
+- **Long-term stability**: focusing on fundamentals (modeling, governance, performance) keeps you resilient as features change.
 
 ## Looking Forward
+
+
+Create a small ‘feature review’ cadence (monthly/quarterly) so updates are evaluated intentionally, not reactively.
 
 ## Episode Transcript
 
