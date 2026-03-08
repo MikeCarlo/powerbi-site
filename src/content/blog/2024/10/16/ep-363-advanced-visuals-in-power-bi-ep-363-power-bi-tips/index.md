@@ -1,18 +1,19 @@
 ---
-title: "Advanced Visuals in Power BI - Ep.363 - Power BI tips"
-description: "Explicit Measures Podcast Episode 363"
-pubDate: 2024-10-16
+title: "Advanced Visuals in Power BI – Ep. 363"
+date: "2024-10-16"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
   - "Seth Bauer"
+categories:
+  - "Podcast"
+  - "Power BI"
 tags:
   - "Explicit Measures"
   - "Podcast"
-episode: 363
-youtubeId: "r8XH7V68RoI"
-image: "./assets/featured.png"
-thumbnail: "./assets/thumbnail.png"
+  - "Power BI"
+featuredImage: "./assets/featured.png"
+excerpt: "In Episode 363, the crew talks through building more advanced visuals in Power BI and where custom visuals fit into real-world reporting."
 ---
 
 Welcome back to the Explicit Measures Podcast. In Episode 363, Mike Carlo is joined by Tommy Puglia and Seth Bauer to talk through building more advanced visuals in Power BI and where custom visuals fit into real-world reporting.

@@ -1,17 +1,19 @@
 ---
-title: "Let’s Talk Default Semantic Model - Ep.362 - Power BI tips"
-description: "Explicit Measures Podcast Episode 362 — Let’s Talk Default Semantic Model"
-pubDate: 2024-10-11
+title: "Let’s Talk Default Semantic Model – Ep. 362"
+date: "2024-10-11"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
   - "Seth Bauer"
-tags:
+categories:
   - "Podcast"
-  - "Explicit Measures"
   - "Power BI"
-coverImage: "./assets/featured.png"
-coverImageAlt: "Let’s Talk Default Semantic Model - Ep.362 - Power BI tips"
+tags:
+  - "Explicit Measures"
+  - "Podcast"
+  - "Power BI"
+featuredImage: "./assets/featured.png"
+excerpt: "In this episode, the team digs into the Default Semantic Model—what it is, why it matters, and how to use it in real-world Power BI projects."
 ---
 
 In this episode of the Explicit Measures Podcast, the team digs into Let’s Talk Default Semantic Model—what it is, why it matters, and how to think about it in real-world Power BI projects.

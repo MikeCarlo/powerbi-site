@@ -1,18 +1,20 @@
 ---
-title: "Domains, Tags, & Workspaces- Ep.364 - Power BI tips"
-description: "Explicit Measures Podcast Episode 364"
-pubDate: 2024-10-18
+title: "Domains, Tags, & Workspaces – Ep. 364"
+date: "2024-10-18"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
   - "Seth Bauer"
+categories:
+  - "Podcast"
+  - "Power BI"
 tags:
   - "Explicit Measures"
   - "Podcast"
-episode: 364
-youtubeId: "NWWgiJ-2wDE"
-image: "./assets/featured.png"
-thumbnail: "./assets/thumbnail.png"
+  - "Power BI"
+  - "Microsoft Fabric"
+featuredImage: "./assets/featured.png"
+excerpt: "In Episode 364, the crew digs into Domains, Tags, and Workspaces and how they impact organization and governance in Fabric and Power BI."
 ---
 
 Welcome back to the Explicit Measures Podcast. In Episode 364, Mike Carlo and the crew dig into the latest in Power BI and Microsoft Fabric, plus what they're seeing in the community and client work.
