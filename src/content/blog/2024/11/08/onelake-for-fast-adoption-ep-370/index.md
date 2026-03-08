@@ -1,5 +1,5 @@
 ---
-title: "OneLake for Fast Adoption - Ep. 370"
+title: "OneLake for Fast Adoption – Ep. 370"
 date: "2024-11-08"
 authors:
   - "Mike Carlo"

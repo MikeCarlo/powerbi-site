@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Ignite Updates - Ep. 268"
+title: "Microsoft Ignite Updates – Ep. 268"
 date: "2023-11-17"
 authors:
   - "Mike Carlo"

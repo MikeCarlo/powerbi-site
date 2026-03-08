@@ -1,5 +1,5 @@
 ---
-title: "Building and BI Team - Power BI Tips – Ep. 321"
+title: "Building and BI Team – Ep. 321"
 date: 2024-05-22
 authors:
   - "Mike Carlo"

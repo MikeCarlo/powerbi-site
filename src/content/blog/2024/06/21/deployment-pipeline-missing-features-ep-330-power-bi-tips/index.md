@@ -1,5 +1,5 @@
 ---
-title: "Deployment Pipeline Missing Features - Ep.330 - Power BI tips – Ep. 330"
+title: "Deployment Pipeline Missing Features – Ep. 330"
 date: "2024-06-21"
 authors:
   - "Mike Carlo"

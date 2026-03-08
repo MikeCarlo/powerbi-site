@@ -1,5 +1,5 @@
 ---
-title: "Types of Data Roles - Ep. 252 - Power BI tips from the Real World"
+title: "Types of Data Roles – Ep. 252"
 date: 2023-09-22
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Career"]

@@ -1,5 +1,5 @@
 ---
-title: "Adopting Fabric In Your Org - Ep. 357"
+title: "Adopting Fabric In Your Org – Ep. 357"
 date: "2024-09-25"
 authors:
   - "Mike Carlo"

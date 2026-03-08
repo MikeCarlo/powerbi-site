@@ -1,5 +1,5 @@
 ---
-title: "Where should we Use AI With BI? - Ep. 251 - Power BI tips from the Real World"
+title: "Where should we Use AI With BI? – Ep. 251"
 date: 2023-09-20
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "AI"]

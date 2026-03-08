@@ -1,5 +1,5 @@
 ---
-title: "Star Schema in Fabric? - Ep. 259 - Power BI tips from the Real World"
+title: "Star Schema in Fabric? – Ep. 259"
 date: 2023-10-18
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Microsoft Fabric"]

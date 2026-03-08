@@ -1,5 +1,5 @@
 ---
-title: "Load all the data in OneLake - Ep. 250 - Power BI tips from the Real World"
+title: "Load all the data in OneLake – Ep. 250"
 date: "2023-09-15"
 authors:
   - "Mike Carlo"

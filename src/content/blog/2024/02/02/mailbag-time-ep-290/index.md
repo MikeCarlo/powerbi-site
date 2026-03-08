@@ -1,5 +1,5 @@
 ---
-title: "Mailbag Time - Ep. 290"
+title: "Mailbag Time – Ep. 290"
 date: 2024-02-02
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]

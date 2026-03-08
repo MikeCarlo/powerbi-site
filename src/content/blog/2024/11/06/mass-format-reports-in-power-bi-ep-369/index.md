@@ -1,5 +1,5 @@
 ---
-title: "Mass-format reports in Power BI - Ep. 369"
+title: "Mass-format reports in Power BI – Ep. 369"
 date: "2024-11-06"
 authors:
   - "Mike Carlo"

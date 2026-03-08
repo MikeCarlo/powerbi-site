@@ -1,5 +1,5 @@
 ---
-title: "PBI Domains - Ep. 229 - Power BI tips from the real world"
+title: "PBI Domains – Ep. 229"
 date: "2023-07-05"
 authors:
   - "Mike Carlo"

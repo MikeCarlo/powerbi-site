@@ -1,5 +1,5 @@
 ---
-title: "Crafting PBI Workspace Policies - Ep. 358"
+title: "Crafting PBI Workspace Policies – Ep. 358"
 date: "2024-09-27"
 authors:
   - "Mike Carlo"

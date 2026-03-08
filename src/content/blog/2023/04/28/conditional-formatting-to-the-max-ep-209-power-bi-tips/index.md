@@ -1,5 +1,5 @@
 ---
-title: "Conditional Formatting to the MAX - Ep.209 - Power BI tips"
+title: "Conditional Formatting to the MAX – Ep. 209"
 date: "2023-04-28"
 authors:
   - "Mike Carlo"

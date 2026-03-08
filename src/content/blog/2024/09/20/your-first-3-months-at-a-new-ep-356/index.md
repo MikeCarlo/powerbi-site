@@ -1,5 +1,5 @@
 ---
-title: "Your First 3 Months at a New Job - Ep. 356"
+title: "Your First 3 Months at a New Job – Ep. 356"
 date: "2024-09-20"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Hello Microsoft Fabric - Ep.218 - Power BI tips from the real world"
+title: "Hello Microsoft Fabric – Ep. 218"
 date: "2023-05-26"
 authors:
   - "Mike Carlo"

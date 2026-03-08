@@ -1,5 +1,5 @@
 ---
-title: "Knowledge, Understanding & Wisdom - Ep. 246 - Power BI tips from the Real World"
+title: "Knowledge, Understanding & Wisdom – Ep. 246"
 date: "2023-09-01"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Raising the Bar - Ep.205 - Power BI tips from the real world"
+title: "Raising the Bar – Ep. 205"
 date: "2023-04-14"
 authors:
   - "Mike Carlo"

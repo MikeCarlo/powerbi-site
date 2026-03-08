@@ -1,5 +1,5 @@
 ---
-title: "Visual Enhancements Updates - Ep.215 - Power BI tips from the real world"
+title: "Visual Enhancements Updates – Ep. 215"
 date: "2023-05-17"
 authors:
   - "Mike Carlo"

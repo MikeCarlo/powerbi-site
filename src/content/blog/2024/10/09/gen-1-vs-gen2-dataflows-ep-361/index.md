@@ -1,5 +1,5 @@
 ---
-title: "Gen 1 vs. Gen2 Dataflows - Ep. 361"
+title: "Gen 1 vs. Gen2 Dataflows – Ep. 361"
 date: "2024-10-09"
 authors:
   - "Mike Carlo"

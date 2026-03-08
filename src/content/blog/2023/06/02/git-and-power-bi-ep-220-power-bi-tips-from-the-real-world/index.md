@@ -1,5 +1,5 @@
 ---
-title: "GIT & Power BI - Ep.220 - Power BI tips from the real world"
+title: "GIT & Power BI – Ep. 220"
 date: "2023-06-02"
 authors:
   - "Mike Carlo"

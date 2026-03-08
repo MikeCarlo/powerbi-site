@@ -1,5 +1,5 @@
 ---
-title: "100 Dollars for Fabric - Ep. 243 - Power BI tips from the Real World"
+title: "100 Dollars for Fabric – Ep. 243"
 date: "2023-08-23"
 authors:
   - "Mike Carlo"

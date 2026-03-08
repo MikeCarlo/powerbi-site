@@ -1,5 +1,5 @@
 ---
-title: "Symbiotic Relationship of Data - Ep. 232 - Power BI tips from the Real World"
+title: "Symbiotic Relationship of Data – Ep. 232"
 date: "2023-07-14"
 authors:
   - "Mike Carlo"

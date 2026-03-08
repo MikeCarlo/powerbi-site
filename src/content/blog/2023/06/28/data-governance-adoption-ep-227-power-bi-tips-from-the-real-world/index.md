@@ -1,5 +1,5 @@
 ---
-title: "Data Governance & Adoption - Ep. 227 - Power BI tips from the real world"
+title: "Data Governance & Adoption – Ep. 227"
 date: "2023-06-28"
 authors:
   - "Mike Carlo"

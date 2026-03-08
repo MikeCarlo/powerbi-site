@@ -1,5 +1,5 @@
 ---
-title: The Separation of Data & Content – Ep. 324
+title: "The Separation of Data & Content – Ep. 324"
 date: 2024-05-31
 authors: [Mike Carlo]
 categories: [Podcast, Power BI]

@@ -1,5 +1,5 @@
 ---
-title: "Two Edged Swords - Ep.301 - Power BI tips from the Real World – Ep. 301"
+title: "Two Edged Swords – Ep. 301"
 date: "2024-03-13"
 authors:
   - "Mike Carlo"

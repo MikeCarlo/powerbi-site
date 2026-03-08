@@ -1,5 +1,5 @@
 ---
-title: "Fabric Capacities - Ep. 226 - Power BI tips from the real world"
+title: "Fabric Capacities – Ep. 226"
 date: "2023-06-23"
 authors:
   - "Mike Carlo"

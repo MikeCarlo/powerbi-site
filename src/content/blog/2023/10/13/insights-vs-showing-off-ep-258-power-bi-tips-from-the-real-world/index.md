@@ -1,5 +1,5 @@
 ---
-title: "Insights vs. Showing off - Ep. 258 - Power BI tips from the Real World"
+title: "Insights vs. Showing off – Ep. 258"
 date: 2023-10-13
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Microsoft Fabric"]

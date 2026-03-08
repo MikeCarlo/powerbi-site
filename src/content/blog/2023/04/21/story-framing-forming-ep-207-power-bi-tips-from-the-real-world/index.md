@@ -1,5 +1,5 @@
 ---
-title: "Story Framing & Forming - Ep.207 - Power BI Tips from the Real World"
+title: "Story Framing & Forming – Ep. 207"
 date: "2023-04-21"
 authors:
   - "Mike Carlo"

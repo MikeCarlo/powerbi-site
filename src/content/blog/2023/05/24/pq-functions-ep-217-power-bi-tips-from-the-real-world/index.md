@@ -1,5 +1,5 @@
 ---
-title: "PQ Functions - Ep.217 - Power BI tips from the real world"
+title: "PQ Functions – Ep. 217"
 date: "2023-05-24"
 authors:
   - "Mike Carlo"

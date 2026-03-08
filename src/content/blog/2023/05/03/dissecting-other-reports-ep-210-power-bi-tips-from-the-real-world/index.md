@@ -1,5 +1,5 @@
 ---
-title: "Dissecting Other Reports - Ep.210 - Power BI Tips from the Real World"
+title: "Dissecting Other Reports – Ep. 210"
 date: "2023-05-03"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Collaboration in Data - Ep.214 - Power BI tips from the real world"
+title: "Collaboration in Data – Ep. 214"
 date: "2023-05-12"
 authors:
   - "Mike Carlo"

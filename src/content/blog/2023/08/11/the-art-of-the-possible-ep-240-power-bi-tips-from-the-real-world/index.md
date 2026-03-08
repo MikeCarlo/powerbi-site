@@ -1,5 +1,5 @@
 ---
-title: "The Art of the Possible - Ep.240 - Power BI tips from the Real World"
+title: "The Art of the Possible – Ep. 240"
 date: "2023-08-11"
 authors:
   - "Mike Carlo"

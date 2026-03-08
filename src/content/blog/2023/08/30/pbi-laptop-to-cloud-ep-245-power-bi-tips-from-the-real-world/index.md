@@ -1,5 +1,5 @@
 ---
-title: "PBI Laptop to Cloud - Ep. 245 - Power BI tips from the Real World"
+title: "PBI Laptop to Cloud – Ep. 245"
 date: "2023-08-30"
 authors:
   - "Mike Carlo"

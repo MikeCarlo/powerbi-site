@@ -1,5 +1,5 @@
 ---
-title: "The Perfect Data Analyst - Ep.234 - Power BI Tips from the Real World"
+title: "The Perfect Data Analyst – Ep. 234"
 date: "2023-07-21"
 authors:
   - "Mike Carlo"

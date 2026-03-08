@@ -1,5 +1,5 @@
 ---
-title: "One Person to Do Everything - Ep. 292"
+title: "One Person to Do Everything – Ep. 292"
 date: 2024-02-09
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]

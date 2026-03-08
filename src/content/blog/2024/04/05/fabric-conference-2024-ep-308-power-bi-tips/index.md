@@ -1,5 +1,5 @@
 ---
-title: "Fabric Conference 2024 - Ep.308 - Power BI tips – Ep. 308"
+title: "Fabric Conference 2024 – Ep. 308"
 date: "2024-04-05"
 authors:
   - "Mike Carlo"

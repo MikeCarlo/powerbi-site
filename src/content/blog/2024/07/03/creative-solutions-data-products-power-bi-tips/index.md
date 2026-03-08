@@ -1,5 +1,5 @@
 ---
-title: "Creative Solutions & Data Products - Power BI tips – Ep. 333"
+title: "Creative Solutions & Data Products – Ep. 333"
 date: 2024-07-03
 authors:
   - Mike Carlo

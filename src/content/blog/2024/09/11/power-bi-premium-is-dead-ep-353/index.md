@@ -1,5 +1,5 @@
 ---
-title: "Power BI Premium is Dead - Ep. 353"
+title: "Power BI Premium is Dead – Ep. 353"
 date: "2024-09-11"
 authors:
   - "Mike Carlo"

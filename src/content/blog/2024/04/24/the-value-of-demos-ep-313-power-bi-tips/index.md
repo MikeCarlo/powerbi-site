@@ -1,5 +1,5 @@
 ---
-title: The Value of Demos - Ep.313 - Power BI tips – Ep. 313
+title: "The Value of Demos – Ep. 313"
 date: 2024-04-24
 authors:
   - Mike Carlo

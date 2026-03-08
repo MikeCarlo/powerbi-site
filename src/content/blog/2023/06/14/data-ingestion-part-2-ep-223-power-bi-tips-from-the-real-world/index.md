@@ -1,5 +1,5 @@
 ---
-title: "Data Ingestion Part 2 - Ep.223 - Power BI tips from the real world"
+title: "Data Ingestion Part 2 – Ep. 223"
 date: "2023-06-14"
 authors:
   - "Mike Carlo"

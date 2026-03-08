@@ -1,5 +1,5 @@
 ---
-title: "Workspace Roles in Fabric - Ep. 260 - Power BI tips from the Real World"
+title: "Workspace Roles in Fabric – Ep. 260"
 date: 2023-10-20
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Microsoft Fabric"]

@@ -1,5 +1,5 @@
 ---
-title: "Contextualized Insights - Ep.239 - Power BI tips from the Real World"
+title: "Contextualized Insights – Ep. 239"
 date: "2023-08-09"
 authors:
   - "Mike Carlo"

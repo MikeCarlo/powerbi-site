@@ -1,5 +1,5 @@
 ---
-title: "Lakehouse or Data Warehouse - Ep.305"
+title: "Lakehouse or Data Warehouse – Ep. 305"
 date: "2024-03-27"
 authors:
   - "Mike Carlo"

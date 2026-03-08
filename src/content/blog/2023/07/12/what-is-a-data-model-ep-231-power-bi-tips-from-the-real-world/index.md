@@ -1,5 +1,5 @@
 ---
-title: "What is a Data Model? - Ep. 231 - Power BI tips from the Real World"
+title: "What is a Data Model? – Ep. 231"
 date: "2023-07-12"
 authors:
   - "Mike Carlo"

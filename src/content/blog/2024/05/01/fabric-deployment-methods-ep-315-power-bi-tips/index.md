@@ -1,5 +1,5 @@
 ---
-title: Fabric Deployment Methods – Ep. 315
+title: "Fabric Deployment Methods – Ep. 315"
 date: 2024-05-01
 authors:
   - Mike Carlo

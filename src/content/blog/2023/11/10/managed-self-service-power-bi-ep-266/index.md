@@ -1,5 +1,5 @@
 ---
-title: "Managed Self Service & Power BI - Ep. 266"
+title: "Managed Self Service & Power BI – Ep. 266"
 date: "2023-11-10"
 authors:
   - "Mike Carlo"

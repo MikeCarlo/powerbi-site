@@ -1,5 +1,5 @@
 ---
-title: "RIP Workspaces - Ep.225 - Power BI tips from the real world"
+title: "RIP Workspaces – Ep. 225"
 date: "2023-06-21"
 authors:
   - "Mike Carlo"

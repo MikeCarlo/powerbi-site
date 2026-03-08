@@ -1,5 +1,5 @@
 ---
-title: "New Buttons in PBI - Ep.219 - Power BI tips from the real world"
+title: "New Buttons in PBI – Ep. 219"
 date: "2023-05-31"
 authors:
   - "Mike Carlo"

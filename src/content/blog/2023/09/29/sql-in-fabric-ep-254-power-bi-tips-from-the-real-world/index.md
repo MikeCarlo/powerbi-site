@@ -1,5 +1,5 @@
 ---
-title: "SQL in Fabric - Ep. 254 - Power BI tips from the Real World"
+title: "SQL in Fabric – Ep. 254"
 date: 2023-09-29
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Microsoft Fabric"]

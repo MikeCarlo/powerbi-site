@@ -1,5 +1,5 @@
 ---
-title: "Using AI and Data Visualizations - Ep.201 - Power BI tips from the real world"
+title: "Using AI and Data Visualizations – Ep. 201"
 date: "2023-03-31"
 authors:
   - "Mike Carlo"

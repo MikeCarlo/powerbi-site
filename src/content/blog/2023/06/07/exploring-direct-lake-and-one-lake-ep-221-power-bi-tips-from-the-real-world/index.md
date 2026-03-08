@@ -1,5 +1,5 @@
 ---
-title: "Exploring Direct Lake and One Lake - Ep.221 - Power BI tips from the real world"
+title: "Exploring Direct Lake and One Lake – Ep. 221"
 date: "2023-06-07"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Dynamics Data & Fabric - Ep. 365"
+title: "Dynamics Data & Fabric – Ep. 365"
 date: "2024-10-23"
 authors:
   - "Mike Carlo"

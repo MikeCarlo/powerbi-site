@@ -1,5 +1,5 @@
 ---
-title: "Let us Discuss Tooltips - Ep.238 - Power BI tips from the Real World"
+title: "Let us Discuss Tooltips – Ep. 238"
 date: "2023-08-04"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "No more Chartjunk ! - Ep.237 - Power BI Tips from the Real World"
+title: "No more Chartjunk ! – Ep. 237"
 date: "2023-08-02"
 authors:
   - "Mike Carlo"

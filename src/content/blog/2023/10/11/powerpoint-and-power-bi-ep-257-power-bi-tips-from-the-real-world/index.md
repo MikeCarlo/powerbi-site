@@ -1,5 +1,5 @@
 ---
-title: "PowerPoint and Power BI - Ep. 257 - Power BI tips from the Real World"
+title: "PowerPoint and Power BI – Ep. 257"
 date: 2023-10-11
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]

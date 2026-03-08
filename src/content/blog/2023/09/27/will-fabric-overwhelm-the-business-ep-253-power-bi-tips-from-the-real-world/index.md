@@ -1,5 +1,5 @@
 ---
-title: "Will Fabric Overwhelm the Business - Ep. 253 - Power BI tips from the Real World"
+title: "Will Fabric Overwhelm the Business – Ep. 253"
 date: 2023-09-27
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI", "Microsoft Fabric"]

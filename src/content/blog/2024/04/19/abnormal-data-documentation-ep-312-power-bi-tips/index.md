@@ -1,5 +1,5 @@
 ---
-title: Abnormal Data Documentation - Ep.312 - Power BI tips – Ep. 312
+title: "Abnormal Data Documentation – Ep. 312"
 date: 2024-04-19
 authors:
   - Mike Carlo

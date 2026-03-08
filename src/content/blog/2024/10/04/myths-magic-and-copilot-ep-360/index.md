@@ -1,5 +1,5 @@
 ---
-title: "Myths, Magic & CoPilot  Ep. 360"
+title: "Myths, Magic & CoPilot – Ep. 360"
 date: "2024-10-04"
 authors:
   - "Mike Carlo"

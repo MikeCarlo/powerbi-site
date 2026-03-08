@@ -1,5 +1,5 @@
 ---
-title: "Fabric Conference 2024 - Ep.307"
+title: "Fabric Conference 2024 – Ep. 307"
 date: "2024-04-03"
 authors:
   - "Mike Carlo"

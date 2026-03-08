@@ -1,5 +1,5 @@
 ---
-title: "Why Quick Wins Are So Important - Ep. 317"
+title: "Why Quick Wins Are So Important – Ep. 317"
 date: 2024-05-08
 authors:
   - Mike Carlo

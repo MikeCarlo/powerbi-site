@@ -1,5 +1,5 @@
 ---
-title: "MAILBAG! Is Fabric Ready? - Ep.327 - Power BI tips – Ep. 327"
+title: "MAILBAG! Is Fabric Ready? – Ep. 327"
 date: 2024-06-12
 authors: ["Mike Carlo"]
 categories: ["Podcast", "Power BI"]

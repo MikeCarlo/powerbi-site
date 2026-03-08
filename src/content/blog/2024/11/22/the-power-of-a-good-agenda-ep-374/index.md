@@ -1,5 +1,5 @@
 ---
-title: "The Power of a Good Agenda - Ep. 374"
+title: "The Power of a Good Agenda – Ep. 374"
 date: "2024-11-22"
 authors:
   - "Mike Carlo"

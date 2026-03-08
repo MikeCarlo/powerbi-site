@@ -1,5 +1,5 @@
 ---
-title: "New Linguistic Schema - Ep. 256 - Power BI tips from the Real World"
+title: "New Linguistic Schema – Ep. 256"
 date: 2023-10-06
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]

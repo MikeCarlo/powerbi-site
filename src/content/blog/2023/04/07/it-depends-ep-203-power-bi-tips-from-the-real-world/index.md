@@ -1,5 +1,5 @@
 ---
-title: "It Depends - Ep. 203 - Power BI Tips from the Real World"
+title: "It Depends – Ep. 203"
 date: "2023-04-07"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Should Fabric Domains Have Leaders? - Ep. 373"
+title: "Should Fabric Domains Have Leaders? – Ep. 373"
 date: "2024-11-20"
 authors:
   - "Mike Carlo"

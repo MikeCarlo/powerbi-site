@@ -1,5 +1,5 @@
 ---
-title: "PBIP - Ep. 228 - Power BI tips from the real world"
+title: "PBIP – Ep. 228"
 date: "2023-06-30"
 authors:
   - "Mike Carlo"

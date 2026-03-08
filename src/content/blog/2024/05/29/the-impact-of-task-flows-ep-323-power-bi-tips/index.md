@@ -1,5 +1,5 @@
 ---
-title: The Impact of Task Flows – Ep. 323
+title: "The Impact of Task Flows – Ep. 323"
 date: 2024-05-29
 authors: [Mike Carlo, Tommy Puglia, Seth Bauer]
 categories: [Podcast, Power BI]

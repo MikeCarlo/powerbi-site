@@ -1,5 +1,5 @@
 ---
-title: "Fabric Decision Guide - Ep.222 - Power BI tips from the real world"
+title: "Fabric Decision Guide – Ep. 222"
 date: "2023-06-09"
 authors:
   - "Mike Carlo"

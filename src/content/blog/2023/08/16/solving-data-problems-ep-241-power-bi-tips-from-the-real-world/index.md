@@ -1,5 +1,5 @@
 ---
-title: "Solving Data Problems - Ep.241 - Power BI tips from the Real World"
+title: "Solving Data Problems – Ep. 241"
 date: "2023-08-16"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Low Code Solutions - Ep.212 - Power BI Tips from the Real World"
+title: "Low Code Solutions – Ep. 212"
 date: "2023-05-10"
 authors:
   - "Mike Carlo"

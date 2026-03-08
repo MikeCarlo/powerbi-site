@@ -1,5 +1,5 @@
 ---
-title: "Workspace Design in Fabric — Ep. 248"
+title: "Workspace Design in Fabric – Ep. 248"
 date: "2023-09-08"
 authors:
   - "Mike Carlo"

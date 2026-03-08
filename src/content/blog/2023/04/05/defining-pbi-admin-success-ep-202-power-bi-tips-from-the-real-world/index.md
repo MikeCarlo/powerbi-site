@@ -1,5 +1,5 @@
 ---
-title: "Defining PBI Admin Success - Ep. 202 - Power BI tips from the real world"
+title: "Defining PBI Admin Success – Ep. 202"
 date: "2023-04-05"
 authors:
   - "Mike Carlo"

@@ -1,5 +1,5 @@
 ---
-title: "Are we data driven? - Ep. 244 - Power BI tips from the Real World"
+title: "Are we data driven? – Ep. 244"
 date: "2023-08-25"
 authors:
   - "Mike Carlo"

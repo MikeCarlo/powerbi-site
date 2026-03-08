@@ -1,5 +1,5 @@
 ---
-title: "Data Communication - Ep.211 - Power BI Tips from the Real World"
+title: "Data Communication – Ep. 211"
 date: "2023-05-05"
 authors:
   - "Mike Carlo"

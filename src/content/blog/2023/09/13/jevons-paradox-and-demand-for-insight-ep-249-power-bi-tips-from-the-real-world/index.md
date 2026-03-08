@@ -1,5 +1,5 @@
 ---
-title: "Jevons Paradox & Demand for Insight - Ep. 249 - Power BI tips from the Real World"
+title: "Jevons Paradox & Demand for Insight – Ep. 249"
 date: "2023-09-13"
 authors:
   - "Mike Carlo"

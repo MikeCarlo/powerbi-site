@@ -1,5 +1,5 @@
 ---
-title: "2nd Age of Analytics - Ep.206 - Power BI Tips from the Real World"
+title: "2nd Age of Analytics – Ep. 206"
 date: "2023-04-19"
 authors:
   - "Mike Carlo"

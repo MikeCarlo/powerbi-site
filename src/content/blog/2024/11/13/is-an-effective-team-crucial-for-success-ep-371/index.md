@@ -1,5 +1,5 @@
 ---
-title: "Is an Effective Team Crucial for Success? - Ep. 371"
+title: "Is an Effective Team Crucial for Success? – Ep. 371"
 date: "2024-11-13"
 authors:
   - "Mike Carlo"

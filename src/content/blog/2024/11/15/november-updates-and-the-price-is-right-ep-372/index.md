@@ -1,5 +1,5 @@
 ---
-title: "November Updates and the Price is Right - Ep. 372"
+title: "November Updates and the Price is Right – Ep. 372"
 date: "2024-11-15"
 authors:
   - "Mike Carlo"

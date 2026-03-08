@@ -1,5 +1,5 @@
 ---
-title: "SQL or OneLake - Ep.236 - Power BI Tips from the Real World"
+title: "SQL or OneLake – Ep. 236"
 date: "2023-07-28"
 authors:
   - "Mike Carlo"

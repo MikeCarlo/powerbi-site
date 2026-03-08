@@ -1,5 +1,5 @@
 ---
-title: "Too Many Details? - Ep. 233 - Power BI tips from the Real World"
+title: "Too Many Details? – Ep. 233"
 date: "2023-07-19"
 authors:
   - "Mike Carlo"

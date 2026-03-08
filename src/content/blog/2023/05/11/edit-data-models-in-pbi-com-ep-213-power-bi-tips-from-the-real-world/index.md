@@ -1,5 +1,5 @@
 ---
-title: "Edit Data Models in PBI.com - Ep.213 - Power BI tips from the real world"
+title: "Edit Data Models in PBI.com – Ep. 213"
 date: "2023-05-11"
 authors:
   - "Mike Carlo"

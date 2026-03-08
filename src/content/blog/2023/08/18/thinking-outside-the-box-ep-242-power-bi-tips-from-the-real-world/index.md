@@ -1,5 +1,5 @@
 ---
-title: "Thinking Outside the Box - Ep.242 - Power BI tips from the Real World"
+title: "Thinking Outside the Box – Ep. 242"
 date: "2023-08-18"
 authors:
   - "Mike Carlo"

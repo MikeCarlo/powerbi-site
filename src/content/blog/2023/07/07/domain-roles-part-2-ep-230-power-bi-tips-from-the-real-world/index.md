@@ -1,5 +1,5 @@
 ---
-title: "Domain Roles Part 2 - Ep. 230 - Power BI tips from the real world"
+title: "Domain Roles Part 2 – Ep. 230"
 date: "2023-07-07"
 authors:
   - "Mike Carlo"

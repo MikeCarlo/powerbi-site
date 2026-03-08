@@ -1,5 +1,5 @@
 ---
-title: "The End of Analytics - Ep.208 - Power BI Tips from the Real World"
+title: "The End of Analytics – Ep. 208"
 date: "2023-04-26"
 authors:
   - "Mike Carlo"

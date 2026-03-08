@@ -1,5 +1,5 @@
 ---
-title: Microsoft Build Fabric – Ep. 322
+title: "Microsoft Build Fabric – Ep. 322"
 date: 2024-05-24
 authors: [Mike Carlo]
 categories: [Podcast, Power BI]

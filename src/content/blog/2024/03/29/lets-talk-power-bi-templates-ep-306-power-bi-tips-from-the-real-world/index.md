@@ -1,5 +1,5 @@
 ---
-title: "Let's Talk Power BI Templates - Ep.306 - Power BI tips from the Real World – Ep. 306"
+title: "Let's Talk Power BI Templates – Ep. 306"
 date: "2024-03-29"
 authors:
   - "Mike Carlo"

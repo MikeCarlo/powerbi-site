@@ -1,5 +1,5 @@
 ---
-title: "The Root of All Problems - Ep.235 - Power BI Tips from the Real World"
+title: "The Root of All Problems – Ep. 235"
 date: "2023-07-26"
 authors:
   - "Mike Carlo"

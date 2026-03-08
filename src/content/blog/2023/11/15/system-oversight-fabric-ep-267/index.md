@@ -1,5 +1,5 @@
 ---
-title: "System Oversight & Fabric - Ep. 267"
+title: "System Oversight & Fabric – Ep. 267"
 date: "2023-11-15"
 authors:
   - "Mike Carlo"

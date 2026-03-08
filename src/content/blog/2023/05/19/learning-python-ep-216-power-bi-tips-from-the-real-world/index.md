@@ -1,5 +1,5 @@
 ---
-title: "Learning Python - Ep.216 - Power BI tips from the real world"
+title: "Learning Python – Ep. 216"
 date: "2023-05-19"
 authors:
   - "Mike Carlo"

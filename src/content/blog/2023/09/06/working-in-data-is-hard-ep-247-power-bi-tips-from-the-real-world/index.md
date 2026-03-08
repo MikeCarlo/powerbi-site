@@ -1,5 +1,5 @@
 ---
-title: "Working in Data is Hard - Ep. 247 - Power BI tips from the Real World"
+title: "Working in Data is Hard – Ep. 247"
 date: "2023-09-06"
 authors:
   - "Mike Carlo"
