@@ -135,6 +135,16 @@ const articleJsonLd = {
           btn.setAttribute('aria-label', label);
           btn.title = label;
           btn.innerHTML = linkIconSvg();
+          // Inline styles as a safety net (Astro scoped CSS won’t style injected elements)
+          btn.style.display = 'inline-flex';
+          btn.style.alignItems = 'center';
+          btn.style.justifyContent = 'center';
+          btn.style.width = '1.1rem';
+          btn.style.height = '1.1rem';
+          btn.style.marginLeft = '0.5rem';
+          btn.style.border = '0';
+          btn.style.background = 'transparent';
+          btn.style.cursor = 'pointer';
           btn.addEventListener('click', async (ev) => {
             ev.preventDefault();
             const full = toFullUrl(hash);
