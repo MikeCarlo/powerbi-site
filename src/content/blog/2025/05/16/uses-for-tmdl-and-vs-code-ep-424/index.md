@@ -46,7 +46,7 @@ The second news item introduces the Fabric Data Agent SDK — a Python package t
 
 - **[Evaluate your Fabric Data Agents programmatically with the Python SDK (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/evaluate-your-fabric-data-agents-programmatically-with-the-python-sdk//)** — We’re excited to announce that native support for evaluating Data Agents through the Fabric SDK is now available in Preview. You can now run structured evaluations of your agent’s responses using Python — directly...
 
-## Main Discussion: TMDL and VS Code
+## Main Discussion
 
 Before diving into the main topic, Mike and Tommy bond over their gear setups — Tommy's obsessive stockpiling of discontinued mice from eBay, Mike's overbuilt streaming desktop and collection of backup laptops. Mike describes his multi-monitor workflow: a 49-inch Samsung ultrawide split into thirds with Power Toys, two flanking 27-inch monitors, and a presentation screen below the camera. This setup, he explains, is exactly why TMDL and VS Code matter — he can have Fabric data engineering, semantic model editing, and report building all open simultaneously in separate browser windows, something Power BI Desktop has never supported.
 

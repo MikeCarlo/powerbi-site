@@ -39,7 +39,7 @@ Mike, Tommy, and Seth break down the new Org Apps experience in Power BI and how
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Power BI Org Apps
+## Main Discussion
 
 This episode focuses on the Org Apps experience: what it is, why it exists, and how it impacts the way teams publish and distribute content inside Power BI/Fabric. Mike, Tommy, and Seth dig into how Org Apps can make content distribution more intentional — not just “share the report,” but package the right reports, navigation, and experience for a defined audience.
 

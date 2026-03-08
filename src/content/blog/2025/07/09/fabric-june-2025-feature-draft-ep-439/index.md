@@ -46,7 +46,7 @@ Mike and Tommy break down the Fabric June 2025 update with a rapid-fire draft of
 
 - [Fabric June 2025 Feature Summary](https://blog.fabric.microsoft.com/en-US/blog/fabric-june-2025-feature-summary/) — The monthly round-up that triggers today’s “feature draft,” including updates across Data Engineering, Warehousing, Data Factory, Real-Time Intelligence, and more.
 
-## Main Discussion: Fabric June 2025 Feature Draft
+## Main Discussion
 
 ### Copilot inline code completion (Fabric notebooks)
 

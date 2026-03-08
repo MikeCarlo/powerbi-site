@@ -39,7 +39,7 @@ Mike and Tommy dive into the rich ecosystem of third-party and first-party tools
 
 - **[Announcing Copilot for SQL Analytics Endpoint in Microsoft Fabric (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-copilot-for-sql-analytics-endpoint-in-microsoft-fabric/)** — We&#8217;re excited to introduce Copilot for SQL Analytics Endpoint, now in preview – a transformative, AI-powered assistant built to change how you query, explore, and analyze data within Microsoft Fabric’s SQL...
 
-## Main Discussion: Tools in Power BI
+## Main Discussion
 
 This episode centers on a comprehensive SQLBI article by Marco Russo and Alberto Ferrari that catalogs the ecosystem of tools available to Power BI developers. Mike and Tommy walk through the article and share their own experiences with many of these tools.
 

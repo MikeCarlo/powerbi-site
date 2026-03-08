@@ -39,7 +39,7 @@ Mike and Tommy talk through practical sharing strategies in the Power BI / Fabri
 - **[Fabcon Community Conference](https://azuredataconf.com/#!/)** — See link for details.
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-## Main Discussion: Sharing Without the “Who Has the File?” Problem
+## Main Discussion
 
 Sharing is easy to get *working* and surprisingly hard to get *right*. In this episode, Mike and Tommy focus on the practical decisions that make sharing predictable: what artifacts should be shared, how access should be granted, and how to structure collaboration so people can move fast without breaking each other.
 

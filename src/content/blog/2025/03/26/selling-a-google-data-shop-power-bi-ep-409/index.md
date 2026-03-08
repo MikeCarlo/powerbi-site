@@ -30,7 +30,7 @@ Mike and Tommy tackle how to sell Power BI into an organization already invested
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Selling Power BI to a Google Shop
+## Main Discussion
 
 This episode dives into a real-world scenario many consultants face — how do you pitch Power BI when the client is already deep in the Google ecosystem? Mike and Tommy share their perspectives on navigating this challenge.
 

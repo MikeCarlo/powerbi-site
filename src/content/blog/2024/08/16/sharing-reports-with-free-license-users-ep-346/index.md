@@ -37,7 +37,7 @@ Sharing Power BI reports with free-license users can be confusing — in this ep
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Sharing with Free-License Users
+## Main Discussion
 
 In this episode, the team talks through the real-world scenarios that trigger the question “can we share this report with free users?” and what the tradeoffs are across the common approaches (including organizational licensing, who needs Pro, and what happens when you embed content in other tools).
 

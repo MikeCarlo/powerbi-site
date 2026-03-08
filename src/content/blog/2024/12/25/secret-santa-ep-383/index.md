@@ -38,7 +38,7 @@ Mike, Tommy, and Seth dig into the new Organizational Apps (Org Apps) experience
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Org Apps in Microsoft Fabric
+## Main Discussion
 
 This episode is a holiday-flavored chat that quickly pivots into a deep dive on **Organizational Apps (Org Apps)**: what they are, why Microsoft introduced them, and how they differ from the classic **workspace app** experience in Power BI.
 

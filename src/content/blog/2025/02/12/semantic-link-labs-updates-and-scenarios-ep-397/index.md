@@ -45,7 +45,7 @@ Mike and Tommy break down what’s new in Semantic Link Labs and why it’s beco
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Semantic Link Labs Updates & Scenarios
+## Main Discussion
 
 Semantic Link Labs is quickly becoming a “power user’s automation layer” for Fabric and Power BI semantic models—especially if you’re already living in notebooks.
 

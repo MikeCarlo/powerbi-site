@@ -39,7 +39,7 @@ Mike and Tommy compare two practical ways to manage small-but-critical reference
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Dataflows Gen 1 vs Fabric SQL for Reference Tables
+## Main Discussion
 
 Reference tables are the unglamorous backbone of good BI: things like department lists, status mappings, scenario definitions, calendar attributes, and “friendly name” tables that drive slicers and relationships. The episode focuses on a common question:
 

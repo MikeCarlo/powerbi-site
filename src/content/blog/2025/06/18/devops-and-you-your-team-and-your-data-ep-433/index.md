@@ -47,7 +47,7 @@ The episode opens with a fun rant about **Dataflow Gen2 adding SharePoint as a f
 
 - **[Grouping and filtering in Power BI Copilot AI Instructions](https://blog.crossjoin.co.uk/2025/06/15/grouping-and-filtering-in-power-bi-copilot-ai-instructions/)** — Specify the columns returned in results and filters on rows
 
-## Main Discussion: DevOps and You, Your Team, and Your Data
+## Main Discussion
 
 Mathias Thierbach joins the show to help define DevOps in a way that makes sense for Power BI teams — especially teams that didn’t start as “software developers.”
 

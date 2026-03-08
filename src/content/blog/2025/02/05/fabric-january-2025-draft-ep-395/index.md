@@ -42,7 +42,7 @@ Mike and Tommy walk through their ‘draft’ of the Microsoft Fabric January 20
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Fabric January 2025 Update (What to Pay Attention To)
+## Main Discussion
 
 This episode is essentially Mike and Tommy doing what every Power BI / Fabric team needs to do each month: **triage the release notes** and decide what’s worth testing now versus what can wait.
 

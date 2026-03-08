@@ -42,7 +42,7 @@ Tommy brings up a few quick news items:
 
 - **Creating SQL Databases via CLI** — Microsoft published guidance showing you can create a Fabric SQL database in just three terminal commands. While it's impressively easy to spin up, Tommy and Mike caution that the back-end complexity hasn't been simplified — column naming constraints, data type gotchas, and error messages that don't always map to clear solutions still apply.
 
-## Main Discussion: Shortcut Mania
+## Main Discussion
 
 Mike and Tommy unpack three Microsoft blog articles about OneLake shortcuts and share their real-world experiences using them in production environments.
 

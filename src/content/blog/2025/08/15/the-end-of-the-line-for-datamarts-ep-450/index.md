@@ -34,7 +34,7 @@ Datamarts had a short run. Microsoft is unifying datamarts with Fabric Data Ware
 
 - **[Power BI August 2025 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-august-2025-feature-summary/?WT.mc_id=DP-MVP-5002621)** — The Power BI August 2025 Feature Summary introduces major updates in Copilot and AI, reporting, and modeling. Highlights include Copilot integration for SharePoint Online, measure description automation, and advanced...
 
-## Main Discussion: Datamarts Are Done
+## Main Discussion
 
 ### What's Happening
 

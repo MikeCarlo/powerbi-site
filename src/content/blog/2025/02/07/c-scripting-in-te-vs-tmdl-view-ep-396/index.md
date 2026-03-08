@@ -44,7 +44,7 @@ Mike and Tommy compare the classic Tabular Editor workflow—C# scripting, macro
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: C# Scripting in Tabular Editor vs TMDL View
+## Main Discussion
 
 With TMDL showing up more and more in the Power BI developer workflow (PBIP projects, Git integration, and the new TMDL view in Desktop), Mike and Tommy step back and ask the practical question: **when should you still reach for Tabular Editor + C# scripts, and when does a TMDL-first workflow win?**
 

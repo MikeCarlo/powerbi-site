@@ -37,7 +37,7 @@ Mike, Tommy, and Seth break down the November 2024 Power BI updates and talk thr
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: November Updates and the Price is Right
+## Main Discussion
 
 This episode covers what’s new in the November 2024 Power BI update and how to think about the recent pricing announcements. The team shares practical takeaways for admins and report builders—what’s immediately useful, what might change how you roll out features, and where to be cautious as licensing and cost models evolve.
 

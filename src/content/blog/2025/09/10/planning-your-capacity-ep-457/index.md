@@ -38,7 +38,7 @@ Capacity planning is one of the most asked-about topics in Fabric. Mike and Tomm
 
 - **[What’s new in Fabric Warehouse – August 2025 Recap | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/whats-new-in-fabric-warehouse-august-2025/)** — Introduction Welcome to the August 2025 edition of What&#8217;s New in Fabric Warehouse. As summer winds down, despite August being a slower month, our team continued to deliver meaningful updates. We shipped several...
 
-## Main Discussion: Capacity Planning
+## Main Discussion
 
 ### Why It Matters
 

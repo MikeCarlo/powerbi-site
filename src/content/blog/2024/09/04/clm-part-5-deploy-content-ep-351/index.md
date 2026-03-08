@@ -39,7 +39,7 @@ Content lifecycle management only works if teams can reliably move Power BI arti
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: CLM Part 5 — Deploying Content
+## Main Discussion
 
 This episode is part of the Content Lifecycle Management (CLM) series and focuses on the part that most teams feel the pain of first: deployments.
 

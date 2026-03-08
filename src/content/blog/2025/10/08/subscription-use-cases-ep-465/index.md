@@ -30,7 +30,7 @@ Listener feedback drives this follow-up episode on Power BI subscriptions. Mike 
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Subscription Use Cases
+## Main Discussion
 
 ### The Power of Push
 

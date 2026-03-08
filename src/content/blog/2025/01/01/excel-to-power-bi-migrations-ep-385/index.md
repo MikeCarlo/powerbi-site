@@ -34,7 +34,7 @@ In this episode, Mike and Seth walk through what it really takes to migrate Exce
 
 - **[Important Update coming to R and Python visuals in Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-r-py-visuals-in-power-bi/)** — Update for R/Py visuals in PBI
 
-## Main Discussion: Excel to Power BI Migrations
+## Main Discussion
 
 ### Start with Inventory, Not a Rewrite
 

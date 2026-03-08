@@ -36,7 +36,7 @@ Mike and Tommy dive into the controversial world of pie charts, inspired by a SQ
 
 - **[Using pie charts is not the end of the world - SQLBI](https://www.sqlbi.com/articles/using-pie-charts-is-not-the-end-of-the-world/)** — This article is about how rules like “avoid pie charts” can be useful for beginners, but also unhelpful in real-world scenarios with more nuance. Instea
 
-## Main Discussion: Pie Charts — Are They Really That Bad?
+## Main Discussion
 
 The centerpiece of this episode is a deep dive into the SQLBI article about pie charts. Mike and Tommy unpack the long-standing debate in the data visualization community about whether pie charts should be avoided entirely or if there's room for nuance.
 

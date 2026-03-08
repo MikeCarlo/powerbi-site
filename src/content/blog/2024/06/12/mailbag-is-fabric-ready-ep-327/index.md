@@ -17,7 +17,7 @@ MAILBAG! Is Fabric Ready? - Ep.327 - Power BI tips is back with another episode 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: MAILBAG! Is Fabric Ready? - Ep.327 - Power BI tips
+## Main Discussion
 
 ## Looking Forward
 

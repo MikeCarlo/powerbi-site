@@ -40,7 +40,7 @@ Tommy dives into his experience with the new **Prep Data for AI** feature now av
 
 - **[Automatically populate Data Agents with Semantic Model Synonyms – Data – Marc](https://data-marc.com/2025/06/04/automatically-populate-data-agents-with-semantic-model-synonyms/)** — It was only yesterday, that I wrote a blog post on Semantic Models as a source for Fabric Data Agents. Not much time has passed, since I learned that Fabric Data Agents does not (always) respect the Synonyms that...
 
-## Main Discussion: Power BI and Fabric for Small Business
+## Main Discussion
 
 A listener working with credit unions and small businesses asks whether Fabric makes sense when the organization already has SQL Server and SSRS reporting, doesn’t want to pay for premium licensing, and is currently sharing PBIX files via SharePoint.
 

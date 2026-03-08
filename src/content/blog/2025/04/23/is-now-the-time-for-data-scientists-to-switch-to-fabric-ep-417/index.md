@@ -34,7 +34,7 @@ Mike, Tommy, and guest Ginger Grant explore whether now is the right time for da
 
 - **[Deep dive into Direct Lake on OneLake and creating Direct Lake semantic models in Power BI Desktop | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-in-power-bi-desktop/?WT.mc_id=DP-MVP-5002621)** — Microsoft Fabric’s OneLake data can be visualized and analyzed in Power BI without moving any data using the new Direct Lake storage mode. . Power BI Desktop users can now create these just like any Power BI...
 
-## Main Discussion: Is It Time for Data Scientists to Move to Fabric?
+## Main Discussion
 
 With Microsoft Fabric maturing as a unified data platform, the team tackles the big question: should data scientists and data leaders be making the switch now? Guest Ginger Grant brings a Director of Data perspective to the conversation.
 

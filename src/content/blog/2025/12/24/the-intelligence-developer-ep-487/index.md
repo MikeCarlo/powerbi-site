@@ -41,7 +41,7 @@ Tommy highlights three major year-end recap articles from Microsoft, each reflec
 
 - **Power BI Year in Review** — Reflecting on the steady stream of monthly updates, Copilot enhancements, and the growing emphasis on semantic models as the keystone of the platform.
 
-## Main Discussion: The Intelligence Developer
+## Main Discussion
 
 ### The Shift from Metrics to Dimensions
 

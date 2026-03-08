@@ -37,7 +37,7 @@ Fabric Data Warehouse keeps getting more comfortable for SQL professionals. Mike
 
 - **[Useful community tools and resources for Power BI and Fabric](https://blog.crossjoin.co.uk/2025/08/24/useful-community-tools-and-resources-for-power-bi-and-fabric/)** — There are a lot of really cool free, community-developed tools and resources out there for Power BI and Fabric - so many that it's easy to miss announcements about them. In this post I thought I'd highlight a few...
 
-## Main Discussion: Warehouse Creature Comforts
+## Main Discussion
 
 ### What's New in Fabric Warehouse — July 2025
 

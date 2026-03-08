@@ -36,7 +36,7 @@ Where is Fabric Data Warehouse headed? Mike and Tommy review the public roadmap,
 
 - **[Use Fabric User Data Functions with Pandas DataFrames and Series in Notebooks | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/now-in-fabric-notebook-udf-integration-with-native-support-for-pandas-dataframes-and-series-via-apache-arrow/)** — We’ve made a major enhancement to the Notebook Integration with Fabric User Data Functions (UDFs)—you can now use Pandas DataFrames and Series as input and output types, powered by native integration with Apache...
 
-## Main Discussion: The Warehouse Roadmap
+## Main Discussion
 
 ### Where to Find It
 

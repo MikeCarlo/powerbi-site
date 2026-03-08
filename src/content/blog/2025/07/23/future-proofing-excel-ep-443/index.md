@@ -31,7 +31,7 @@ Mike and Tommy answer a mailbag question about building Excel dashboards with fu
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Future-Proofing Excel
+## Main Discussion
 
 A listener writes in: "I'm building Excel sheets for my company to use as sales metrics dashboards. Can you talk about what would make for the ideal Excel migration strategy? I want to build in a way that makes migrating easier in the future, not harder."
 

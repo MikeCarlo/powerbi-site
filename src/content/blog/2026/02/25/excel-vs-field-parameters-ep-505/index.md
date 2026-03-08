@@ -42,7 +42,7 @@ Mike and Tommy start with AI-heavy discussions, pulling from recent Fabric blogs
 
 - **[Recent data: Get back to your data faster in Fabric (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/recent-data-get-back-to-your-data-faster-in-fabric-preview/)** — How much time do you spend navigating to the same data sources when building dataflows? Data preparation is an iterative process—you often return to the same sources as you refine your dataflows, add new...
 
-## Main Discussion: AI's Impact on Development and Data Platforms
+## Main Discussion
 
 The episode opens with a spirited debate on AI's societal and professional ripple effects, sparked by Miles Deutscher's tweet on Naval's podcast. Mike and Tommy unpack how AI lowers barriers to custom tools, but question its scalability for enterprise needs.
 
@@ -58,7 +58,7 @@ Tying into "Something Big Is Happening," Tommy stresses building AI-friendly dat
 
 Frustrations surface on Fabric gaps: no built-in vector search (unlike SQL Server 2025), lagging Copilot vs. Claude. Mike teases a Vega preview for "vibe coding" visuals, ditching button-clicking for zero-effort rebuilds. Recent Data in Dataflows Gen2 gets praise for UX wins, but both call for agentic Power Query to automate mundane tasks like parameters—bridging new-user simplicity with pro efficiency.
 
-## Main Discussion: Excel vs. Field Parameters
+## Main Discussion
 
 A mailbag from Elvin highlights field parameters' Power BI exclusivity: great for dynamic slicers (metrics/measures/dimensions), but they vanish in Excel/AI/paginated reports. Mike and Tommy weigh trade-offs, advocating semantic models as multi-tool foundations over report-specific hacks.
 

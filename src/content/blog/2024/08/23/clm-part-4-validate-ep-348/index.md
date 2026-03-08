@@ -41,7 +41,7 @@ Validation is where content lifecycle management turns from a plan into a repeat
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: CLM Part 4 — Validate
+## Main Discussion
 
 This episode continues the Content Lifecycle Management (CLM) mini-series, moving into the “validate” stage — the work that ensures changes are correct, consistent, and safe to ship.
 

@@ -36,7 +36,7 @@ In this episode of the Explicit Measures podcast, Mike discuss Deployment Pipeli
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Deployment Pipeline Missing Features - Ep.330 - Power BI tips
+## Main Discussion
 
 In this episode, the team focuses on **Deployment Pipeline Missing Features - Ep.330 - Power BI tips**.
 

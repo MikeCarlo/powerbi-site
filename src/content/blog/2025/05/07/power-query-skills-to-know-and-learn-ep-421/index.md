@@ -38,7 +38,7 @@ Mike and Tommy dive into the Power Query skills every Power BI user should maste
 
 - **[Use AI to turn whiteboard sketches into pipelines - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-factory/image-to-pipeline-with-ai?WT.mc_id=DP-MVP-5002621)** — This article shows how AI can easily transform images directly to pipelines for Data Factory for Microsoft Fabric.
 
-## Main Discussion: Power Query Skills to Know and Learn
+## Main Discussion
 
 Mike and Tommy tackle one of the most important foundations in Power BI — Power Query. They discuss the skills that provide the most impact for everyday users, breaking them down by experience level and practical application.
 

@@ -37,7 +37,7 @@ In this episode, the crew walks through practical scenarios for using the OneLak
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: OneLake File Explorer Use Cases
+## Main Discussion
 
 The OneLake File Explorer makes it easier to browse and work with OneLake content using familiar file system interactions. The team discusses when it’s useful, what problems it solves (and doesn’t), and how it can speed up common Fabric tasks.
 

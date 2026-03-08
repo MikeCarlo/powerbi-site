@@ -42,7 +42,7 @@ In this episode, Mike and the team discuss **Medallion Architecture in Fabric - 
 
 
 
-## Main Discussion: Medallion Architecture in Fabric - Ep.367 - Power BI tips
+## Main Discussion
 
 The conversation dives into Medallion Architecture in Fabric - Ep.367 - Power BI tips, including practical considerations, common gotchas, and real-world tips you can use right away.
 

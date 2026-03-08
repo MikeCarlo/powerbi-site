@@ -35,7 +35,7 @@ In this episode, the crew talks through atomic design concepts and how to apply 
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Atomic Design in Reports
+## Main Discussion
 
 Atomic design helps you think in reusable building blocks (and consistent patterns) instead of one-off pages. The team breaks down how to apply the idea to report layouts, visuals, themes, and reusable components so your reports scale cleanly as requirements grow.
 

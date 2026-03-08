@@ -35,7 +35,7 @@ Part two of the accessibility deep dive. Mike and Tommy move from awareness to a
 
 - **[August 2025 Fabric Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/august-2025-fabric-feature-summary//)** — The August 2025 Fabric Feature Summary showcases several exciting updates designed to streamline workflows and enhance platform capabilities. Notably, users will benefit from the new flat list view in Deployment...
 
-## Main Discussion: Accessibility Methods & Tools
+## Main Discussion
 
 ### KeyTips for Keyboard Navigation
 

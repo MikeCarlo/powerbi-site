@@ -35,7 +35,7 @@ In this episode, Mike, Tommy, and Seth dig into OneLake and why it matters for f
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: OneLake for Fast Adoption
+## Main Discussion
 
 The discussion focuses on how OneLake can remove a lot of the overhead teams feel when data is duplicated across tools and environments. The crew shares practical ways OneLake helps centralize access, simplify governance, and speed up delivery—especially when multiple teams are collaborating across Fabric workloads.
 

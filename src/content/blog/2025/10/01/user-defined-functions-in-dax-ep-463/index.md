@@ -31,7 +31,7 @@ DAX User Defined Functions are here, and they could fundamentally change how we 
   allowfullscreen
 ></iframe>
 
-## Main Discussion: DAX UDFs
+## Main Discussion
 
 ### What Are UDFs?
 

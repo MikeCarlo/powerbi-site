@@ -48,7 +48,7 @@ Mike, Tommy, and Seth break down **filter context in DAX**—what it is, how it�
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 
-## Main Discussion: Filter Context (and why it’s *the* DAX superpower)
+## Main Discussion
 
 If there’s one concept that unlocks “I can write measures” → “I can explain measures,” it’s filter context.
 

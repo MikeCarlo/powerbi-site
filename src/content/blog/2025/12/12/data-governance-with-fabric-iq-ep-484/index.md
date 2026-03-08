@@ -37,7 +37,7 @@ Fresh off the Ignite announcements, Mike and Tommy dig into what data governance
 
 - **[Fabric IQ: The Semantic Foundation for Enterprise AI | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai/)** — AI is rapidly transforming how we work, operate, and decide, and teams will increasingly depend on it in their daily processes. But across waves of enterprise AI, from BI dashboards and data lakes to predictive...
 
-## Main Discussion: Data Governance in the Fabric IQ Era
+## Main Discussion
 
 ### The Governance Shift
 

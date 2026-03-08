@@ -42,7 +42,7 @@ Mike and Tommy tackle whether data scientists should pay attention to Power BI, 
 
 Mike and Tommy pose the question to the audience: Have you ever been vibe coding? The trend of using AI to generate code conversationally is picking up steam, and the hosts want to know if their community has jumped in.
 
-## Main Discussion: Should Data Scientists Care about Power BI?
+## Main Discussion
 
 ### The Core Question
 

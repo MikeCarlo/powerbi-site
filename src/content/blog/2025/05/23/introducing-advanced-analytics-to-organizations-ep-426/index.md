@@ -33,7 +33,7 @@ Mike and Tommy discuss how BI teams can move beyond basic bar and line charts in
 
 This week's scenario: You work for Jamie Dimon at Chase, and he insists every month on 50 printed P&L statements. Do you push back and tell him to use Power BI instead? Mike and Tommy debate when it's appropriate to challenge executive preferences on report delivery — and when it's smarter to just print the reports.
 
-## Main Discussion: Introducing Advanced Analytics to Organizations
+## Main Discussion
 
 The core question this episode tackles is one many BI professionals face: how does a BI team begin to move past basic bar charts and line charts into more advanced analytics like Pareto analysis, statistical distributions, and other sophisticated visualizations?
 

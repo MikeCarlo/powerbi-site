@@ -36,7 +36,7 @@ What Fabric feature would you conjure if you had a magic wand? Inspired by Steph
 
 - **[Now Available – A Guide: Migrating to Fabric Data Warehouse | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/migrating-to-fabric-data-warehouse-guide-now-available/)** — The Microsoft Fabric Migration Guide is now live! This comprehensive resource is designed to help you plan and execute your migration to Microsoft Fabric with confidence. Whether you&#8217;re just getting started or...
 
-## Main Discussion: Magic Wand Features
+## Main Discussion
 
 ### The Concept
 

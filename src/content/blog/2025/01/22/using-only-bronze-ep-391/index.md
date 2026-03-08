@@ -40,7 +40,7 @@ The episode opens with a FabCon 2025 heads-up: when registering, select **Micros
 
 
 
-## Main Discussion: Using Only Bronze in Fabric
+## Main Discussion
 
 The core question is simple, but the implications aren’t: *Is it ever “correct” to build a Fabric solution where you land data in Bronze and then model/report directly from it?*
 

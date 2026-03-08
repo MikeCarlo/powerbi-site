@@ -43,7 +43,7 @@ Developer experience matters—even in BI. Mike and Tommy break down what good D
 
 - [Tabular Editor UDF Tutorial](https://docs.tabulareditor.com/te3/tutorials/udfs.html) — Hands-on guide to creating and using UDFs in Tabular Editor.
 
-## Main Discussion: DevEx and UDFs
+## Main Discussion
 
 ### What Is Developer Experience in BI?
 

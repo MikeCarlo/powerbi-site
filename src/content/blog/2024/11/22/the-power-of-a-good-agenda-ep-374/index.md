@@ -35,7 +35,7 @@ Mike, Tommy, and Seth discuss why a clear meeting agenda matters, how it improve
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: The Power of a Good Agenda
+## Main Discussion
 
 A solid agenda is more than a list of topics - it is the tool that sets expectations, keeps meetings focused, and drives decisions to clear next steps. In this episode, the team breaks down how to structure agendas for recurring meetings, how to timebox discussions, and how to avoid the most common meeting failure modes (meandering conversations, unclear owners, and no follow-through).
 

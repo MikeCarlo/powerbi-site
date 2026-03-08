@@ -30,7 +30,7 @@ Mike and Tommy explore what you can accomplish with just $100 invested in Micros
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Investing $100 in Fabric and Power BI
+## Main Discussion
 
 Mike and Tommy dive into the practical question of what you can do if you only have $100 to invest in the Microsoft Fabric and Power BI ecosystem. This is a great exploration for newcomers or budget-conscious teams looking to get started.
 

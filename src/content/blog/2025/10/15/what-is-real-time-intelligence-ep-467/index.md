@@ -37,7 +37,7 @@ Real-Time Intelligence is more than just fast dashboards—it's a fundamentally 
 
 - **[OneLake Table APIs (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/now-in-preview-onelake-table-apis/)** — Microsoft OneLake is the unified data lake for your entire organization, built into Microsoft Fabric. It provides a single, open, and secure foundation for all your analytics workloads – eliminating data silos and...
 
-## Main Discussion: The Scope of Real-Time Intelligence
+## Main Discussion
 
 ### What RTI Actually Is
 

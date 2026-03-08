@@ -37,7 +37,7 @@ This episode skips the usual news segment and goes straight into the main topic.
 
 
 
-## Main Discussion: Adopting Fabric in Your Organization
+## Main Discussion
 
 The core of the episode is a framework for “where you are” in your adoption journey, because the right next step depends heavily on your internal posture.
 

@@ -36,7 +36,7 @@ Mike and Tommy dive into the new DAX Performance Testing notebook from Microsoft
 - **[Tabular Editor Blog](https://tabulareditor.com/blog)** — Latest news and insights, blog posts on Tabular Editor
 
 
-## Main Discussion: DAX Performance Testing with Fabric Toolbox
+## Main Discussion
 
 Mike and Tommy take a deep look at a new open-source tool from Microsoft's Azure Data Insights & Analytics team — the DAX Performance Testing notebook, available in the [Fabric Toolbox](https://github.com/microsoft/fabric-toolbox) GitHub repo.
 

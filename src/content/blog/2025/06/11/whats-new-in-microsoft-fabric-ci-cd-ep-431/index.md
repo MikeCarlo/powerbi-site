@@ -37,7 +37,7 @@ In Episode 431, Mike and Tommy break down what’s new with Microsoft Fabric CI/
 
 - **[Now available: two new Copilot experiences | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/now-available-two-new-copilot-experiences/)** — This week, we&#8217;re excited to announce the availability of two new Copilot experiences in Power BI. First, the Chat with your Data experience, which we announced two weeks ago at Build is fully rolled out....
 
-## Main Discussion: What’s new with Fabric CI/CD
+## Main Discussion
 
 Mike and Tommy use Microsoft’s May 2025 update as a jumping-off point to discuss how Fabric CI/CD is evolving from “nice-to-have backups” into a more complete path toward real engineering practices in analytics. A key theme: **CI/CD is not DevOps**—it’s one component of a broader process that includes people, policy, and workflow.
 

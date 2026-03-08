@@ -31,7 +31,7 @@ Workspace design in Fabric gets messy fast. In this episode, Mike and Tommy brea
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Workspace Design Patterns
+## Main Discussion
 
 ### The Problem: Workspace Sprawl
 

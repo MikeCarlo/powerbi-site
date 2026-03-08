@@ -31,7 +31,7 @@ In this episode of the Explicit Measures Podcast, we discuss user input tables a
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 
-## Main Discussion: User Input Tables
+## Main Discussion
 
 
 Highlights from the conversation, key tips, and practical takeaways from the episode.

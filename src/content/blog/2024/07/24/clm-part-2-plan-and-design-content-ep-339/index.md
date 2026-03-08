@@ -40,7 +40,7 @@ Mike, Tommy, and Seth continue the Content Lifecycle Management (CLM) series wit
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: CLM Part 2 — Plan & Design Content
+## Main Discussion
 
 This episode continues the CLM series by digging into what it looks like to plan and design content with the end in mind: who the audience is, how content should be organized, what “done” means, and how you set yourself up for sustainable iteration.
 

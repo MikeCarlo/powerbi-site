@@ -41,7 +41,7 @@ This episode’s news is all about tightening the loop between **data governance
 
 - **[The next wave of Azure innovation: Azure AI Foundry, intelligent data, and more | Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/the-next-wave-of-azure-innovation-azure-ai-foundry-intelligent-data-and-more/)** — Learn more on how Azure in helping to shape your future with Azure AI Foundry, your favorite developer tools, Azure app platform, and intelligent data.
 
-## Main Discussion: Microsoft Fabric & Azure AI Foundry
+## Main Discussion
 
 The conversation ties together two sides of the same challenge: **you can’t responsibly build AI on top of data you can’t govern**, and you can’t modernize data platforms without anticipating how teams will want to operationalize AI.
 

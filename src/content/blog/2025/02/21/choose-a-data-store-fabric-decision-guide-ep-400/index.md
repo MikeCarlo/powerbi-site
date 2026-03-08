@@ -36,7 +36,7 @@ Mike and Tommy celebrate episode 400 and dive into the Microsoft Fabric decision
 
 - **[Introducing fabric-cicd Deployment Tool | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-cicd-deployment-tool/)** — We’re excited to announce the preview of the Fabric CI/CD Python library! Recognizing the importance of CI/CD in our success, we decided to open source our project to share with the community. As part of the Azure...
 
-## Main Discussion: Fabric Data Store Decision Guide
+## Main Discussion
 
 Mike and Tommy reflect on reaching 400 episodes — a milestone that highlights just how much has changed in the Power BI and Fabric ecosystem over the past four years. The main topic dives into Microsoft's official decision guide for choosing the right data store in Fabric.
 

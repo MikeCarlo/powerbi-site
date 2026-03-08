@@ -39,7 +39,7 @@ Mike and Tommy dive into the February 2026 feature updates for Power BI and Fabr
 
 - **[Input slicer: Filter reports and collect user input (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/)** — Previously known as the &#8220;text slicer&#8221; while in preview, this visual lets you type or paste values directly into a slicer to filter your report—no scrolling or searching through long lists required. What...
 
-## Main Discussion: Filter Overload
+## Main Discussion
 
 ### The February Feature Drop
 

@@ -41,7 +41,7 @@ Mike and Tommy break down how the Power BI Skills Matrix concept translates to t
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Skills Matrix in the Fabric era
+## Main Discussion
 
 The main conversation focuses on how teams can use a skills matrix to make expectations explicit (what “good” looks like) and to create a shared path for learning and delivery — especially now that Fabric expands the landscape beyond just report-building. Mike and Tommy talk through what made the original matrix useful, where it needs to evolve, and how to keep it practical for real consulting and internal enablement.
 

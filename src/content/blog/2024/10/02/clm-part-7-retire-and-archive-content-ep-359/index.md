@@ -36,7 +36,7 @@ In this episode, Mike and Tommy wrap up part 7 of their CLM series by focusing o
 
 - **[Native execution engine for Fabric Data Engineering - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/native-execution-engine-overview)** — How to enable and use the native execution engine to execute Apache Spark jobs for faster and cheaper data processing in Microsoft Fabric.
 
-## Main Discussion: Retire & Archive Power BI Content (CLM)
+## Main Discussion
 
 This episode is the final segment in their Content Lifecycle Management (CLM) series, focusing on the end of the lifecycle: how to decide when a report, dataset, or solution should be retired, what “archiving” actually means, and how to do it safely.
 

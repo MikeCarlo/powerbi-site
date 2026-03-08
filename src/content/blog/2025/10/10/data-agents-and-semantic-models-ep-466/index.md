@@ -31,7 +31,7 @@ Data Agents are only as good as the semantic models they sit on top of. Mike and
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Data Agents Meet Semantic Models
+## Main Discussion
 
 ### Why Semantic Models Matter for AI
 

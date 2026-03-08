@@ -35,7 +35,7 @@ In this Thanksgiving week mailbag episode, Mike and Tommy tackle a real-world mo
 
 An education consultant in Ohio supports 70 school districts with 120+ Power BI dashboards covering state test results, chronic absenteeism, and early warning systems. They've transitioned to the Power BI app experience, organizing dashboards by district using audiences for ~9,000 users. The question: what's the most automated and scalable way to monitor app-level usage—specifically how often each district accesses their dashboards and how many users engage over time?
 
-## Main Discussion: Monitoring Power BI at Scale
+## Main Discussion
 
 ### The Built-In Usage Metrics
 

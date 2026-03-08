@@ -31,7 +31,7 @@ In this Christmas special of Explicit Measures, Mike and Tommy play Secret Santa
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Feature Wishlists — Secret Santa Style
+## Main Discussion
 
 Mike and Tommy take turns exchanging feature gift ideas for Power BI and Fabric, treating it like a Secret Santa exchange. The format is playful, but the ideas are genuinely useful product feedback.
 

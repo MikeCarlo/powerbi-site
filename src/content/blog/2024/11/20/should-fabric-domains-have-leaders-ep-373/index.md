@@ -34,7 +34,7 @@ Mike, Tommy, and Seth discuss whether Microsoft Fabric domains should have dedic
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Should Fabric Domains Have Leaders?
+## Main Discussion
 
 Domains are intended to bring structure and clarity to Fabric workspaces, but they only deliver value when there is real ownership and a clear operating model. In this episode, the team digs into what a domain leader actually does, when that role makes sense, and how to avoid domains becoming just another layer of admin overhead.
 

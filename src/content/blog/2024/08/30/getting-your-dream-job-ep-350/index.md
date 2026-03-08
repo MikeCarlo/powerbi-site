@@ -38,7 +38,7 @@ Landing the right role in analytics isn’t just luck—it's a mix of clarity, p
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Getting Your Dream Job
+## Main Discussion
 
 Getting hired is part skill, part strategy, and part consistency. The group talks through what actually moves the needle when you’re looking for a new role in analytics / BI, including:
 

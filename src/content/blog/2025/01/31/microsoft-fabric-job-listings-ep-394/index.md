@@ -35,7 +35,7 @@ FabCon 2025 is on the horizon, and the team shares a partner discount tip for re
 
 - **[Get started with goals in Power BI - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/create-reports/service-goals-introduction?WT.mc_id=DP-MVP-5002621)** — Learn about goals and scorecards in Power BI to track key business objectives, promote accountability, and improve visibility for teams and initiatives.
 
-## Main Discussion: Why Fabric Isn’t Showing Up in Job Postings (Yet)
+## Main Discussion
 
 The mailbag question is simple on the surface: if Fabric is such a big bet from Microsoft, why don’t we see it called out more often on LinkedIn/Indeed job listings?
 

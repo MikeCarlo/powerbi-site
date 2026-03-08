@@ -36,7 +36,7 @@ Mike and Tommy compare Gen 1 vs Gen 2 dataflows, why the Gen 2 experience still 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Gen 1 vs. Gen 2 Dataflows
+## Main Discussion
 
 Gen 2 dataflows are positioned as the modern path forward, but the team keeps coming back to the same question: do they actually make day-to-day work easier yet? In this episode, Mike and Tommy walk through what still feels missing, what workflows remain smoother in Gen 1, and what would need to change for Gen 2 to be the default recommendation.
 

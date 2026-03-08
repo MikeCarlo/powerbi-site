@@ -58,7 +58,7 @@ Mike notices Azure MCP servers appearing as VS Code notifications:
 - Following the Fabric real-time analytics MCP
 - Expanding programmatic AI access to Azure services
 
-## Main Discussion: Evolution of an Analyst
+## Main Discussion
 
 ### Power BI Turns 10
 

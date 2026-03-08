@@ -35,7 +35,7 @@ Should you use composite models or reusable datasets to share semantic model log
 
 Listener feedback highlights **Translytical Task Flows** as a standout Fabric feature—combining transactional and analytical workloads in a streamlined flow.
 
-## Main Discussion: Composite Models vs. Reusable Datasets
+## Main Discussion
 
 ### The Problem: Model Reuse
 

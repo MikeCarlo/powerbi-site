@@ -43,7 +43,7 @@ Mike and Tommy kick off a series on CLM (lifecycle management) for Power BI and 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
 
-## Main Discussion: CLM Part 1 - Overview
+## Main Discussion
 
 In this episode, Mike and Tommy introduce the first part of a CLM (lifecycle management) series and discuss why repeatable deployment practices matter as teams scale Power BI and Fabric solutions. They touch on common pain points teams run into, what to standardize early, and how roles and responsibilities evolve as the platform expands.
 

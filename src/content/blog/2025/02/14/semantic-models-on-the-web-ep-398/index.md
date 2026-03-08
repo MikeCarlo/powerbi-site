@@ -45,7 +45,7 @@ Mike and Tommy dig into what it means for Power BI semantic models to move ‘on
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Semantic Models on the Web
+## Main Discussion
 
 The big theme of this episode is that the semantic model is no longer something you only shape inside a PBIX on your laptop—it’s increasingly something you **build, edit, and govern in the service**.
 

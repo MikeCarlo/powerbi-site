@@ -34,7 +34,7 @@ In this episode, Mike, Tommy, and Seth talk through what makes a team effective 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Is an Effective Team Crucial for Success?
+## Main Discussion
 
 The conversation focuses on the practical side of team effectiveness: setting clear responsibilities, building trust, and creating lightweight processes that keep work moving. The crew shares what they’ve seen work (and fail) in real projects, and how to make collaboration easier for both report builders and stakeholders.
 

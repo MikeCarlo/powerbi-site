@@ -40,7 +40,7 @@ Can you model a semantic model without touching the keyboard? Mike and Tommy exp
 
 - **[Preparing for the General Availability of the new Card visual | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/prepare-for-new-card-visual/)** — One change may impact the behavior and look of the new card visual in existing reports. The callout size and background setting will be available with or without a divider after GA.
 
-## Main Discussion: AI-Assisted Modeling
+## Main Discussion
 
 ### Context Rot: When AI Loses the Plot
 

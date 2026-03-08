@@ -35,7 +35,7 @@ In this episode, Mike and Tommy dig into how to design practical Power BI worksp
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Crafting Power BI Workspace Policies
+## Main Discussion
 
 This episode focuses on a part of governance that’s easy to hand-wave and hard to execute: defining workspace policies that help people move fast while still keeping the environment secure, understandable, and supportable.
 

@@ -52,7 +52,7 @@ A smaller article with a big impact: automatic garbage collection for Fabric war
 
 - **[Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses/)** — In the era of Artificial Intelligence, organizations generate and accumulate large volumes of information every second. From transactional records to user logs and analytics data warehouses serve as a single source...
 
-## Main Discussion: Adopting Copilot Standalone for Power BI
+## Main Discussion
 
 ### What Copilot Standalone is (and why it matters)
 

@@ -45,7 +45,7 @@ Key highlights from the monthly update:
 
 [Read the full summary →](https://blog.fabric.microsoft.com/blog/fabric-july-2025-feature-summary?ft=All&WT.mc_id=DP-MVP-5002621)
 
-## Main Discussion: AI in Power BI — Time to Pay Attention
+## Main Discussion
 
 ### The SQLBI Article
 

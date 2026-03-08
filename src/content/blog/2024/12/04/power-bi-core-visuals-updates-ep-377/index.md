@@ -39,7 +39,7 @@ Mike, Tommy, and Seth break down what’s new (and what’s changing) in **Power
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 
-## Main Discussion: Core Visuals Updates
+## Main Discussion
 
 Power BI’s built-in visuals keep getting better—but that also means features and behaviors can shift over time. In this episode, the crew talks through what they’re seeing in the **core visuals** space and what report builders should watch for.
 

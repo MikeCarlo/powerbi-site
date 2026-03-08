@@ -30,7 +30,7 @@ Lakehouse or Warehouse? It's one of the most common questions in Microsoft Fabri
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Lakehouse vs. Warehouse
+## Main Discussion
 
 ### The Core Decision
 

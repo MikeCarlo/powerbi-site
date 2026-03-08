@@ -39,7 +39,7 @@ Mike and Tommy explore whether recent Fabric updates change how we should design
 
 - **[Deep dive into Direct Lake on OneLake and creating Direct Lake semantic models in Power BI Desktop | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-in-power-bi-desktop/?WT.mc_id=DP-MVP-5002621)** — Microsoft Fabric’s OneLake data can be visualized and analyzed in Power BI without moving any data using the new Direct Lake storage mode. . Power BI Desktop users can now create these just like any Power BI...
 
-## Main Discussion: Rethinking Lakehouse Design
+## Main Discussion
 
 With Direct Lake now creatable from Power BI Desktop and workspace item limits coming into play, Mike and Tommy dig into whether the way we architect lakehouses needs to change. The conversation centers on how these new capabilities and constraints shift design decisions for Fabric practitioners.
 

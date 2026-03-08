@@ -34,7 +34,7 @@ Mike and Tommy tackle a mailbag question from Mehmet about best practices for ma
 
 This episode centers on a great mailbag question from listener Mehmet, who asks: what's the best practice when working with multiple semantic models in Power BI? Specifically, should you use composite models to join data across different models?
 
-## Main Discussion: Managing Multiple Datasets
+## Main Discussion
 
 ### When to Use Multiple Models
 

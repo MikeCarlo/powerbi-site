@@ -36,7 +36,7 @@ January’s Power BI feature wave is packed—there are meaningful updates acros
 
 - **[Power BI January 2025 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-january-2025-feature-summary/)** — Welcome to the January 2025 update! Get ready to elevate your data analysis experience! We’re thrilled to announce a series of powerful new features designed to make exploring your data easier and more intuitive than...
 
-## Main Discussion: Using Only Bronze
+## Main Discussion
 
 The episode’s core topic is the temptation to stop at Bronze: ingest raw data, expose it, and build reports immediately. Sometimes that’s a pragmatic move—especially for prototypes, internal-only analysis, or teams that need answers before the “perfect pipeline” is built.
 

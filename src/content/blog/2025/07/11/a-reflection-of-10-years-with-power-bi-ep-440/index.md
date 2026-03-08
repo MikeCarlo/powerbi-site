@@ -34,7 +34,7 @@ Mike and Tommy celebrate Power BI's 10th anniversary with a reflection on the jo
 
 - **Tips+ announcement** — Updates and news from the Tips+ platform.
 
-## Main Discussion: 10 Years with Power BI
+## Main Discussion
 
 Power BI turns 10, and Mike and Tommy take the opportunity to reflect on a decade of working with the platform. From the earliest versions of Power BI Designer through the explosion of custom visuals, the introduction of Premium, the rise of dataflows, and now the Fabric era — it's been a wild ride.
 

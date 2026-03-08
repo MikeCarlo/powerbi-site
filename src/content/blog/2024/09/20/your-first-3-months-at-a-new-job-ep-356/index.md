@@ -37,7 +37,7 @@ This episode is more of a practical discussion than a news roundup, so we’re k
 
 
 
-## Main Discussion: Your First 90 Days at a New Job
+## Main Discussion
 
 A big theme of the episode is that early success is less about “being the smartest person in the room” and more about learning the organization, building trust, and choosing the right first wins.
 

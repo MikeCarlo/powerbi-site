@@ -41,7 +41,7 @@ If you had to rank Fabric features into a pyramid, what sits at the top? Mike an
 - **[TMDL view (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/tmdl-view-generally-available/)** — TMDL view is now generally available in Power BI Desktop!
 
 
-## Main Discussion: The Feature Pyramid
+## Main Discussion
 
 Mike and Tommy build a pyramid with the most important Fabric feature at the peak:
 

@@ -35,7 +35,7 @@ In this episode, Mike and the team discuss **Beginner, Intermediate, Advanced - 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Beginner, Intermediate, Advanced - Ep.368 - Power BI tips
+## Main Discussion
 
 The conversation dives into Beginner, Intermediate, Advanced - Ep.368 - Power BI tips, including practical considerations, common gotchas, and real-world tips you can use right away.
 

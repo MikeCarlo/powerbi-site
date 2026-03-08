@@ -34,7 +34,7 @@ In this episode, Mike and Tommy continue their Content Lifecycle Management seri
 
 - **[Power BI implementation planning: Support and monitor content - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-support-monitor)** — This article helps you to support and monitor content as part of managing the content lifecycle.
 
-## Main Discussion: Support & Monitor Content (CLM)
+## Main Discussion
 
 Mike and Tommy break down what it means to "own" Power BI content after it ships: monitoring usage and performance, managing incidents, tightening governance, and building feedback loops so the content actually gets better over time.
 

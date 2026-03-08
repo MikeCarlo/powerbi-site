@@ -30,7 +30,7 @@ Accessibility in Power BI isn't optional—it's essential. Mike and Tommy begin 
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Report Accessibility Fundamentals
+## Main Discussion
 
 ### Why Accessibility Matters in BI
 

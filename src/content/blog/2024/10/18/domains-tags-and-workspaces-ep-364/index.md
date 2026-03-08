@@ -31,7 +31,7 @@ Welcome back to the Explicit Measures Podcast. In Episode 364, Mike Carlo and th
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Domains, Tags, & Workspaces- Ep.364 - Power BI tips
+## Main Discussion
 
 ## Looking Forward
 

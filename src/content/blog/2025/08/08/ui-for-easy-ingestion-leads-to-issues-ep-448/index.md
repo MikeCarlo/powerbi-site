@@ -31,7 +31,7 @@ Easy-to-use data ingestion UIs are great—until they're not. Mike and Tommy exp
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Copy Job and Data Ingestion
+## Main Discussion
 
 ### Copy Job Updates
 

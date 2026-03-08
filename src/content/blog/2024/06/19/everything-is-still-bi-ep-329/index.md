@@ -25,7 +25,7 @@ In this episode of Explicit Measures, we discuss Everything Is Still BI and what
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Everything Is Still BI
+## Main Discussion
 
 ## Looking Forward
 

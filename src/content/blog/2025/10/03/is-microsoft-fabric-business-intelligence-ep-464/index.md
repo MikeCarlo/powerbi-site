@@ -39,7 +39,7 @@ Is Microsoft Fabric a BI tool? A data engineering platform? Both? Neither? Mike 
 
 - **[Unlocking the Next Generation of Data Transformations with Dataflow Gen2 – FabCon Europe 2025 Announcements | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/unlocking-the-next-generation-of-data-transformations-with-dataflow-gen2-fabcon-europe-2025-announcements/)** — At Microsoft, we believe that empowering every user to shape and transform data should be simple, powerful, and cost-effective. A major wave of enhancements is now available for Dataflow Gen2, the next-generation...
 
-## Main Discussion: Fabric's Identity
+## Main Discussion
 
 ### The BI Professional's Dilemma
 

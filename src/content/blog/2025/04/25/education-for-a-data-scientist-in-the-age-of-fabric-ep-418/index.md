@@ -30,7 +30,7 @@ Mike, Tommy, and guest Ginger Grant explore what education for a data scientist 
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Education for Data Scientists
+## Main Discussion
 
 This episode brings guest Ginger Grant into the conversation for a deep dive into a question many in the data community are asking: where should an aspiring data scientist get their education today? With Microsoft Fabric reshaping the data platform landscape, the traditional path of a four-year degree may not be the only — or even the best — route anymore.
 

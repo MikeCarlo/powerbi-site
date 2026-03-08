@@ -38,7 +38,7 @@ Mike and Tommy refocus on DAX after weeks of Fabric talk. They cover the Power B
 
 Mike and Tommy share observations from real-world consulting engagements about how companies are approaching Fabric adoption — the hesitations, the excitement, and the practical realities of transitioning from Pro and Premium Per User environments.
 
-## Main Discussion: What's Up with DAX?
+## Main Discussion
 
 After weeks of heavy Fabric and architecture discussions, Mike and Tommy bring it back to the core of Power BI: DAX. They explore the current state of the language, how it fits in the Fabric era, and what the future holds for DAX developers.
 

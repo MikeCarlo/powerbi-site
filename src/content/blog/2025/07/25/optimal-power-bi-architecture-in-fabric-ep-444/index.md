@@ -34,7 +34,7 @@ Mike and Tommy tackle a mailbag question about the optimal Power BI architecture
   allowfullscreen
 ></iframe>
 
-## Main Discussion: The Optimal Architecture in Fabric
+## Main Discussion
 
 A listener named Balaz wrote in asking about the ideal architecture for dataset and report development in the Fabric era. In the pre-Fabric world, the standard approach was: collect data into dataflows, create shared datasets from those dataflows, then build reports on top. Does that still hold?
 

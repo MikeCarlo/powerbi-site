@@ -37,7 +37,7 @@ In Episode 436 of Explicit Measures, Mike and Tommy welcome back Mathias Thierba
 Before the main topic, Tommy highlights a new community project from Santosh R. — a Fabric Analytics MCP (Model Context Protocol) server that lets AI tools like Claude, Cursor, and VS Code interact directly with your Fabric environment.
 
 
-## Main Discussion: CI/CD Branching Strategies
+## Main Discussion
 
 The heart of the episode tackles a topic the hosts have received tons of questions about: what branching strategy should my team use? Mathias brings 20 years of development experience to the table, and the conversation moves from fundamentals to Fabric-specific challenges.
 

@@ -35,7 +35,7 @@ Mike and Tommy explore the concept of numeracy — how well does your team actua
 
 Mike and Tommy discuss what a skills matrix looks like in the Fabric era — how do you assess where your team stands and what skills they need to develop as the platform evolves?
 
-## Main Discussion: Numeracy and Data Literacy
+## Main Discussion
 
 The core question: How well does your team understand analytics, and can we test for it? Mike and Tommy reference a [numeracy indicator tool from the Government of Canada](https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/tools/numeracy-indicator.html) as a starting point for thinking about baseline data literacy.
 

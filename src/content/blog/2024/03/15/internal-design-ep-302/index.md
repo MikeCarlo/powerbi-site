@@ -36,7 +36,7 @@ Mike and Tommy dig into internal design: how to build Power BI/Fabric solutions 
 - **[Internal Design: Success Requires Form and Function | Nightingale](https://nightingaledvs.com/internal-design-success-requires-form-and-function/)** — Our first public release of EdWise in summer of 2015 included this mapping functionality.
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-## Main Discussion: Internal Design That Scales
+## Main Discussion
 
 A good internal BI solution isn’t just a set of reports — it’s a product your organization has to live with. In this episode, Mike and Tommy talk through the practical design choices that make Power BI and Fabric solutions easier to operate over time: clarity of ownership, consistent patterns, and a user experience that’s predictable.
 

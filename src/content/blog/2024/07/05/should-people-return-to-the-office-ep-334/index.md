@@ -46,7 +46,7 @@ Mike, Seth, and Tommy dig into the return-to-office debate — what mandates get
 
 
 
-## Main Discussion: Should People Return to the Office?
+## Main Discussion
 
 In this episode, Mike, Seth, and Tommy discuss the realities behind return-to-office mandates and the tradeoffs teams face when deciding between in-office, hybrid, or remote work. They cover the talent and productivity considerations highlighted in the linked Gartner article, share practical perspectives from client work, and talk through how leaders can use data to make (and communicate) better decisions.
 

@@ -43,7 +43,7 @@ Mike and Tommy break down the biggest announcements from FabCon 2025, covering a
 
 - **[Entelexos](https://www.entelexos.com/)** — Entelexos is a Data as a Service embedded solution for Power BI reports.
 
-## Main Discussion: FabCon 2025 Recap
+## Main Discussion
 
 Mike and Tommy dive into the highlights from FabCon 2025 in Las Vegas, unpacking what the announcements mean for the Power BI and Fabric community.
 

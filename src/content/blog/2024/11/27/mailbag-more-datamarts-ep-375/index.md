@@ -35,7 +35,7 @@ Mike, Tommy, and Seth dig into listener questions - focusing on datamarts, citiz
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Mailbag - More Datamarts
+## Main Discussion
 
 This episode is a classic mailbag format: the team works through listener prompts and clarifies a few recurring themes - especially what "citizen developer" means in the Power BI/Fabric world, and how tooling choices change based on access, scale, and ownership.
 

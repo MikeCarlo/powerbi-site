@@ -37,7 +37,7 @@ Semantic modeling is moving to the browser. In this episode, Mike and Tommy reac
 
 - **[Use semantic model version history - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/service-semantic-model-version-history)** — Learn how to access and recover items from semantic models using semantic model version history.
 
-## Main Discussion: Modeling in the Browser
+## Main Discussion
 
 ### Why Web Modeling Matters
 

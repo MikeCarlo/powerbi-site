@@ -39,7 +39,7 @@ This episode is centered on one big theme: **Fabric is expanding beyond “lakeh
 
 - **[SQL database in Fabric - SQLBI](https://www.sqlbi.com/blog/marco/2024/11/23/sql-database-in-fabric/)** — In the mass of announcements made at Microsoft Ignite, I want to mention the SQL database in Fabric, which finally closes a gap we had in Power BI for many
 
-## Main Discussion: Fabric SQL Databases — where they fit and what changes
+## Main Discussion
 
 With **SQL databases now showing up as a first-class citizen inside Fabric**, the conversation focuses on the “now what?” question: how should teams think about architecture and workload placement when they have *both* lakehouse-style patterns and a relational database option in the same platform?
 

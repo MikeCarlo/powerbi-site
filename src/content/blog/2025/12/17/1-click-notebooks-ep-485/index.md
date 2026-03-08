@@ -39,7 +39,7 @@ Mike and Tommy unpack the new 1-click notebook feature that lets you launch a Fa
 
 - **[What is semantic link? - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-science/semantic-link-overview)** — Get an overview of semantic link, which lets you connect semantic models to Synapse Data Science in Microsoft Fabric.
 
-## Main Discussion: 1-Click Notebooks
+## Main Discussion
 
 ### What Are 1-Click Notebooks?
 

@@ -38,7 +38,7 @@ In this mailbag episode, Mike and Tommy dig into why Power BI self-service adopt
 
 - **[Introducing the New Feature in Lakehouse Connector in Fabric Data Factory: Schema Support for Reading and Writing Data | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-the-new-feature-in-lakehouse-connector-in-fabric-data-factory-schema-support-for-reading-and-writing-data/)** — Fabric Lakehouse supports the creation of custom schemas. Schemas allow users to group tables together for better data discovery, access control, and more. This is now a Preview feature in Fabric. Learn more here. We...
 
-## Main Discussion: Self-Service Power BI That Actually Gets Used
+## Main Discussion
 
 Self-service BI isn’t just “give people Desktop and let them cook.” Mike and Tommy unpack why adoption stalls after the initial excitement and what to do about it.
 

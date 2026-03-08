@@ -35,7 +35,7 @@ Mike and Tommy dig into a very real Fabric pain point: connections that get crea
 
 - **[Enhance data prep with AI-powered capabilities in Data Wrangler | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/enhance-data-prep-with-ai-powered-capabilities-in-data-wrangler-preview//)** — With AI-powered capabilities in Data Wrangler, you can now do even more to accelerate exploratory analysis and data preparation in Fabric.
 
-## Main Discussion: Who Owns the Connection?
+## Main Discussion
 
 This episode starts from a mailbag question many teams will recognize: one person creates a connection for a Fabric pipeline, another developer opens the pipeline and gets a warning that they don’t have permissions for *a connection they can’t even see*. From there, Mike and Tommy unpack how connections have evolved, why they’re tricky in Fabric, and how to create a workable governance model today.
 

@@ -37,7 +37,7 @@ Mike and Tommy break down the biggest DAX and semantic model announcements from 
 
 - **[Optimizing for CI/CD in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/optimizing-for-ci-cd-in-microsoft-fabric/)** — For nearly three years, Microsoft’s internal Azure Data team has been developing data engineering solutions using&nbsp;Microsoft Fabric. Throughout this journey, we’ve refined our&nbsp;Continuous Integration and...
 
-## Main Discussion: DAX and Semantic Model Announcements at FabCon 2025
+## Main Discussion
 
 Mike and Tommy dig into Marco Russo's comprehensive SQLBI blog post covering the major DAX and semantic model announcements from the Fabric Conference 2025. This is one of those episodes where the announcements are genuinely game-changing for how Power BI practitioners will work going forward.
 

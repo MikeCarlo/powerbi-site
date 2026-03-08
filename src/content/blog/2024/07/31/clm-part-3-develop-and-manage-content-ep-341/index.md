@@ -41,7 +41,7 @@ In this episode, the team continues the Content Lifecycle Management (CLM) serie
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: CLM Part 3 — Develop & Manage Content
+## Main Discussion
 
 This episode continues the CLM series with an emphasis on how teams actually build content, promote changes, and avoid “wild west” report development. The crew discusses practical development workflows, where standards help (and where they don’t), and how you can keep Power BI work moving without breaking downstream users.
 

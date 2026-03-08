@@ -52,7 +52,7 @@ The first-ever Fabric Notebooks Competition for Power BI:
 
 [Learn more →](https://powerbi.microsoft.com/en-us/blog/introducing-the-first-ever-fabric-notebooks-competition-for-power-bi/)
 
-## Main Discussion: Translytical Task Flows
+## Main Discussion
 
 ### What Is Translytical?
 

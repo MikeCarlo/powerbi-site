@@ -26,7 +26,7 @@ Here’s the latest episode of the Explicit Measures Podcast—jump in for the n
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Creative Solutions & Data Products - Power BI tips
+## Main Discussion
 
 - Key takeaways and highlights coming soon.
 

@@ -39,7 +39,7 @@ This episode is all about a familiar problem—**every report defines “the KPI
 
 - **[Announcing Metrics Sets are widely available in Preview | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-metrics-sets-are-widely-available-in-public-preview/)** — The blog post introduces the Metric Sets Public Preview, a feature designed to enhance metric management across organizations by providing a centralized, consistent, and trusted metric system. Key benefits include...
 
-## Main Discussion: Metric sets (and why they matter)
+## Main Discussion
 
 Metric sets are about moving beyond “measures hidden inside a model” and toward a more intentional **productized KPI layer**—where definitions, ownership, and consumption are first-class.
 

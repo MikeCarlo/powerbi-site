@@ -35,7 +35,7 @@ Deployment pipelines are getting a UI overhaul, and it changes how teams compare
 
 - **[Announcing TMDL support for the ALM Toolkit | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-tmdl-support-for-the-alm-toolkit/)** — Explore the latest features of the ALM Toolkit! Our new update adds coloring support for TMDL, allowing you to view tabular model metadata in a user-friendly, YAML-like syntax. Enhance your Power BI experience and...
 
-## Main Discussion: Deployment Pipelines for Business Teams
+## Main Discussion
 
 This episode focuses on making deployment pipelines practical for real-world teams: the folks who need a consistent way to move content from dev → test → prod without creating a brittle “CI/CD shrine” that only one person understands.
 

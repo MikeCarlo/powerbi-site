@@ -39,7 +39,7 @@ Who owns the ontology? In this episode, Mike and Tommy dig into the practical re
 
 - **ChatGPT App Marketplace Launch** — OpenAI launched its app marketplace, allowing developers to integrate services like Booking.com, Canva, and others directly into ChatGPT. Mike sees this as a strategic inflection point—potentially the "beginning of the end" for ChatGPT as a standalone tool, as it evolves into a platform play with monetization and advertising implications.
 
-## Main Discussion: Backwards Ontology — Who Builds It?
+## Main Discussion
 
 ### The AI Demand Wave
 

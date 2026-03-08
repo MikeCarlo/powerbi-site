@@ -40,7 +40,7 @@ No formal news segment this week — the hosts jumped straight into beat-from-th
 
 
 
-## Main Discussion: DataOps is the Future of Power BI Teams
+## Main Discussion
 
 Mathias Thierbach from Navata joins Mike and Tommy to break down what DataOps actually means and why it matters for Power BI and Fabric teams. The conversation spans from foundational concepts to the role of AI in accelerating adoption.
 

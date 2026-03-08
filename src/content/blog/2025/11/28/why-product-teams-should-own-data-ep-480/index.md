@@ -34,7 +34,7 @@ Do you fix data chaos by building a “Center of Excellence”… or by killing 
 
 - [Kill Your Data Team: Why Product Teams Should Own Data](https://medium.com/dashboards-suck/kill-your-data-team-why-product-teams-should-own-data-bddd991dcff8) — The article argues that “data centers of excellence” frequently turn into expensive silos: long request queues, insights arriving too late, and constant infrastructure work that never seems to land business value. The alternative: embed data professionals directly into product teams so they’re closer to context and can deliver outcomes faster.
 
-## Main Discussion: Centralized vs. Embedded Data Ownership
+## Main Discussion
 
 ### Why Central Teams Become Bottlenecks
 

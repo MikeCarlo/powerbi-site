@@ -34,7 +34,7 @@ Mike and Tommy reflect on the journey of a citizen developer growing with Power 
 
 - **[Fabric February 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2025-feature-summary/)** — Welcome to the Fabric 2025 update There are a lot of exciting features for you this month! Here are some highlights: In Power BI, Explore from Copilot visual answers which lets you do easy ad-hoc exploration. In Data...
 
-## Main Discussion: The Citizen Developer Journey
+## Main Discussion
 
 Mike and Tommy dive into what it means to grow as a citizen developer in the Power BI ecosystem — someone who didn't start in IT or data engineering but found their way into building reports and solutions for their team.
 

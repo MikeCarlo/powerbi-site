@@ -34,7 +34,7 @@ Mike and Tommy dive deep into composite models in Power BI, reviewing how they w
 
 - **[Spark Connector for Fabric Data Warehouse (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/spark-connector-for-fabric-data-warehouse-dw-public-preview//)** — We are pleased to announce the availability of the Fabric Spark connector for Fabric Data Warehouse (DW) in the Fabric Spark runtime. This connector enables Spark developers and data scientists to access and work...
 
-## Main Discussion: Composite Models
+## Main Discussion
 
 Mike and Tommy take a close look at composite models in Power BI — a feature that allows you to combine import and DirectQuery storage modes within a single model.
 

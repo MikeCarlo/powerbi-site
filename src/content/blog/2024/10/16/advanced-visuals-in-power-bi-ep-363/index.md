@@ -23,7 +23,7 @@ Welcome back to the Explicit Measures Podcast. In Episode 363, Mike Carlo is joi
 ## News & Announcements
 
 
-## Main Discussion: Advanced Visuals in Power BI
+## Main Discussion
 
 ## Looking Forward
 

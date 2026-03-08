@@ -38,7 +38,7 @@ In Episode 365 of Explicit Measures, Mike and Tommy dig into the realities of br
 
 - **[Gotcha’s of bringing Dataverse data into Microsoft Fabric – Data – Marc](https://data-marc.com/2024/06/11/gotchas-of-bringing-dataverse-data-into-microsoft-fabric/)** — Recently, I architected a solution for a client for their Microsoft Fabric data platform. The client works with Dynamics Finance & Operations as one of their main ERP system. Fabric offers easy ways to bring data...
 
-## Main Discussion: Dynamics Data & Fabric
+## Main Discussion
 
 This episode centers on the architectural decisions and tradeoffs when integrating Dynamics/Dataverse data into Fabric for downstream analytics. Mike and Tommy talk through common expectations vs. reality, where the sharp edges show up, and how to think about building a reliable pipeline that won’t collapse under real usage.
 

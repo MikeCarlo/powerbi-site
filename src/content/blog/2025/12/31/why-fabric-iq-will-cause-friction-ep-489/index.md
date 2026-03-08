@@ -35,7 +35,7 @@ Mike and Tommy tackle Microsoft's new Fabric IQ announcement and its ontology-dr
 
 - **[Fabric IQ: The Semantic Foundation for Enterprise AI | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai/)** — AI is rapidly transforming how we work, operate, and decide, and teams will increasingly depend on it in their daily processes. But across waves of enterprise AI, from BI dashboards and data lakes to predictive...
 
-## Main Discussion: Fabric IQ and the Friction Ahead
+## Main Discussion
 
 ### Beat from the Street: MCPs vs. IDE Instructions
 

@@ -42,7 +42,7 @@ Key strategies:
 - **Think event-driven, not real-time** — Most businesses run on-demand; data pipelines should be event-driven rather than constantly streaming
 - **The "Conductor's Era"** — Tommy shares an article arguing we're shifting from building to delegating, with AI agents and multiple models orchestrated together rather than one tool doing everything
 
-## Main Discussion: Max Performance in Power Query
+## Main Discussion
 
 ### Guest: Alex Powers
 

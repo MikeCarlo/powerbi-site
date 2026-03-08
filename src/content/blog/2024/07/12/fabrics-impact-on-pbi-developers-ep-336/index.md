@@ -39,7 +39,7 @@ Mike and Tommy discuss how Microsoft Fabric is changing the day-to-day work of P
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Fabric's Impact on PBI Developers
+## Main Discussion
 
 This episode digs into how Microsoft Fabric is changing the everyday reality for Power BI developers and analysts—what shifts in tooling and responsibilities, where the new “center of gravity” is for modeling and data prep, and how teams should think about building for maintainability.
 

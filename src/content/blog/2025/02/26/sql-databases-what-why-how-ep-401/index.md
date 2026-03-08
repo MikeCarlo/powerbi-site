@@ -34,7 +34,7 @@ Mike and Tommy dive deep into SQL databases in Microsoft Fabric — what they ar
 
 - **[Announcing the launch of Microsoft Fabric Quotas | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-the-launch-of-microsoft-fabric-quotas//)** — On February 24, 2025, we launched Microsoft Fabric Quotas, a new feature designed to control resource governance for the acquisition of your Microsoft Fabric capacities. Fabric quotas aimed at helping customers...
 
-## Main Discussion: SQL Database in Fabric
+## Main Discussion
 
 Mike and Tommy tackle the SQL database workload in Microsoft Fabric — a topic that's generating a lot of buzz as organizations figure out where it fits in their data architecture. They use Nikola Ilic's comprehensive article from Data Mozart as a jumping-off point to break down the what, why, and how.
 

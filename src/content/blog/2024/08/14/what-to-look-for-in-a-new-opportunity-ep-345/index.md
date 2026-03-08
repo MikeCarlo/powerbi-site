@@ -37,7 +37,7 @@ Thinking about a new role or a career move? In this episode, Mike, Tommy, and Se
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: What to Look for in a New Opportunity
+## Main Discussion
 
 Whether you’re moving from internal BI to consulting, changing companies, or just exploring what’s out there, the crew breaks down the signals that matter: the kind of work you’ll actually be doing day-to-day, how the team operates, and how to sanity-check expectations before you commit.
 

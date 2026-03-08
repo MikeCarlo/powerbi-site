@@ -41,7 +41,7 @@ Mike and Tommy dig into the myths and magic around Copilot and what it really me
 - **[Myths, Magic, and Copilot for Power BI — DATA GOBLINS](https://data-goblins.com/power-bi/copilot-in-power-bi)** — In this article, I explain Copilot in Fabric and Copilot in Power BI, walking through what it is, how it works, and three common scenarios when it might be used. More importantly, I evaluate whether using it over...
 
 
-## Main Discussion: Copilot in the real world
+## Main Discussion
 
 This episode focuses on separating hype from reality: where Copilot-style tools can accelerate exploration, documentation, and prototyping — and where you still need a clear data model, good measures, and strong governance.
 

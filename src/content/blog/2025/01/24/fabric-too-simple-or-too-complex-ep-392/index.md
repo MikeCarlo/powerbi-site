@@ -39,7 +39,7 @@ This episode’s “beat from the street” kicks off with a common request: “
 
 - **[Microsoft Forms](https://forms.office.com/pages/responsepage.aspx?id=qltEck8xkkyTZByyxJJL9h1hqAQpim9AhroLmNnShWVUM0RDQks1WVNMR0dZSVZBTE4wNzBXSjU0NiQlQCN0PWcu&route=shorturl)** — See link for details.
 
-## Main Discussion: Fabric Too Complex or Too Simple?
+## Main Discussion
 
 The core question is one Mike and Tommy keep hearing from teams adopting Fabric: does it feel like a simplified “one-stop shop” or an overwhelming platform with too many moving parts?
 

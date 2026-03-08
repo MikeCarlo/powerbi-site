@@ -40,7 +40,7 @@ Mike, Tommy, and guest Matias discuss the top-down and bottom-up approaches to a
 
 - **Microsoft Named Leader in Gartner Magic Quadrant for 18th Consecutive Year** — For the 18th year running, Microsoft has been positioned as a leader in the Gartner Magic Quadrant for Analytics and Business Intelligence Platforms. While the streak predates Power BI (which has been around for about 10 years), the last several years have been driven by Power BI and now Fabric's dominance in the space.
 
-## Main Discussion: Top Down and Bottom Up DevOps
+## Main Discussion
 
 Mike, Tommy, and returning guest Matias dive deep into the practical realities of adopting DevOps practices in Power BI and Fabric teams. The conversation centers on two distinct approaches: leadership-driven (top down) and grassroots team-driven (bottom up).
 

@@ -31,7 +31,7 @@ The Power BI Desktop Project (PBIP) format is here, and it promises source contr
   allowfullscreen
 ></iframe>
 
-## Main Discussion: PBIP vs. PBIX
+## Main Discussion
 
 ### What's the Difference?
 

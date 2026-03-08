@@ -39,7 +39,7 @@ Mike and Tommy cover Microsoft Fabric GitHub integration news and share practica
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: The 3-30-300 Rule
+## Main Discussion
 
 The core of the episode is a breakdown of SQLBI’s “3-30-300” rule — a simple way to think about the time windows that matter for report usability and performance. Mike and Tommy talk through how the rule influences report layout decisions, where to spend optimization effort, and how to avoid building reports that look good but feel slow or confusing.
 

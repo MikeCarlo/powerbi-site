@@ -33,7 +33,7 @@ Mike and Tommy dive into data contracts and how they apply to Power BI and Micro
 
 - **[Data Contracts Explained: Key Aspects, Tools, Setup in 2026](https://atlan.com/data-contracts/)** — Discover what data contracts are, why they matter, and how to design, validate, and scale them using modern tools to improve data quality and governance.
 
-## Main Discussion: Data Contracts in Power BI and Fabric
+## Main Discussion
 
 Mike and Tommy tackle the concept of data contracts and what they mean for Power BI and Microsoft Fabric practitioners. Data contracts formalize expectations between data producers and consumers, setting clear rules for schema, quality, and ownership.
 

@@ -42,7 +42,7 @@ When your data arrives as a stream of events rather than a snapshot of state, ev
 
 - **[SSMS 22 Meets Fabric Data Warehouse: Evolving the Developer Experiences | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/ssms-22-meets-fabric-data-warehouse-evolving-the-developer-experiences/)** — Why this Investment Matters For years, SQL Server Management Studio (SSMS) has been the go-to tool for millions of SQL developers worldwide. With millions of active users, SSMS remains the most trusted environment...
 
-## Main Discussion: Event-Driven Data Modeling
+## Main Discussion
 
 ### State vs. Events
 

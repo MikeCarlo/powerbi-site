@@ -30,7 +30,7 @@ Mike and Tommy tackle the common request of getting report data delivered straig
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Giving People Their Data
+## Main Discussion
 
 Users frequently ask for report subscriptions — they want regular updates and insights delivered directly to their email. It's one of the most common requests in the Power BI world: "Can you just email me the report?"
 

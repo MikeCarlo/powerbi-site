@@ -44,7 +44,7 @@ Mike, Tommy, and Seth unpack how much **‘knowing data’** matters versus know
 
 
 
-## Main Discussion: Knowing Data vs Knowing *THE* Data
+## Main Discussion
 
 A big theme in this episode is the difference between:
 

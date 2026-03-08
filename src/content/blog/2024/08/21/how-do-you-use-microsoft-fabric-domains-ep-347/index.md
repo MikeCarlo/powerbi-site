@@ -37,7 +37,7 @@ Domains in Microsoft Fabric help you organize content, standardize ownership, an
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-## Main Discussion: Microsoft Fabric Domains
+## Main Discussion
 
 Microsoft Fabric domains are designed to improve organization and discoverability by grouping workspaces and items into business-aligned buckets (finance, sales, operations, etc.). The conversation covers:
 

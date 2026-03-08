@@ -38,7 +38,7 @@ AI that just reports is table stakes—the real value comes when AI systems take
 
 - **[Fabric Data Agent now supports CI/CD, ALM Flow, and Git Integration | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-data-agent-now-supports-ci-cd-alm-flow-and-git-integration/)** — Fabric data agents now support CI/CD, ALM flow, and Git integration. These enhancements help you implement best practices for managing your data agent artifacts and tracking changes, leading to more reliable and...
 
-## Main Discussion: Action Systems
+## Main Discussion
 
 ### Beyond Dashboards
 

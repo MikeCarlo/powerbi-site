@@ -38,7 +38,7 @@ Mike and Tommy explore AI-assisted TMDL workflows and the hot reload experience 
 
 - **[Input slicer: Filter reports and collect user input (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/)** — Previously known as the &#8220;text slicer&#8221; while in preview, this visual lets you type or paste values directly into a slicer to filter your report—no scrolling or searching through long lists required. What...
 
-## Main Discussion: AI-Assisted TMDL Workflow & Hot Reload
+## Main Discussion
 
 Mike dives into his AI-assisted TMDL workflow, showing how leveraging AI tools alongside the Tabular Model Definition Language can dramatically speed up Power BI model development. The combination of TMDL's text-based format with AI code generation creates a powerful development loop.
 

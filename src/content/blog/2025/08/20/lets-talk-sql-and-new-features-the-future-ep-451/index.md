@@ -34,7 +34,7 @@ SQL isn't going anywhere. Mike and Tommy discuss the latest SQL analytics endpoi
 
 A listener shares their experience connecting to Fabric SQL from Power BI Desktop and creating a semantic model on top of it—bridging the traditional SQL world with the Power BI semantic layer.
 
-## Main Discussion: SQL in Fabric
+## Main Discussion
 
 ### What's New in the SQL Analytics Endpoint
 

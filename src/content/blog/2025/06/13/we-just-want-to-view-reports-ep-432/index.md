@@ -39,7 +39,7 @@ Mike and Tommy tackle a common frustration: how to give report viewers a simple 
 
 - **[Introducing upgrades to AI functions for better performance—and lower costs | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-upgrades-to-ai-functions-for-better-performance-and-lower-costs//)** — Earlier this year, we released AI functions in public preview, allowing Fabric customers to apply LLM-powered transformations to OneLake data simply and seamlessly, in a single line of code. Since then, we&#8217;ve...
 
-## Main Discussion: Simplifying the Report Viewing Experience
+## Main Discussion
 
 A listener writes in with a question many organizations face: "How can I easily provide access to Power BI reports without having all of our users seeing and being confused by a bunch of Fabric items they don't have permission to use?" They're running an F64 capacity with free licenses for report viewers and just want a simple experience.
 

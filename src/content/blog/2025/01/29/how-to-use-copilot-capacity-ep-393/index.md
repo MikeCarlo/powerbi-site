@@ -38,7 +38,7 @@ Mike and Tommy break down what Copilot Capacity is and how to think about sizing
 
 - **[Add Copilot Summaries to Power BI email subscriptions (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/add-copilot-summaries-to-power-bi-email-subscriptions-preview/?WT.mc_id=DP-MVP-5002621)** — This is a stand alone blog for the Copilot summaries in subscriptions feature.
 
-## Main Discussion: How to Use Copilot Capacity
+## Main Discussion
 
 Copilot features in Power BI are exciting, but they also introduce a new type of planning problem: you’re no longer only sizing for report rendering and refresh—you’re sizing for AI interactions. Mike and Tommy walk through what “Copilot Capacity” really means in practice, and how to approach it with the same discipline you’d use for any shared service: clear use-cases, controlled rollout, and measurable outcomes.
 

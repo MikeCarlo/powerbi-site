@@ -30,7 +30,7 @@ Mike and Tommy explore how Agile methodology applies to Power BI report developm
   allowfullscreen
 ></iframe>
 
-## Main Discussion: Agile and Power BI Reports
+## Main Discussion
 
 Mike and Tommy dive into the intersection of Agile project management and Power BI report development. The core idea: building reports iteratively rather than trying to deliver a perfect final product on day one.
 

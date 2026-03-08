@@ -44,7 +44,7 @@ Ignite season always lands like a firehose, and November didn’t slow down. In 
 
 - **[What’s new in OneLake and the Fabric platform: more sources, security, and capacity tooling | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/whats-new-in-onelake-and-the-fabric-platform-more-sources-security-and-capacity-tooling?ft=All)** — Organizations&nbsp;today are under immense pressure to unify data spread across clouds, systems, and formats—while also meeting higher standards for security, governance, and AI readiness. Microsoft Fabric was built...
 
-## Main Discussion: Ignite Recap + How They’re Using AI
+## Main Discussion
 
 ### AI for Productive Use (Not Just Demos)
 

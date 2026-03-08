@@ -34,7 +34,7 @@ Mike and Tommy dive deep into what it means to live in a Direct Lake world, expl
 
 - **[Billing updates: new operations for Fabric AI functions and AI services | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/billing-updates-new-operations-for-fabric-ai-functions-and-ai-services/)** — We’re introducing billing reporting updates that make it easier to track AI-related usage in Microsoft Fabric. New AI Functions operation Until now, Fabric AI functions usage was reported under other operations, such...
 
-## Main Discussion: Living in a Direct Lake World
+## Main Discussion
 
 Mike and Tommy tackle one of the biggest architectural decisions facing Power BI teams today — when and how to move to Direct Lake mode in Microsoft Fabric. Direct Lake promises the performance of Import with the freshness of DirectQuery, but the reality on the ground is more nuanced.
 

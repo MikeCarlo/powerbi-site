@@ -37,7 +37,7 @@ Real Time Intelligence in Fabric isn't just for data engineers. In this episode,
 
 - **[Power BI app Copilot: AI scoped to the curated content in an app (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-app-copilot-ai-scoped-to-the-curated-content-in-an-app-preview/)** — Announcing Power BI app Copilot, now in preview. With app-scoped Copilot, users can search for reports in an app plus ask questions and get connected with answers based on a report in an app. App Copilot is a...
 
-## Main Discussion: Real Time Intelligence for BI Pros
+## Main Discussion
 
 ### What Is Real Time Intelligence?
 

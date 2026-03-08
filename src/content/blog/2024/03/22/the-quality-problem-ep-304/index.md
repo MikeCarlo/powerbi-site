@@ -37,7 +37,7 @@ Mike and Tommy dig into the quality problem in analytics work — why teams keep
 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-## Main Discussion: Quality as a First-Class Requirement
+## Main Discussion
 
 This episode is a straight talk about why quality slips in BI projects (even when everyone has good intentions) and what it takes to reverse that trend. Mike and Tommy frame quality as something you design into the system — not something you add later once the visuals look good.
 

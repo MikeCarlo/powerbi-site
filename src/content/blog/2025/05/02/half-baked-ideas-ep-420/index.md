@@ -33,7 +33,7 @@ Mike and Tommy serve up their half baked ideas for the Power BI and Fabric ecosy
 
 - **[Fabric April 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-april-2025-feature-summary//)** — Welcome to the Fabric April 2025 Feature Summary! This update brings exciting advancements across various workloads, including Low-code AI tools to accelerate productivity in notebooks (Preview), session Scoped...
 
-## Main Discussion: Half Baked Ideas
+## Main Discussion
 
 Mike and Tommy dedicate this episode to sharing their unpolished, half baked ideas — concepts and features they'd love to see in the Power BI and Fabric world, even if they haven't fully thought them through yet.
 

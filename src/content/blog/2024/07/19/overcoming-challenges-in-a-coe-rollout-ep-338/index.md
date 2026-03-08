@@ -39,7 +39,7 @@ Mike and Tommy dig into the real-world friction points you hit when rolling out 
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Overcoming Challenges in a CoE Rollout
+## Main Discussion
 
 In this episode, the conversation focuses on the organizational (not just technical) realities of rolling out a Center of Excellence: how you set expectations, where governance helps vs. hurts, and what to do when adoption doesn’t match the plan.
 

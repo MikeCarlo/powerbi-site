@@ -36,7 +36,7 @@ Mike and Tommy dive into naming conventions for Microsoft Fabric items and why a
 
 - **[Fabric February 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2025-feature-summary//)** — Welcome to the Fabric 2025 update There are a lot of exciting features for you this month! Here are some highlights: In Power BI, Explore from Copilot visual answers which lets you do easy ad-hoc exploration. In Data...
 
-## Main Discussion: Naming Conventions in Microsoft Fabric
+## Main Discussion
 
 Mike and Tommy discuss a blog post by Marc Lelijveld on structuring Fabric items through naming conventions — a topic that resonates with anyone managing a growing Fabric workspace.
 

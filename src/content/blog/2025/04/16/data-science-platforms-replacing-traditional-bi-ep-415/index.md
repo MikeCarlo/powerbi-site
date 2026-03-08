@@ -37,7 +37,7 @@ Mike and Tommy tackle a community question about whether data science platforms 
 
 - **[Empowering businesses with smart capacity planning: Introducing the Microsoft Fabric SKU estimator (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/empowering-businesses-with-smart-capacity-planning-introducing-the-microsoft-fabric-sku-estimator//)** — We’re excited to unveil the Microsoft Fabric SKU estimator, now available in preview—an enhanced version of the previously introduced Microsoft Fabric Capacity Calculator. This advanced tool has been refined based on...
 
-## Main Discussion: Are Data Science Platforms Replacing Traditional BI?
+## Main Discussion
 
 A community member posed a thought-provoking question: with the rise of data science platforms and AI-driven analytics, is traditional BI on its way out? Mike and Tommy dig into what this shift actually looks like in practice.
 

@@ -38,7 +38,7 @@ This episode’s news focuses on **developer productivity and governance inside 
 
 - **[Notebook Live Versioning | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/notebook-live-versioning//)** — The Fabric notebook version history feature has launched! This new feature is designed to significantly improve your experience in developing and managing notebooks by providing robust built-in version control...
 
-## Main Discussion: Core visuals — the fastest way to improve your reports
+## Main Discussion
 
 Power BI has an ever-growing universe of custom visuals and advanced chart types, but most business questions are still answered best with the **core visuals**: bar/column, line, combo, table/matrix, cards, and slicers. Mike and Tommy’s theme is simple: if you can make the basics excellent, your reports become easier to read, easier to trust, and easier to maintain.
 

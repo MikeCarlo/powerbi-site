@@ -39,7 +39,7 @@ Measure totals in Power BI can be maddening. In this episode, Mike and Tommy unp
 
 - **[dbt Labs + Fivetran: Open data Infrastructure for analytics and AI | dbt Labs](https://www.getdbt.com/blog/dbt-labs-and-fivetran-merge-announcement)** — Why we’re joining forces with Fivetran to build the future
 
-## Main Discussion: Measure Total Shenanigans
+## Main Discussion
 
 ### The Problem
 

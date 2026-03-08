@@ -37,7 +37,7 @@ Mike and Tommy debate whether Power BI Desktop should be treated like a true dev
 
 - **[Power BI Theme Generator](https://themes.powerbi.tips/)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Is Power BI Desktop a “Dev Tool”?
+## Main Discussion
 
 The core question of this episode is less about labels and more about **workflow maturity**: if Power BI Desktop is your primary place to build semantic models and reports, does it deserve the same guardrails and process that teams apply to code?
 
