@@ -1,30 +1,43 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  
+
   // Extract all unique authors from all posts
   const authorMap = new Map();
-  
-  posts.forEach(post => {
-    post.data.authors?.forEach(author => {
-      const slug = author.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+
+  posts.forEach((post) => {
+    post.data.authors?.forEach((author) => {
+      const slug = author
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '');
+
       if (!authorMap.has(slug)) {
         authorMap.set(slug, { name: author, slug, posts: [] });
       }
-      authorMap.get(slug).posts.push(post);
+
+      // IMPORTANT: `getStaticPaths` props must be serializable.
+      // Content collection entries include non-serializable image metadata.
+      // So we pass only the fields we need (including the resolved image `src`).
+      authorMap.get(slug).posts.push({
+        slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, ''),
+        title: post.data.title,
+        date: post.data.date.toISOString(),
+        excerpt: post.data.excerpt ?? null,
+        featuredImageSrc: post.data.featuredImage?.src ?? null,
+      });
     });
   });
-  
-  return Array.from(authorMap.values()).map(author => ({
+
+  return Array.from(authorMap.values()).map((author) => ({
     params: { author: author.slug },
-    props: { 
+    props: {
       author: author.name,
-      posts: author.posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-    }
+      posts: author.posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
+    },
   }));
 }
 
@@ -44,36 +57,34 @@ const { author, posts } = Astro.props;
   </section>
 
   <div class="grid gap-6">
-    {posts.map((post) => {
-      const slug = post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
-      return (
-        <article class="flex items-center gap-6 rounded-xl border border-neutral-200 p-4">
-          {post.data.featuredImage && (
-            <a href={`${base}/${slug}/`} class="shrink-0">
-              <Image 
-                src={post.data.featuredImage} 
-                alt={post.data.title}
-                width={180}
-                height={101}
-                class="h-[80px] w-[142px] rounded-lg object-cover"
-              />
+    {posts.map((post) => (
+      <article class="flex items-center gap-6 rounded-xl border border-neutral-200 p-4">
+        {post.featuredImageSrc && (
+          <a href={`${base}/${post.slug}/`} class="shrink-0">
+            <img
+              src={post.featuredImageSrc}
+              alt={post.title}
+              width="180"
+              height="101"
+              loading="lazy"
+              class="h-[80px] w-[142px] rounded-lg object-cover"
+            />
+          </a>
+        )}
+        <div class="flex-1">
+          <p class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+            {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+          <h2 class="mt-1 text-lg font-semibold">
+            <a class="text-blue-600 hover:text-blue-700" href={`${base}/${post.slug}/`}>
+              {post.title}
             </a>
+          </h2>
+          {post.excerpt && (
+            <p class="mt-2 text-sm text-neutral-600 line-clamp-2">{post.excerpt}</p>
           )}
-          <div class="flex-1">
-            <p class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-              {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-            </p>
-            <h2 class="mt-1 text-lg font-semibold">
-              <a class="text-blue-600 hover:text-blue-700" href={`${base}/${slug}/`}>
-                {post.data.title}
-              </a>
-            </h2>
-            {post.data.excerpt && (
-              <p class="mt-2 text-sm text-neutral-600 line-clamp-2">{post.data.excerpt}</p>
-            )}
-          </div>
-        </article>
-      );
-    })}
+        </div>
+      </article>
+    ))}
   </div>
 </BaseLayout>

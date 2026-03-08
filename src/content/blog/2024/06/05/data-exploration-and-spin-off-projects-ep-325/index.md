@@ -1,5 +1,5 @@
 ---
-title: "Data Exploration & Spin Off Projects \u2013 – Ep. 325"
+title: "Data Exploration & Spin Off Projects – Ep. 325"
 date: 2024-06-05
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]
