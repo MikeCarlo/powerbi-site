@@ -1,5 +1,5 @@
 ---
-title: "Kill It or Complete It? - Ep.366 - Power BI tips"
+title: "Kill It or Complete It? - Ep.366"
 date: "2024-10-25"
 authors:
   - "Mike Carlo"

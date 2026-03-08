@@ -1,5 +1,5 @@
 ---
-title: Fabric, AI & The Future of Consulting - Ep. 309 - Power BI tips
+title: "Fabric, AI & The Future of Consulting - Ep. 309"
 date: 2024-04-10
 authors:
   - Mike Carlo

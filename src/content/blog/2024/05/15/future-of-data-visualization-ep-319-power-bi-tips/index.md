@@ -1,5 +1,5 @@
 ---
-title: "Future of Data Visualization - Ep. 319 - Power BI tips"
+title: "Future of Data Visualization - Ep. 319"
 date: 2024-05-15
 authors:
   - Mike Carlo

@@ -1,5 +1,5 @@
 ---
-title: "Beginner, Intermediate, Advanced - Ep.368 - Power BI tips"
+title: "Beginner, Intermediate, Advanced - Ep.368"
 date: "2024-11-01"
 authors:
   - "Mike Carlo"

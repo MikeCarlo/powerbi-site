@@ -1,5 +1,5 @@
 ---
-title: "Licenses, Models & User Groups - Ep. 320 - Power BI tips"
+title: "Licenses, Models & User Groups - Ep. 320"
 date: 2024-05-17
 authors:
   - "Mike Carlo"

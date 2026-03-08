@@ -1,5 +1,5 @@
 ---
-title: "CLM Part 6 - Support & Monitor Content - Ep.355 - Power BI tips"
+title: "CLM Part 6 - Support & Monitor Content - Ep.355"
 date: "2024-09-18"
 authors:
   - "Mike Carlo"

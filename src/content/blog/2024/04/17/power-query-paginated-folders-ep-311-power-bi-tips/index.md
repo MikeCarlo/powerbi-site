@@ -1,5 +1,5 @@
 ---
-title: Power Query Paginated & Folders - Ep. 311 - Power BI tips
+title: "Power Query Paginated & Folders - Ep. 311"
 date: 2024-04-17
 authors:
   - Mike Carlo

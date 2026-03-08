@@ -1,5 +1,5 @@
 ---
-title: "Communication as Crucial for BI - Ep. 331 - Power BI tips"
+title: "Communication as Crucial for BI - Ep. 331"
 date: 2024-06-26
 authors:
   - Mike Carlo

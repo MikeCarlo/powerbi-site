@@ -1,5 +1,5 @@
 ---
-title: "Medallion Architecture in Fabric - Ep.367 - Power BI tips"
+title: "Medallion Architecture in Fabric - Ep.367"
 date: "2024-10-30"
 authors:
   - "Mike Carlo"
