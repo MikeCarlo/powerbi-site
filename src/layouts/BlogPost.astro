@@ -85,9 +85,161 @@ const articleJsonLd = {
       />
     )}
 
-    <div class="prose">
+    <div class="prose" data-anchor-links>
       <slot />
     </div>
+
+    <script is:inline>
+      (function () {
+        function toFullUrl(hash) {
+          const url = new URL(window.location.href);
+          url.hash = hash;
+          return url.toString();
+        }
+
+        async function copyText(text) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return true;
+          } catch (e) {
+            // Fallback
+            try {
+              const ta = document.createElement('textarea');
+              ta.value = text;
+              ta.setAttribute('readonly', '');
+              ta.style.position = 'fixed';
+              ta.style.top = '-9999px';
+              document.body.appendChild(ta);
+              ta.select();
+              document.execCommand('copy');
+              document.body.removeChild(ta);
+              return true;
+            } catch (_e) {
+              return false;
+            }
+          }
+        }
+
+        function linkIconSvg() {
+          return `
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>`;
+        }
+
+        function makeCopyButton(hash, label) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'anchor-copy-btn';
+          btn.setAttribute('aria-label', label);
+          btn.title = label;
+          btn.innerHTML = linkIconSvg();
+          btn.addEventListener('click', async (ev) => {
+            ev.preventDefault();
+            const full = toFullUrl(hash);
+            // Update URL fragment so the page deep link is visible
+            try { window.location.hash = hash; } catch (_e) {}
+            const ok = await copyText(full);
+            btn.setAttribute('data-copied', ok ? '1' : '0');
+            window.setTimeout(() => btn.removeAttribute('data-copied'), 1200);
+          });
+          return btn;
+        }
+
+        function normalizeTimestampId(text) {
+          // Keep exactly M:SS or H:MM:SS (to match the URL example like #2:33)
+          const t = (text || '').trim();
+          if (/^\d{1,2}:\d{2}(:\d{2})?$/.test(t)) return t;
+          return null;
+        }
+
+        function run() {
+          const root = document.querySelector('[data-anchor-links]');
+          if (!root) return;
+
+          // 1) Add copy-link buttons to headings (h2-h6)
+          const headings = root.querySelectorAll('h2[id], h3[id], h4[id], h5[id], h6[id]');
+          headings.forEach((h) => {
+            if (h.querySelector('.anchor-copy-btn')) return;
+            const id = h.getAttribute('id');
+            if (!id) return;
+            h.classList.add('anchor-heading');
+            const btn = makeCopyButton(id, 'Copy link to this section');
+            btn.classList.add('anchor-copy-btn--heading');
+            h.appendChild(btn);
+          });
+
+          // 2) Add deep-link copy buttons next to transcript timestamps
+          const tsLinks = root.querySelectorAll('a[href*="youtube.com/watch"][href*="&t="]');
+          tsLinks.forEach((a) => {
+            const ts = normalizeTimestampId(a.textContent);
+            if (!ts) return;
+
+            // Ensure there is an element with the matching id to deep-link to
+            if (!a.id) a.id = ts;
+
+            // Avoid duplicates
+            if (a.nextElementSibling && a.nextElementSibling.classList && a.nextElementSibling.classList.contains('anchor-copy-btn')) return;
+
+            const btn = makeCopyButton(ts, 'Copy link to this timestamp');
+            btn.classList.add('anchor-copy-btn--timestamp');
+            a.insertAdjacentElement('afterend', btn);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+
+    <style>
+      /* Anchor copy button (headings + timestamps) */
+      .anchor-heading { position: relative; }
+      .anchor-copy-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-left: 0.5rem;
+        border: 0;
+        background: transparent;
+        color: rgb(107 114 128); /* neutral-500 */
+        cursor: pointer;
+        opacity: 0.0;
+        transform: translateY(1px);
+        transition: opacity 120ms ease, color 120ms ease;
+        vertical-align: middle;
+      }
+      .anchor-copy-btn svg { width: 1.1rem; height: 1.1rem; }
+
+      /* Show on hover for headings */
+      .anchor-heading:hover .anchor-copy-btn--heading,
+      .anchor-copy-btn--heading:focus-visible {
+        opacity: 1;
+      }
+
+      /* Timestamp buttons: keep subtle, show when hovering the paragraph line */
+      .prose p:hover .anchor-copy-btn--timestamp,
+      .anchor-copy-btn--timestamp:focus-visible {
+        opacity: 1;
+      }
+
+      .anchor-copy-btn:hover { color: rgb(37 99 235); /* blue-600 */ }
+
+      /* simple copied feedback */
+      .anchor-copy-btn[data-copied="1"] { opacity: 1; color: rgb(22 163 74); /* green-600 */ }
+      .anchor-copy-btn[data-copied="0"] { opacity: 1; color: rgb(220 38 38); /* red-600 */ }
+
+      /* For users with reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .anchor-copy-btn { transition: none; }
+      }
+    </style>
 
     {tags?.length ? (
       <div class="mt-8 flex flex-wrap gap-2">
