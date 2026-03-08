@@ -33,9 +33,9 @@ Semantic modeling is moving to the browser. In this episode, Mike and Tommy reac
 
 ## News & Announcements
 
-- [Deep Dive into Editing Semantic Models in the Power BI Service (Generally Available)](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-editing-semantic-models-in-the-power-bi-service-now-generally-available/) — Semantic model editing in the Power BI service is now GA, bringing core modeling capabilities to the web (including creating new import semantic models via the modern Get Data / Power Query experience). Mike and Tommy discuss how this changes collaboration and lowers friction for teams that don’t want to rely on a Windows-only desktop app.
+- **[Deep Dive into Editing Semantic Models in the Power BI Service (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-editing-semantic-models-in-the-power-bi-service-now-generally-available/)** — We are thrilled to announce that editing semantic models in the Power BI service is now generally available! This milestone unlocks end-to-end Power BI authoring directly in the browser, bringing core modeling parity...
 
-- [Use Semantic Model Version History](https://learn.microsoft.com/en-us/power-bi/transform-model/service-semantic-model-version-history) — Version history provides an Office-like pane for semantic models edited on the web (and live editing Direct Lake models), letting self-service users recover from big mistakes. It’s not full source control, but it’s a crucial safety net when the modeling surface is browser-first.
+- **[Use semantic model version history - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/service-semantic-model-version-history)** — Learn how to access and recover items from semantic models using semantic model version history.
 
 ## Main Discussion: Modeling in the Browser
 

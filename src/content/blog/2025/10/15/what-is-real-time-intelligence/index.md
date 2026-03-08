@@ -33,9 +33,9 @@ Real-Time Intelligence is more than just fast dashboards—it's a fundamentally 
 
 ## News & Announcements
 
-- [Deprecation of Metric Sets in Power BI](https://powerbi.microsoft.com/en-us/blog/deprecation-of-metric-sets-in-power-bi/) — Metric Sets are being deprecated. Teams using them need to plan migration to alternative metric definition patterns.
+- **[Deprecation of Metric Sets in Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deprecation-of-metric-sets-in-power-bi/)** — The Metric Sets feature in Power BI will be deprecated, with a phased retirement beginning October 25th, 2025. What’s Changing and When Scorecards and all associated datasets or measures will not be impacted by this...
 
-- [OneLake Table APIs (Preview)](https://blog.fabric.microsoft.com/blog/now-in-preview-onelake-table-apis?ft=All&WT.mc_id=DP-MVP-5002621) — New APIs for interacting with OneLake tables programmatically, opening up integration scenarios.
+- **[OneLake Table APIs (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/now-in-preview-onelake-table-apis/)** — Microsoft OneLake is the unified data lake for your entire organization, built into Microsoft Fabric. It provides a single, open, and secure foundation for all your analytics workloads – eliminating data silos and...
 
 ## Main Discussion: The Scope of Real-Time Intelligence
 

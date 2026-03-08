@@ -34,9 +34,9 @@ AI that just reports is table stakes—the real value comes when AI systems take
 
 ## News & Announcements
 
-- [OneLake Diagnostics: End-to-End Visibility into Data Activity](https://blog.fabric.microsoft.com/en-US/blog/gain-end-to-end-visibility-into-data-activity-using-onelake-diagnostics/) — New diagnostic capabilities for tracking data activity across OneLake, giving admins visibility into what's happening with their data.
+- **[Gain End-to-End Visibility into Data Activity Using OneLake diagnostics (Generally Available) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/gain-end-to-end-visibility-into-data-activity-using-onelake-diagnostics/)** — OneLake diagnostics, makes it simple to answer &#8216;who accessed what, when, and how&#8217; across your Fabric workspaces. OneLake diagnostics provides similar capabilities to Azure Blob Storage monitoring. OneLake...
 
-- [Fabric Data Agent Now Supports CI/CD, ALM Flow, and Git Integration](https://blog.fabric.microsoft.com/en-US/blog/fabric-data-agent-now-supports-ci-cd-alm-flow-and-git-integration/) — Data Agents can now be managed through deployment pipelines and git integration, bringing proper ALM to AI-powered data experiences.
+- **[Fabric Data Agent now supports CI/CD, ALM Flow, and Git Integration | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-data-agent-now-supports-ci-cd-alm-flow-and-git-integration/)** — Fabric data agents now support CI/CD, ALM flow, and Git integration. These enhancements help you implement best practices for managing your data agent artifacts and tracking changes, leading to more reliable and...
 
 ## Main Discussion: Action Systems
 

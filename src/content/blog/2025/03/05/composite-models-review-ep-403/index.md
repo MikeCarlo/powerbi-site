@@ -32,7 +32,7 @@ Mike and Tommy dive deep into composite models in Power BI, reviewing how they w
 
 ## News & Announcements
 
-- [Spark Connector for Fabric Data Warehouse (Preview)](https://blog.fabric.microsoft.com/blog/spark-connector-for-fabric-data-warehouse-dw-public-preview/?WT.mc_id=DP-MVP-5002621#) — Microsoft has released a public preview of the Spark connector for Fabric Data Warehouse. The connector enables Spark developers and data scientists to read and write data from Fabric DW and the SQL analytics endpoint of the lakehouse using a simplified Spark API. It ships as a default library in the Fabric Runtime with support for PySpark, Scala, and security models like RLS, OLS, and CLS.
+- **[Spark Connector for Fabric Data Warehouse (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/spark-connector-for-fabric-data-warehouse-dw-public-preview//)** — We are pleased to announce the availability of the Fabric Spark connector for Fabric Data Warehouse (DW) in the Fabric Spark runtime. This connector enables Spark developers and data scientists to access and work...
 
 ## Main Discussion: Composite Models
 

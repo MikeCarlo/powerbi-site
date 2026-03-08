@@ -34,7 +34,7 @@ Mike and Tommy celebrate episode 400 and dive into the Microsoft Fabric decision
 
 ## News & Announcements
 
-- [Introducing fabric-cicd Deployment Tool](https://blog.fabric.microsoft.com/blog/introducing-fabric-cicd-deployment-tool?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft has released a preview of the fabric-cicd Python library, an open-source, code-first solution for deploying Fabric items from a repository into a workspace. It supports notebooks, environments, data pipelines, semantic models, and reports with easy configuration and parameterization. This complements Fabric's built-in deployment pipelines and targets common enterprise CI/CD scenarios.
+- **[Introducing fabric-cicd Deployment Tool | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-cicd-deployment-tool/)** — We’re excited to announce the preview of the Fabric CI/CD Python library! Recognizing the importance of CI/CD in our success, we decided to open source our project to share with the community. As part of the Azure...
 
 ## Main Discussion: Fabric Data Store Decision Guide
 

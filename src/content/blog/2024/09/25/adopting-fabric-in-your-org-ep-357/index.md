@@ -35,9 +35,7 @@ In this episode, Mike and Tommy are joined by Seth Bauer to break down three com
 
 This episode skips the usual news segment and goes straight into the main topic.
 
-- [Explicit Measures podcast home](https://powerbi.tips/explicit-measures-power-bi-podcast/) — Browse the full archive and subscribe so you don’t miss future episodes.
 
-- [Seth Bauer on LinkedIn](https://www.linkedin.com/in/seth-bauer) — Connect with Seth and follow his perspective on Fabric adoption and data platform strategy.
 
 ## Main Discussion: Adopting Fabric in Your Organization
 

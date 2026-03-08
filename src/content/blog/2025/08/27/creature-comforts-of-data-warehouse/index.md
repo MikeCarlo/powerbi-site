@@ -33,9 +33,9 @@ Fabric Data Warehouse keeps getting more comfortable for SQL professionals. Mike
 
 ## News & Announcements
 
-- [Test and Validate Your Functions with Develop Mode in Fabric User Data Functions (Preview)](https://blog.fabric.microsoft.com/blog/test-and-validate-your-functions-with-develop-mode-in-fabric-user-data-functions-preview/?WT.mc_id=DP-MVP-5002621) — A new develop mode for testing User Data Functions before deploying to production.
+- **[Test and validate your functions with Develop mode in Fabric User Data Functions (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/test-and-validate-your-functions-with-develop-mode-in-fabric-user-data-functions-preview//)** — We&#8217;ve made a major update to User Data Functions! This update addresses the most critical feedback we have received since the start of the preview: the testing and development experience of your functions....
 
-- [Useful Community Tools and Resources for Power BI and Fabric](https://blog.crossjoin.co.uk/2025/08/24/useful-community-tools-and-resources-for-power-bi-and-fabric/) — Chris Webb's curated list of community tools and resources.
+- **[Useful community tools and resources for Power BI and Fabric](https://blog.crossjoin.co.uk/2025/08/24/useful-community-tools-and-resources-for-power-bi-and-fabric/)** — There are a lot of really cool free, community-developed tools and resources out there for Power BI and Fabric - so many that it's easy to miss announcements about them. In this post I thought I'd highlight a few...
 
 ## Main Discussion: Warehouse Creature Comforts
 

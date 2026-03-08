@@ -32,25 +32,20 @@ Mike, Seth, and Tommy dig into the return-to-office debate — what mandates get
 
 ## News & Announcements
 
-- [semantic-link-labs.readthedocs.io](https://semantic-link-labs.readthedocs.io/en/0.5.0/modules.html) — Link shared in the episode description.
+- **[sempy_labs — semantic-link-labs 0.5.0 documentation](https://semantic-link-labs.readthedocs.io/en/0.5.0/modules.html)** — Contents:
 
-- [blog.fabric.microsoft.com](https://blog.fabric.microsoft.com/en-US/blog/semantic-link-updates-june-2024/) — Link shared in the episode description.
+- **[Semantic Link Updates June 2024 | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/semantic-link-updates-june-2024/)** — We are excited to announce new and exciting updates to Semantic Link over the last a few months:&nbsp; Semantic Link is preinstalled in the default runtime&nbsp; At the Fabric Conference in March 2024, we announced...
 
-- [github.com](https://github.com/microsoft/semantic-link-labs/) — Link shared in the episode description.
+- **[GitHub - microsoft/semantic-link-labs: Early access to new features for Microsoft Fabric's Semantic Link. · GitHub](https://github.com/microsoft/semantic-link-labs/)** — Early access to new features for Microsoft Fabric's Semantic Link. - microsoft/semantic-link-labs
 
-- [gartner.com](https://www.gartner.com/en/articles/the-data-is-in-return-to-office-mandates-aren-t-worth-the-talent-risks) — Link shared in the episode description.
 
-- [bit.ly](https://bit.ly/3i8LdBo) — Link shared in the episode description.
 
-- [powerbi.tips](https://powerbi.tips/podcast) — Link shared in the episode description.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [themes.powerbi.tips](https://themes.powerbi.tips) — Link shared in the episode description.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
-- [linkedin.com](https://www.linkedin.com/in/michaelcarlo) — Link shared in the episode description.
 
-- [linkedin.com](https://www.linkedin.com/in/seth-bauer) — Link shared in the episode description.
 
-- [linkedin.com](https://www.linkedin.com/in/tommypuglia) — Link shared in the episode description.
 ## Main Discussion: Should People Return to the Office?
 
 In this episode, Mike, Seth, and Tommy discuss the realities behind return-to-office mandates and the tradeoffs teams face when deciding between in-office, hybrid, or remote work. They cover the talent and productivity considerations highlighted in the linked Gartner article, share practical perspectives from client work, and talk through how leaders can use data to make (and communicate) better decisions.

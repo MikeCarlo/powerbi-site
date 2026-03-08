@@ -38,7 +38,7 @@ Before jumping into the main topic, Mike shares a "beat from the street" about e
 
 Tommy brings up a few quick news items:
 
-- [Integrating Fabric with Databricks using Private Networks](https://blog.fabric.microsoft.com/blog/) — A new article covering how to integrate Power BI private networks with Databricks. This is relevant for organizations running Databricks alongside Fabric, and Databricks was recently named the leader in AI among all AI companies.
+- **[Microsoft Fabric Blog](https://blog.fabric.microsoft.com/en-US/blog//)** — Keep up with the latest Microsoft Fabric updates, announcements, information, & new features on the Microsoft Fabric blog. Search by category or date published.
 
 - **Creating SQL Databases via CLI** — Microsoft published guidance showing you can create a Fabric SQL database in just three terminal commands. While it's impressively easy to spin up, Tommy and Mike caution that the back-end complexity hasn't been simplified — column naming constraints, data type gotchas, and error messages that don't always map to clear solutions still apply.
 

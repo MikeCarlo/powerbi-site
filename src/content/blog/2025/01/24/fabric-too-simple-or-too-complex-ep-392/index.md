@@ -33,11 +33,11 @@ In this episode, Mike and Tommy wrestle with a question they keep hearing: is Mi
 
 This episode’s “beat from the street” kicks off with a common request: “we need a data catalog.” Mike and Tommy’s take is to slow down, define what you actually mean by *data catalog*, and align on the outcomes you’re trying to drive before you evaluate tools.
 
-- [Power BI Theme Generator (Tips+)](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast) — A quick way to generate and manage Power BI theme JSON for consistent report branding. If your org is trying to standardize design across many reports, this is an easy win that reduces rework and keeps visuals aligned.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- [The Explicit Measures Podcast page](https://powerbi.tips/podcast/) — The home for the show, including all episodes and links to listen on major platforms. If you want to follow along live or browse recent topics, this is the best starting point.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Submit a mailbag topic](https://forms.office.com/r/FhmKGs9WmT) — Got a question you want Mike and Tommy to debate on-air? Use the mailbag form to submit topics and real-world scenarios (the messy ones are usually the best episodes).
+- **[Microsoft Forms](https://forms.office.com/pages/responsepage.aspx?id=qltEck8xkkyTZByyxJJL9h1hqAQpim9AhroLmNnShWVUM0RDQks1WVNMR0dZSVZBTE4wNzBXSjU0NiQlQCN0PWcu&route=shorturl)** — See link for details.
 
 ## Main Discussion: Fabric Too Complex or Too Simple?
 

@@ -34,17 +34,16 @@ Mike and Tommy break down what’s new in Semantic Link Labs and why it’s beco
 
 ## News & Announcements
 
-- [Introducing template dashboards for Workspace Monitoring](https://blog.fabric.microsoft.com/blog/introducing-template-dashboards-for-workspace-monitoring/?WT.mc_id=DP-MVP-5002621#) — Microsoft shared community-built, open-source template reports (Power BI and real-time dashboards) designed to plug into Fabric Workspace Monitoring. The goal is faster troubleshooting by starting from pre-built patterns for things like long-running queries, refresh operations, and ingestion delays instead of building every monitoring report from scratch.
+- **[Introducing template dashboards for Workspace Monitoring | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-template-dashboards-for-workspace-monitoring//)** — Co-authors: Iris Kaminer, Gellert Gintli, Nick Salch, Xiaodong Zhang We’re thrilled to announce ready-to-use Power BI and real-time dashboard template reports that integrate seamlessly with the workspace monitoring...
 
-- [Private Preview of Migration assistant for Fabric Data Warehouse](https://blog.fabric.microsoft.com/blog/private-preview-of-migration-assistant-for-fabric-datawarehouse/?WT.mc_id=DP-MVP-5002621#) — The Fabric team opened a private preview of a migration assistant intended to accelerate moving to Fabric Data Warehouse from sources like SQL Server and Synapse dedicated SQL pools. It focuses on converting schema/code, supporting data migration, and adding AI-assisted guidance—worth tracking if you have legacy warehouse workloads you’re planning to modernize.
+- **[Private Preview of Migration assistant for Fabric Data Warehouse | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/private-preview-of-migration-assistant-for-fabric-datawarehouse//)** — Last year we announced a sneak peak of a migration assistant designed to accelerate the migration of SQL Server, Synapse dedicated SQL pools, and other warehouses to the Fabric Data Warehouse. This tool enables users...
 
-- [Introducing ownership takeover for Fabric items](https://blog.fabric.microsoft.com/blog/introducing-ownership-takeover-for-fabric-items/?WT.mc_id=DP-MVP-5002621#) — Fabric now supports “take over” (ownership takeover) for many non-Power BI Fabric items when the original owner leaves, loses access, or credentials expire. This is a key business-continuity feature for keeping pipelines, lakehouses, and endpoints functioning without needing to rebuild assets from scratch.
+- **[Introducing ownership takeover for Fabric items | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-ownership-takeover-for-fabric-items//)** — Today, when an item owner leaves the company, their credentials expire, or they lose access, many Fabric items cease to function. For example, Lakehouses and their SQL Endpoints become inoperative, pipelines fail to...
 
-- [Submit a topic idea / mailbag](https://bit.ly/3i8LdBo) — Have a question you want covered on the show? Drop it in the mailbag form—episodes are best when they start with real-world scenarios.
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast/) — One hub page to catch the live stream and find Spotify/Apple links to listen later.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://bit.ly/3Ymso48) — Generate consistent Power BI themes quickly so your team can stop hand-tweaking colors and fonts across reports.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Semantic Link Labs Updates & Scenarios
 

@@ -23,13 +23,9 @@ A fresh episode of **Explicit Measures** is here—let’s dig into the latest P
 
 ## News & Announcements
 
-- [Link](https://powerbi.microsoft.com/en-us/blog/get-data-with-power-query-available-in-power-bi-report-builder-preview/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Get data with Power Query available in Power BI Report Builder (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/get-data-with-power-query-available-in-power-bi-report-builder-preview/)** — Connect to100+ data sources and create paginated reports.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Power Query Paginated & Folders
 

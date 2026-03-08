@@ -25,11 +25,6 @@ In this episode of the Explicit Measures podcast, Mike and Tommy explore whether
   allowfullscreen
 ></iframe>
 
-## News & Announcements
-
-- [Link](https://www.sqlbi.com/whitepapers/understanding-visual-calculations-in-dax/ https://debruyn.dev/2023/fabric-lakehouse-or-data-warehouse/ https://bit.ly/3i8LdBo https://powerbi.tips/podcast https://themes.powerbi.tips https://www.linkedin.com/in/michaelcarlo https://www.linkedin.com/in/seth-bauer https://www.linkedin.com/in/tommypuglia)
-
-
 ## Main Discussion: Lakehouse or Data Warehouse
 
 The conversation compares Lakehouse and Data Warehouse patterns in Fabric, focusing on real-world considerations like modeling approach, performance expectations, team workflows, and how each option supports reporting and analytics.

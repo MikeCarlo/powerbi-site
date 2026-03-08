@@ -32,7 +32,7 @@ Mike and Tommy dive deep into what it means to live in a Direct Lake world, expl
 
 ## News & Announcements
 
-- [Billing updates: new operations for Fabric AI functions and AI services](https://blog.fabric.microsoft.com/en-US/blog/billing-updates-new-operations-for-fabric-ai-functions-and-ai-services/) — Microsoft is introducing dedicated billing operations for Fabric AI functions and Azure AI Services, giving users clearer visibility into AI-related consumption. Previously, AI function usage was lumped under Spark or Dataflows Gen2 operations, but now gets its own line item. Starting March 17, 2025, these new operations will appear in the Fabric Capacity Metrics app under the Copilot and AI Capacity Usage CU billing meter.
+- **[Billing updates: new operations for Fabric AI functions and AI services | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/billing-updates-new-operations-for-fabric-ai-functions-and-ai-services/)** — We’re introducing billing reporting updates that make it easier to track AI-related usage in Microsoft Fabric. New AI Functions operation Until now, Fabric AI functions usage was reported under other operations, such...
 
 ## Main Discussion: Living in a Direct Lake World
 

@@ -34,21 +34,19 @@ Mike, Tommy, and Seth break down **filter context in DAX**—what it is, how it�
 
 ## News & Announcements
 
-- [Data Factory Announcements at Ignite 2024 Recap](https://blog.fabric.microsoft.com/en-US/blog/data-factory-announcements-at-ignite-recap/) — A roundup of Fabric Data Factory updates announced around Ignite, including integration improvements and new capabilities aimed at making pipelines and data movement easier to manage at scale.
+- **[Data Factory Announcements at Ignite 2024 Recap | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/data-factory-announcements-at-ignite-recap/)** — A couple of weeks ago we had such an exciting week for Fabric during the Ignite Conference, filled with several product announcements and sneak previews of upcoming new features. Thanks to all of you who participated...
 
-- [Announcing Python Notebook in Preview](https://blog.fabric.microsoft.com/en-us/blog/python-notebook-public-preview?ft=All) — Microsoft introduces Python Notebooks in Fabric (preview), targeting BI developers and data scientists who want a lightweight notebook workflow for Python-first analysis without spinning up a heavy environment.
+- **[Announcing Python Notebook in Preview | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/python-notebook-public-preview?ft=All)** — The highly anticipated Python Notebook is now in preview! This new feature is designed to enhance the experience of BI Developers and Data Scientists working with smaller datasets using Python as their primary...
 
-- [Accelerate app innovation with an AI-powered data platform](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/) — A Microsoft Fabric overview framing how the platform ties together data engineering, BI, and AI experiences end-to-end, with emphasis on faster iteration and a unified data foundation.
+- **[Accelerate app innovation with an AI-powered data platform | Microsoft Fabric Blog](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/11/19/accelerate-app-innovation-with-an-ai-powered-data-platform/)** — Explore Microsoft Fabric announcements at Microsoft Ignite 2024, like Fabric Databases, OneLake catalog, Fabric Real-Time Intelligence general availability.
 
-- [Filter context in DAX explained visually (SQLBI)](https://www.sqlbi.com/articles/filter-context-in-dax-explained-visually/) — A visual-first explanation of how filters from visuals, slicers, and page/report filters combine into filter context—great companion reading if you’re trying to *reason* about a measure before you write it.
+- **[Filter context in DAX explained visually - SQLBI](https://www.sqlbi.com/articles/filter-context-in-dax-explained-visually/)** — This article describes the DAX filter context using a conceptual model based on a visual representation. The filter context is a fundamental concept to unde
 
-- [Got an idea or topic for a future episode?](https://bit.ly/3i8LdBo) — Drop your mailbag questions and topic ideas for future episodes.
 
-- [Subscribe / listen to the Explicit Measures Podcast](https://powerbi.tips/podcast) — The home base for the show, including where to listen and how to catch episodes live.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+ (Theme Generator)](https://bit.ly/3Ymso48) — The Power BI Theme Generator experience from PowerBI.tips for creating consistent report styling.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- Follow us: [Mike](https://www.linkedin.com/in/michaelcarlo) · [Seth](https://www.linkedin.com/in/seth-bauer) · [Tommy](https://www.linkedin.com/in/tommypuglia)
 
 ## Main Discussion: Filter Context (and why it’s *the* DAX superpower)
 

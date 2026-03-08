@@ -32,15 +32,14 @@ In this episode, the team continues the Content Lifecycle Management (CLM) serie
 
 ## News & Announcements
 
-- [CI/CD with Warehouses in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/ci-cd-with-warehouses-in-microsoft-fabric/) — Fabric adds Git integration and deployment pipeline support for Warehouses, making it easier to move SQL warehouse work across environments with more consistent release processes.
+- **[CI/CD with Warehouses in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/ci-cd-with-warehouses-in-microsoft-fabric/)** — We are excited to announce the support of Fabric Git integration and deployment pipelines for data warehouse in Microsoft Fabric! Warehouse in Microsoft Fabric, built on the evolution of SQL server, already offers...
 
-- [Power BI implementation planning: Develop content and manage changes](https://learn.microsoft.com/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage) — Microsoft’s guidance on the “develop & manage” phase of the Power BI content lifecycle, including patterns for managing changes and keeping development predictable and supportable.
+- **[Power BI implementation planning: Develop content and manage changes - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-develop-manage)** — This article helps you to develop content and manage changes as part of managing the content lifecycle.
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike, Tommy, and Seth a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: CLM Part 3 — Develop & Manage Content
 

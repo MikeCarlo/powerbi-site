@@ -33,11 +33,11 @@ Mike and Tommy dive into the February 2026 feature updates for Power BI and Fabr
 
 ## News & Announcements
 
-- [Fabric February 2026 Feature Summary](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2026-feature-summary/) — Microsoft's February 2026 Fabric update brings enhancements across the platform including OneLake Catalog improvements, Data Engineering updates like enhanced notebook version history, and more. With FabCon weeks away in Atlanta, this release sets the stage for what's coming next. Free Fabric certification vouchers are also available through February 28.
+- **[Fabric February 2026 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2026-feature-summary/)** — Welcome to the February 2026 Microsoft Fabric update! This month brings a wide range of enhancements across the Fabric platform—from improvements to the OneLake Catalog and developer experiences, to meaningful...
 
-- [Power BI February 2026 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-february-2026-feature-summary/) — The Power BI-specific February update includes smarter Copilot and AI experiences, more flexible report interaction options, polished visuals, and modeling enhancements. Notable deprecations include hierarchies in Power BI scorecards and SSRS/PBIRS management packs in SCOM.
+- **[Power BI February 2026 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-february-2026-feature-summary/)** — Welcome to the February Power BI update! Power BI’s February 2026 update is here, and it’s a good one. This release brings smarter Copilot and AI experiences, more flexible ways to interact with reports, polished...
 
-- [Input Slicer: Filter Reports and Collect User Input (Generally Available)](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/) — The input slicer (previously the "text slicer" in preview) is now GA. It lets report consumers type or paste values directly into a slicer to filter reports — no more scrolling through endless dropdown lists. It supports multiple filter values, partial text matching, and can even collect free-form input for translytical workflows like comments and data writebacks.
+- **[Input slicer: Filter reports and collect user input (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/)** — Previously known as the &#8220;text slicer&#8221; while in preview, this visual lets you type or paste values directly into a slicer to filter your report—no scrolling or searching through long lists required. What...
 
 ## Main Discussion: Filter Overload
 

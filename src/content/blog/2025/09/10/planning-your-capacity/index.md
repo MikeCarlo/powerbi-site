@@ -33,11 +33,10 @@ Capacity planning is one of the most asked-about topics in Fabric. Mike and Tomm
 
 ## News & Announcements
 
-- [Semantic Model Refresh Templates in Power BI (Preview)](https://powerbi.microsoft.com/en-us/blog/semantic-model-refresh-templates-in-power-bi-preview/) — New templates for managing semantic model refresh patterns.
+- **[Semantic Model Refresh Templates in Power BI (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/semantic-model-refresh-templates-in-power-bi-preview/)** — Semantic Model Refresh Templates in Power BI enable users to orchestrate semantic model refreshes using Fabric Data Pipelines. This feature allows you to visualize and sequence refresh activities for common and...
 
-- [Introducing the Translytical Task Flow Contest](https://powerbi.microsoft.com/en-us/blog/introducing-the-translytical-task-flow-contest/) — Microsoft launches a community contest around Translytical Task Flows.
 
-- [What's New in Fabric Warehouse — August 2025](https://blog.fabric.microsoft.com/en-US/blog/whats-new-in-fabric-warehouse-august-2025/) — Monthly Fabric Warehouse updates including performance and feature improvements.
+- **[What’s new in Fabric Warehouse – August 2025 Recap | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/whats-new-in-fabric-warehouse-august-2025/)** — Introduction Welcome to the August 2025 edition of What&#8217;s New in Fabric Warehouse. As summer winds down, despite August being a slower month, our team continued to deliver meaningful updates. We shipped several...
 
 ## Main Discussion: Capacity Planning
 

@@ -33,7 +33,7 @@ In this episode, Mike and Tommy unpack a mailbag question: why are there still s
 
 FabCon 2025 is on the horizon, and the team shares a partner discount tip for registration (select **Microsoft Partner**, enter **PowerBI.tips**, and use code **PARTNER200** to save $200).
 
-- [Get started with goals in Power BI (Scorecards)](https://learn.microsoft.com/power-bi/create-reports/get-started-metrics?WT.mc_id=DP-MVP-5002621) — Microsoft’s updated documentation walks through the Scorecards hub and how to create and manage goals in the Power BI service. If your org is leaning into OKRs/KPIs, this is a solid reference for understanding licensing requirements and the core workflow for authoring, sharing, and checking in on goals.
+- **[Get started with goals in Power BI - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/create-reports/service-goals-introduction?WT.mc_id=DP-MVP-5002621)** — Learn about goals and scorecards in Power BI to track key business objectives, promote accountability, and improve visibility for teams and initiatives.
 
 ## Main Discussion: Why Fabric Isn’t Showing Up in Job Postings (Yet)
 

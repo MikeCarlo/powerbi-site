@@ -32,7 +32,7 @@ Mike, Tommy, and guest Ginger Grant explore whether now is the right time for da
 
 ## News & Announcements
 
-- [Deep Dive into Direct Lake on OneLake and Creating Direct Lake Semantic Models in Power BI Desktop](https://powerbi.microsoft.com/blog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-in-power-bi-desktop/?WT.mc_id=DP-MVP-5002621) — Microsoft announced the public preview of creating Direct Lake semantic models directly in Power BI Desktop. This new capability lets you connect to Lakehouse or Warehouse data in OneLake without duplicating data, and for the first time supports adding tables from multiple data sources in a single Direct Lake model. The update also introduces a new "Direct Lake on OneLake" flavor alongside the existing "Direct Lake on SQL," giving developers more flexibility in how they model and visualize Fabric data.
+- **[Deep dive into Direct Lake on OneLake and creating Direct Lake semantic models in Power BI Desktop | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-in-power-bi-desktop/?WT.mc_id=DP-MVP-5002621)** — Microsoft Fabric’s OneLake data can be visualized and analyzed in Power BI without moving any data using the new Direct Lake storage mode. . Power BI Desktop users can now create these just like any Power BI...
 
 ## Main Discussion: Is It Time for Data Scientists to Move to Fabric?
 

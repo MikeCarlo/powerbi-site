@@ -31,17 +31,15 @@ Mike and Tommy break down how the Power BI Skills Matrix concept translates to t
 
 ## News & Announcements
 
-- [Microsoft Fabric July 2024 update](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-july-2024-update/) — A roundup of Fabric’s July release highlights, including continued improvements to Git integration and new platform capabilities across the Fabric experience.
+- **[Microsoft Fabric July 2024 Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-july-2024-update/)** — Welcome to the July 2024 update. Here are a few, select highlights of the many we have for Fabric. Creating and managing Git branches &amp; connected workspaces with Git integration just got with the latest...
 
-- [Power BI July 2024 feature summary](https://powerbi.microsoft.com/en-us/blog/power-bi-july-2024-feature-summary/) — The monthly Power BI feature recap, covering new and updated capabilities (including continued work around PBIR/PBIP and report authoring improvements).
+- **[Power BI July 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-july-2024-feature-summary/)** — Welcome to the July 2024 update. Here are a few, select highlights of the many we have for Power BI. Customize your reference layers in Azure Maps visual, DAX query view is available in live connect and an update to...
 
-- [Power BI Skills Matrix (original article)](https://powerbi.tips/2021/02/power-bi-skills-matrix/) — The reference skills matrix that sparked the episode’s main discussion (link may have moved; search the site if it 404s).
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike and Tommy a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Skills Matrix in the Fabric era
 

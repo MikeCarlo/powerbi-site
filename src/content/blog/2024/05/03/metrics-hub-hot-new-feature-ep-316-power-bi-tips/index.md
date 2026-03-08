@@ -21,13 +21,8 @@ In this episode of the Explicit Measures Podcast, we discuss Metrics Hub, Hot Ne
 <iframe width="800" height="450" src="https://www.youtube.com/embed/WsyDzKYjWnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## News & Announcements
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
-- [Link](https://www.linkedin.com/in/carlylanders)
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Metrics Hub, Hot New Feature
 

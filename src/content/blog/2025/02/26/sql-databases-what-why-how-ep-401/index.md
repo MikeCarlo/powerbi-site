@@ -32,7 +32,7 @@ Mike and Tommy dive deep into SQL databases in Microsoft Fabric — what they ar
 
 ## News & Announcements
 
-- [Announcing the Launch of Microsoft Fabric Quotas](https://blog.fabric.microsoft.com/blog/announcing-the-launch-of-microsoft-fabric-quotas/?WT.mc_id=DP-MVP-5002621) — Microsoft launched Fabric Quotas on February 24, 2025, a new governance feature that limits the number of Capacity Units (CUs) a customer can provision across subscriptions in a given region. Quotas are calculated based on subscription plan type and Azure region, and apply only to F SKUs (not P SKUs). Customers who need more capacity can request quota increases through the Azure portal.
+- **[Announcing the launch of Microsoft Fabric Quotas | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-the-launch-of-microsoft-fabric-quotas//)** — On February 24, 2025, we launched Microsoft Fabric Quotas, a new feature designed to control resource governance for the acquisition of your Microsoft Fabric capacities. Fabric quotas aimed at helping customers...
 
 ## Main Discussion: SQL Database in Fabric
 

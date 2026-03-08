@@ -25,14 +25,10 @@ In this episode of the Explicit Measures Podcast, we discuss user input tables a
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-june-2024-update/)
-- [Link](https://daxnoob.blog/2024/04/29/enhancing-your-golden-semantic-model-with-user-input-tables/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Microsoft Fabric June 2024 Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-june-2024-update/)** — Welcome to the June 2024 update. Here are a few, select highlights of the many we have for Fabric. Fabric Spark connector for Fabric Data Warehouse in Spark runtime is now available. Query activity, a one-stop view...
+- **[Redirecting...](https://daxnoob.blog/2024/04/29/enhancing-your-golden-semantic-model-with-user-input-tables/)** — See link for details.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 
 ## Main Discussion: User Input Tables

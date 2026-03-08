@@ -31,9 +31,9 @@ Deployment pipelines are getting a UI overhaul, and it changes how teams compare
 
 ## News & Announcements
 
-- [Introducing the New Deployment Pipelines design: A leap forward in deployment Efficiency](https://blog.fabric.microsoft.com/en-US/blog/introducing-the-new-deployment-pipelines-design-a-leap-forward-in-deployment-efficiency/) — Microsoft is rolling out a redesigned Deployment Pipeline experience that shifts actions into a “selected stage” perspective and adds a more focused, navigable canvas. The update also brings quality-of-life improvements like search, filter, sort, and zoom, while keeping familiar views like deployment history and rules.
+- **[Introducing the New Deployment Pipelines design: A leap forward in deployment Efficiency | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-the-new-deployment-pipelines-design-a-leap-forward-in-deployment-efficiency/)** — At Microsoft, we’re dedicated to enhancing the user experiences and optimizing processes through innovation. We’re thrilled to share that, starting the first week of September, we’ll be rolling out a new and improved...
 
-- [Announcing TMDL support for the ALM Toolkit](https://powerbi.microsoft.com/en-us/blog/announcing-tmdl-support-for-the-alm-toolkit/) — The ALM Toolkit now supports diffing semantic model definitions in TMDL, a Git-friendly, human-readable format for model metadata. This is a big step for teams trying to make semantic model changes reviewable and automatable alongside Fabric Git integration and Power BI Desktop projects.
+- **[Announcing TMDL support for the ALM Toolkit | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-tmdl-support-for-the-alm-toolkit/)** — Explore the latest features of the ALM Toolkit! Our new update adds coloring support for TMDL, allowing you to view tabular model metadata in a user-friendly, YAML-like syntax. Enhance your Power BI experience and...
 
 ## Main Discussion: Deployment Pipelines for Business Teams
 

@@ -31,13 +31,9 @@ Mike, Tommy, and Seth dig into listener questions - focusing on datamarts, citiz
 
 ## News & Announcements
 
-- [Chicagoland Power BI Meetup](https://www.meetup.com/chicagolandpowerbi/events/304507048)
-- [Link](https://bit.ly/3i8LdBo)
-- [Subscribe to the podcast](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Connect with Mike Carlo on LinkedIn](https://www.linkedin.com/in/michaelcarlo)
-- [Connect with Seth Bauer on LinkedIn](https://www.linkedin.com/in/seth-bauer)
-- [Connect with Tommy Puglia on LinkedIn](https://www.linkedin.com/in/tommypuglia)
+- **[Chicago Microsoft Fabric User Group - November 2024 Meetup!, Wed, Nov 20, 2024, 6:00 PM | Meetup](https://www.meetup.com/chicagolandpowerbi/events/304507048/)** — We are back in person! Join us as we discuss Fabric Admin & Governance Analytics content (Admin Monitoring, Capacity Metrics, Usage Metrics) and providing a technical deep
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Mailbag - More Datamarts
 

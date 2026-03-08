@@ -31,10 +31,10 @@ Mike and Tommy dig into internal design: how to build Power BI/Fabric solutions 
 
 ## News & Announcements
 
-- [On-premises data gateway — February 2024 release](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-february-2024-release/)
-- [Azure Data Conf](https://azuredataconf.com/#!/)
-- [Internal design success requires form and function](https://nightingaledvs.com/internal-design-success-requires-form-and-function/)
-- [Explicit Measures Podcast Hub](https://powerbi.tips/podcast)
+- **[On-premises data gateway February 2024 release | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/on-premises-data-gateway-february-2024-release/)** — We are excited to announce the February release of the on-premises data gateway!
+- **[Fabcon Community Conference](https://azuredataconf.com/#!/)** — See link for details.
+- **[Internal Design: Success Requires Form and Function | Nightingale](https://nightingaledvs.com/internal-design-success-requires-form-and-function/)** — Our first public release of EdWise in summer of 2015 included this mapping functionality.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
 ## Main Discussion: Internal Design That Scales
 

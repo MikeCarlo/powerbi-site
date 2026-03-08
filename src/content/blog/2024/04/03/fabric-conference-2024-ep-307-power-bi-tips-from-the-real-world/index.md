@@ -27,12 +27,9 @@ In this episode of the Explicit Measures podcast, Mike discuss Fabric Conference
 
 ## News & Announcements
 
-- [Link](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/03/26/announcements-from-the-microsoft-fabric-community-conference/)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Announcements from the Microsoft Fabric Community Conference | Microsoft Fabric Blog](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/03/26/announcements-from-the-microsoft-fabric-community-conference/)** — Learn more about the exciting announcements from the Microsoft Fabric Community Conference. Including Microsoft data, AI, and security products.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World
 

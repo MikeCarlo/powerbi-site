@@ -34,7 +34,7 @@ Data Agents are quickly becoming a central part of the Fabric story. In this epi
 ## News & Announcements
 
 - **Chicago Fabric / Power BI User Group — Crash Course in Fabric (Oct 2)**
-  - Meetup: https://www.meetup.com/chicagolandpowerbi/events/310695955/
+- **[Chicago Crash Course on Microsoft Fabric - Chicago Microsoft Fabric / Power BI, Wed, Oct 1, 2025, 3:00 PM | Meetup](https://www.meetup.com/chicagolandpowerbi/events/310695955/)** — Join us for the upcoming meetup hosted by Chicago Fabric / Power BI User Group as we dive deep in the new era of Microsoft Data - the Microsoft Fabric Platform. Heard of M
 
 ## Main Discussion: First Impressions of Data Agents
 

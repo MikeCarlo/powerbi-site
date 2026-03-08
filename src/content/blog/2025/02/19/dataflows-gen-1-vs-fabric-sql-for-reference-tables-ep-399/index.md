@@ -34,11 +34,10 @@ Mike and Tommy compare two practical ways to manage small-but-critical reference
 
 ## News & Announcements
 
-- [Submit a topic idea / mailbag](https://bit.ly/3i8LdBo) — Have a question you want covered on the show? Use the submission form to drop your topic ideas and real-world scenarios. The best episodes usually start with a messy, practical problem from the field.
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast/) — Catch the live stream every Tuesday and Thursday and find links to listen on Spotify and Apple Podcasts. If you’re sharing episodes internally, this page is the easiest “one link” hub.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast) — Mike and Tommy call out Tips+ as a fast way to generate consistent Power BI themes. If your org struggles with brand compliance (fonts, colors, visuals), a repeatable theme workflow saves hours of rework.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Dataflows Gen 1 vs Fabric SQL for Reference Tables
 

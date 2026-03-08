@@ -29,14 +29,10 @@ Mike, Tommy, and Seth discuss whether Microsoft Fabric domains should have dedic
 
 ## News & Announcements
 
-- [Link](https://learn.microsoft.com/fabric/governance/domains?WT.mc_id=DP-MVP-5002621)
-- [Link](https://blog.fabric.microsoft.com/blog/easily-implement-data-mesh-architecture-with-domains-in-fabric/?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Domains - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/governance/domains?WT.mc_id=DP-MVP-5002621)** — Learn about domains and how to create and manage them.
+- **[Easily implement data mesh architecture with domains in Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/easily-implement-data-mesh-architecture-with-domains-in-fabric//)** — Today, organizations are experiencing massive growth in the volume of data they handle. As a result, they face an ever increasing need to be able to organize and manage that data in a logical way that facilitates...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Should Fabric Domains Have Leaders?
 

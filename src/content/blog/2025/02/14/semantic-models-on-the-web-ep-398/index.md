@@ -34,17 +34,16 @@ Mike and Tommy dig into what it means for Power BI semantic models to move ‘on
 
 ## News & Announcements
 
-- [Announcing billing for Workspace monitoring](https://blog.fabric.microsoft.com/blog/announcing-activation-of-billing-for-workspace-monitoring?ft=All&WT.mc_id=DP-MVP-5002621#) — Workspace monitoring (preview) helps admins and developers troubleshoot issues by collecting logs and performance metrics across Fabric. Microsoft announced billing activation starting March 10, 2025, where the automatically-created Monitoring Eventstream and Monitoring Eventhouse consume Capacity Units (CUs) like other Fabric workloads.
+- **[Announcing billing for Workspace monitoring | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-activation-of-billing-for-workspace-monitoring/)** — Workspace Monitoring, currently in preview is an observability feature within Fabric that enables monitoring capabilities across two key areas:&nbsp; Workspace monitoring allows Fabric developers and admins to access...
 
-- [Edit semantic models in the Power BI service](https://learn.microsoft.com/power-bi/transform-model/service-edit-data-models?WT.mc_id=DP-MVP-5002621) — You can now create and edit semantic models directly in the Power BI service, including Power Query edits, relationships, DAX measures, and RLS. The key shift is that modeling is becoming more collaborative and “web-native,” with changes happening where the model lives instead of requiring a Desktop-only workflow.
+- **[Edit semantic models in the Power BI service - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/service-edit-data-models?WT.mc_id=DP-MVP-5002621)** — Learn how to edit semantic models in the Power BI service, including editing relationships, creating DAX measures, managing RLS, and more.
 
-- [Direct Lake in Power BI Desktop](https://learn.microsoft.com/fabric/fundamentals/direct-lake-power-bi-desktop?WT.mc_id=DP-MVP-5002621) — Direct Lake models can be edited from Power BI Desktop via live editing against the semantic model in the Fabric workspace (no publish step). Version history, Git integration, and deployment pipelines become increasingly important here because the model is effectively a shared asset that multiple people can update.
+- **[Learn About Editing Semantic Models in Direct Lake in Power BI Desktop - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-power-bi-desktop?WT.mc_id=DP-MVP-5002621)** — Describes using Power BI Desktop to edit semantic models in Power BI Desktop.
 
-- [Submit a topic idea / mailbag](https://bit.ly/3i8LdBo) — Have a question you want covered on the show? Drop it in the mailbag form—episodes are best when they start with real-world scenarios (messy included).
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast/) — The easiest “one link hub” to catch the live stream and find Spotify/Apple links to listen later.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://bit.ly/3Ymso48) — A quick way to generate consistent Power BI themes for brand-aligned reports. If your team repeatedly tweaks colors/fonts by hand, a repeatable theme workflow saves time and reduces rework.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Semantic Models on the Web
 

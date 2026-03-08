@@ -30,17 +30,16 @@ Mike and Tommy dig into the myths and magic around Copilot and what it really me
 
 ## News & Announcements
 
-- [Recap of Data Factory Announcements at Fabric Community Conference Europe | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/recap-of-data-factory-announcements-at-fabric-community-conference-europe/) — Link shared in the episode description.
+- **[Recap of Data Factory Announcements at Fabric Community Conference Europe | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/recap-of-data-factory-announcements-at-fabric-community-conference-europe/)** — Last week was such an exciting week for Fabric during the Fabric Community Conference Europe, filled with several product announcements and sneak previews of upcoming new features. Thanks to all of you who...
 
-- [Important billing updates coming to Copilot and AI in Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/important-billing-update-coming-to-copilot-and-ai-in-fabric/) — Link shared in the episode description.
+- **[Important billing updates coming to Copilot and AI in Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/important-billing-update-coming-to-copilot-and-ai-in-fabric/)** — Coauthor: Misha Desai We’re always exploring new ways to help you more easily unlock the full potential of your data. Today, we are excited to announce upcoming pricing and billing updates to make Copilot and AI...
 
-- [Tag your data to enrich item curation and discovery | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/tag-your-data-to-enrich-item-curation-and-discovery/) — Link shared in the episode description.
+- **[Tag your data to enrich item curation and discovery | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/tag-your-data-to-enrich-item-curation-and-discovery/)** — Introducing tags &#8211; now in public preview. When it comes to data discovery and management, the modern data estate presents a set of daunting challenges for organizations and admins. An explosion in data sources...
 
-- [Announcing Service Principal support for Fabric APIs | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-service-principal-support-for-fabric-apis/) — Link shared in the episode description.
+- **[Announcing Service Principal support for Fabric APIs | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-service-principal-support-for-fabric-apis/)** — A new way to authenticate and authorize your Fabric applications. You can now use service principal to access Fabric APIs. Service principal is a security identity that you can create&nbsp;in Entra and assign...
 
-- [Myths, Magic, and Copilot for Power BI — DATA GOBLINS](https://data-goblins.com/power-bi/copilot-in-power-bi) — Link shared in the episode description.
+- **[Myths, Magic, and Copilot for Power BI — DATA GOBLINS](https://data-goblins.com/power-bi/copilot-in-power-bi)** — In this article, I explain Copilot in Fabric and Copilot in Power BI, walking through what it is, how it works, and three common scenarios when it might be used. More importantly, I evaluate whether using it over...
 
-- [https://bit.ly/3i8LdBo](https://bit.ly/3i8LdBo) — Link shared in the episode description.
 
 ## Main Discussion: Copilot in the real world
 

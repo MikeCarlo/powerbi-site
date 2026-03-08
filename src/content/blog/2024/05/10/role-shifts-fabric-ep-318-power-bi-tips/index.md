@@ -21,14 +21,10 @@ This week on the Explicit Measures Podcast, we dive into **Role Shifts & Fabric*
 <iframe width="800" height="500" src="https://www.youtube.com/embed/riRi8isakVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## News & Announcements
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/introducing-external-data-sharing-a-new-way-to-collaborate-across-fabric-tenants/)
-- [Link](https://powerbi.microsoft.com/en-us/blog/announcing-live-connect-for-power-bi-report-integration-with-onedrive-and-sharepoint/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Introducing external data sharing: a new way to collaborate across Fabric tenants | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-external-data-sharing-a-new-way-to-collaborate-across-fabric-tenants/)** — These days every company is a data company. More specifically, every company has data that can provide added value to someone else. And even more to the point, data sharing has become a common and essential practice...
+- **[Announcing live connect for Power BI report integration with OneDrive and SharePoint (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-live-connect-for-power-bi-report-integration-with-onedrive-and-sharepoint/)** — Last May, we announced the integration between Power BI and OneDrive and SharePoint (ODSP) that allows you to view Power BI reports directly in a OneDrive or SharePoint document library. Previously, this capability...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Role Shifts & Fabric
 - Key topic: Role Shifts & Fabric

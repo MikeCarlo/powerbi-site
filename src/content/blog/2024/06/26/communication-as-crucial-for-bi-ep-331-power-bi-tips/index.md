@@ -22,13 +22,9 @@ In this episode of Explicit Measures, we dig into the key takeaways and what the
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/introducing-new-branching-capabilities-in-fabric-git-integration/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Introducing New Branching Capabilities in Fabric Git Integration | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-new-branching-capabilities-in-fabric-git-integration/)** — We&#8217;re excited to announce the introduction of new branching capabilities in Fabric Git integration, making it even easier to use! Fabric Git integration is a vital component of the Fabric CI/CD toolkit,...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Communication as Crucial for BI - Ep. 331 - Power BI tips
 

@@ -33,7 +33,7 @@ Calculation groups are one of DAX's most powerful features, but they can also be
 
 ## News & Announcements
 
-- [OneLake Costs Simplified: Lowering Capacity Utilization When Accessing OneLake](https://blog.fabric.microsoft.com/blog/onelake-costs-simplified-lowering-capacity-utilization-when-accessing-onelake/?WT.mc_id=DP-MVP-5002621) — Microsoft reduces the capacity cost of OneLake access, addressing one of the most common cost concerns.
+- **[OneLake costs simplified: lowering capacity utilization when accessing OneLake | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/onelake-costs-simplified-lowering-capacity-utilization-when-accessing-onelake//)** — We’re thrilled to share a major update and simplification to OneLake’s capacity utilization model that will make it even easier to manage Fabric capacity and scale your data workloads. We are reducing the consumption...
 
 ## Main Discussion: Calculation Groups
 

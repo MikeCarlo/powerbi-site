@@ -31,15 +31,14 @@ Mike, Tommy, and Seth continue the Content Lifecycle Management (CLM) series wit
 
 ## News & Announcements
 
-- [Quickly connect to your Azure resources in Fabric with the Data Pipeline “modern Get Data” experience](https://blog.fabric.microsoft.com/en-US/blog/quickly-connect-to-your-azure-resources-in-fabric-with-the-data-pipeline-modern-get-data-experience/) — A walkthrough of the updated get-data experience for pipelines and connecting to Azure resources.
+- **[Quickly Connect to your Azure Resources in Fabric with the Data Pipeline Modern Get Data Experience | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/quickly-connect-to-your-azure-resources-in-fabric-with-the-data-pipeline-modern-get-data-experience/)** — We are thrilled to share that you can easily browse and connect to your Azure resources automatically with the modern get data experience of Data Pipelines. With the Browse Azure experience, you don’t need to...
 
-- [Unlocking AI for Power BI: Business Intelligence skills](https://promptingbi.com/2024/07/17/unlocking-ai-for-power-bi-business-intelligence-skills/) — A new blog post on PromptingBI about using AI to accelerate BI work.
+- **[Unlocking AI for Power BI & Business Intelligence Skills – Prompting BI](https://promptingbi.com/2024/07/17/unlocking-ai-for-power-bi-business-intelligence-skills/)** — Prompting BI
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike, Tommy, and Seth a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: CLM Part 2 — Plan & Design Content
 

@@ -33,9 +33,9 @@ Mike and Tommy break down the biggest DAX and semantic model announcements from 
 
 ## News & Announcements
 
-- [Update to the Power BI Embedded Analytics Accelerators Program](https://powerbi.microsoft.com/blog/update-to-the-power-bi-embedded-analytics-accelerators-program/?WT.mc_id=DP-MVP-5002621) — Microsoft announced expansions to the Embedded Analytics Solution Accelerators Partner Program at FabCon 2025, including a new accelerator called Entelexos developed by Carlo Solutions. Existing partners like EmbedFast, Reporting Hub, and EmbeDash also showcased major updates including AI-powered features, scheduled exports, and improved white-labeling capabilities.
+- **[Update to the Power BI Embedded Analytics Accelerators Program | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/update-to-the-power-bi-embedded-analytics-accelerators-program/?WT.mc_id=DP-MVP-5002621)** — Just over a year ago, we introduced a set of embedded analytics solution accelerators created by our partners with our guidance. These tools significantly reduce the time-to-market for self-service analytics embedded...
 
-- [Optimizing for CI/CD in Microsoft Fabric](https://blog.fabric.microsoft.com/blog/optimizing-for-ci-cd-in-microsoft-fabric?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft's internal Azure Data team shares their CI/CD approach for Fabric after three years of real-world development. The article covers workspace organization strategies, a branching workflow that uses PPE as the default branch instead of main, and deployment automation using the fabric-cicd Python library with environment parameterization.
+- **[Optimizing for CI/CD in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/optimizing-for-ci-cd-in-microsoft-fabric/)** — For nearly three years, Microsoft’s internal Azure Data team has been developing data engineering solutions using&nbsp;Microsoft Fabric. Throughout this journey, we’ve refined our&nbsp;Continuous Integration and...
 
 ## Main Discussion: DAX and Semantic Model Announcements at FabCon 2025
 

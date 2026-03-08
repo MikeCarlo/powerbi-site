@@ -33,7 +33,7 @@ Every team eventually hits the same wall: you can’t scale analytics on a pile 
 
 ## News & Announcements
 
-- [Microsoft Named Leader and Outperformer in the 2025 GigaOm Radar for Semantic Layers & Metric Stores](https://powerbi.microsoft.com/en-us/blog/microsoft-named-leader-and-outperformer-in-the-2025-gigaom-radar-for-semantic-layers-metric-stores/) — Microsoft highlights the growing importance of semantic models as the backbone of trustworthy analytics and AI-ready context. The post reinforces a key theme of the episode: a semantic layer isn’t “extra metadata,” it’s the shared business meaning that prevents metric drift and makes self-service (and AI) reliable.
+- **[Microsoft named Leader and Outperformer in the 2025 GigaOm Radar for Semantic Layers &amp; Metric Stores | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/microsoft-named-leader-and-outperformer-in-the-2025-gigaom-radar-for-semantic-layers-metric-stores/)** — In today’s data-driven world, semantic models have become the backbone of trustworthy analytics. They define business logic, metrics, and relationships that turn raw data into meaningful, trusted and curated...
 
 ## Main Discussion: Rebuilding with Lessons Learned
 

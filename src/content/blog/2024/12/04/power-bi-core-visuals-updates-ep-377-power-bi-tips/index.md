@@ -32,15 +32,12 @@ Mike, Tommy, and Seth break down what’s new (and what’s changing) in **Power
 
 ## News & Announcements
 
-- [Power BI Core Visuals on LinkedIn](https://www.linkedin.com/company/pbicorevisuals) — Follow for updates, announcements, and discussion around the built-in Power BI visuals roadmap. It’s a good way to keep up with changes that can affect formatting options, interactivity, and how visuals behave in production reports.
 
-- [Got an idea or topic for a future episode?](https://bit.ly/3i8LdBo) — Drop your mailbag questions and topic ideas for future episodes.
 
-- [Subscribe / listen to the Explicit Measures Podcast](https://powerbi.tips/podcast) — The home base for the show, including where to listen and how to catch episodes live.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+ (Theme Generator)](https://bit.ly/3Ymso48) — The Power BI Theme Generator experience from PowerBI.tips for creating consistent report styling.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- Follow us: [Mike](https://www.linkedin.com/in/michaelcarlo) · [Seth](https://www.linkedin.com/in/seth-bauer) · [Tommy](https://www.linkedin.com/in/tommypuglia)
 
 ## Main Discussion: Core Visuals Updates
 

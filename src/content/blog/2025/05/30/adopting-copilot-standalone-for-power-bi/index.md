@@ -38,19 +38,19 @@ Mike and Tommy break down what Copilot Standalone for Power BI is and why it cha
 
 The episode starts with a set of Fabric news items, including a useful explainer on Mirroring. Tommy highlights the difference between **standard mirroring** (connector-based, for supported sources) and **open mirroring** (a flexible pattern that lets almost any app write change data into Fabric). Mike calls out a practical governance question teams should test early: inserts and updates are straightforward, but **how do deletes get handled** end-to-end?
 
-- [Mirroring in Microsoft Fabric explained: benefits, use cases, and pricing demystified](https://blog.fabric.microsoft.com/en-US/blog/mirroring-in-microsoft-fabric-explained-benefits-use-cases-and-pricing-demystified/) — A deep dive into what mirroring is in Fabric, where it fits versus other ingestion patterns, and what to consider for operational-to-analytic replication.
+- **[Mirroring in Microsoft Fabric explained: benefits, use cases, and pricing demystified | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/mirroring-in-microsoft-fabric-explained-benefits-use-cases-and-pricing-demystified/)** — Co-Author: Maraki Ketema, Principal Product Manager Unlocking Data Value at Scale: Mirroring in Microsoft Fabric In the modern data era, speed, scale, and simplicity are no longer luxuries—they&#8217;re expectations....
 
 ### Updates to database development tools for SQL database in Fabric
 
 Tommy brings up Fabric SQL database tooling improvements—source control, SQL project workflows (DACPAC-style), and better dev experiences in tools like VS Code. Mike shares his shift in perspective: with Fabric’s pay-per-use model, a SQL database is no longer something you have to keep running (and paying for) 24/7, which makes it much more attractive for smaller transactional workloads and app backends.
 
-- [Updates to database development tools for SQL database in Fabric](https://blog.fabric.microsoft.com/en-US/blog/updates-to-database-development-tools-for-sql-database-in-fabric/) — What’s new for SQL database development in Fabric, including project-based workflows, source control, and CI/CD direction.
+- **[Updates to database development tools for SQL database in Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/updates-to-database-development-tools-for-sql-database-in-fabric/)** — With SQL database in Fabric, the source control integration in Fabric enables you to keep your active work synced to git while following a branching strategy that best matches your team’s environments and deployment...
 
 ### Intelligent Data Cleanup (Smart Purging) for Fabric Warehouses
 
 A smaller article with a big impact: automatic garbage collection for Fabric warehouses. Mike shares a real-world lesson from the lakehouse world—storage costs can balloon when no one runs cleanup/optimization—and argues that “smart purging” style automation is the direction these platforms need to keep storage efficient over time.
 
-- [Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses](https://blog.fabric.microsoft.com/en-US/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses/) — Overview of automated cleanup/garbage collection aimed at reducing storage bloat and maintenance overhead.
+- **[Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses/)** — In the era of Artificial Intelligence, organizations generate and accumulate large volumes of information every second. From transactional records to user logs and analytics data warehouses serve as a single source...
 
 ## Main Discussion: Adopting Copilot Standalone for Power BI
 

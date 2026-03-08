@@ -23,16 +23,12 @@ A fresh episode of **Explicit Measures** is here—let’s dig into the latest P
 
 ## News & Announcements
 
-- [Link](https://powerbi.microsoft.com/en-us/blog/power-bi-april-2024-feature-summary/)
-- [Link](https://powerbi.microsoft.com/en-us/blog/supporting-continuous-slide-shows-in-power-bi-storytelling-add-in/)
-- [Link](https://powerbi.microsoft.com/en-us/blog/introducing-copilot-pane-in-power-bi-desktop-preview/)
-- [Link](https://data-goblins.com/power-bi/whats-new)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Power BI April 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-april-2024-feature-summary/)** — Power BI April 2024 Feature Summary Welcome to the April 2024 update. There is more to explore, please continue to read on.
+- **[Supporting continuous Slide Shows in Power BI Storytelling add-in | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/supporting-continuous-slide-shows-in-power-bi-storytelling-add-in/)** — PowerPoint lets you play a presentation continuously. This is handy when you want to show information on public screens without anyone having to control it. In this update, we added a new configuration to...
+- **[Introducing Copilot Pane in Power BI Desktop (preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-copilot-pane-in-power-bi-desktop-preview/)** — Earlier this year, we announced Copilot preview for all customers with Premium/Fabric capacity in Power BI web. We&#8217;re thrilled to share that the same Copilot experience for report creation is now available for...
+- **[Does it feel like too much? — DATA GOBLINS](https://data-goblins.com/power-bi/whats-new)** — If you feel like the pace and volume of updates surrounding Power BI have increased, you’re not alone. In this article, I discuss why many people feel like “it’s just too much” lately, why that’s a problem, and what...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Does It Feel Like Too Much?
 

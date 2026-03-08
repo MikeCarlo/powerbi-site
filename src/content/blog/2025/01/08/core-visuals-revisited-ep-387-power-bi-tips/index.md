@@ -34,9 +34,9 @@ Mike and Tommy revisit Power BI’s core visuals and share practical design and 
 
 This episode’s news focuses on **developer productivity and governance inside Fabric**—how teams can work faster without losing track of versions and changes.
 
-- [Release of Fabric Studio v1.0](https://blog.gbrueckl.at/2024/12/release-of-fabric-studio-v1-0/) — Fabric Studio is a VS Code extension for managing Fabric workspaces and editing Fabric items (like semantic models, reports, pipelines, and notebooks) in a more developer-centric environment. The big win is tighter workflow integration: browse and manage items, edit definitions like local files, and push changes back without constantly bouncing between tooling.
+- **[Release of Fabric Studio v1.0 – Gerhard Brueckl on BI & Data](https://blog.gbrueckl.at/2024/12/release-of-fabric-studio-v1-0/)** — Gerhard Brueckl on BI & Data
 
-- [Notebook Live Versioning](https://blog.fabric.microsoft.com/blog/notebook-live-versioning/?WT.mc_id=DP-MVP-5002621#) — Notebook Live Versioning adds built-in version history for Fabric notebooks with automatic checkpoints (every ~5 minutes) plus manual checkpoints when you want to capture milestones. This makes collaboration and recovery much easier—especially when multiple people are iterating on the same notebook or when you need to audit what changed and when.
+- **[Notebook Live Versioning | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/notebook-live-versioning//)** — The Fabric notebook version history feature has launched! This new feature is designed to significantly improve your experience in developing and managing notebooks by providing robust built-in version control...
 
 ## Main Discussion: Core visuals — the fastest way to improve your reports
 

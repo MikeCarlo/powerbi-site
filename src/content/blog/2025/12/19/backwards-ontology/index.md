@@ -33,9 +33,9 @@ Who owns the ontology? In this episode, Mike and Tommy dig into the practical re
 
 ## News & Announcements
 
-- [Ontology Overview — Microsoft Learn](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview) — Microsoft's official documentation for the ontology item in Fabric IQ, now in public preview. The ontology lets you define business entities, their properties, and relationships in a machine-readable format that AI agents and Copilot can reason over. It supports generating ontology from existing semantic models—a key capability Mike and Tommy explore in this episode.
+- **[What is ontology (preview)? - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview)** — Learn about core concepts and features of the ontology (preview) item.
 
-- [Generate Ontology from Concepts — Microsoft Learn](https://learn.microsoft.com/en-us/fabric/iq/ontology/concepts-generate) — Documentation on auto-generating ontology items from existing data sources, including semantic models. This "backwards" approach—letting the system infer entities from what you've already built—lowers the barrier to entry significantly.
+- **[Generating an ontology (preview) from a semantic model - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/iq/ontology/concepts-generate)** — Learn about generating an ontology (preview) item from a Power BI semantic model.
 
 - **ChatGPT App Marketplace Launch** — OpenAI launched its app marketplace, allowing developers to integrate services like Booking.com, Canva, and others directly into ChatGPT. Mike sees this as a strategic inflection point—potentially the "beginning of the end" for ChatGPT as a standalone tool, as it evolves into a platform play with monetization and advertising implications.
 

@@ -32,9 +32,9 @@ Mike and Tommy dive into naming conventions for Microsoft Fabric items and why a
 
 ## News & Announcements
 
-- [Announcing AI Functions for Seamless Data Engineering with GenAI](https://blog.fabric.microsoft.com/blog/announcing-ai-functions-for-easy-llm-powered-data-enrichment/) — Microsoft has released AI functions in Fabric as a public preview, making it easy to apply LLM-powered transformations directly to your OneLake data. With a single line of code you can classify, summarize, extract, and analyze sentiment on Spark or pandas DataFrames. No complex setup required — just install the library in a Fabric notebook and start enriching your data with GenAI.
+- **[Announcing AI functions for seamless data engineering with GenAI | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-ai-functions-for-easy-llm-powered-data-enrichment//)** — With AI functions, you can harness the power of Fabric&#8217;s native large-language model endpoint for seamless summarization, classification, text generation, and much more—all with a single line of code.
 
-- [Fabric February 2025 Feature Summary](https://blog.fabric.microsoft.com/blog/fabric-february-2025-feature-summary/) — The February 2025 Fabric update brings a packed set of new capabilities across the platform. Highlights include Explore from Copilot visual answers for ad-hoc exploration in Power BI, OPENROWSET file browsing in Data Warehouse, and conversational AI Skill for Data Science. The update also promotes FabCon 2025 in Las Vegas and a limited-time 50% discount on the DP-700 certification exam.
+- **[Fabric February 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2025-feature-summary//)** — Welcome to the Fabric 2025 update There are a lot of exciting features for you this month! Here are some highlights: In Power BI, Explore from Copilot visual answers which lets you do easy ad-hoc exploration. In Data...
 
 ## Main Discussion: Naming Conventions in Microsoft Fabric
 

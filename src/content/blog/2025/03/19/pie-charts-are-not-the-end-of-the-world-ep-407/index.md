@@ -33,9 +33,8 @@ Mike and Tommy dive into the controversial world of pie charts, inspired by a SQ
 
 ## News & Announcements
 
-- [Using OBSTORE to Load Arbitrary Files to OneLake](https://smalldataandselfservice.com) — A community blog post exploring how to use the OBSTORE library to load arbitrary file types directly into OneLake. This opens up new possibilities for ingesting non-standard data formats into Microsoft Fabric's unified storage layer.
 
-- [Using Pie Charts Is Not the End of the World](https://www.sqlbi.com/articles/using-pie-charts-is-not-the-end-of-the-world/) — SQLBI revisits the age-old "avoid pie charts" rule, explaining the principles behind it while highlighting legitimate exceptions. The article argues that while pie charts are often misused, there are scenarios where they can be effective — particularly for simple part-of-whole comparisons with few categories. A nuanced take that challenges the blanket ban many data professionals have adopted.
+- **[Using pie charts is not the end of the world - SQLBI](https://www.sqlbi.com/articles/using-pie-charts-is-not-the-end-of-the-world/)** — This article is about how rules like “avoid pie charts” can be useful for beginners, but also unhelpful in real-world scenarios with more nuance. Instea
 
 ## Main Discussion: Pie Charts — Are They Really That Bad?
 

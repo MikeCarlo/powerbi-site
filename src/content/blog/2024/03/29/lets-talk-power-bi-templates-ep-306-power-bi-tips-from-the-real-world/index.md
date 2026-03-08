@@ -27,17 +27,13 @@ In this episode of the Explicit Measures podcast, Mike discuss Let's Talk Power 
 
 ## News & Announcements
 
-- [Link](https://eriksvensen.wordpress.com/2024/03/18/powerbi-combine-visual-calculations-and-numeric-parameters-to-create-a-dynamic-moving-average-period/)
-- [Link](https://www.powerofbi.org/2024/03/08/power-query-openai-api-gpt/)
-- [Link](https://mrjonlunn.com/2024/03/20/metadata-driven-notebooks-for-fabric/)
-- [Link](https://datameerkat.com/power-bi-templates)
-- [Link](https://blog.crossjoin.co.uk/2023/06/11/power-query-templates-in-excel-and-fabric/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[#PowerBI – Combine visual calculations and numeric parameters to create a dynamic moving average period – Erik Svensen – Blog about Power BI, Power Apps, Power Query](https://eriksvensen.wordpress.com/2024/03/18/powerbi-combine-visual-calculations-and-numeric-parameters-to-create-a-dynamic-moving-average-period/)** — With the introduction of visual calculation in the February 2024 release of Power BI desktop (https://powerbi.microsoft.com/en-us/blog/visual-calculations-preview/) - this gives us some new possibilities to add...
+- **[Power Query + OpenAI API (GPT) - Power of Business Intelligence](https://www.powerofbi.org/2024/03/08/power-query-openai-api-gpt/)** — Carlos Barboza is experimenting with visualizing Elon Musk’s activity on Twitter. That looks really great, but I wanted to see more than just quantity; I … Read More
+- **[Metadata Driven Notebooks for Fabric – IT Consultant on the edge](https://mrjonlunn.com/2024/03/20/metadata-driven-notebooks-for-fabric/)** — As it is SQLBits 2024 this week, and me being a helper I've decided to release 'Tapestry' a metadata driven set of notebooks to process your data. It is not a complete process, at the moment it is just a Landing to...
+- **[Power BI Templates](https://datameerkat.com/power-bi-templates)** — ".pbit" files are well-known in the Power BI world. But this is not the only type of "template" we can encounter. It depends on the scenario we are trying to...
+- **[Chris Webb's BI Blog: Power Query Templates In Excel And Fabric](https://blog.crossjoin.co.uk/2023/06/11/power-query-templates-in-excel-and-fabric/)** — Export and import Power Query template files in Excel and Fabric
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Let's Talk Power BI Templates - Ep.306 - Power BI tips from the Real World
 

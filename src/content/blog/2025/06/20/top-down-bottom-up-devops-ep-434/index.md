@@ -34,7 +34,7 @@ Mike, Tommy, and guest Matias discuss the top-down and bottom-up approaches to a
 
 ## News & Announcements
 
-- [Introducing MCP Support for Real-Time Intelligence (RTI)](https://blog.fabric.microsoft.com/blog/introducing-mcp-support-for-real-time-intelligence-rti/) — Microsoft released an open-source Model Context Protocol (MCP) server for Fabric Real-Time Intelligence, enabling AI agents to execute KQL queries against Eventhouse and Azure Data Explorer backends. This is the first MCP integration for Fabric, allowing tools like Claude and VS Code to seamlessly interact with real-time data. Support for Digital Twin Builder, Eventstreams, and Activator is coming soon.
+- **[Introducing MCP Support for Real-Time Intelligence (RTI) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-mcp-support-for-real-time-intelligence-rti//)** — Co-author: Alexei Robsky, Data Scientist Manager Overview&nbsp; As organizations increasingly rely on real-time data to drive decisions, the need for intelligent, responsive systems has never been greater. At the...
 
 - **New Item Creation Experience in Fabric** — Microsoft is introducing a revamped item creation experience in Fabric that reduces clicks and lets you select the destination workspace and folder upfront. Mike and Tommy discuss how this addresses the pain of disorganized workspaces, with Mike admitting he's abandoned favorites entirely in favor of just searching the full item list.
 

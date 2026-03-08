@@ -30,10 +30,6 @@ Mike and Tommy explore what you can accomplish with just $100 invested in Micros
   allowfullscreen
 ></iframe>
 
-## News & Announcements
-
-- [PowerTable Private Preview](https://powertable.com/private-preview/) — PowerTable by Lumel has launched a private preview, allowing business users to build highly scalable data apps on top of modern data platforms. This tool aims to bridge the gap between data infrastructure and business-user accessibility.
-
 ## Main Discussion: Investing $100 in Fabric and Power BI
 
 Mike and Tommy dive into the practical question of what you can do if you only have $100 to invest in the Microsoft Fabric and Power BI ecosystem. This is a great exploration for newcomers or budget-conscious teams looking to get started.

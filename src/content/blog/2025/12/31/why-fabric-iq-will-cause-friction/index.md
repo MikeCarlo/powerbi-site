@@ -33,7 +33,7 @@ Mike and Tommy tackle Microsoft's new Fabric IQ announcement and its ontology-dr
 
 ## News & Announcements
 
-- [Introducing Fabric IQ: The Semantic Foundation for Enterprise AI](https://blog.fabric.microsoft.com/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft announced Fabric IQ at Ignite, introducing a new semantic foundation within Microsoft Fabric that unifies data, meaning, and actions into a single layer. At its core is the new Ontology item (now in public preview), which connects people, processes, systems, and rules into rich business entities—enabling AI agents and users to reason and act with confidence rather than reconstructing context from scattered definitions.
+- **[Fabric IQ: The Semantic Foundation for Enterprise AI | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai/)** — AI is rapidly transforming how we work, operate, and decide, and teams will increasingly depend on it in their daily processes. But across waves of enterprise AI, from BI dashboards and data lakes to predictive...
 
 ## Main Discussion: Fabric IQ and the Friction Ahead
 

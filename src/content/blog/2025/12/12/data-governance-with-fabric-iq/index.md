@@ -33,9 +33,9 @@ Fresh off the Ignite announcements, Mike and Tommy dig into what data governance
 
 ## News & Announcements
 
-- [Run Notebooks in Pipelines with Service Principal or Workspace Identity](https://blog.fabric.microsoft.com/en-us/blog/run-notebooks-in-pipelines-with-service-principal-or-workspace-identity/) — Fabric notebooks in pipelines can now run under service principals or workspace identity instead of individual user credentials. Mike highlights this as a critical enterprise feature—when Tommy wins the lottery and leaves, the pipelines won't break because they were built under Tommy's credentials. Workspace identity is becoming the standard for production deployments.
+- **[Run Notebooks in Pipelines with Service Principal or Workspace Identity | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/run-notebooks-in-pipelines-with-service-principal-or-workspace-identity/)** — Update: Support for using Workspace Identity (WI) with the Notebook activity in Pipelines is currently rolling out. There was a deployment delay in this feature, but we expect this to be fully available by the end of...
 
-- [Introducing Fabric IQ: The Semantic Foundation for Enterprise AI](https://blog.fabric.microsoft.com/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai?ft=All&WT.mc_id=DP-MVP-5002621) — The main topic source. Mike and Tommy continue unpacking the Fabric IQ announcement from Ignite, this time through a data governance lens.
+- **[Fabric IQ: The Semantic Foundation for Enterprise AI | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-fabric-iq-the-semantic-foundation-for-enterprise-ai/)** — AI is rapidly transforming how we work, operate, and decide, and teams will increasingly depend on it in their daily processes. But across waves of enterprise AI, from BI dashboards and data lakes to predictive...
 
 ## Main Discussion: Data Governance in the Fabric IQ Era
 

@@ -30,13 +30,13 @@ In this mailbag episode, Mike and Tommy dig into why Power BI self-service adopt
 
 ## News & Announcements
 
-- [Diagramming for DAX with Generative AI](https://promptingbi.com/2024/09/11/diagramming-for-dax-with-generative-ai/) — A walkthrough of using generative AI to create diagrams that capture DAX logic and evaluation context. The focus is on improving how you communicate DAX patterns and avoid “black box” measures by making the mental model visible.
+- **[Diagramming for DAX with Generative AI – Prompting BI](https://promptingbi.com/2024/09/11/diagramming-for-dax-with-generative-ai/)** — Prompting BI
 
-- [Getting Started with Prompting – Intro to Context](https://promptingbi.com/2024/09/10/getting-started-with-prompting-intro-to-context/) — A practical intro to prompting with an emphasis on context: what to provide, why it matters, and how to iterate. Useful if you’re trying to get more reliable results from ChatGPT/Copilot for BI tasks.
+- **[Getting Started with Prompting – Intro to Context – Prompting BI](https://promptingbi.com/2024/09/10/getting-started-with-prompting-intro-to-context/)** — Prompting BI
 
-- [Announcing New Data Factory Connectors Released in Q3 2024](https://blog.fabric.microsoft.com/en-US/blog/announcing-new-data-factory-connectors-released-in-q3-2024/) — Microsoft shares a batch of new Fabric Data Factory connectors released in Q3 2024. If you’re building ingestion pipelines, this is a good scan for “do we still need a workaround?” moments.
+- **[Announcing New Data Factory Connectors Released in Q3 2024 | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/announcing-new-data-factory-connectors-released-in-q3-2024/)** — We are excited to announce the release of several powerful new connectors in Fabric Data Factory in Q3 2024! These connectors will significantly enhance your data integration and transformation capabilities, enabling...
 
-- [Lakehouse Connector Schema Support for Reading and Writing Data](https://blog.fabric.microsoft.com/en-US/blog/introducing-the-new-feature-in-lakehouse-connector-in-fabric-data-factory-schema-support-for-reading-and-writing-data/) — An update to the Fabric Data Factory Lakehouse connector adding schema support (preview). This improves organization and discovery (and can influence governance) when you’re moving data in/out of Lakehouse tables.
+- **[Introducing the New Feature in Lakehouse Connector in Fabric Data Factory: Schema Support for Reading and Writing Data | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-the-new-feature-in-lakehouse-connector-in-fabric-data-factory-schema-support-for-reading-and-writing-data/)** — Fabric Lakehouse supports the creation of custom schemas. Schemas allow users to group tables together for better data discovery, access control, and more. This is now a Preview feature in Fabric. Learn more here. We...
 
 ## Main Discussion: Self-Service Power BI That Actually Gets Used
 

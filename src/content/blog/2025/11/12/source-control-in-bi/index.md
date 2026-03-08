@@ -34,7 +34,7 @@ Source control in BI is necessary, painful, and—for many teams—still aspirat
 
 ## News & Announcements
 
-- [Microsoft SQL Community Conference Announced](https://blog.fabric.microsoft.com/blog/its-time-announcing-the-microsoft-sql-community-conference?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft announces a combined SQL + Fabric community conference, signaling the convergence of the SQL and Fabric ecosystems.
+- **[It’s Time! Announcing The Microsoft SQL Community Conference | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/its-time-announcing-the-microsoft-sql-community-conference/)** — SQL is having its moment. From on-premises data centers to Azure&nbsp;Cloud&nbsp;Services to Microsoft Fabric, SQL has evolved into something far more powerful than many&nbsp;realize&nbsp;and&nbsp;it deserves the...
 
 ## Main Discussion: Source Control for BI
 

@@ -23,19 +23,14 @@ The Importance of Semantic Link is the focus of this week’s Explicit Measures 
 
 ## News & Announcements
 
-- [Link](https://lucidbi.co/how-to-reduce-data-integration-costs-by-98)
-- [Link](https://pbidax.wordpress.com/2024/04/17/visual-calculations-introducing-a-two-layer-approach-in-dax-calculations/)
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/semantic-link-use-fabric-notebooks-and-power-bi-datasets-for-machine-learning-data-validation-and-more?WT.mc_id=DP-MVP-5002621)
-- [Link](https://learn.microsoft.com/fabric/data-science/read-write-power-bi?WT.mc_id=DP-MVP-5002621)
-- [Link](https://learn.microsoft.com/python/api/semantic-link-sempy/sempy.fabric.fabricdataframe?view=semantic-link-python&WT.mc_id=DP-MVP-5002621#sempy-fabric-fabricdataframe-find-dependencies)
-- [Link](https://learn.microsoft.com/python/api/semantic-link-sempy/sempy.dependencies?view=semantic-link-python&WT.mc_id=DP-MVP-5002621#sempy-dependencies-plot-dependency-metadata)
-- [Link](https://learn.microsoft.com/fabric/data-engineering/how-to-use-notebook?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Visual Calculations: Introducing a Two-Layer Approach in DAX Calculations – pbidax](https://pbidax.wordpress.com/2024/04/17/visual-calculations-introducing-a-two-layer-approach-in-dax-calculations/)** — The February release of Microsoft Power BI Desktop unveiled the public preview of a transformative DAX feature - visual calculations. This new feature promises to revolutionize the way calculations are written,...
+- **[Semantic link in Microsoft Fabric: Bridging BI and Data Science | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/semantic-link-use-fabric-notebooks-and-power-bi-datasets-for-machine-learning-data-validation-and-more?WT.mc_id=DP-MVP-5002621)** — We are pleased to introduce the Public Preview of semantic link, an innovative feature that seamlessly connects Power BI datasets with Synapse Data Science within Microsoft Fabric. As the gold layer in a medallion...
+- **[Read data from semantic models and write data that semantic models can consume using python - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-science/read-write-power-bi-python?WT.mc_id=DP-MVP-5002621)** — Learn how to read data, metadata, and evaluate measures from semantic models using Python's SemPy library in Microsoft Fabric.
+- **[sempy.fabric.FabricDataFrame class | Microsoft Learn](https://learn.microsoft.com/en-us/python/api/semantic-link-sempy/sempy.fabric.fabricdataframe?view=semantic-link-python&WT.mc_id=DP-MVP-5002621#sempy-fabric-fabricdataframe-find-dependencies)** — A dataframe for storage and propogation of PowerBI metadata. The elements of column_metadata can contain the following keys: table: table name in originating dataset column: column name dataset: originating dataset...
+- **[sempy.dependencies package | Microsoft Learn](https://learn.microsoft.com/en-us/python/api/semantic-link-sempy/sempy.dependencies?view=semantic-link-python&WT.mc_id=DP-MVP-5002621#sempy-dependencies-plot-dependency-metadata)** — This browser is no longer supported.
+- **[How to use notebooks - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/how-to-use-notebook?WT.mc_id=DP-MVP-5002621)** — Learn how to create a new notebook, import an existing notebook, connect notebooks to lakehouses, collaborate in notebooks, and comment code cells.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: The Importance of Semantic Link
 

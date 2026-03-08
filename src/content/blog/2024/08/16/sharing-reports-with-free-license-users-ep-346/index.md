@@ -32,11 +32,10 @@ Sharing Power BI reports with free-license users can be confusing — in this ep
 
 ## News & Announcements
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike, Tommy, and Seth a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://bit.ly/3Ymso48) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Sharing with Free-License Users
 

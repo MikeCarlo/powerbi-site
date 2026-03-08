@@ -33,9 +33,8 @@ Mike and Tommy dive into the new DAX Performance Testing notebook from Microsoft
 
 ## News & Announcements
 
-- [Tabular Editor Releases](https://tabulareditor.com/blog) — Tabular Editor has published new updates on their blog covering recent releases and enhancements to the tool. Check the blog for the latest features across Tabular Editor 2 and 3, including improvements to DAX editing, semantic model management, and CI/CD workflows.
+- **[Tabular Editor Blog](https://tabulareditor.com/blog)** — Latest news and insights, blog posts on Tabular Editor
 
-- [Code Actions | Tabular Editor Documentation](https://docs.tabulareditor.com/te3/features/code-actions.html) — Tabular Editor 3 introduces Code Actions, providing quick-fix suggestions and automated refactoring for DAX expressions. These inline actions help developers write cleaner DAX faster by offering contextual improvements directly within the editor.
 
 ## Main Discussion: DAX Performance Testing with Fabric Toolbox
 

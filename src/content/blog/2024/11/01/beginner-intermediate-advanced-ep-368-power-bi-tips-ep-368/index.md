@@ -30,14 +30,10 @@ In this episode, Mike and the team discuss **Beginner, Intermediate, Advanced - 
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-us/blog/fabric-october-2024-monthly-update?ft=All&WT.mc_id=DP-MVP-5002621#post-15133-_Toc180768019)
-- [Link](https://learn.microsoft.com/power-bi/enterprise/onelake-integration-overview?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Fabric October 2024 Monthly Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/fabric-october-2024-monthly-update?ft=All&WT.mc_id=DP-MVP-5002621#post-15133-_Toc180768019)** — Welcome to the October 2024 Update! Here are a few, select highlights of the many we have for Fabric this month. API for GraphQL support for Service Principal Names (SPNs). Introducing a powerful new feature in...
+- **[Learn about Microsoft OneLake Delta table integration in Power BI and Microsoft Fabric - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview?WT.mc_id=DP-MVP-5002621)** — Describes using Microsoft OneLake integration to automatically write import data into Delta tables.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Beginner, Intermediate, Advanced - Ep.368 - Power BI tips
 

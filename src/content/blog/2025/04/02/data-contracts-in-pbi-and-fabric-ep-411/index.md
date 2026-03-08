@@ -31,7 +31,7 @@ Mike and Tommy dive into data contracts and how they apply to Power BI and Micro
 
 ## News & Announcements
 
-- [Data Contracts Explained: Key Aspects, Tools, Setup](https://atlan.com/data-contracts/) — Atlan's comprehensive guide breaks down what data contracts are and why they matter for modern data teams. The article covers the five defining characteristics of trustworthy data contracts — including version control, enforceability via quality rules, and extensibility. A great companion read for understanding the concepts Mike and Tommy discuss in this episode.
+- **[Data Contracts Explained: Key Aspects, Tools, Setup in 2026](https://atlan.com/data-contracts/)** — Discover what data contracts are, why they matter, and how to design, validate, and scale them using modern tools to improve data quality and governance.
 
 ## Main Discussion: Data Contracts in Power BI and Fabric
 

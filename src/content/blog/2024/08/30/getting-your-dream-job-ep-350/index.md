@@ -31,13 +31,12 @@ Landing the right role in analytics isn’t just luck—it's a mix of clarity, p
 
 ## News & Announcements
 
-- [Microsoft Fabric — August 2024 update](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-august-2024-update/) — The monthly Fabric roundup with feature announcements across workloads.
+- **[Microsoft Fabric August 2024 Update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-august-2024-update/)** — Welcome to the August 2024 Update. Here are a few, select highlights of the many we have for Fabric. V-Order behavior of Fabric Warehouses allows you to manage the V-Order behavior at the warehouse level. Monitor ML...
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike, Tommy, and Seth a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://bit.ly/3Ymso48) — Tips+ includes tools and resources (like the theme generator) for building better Power BI reports faster.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Getting Your Dream Job
 

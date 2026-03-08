@@ -35,9 +35,9 @@ Mike and Tommy break down what Fabric SQL Databases are, where they fit in the F
 
 This episode is centered on one big theme: **Fabric is expanding beyond “lakehouse-first” patterns** and adding more first-class options for teams who still need (or prefer) a traditional relational database for certain workloads.
 
-- [Decision guide: SQL database in Microsoft Fabric](https://learn.microsoft.com/fabric/database/sql/decision-guide?WT.mc_id=DP-MVP-5002621) — Microsoft’s decision guide frames when a **Fabric SQL database** is the right fit versus other Fabric storage/compute options. It’s useful if you’re trying to map requirements like transactional writes, concurrency, familiar T-SQL patterns, and operational app integration to the right Fabric artifact. The key value is clarity: it helps teams avoid forcing every scenario into a Lakehouse just because it’s the default.
+- **[Limitations for SQL database - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/database/sql/limitations?WT.mc_id=DP-MVP-5002621)** — A detailed list of limitations for SQL database in Microsoft Fabric.
 
-- [SQL Database in Fabric](https://www.sqlbi.com/blog/marco/2024/11/23/sql-database-in-fabric/) — SQLBI’s write-up helps translate the announcement into practical implications: what the new SQL database capability means, how it relates to existing Fabric experiences, and what to consider before adopting it. If your team lives in the BI/semantic model world, this is a solid perspective on how the relational option might simplify some architectures (and complicate others).
+- **[SQL database in Fabric - SQLBI](https://www.sqlbi.com/blog/marco/2024/11/23/sql-database-in-fabric/)** — In the mass of announcements made at Microsoft Ignite, I want to mention the SQL database in Fabric, which finally closes a gap we had in Power BI for many
 
 ## Main Discussion: Fabric SQL Databases — where they fit and what changes
 

@@ -43,7 +43,7 @@ Mike raises a key concern around **delete handling** in open mirroring. While in
 
 The hosts also note differences in how mirroring behaves across data sources — SQL Database mirroring physically copies data to the lakehouse, while Databricks catalog mirroring functions more like an elaborate shortcut.
 
-- [Open Mirroring Explained for Microsoft Fabric](https://blog.fabric.microsoft.com/blog/open-mirroring-explained-for-microsoft-fabric?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft's breakdown of when to use standard mirroring versus open mirroring, with guidance on supported scenarios and architecture patterns.
+- **[Microsoft Fabric Blog](https://blog.fabric.microsoft.com/en-US/blog/open-mirroring-explained-for-microsoft-fabric/)** — Keep up with the latest Microsoft Fabric updates, announcements, information, & new features on the Microsoft Fabric blog. Search by category or date published.
 
 ### Database Development Tools for SQL Database in Fabric
 
@@ -53,7 +53,7 @@ Mike shares his evolving perspective on Fabric SQL databases. He was initially s
 
 The caveat: the article is written squarely for DBAs, packed with acronyms like CI/CD, SQL projects, and DACPAC. For newcomers wanting to get started with SQL in Fabric, the onboarding story still needs work.
 
-- [Updates to Database Development Tools for SQL Database in Microsoft Fabric](https://blog.fabric.microsoft.com/blog/updates-to-database-development-tools-for-sql-database-in-microsoft-fabric?ft=All&WT.mc_id=DP-MVP-5002621) — Details on source control, VS Code integration, SQL build projects, and the roadmap for Fabric SQL database tooling.
+- **[Microsoft Fabric Blog](https://blog.fabric.microsoft.com/en-US/blog/updates-to-database-development-tools-for-sql-database-in-microsoft-fabric/)** — Keep up with the latest Microsoft Fabric updates, announcements, information, & new features on the Microsoft Fabric blog. Search by category or date published.
 
 ### Intelligent Data Cleanup — Smart Purging for Warehouses
 
@@ -61,7 +61,7 @@ An underrated but impactful announcement: automatic garbage collection for Fabri
 
 Mike shares a customer story: a lakehouse running for 5 years without optimize/vacuum operations had storage costs balloon to $4,000–$5,000/month. After cleanup, costs dropped below $1,000. He argues this auto-cleanup should extend to lakehouses, materialized views, and Spark engines too. The current 30-day data retention period is fixed and not yet configurable.
 
-- [Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses](https://blog.fabric.microsoft.com/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses?ft=All&WT.mc_id=DP-MVP-5002621) — How Fabric's new storage optimization automatically identifies and removes expired data files from warehouses.
+- **[Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses/)** — In the era of Artificial Intelligence, organizations generate and accumulate large volumes of information every second. From transactional records to user logs and analytics data warehouses serve as a single source...
 
 ## Main Topic: Rolling Out Copilot Standalone for Power BI
 

@@ -32,9 +32,9 @@ In this episode, Mike and Tommy wrap up part 7 of their CLM series by focusing o
 
 ## News & Announcements
 
-- [TMDL in Power BI Desktop developer mode (Preview)](https://powerbi.microsoft.com/en-us/blog/tmdl-in-power-bi-desktop-developer-mode-preview/) — Power BI Project files (PBIP) continue to mature, and this update moves semantic model storage toward TMDL (Tabular Model Definition Language). The big win is a more human-readable, source-control-friendly format that’s easier to diff, review, and merge than large JSON artifacts.
+- **[TMDL in Power BI Desktop developer mode (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/tmdl-in-power-bi-desktop-developer-mode-preview/)** — We are very excited to announce the adoption of Tabular Model Definition Language (TMDL) as the semantic model file format for the Power BI Project files.
 
-- [Native execution engine for Fabric Data Engineering](https://learn.microsoft.com/en-us/fabric/data-engineering/native-execution-engine-overview) — Microsoft Fabric’s native execution engine aims to speed up Spark workloads by running a vectorized engine without requiring code changes. If you’re operating lakehouse-scale data engineering pipelines, this can translate into faster jobs and lower costs while still staying within the Spark API surface area.
+- **[Native execution engine for Fabric Data Engineering - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/native-execution-engine-overview)** — How to enable and use the native execution engine to execute Apache Spark jobs for faster and cheaper data processing in Microsoft Fabric.
 
 ## Main Discussion: Retire & Archive Power BI Content (CLM)
 

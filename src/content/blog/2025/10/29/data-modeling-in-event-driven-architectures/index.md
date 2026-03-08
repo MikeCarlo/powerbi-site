@@ -34,13 +34,13 @@ When your data arrives as a stream of events rather than a snapshot of state, ev
 
 ## News & Announcements
 
-- [Introducing Improvements to the Report Copilot in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-improvements-to-the-report-copilot-in-power-bi/) — Continued enhancements to the Copilot experience for report creation and editing.
+- **[Introducing Improvements to the Report Copilot in Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-improvements-to-the-report-copilot-in-power-bi/)** — We&#8217;ve upgraded the Report Copilot experience in Power BI, making it easier than ever to create, edit, and refine beautiful, data-rich reports with the help of AI. With this update, Copilot in Power BI not only...
 
-- [Introducing Power BI Controller: Streamlining Storytelling with Bulk Operations (Preview)](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-controller-streamlining-storytelling-with-bulk-operations-preview/) — A new tool for managing report operations at scale, enabling bulk updates across multiple reports.
+- **[Introducing Power BI Controller: Streamlining Storytelling with Bulk Operations (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-controller-streamlining-storytelling-with-bulk-operations-preview/)** — This feature was developed in direct response to feedback from our user community and is designed to provide an efficient tool for managing multiple Power BI add-ins within PowerPoint presentations. Background Power...
 
-- [Copy Data Across Tenants Using Copy Job in Fabric Data Factory](https://blog.fabric.microsoft.com/en-US/blog/simplifying-data-ingestion-with-copy-job-copy-data-across-tenants-using-copy-job-in-fabric-data-factory/) — Cross-tenant data copy capabilities in Fabric Data Factory, simplifying multi-tenant data integration.
+- **[Simplifying Data Ingestion with Copy job – Copy data across tenants using Copy job in Fabric Data Factory | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/simplifying-data-ingestion-with-copy-job-copy-data-across-tenants-using-copy-job-in-fabric-data-factory/)** — Copy job is the go-to solution in Microsoft Fabric Data Factory for simplified data movement, whether you’re moving data across clouds, from on-premises systems, or between services. With native support for multiple...
 
-- [SSMS 22 Meets Fabric Data Warehouse](https://blog.fabric.microsoft.com/en-US/blog/ssms-22-meets-fabric-data-warehouse-evolving-the-developer-experiences/) — SQL Server Management Studio 22 adds native support for Fabric Data Warehouse, bringing familiar tooling to the new platform.
+- **[SSMS 22 Meets Fabric Data Warehouse: Evolving the Developer Experiences | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/ssms-22-meets-fabric-data-warehouse-evolving-the-developer-experiences/)** — Why this Investment Matters For years, SQL Server Management Studio (SSMS) has been the go-to tool for millions of SQL developers worldwide. With millions of active users, SSMS remains the most trusted environment...
 
 ## Main Discussion: Event-Driven Data Modeling
 

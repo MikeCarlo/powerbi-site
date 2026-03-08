@@ -34,9 +34,9 @@ Mike and Tommy break down what Copilot Capacity is and how to think about sizing
 
 ## News & Announcements
 
-- [Introducing Power BI Embedded with Direct Lake Mode](https://blog.fabric.microsoft.com/en-us/blog/introducing-power-bi-embedded-with-direct-lake-mode-preview?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft announced Power BI Embedded support for Direct Lake mode, enabling embedded analytics scenarios that query Delta tables in OneLake without importing or duplicating data. The post highlights performance and real-time benefits, automation scenarios for ISVs, and important limitations (like token requirements and identity/auth considerations) to understand before going to production.
+- **[Introducing Power BI Embedded with Direct Lake Mode | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-power-bi-embedded-with-direct-lake-mode-preview?ft=All&WT.mc_id=DP-MVP-5002621)** — Update (March 2025): Power BI Embedded with Direct Lake Mode is now generally available—fully supported for production use, backed by Microsoft’s SLA, and built to meet the security, compliance, and reliability...
 
-- [Add Copilot Summaries to Power BI email subscriptions (Preview)](https://powerbi.microsoft.com/blog/add-copilot-summaries-to-power-bi-email-subscriptions-preview/?WT.mc_id=DP-MVP-5002621) — Power BI email subscriptions can now include Copilot-generated summaries (in preview) for standard subscriptions on Copilot-eligible capacities. The feature adds a lightweight way to push “what changed” insights to stakeholders, with a few caveats around supported subscription types, cloud availability, and report complexity.
+- **[Add Copilot Summaries to Power BI email subscriptions (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/add-copilot-summaries-to-power-bi-email-subscriptions-preview/?WT.mc_id=DP-MVP-5002621)** — This is a stand alone blog for the Copilot summaries in subscriptions feature.
 
 ## Main Discussion: How to Use Copilot Capacity
 

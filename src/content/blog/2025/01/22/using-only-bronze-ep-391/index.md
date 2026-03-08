@@ -34,13 +34,11 @@ Mike and Tommy tackle a common Fabric design question: can you ship analytics by
 
 The episode opens with a FabCon 2025 heads-up: when registering, select **Microsoft Partner** for “How did you hear about this conference?”, enter **PowerBI.tips** as the partner name, and use discount code **PARTNER200** to save $200.
 
-- [Power BI Theme Generator (Tips+)](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast) — A quick way to generate and manage Power BI theme JSON for consistent report branding. If you’re trying to standardize visuals across many reports (or multiple client workstreams), this is an easy win that reduces rework and helps teams ship faster with fewer design debates.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- [The Podcast page on PowerBI.tips](https://powerbi.tips/podcast/) — The home for the show, including ways to listen and follow along live. If you want to browse recent episodes or share the podcast with your team, this is the best starting point.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Follow Mike Carlo on LinkedIn](https://www.linkedin.com/in/michaelcarlo) — Mike shares episode links, Fabric/Power BI thoughts, and practical lessons learned from consulting work. A good way to catch updates between episodes.
 
-- [Follow Tommy Puglia on LinkedIn](https://www.linkedin.com/in/tommypuglia) — Tommy posts perspective from the “how do teams actually run this in production?” angle. If you like the governance and operational side of the podcast, his feed is a solid complement to the show.
 
 ## Main Discussion: Using Only Bronze in Fabric
 

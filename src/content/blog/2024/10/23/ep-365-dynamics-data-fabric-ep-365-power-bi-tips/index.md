@@ -32,11 +32,11 @@ In Episode 365 of Explicit Measures, Mike and Tommy dig into the realities of br
 
 ## News & Announcements
 
-- [Announcing Public Preview of the “Share” Feature for Fabric AI Skill](https://blog.fabric.microsoft.com/en-us/blog/announcing-public-preview-of-the-share-feature-for-fabric-ai-skill/) — Microsoft is introducing a sharing model for Fabric AI Skills so creators can publish and then share skills with colleagues for Q&A consumption or co-creation. It’s a small but important governance step for teams that want to operationalize AI skills without everyone duplicating configuration.
+- **[Announcing Public Preview of the “Share” Feature for Fabric AI Skill | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/announcing-public-preview-of-the-share-feature-for-fabric-ai-skill/)** — The Share capability for Fabric AI Skill is now in public preview. This feature enables AI Skill creators to share their AI Skill with colleagues, allowing them to consume the AI Skill and gain valuable insights from...
 
-- [Fabric February](https://www.fabricfebruary.com/) — The Fabric February conference site includes schedule/speakers/training-day details plus practical information for attendees. If you’re trying to level up your Fabric architecture and implementation chops, events like this are a fast way to get current on patterns and what’s actually working in the field.
+- **[Fabric February 2026 | Norway's #1 Microsoft Fabric Conference!](https://www.fabricfebruary.com/)** — Fabric February 2026 will take place at ODEON Cinema in Oslo, Norway on Thursday, February 5th, 2026!
 
-- [Gotcha’s of bringing Dataverse data into Microsoft Fabric](https://data-marc.com/2024/06/11/gotchas-of-bringing-dataverse-data-into-microsoft-fabric/) — A practical write-up of real-world friction points when moving Dynamics/Dataverse (including Dynamics F&O patterns) into Fabric. It’s a helpful checklist for planning ingestion and avoiding surprises when you think “it’s all Microsoft so it should be easy.”
+- **[Gotcha’s of bringing Dataverse data into Microsoft Fabric – Data – Marc](https://data-marc.com/2024/06/11/gotchas-of-bringing-dataverse-data-into-microsoft-fabric/)** — Recently, I architected a solution for a client for their Microsoft Fabric data platform. The client works with Dynamics Finance & Operations as one of their main ERP system. Fabric offers easy ways to bring data...
 
 ## Main Discussion: Dynamics Data & Fabric
 

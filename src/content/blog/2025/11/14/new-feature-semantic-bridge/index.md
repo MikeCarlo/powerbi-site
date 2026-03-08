@@ -34,7 +34,7 @@ Semantic layers aren't just a Power BI thing anymore. In this episode, Mike and 
 
 ## News & Announcements
 
-- [Decoupling Default Semantic Models in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/decoupling-default-semantic-models-for-existing-in-microsoft-fabric/) — Microsoft is decoupling default semantic models from other Fabric items, giving teams more control over when and how semantic models are created and managed.
+- **[Decoupling Default Semantic Models for Existing Items in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/decoupling-default-semantic-models-for-existing-in-microsoft-fabric/)** — In our earlier announcement, we shared that newly created data warehouses, lakehouses and other items in Microsoft Fabric would no longer automatically generate default semantic models. This change allows customers...
 
 ## Main Discussion: The Semantic Bridge
 

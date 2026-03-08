@@ -33,15 +33,15 @@ Mike and Tommy break down the biggest announcements from FabCon 2025, covering a
 
 ## News & Announcements
 
-- [FabCon 2025: Fueling Tomorrow's AI with New Agentic Capabilities and Security Innovations in Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/03/31/fabcon-2025-fueling-tomorrows-ai-with-new-agentic-capabilities-and-security-innovations-in-fabric/) — Microsoft's flagship FabCon 2025 recap highlights new agentic AI capabilities and security innovations coming to Fabric. Over 19,000 organizations and 74% of Fortune 500 companies are now leveraging Fabric. The post covers customer stories from London Stock Exchange and International Workplace Group showcasing real-world impact.
+- **[FabCon 2025: Fueling tomorrow’s AI with new agentic capabilities and security innovations in Fabric | Microsoft Fabric Blog](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/03/31/fabcon-2025-fueling-tomorrows-ai-with-new-agentic-capabilities-and-security-innovations-in-fabric/)** — The Microsoft Fabric Community Conference returns to Las Vegas this week—bigger and better than ever. Learn more.
 
-- [Playbook for Metadata-Driven Lakehouse Implementation in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/playbook-for-metadata-driven-lakehouse-implementation-in-microsoft-fabric/) — A detailed guide for designing and implementing an end-to-end metadata-driven Lakehouse using Microsoft Fabric. The playbook covers control tables, data ingestion orchestration, validation, and ETL processes using a structured framework. It builds on previous ingestion patterns and is rooted in real-world customer implementations.
+- **[Playbook for metadata driven Lakehouse implementation in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/playbook-for-metadata-driven-lakehouse-implementation-in-microsoft-fabric/)** — Co-Author – Gyani Sinha, Abhishek Narain Overview A well-architected lakehouse enables organizations to efficiently manage and process data for analytics, machine learning, and reporting. To achieve governance,...
 
-- [Another Dimension of Functions in Data Warehouse](https://blog.fabric.microsoft.com/en-US/blog/functions-in-data-warehouse/) — Microsoft announces new function types in Fabric Data Warehouse and Lakehouse SQL endpoint, including SQL-based, Fabric-based (Python), and AI-based scalar functions. This brings user-defined functions and LLM-powered AI capabilities directly into warehouse queries. The new function types are available in private preview with a sign-up form.
+- **[Another dimension of Functions in Data Warehouse | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/functions-in-data-warehouse/)** — Today, we are announcing new types of Functions in Fabric Data Warehouse and Lakehouse SQL endpoint. Continue reading to find out more and if interested refer to sign up form for Functions preview in Fabric Data...
 
-- [Power Designer Workload](https://app.powerbi.com/workloadhub/detail/tips.tools.Product?ctid=72445baa-314f-4c92-9364-1cb2c4924bf6&experience=power-bi) — The Power Designer Workload from PowerBI.tips is available in the Power BI Workload Hub. It brings enhanced design and theming capabilities directly into the Fabric experience.
+- **[Power BI](https://app.powerbi.com/workloadhub/detail/tips.tools.Product?ctid=72445baa-314f-4c92-9364-1cb2c4924bf6&experience=power-bi)** — Sign in to Microsoft Power BI for intuitive data visualization, detailed analytics, and interactive dashboards. Unlock your data's full potential.
 
-- [Entelexos – Power BI Embedded Accelerator](https://www.entelexos.com/) — Entelexos is a production-ready Power BI Embedded framework designed for startups through enterprise. It offers multi-tenancy, modern web components, built-in table builder for data exports via Paginated Reports, and simplified user experiences on top of Power BI.
+- **[Entelexos](https://www.entelexos.com/)** — Entelexos is a Data as a Service embedded solution for Power BI reports.
 
 ## Main Discussion: FabCon 2025 Recap
 

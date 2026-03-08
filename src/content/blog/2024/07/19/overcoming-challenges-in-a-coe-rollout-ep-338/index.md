@@ -30,15 +30,14 @@ Mike and Tommy dig into the real-world friction points you hit when rolling out 
 
 ## News & Announcements
 
-- [Power BI implementation planning: BI strategy (Executive sponsor)](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning?WT.mc_id=DP-MVP-5002621#identify-and-engage-an-executive-sponsor) — Guidance on aligning a BI program to business strategy and ensuring you have the right executive sponsorship.
+- **[Power BI implementation planning: BI strategic planning - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning?WT.mc_id=DP-MVP-5002621#identify-and-engage-an-executive-sponsor)** — This article helps you to define your business intelligence focus areas and objectives through strategic planning.
 
-- [Power BI implementation planning: BI strategy (Working team)](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning?WT.mc_id=DP-MVP-5002621#step-1-assemble-a-working-team) — A practical checklist for assembling the team that runs a successful BI program.
+- **[Power BI implementation planning: BI strategic planning - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning?WT.mc_id=DP-MVP-5002621#step-1-assemble-a-working-team)** — This article helps you to define your business intelligence focus areas and objectives through strategic planning.
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike and Tommy a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Overcoming Challenges in a CoE Rollout
 

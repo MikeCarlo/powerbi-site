@@ -33,11 +33,10 @@ Mike, Tommy, and Seth dig into the new Organizational Apps (Org Apps) experience
 
 ## News & Announcements
 
-- [Got an idea or topic for a future episode?](https://bit.ly/3i8LdBo) — The crew is always looking for real-world questions and “we’re stuck on this” scenarios from the community. If you’re wrestling with Power BI/Fabric rollout, governance, or report distribution patterns, submit the prompt and they’ll often turn it into a full discussion.
 
-- [Subscribe / listen to the Explicit Measures Podcast](https://powerbi.tips/podcast) — Catch the live show and grab links to the audio platforms so you can listen wherever you normally do podcasts. It’s also a handy landing page for sharing the show with teammates who want more context and “why” behind Power BI and Fabric updates.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+ (Theme Generator)](https://bit.ly/3Ymso48) — The PowerBI.tips theme generator helps you build consistent, polished report themes without hand-editing long JSON files. If you’re standardizing report design across multiple authors or departments, a repeatable theme workflow can reduce visual drift and speed up delivery.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Org Apps in Microsoft Fabric
 

@@ -34,9 +34,9 @@ Mike and Tommy tackle whether data scientists should pay attention to Power BI, 
 
 ## News & Announcements
 
-- [Common Use Cases for Building Solutions with Microsoft Fabric User Data Functions (UDFs)](https://blog.fabric.microsoft.com/blog/common-use-cases-for-building-solutions-with-microsoft-fabric-user-data-functions-udfs/?WT.mc_id=DP-MVP-5002621) — Microsoft published a deep dive into User Data Functions in Fabric, showing how custom logic can be added to data workflows for transformation, validation, and cleaning. The post walks through real-world scenarios like building medallion architectures and automating data pipelines. A great resource for anyone looking to extend their Fabric solutions with reusable custom functions.
+- **[Common use cases for building solutions with Microsoft Fabric User data functions (UDFs) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/common-use-cases-for-building-solutions-with-microsoft-fabric-user-data-functions-udfs//)** — Data engineering often presents challenges with data quality or complex data analytics processing that requires custom logic. This is where Fabric User data functions can be used to implement custom logic into your...
 
-- [Context Is All You Need: Better AI Results with Custom Instructions](https://code.visualstudio.com/blogs/2025/03/26/custom-instructions) — The VS Code team announced the general availability of custom instructions for GitHub Copilot. By creating a simple `.github/copilot-instructions.md` file in your project, you can tune Copilot to understand your coding standards, project structure, and preferred libraries. The post also previews a new "prompt files" feature for reusable prompt templates.
+- **[Context is all you need: Better AI results with custom instructions](https://code.visualstudio.com/blogs/2025/03/26/custom-instructions)** — Announcing the general availability of custom instructions for VS Code.
 
 ## Beat from the Street
 

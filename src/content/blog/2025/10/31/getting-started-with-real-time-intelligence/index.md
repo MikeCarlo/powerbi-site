@@ -33,9 +33,9 @@ Real Time Intelligence in Fabric isn't just for data engineers. In this episode,
 
 ## News & Announcements
 
-- [Fabric October 2025 Feature Summary](https://blog.fabric.microsoft.com/en-US/blog/fabric-october-2025feature-summary/) — The monthly roundup of Fabric updates and improvements across all workloads.
+- **[Fabric October 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-october-2025feature-summary/)** — This month&#8217;s update delivers key advancements across Microsoft Fabric, including enhanced security with Outbound Access Protection and Workspace-Level Private Link, smarter data engineering features like...
 
-- [Power BI App Copilot AI Scoped to Curated Content in an App (Preview)](https://powerbi.microsoft.com/en-us/blog/power-bi-app-copilot-ai-scoped-to-the-curated-content-in-an-app-preview/) — Copilot in Power BI apps can now be scoped to only the curated content within that app, improving relevance and reducing noise.
+- **[Power BI app Copilot: AI scoped to the curated content in an app (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-app-copilot-ai-scoped-to-the-curated-content-in-an-app-preview/)** — Announcing Power BI app Copilot, now in preview. With app-scoped Copilot, users can search for reports in an app plus ask questions and get connected with answers based on a report in an app. App Copilot is a...
 
 ## Main Discussion: Real Time Intelligence for BI Pros
 

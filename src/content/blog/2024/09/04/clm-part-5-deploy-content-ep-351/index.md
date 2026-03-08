@@ -32,13 +32,12 @@ Content lifecycle management only works if teams can reliably move Power BI arti
 
 ## News & Announcements
 
-- [Power BI implementation planning: Deploy content (CLM Part 5)](https://learn.microsoft.com/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-deploy?WT.mc_id=DP-MVP-5002621) — This Microsoft Learn article outlines practical deployment considerations for Power BI content lifecycle management, including environment separation, release practices, and how to think about “promoting” artifacts with consistency. It’s a solid reference if you’re trying to move from ad-hoc publishing into a more governed release motion.
+- **[Power BI implementation planning: Deploy content - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-deploy?WT.mc_id=DP-MVP-5002621)** — This article helps you to deploy content as part of managing the content lifecycle.
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike and Tommy a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://bit.ly/3Ymso48) — Tips+ includes tools and resources (like the theme generator) for building better Power BI reports faster.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: CLM Part 5 — Deploying Content
 

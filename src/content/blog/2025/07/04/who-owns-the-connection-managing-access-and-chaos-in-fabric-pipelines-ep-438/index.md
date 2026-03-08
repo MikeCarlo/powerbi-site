@@ -33,7 +33,7 @@ Mike and Tommy dig into a very real Fabric pain point: connections that get crea
 
 ## News & Announcements
 
-- [Enhance data prep with AI-powered capabilities in Data Wrangler (Preview)](https://blog.fabric.microsoft.com/blog/enhance-data-prep-with-ai-powered-capabilities-in-data-wrangler-preview/?WT.mc_id=DP-MVP-5002621#) — Data Wrangler in Fabric adds AI-assisted capabilities like rule-based suggestions and Copilot-driven custom operations so you can describe transformations and generate code with previews before applying. The update also highlights improved support for translating operations (including Copilot-generated steps) between pandas and PySpark, reducing “syntax friction” as you move from exploration to scalable Spark execution.
+- **[Enhance data prep with AI-powered capabilities in Data Wrangler | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/enhance-data-prep-with-ai-powered-capabilities-in-data-wrangler-preview//)** — With AI-powered capabilities in Data Wrangler, you can now do even more to accelerate exploratory analysis and data preparation in Fabric.
 
 ## Main Discussion: Who Owns the Connection?
 

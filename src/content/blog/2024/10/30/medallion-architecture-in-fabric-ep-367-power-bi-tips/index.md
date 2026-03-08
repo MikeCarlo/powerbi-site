@@ -28,23 +28,19 @@ In this episode, Mike and the team discuss **Medallion Architecture in Fabric - 
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/blog/native-execution-engine-available-at-no-additional-cost?ft=All&WT.mc_id=DP-MVP-5002621#)
+- **[Native Execution Engine available at no additional cost! | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/native-execution-engine-available-at-no-additional-cost/)** — We’re thrilled to announce that the Native Execution Engine is now available at no additional cost, unlocking next-level performance and efficiency for your workloads. What’s New?&nbsp; The Native Execution Engine...
 
-- [Link](https://x.com/sspaeti/status/1843690038762123272)
+- **[x.com](https://x.com/sspaeti/status/1843690038762123272)** — We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.
 
-- [Link](https://www.ssp.sh/brain/medallion-architecture/)
+- **[Medallion Architecture](https://www.ssp.sh/brain/medallion-architecture/)** — The databricks medallion architecture is not really an architecture, but more [[Data Modeling#Different Levels|Approach or Pattern]]Â with three data stages: bronze, silver, and gold.
 
-- [Link](https://bit.ly/3i8LdBo)
 
-- [Link](https://powerbi.tips/podcast)
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Link](https://bit.ly/3Ymso48)
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- [Link](https://www.linkedin.com/in/michaelcarlo)
 
-- [Link](https://www.linkedin.com/in/seth-bauer)
 
-- [Link](https://www.linkedin.com/in/tommypuglia)
 
 ## Main Discussion: Medallion Architecture in Fabric - Ep.367 - Power BI tips
 

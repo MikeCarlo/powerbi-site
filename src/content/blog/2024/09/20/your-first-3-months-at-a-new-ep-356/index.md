@@ -34,11 +34,8 @@ In this episode, Mike and Tommy talk through what matters most in your first 90 
 
 This episode is more of a practical discussion than a news roundup, so we’re keeping links simple.
 
-- [Explicit Measures podcast home](https://powerbi.tips/explicit-measures-power-bi-podcast/) — Browse the full archive and subscribe so you don’t miss future episodes.
 
-- [Mike Carlo on LinkedIn](https://www.linkedin.com/in/michaelcarlo) — Connect with Mike and follow what he’s building around Fabric and Power BI.
 
-- [Tommy Puglia on LinkedIn](https://www.linkedin.com/in/tommypuglia) — Connect with Tommy for practical takes on analytics leadership and delivery.
 
 ## Main Discussion: Your First 90 Days at a New Job
 

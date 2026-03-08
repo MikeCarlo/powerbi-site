@@ -30,16 +30,11 @@ Mike and Tommy compare Gen 1 vs Gen 2 dataflows, why the Gen 2 experience still 
 
 ## News & Announcements
 
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/fabric-community-conference-europe-recap/)
-- [Link](https://powerbi.microsoft.com/en-us/blog/update-to-direct-lake-documentation/)
-- [Link](https://gist.github.com/pugliathomas)
-- [Link](https://learn.microsoft.com/en-us/fabric/data-factory/dataflows-gen2-overview)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Fabric Community Conference Europe Recap | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-community-conference-europe-recap/)** — We had an incredible time in our host city of Stockholm for FabCon Europe! 3,300 attendees joined us from our international community, and it was wonderful to meet so many of you in person. Throughout the week of...
+- **[Update to Direct Lake documentation | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/update-to-direct-lake-documentation/)** — We recently made a significant update to the Direct Lake documentation. Direct Lake accelerates time to data-driven decisions by unlocking incredible performance directly against OneLake, without the need to manage...
+- **[Differences between Dataflow Gen1 and Dataflow Gen2 - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-factory/dataflows-gen2-overview)** — Compare differences between Dataflow Gen1 and Gen2 in Data Factory for Microsoft Fabric.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Gen 1 vs. Gen 2 Dataflows
 

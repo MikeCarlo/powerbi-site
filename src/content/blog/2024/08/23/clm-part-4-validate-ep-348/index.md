@@ -32,15 +32,14 @@ Validation is where content lifecycle management turns from a plan into a repeat
 
 ## News & Announcements
 
-- [Power BI August 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-august-2024-feature-summary/) — Microsoft’s monthly roundup highlighting what shipped across Power BI, including several Copilot-related improvements and other usability updates. It’s a good scan to understand what’s new, what’s in preview, and what’s worth testing in your environment.
+- **[Power BI August 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-august-2024-feature-summary/)** — Welcome to the August 2024 update. Here are a few, select highlights of the many we have for Power BI. You can now ask Copilot questions against your semantic model. Updated Save and Upload to OneDrive Flow in Power...
 
-- [Validate content (Power BI implementation planning)](https://learn.microsoft.com/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-validate) — The guidance the team is following for this CLM series, focused on validation activities and responsibilities. It’s a helpful checklist for separating “it works on my machine” from “it’s ready for production.”
+- **[Power BI implementation planning: Validate content - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-validate)** — This article helps you to validate content as part of managing the content lifecycle.
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike, Tommy, and Seth a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://bit.ly/3Ymso48) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: CLM Part 4 — Validate
 

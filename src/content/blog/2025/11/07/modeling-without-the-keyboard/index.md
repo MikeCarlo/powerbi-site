@@ -34,11 +34,11 @@ Can you model a semantic model without touching the keyboard? Mike and Tommy exp
 
 ## News & Announcements
 
-- [Creator Improvements in the Data Agent](https://blog.fabric.microsoft.com/en-US/blog/creator-improvements-in-the-data-agent/) — Microsoft improves the Data Agent creation experience, making it easier for BI developers to configure and customize AI-powered data interactions.
+- **[Creator Improvements in the Data Agent | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/creator-improvements-in-the-data-agent/)** — We’re introducing a set of new enhancements for Data Agent creators — designed to make it easier to debug, improve, and express your agent’s logic. Whether you’re tuning example queries, refining instructions, or...
 
-- [Power BI Semantic Models as Accelerators for AI-Enabled Consumption](https://powerbi.microsoft.com/en-us/blog/power-bi-semantic-models-as-accelerators-for-ai-enabled-consumption/?cdn=disable) — Microsoft positions semantic models as the key accelerator for AI consumption patterns, reinforcing the trend that well-built models are the foundation for everything downstream.
+- **[Power BI semantic models as accelerators for AI-enabled consumption | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-semantic-models-as-accelerators-for-ai-enabled-consumption/?cdn=disable)** — As data volumes grow exponentially, Power BI customers demand AI-driven analytical solutions that scale to petabytes, are secure, governed, and easy to manage. Power BI semantic models, backed by Microsoft Fabric,...
 
-- [Prepare for the New Card Visual](https://powerbi.microsoft.com/en-us/blog/prepare-for-new-card-visual/) — Heads up: the legacy card visual is being replaced. Teams need to prepare for migration to the new card visual experience.
+- **[Preparing for the General Availability of the new Card visual | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/prepare-for-new-card-visual/)** — One change may impact the behavior and look of the new card visual in existing reports. The callout size and background setting will be available with or without a divider after GA.
 
 ## Main Discussion: AI-Assisted Modeling
 

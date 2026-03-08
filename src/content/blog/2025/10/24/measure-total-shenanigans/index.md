@@ -33,11 +33,11 @@ Measure totals in Power BI can be maddening. In this episode, Mike and Tommy unp
 
 ## News & Announcements
 
-- [From Dataslows to Dataflows: The Gen2 Performance Revolution in Microsoft Fabric](https://data-mozart.com/from-dataslows-to-dataflows-the-gen2-performance-revolution-in-microsoft-fabric/) — Dataflows Gen2 gets significant performance improvements, addressing one of the biggest complaints about the original experience.
+- **[From 'Dataslows' to Dataflows: The Gen2 Performance Revolution in Microsoft Fabric - Data Mozart](https://data-mozart.com/from-dataslows-to-dataflows-the-gen2-performance-revolution-in-microsoft-fabric/)** — Dataflows were (rightly?) considered "the slowest and least performant option" for ingesting data into Power BI/Microsoft Fabric. However, things are changing rapidly and the latest Dataflow enhancements changes how...
 
-- [AI Is a Coworker: Elements of Style for AI-Augmented Development](https://github.com/obra/the-elements-of-style) — A thoughtful guide on treating AI as a development coworker rather than a magic autocomplete.
+- **[GitHub - obra/the-elements-of-style: William Strunk Jr.'s Elements of Style (1918) in markdown format for AI agents · GitHub](https://github.com/obra/the-elements-of-style)** — William Strunk Jr.'s Elements of Style (1918) in markdown format for AI agents - obra/the-elements-of-style
 
-- [dbt Labs and Fivetran Merge](https://www.getdbt.com/blog/dbt-labs-and-fivetran-merge-announcement) — Major industry consolidation: dbt Labs (transformation) merges with Fivetran (ingestion), creating an end-to-end data pipeline company. Mike and Tommy discuss what this means for the broader data ecosystem.
+- **[dbt Labs + Fivetran: Open data Infrastructure for analytics and AI | dbt Labs](https://www.getdbt.com/blog/dbt-labs-and-fivetran-merge-announcement)** — Why we’re joining forces with Fivetran to build the future
 
 ## Main Discussion: Measure Total Shenanigans
 

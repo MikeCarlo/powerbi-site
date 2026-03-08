@@ -31,7 +31,7 @@ Mike and Tommy serve up their half baked ideas for the Power BI and Fabric ecosy
 
 ## News & Announcements
 
-- [Fabric April 2025 Feature Summary](https://blog.fabric.microsoft.com/blog/fabric-april-2025-feature-summary/?WT.mc_id=DP-MVP-5002621) — Microsoft released the Fabric April 2025 feature summary, packed with updates across multiple workloads. Highlights include low-code AI tools for notebooks in preview, session-scoped distributed temp tables going GA in Data Warehouse, and a new migration assistant for Fabric Data Warehouse. Copilot and AI capabilities are also now available on all paid SKUs.
+- **[Fabric April 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-april-2025-feature-summary//)** — Welcome to the Fabric April 2025 Feature Summary! This update brings exciting advancements across various workloads, including Low-code AI tools to accelerate productivity in notebooks (Preview), session Scoped...
 
 ## Main Discussion: Half Baked Ideas
 

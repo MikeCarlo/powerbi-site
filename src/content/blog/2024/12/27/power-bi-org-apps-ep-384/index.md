@@ -33,11 +33,11 @@ Mike, Tommy, and Seth break down the new Org Apps experience in Power BI and how
 
 ## News & Announcements
 
-- [Get started with Org Apps (Preview) in Power BI](https://learn.microsoft.com/power-bi/consumer/org-app-items/org-app-items?WT.mc_id=DP-MVP-5002621) — Microsoft’s Org Apps (as items) preview rebuilds workspace apps as a first-class Fabric item type, enabling multiple org apps per workspace and more consistent management alongside reports, dashboards, and other assets. If you’ve been trying to package content for different audiences without duplicating workspaces, this doc is the best starting point for understanding the model, permissions, and rollout considerations.
+- **[Get Started with Org Apps (Preview) - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/explore-reports/org-app-items?WT.mc_id=DP-MVP-5002621)** — Learn how to use org app items in Power BI, a new Fabric item type that lets you create multiple org apps per workspace to bundle reports and content for consumers.
 
-- [Subscribe / listen to the Explicit Measures Podcast](https://powerbi.tips/podcast) — Catch the live show (Tues/Thurs) and grab links to the audio platforms so you can listen wherever you normally do podcasts. It’s also a handy landing page for sharing the show with coworkers who want the “why” behind Power BI features.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+ (Theme Generator)](https://bit.ly/3Ymso48) — The PowerBI.tips theme generator helps you build polished, consistent report themes without hand-editing large JSON files. If your team is standardizing report design across departments, a repeatable theme workflow can save a lot of time and reduce visual drift.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Power BI Org Apps
 

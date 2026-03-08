@@ -31,13 +31,9 @@ Mike, Tommy, and Seth discuss why a clear meeting agenda matters, how it improve
 
 ## News & Announcements
 
-- [Being a PM at Microsoft: The Power of a Good Meeting Agenda](https://ssbipolar.com/2024/05/13/being-a-pm-at-microsoft-the-power-of-a-good-meeting-agenda)
-- [Link](https://bit.ly/3i8LdBo)
-- [Subscribe to the podcast](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Connect with Mike Carlo on LinkedIn](https://www.linkedin.com/in/michaelcarlo)
-- [Connect with Seth Bauer on LinkedIn](https://www.linkedin.com/in/seth-bauer)
-- [Connect with Tommy Puglia on LinkedIn](https://www.linkedin.com/in/tommypuglia)
+- **[Being a PM at Microsoft: The power of a good meeting agenda – BI Polar](https://ssbipolar.com/2024/05/13/being-a-pm-at-microsoft-the-power-of-a-good-meeting-agenda/)** — If you’re scheduling a meeting, you’re spending your own time and the time of everyone you invite. Show professionalism and respect by providing a clear agenda for the meeting in the invitation. Meeting agendas may...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: The Power of a Good Agenda
 

@@ -35,9 +35,9 @@ Mike and Tommy tackle a common frustration: how to give report viewers a simple 
 
 ## News & Announcements
 
-- [Power BI June 2025 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-june-2025-feature-summary/?WT.mc_id=DP-MVP-5002621) — The June 2025 update includes visual calculations updates, sparklines going GA, numeric range and field parameter enhancements, and new tenant settings for the Azure Maps visual. Notably, Power Query editing in the web for import models is now in preview, and org apps are getting paginated report support and Copilot integration.
+- **[Power BI June 2025 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-june-2025-feature-summary/?WT.mc_id=DP-MVP-5002621)** — This month’s update highlights several exciting preview features and an important action-required item for Power BI users. In preview, you’ll find updates to visual calculations, enhancements to numeric range and...
 
-- [Introducing Upgrades to AI Functions for Better Performance and Lower Costs](https://blog.fabric.microsoft.com/blog/introducing-upgrades-to-ai-functions-for-better-performance-and-lower-costs/?WT.mc_id=DP-MVP-5002621) — Microsoft upgraded the default model powering AI functions to GPT-4o-mini, boosting intelligence while reducing costs with a 128k input token context window. The AI functions library is now preinstalled on the Fabric 1.3 runtime, eliminating manual installation steps for LLM-powered data transformations.
+- **[Introducing upgrades to AI functions for better performance—and lower costs | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-upgrades-to-ai-functions-for-better-performance-and-lower-costs//)** — Earlier this year, we released AI functions in public preview, allowing Fabric customers to apply LLM-powered transformations to OneLake data simply and seamlessly, in a single line of code. Since then, we&#8217;ve...
 
 ## Main Discussion: Simplifying the Report Viewing Experience
 

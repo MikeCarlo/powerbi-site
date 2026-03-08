@@ -36,7 +36,6 @@ In Episode 436 of Explicit Measures, Mike and Tommy welcome back Mathias Thierba
 
 Before the main topic, Tommy highlights a new community project from Santosh R. — a Fabric Analytics MCP (Model Context Protocol) server that lets AI tools like Claude, Cursor, and VS Code interact directly with your Fabric environment.
 
-- [Santosh R. – Fabric Analytics MCP on LinkedIn](https://www.linkedin.com/posts/thisissanthoshr_githubcopilot-microsoftfabric-analytics-activity-7343922198954356739-3dyR/) — Santosh shares his weekend vibe-coding project built with GitHub Copilot: a full MCP server for Microsoft Fabric. It offers CRUD operations for Fabric items, Livy API integration for Spark session management, real-time monitoring across workspaces, and enterprise authentication via MSAL (bearer tokens, service principals, device code flow). Tommy walks through the key features — plug-and-play Claude Desktop integration, comprehensive testing, and automatic token management. Mike breaks down his mental model of how MCPs work: you talk to Claude in natural language, Claude talks to the MCP running locally, and the MCP translates requests into Fabric API calls. The result? You can create lakehouses, manage notebooks, and monitor Spark jobs without leaving your AI tool of choice. Tommy adds examples from his own MCP toolkit — Windows CLI, sequential thinking, and Taskmaster — showing how MCPs extend agent capabilities beyond just API calls.
 
 ## Main Discussion: CI/CD Branching Strategies
 

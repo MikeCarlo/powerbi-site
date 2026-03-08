@@ -32,7 +32,7 @@ Mike and Tommy reflect on the journey of a citizen developer growing with Power 
 
 ## News & Announcements
 
-- [Fabric February 2025 Feature Summary](https://blog.fabric.microsoft.com/blog/fabric-february-2025-feature-summary?ft=All&WT.mc_id=DP-MVP-5002621) — Microsoft released the Fabric February 2025 update packed with new features across the platform. Power BI gets Explore from Copilot visual answers for easy ad-hoc exploration, Data Warehouse adds OPENROWSET file browsing and Copilot Chat previews, and AI Skill becomes conversational. The update also highlights FabCon 2025 in Las Vegas (March 31–April 2) and a limited-time 50% discount on the DP-700 certification exam.
+- **[Fabric February 2025 Feature Summary | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/fabric-february-2025-feature-summary/)** — Welcome to the Fabric 2025 update There are a lot of exciting features for you this month! Here are some highlights: In Power BI, Explore from Copilot visual answers which lets you do easy ad-hoc exploration. In Data...
 
 ## Main Discussion: The Citizen Developer Journey
 

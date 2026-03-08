@@ -35,7 +35,7 @@ In Episode 431, Mike and Tommy break down what’s new with Microsoft Fabric CI/
 
 ### Two new Copilot experiences in Power BI
 
-- [Now available: two new Copilot experiences](https://powerbi.microsoft.com/en-us/blog/now-available-two-new-copilot-experiences/) — Microsoft announced general availability for the standalone **“Chat with your data”** Copilot experience (off by default via tenant setting) and added Copilot support for **securely embedded** Power BI reports (portals and websites). The big takeaway: if you turn Copilot on, plan capacity and rollout carefully so experimentation doesn’t accidentally contend with production workloads.
+- **[Now available: two new Copilot experiences | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/now-available-two-new-copilot-experiences/)** — This week, we&#8217;re excited to announce the availability of two new Copilot experiences in Power BI. First, the Chat with your Data experience, which we announced two weeks ago at Build is fully rolled out....
 
 ## Main Discussion: What’s new with Fabric CI/CD
 

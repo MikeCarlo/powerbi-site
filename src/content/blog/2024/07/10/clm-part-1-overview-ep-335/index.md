@@ -30,21 +30,18 @@ Mike and Tommy kick off a series on CLM (lifecycle management) for Power BI and 
 
 ## News & Announcements
 
-- [blog.fabric.microsoft.com](https://blog.fabric.microsoft.com/en-US/blog/easily-move-your-data-across-workspaces-using-modern-get-data-of-fabric-data-pipeline/) — Link shared in the episode description.
+- **[Easily Move Your Data Across Workspaces Using Modern Get Data of Fabric Data Pipeline | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/easily-move-your-data-across-workspaces-using-modern-get-data-of-fabric-data-pipeline/)** — We are excited to share that the new modern get data experience of data pipeline now supports copying to Lakehouse and Datawarehouse across different workspaces with an extremely intuitive experience. When you are...
 
-- [powerbi.microsoft.com](https://powerbi.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2024-gartner-magic-quadrant-for-analytics-and-bi-platforms/) — Link shared in the episode description.
+- **[Microsoft named a Leader in the 2024 Gartner® Magic Quadrant™ for Analytics and BI Platforms | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2024-gartner-magic-quadrant-for-analytics-and-bi-platforms/)** — We are thrilled to announce that, for the seventeenth consecutive year, Microsoft has been positioned as a Leader in the 2024 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms.
 
-- [gartner.com](https://www.gartner.com/doc/reprints?id=1-2HVUGEM6&ct=240620&st=sb) — Link shared in the episode description.
 
-- [learn.microsoft.com](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-overview) — Link shared in the episode description.
+- **[Power BI implementation planning: Content lifecycle management - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-overview)** — This article introduces the Power BI content lifecycle management planning articles.
 
-- [bit.ly](https://bit.ly/3i8LdBo) — Link shared in the episode description.
 
-- [powerbi.tips](https://powerbi.tips/podcast) — Link shared in the episode description.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [themes.powerbi.tips](https://themes.powerbi.tips) — Link shared in the episode description.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
-- [linkedin.com](https://www.linkedin.com/in/michaelcarlo) — Link shared in the episode description.
 
 ## Main Discussion: CLM Part 1 - Overview
 

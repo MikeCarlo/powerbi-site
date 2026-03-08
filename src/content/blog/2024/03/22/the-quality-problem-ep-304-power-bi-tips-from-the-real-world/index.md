@@ -31,11 +31,11 @@ Mike and Tommy dig into the quality problem in analytics work — why teams keep
 
 ## News & Announcements
 
-- [Azure Data Conf](https://azuredataconf.com/#!/) — A community conference centered on Azure data technologies (and the broader Microsoft data ecosystem). If youre looking to level up on real-world architecture and implementation patterns, the agenda is usually packed with practical sessions.
+- **[Fabcon Community Conference](https://azuredataconf.com/#!/)** — See link for details.
 
-- [The Quality Problem: A Call-to-Arms — DATA GOBLINS](https://data-goblins.com/power-bi/quality) — A strong write-up on why shipping fast often turns into breaking constantly in analytics. The core message is end-to-end quality: better requirements, testing, automation, and owning the full lifecycle instead of relying on heroics.
+- **[The Quality Problem: A Call-to-Arms — DATA GOBLINS](https://data-goblins.com/power-bi/quality)** — In this article, I discuss why quality is a often problem for data and analytics, and how DataOps can help.
 
-- [Explicit Measures Podcast Hub](https://powerbi.tips/podcast) — The central landing page for the show, links, and ways to submit ideas. If you want your question or topic covered on an episode, this is the best place to start.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
 ## Main Discussion: Quality as a First-Class Requirement
 

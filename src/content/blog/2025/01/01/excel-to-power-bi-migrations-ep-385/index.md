@@ -32,7 +32,7 @@ In this episode, Mike and Seth walk through what it really takes to migrate Exce
 
 ## News & Announcements
 
-- [Important Update coming to R and Python visuals in Power BI](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-r-py-visuals-in-power-bi/) — Power BI is updating the service runtime for R and Python visuals, including more resources (up to 2 vCores) and newer language versions (Python 3.11 and R 4.3.3). Because older versions (Python 3.7.7 / R 3.4.4) are being retired, teams should validate and update any existing script visuals locally to avoid breaking changes when the rollout hits their tenant.
+- **[Important Update coming to R and Python visuals in Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-r-py-visuals-in-power-bi/)** — Update for R/Py visuals in PBI
 
 ## Main Discussion: Excel to Power BI Migrations
 

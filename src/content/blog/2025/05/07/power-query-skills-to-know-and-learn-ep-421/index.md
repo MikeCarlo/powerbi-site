@@ -32,11 +32,11 @@ Mike and Tommy dive into the Power Query skills every Power BI user should maste
 
 ## News & Announcements
 
-- [How to Rebind a Power BI Report to a Different Semantic Model Using Power BI Studio](https://www.fourmoo.com/2025/04/16/how-to-rebind-a-power-bi-report-to-a-different-semantic-model-using-power-bi-studio/) — FourMoo walks through rebinding a Power BI report to a different semantic model using the Power BI Studio VS Code extension by Gerhard Brueckl. This approach avoids the complexity of using the Power BI REST API directly, making it accessible to users who prefer a visual interface.
+- **[How to Rebind a Power BI Report to a different Semantic Model using Power BI Studio - FourMoo | Microsoft Fabric | Power BI](https://www.fourmoo.com/2025/04/16/how-to-rebind-a-power-bi-report-to-a-different-semantic-model-using-power-bi-studio/)** — There is an easy way to rebind Power BI reports to another semantic model. using Power BI Studio where it is as simple as a few clicks to rebind the report.
 
-- [All the Different Ways to Authenticate to Azure SQL, Synapse, and Fabric](https://debruyn.dev/2025/all-the-different-ways-to-authenticate-to-azure-sql-synapse-and-fabric/) — A comprehensive guide covering access token authentication for Microsoft SQL engines including Azure SQL, Synapse, and Fabric. The post explores users, service principals, managed identities, and Fabric Workspace Identity, making it a great reference for anyone setting up programmatic database access.
+- **[All the different ways to authenticate to Azure SQL, Synapse, and Fabric - Sam Debruyn](https://debruyn.dev/2025/all-the-different-ways-to-authenticate-to-azure-sql-synapse-and-fabric/)** — In this post I’ll go over all the details on acquiring access tokens to authenticate to any Microsoft SQL engine, including Azure SQL, Azure Synapse and Microsoft Fabric. We’ll explore users, service principals,...
 
-- [Use AI to Turn Whiteboard Sketches into Pipelines](https://learn.microsoft.com/fabric/data-factory/image-to-pipeline-with-ai?WT.mc_id=DP-MVP-5002621) — Microsoft's Data Factory in Fabric now supports converting whiteboard sketches and images directly into data pipelines using AI. This feature streamlines pipeline creation by letting users sketch out their data flow and have the system generate the corresponding pipeline configuration.
+- **[Use AI to turn whiteboard sketches into pipelines - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-factory/image-to-pipeline-with-ai?WT.mc_id=DP-MVP-5002621)** — This article shows how AI can easily transform images directly to pipelines for Data Factory for Microsoft Fabric.
 
 ## Main Discussion: Power Query Skills to Know and Learn
 

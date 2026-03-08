@@ -31,15 +31,11 @@ Mike, Tommy, and Seth break down the November 2024 Power BI updates and talk thr
 
 ## News & Announcements
 
-- [Link](https://powerbi.microsoft.com/blog/power-bi-november-2024-feature-summary/?WT.mc_id=DP-MVP-5002621)
-- [Link](https://powerbi.microsoft.com/blog/important-update-to-microsoft-power-bi-pricing/?WT.mc_id=DP-MVP-5002621)
-- [Link](https://www.meetup.com/chicagolandpowerbi/events/304507048)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://bit.ly/3Ymso48)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Power BI November 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-november-2024-feature-summary/?WT.mc_id=DP-MVP-5002621)** — Welcome to the November 2024 update. We’re thrilled to introduce Copilot in Power BI Mobile apps, bringing AI to your fingertips for a smarter, faster way to explore data on the go. This month’s update also includes...
+- **[Important update to Microsoft Power BI pricing | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/important-update-to-microsoft-power-bi-pricing/?WT.mc_id=DP-MVP-5002621)** — Today, we’re announcing changes to our pricing for Microsoft Power BI Pro and Premium Per User (PPU) licenses—this represents the first pricing update since we launched Power BI nearly 10 years ago.
+- **[Chicago Microsoft Fabric User Group - November 2024 Meetup!, Wed, Nov 20, 2024, 6:00 PM | Meetup](https://www.meetup.com/chicagolandpowerbi/events/304507048/)** — We are back in person! Join us as we discuss Fabric Admin & Governance Analytics content (Admin Monitoring, Capacity Metrics, Usage Metrics) and providing a technical deep
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: November Updates and the Price is Right
 

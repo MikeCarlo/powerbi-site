@@ -32,11 +32,10 @@ Mike and Tommy debate whether Power BI Desktop should be treated like a true dev
 
 ## News & Announcements
 
-- [Submit a question/topic for the show](https://powerbi.tips/empodcast) — If you’ve got a scenario you want Mike and Tommy to react to (modeling patterns, deployment headaches, report design tradeoffs, etc.), this is the easiest way to get it into the queue. The best prompts include your current setup, constraints, and what you’ve already tried so the discussion can get specific.
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast/) — The PowerBI.tips podcast page is the hub for all Explicit Measures episodes and where to listen on major platforms. It’s also the quickest way to share an episode with your team when a discussion maps directly to your current Power BI project.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast/)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://themes.powerbi.tips/) — The theme generator helps you build consistent Power BI themes (colors, styling, and exportable theme JSON) without hand-editing files. If your team is trying to standardize report branding across multiple authors, this is a practical way to reduce drift and speed up new report creation.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips/)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Is Power BI Desktop a “Dev Tool”?
 

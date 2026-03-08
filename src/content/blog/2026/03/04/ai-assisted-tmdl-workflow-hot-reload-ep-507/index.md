@@ -34,9 +34,9 @@ Mike and Tommy explore AI-assisted TMDL workflows and the hot reload experience 
 
 ## News & Announcements
 
-- [Evaluate Power Query Programmatically in Microsoft Fabric (Preview)](https://blog.fabric.microsoft.com/en-US/blog/execute-power-query-programmatically-in-microsoft-fabric/) — Microsoft has introduced the ability to execute Power Query M scripts programmatically through a REST API in Fabric. This turns Power Query into a callable data transformation engine that can be invoked from notebooks, pipelines, and external applications. It supports 100+ data sources including on-premises access via gateway, making Power Query a first-class compute engine within Fabric.
+- **[Evaluate Power Query Programmatically in Microsoft Fabric (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/execute-power-query-programmatically-in-microsoft-fabric/)** — Power Query has long been at the center of data preparation across Microsoft products—from Excel and Power BI to Dataflows and Fabric. We&#8217;re introducing a major evolution: the ability to execute Power Query...
 
-- [Input Slicer: Filter Reports and Collect User Input (Generally Available)](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/) — The input slicer (formerly "text slicer") is now generally available in Power BI. It lets report consumers type or paste values directly into a slicer to filter reports — no more scrolling through long dropdown lists for order IDs, customer names, or product codes. It also supports free-form input collection for translytical workflows like comments, approval notes, and data writebacks.
+- **[Input slicer: Filter reports and collect user input (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/input-slicer-filter-reports-and-collect-user-input-generally-available/)** — Previously known as the &#8220;text slicer&#8221; while in preview, this visual lets you type or paste values directly into a slicer to filter your report—no scrolling or searching through long lists required. What...
 
 ## Main Discussion: AI-Assisted TMDL Workflow & Hot Reload
 

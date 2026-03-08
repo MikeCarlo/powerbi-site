@@ -30,13 +30,9 @@ Explicit Measures Podcast Episode 366.
 
 ## News & Announcements
 
-- [https://www.fabricfebruary.com/](https://www.fabricfebruary.com/)
-- [https://bit.ly/3i8LdBo](https://bit.ly/3i8LdBo)
-- [https://powerbi.tips/podcast](https://powerbi.tips/podcast)
-- [https://bit.ly/3Ymso48](https://bit.ly/3Ymso48)
-- [https://www.linkedin.com/in/michaelcarlo](https://www.linkedin.com/in/michaelcarlo)
-- [https://www.linkedin.com/in/seth-bauer](https://www.linkedin.com/in/seth-bauer)
-- [https://www.linkedin.com/in/tommypuglia](https://www.linkedin.com/in/tommypuglia)
+- **[Fabric February 2026 | Norway's #1 Microsoft Fabric Conference!](https://www.fabricfebruary.com/)** — Fabric February 2026 will take place at ODEON Cinema in Oslo, Norway on Thursday, February 5th, 2026!
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Episode Highlights
 

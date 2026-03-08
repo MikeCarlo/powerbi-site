@@ -30,9 +30,9 @@ In this episode, Mike and Tommy continue their Content Lifecycle Management seri
 
 ## News & Announcements
 
-- [Announcing: The Microsoft Fabric & AI Learning Hackathon](https://blog.fabric.microsoft.com/en-us/blog/announcing-the-microsoft-fabric-ai-learning-hackathon?ft=All) — Microsoft announced a learning hackathon focused on Microsoft Fabric and AI. If you want a structured way to upskill while building something real, this is a good chance to learn alongside the community.
+- **[Announcing: The Microsoft Fabric & AI Learning Hackathon | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/announcing-the-microsoft-fabric-ai-learning-hackathon?ft=All)** — Get ready for the Microsoft Fabric &amp; AI Learning Hackathon! We&#8217;re calling all Data/AI Enthusiasts and Data/AI practitioners to join us for another exciting opportunity to upskill and build the next...
 
-- [Power BI implementation planning: Support and monitor content](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-support-monitor) — This Microsoft Learn guidance outlines patterns for supporting and monitoring Power BI content through its lifecycle. It pairs well with the discussion in this episode if you're building an operational model for ownership, support, and continuous improvement.
+- **[Power BI implementation planning: Support and monitor content - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-support-monitor)** — This article helps you to support and monitor content as part of managing the content lifecycle.
 
 ## Main Discussion: Support & Monitor Content (CLM)
 

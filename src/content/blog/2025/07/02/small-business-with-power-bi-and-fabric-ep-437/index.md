@@ -36,9 +36,9 @@ Mike and Tommy tackle a mailbag question from a small business struggling to jus
 
 Tommy dives into his experience with the new **Prep Data for AI** feature now available in Power BI Desktop. The conversation covers which measures and columns to expose to Copilot, the role of perspectives in semantic models, and how verified answers can improve the AI experience.
 
-- [Natural Language Interaction Isn’t Magic—It’s Semantic Modeling Done Right](https://data-marc.com/2025/06/03/natural-language-interaction-isnt-magic-its-semantic-modeling-done-right/) — Data Marc explains why strong semantic modeling is the foundation for reliable natural language analytics. He highlights how grounding Copilot and data agents on semantic models improves accuracy, consistency, and governance.
+- **[Natural Language Interaction Isn’t Magic—It’s Semantic Modeling Done Right – Data – Marc](https://data-marc.com/2025/06/03/natural-language-interaction-isnt-magic-its-semantic-modeling-done-right/)** — We’re at a point where the way we work with data is fundamentally shifting. Natural language is becoming the new interface, and tools like Microsoft Fabric are making it possible to ask questions and get answers...
 
-- [Automatically Populate Data Agents with Semantic Model Synonyms](https://data-marc.com/2025/06/04/automatically-populate-data-agents-with-semantic-model-synonyms/) — This post shows a practical approach to enriching Fabric Data Agents by programmatically extracting synonyms and descriptions from a semantic model. The goal is fewer implicit measures, better measure selection, and more trustworthy answers from conversational experiences.
+- **[Automatically populate Data Agents with Semantic Model Synonyms – Data – Marc](https://data-marc.com/2025/06/04/automatically-populate-data-agents-with-semantic-model-synonyms/)** — It was only yesterday, that I wrote a blog post on Semantic Models as a source for Fabric Data Agents. Not much time has passed, since I learned that Fabric Data Agents does not (always) respect the Synonyms that...
 
 ## Main Discussion: Power BI and Fabric for Small Business
 

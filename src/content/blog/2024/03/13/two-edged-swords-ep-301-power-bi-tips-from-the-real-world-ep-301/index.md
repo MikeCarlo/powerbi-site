@@ -30,21 +30,17 @@ In Episode 301, Mike and Tommy break down the key takeaways from 'Two Edged Swor
 
 ## News & Announcements
 
-- [https://azuredataconf.com/#!/](https://azuredataconf.com/#!/) — Link shared in the YouTube description.
+- **[Fabcon Community Conference](https://azuredataconf.com/#!/)** — See link for details.
 
-- [https://ssbipolar.com/2023/10/20/data-culture-self-service-bi-as-a-two-edged-sword/](https://ssbipolar.com/2023/10/20/data-culture-self-service-bi-as-a-two-edged-sword/) — Link shared in the YouTube description.
+- **[Data Culture: Self-service BI as a two-edged sword – BI Polar](https://ssbipolar.com/2023/10/20/data-culture-self-service-bi-as-a-two-edged-sword/)** — There's a new data culture video! After I finished my 2020 video and blog series on building a data culture, I figured I would revisit this topic at some point. I didn't expect it to take quite so long, but life is...
 
-- [https://bit.ly/3i8LdBo](https://bit.ly/3i8LdBo) — Link shared in the YouTube description.
 
-- [https://powerbi.tips/podcast](https://powerbi.tips/podcast) — Link shared in the YouTube description.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [https://themes.powerbi.tips](https://themes.powerbi.tips) — Link shared in the YouTube description.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
-- [https://www.linkedin.com/in/michaelcarlo](https://www.linkedin.com/in/michaelcarlo) — Link shared in the YouTube description.
 
-- [https://www.linkedin.com/in/seth-bauer](https://www.linkedin.com/in/seth-bauer) — Link shared in the YouTube description.
 
-- [https://www.linkedin.com/in/tommypuglia](https://www.linkedin.com/in/tommypuglia) — Link shared in the YouTube description.
 
 ## Main Discussion
 

@@ -20,14 +20,10 @@ In this episode of Explicit Measures, we discuss Everything Is Still BI and what
 
 ## News & Announcements
 
-- [powerbi.microsoft.com](https://powerbi.microsoft.com/en-us/blog/power-bi-june-2024-feature-summary/)
-- [benn.substack.com](https://benn.substack.com/p/everything-is-still-bi)
-- [bit.ly](https://bit.ly/3i8LdBo)
-- [powerbi.tips](https://powerbi.tips/podcast)
-- [themes.powerbi.tips](https://themes.powerbi.tips)
-- [linkedin.com](https://www.linkedin.com/in/michaelcarlo)
-- [linkedin.com](https://www.linkedin.com/in/seth-bauer)
-- [linkedin.com](https://www.linkedin.com/in/tommypuglia)
+- **[Power BI June 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-june-2024-feature-summary/)** — Welcome to the June 2024 update. Here are a few, select highlights of the many we have for Power BI. You can now download large semantic models, Power BI enhanced report format (PBIR), and Subfolder support in Power...
+- **[Everything is still BI - by Benn Stancil - benn.substack](https://benn.substack.com/p/everything-is-still-bi)** — What to expect when you’re not expecting to build a BI tool.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Everything Is Still BI
 

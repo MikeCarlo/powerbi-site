@@ -33,11 +33,11 @@ Mike and Tommy unpack the new 1-click notebook feature that lets you launch a Fa
 
 ## News & Announcements
 
-- [How Does Fabric Make Spark Notebooks Instant?](https://blog.fabric.microsoft.com/en-US/blog/how-fabric-makes-spark-notebook-feel-instant-proactive-resource-provisioning-for-scalable-data-science-data-engineering/) — Microsoft revealed the Fabric Forecasting Service, which keeps a small fleet of Spark clusters pre-warmed for near-instant starts. When a cluster is used, a new one is created to refill the pool. Time-series forecasting predicts demand per region, so your Spark notebook spins up in seconds instead of minutes. The caveat: this works best with starter pools, not custom Spark pools.
+- **[How does Fabric make Spark Notebooks Instant? | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/how-fabric-makes-spark-notebook-feel-instant-proactive-resource-provisioning-for-scalable-data-science-data-engineering/)** — Discover how Microsoft Fabric’s Forecasting Service system reduces Spark startup latency and cloud costs through proactive AI and ML-driven resource provisioning. Context &amp; Relevance Waiting minutes for a Spark...
 
-- [Using Notebooks with Your Semantic Model (Preview)](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-using-notebooks-with-your-semantic-model-preview/) — Deep dive into the new notebook integration for semantic models in Power BI. This enables 1-click notebook creation directly from a semantic model, pre-connected with Semantic Link for immediate Python-based analysis.
+- **[Deep dive into using notebooks with your semantic model (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-using-notebooks-with-your-semantic-model-preview/)** — We are excited to introduce one-click experiences that make it easier than ever to start using Fabric notebooks and semantic link to analyze your semantic models on the web! With pre-configured notebooks, you can...
 
-- [Semantic Link Overview — Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-science/semantic-link-overview) — Documentation for Semantic Link, the library that connects Fabric notebooks to Power BI semantic models, enabling Python-based querying of DAX, model metadata, and evaluation.
+- **[What is semantic link? - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-science/semantic-link-overview)** — Get an overview of semantic link, which lets you connect semantic models to Synapse Data Science in Microsoft Fabric.
 
 ## Main Discussion: 1-Click Notebooks
 

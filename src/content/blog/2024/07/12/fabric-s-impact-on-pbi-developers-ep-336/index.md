@@ -30,15 +30,14 @@ Mike and Tommy discuss how Microsoft Fabric is changing the day-to-day work of P
 
 ## News & Announcements
 
-- [Cleaning the Staging Lakeside](https://itsnotaboutthecell.com/2024/07/10/cleaning-the-staging-lakeside/) — A practical walkthrough focused on keeping Fabric/Lakehouse-style staging areas tidy and intentional as projects evolve.
+- **[Cleaning the (Staging) Lakeside - IT'S NOT ABOUT THE CELL](https://itsnotaboutthecell.com/2024/07/10/cleaning-the-staging-lakeside/)** — Hiding The Gridlines That Hold Us Back — Excel, Power BI, Power Query, and Microsoft Fabric
 
-- [Unveiling Microsoft Fabric's impact on Power BI developers and analysts](https://biinsight.com/unveiling-microsoft-fabrics-impact-on-power-bi-developers-and-analysts/) — Companion write-up that frames how Fabric shifts workflows, responsibilities, and patterns for BI teams.
+- **[Unveiling Microsoft Fabric’s Impact on Power BI Developers and Analysts - BI Insight](https://biinsight.com/unveiling-microsoft-fabrics-impact-on-power-bi-developers-and-analysts/)** — Microsoft Fabric is a new platform designed to bring together the data and analytics features of Microsoft products like Power BI and Azure Synapse Analytics into a single SaaS product. Its goal is to provide a...
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike and Tommy a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Fabric's Impact on PBI Developers
 

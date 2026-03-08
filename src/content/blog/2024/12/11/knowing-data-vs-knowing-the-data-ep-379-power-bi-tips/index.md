@@ -34,19 +34,15 @@ Mike, Tommy, and Seth unpack how much **‘knowing data’** matters versus know
 
 ## News & Announcements
 
-- [Dimensional Modeling Techniques (Kimball Group)](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/) — A hub page of the “official” Kimball dimensional modeling techniques, grouped by concept (grain, dimensions, facts, conformed dimensions, SCDs, etc.). If you’re trying to level up your modeling fundamentals (or explain *why* star schema choices matter), this is a great reference list to bookmark.
+- **[Dimensional Modeling Techniques - Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)** — Ralph Kimball introduced the data warehouse/business intelligence industry to dimensional modeling in 1996 with his seminal book, The Data Warehouse Toolkit. Since then, the Kimball Group has extended the portfolio...
 
-- [Got an idea or topic for a future episode?](https://bit.ly/3i8LdBo) — This short link currently redirects to a PowerBI.tips page that returns a 404. If you’re looking for a working submission form, the podcast page below typically includes a “Mail Bag” / question submission link.
 
-- [Subscribe / listen to the Explicit Measures Podcast](https://powerbi.tips/podcast) — The home base for the show, including where to listen and how to catch episodes live. It’s also a handy starting point for sharing the podcast with your team (Spotify/Apple links and the general “what this show is about”).
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+ (Theme Generator)](https://bit.ly/3Ymso48) — This links to the Power BI Theme Generator experience from PowerBI.tips. If you’re standardizing report design across a team, it’s a quick way to generate consistent theme JSON and keep branding from becoming an afterthought.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
-- [Mike Carlo on LinkedIn](https://www.linkedin.com/in/michaelcarlo) — Follow Mike for Power BI/Fabric content and updates on what the team is building at PowerBI.tips. It’s also the easiest place to catch episode announcements when they go live.
 
-- [Seth Bauer on LinkedIn](https://www.linkedin.com/in/seth-bauer) — Connect with Seth for practical, real-world Power BI perspectives (especially around how features land inside organizations). Great follow if you like “how would this actually work in a business?” conversations.
 
-- [Tommy Puglia on LinkedIn](https://www.linkedin.com/in/tommypuglia) — Follow Tommy for Power BI feature takes, modeling/reporting patterns, and the occasional spicy opinion about what *actually* helps users. If you’re into the “why” behind the feature, Tommy’s your guy.
 
 ## Main Discussion: Knowing Data vs Knowing *THE* Data
 

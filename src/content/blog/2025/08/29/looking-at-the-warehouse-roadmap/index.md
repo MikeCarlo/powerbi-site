@@ -32,9 +32,9 @@ Where is Fabric Data Warehouse headed? Mike and Tommy review the public roadmap,
 
 ## News & Announcements
 
-- [Mastering Declarative Data Transformations with Materialized Lake Views](https://blog.fabric.microsoft.com/blog/mastering-declarative-data-transformations-with-materialized-lake-views/?WT.mc_id=DP-MVP-5002621) — Materialized lake views bring declarative transformation patterns to OneLake, enabling efficient incremental processing.
+- **[Mastering Declarative Data Transformations with Materialized Lake Views | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/mastering-declarative-data-transformations-with-materialized-lake-views//)** — Organizations often face challenges when trying to scale analytics across large volumes of data stored in centralized SQL databases. As business teams demand faster, more tailored insights, traditional reporting...
 
-- [Notebook UDF Integration with Native Support for Pandas DataFrames and Series via Apache Arrow](https://blog.fabric.microsoft.com/blog/now-in-fabric-notebook-udf-integration-with-native-support-for-pandas-dataframes-and-series-via-apache-arrow?ft=All&WT.mc_id=DP-MVP-5002621) — Better Python UDF support in Fabric notebooks with Arrow-based pandas integration.
+- **[Use Fabric User Data Functions with Pandas DataFrames and Series in Notebooks | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/now-in-fabric-notebook-udf-integration-with-native-support-for-pandas-dataframes-and-series-via-apache-arrow/)** — We’ve made a major enhancement to the Notebook Integration with Fabric User Data Functions (UDFs)—you can now use Pandas DataFrames and Series as input and output types, powered by native integration with Apache...
 
 ## Main Discussion: The Warehouse Roadmap
 

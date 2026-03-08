@@ -34,7 +34,7 @@ Mike and Tommy dig into a deceptively simple question: can you build Power BI re
 
 January’s Power BI feature wave is packed—there are meaningful updates across reporting, modeling, and admin experience, plus a few “this will change how people work” items worth scanning even if you don’t install Desktop monthly.
 
-- [Power BI January 2025 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-january-2025-feature-summary/) — Microsoft’s roundup covers new report experiences (like **Explore this data**), modeling improvements (including **semantic model version history** and **TMDL scripting** previews), and a steady stream of usability upgrades. If you’re leading a Power BI/Fabric platform, it’s a good monthly habit to skim these posts for upcoming preview features you may want to test (or disable) before they surprise your users.
+- **[Power BI January 2025 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-january-2025-feature-summary/)** — Welcome to the January 2025 update! Get ready to elevate your data analysis experience! We’re thrilled to announce a series of powerful new features designed to make exploring your data easier and more intuitive than...
 
 ## Main Discussion: Using Only Bronze
 

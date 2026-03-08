@@ -35,13 +35,12 @@ Mike and Tommy walk through their ‘draft’ of the Microsoft Fabric January 20
 
 ## News & Announcements
 
-- [Microsoft Fabric January 2025 update](https://blog.fabric.microsoft.com/blog/microsoft-fabric-january-2025-update/?WT.mc_id=DP-MVP-5002621#) — Microsoft’s monthly round-up is packed: Power BI reporting improvements (like **Explore this data** from a visual), modeling investments (including **semantic model version history** and the **TMDL scripting** preview), and platform features like **folder support in Git**. If you’re trying to plan what to pilot in Q1, this post is the best single place to scan what’s new across Fabric, Power BI, and the surrounding developer workflow.
+- **[Microsoft Fabric January 2025 update | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/microsoft-fabric-january-2025-update//)** — We’ve got a lot of exciting updates this month. To name a few, NotebookUtils session management utilities, Enhancing COPY INTO operations with Granular Permissions in Data Warehouse, Application Lifecycle Management...
 
-- [Submit a topic idea / mailbag](https://bit.ly/3i8LdBo) — Got something you want Mike and Tommy to break down on a future episode? Drop your scenario or question in the mailbag—real problems make the best conversations.
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast) — The easiest way to keep up with new episodes, plus links to your favorite podcast platforms.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://bit.ly/3Ymso48) — If you’re tired of “close enough” brand colors, generate consistent report themes quickly and keep visuals aligned across a team.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Fabric January 2025 Update (What to Pay Attention To)
 

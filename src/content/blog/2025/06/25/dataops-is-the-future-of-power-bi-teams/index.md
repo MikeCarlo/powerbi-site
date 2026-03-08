@@ -38,9 +38,7 @@ No formal news segment this week — the hosts jumped straight into beat-from-th
 
 ### Referenced Links
 
-- [Ahmad Chamy's Hot Take on DataOps](https://www.linkedin.com/posts/ahmadchamy_%F0%9D%97%9B%F0%9D%97%BC%F0%9D%98%81-%F0%9D%97%A7%F0%9D%97%AE%F0%9D%97%B8%F0%9D%97%B2-%F0%9D%97%97%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%AE%F0%9D%97%A2%F0%9D%97%BD%F0%9D%98%80-%F0%9D%97%B6%F0%9D%98%80-%F0%9D%98%81%F0%9D%97%B5%F0%9D%97%B2-activity-7331363250787233795-tfKF/) — Ahmad Chamy shares his take that DataOps addresses the hardest challenges data teams face, increasing productivity while balancing stability and accuracy. He argues that with Fabric tooling coming together, there's a massive opportunity to accelerate data team performance in a developer and end-user centric way.
 
-- [DevOps for Power BI Development by Ahmad Chamy](https://www.linkedin.com/pulse/devops-power-bi-development-ahmad-chamy-10v1c/) — Ahmad's longer-form article exploring how DevOps principles apply specifically to Power BI development workflows. The piece covers practical approaches to source control, CI/CD, and team collaboration for data professionals transitioning from traditional Power BI workflows.
 
 ## Main Discussion: DataOps is the Future of Power BI Teams
 

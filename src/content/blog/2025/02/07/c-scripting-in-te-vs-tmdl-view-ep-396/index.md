@@ -35,15 +35,14 @@ Mike and Tommy compare the classic Tabular Editor workflow—C# scripting, macro
 
 ## News & Announcements
 
-- [Introducing enhanced conversation with Microsoft Fabric Copilot and AI Skill (Preview)](https://blog.fabric.microsoft.com/blog/introducing-enhanced-conversation-with-microsoft-fabric-copilot-preview/?WT.mc_id=DP-MVP-5002621#) — Microsoft shared updates to how Fabric Copilot (and AI Skill chat) can store prompts and chat history to improve response quality and keep better context across conversations. The post also highlights a tenant setting for cross-geo data storage that can be required outside the US/EU, and clarifies that the stored conversation history isn’t used to train Microsoft models (and can be deleted by users).
+- **[Introducing enhanced conversation with Microsoft Fabric Copilot and AI Skill (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-enhanced-conversation-with-microsoft-fabric-copilot-preview//)** — Enhancing AI Functionalities with a Commitment to Privacy and Security At Microsoft, we continuously strive to enhance our services based on valuable customer feedback and evolving needs. In response to our data...
 
-- [Microsoft Fabric Copilot to write DAX queries in Power BI update](https://powerbi.microsoft.com/blog/microsoft-fabric-copilot-to-write-dax-queries-in-power-bi-update/?WT.mc_id=DP-MVP-5002621) — Copilot for DAX Query View can now use more semantic-model context like descriptions, synonyms, and column sample values to write better DAX queries. The big takeaway: investing time in model documentation (descriptions/synonyms) now directly improves both human usability and Copilot accuracy.
+- **[Microsoft Fabric Copilot to write DAX queries in Power BI update | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/microsoft-fabric-copilot-to-write-dax-queries-in-power-bi-update/?WT.mc_id=DP-MVP-5002621)** — We are excited to announce that writing DAX queries with Copilot can utilize semantic model descriptions, synonyms, and sample values from columns.
 
-- [Submit a topic idea / mailbag](https://bit.ly/3i8LdBo) — Have a question you want covered on the show? Drop it in the mailbag form—episodes are best when they start with real-world scenarios.
 
-- [Subscribe to the podcast](https://powerbi.tips/podcast) — One hub page to catch the live stream and find Spotify/Apple links to listen later.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Tips+ Theme Generator](https://bit.ly/3Ymso48) — Generate consistent Power BI themes quickly so your team can stop hand-tweaking colors and fonts across reports.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: C# Scripting in Tabular Editor vs TMDL View
 

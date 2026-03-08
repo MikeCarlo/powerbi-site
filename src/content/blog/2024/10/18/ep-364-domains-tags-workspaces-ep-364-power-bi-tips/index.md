@@ -22,18 +22,14 @@ Welcome back to the Explicit Measures Podcast. In Episode 364, Mike Carlo and th
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/NWWgiJ-2wDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## News & Announcements
-- https://powerbi.microsoft.com/en-us/blog/power-bi-october-2024-feature-summary/
-- https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/
-- https://powerbi.microsoft.com/en-us/blog/live-edit-of-direct-lake-models-in-power-bi-desktop/
-- https://www.fabricfebruary.com/
-- https://learn.microsoft.com/en-us/fabric/governance/tags-overview
-- https://learn.microsoft.com/en-us/fabric/governance/domains
-- https://bit.ly/3i8LdBo
-- https://powerbi.tips/podcast
-- https://bit.ly/3Ymso48
-- https://www.linkedin.com/in/michaelcarlo
-- https://www.linkedin.com/in/seth-bauer
-- https://www.linkedin.com/in/tommypuglia
+- **[Power BI October 2024 Feature Summary | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-october-2024-feature-summary/)** — We have a lot of exciting updates to share with you this month. Quick measure suggestions with Copilot to be replaced with Microsoft Fabric Copilot, we have an update with Azure Map &#8211; Data Bound Reference...
+- **[Announcing the retirement of real-time streaming in Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-real-time-streaming-in-power-bi/)** — Today, we are announcing that we will be retiring real-time streaming in Power BI.
+- **[Live edit of Direct Lake models in Power BI Desktop | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/live-edit-of-direct-lake-models-in-power-bi-desktop/)** — You can use Power BI Desktop to live edit Direct Lake semantic models, improving your data modeling experience and allowing export to Power BI Project (PBIP) for professional development workflows.
+- **[Fabric February 2026 | Norway's #1 Microsoft Fabric Conference!](https://www.fabricfebruary.com/)** — Fabric February 2026 will take place at ODEON Cinema in Oslo, Norway on Thursday, February 5th, 2026!
+- **[Tags in Microsoft Fabric - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/governance/tags-overview)** — Learn about tags in Microsoft Fabric.
+- **[Domains - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/governance/domains)** — Learn about domains and how to create and manage them.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
 
 ## Main Discussion: Domains, Tags, & Workspaces- Ep.364 - Power BI tips
 

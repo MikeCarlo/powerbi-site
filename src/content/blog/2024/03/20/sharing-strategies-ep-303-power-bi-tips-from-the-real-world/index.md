@@ -31,13 +31,13 @@ Mike and Tommy talk through practical sharing strategies in the Power BI / Fabri
 
 ## News & Announcements
 
-- [Important update coming to Power BI Premium licensing](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-power-bi-premium-licensing/)
-- [Improved image mode in Power BI add-in for PowerPoint](https://powerbi.microsoft.com/en-us/blog/improved-image-mode-in-power-bi-add-in-for-powerpoint/)
-- [Bridging Fabric Lakehouses: Delta Change Data Feed for seamless ETL](https://blog.fabric.microsoft.com/en-us/blog/bridging-fabric-lakehouses-delta-change-data-feed-for-seamless-etl?ft=All)
-- [Copilot updates (March 2024)](https://powerbi.microsoft.com/en-us/blog/copilot-updates-march-2024/)
-- [Browse Azure resources with Get Data](https://blog.fabric.microsoft.com/en-us/blog/browse-azure-resources-with-get-data?ft=All)
-- [Azure Data Conf](https://azuredataconf.com/#!/)
-- [Explicit Measures Podcast Hub](https://powerbi.tips/podcast)
+- **[Important update coming to Power BI Premium licensing | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-power-bi-premium-licensing/)** — With the exciting release of Microsoft Fabric and the Fabric capacity SKUs last year, we are consolidating purchase options and retiring the Power BI Premium per capacity SKU after January 1, 2025.
+- **[Improved image mode in Power BI add-in for PowerPoint. | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/improved-image-mode-in-power-bi-add-in-for-powerpoint/)** — Changing Power BI add-in as snapshot made easy and with more options. You can now change your live data to an image, that only people who can see the report will be able to see.
+- **[Bridging Fabric Lakehouses: Delta Change Data Feed for Seamless ETL | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/bridging-fabric-lakehouses-delta-change-data-feed-for-seamless-etl?ft=All)** — Within Microsoft Fabric,&nbsp;Delta Tables&nbsp;serve as a common file/table format. These tables find application both in the Data Warehouse and as managed tables within the Lakehouse. Their versatility extends to...
+- **[Copilot Updates March 2024 | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/copilot-updates-march-2024/)** — This month, we are excited to announce some new and exciting updates to Copilot; Copilot for consumers now includes support for Apps. Updates to Copilot geography support, usage and billing updates and abuse...
+- **[Browse Azure resources with Get Data | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/browse-azure-resources-with-get-data?ft=All)** — With the new ‘browse Azure’ functionality in Get Data, you can easily browse all your Azure resources and automatically connect to them, without going through manually setting up a connection, saving you a lot of...
+- **[Fabcon Community Conference](https://azuredataconf.com/#!/)** — See link for details.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
 ## Main Discussion: Sharing Without the “Who Has the File?” Problem
 

@@ -30,15 +30,14 @@ Mike and Tommy cover Microsoft Fabric GitHub integration news and share practica
 
 ## News & Announcements
 
-- [Announcing GitHub integration for source control (Preview)](https://blog.fabric.microsoft.com/en-us/blog/announcing-github-integration-for-source-control-preview?ft=All) — Microsoft Fabric adds GitHub integration for source control, enabling a more standard developer workflow for Fabric items. This is a key step toward treating analytics artifacts like code with branching, review, and better change tracking.
+- **[Announcing GitHub integration for source control (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/announcing-github-integration-for-source-control-preview?ft=All)** — GitHub and GitHub Enterprise are now available for source control integration. Connect your workspace and you can start syncing your fabric content into your repository.
 
-- [Fabric REST API: Git (Core)](https://learn.microsoft.com/en-us/rest/api/fabric/core/git) — Reference documentation for automating Fabric Git operations via API. Helpful for teams building CI/CD or governance workflows around source control.
+- **[Git - REST API (Core) | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/fabric/core/git)** — Learn more about [Core Git Operations]. How to [Commit To Git,Connect,Disconnect,Get Connection,Get My Git Credentials,Get Status,Initialize Connection,Update F
 
-- [Got an idea or topic for a future show?](https://bit.ly/3i8LdBo) — Drop Mike and Tommy a topic suggestion to help shape upcoming episodes.
 
-- [Subscribe / catch past episodes](https://powerbi.tips/podcast) — The PowerBI.tips podcast hub with links to recent episodes and ways to follow along.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 
-- [Join Tips+](https://themes.powerbi.tips) — Tips+ includes tools and resources for building better Power BI reports faster.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: The 3-30-300 Rule
 

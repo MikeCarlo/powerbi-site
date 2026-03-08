@@ -21,13 +21,9 @@ Fabric Deployment Methods is the focus of this week’s Explicit Measures episod
 
 ## News & Announcements
 
-- [Link](https://learn.microsoft.com/azure/architecture/analytics/architecture/fabric-deployment-patterns?WT.mc_id=DP-MVP-5002621)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Deployment Patterns for Microsoft Fabric - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/analytics/architecture/fabric-deployment-patterns?WT.mc_id=DP-MVP-5002621)** — Learn about common deployment scenarios for Microsoft Fabric.
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Fabric Deployment Methods
 

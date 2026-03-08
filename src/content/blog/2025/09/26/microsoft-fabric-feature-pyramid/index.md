@@ -34,13 +34,12 @@ If you had to rank Fabric features into a pyramid, what sits at the top? Mike an
 
 ## News & Announcements
 
-- [Calendar-Based Time Intelligence (Preview)](https://powerbi.microsoft.com/en-us/blog/calendar-based-time-intelligence-time-intelligence-tailored-preview/) — Tailored time intelligence that works with custom calendars, addressing one of the biggest pain points in DAX development.
+- **[Calendar-based time intelligence: time intelligence, tailored (Preview) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/calendar-based-time-intelligence-time-intelligence-tailored-preview/)** — Time-based analysis just got a major upgrade. Power BI now supports calendar-based time intelligence, giving you the flexibility to work with any calendar structure—fiscal, retail, lunar, or custom. Say goodbye to...
 
-- [LLM-Powered Data Agent from Mirrored Databases](https://blog.fabric.microsoft.com/en-US/blog/unlocking-llm-powered-through-data-agent-from-your-mirrored-databases-in-microsoft-fabric/) — Data Agents can now work with mirrored databases, expanding the reach of AI-powered data access.
+- **[Unlocking LLM-Powered through Data Agent from your Mirrored Databases in Microsoft Fabric | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/unlocking-llm-powered-through-data-agent-from-your-mirrored-databases-in-microsoft-fabric/)** — Fabric Data Agent now support mirrored databases&#8211;making it easier than ever to put your operational data to work with AI. As organizations depend on an ever-growing mix of data sources, the ability to...
 
-- [TMDL View Generally Available](https://powerbi.microsoft.com/en-us/blog/tmdl-view-generally-available/) — TMDL View in Power BI Desktop hits GA, making text-based model editing a first-class experience.
+- **[TMDL view (Generally Available) | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/tmdl-view-generally-available/)** — TMDL view is now generally available in Power BI Desktop!
 
-- [DAX UDFs Preview: Code Once, Reuse Everywhere](https://powerbi.microsoft.com/en-us/blog/dax-udfs-preview-code-once-reuse-everywhere/) — Official announcement of DAX User Defined Functions in preview.
 
 ## Main Discussion: The Feature Pyramid
 

@@ -33,9 +33,9 @@ Mike and Tommy tackle a community question about whether data science platforms 
 
 ## News & Announcements
 
-- [New Mapping and Location Analytics Capabilities in Microsoft Power BI](https://powerbi.microsoft.com/blog/new-mapping-and-location-analytics-capabilities-in-microsoft-power-bi/?WT.mc_id=DP-MVP-5002621) — Azure Maps in Power BI now supports Publish to Web, allowing users to embed interactive map visuals directly into websites and public portals without requiring authentication. The update also introduces data-bound reference layers and a new path layer for richer geospatial storytelling.
+- **[New mapping and location analytics capabilities in Microsoft Power BI | Microsoft Power BI Blog | Microsoft Power BI](https://powerbi.microsoft.com/en-us/blog/new-mapping-and-location-analytics-capabilities-in-microsoft-power-bi/?WT.mc_id=DP-MVP-5002621)** — The Microsoft Azure Maps visual in Microsoft Power BI enables all Power BI users to visualize and analyze their data on maps to uncover patterns and trends.
 
-- [Introducing the Microsoft Fabric SKU Estimator (Preview)](https://blog.fabric.microsoft.com/blog/empowering-businesses-with-smart-capacity-planning-introducing-the-microsoft-fabric-sku-estimator/?WT.mc_id=DP-MVP-5002621) — Microsoft has released a preview of the Fabric SKU Estimator, an enhanced capacity planning tool that analyzes data size, processing volume, and workload demands to recommend the right SKU. It covers all major Fabric workloads including Data Engineering, Data Warehouse, Data Science, Power BI, and Real-Time Intelligence, helping organizations avoid over- or under-provisioning.
+- **[Empowering businesses with smart capacity planning: Introducing the Microsoft Fabric SKU estimator (Preview) | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/empowering-businesses-with-smart-capacity-planning-introducing-the-microsoft-fabric-sku-estimator//)** — We’re excited to unveil the Microsoft Fabric SKU estimator, now available in preview—an enhanced version of the previously introduced Microsoft Fabric Capacity Calculator. This advanced tool has been refined based on...
 
 ## Main Discussion: Are Data Science Platforms Replacing Traditional BI?
 

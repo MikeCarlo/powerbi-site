@@ -32,9 +32,9 @@ What Fabric feature would you conjure if you had a magic wand? Inspired by Steph
 
 ## News & Announcements
 
-- [OneLake File Explorer: Smarter, More Reliable, and Seamlessly Integrated](https://blog.fabric.microsoft.com/en-us/blog/onelake-file-explorer-smarter-more-reliable-and-seamlessly-integrated/) — Improvements to OneLake File Explorer, making it more stable and better integrated with the OS.
+- **[OneLake File Explorer: Smarter, More Reliable, and Seamlessly Integrated | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/onelake-file-explorer-smarter-more-reliable-and-seamlessly-integrated/)** — Version 1.0.14.0, packed with improvements that make it even more powerful for your day-to-day data workflows has been released. What is OneLake File Explorer? OneLake file explorer is your bridge between local file...
 
-- [Migrating to Fabric Data Warehouse Guide Now Available](https://blog.fabric.microsoft.com/en-us/blog/migrating-to-fabric-data-warehouse-guide-now-available/) — A comprehensive migration guide for teams moving from existing warehouse solutions to Fabric Data Warehouse.
+- **[Now Available – A Guide: Migrating to Fabric Data Warehouse | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/migrating-to-fabric-data-warehouse-guide-now-available/)** — The Microsoft Fabric Migration Guide is now live! This comprehensive resource is designed to help you plan and execute your migration to Microsoft Fabric with confidence. Whether you&#8217;re just getting started or...
 
 ## Main Discussion: Magic Wand Features
 

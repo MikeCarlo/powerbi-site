@@ -31,14 +31,10 @@ In this episode of the Explicit Measures podcast, Mike discuss Deployment Pipeli
 
 ## News & Announcements
 
-- [Link](https://blog.tabulareditor.com/2024/06/13/tabular-editor-3-july-2024-release/)
-- [Link](https://blog.fabric.microsoft.com/en-US/blog/solved-fabric-community-posts-are-now-available-in-the-fabric-help-pane/)
-- [Link](https://bit.ly/3i8LdBo)
-- [Link](https://powerbi.tips/podcast)
-- [Link](https://themes.powerbi.tips)
-- [Link](https://www.linkedin.com/in/michaelcarlo)
-- [Link](https://www.linkedin.com/in/seth-bauer)
-- [Link](https://www.linkedin.com/in/tommypuglia)
+- **[Tabular Editor 3: June 2024 Release](https://tabulareditor.com/blog/tabular-editor-3-july-2024-release)** — We are excited to introduce the new version of Tabular Editor 3, which is available now.
+- **[Solved Fabric Community posts are now available in the Fabric Help Pane | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/solved-fabric-community-posts-are-now-available-in-the-fabric-help-pane/)** — The Fabric Help Pane provides Fabric users with a fast and efficient way to access self-help content, allowing them to resolve issues independently or direct them to create a support ticket if further help is...
+- **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
+- **[PowerBI.tips Theme Gallery](https://themes.powerbi.tips)** — Browse and download Power BI report themes from the PowerBI.tips theme gallery.
 
 ## Main Discussion: Deployment Pipeline Missing Features - Ep.330 - Power BI tips
 

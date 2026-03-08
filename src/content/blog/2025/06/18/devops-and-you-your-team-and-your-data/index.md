@@ -41,11 +41,11 @@ The episode opens with a fun rant about **Dataflow Gen2 adding SharePoint as a f
 
 ### Referenced Links
 
-- [Two new C# Scripts for PBIR: Replace Fields & Open Visual Json files](https://www.esbrina-ba.com/pbir-scripts-to-replace-field-and-open-visual-json-files) — A practical post with two small scripts that make PBIR work less painful: one helps replace fields inside a visual without breaking formatting, and the other helps you quickly locate the right `visual.json` when you need to tweak configuration. A nice reminder that once reports are “files on disk,” automation becomes the superpower.
+- **[Two new C# Scripts for PBIR: Replace Fields & Open Visual Json files - EsbrinaEsbrina](https://www.esbrina-ba.com/pbir-scripts-to-replace-field-and-open-visual-json-files)** — This article presents two new Tabular Editor C# scripts for PBIR reports, one to replace a field in visuals and one to open visual.json files
 
-- [Finding reports and semantic models easily with Power BI Copilot Search](https://blog.crossjoin.co.uk/2025/06/01/finding-reports-and-semantic-models-easily-with-power-bi-copilot-search/) — Chris shows how the new Copilot “Chat with your data” experience isn’t just chat: it can help you find content by looking at report metadata and even text inside the report pages (not just the report name). The hosts love the capability but debate the idea that basic “search” is being positioned behind Copilot licensing.
+- **[Finding reports and semantic models easily with Power BI Copilot Search](https://blog.crossjoin.co.uk/2025/06/01/finding-reports-and-semantic-models-easily-with-power-bi-copilot-search/)** — The new Copilot Search feature works better than Power BI's existing search
 
-- [Grouping and filtering in Power BI Copilot AI Instructions](https://blog.crossjoin.co.uk/2025/06/15/grouping-and-filtering-in-power-bi-copilot-ai-instructions/) — A deeper, more actionable Copilot post that shows why you need to provide model-specific AI Instructions if you want reliable grouping/filtering behavior. The takeaway: Copilot can only be as good as the semantic context you give it; “good prompts” alone won’t save a vague model.
+- **[Grouping and filtering in Power BI Copilot AI Instructions](https://blog.crossjoin.co.uk/2025/06/15/grouping-and-filtering-in-power-bi-copilot-ai-instructions/)** — Specify the columns returned in results and filters on rows
 
 ## Main Discussion: DevOps and You, Your Team, and Your Data
 
