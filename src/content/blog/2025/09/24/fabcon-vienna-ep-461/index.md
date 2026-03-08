@@ -18,7 +18,6 @@ tags:
 excerpt: "Mike and Tommy recap FabCon Vienna—the big announcements, the September Fabric feature summary, the new extensibility toolkit, and calendar-based time intelligence. A packed episode covering the European conference highlights."
 featuredImage: "./assets/featured.png"
 ---
-
 FabCon Vienna brought a wave of Fabric announcements. Mike and Tommy break down the highlights from the European conference, including the September feature summary, the new Fabric Extensibility Toolkit, and the long-awaited calendar-based time intelligence preview.
 
 <iframe 
@@ -31,8 +30,7 @@ FabCon Vienna brought a wave of Fabric announcements. Mike and Tommy break down 
   allowfullscreen
 ></iframe>
 
-## FabCon Vienna Highlights
-
+## Main Discussion
 ### September 2025 Fabric Feature Summary
 
 The [September feature summary](https://blog.fabric.microsoft.com/en-US/blog/september-2025-fabric-feature-summary/) brings the usual round of improvements across all Fabric workloads. Mike and Tommy highlight the most impactful updates for BI professionals.

@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike, Tommy, and Seth talk through report commenting in Power BI: when it helps, how teams can use it effectively, and the gotchas to watch for in real collaboration workflows."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike, Tommy, and Seth talk through **adding comments to reports** in Power BI: when it helps, how teams can use it effectively, and the gotchas to watch for in real collaboration workflows.
 
 <iframe 
@@ -34,6 +33,21 @@ Mike, Tommy, and Seth talk through **adding comments to reports** in Power BI: w
 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
+
+## Main Discussion
+
+Many teams need a review/approval loop where business users can point at a specific chart and say “this number looks wrong” or “add context here.” This episode explores practical ways to add **comments and markup** around Power BI reports—without turning Power BI into a full application.
+
+Key points:
+- Clarify the goal: is it *feedback during development* (review cycle) or *ongoing discussion* after publishing?
+- Today’s most reliable patterns still involve a companion surface (Teams/Loop/OneNote, screenshots, PowerPoint) for structured feedback and sign-off.
+- If you need in-report context, think in terms of **bookmarks + saved state** and linking feedback to a specific view.
+- Comments should be auditable: who said what, when, and what changed as a result.
+- Don’t let “markup” become a shadow backlog—define an owner and a process for resolving feedback.
+
+## Looking Forward
+
+Pick one report and run a formal review cycle with a defined commenting method (Teams thread + screenshot markup is fine). If it works, standardize it as your default “report sign-off” process so every project doesn’t reinvent review.
 
 ## Episode Transcript
 

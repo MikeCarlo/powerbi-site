@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike and Tommy explore the design considerations between Microsoft Fabric's Lakehouse and Warehouse—when to use each, where they overlap, and how to think about the decision for your organization."
 featuredImage: "./assets/featured.png"
 ---
-
 Lakehouse or Warehouse? It's one of the most common questions in Microsoft Fabric. Mike and Tommy break down the decision guide, share their real-world experiences, and discuss where the two workloads overlap and diverge.
 
 <iframe 
@@ -65,6 +64,10 @@ Tommy shares insights from a large data governance project:
 ## Resources
 
 - [Decision Guide: Lakehouse vs. Warehouse — Microsoft Learn](https://learn.microsoft.com/fabric/fundamentals/decision-guide-lakehouse-warehouse?WT.mc_id=DP-MVP-5002621)
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Episode Transcript
 

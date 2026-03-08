@@ -16,7 +16,6 @@ tags:
 excerpt: "In this episode of the Explicit Measures podcast, Mike discuss Deployment Pipeline Missing Features - Ep.330 - Power BI tips."
 featuredImage: "./assets/featured.png"
 ---
-
 In this episode of the Explicit Measures podcast, Mike discuss Deployment Pipeline Missing Features - Ep.330 - Power BI tips.
 
 <iframe 
@@ -38,7 +37,15 @@ In this episode of the Explicit Measures podcast, Mike discuss Deployment Pipeli
 
 ## Main Discussion
 
-In this episode, the team focuses on **Deployment Pipeline Missing Features - Ep.330 - Power BI tips**.
+
+This episode focuses on the state of **deployment pipelines** (and deployment *process*) across Power BI and Fabric. The conversation is less “pipelines are cool” and more “what’s missing, what’s risky, and how do you ship changes without breaking production?”
+
+Key points:
+- Deployment isn’t just code promotion—data, permissions, connections, and environment config have to move (or be re-created) safely.
+- There are still **capability gaps** and inconsistencies depending on the Fabric item type, so you need to validate your exact workflow.
+- Git integration helps, but it doesn’t automatically solve environment parity or data refresh realities.
+- A practical approach is to define a minimal release path (Dev → Test → Prod), then document what is automated vs. manual today.
+- The team emphasizes designing for repeatability: templates, parameterization, and clear ownership of the release process.
 
 ## Looking Forward
 

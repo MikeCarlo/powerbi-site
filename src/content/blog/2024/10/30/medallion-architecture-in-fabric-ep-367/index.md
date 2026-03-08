@@ -13,7 +13,6 @@ tags:
 excerpt: "Mike and the team discuss Medallion Architecture in Fabric - Ep.367 - Power BI tips—with practical tips you can apply right away in Power BI."
 featuredImage: "./assets/featured.png"
 ---
-
 In this episode, Mike and the team discuss **Medallion Architecture in Fabric - Ep.367 - Power BI tips**—what it is, why it matters, and how you can apply it in your Power BI work.
 
 <iframe 
@@ -44,7 +43,15 @@ In this episode, Mike and the team discuss **Medallion Architecture in Fabric - 
 
 ## Main Discussion
 
-The conversation dives into Medallion Architecture in Fabric - Ep.367 - Power BI tips, including practical considerations, common gotchas, and real-world tips you can use right away.
+
+The Medallion architecture (Bronze/Silver/Gold) is a proven pattern for organizing lakehouse work—but Fabric changes some of the “how” while keeping the “why.” The team discusses what the layers mean, where the pattern still fits, and how to avoid turning it into ceremony that slows delivery.
+
+Key points:
+- Bronze/Silver/Gold is about intent: raw landing → cleaned/conformed → curated/consumable outputs.
+- Fabric can implement the pattern with Lakehouses, notebooks, pipelines, and semantic models—but you still need standards.
+- Don’t over-layer: the right number of layers depends on data quality, reuse, and governance needs.
+- The “Gold” layer is often about serving consumption (semantic model/data product), not just another table.
+- The architecture should make data easier to trust and reuse; if it adds friction without value, simplify.
 
 ## Looking Forward
 

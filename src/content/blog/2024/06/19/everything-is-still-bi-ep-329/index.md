@@ -27,7 +27,20 @@ In this episode of Explicit Measures, we discuss Everything Is Still BI and what
 
 ## Main Discussion
 
+
+Using Ben Stancil’s “Everything is still BI” as a spark, the crew debates what Fabric changes—and what it *doesn’t*. The takeaway: new packaging and new features won’t save you from the fundamentals of BI delivery: clear requirements, strong models, and intentional user experience.
+
+Key points:
+- Fabric can change the *platform*, but the hard parts remain: defining metrics, modeling well, and shipping something users trust.
+- They dig into **Visual Calculations**—useful, but currently limited by discoverability and reuse (patterns matter).
+- The conversation calls out friction in the evolving desktop experience (Power BI Home, more clicks) and the need for a smoother “one place to edit” story.
+- The new **enhanced report format (PBIR/PBIP)** is a big DevOps win (true diffs at page/visual level) but has real service limitations today.
+- Net: embrace the tooling improvements, but don’t outsource BI success to shiny features.
+
 ## Looking Forward
+
+
+If you want to take action after this episode, audit one of your key reports for BI fundamentals first (definitions, model clarity, UX), then decide which new features are actually safe to adopt. The platform will keep changing—your standards shouldn’t.
 
 ## Episode Transcript
 

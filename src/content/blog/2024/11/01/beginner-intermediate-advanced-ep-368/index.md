@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike, Tommy, and Seth discuss Beginner, Intermediate, Advanced - Ep.368 - Power BI tips—with practical tips you can apply right away in Power BI."
 featuredImage: "./assets/featured.png"
 ---
-
 In this episode, Mike and the team discuss **Beginner, Intermediate, Advanced - Ep.368 - Power BI tips**—what it is, why it matters, and how you can apply it in your Power BI work.
 
 <iframe 
@@ -37,7 +36,15 @@ In this episode, Mike and the team discuss **Beginner, Intermediate, Advanced - 
 
 ## Main Discussion
 
-The conversation dives into Beginner, Intermediate, Advanced - Ep.368 - Power BI tips, including practical considerations, common gotchas, and real-world tips you can use right away.
+
+What does “beginner vs. intermediate vs. advanced” actually mean in Power BI and Fabric? This episode tries to put real definition around skill levels across different roles (reporting, modeling, engineering) and why the learning path isn’t the same for everyone.
+
+Key points:
+- “Advanced” isn’t just more DAX—it’s better problem framing, better modeling decisions, and stronger tradeoff management.
+- Skill levels differ by role: a great report designer may not be a data engineer (and vice versa).
+- Intermediate users start to think in reusable patterns (measures, conventions, deployment practices).
+- Mentorship and real projects accelerate growth more than isolated tutorials.
+- Teams should build a shared rubric so expectations are clear (especially when hiring).
 
 ## Looking Forward
 

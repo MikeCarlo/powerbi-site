@@ -16,7 +16,6 @@ tags:
 excerpt: "Mike, Tommy, and Seth continue the Content Lifecycle Management (CLM) series with a focus on planning and designing content in Microsoft Fabric and Power BI, plus a handful of links and updates from the community."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike, Tommy, and Seth continue the Content Lifecycle Management (CLM) series with a focus on planning and designing content in Microsoft Fabric and Power BI.
 
 <iframe 
@@ -43,6 +42,10 @@ Mike, Tommy, and Seth continue the Content Lifecycle Management (CLM) series wit
 ## Main Discussion
 
 This episode continues the CLM series by digging into what it looks like to plan and design content with the end in mind: who the audience is, how content should be organized, what “done” means, and how you set yourself up for sustainable iteration.
+
+## Looking Forward
+
+To move this forward, choose one idea from the discussion and apply it to a current report or model. From there, write down what changed (and what didn’t) so the lesson sticks so the approach is repeatable.
 
 ## Episode Transcript
 

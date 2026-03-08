@@ -13,7 +13,6 @@ tags:
 excerpt: "Main Topic"
 featuredImage: "./assets/featured.png"
 ---
-
 Main Topic
 
 <iframe 
@@ -32,7 +31,19 @@ Main Topic
 
 ## Main Discussion
 
-<!-- TODO: Write episode summary -->
+
+The episode unpacks the “Power BI Premium is dead” headline and what it really means in the era of Fabric capacities. Rather than panic, the discussion focuses on how licensing and capacity strategy are changing—and what teams should do to stay ahead of cost and governance surprises.
+
+Key points:
+- “Premium” as a brand is shifting, but the underlying needs remain: predictable performance, controlled sharing, and enterprise governance.
+- Capacity planning becomes more nuanced when BI workloads sit alongside broader Fabric workloads—watch for noisy-neighbor scenarios.
+- Don’t treat licensing as an afterthought: align features, scale, and cost to your actual usage patterns.
+- Migration conversations should include content strategy (what to keep, refactor, or retire), not just SKU changes.
+- Communicate the change internally—stakeholders will hear the headline; you need to explain the reality.
+
+## Looking Forward
+
+If you’re on Premium today, the next move is to inventory your largest workspaces/models and tie them to capacity consumption. That gives you a fact-based plan for what to migrate, what to optimize, and what to retire.
 
 ## Episode Transcript
 

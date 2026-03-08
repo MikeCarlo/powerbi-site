@@ -16,7 +16,6 @@ tags:
 excerpt: "In this episode of the Explicit Measures Podcast, we discuss user input tables and what it means for Power BI developers."
 featuredImage: ./assets/featured.png
 ---
-
 In this episode of the Explicit Measures Podcast, we discuss user input tables and what it means for Power BI developers.
 
 
@@ -34,14 +33,21 @@ In this episode of the Explicit Measures Podcast, we discuss user input tables a
 ## Main Discussion
 
 
-Highlights from the conversation, key tips, and practical takeaways from the episode.
 
+User input tables are one of those requests that sounds simple (“let users type values into the report”) but quickly turns into an architecture discussion. The episode walks through common approaches and why “writeback” needs to be treated as an application feature, not a visual trick.
+
+Key points:
+- Clarify the use case: ad-hoc scenario planning, approvals/comments, data correction, or parameter-driven exploration all need different solutions.
+- Options range from **what-if parameters** (no persistence) to Power Apps / Dataverse (persistence + security) to more custom writeback patterns.
+- Governance matters: who can edit, where the data lands, auditing, and how it affects downstream reporting.
+- Keep UX realistic—Power BI is a great *analysis* surface, but not always the best data-entry UI.
+- If you do implement input, treat it like a product: validation, permissions, and a clear lifecycle.
 
 ## Looking Forward
 
 
-What we’re watching next in the Power BI and Microsoft Fabric ecosystem.
 
+If you’re facing an input-table request, start by deciding whether the inputs must be persisted and audited. That answer will usually tell you whether you need Power Apps/Dataverse (or another app layer) versus a lightweight parameter-based approach.
 
 ## Episode Transcript
 

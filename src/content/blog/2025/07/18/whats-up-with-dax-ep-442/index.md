@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike and Tommy refocus on DAX after weeks of Fabric talk. They cover the Power BI July 2025 feature summary, discuss what companies are actually doing about Fabric adoption, and dive deep into the current state and future of DAX."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy refocus on DAX after weeks of Fabric talk. They cover the Power BI July 2025 feature summary, discuss what companies are actually doing about Fabric adoption, and dive deep into the current state and future of DAX.
 
 <iframe 
@@ -43,6 +42,10 @@ Mike and Tommy share observations from real-world consulting engagements about h
 After weeks of heavy Fabric and architecture discussions, Mike and Tommy bring it back to the core of Power BI: DAX. They explore the current state of the language, how it fits in the Fabric era, and what the future holds for DAX developers.
 
 Key themes from the discussion include the evolving role of DAX alongside new Fabric capabilities, how AI and agents interact with DAX-powered semantic models, and why mastering DAX remains essential even as the platform expands beyond traditional reporting.
+
+## Looking Forward
+
+Try this on one real project first: choose one idea from the discussion and apply it to a current report or model. Once it’s stable, write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 

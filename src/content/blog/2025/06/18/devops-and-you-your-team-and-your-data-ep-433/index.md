@@ -22,7 +22,6 @@ tags:
 excerpt: "Mike and Tommy are joined by Mathias Thierbach to unpack what DevOps really means for Power BI and Fabric teams — beyond just CI/CD. They cover why source control is the starting line, where automated testing fits (and why Microsoft tooling is still thin), plus how PBIR/PBIP and modern file formats unlock collaboration at scale."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy are joined by Mathias Thierbach to unpack what DevOps really means for Power BI and Fabric teams — beyond just CI/CD. They cover why source control is the starting line, where automated testing fits (and why Microsoft tooling is still thin), plus how PBIR/PBIP and modern file formats unlock collaboration at scale.
 
 <iframe 
@@ -110,6 +109,10 @@ Mathias points out this orchestration gap is a major missing piece in Microsoft�
 ### Recommended reading: *The Phoenix Project*
 
 Mathias wraps with a lightweight (but classic) DevOps recommendation: **The Phoenix Project** — a novel-style introduction to DevOps and the very real ways things go wrong without good practices.
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Episode Transcript
 

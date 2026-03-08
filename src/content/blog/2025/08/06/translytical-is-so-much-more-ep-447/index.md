@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy unpack translytical task flows in Power BI—a feature that goes far beyond the Gartner buzzword. Plus news on OneLake as a source for COPY INTO and a new Fabric Notebooks competition."
 featuredImage: "./assets/featured.png"
 ---
-
 Translytical task flows are more than just a fancy Gartner term. Mike and Tommy explore how this Power BI feature connects reports to Fabric functions for real write-back capabilities, plus they cover new SQL enhancements and a community notebooks competition.
 
 <iframe 
@@ -81,6 +80,10 @@ Tommy shares his current workflow preference:
 - [Translytical Task Flows Overview — Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/create-reports/translytical-task-flow-overview)
 - [OneLake as a Source for COPY INTO — Fabric Blog](https://blog.fabric.microsoft.com/en-US/blog/announcing-public-preview-onelake-as-a-source-for-copy-into-and-openrowset/)
 - [Fabric Notebooks Competition — Power BI Blog](https://powerbi.microsoft.com/en-us/blog/introducing-the-first-ever-fabric-notebooks-competition-for-power-bi/)
+
+## Looking Forward
+
+To move this forward, choose one idea from the discussion and apply it to a current report or model. From there, write down what changed (and what didn’t) so the lesson sticks so the approach is repeatable.
 
 ## Episode Transcript
 

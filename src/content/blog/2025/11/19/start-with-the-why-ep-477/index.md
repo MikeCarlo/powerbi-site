@@ -17,7 +17,6 @@ tags:
 excerpt: "Another mailbag episode where Mike and Tommy emphasize the most important question in any data project: what problem are you actually trying to solve? Before picking tools, building pipelines, or designing models—start with the why."
 featuredImage: "./assets/featured.png"
 ---
-
 In this mailbag episode, Mike and Tommy return to the foundational question that should precede every data project: what is the problem you're trying to solve? It sounds obvious, but the rush to adopt new tools—Fabric, notebooks, AI—often skips the most critical step. They break down how to frame problems properly before jumping to solutions.
 
 <iframe 
@@ -30,7 +29,7 @@ In this mailbag episode, Mike and Tommy return to the foundational question that
   allowfullscreen
 ></iframe>
 
-## Mailbag: What Problem Are You Solving?
+## Main Discussion
 
 ### The Anti-Pattern
 

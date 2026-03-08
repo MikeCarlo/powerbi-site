@@ -17,7 +17,6 @@ tags:
 excerpt: "The crew digs into OneLake data cataloging and governance: what it enables, where the current gaps are, and what to watch for as Fabric’s governance story evolves."
 featuredImage: "./assets/featured.png"
 ---
-
 The crew digs into **OneLake data cataloging and governance**: what it enables, where the current gaps are, and what to watch for as Fabric’s governance story evolves.
 
 <iframe 
@@ -34,6 +33,21 @@ The crew digs into **OneLake data cataloging and governance**: what it enables, 
 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
+
+## Main Discussion
+
+OneLake Catalog is positioned as the front door for discovering and governing data across Fabric. This episode reacts to the catalog’s direction and what governance features actually matter when your tenant starts to scale.
+
+Key points:
+- A catalog only works if metadata is maintained: ownership, tags, certification, and descriptions can’t be optional.
+- The “Govern / Secure / Explore” lens is useful: discoverability, policy enforcement, and security posture all need visibility.
+- Tags and certification help users find *trusted* assets and reduce duplicate models/reports.
+- Governance is a product: it needs adoption, training, and periodic cleanup—otherwise the catalog becomes noise.
+- Start with the highest-impact artifacts (core semantic models/lakehouses) instead of trying to tag everything at once.
+
+## Looking Forward
+
+Start small: pick 10–20 key assets and require owners, descriptions, and tags. Once those are discoverable and trustworthy, expand the policy to the next tier of content—governance sticks when it helps people find the right thing fast.
 
 ## Episode Transcript
 
@@ -264,4 +278,3 @@ The crew digs into **OneLake data cataloging and governance**: what it enables, 
 <a href="https://www.youtube.com/watch?v=ansf69rHrwk&t=3421s" target="_blank">57:01</a> doing other things like doing a crossword puzzle or doing a sodoku or going for a walk or maybe even talking to your family you could be doing other important things that are not the podcast so we do appreciate you spending a lot of the ears with us listening to us our only ask though is if this is something we just do for fun please share with somebody else let somebody else know that you've enjoyed the podcast and that they might get some value from this one so hopefully you've unpacked some things around data catalog Tommy where else can you find the podcast you can find us on Apple and Spotify wherever your podcast put us in
 
 <a href="https://www.youtube.com/watch?v=ansf69rHrwk&t=3451s" target="_blank">57:31</a> Spotify wherever your podcast put us in your catalog make sure to subscribe and leave a rating it helps out a ton share with the friends since we do this for free do you have a question idea or a topic that you want us to talk about for a future episode head over to powerbi. com we appreciate you and we'll see you next time time [Music]
-

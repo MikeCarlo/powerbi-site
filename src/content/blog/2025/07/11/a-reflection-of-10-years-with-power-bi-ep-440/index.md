@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike and Tommy celebrate Power BI's 10th anniversary with a reflection on the journey — from the early days of Power BI Designer to today's Fabric era. Plus a Tips+ news announcement."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy celebrate Power BI's 10th anniversary with a reflection on the journey — from the early days of Power BI Designer to today's Fabric era. Plus a Tips+ news announcement.
 
 <iframe 
@@ -41,6 +40,10 @@ Power BI turns 10, and Mike and Tommy take the opportunity to reflect on a decad
 They share personal stories from the trenches: the features that changed everything, the growing pains of the community, the conferences and connections that made it special, and how Power BI evolved from a niche reporting tool into the centerpiece of Microsoft's data platform strategy.
 
 It's a celebration episode — looking back at how far we've come and looking forward to where the next 10 years will take us.
+
+## Looking Forward
+
+If you want to apply this episode, start by choose one idea from the discussion and apply it to a current report or model. Then write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 

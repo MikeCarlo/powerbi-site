@@ -16,7 +16,6 @@ tags:
 excerpt: "Mike and Tommy dig into internal design: how to build Power BI/Fabric solutions that are usable, maintainable, and aligned with how your organization actually works."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy dig into internal design: how to build Power BI/Fabric solutions that are usable, maintainable, and aligned with how your organization actually works.
 
 <iframe 
@@ -41,6 +40,10 @@ Mike and Tommy dig into internal design: how to build Power BI/Fabric solutions 
 A good internal BI solution isn’t just a set of reports — it’s a product your organization has to live with. In this episode, Mike and Tommy talk through the practical design choices that make Power BI and Fabric solutions easier to operate over time: clarity of ownership, consistent patterns, and a user experience that’s predictable.
 
 They also discuss the tension between “form” and “function” — how to keep the solution clean and approachable for end users without turning the architecture into something brittle or over-engineered.
+
+## Looking Forward
+
+Try this on one real project first: choose one idea from the discussion and apply it to a current report or model. Once it’s stable, write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 

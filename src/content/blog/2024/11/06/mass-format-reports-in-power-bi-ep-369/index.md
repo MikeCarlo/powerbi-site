@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike, Tommy, and Seth discuss Mass-format reports in Power BI—with practical tips you can apply right away in Power BI."
 featuredImage: "./assets/featured.png"
 ---
-
 In this episode, Mike and the team discuss **Mass-format reports in Power BI**—what it is, why it matters, and how you can apply it in your Power BI work.
 
 <iframe 
@@ -36,7 +35,15 @@ In this episode, Mike and the team discuss **Mass-format reports in Power BI**�
 
 ## Main Discussion
 
-The conversation dives into Mass-format reports in Power BI, including practical considerations, common gotchas, and real-world tips you can use right away.
+
+This episode centers on productivity features for report authors—especially the ability to replace fields and **mass-format** reports. The team talks about how these capabilities reduce repetitive UI work and make it more realistic to standardize formatting across a portfolio.
+
+Key points:
+- Mass formatting helps teams enforce consistency without hand-editing every visual.
+- “Replace fields” is a huge win for iterating on report designs as models evolve.
+- These features pair well with template-driven approaches (themes, standardized layouts, reusable report patterns).
+- There’s a bigger trend: more authoring automation and more “developer-like” workflows for Power BI.
+- Even with better tooling, you still need design standards—otherwise mass formatting just scales chaos.
 
 ## Looking Forward
 

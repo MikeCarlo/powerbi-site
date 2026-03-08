@@ -15,7 +15,6 @@ tags:
 excerpt: "In this episode of Explicit Measures, the team dives into Communication as Crucial for BI - Ep. 331 - Power BI tips."
 featuredImage: ./assets/featured.png
 ---
-
 In this episode of Explicit Measures, we dig into the key takeaways and what they mean for Power BI practitioners.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/vqSNljSYx_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -28,11 +27,20 @@ In this episode of Explicit Measures, we dig into the key takeaways and what the
 
 ## Main Discussion
 
-- (highlights coming soon)
+
+The main theme here is that **communication is a core BI skill**, not a “soft” extra. Tools and DAX won’t rescue a project if stakeholders don’t agree on definitions, priorities, and what success looks like.
+
+Key points:
+- BI work is translation: turning business questions into metrics, visuals, and data rules people can align on.
+- Reduce rework by using prototypes and examples early (show the shape of the report, not just requirements documents).
+- Set expectations on what changes are cheap vs. expensive (model changes late in the cycle are rarely “quick tweaks”).
+- Document definitions and decisions so the organization doesn’t re-litigate the same metrics every month.
+- Strong communication makes governance and DevOps easier—because everyone understands why the process exists.
 
 ## Looking Forward
 
-- (wrap-up coming soon)
+
+A simple next step is to add a lightweight “definition + decision log” to your BI workflow (even a shared page). It forces alignment early and makes future iterations faster and less political.
 
 ## Episode Transcript
 

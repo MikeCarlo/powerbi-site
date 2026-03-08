@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike and Tommy cover Microsoft Fabric GitHub integration news and share practical lessons learned from working with deployment pipelines. The main discussion breaks down SQLBI’s 3-30-300 rule and how it helps teams build clearer, more usable reports."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy cover Microsoft Fabric GitHub integration news and share practical lessons learned from working with deployment pipelines.
 
 <iframe 
@@ -44,6 +43,10 @@ Mike and Tommy cover Microsoft Fabric GitHub integration news and share practica
 The core of the episode is a breakdown of SQLBI’s “3-30-300” rule — a simple way to think about the time windows that matter for report usability and performance. Mike and Tommy talk through how the rule influences report layout decisions, where to spend optimization effort, and how to avoid building reports that look good but feel slow or confusing.
 
 Along the way, they touch on practical delivery lessons (including deployment pipeline realities) and the importance of setting expectations: not every report needs to be perfect, but the important ones should be predictable, readable, and fast enough for the way the business consumes them.
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Episode Transcript
 

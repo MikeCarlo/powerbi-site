@@ -21,7 +21,6 @@ tags:
 excerpt: "Mike and Tommy debate whether your next investment of time should go toward making reports better or making your semantic model AI-ready. They unpack Microsoft's new 'Prep Data for AI' features — AI instructions, AI data schema, and verified answers — and ask the hard question: is the juice worth the squeeze?"
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy debate whether your next investment of time should go toward making reports better or making your semantic model AI-ready. They unpack Microsoft's new "Prep Data for AI" features — AI instructions, AI data schema, and verified answers — and ask the hard question: is the juice worth the squeeze?
 
 <iframe 
@@ -48,7 +47,7 @@ When the renamed Lakehouse left 15 tables with broken M code references, Mike us
 
 Mike also calls out the clunky connection re-authentication flow in the Power BI service. After publishing a model with a changed connection string, there's no clear prompt to fix authentication — you have to dig through semantic model settings, data gateway options, create a new connection, save, authenticate, and then go back to select it. Way too many clicks for what should be a straightforward operation.
 
-## Main Topic: Build for AI or Build for Reports?
+## Main Discussion
 
 - [Prepare Your Data for AI — Power BI](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai?WT.mc_id=DP-MVP-5002621) — Microsoft's overview of the new tooling features: AI data schema, AI instructions, and verified answers to optimize your semantic model for Copilot.
 
@@ -327,4 +326,3 @@ Full verbatim transcript — click any timestamp to jump to that moment:
 <a href="https://www.youtube.com/watch?v=KiI09dFzht4&t=3790s" target="_blank">63:10</a> Who's also contemplating AI. Tommy, where else can you find the podcast? You can find us on Apple, Spotify, or wherever you get your podcast. Make sure to subscribe and leave a rating. It helps us out a ton. You have a question, idea, or a topic that you want us to talk about on a future episode? Well, guess what? You can do so by going to powerba.tips/mpodcast. We have verified we have a ton that we can't wait to dive into. Send go to powerbaodcast, leave your name, enter your great question. And finally, join us live every Tuesday and Thursday, 7:30 a.m. Central and join the conversation
 
 <a href="https://www.youtube.com/watch?v=KiI09dFzht4&t=3823s" target="_blank">63:43</a> On all of PowerBI tips social media channels. Thank you all so much and we appreciate your time today. Have a wonderful weekend and we'll see you next week. Yeah. Out.
-

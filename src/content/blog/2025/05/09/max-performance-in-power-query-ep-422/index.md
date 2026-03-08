@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike, Tommy, and special guest Alex Powers deep-dive into squeezing maximum performance out of Power Query—from Excel origins to Dataflows Gen 2 in Fabric. They cover staging defaults, V-Order optimization, query folding, the ELT mindset shift, and why copy-pasting Gen 1 code into Gen 2 will burn your CU budget."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike, Tommy, and special guest Alex Powers (the engineer who literally writes the Power Query documentation at Microsoft) unpack how to get the most out of Power Query across all its hosts—Excel, Power BI Desktop, and Dataflows Gen 2 in Fabric. The conversation spans staging defaults, V-Order optimization trade-offs, query folding strategies, and why treating Gen 2 like Gen 1 is the fastest way to blow up your capacity bill.
 
 <iframe 
@@ -108,6 +107,10 @@ Mike pushes for tighter Excel-Fabric integration: tables in Excel should push di
 ### Gen 1 Sunset Signals
 
 Mike discovered a hidden admin setting (appearing around April 5th with zero fanfare) that lets admins disable Dataflows Gen 1 creation tenant-wide. Alex confirms Gen 2 has migration tooling—"Save As Gen 2" in the ellipsis menu, plus Semantic Link Labs functions for bulk upgrades. Gen 2 advantages include CI/CD support, VNET data gateways, and proper security through Warehouse destinations.
+
+## Looking Forward
+
+Try this on one real project first: profile one slow query with Query Diagnostics and confirm folding. Once it’s stable, refactor the worst step (joins, filters, sorts) and re-test refresh time.
 
 ## Transcript
 

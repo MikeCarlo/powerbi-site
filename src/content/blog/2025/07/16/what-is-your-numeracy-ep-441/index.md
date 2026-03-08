@@ -18,7 +18,6 @@ tags:
 excerpt: "Mike and Tommy explore the concept of numeracy — how well does your team actually understand analytics? They discuss skills matrices for Fabric adoption and whether we can (and should) test for data literacy on our teams."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy explore the concept of numeracy — how well does your team actually understand analytics? They discuss skills matrices for Fabric adoption and whether we can (and should) test for data literacy on our teams.
 
 <iframe 
@@ -40,6 +39,10 @@ Mike and Tommy discuss what a skills matrix looks like in the Fabric era — how
 The core question: How well does your team understand analytics, and can we test for it? Mike and Tommy reference a [numeracy indicator tool from the Government of Canada](https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/tools/numeracy-indicator.html) as a starting point for thinking about baseline data literacy.
 
 They explore what numeracy means in the context of business intelligence — it's not just about math skills, but about the ability to interpret data, understand what numbers mean in context, and make decisions based on quantitative information. This has major implications for how we train teams, design reports, and roll out new tools like Fabric.
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Episode Transcript
 

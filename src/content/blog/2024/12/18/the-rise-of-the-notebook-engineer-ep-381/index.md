@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike, Tommy, and Seth talk about the rise of the notebook engineer in Fabric: why notebooks are becoming the default interface for data work, and what good notebook practices look like in real teams."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike, Tommy, and Seth talk about the **rise of the notebook engineer** in Fabric: why notebooks are becoming the default interface for data work, and what good notebook practices look like in real teams.
 
 <iframe 
@@ -34,6 +33,21 @@ Mike, Tommy, and Seth talk about the **rise of the notebook engineer** in Fabric
 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=videoDesc&utm_medium=post&utm_campaign=tips%2B&utm_id=podcast)** — Power BI.tips - The worlds best theme generator for Power BI reports. Increase your speed to develop stunning reports using this free theme generator. Themes are essential for any report developer's tool belt. Visit...
+
+## Main Discussion
+
+The “notebook engineer” is becoming a real role in Fabric-era projects: someone who lives in notebooks, builds data transformations, and ships repeatable pipelines. The episode covers why notebooks are powerful—and what you must do to keep them production-grade.
+
+Key points:
+- Notebooks are great for speed and experimentation, but production requires standards: structure, parameters, and clear inputs/outputs.
+- Treat notebooks like code: version control, code review, and a consistent project layout.
+- Be aware of lakehouse/metadata behaviors (table definition files, refresh timing) that can surprise you when you mix notebooks and downstream consumption.
+- Use notebooks where they’re strongest: complex transforms, orchestration glue, and workflows that don’t fit neatly in UI tools.
+- The engineering maturity (testing, logging, retries, monitoring) matters more than the notebook itself.
+
+## Looking Forward
+
+If your team is adopting notebooks, define a “production notebook checklist” (naming, parameters, logging, error handling, and where outputs land). Then refactor one successful prototype notebook to meet the checklist—so the pattern is repeatable.
 
 ## Episode Transcript
 
@@ -246,4 +260,3 @@ Mike, Tommy, and Seth talk about the **rise of the notebook engineer** in Fabric
 <a href="https://www.youtube.com/watch?v=aQvFT4NtY6I&t=3109s" target="_blank">51:49</a> ecosystem that will be super useful with notebooks being a very pivotal part of that ecosystem that being said we really don't advertise this podcast all we would love it if you would just share this with somebody else if you like this topic or found this interesting please share it on social media let somebody else know you found this topic interesting we'd love to have more people in the discussion thank you chat for jumping in and making lots of comments we also appreciate your comments as well been trying to respond to those and interact as well so thank you all very much we appreciate it Tommy where else can you find the podcast you can find us on Apple Spotify wherever you your podcast make sure to subscribe
 
 <a href="https://www.youtube.com/watch?v=aQvFT4NtY6I&t=3140s" target="_blank">52:20</a> you your podcast make sure to subscribe and leave a rating it helps out a ton do you have a question an idea or a topic that you want us to talk about a future episode head over to power bi. podcast leave your name and a great question and finally join us live every Tuesday and Thursday a. m. Central and join the conversation all powerb tips social media channels oh he had that in one breath oh I almost I almost tripped I almost tripped almost stumbled on the way out thank you all so much we appreciate you and we'll see you next time time [Music]
-

@@ -20,7 +20,6 @@ tags:
 excerpt: "Mike and Tommy unpack Microsoft Build 2025 announcements through a practical lens — from open mirroring and SQL database tooling to the new standalone Copilot for Power BI. The main topic: a role-play exercise on how you'd actually roll out Copilot standalone in your organization."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy unpack Microsoft Build 2025 announcements through a practical lens — from open mirroring and SQL database tooling to the new standalone Copilot for Power BI. The main topic: a role-play exercise on how you'd actually roll out Copilot standalone in your organization.
 
 <iframe 
@@ -63,7 +62,7 @@ Mike shares a customer story: a lakehouse running for 5 years without optimize/v
 
 - **[Intelligent Data Cleanup: Smart Purging for Smarter Data Warehouses | Microsoft Fabric Blog | Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/intelligent-data-cleanup-smart-purging-for-smarter-data-warehouses/)** — In the era of Artificial Intelligence, organizations generate and accumulate large volumes of information every second. From transactional records to user logs and analytics data warehouses serve as a single source...
 
-## Main Topic: Rolling Out Copilot Standalone for Power BI
+## Main Discussion
 
 The centerpiece of the episode is a role-play scenario: **You're tasked with getting your organization to adopt the new standalone Copilot for Power BI within 12 months.** How do you approach it?
 
@@ -104,6 +103,10 @@ Key takeaways:
 Every report and every AI feature should answer one question: **Does this help someone make money or save money?** If Copilot can't tie to one of those outcomes, it may not be worth the capacity cost. Success isn't measured by how many questions people ask per day — it's measured by whether those answers lead to better decisions and saved time.
 
 - [Powering the Next AI Frontier with Microsoft Fabric and the Azure Data Portfolio](https://azure.microsoft.com/en-us/blog/powering-the-next-ai-frontier-with-microsoft-fabric-and-the-azure-data-portfolio/) — Microsoft's broader vision for AI integration across the Fabric and Azure data platform.
+
+## Looking Forward
+
+To move this forward, turn the announcements into a short impact checklist for your team. From there, pick one new capability to pilot and one to deliberately ignore so the approach is repeatable.
 
 ## Transcript
 

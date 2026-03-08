@@ -17,7 +17,6 @@ tags:
 excerpt: "Mike, Seth, and Tommy dig into the return-to-office debate — what mandates get wrong, what leaders should consider, and how data can (and can’t) guide the decision. They also cover Semantic Link updates and community resources shared in the show notes."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike, Seth, and Tommy dig into the return-to-office debate — what mandates get wrong, what leaders should consider, and how data can (and can’t) guide the decision. They also cover Semantic Link updates and community resources shared in the show notes.
 
 <iframe 
@@ -49,6 +48,10 @@ Mike, Seth, and Tommy dig into the return-to-office debate — what mandates get
 ## Main Discussion
 
 In this episode, Mike, Seth, and Tommy discuss the realities behind return-to-office mandates and the tradeoffs teams face when deciding between in-office, hybrid, or remote work. They cover the talent and productivity considerations highlighted in the linked Gartner article, share practical perspectives from client work, and talk through how leaders can use data to make (and communicate) better decisions.
+
+## Looking Forward
+
+Try this on one real project first: choose one idea from the discussion and apply it to a current report or model. Once it’s stable, write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 
@@ -305,4 +308,3 @@ In this episode, Mike, Seth, and Tommy discuss the realities behind return-to-of
 <a href="https://www.youtube.com/watch?v=7Zz9PHrfyP0&t=3801s" target="_blank">63:21</a> a a good number of followers Twitter you've been killing it recently Twitter you've been you you have a ton of listeners so thank you very much Twitter listeners we really appreciate you jumping in and listening on Twitter so I want to directly thank you very much for your time and your ears if you like this episode if this was interesting to you if you want to jab at your boss a bit about having his return to work mandate a bit give him this episode let them know Tommy Seth and Mike all agree that work remote is a great idea or not anyways that being said what Tommy where else can you find
 
 <a href="https://www.youtube.com/watch?v=7Zz9PHrfyP0&t=3831s" target="_blank">63:51</a> said what Tommy where else can you find the podcast well unfortunately they're all online Mike you can find us on Apple Spotify or wherever get your podcast make sure to subscribe and leave a rating helps us out a ton do you have a question idea or a topic that you want us to talk about in a future episode head over to power. tisp podcast leave your name and a great question and finally join us live every Tuesday and Thursday A. M and join the conversation on all power. tips social media media channels thank you so much and we'll see you next time
-

@@ -15,7 +15,6 @@ tags:
 featuredImage: "./assets/featured.png"
 excerpt: "In this episode, the team digs into the Default Semantic Model—what it is, why it matters, and how to use it in real-world Power BI projects."
 ---
-
 In this episode of the Explicit Measures Podcast, the team digs into Let’s Talk Default Semantic Model—what it is, why it matters, and how to think about it in real-world Power BI projects.
 
 <iframe
@@ -38,9 +37,15 @@ In this episode of the Explicit Measures Podcast, the team digs into Let’s Tal
 
 ## Main Discussion
 
-- What a default semantic model is and when it shows up in Fabric/Power BI workflows
-- Practical implications for dataset management, governance, and reuse
-- Tips for keeping your model strategy intentional as your environment grows
+
+Fabric’s Lakehouse (and Warehouse) can auto-create a **default semantic model**, which sounds convenient—but it has real implications for governance, ownership, and how your org builds “one source of truth.” The crew talks through when the default model is helpful, when it’s dangerous, and how to keep it from turning into semantic sprawl.
+
+Key points:
+- Default models are great for quick exploration and accelerating time-to-first-report, especially for smaller teams.
+- In larger orgs, you still need intentional semantic modeling: curated measures, naming standards, and a clear owner.
+- Be explicit about security and sharing—auto-generated artifacts can accidentally widen access or create confusion about what’s “official.”
+- Decide whether you want one shared model, multiple purpose-built models, or a layered approach (explore vs. curated).
+- The platform can generate a model, but it can’t generate agreement on definitions—your team still has to do that work.
 
 ## Looking Forward
 

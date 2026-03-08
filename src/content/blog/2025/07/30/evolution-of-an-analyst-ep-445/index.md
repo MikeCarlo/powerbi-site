@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy celebrate Power BI's 10th anniversary by reflecting on the evolution of the data analyst role. Plus: the default semantic model is finally being sunset, and Fabric data agents get multi-agent orchestration."
 featuredImage: "./assets/featured.png"
 ---
-
 Power BI turns 10, and Mike and Tommy take a trip down memory lane. They reflect on how the data analyst role has evolved over the past decade, celebrate the sunsetting of the default semantic model, and explore multi-agent orchestration in Fabric.
 
 <iframe 
@@ -88,6 +87,10 @@ Looking back over a decade:
 
 - [Marking 10 Years of Power BI — Power BI Blog](https://powerbi.microsoft.com/blog/marking-10-years-of-power-bi-celebrate-with-the-global-community/?WT.mc_id=DP-MVP-5002621)
 - [Fabric Data Agents + Copilot Studio — Fabric Blog](https://blog.fabric.microsoft.com/blog/fabric-data-agents-microsoft-copilot-studio-a-new-era-of-multi-agent-orchestration)
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Episode Transcript
 

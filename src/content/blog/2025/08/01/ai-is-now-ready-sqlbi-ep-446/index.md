@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy discuss SQLBI's bold claim that AI in Power BI is ready to pay attention to—driven by MCP servers that let AI agents query and control Power BI. Plus the Fabric July 2025 feature summary."
 featuredImage: "./assets/featured.png"
 ---
-
 SQLBI says it's time to pay attention to AI in Power BI, and Mike and Tommy agree. The game-changer? MCP servers that let AI agents interact with Power BI programmatically. Plus a recap of the Fabric July 2025 feature summary.
 
 <iframe 
@@ -82,6 +81,10 @@ Mike notes Kurt's move from Data Goblins to SQLBI:
 
 - [AI in Power BI: Time to Pay Attention — SQLBI](https://www.sqlbi.com/articles/ai-in-power-bi-time-to-pay-attention/)
 - [Fabric July 2025 Feature Summary — Fabric Blog](https://blog.fabric.microsoft.com/blog/fabric-july-2025-feature-summary?ft=All&WT.mc_id=DP-MVP-5002621)
+
+## Looking Forward
+
+Try this on one real project first: pick one repetitive task (documentation, triage, code changes) to automate. Once it’s stable, add guardrails around permissions and measure time saved.
 
 ## Episode Transcript
 

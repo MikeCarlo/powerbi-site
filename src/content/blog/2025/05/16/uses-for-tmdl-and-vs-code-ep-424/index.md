@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy unpack TMDL — the Tabular Model Definition Language — tracing its origins from the monolithic BIM file to today's human-readable, file-per-object format. They explore practical use cases in VS Code, from find-and-replace renaming to AI-powered measure descriptions and unused-object cleanup with GitHub Copilot."
 featuredImage: "./assets/featured.png"
 ---
-
 In Episode 424 of Explicit Measures, Mike and Tommy dive into TMDL (Tabular Model Definition Language) and how it pairs with VS Code to transform the Power BI development experience. They cover the history behind TMDL, practical use cases they're finding in their daily work, and how GitHub Copilot and agent mode are unlocking capabilities the community has wanted for years — like full semantic model auditing across reports in seconds.
 
 <iframe 
@@ -71,6 +70,10 @@ Tommy shares two use cases that he says have "blown him away":
 ### The Bigger Picture: LLMs and the Future of Development
 
 Mike reflects on how large language models are reshaping development. He draws a parallel to Microsoft's Power Apps vision — the idea that the world needs millions more apps built by more people was correct, but the implementation vehicle turned out to be LLMs, not low-code platforms. He notes that prompting is becoming its own skill, and the community needs shared prompt libraries (they announce a new public GitHub repo for Power BI prompts). Mike shares plans to teach his son programming this summer using Python alongside LLMs — learning to code and learning to leverage AI in concert. Both hosts emphasize that AI doesn't eliminate the need to understand code; it makes code accessible to more people and dramatically accelerates those who already understand it.
+
+## Looking Forward
+
+If you want to apply this episode, start by choose one idea from the discussion and apply it to a current report or model. Then write down what changed (and what didn’t) so the lesson sticks.
 
 ## Transcript
 

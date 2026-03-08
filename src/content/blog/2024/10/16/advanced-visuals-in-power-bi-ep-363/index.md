@@ -15,7 +15,6 @@ tags:
 featuredImage: "./assets/featured.png"
 excerpt: "In Episode 363, the crew talks through building more advanced visuals in Power BI and where custom visuals fit into real-world reporting."
 ---
-
 Welcome back to the Explicit Measures Podcast. In Episode 363, Mike Carlo is joined by Tommy Puglia and Seth Bauer to talk through building more advanced visuals in Power BI and where custom visuals fit into real-world reporting.
 
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/r8XH7V68RoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -25,7 +24,20 @@ Welcome back to the Explicit Measures Podcast. In Episode 363, Mike Carlo is joi
 
 ## Main Discussion
 
+
+Advanced visuals are tempting because they can make a report look incredible—but they also come with tradeoffs in performance, governance, and maintainability. This episode discusses when to stay with native visuals, when to reach for custom visuals, and how to keep “cool visuals” from becoming long-term technical debt.
+
+Key points:
+- Start with the question: does the visual improve comprehension, or is it just decoration?
+- Custom visuals can introduce security/review overhead; prefer certified visuals when possible.
+- Performance matters—heavy visuals can slow reports and frustrate users more than they help.
+- Reuse patterns (themes, templates, consistent interactions) so visuals feel coherent across reports.
+- When you *do* go advanced, document the choice so future maintainers know what to do (or not do).
+
 ## Looking Forward
+
+
+A practical next step is to build a short “approved visuals” list for your team (native + a few certified custom visuals) and standardize how they’re configured. That keeps creativity high without turning every report into a one-off science project.
 
 ## Episode Transcript
 

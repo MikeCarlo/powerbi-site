@@ -16,7 +16,6 @@ tags:
 featuredImage: "./assets/featured.png"
 excerpt: "In Episode 364, the crew digs into Domains, Tags, and Workspaces and how they impact organization and governance in Fabric and Power BI."
 ---
-
 Welcome back to the Explicit Measures Podcast. In Episode 364, Mike Carlo and the crew dig into the latest in Power BI and Microsoft Fabric, plus what they're seeing in the community and client work.
 
 <iframe width="100%" height="415" src="https://www.youtube.com/embed/NWWgiJ-2wDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -33,7 +32,20 @@ Welcome back to the Explicit Measures Podcast. In Episode 364, Mike Carlo and th
 
 ## Main Discussion
 
+
+This episode digs into governance mechanics—**domains, tags, and workspaces**—and how they can either bring order to Fabric sprawl or become meaningless labels if you don’t set standards. The conversation focuses on using these features to improve discoverability, ownership, and lifecycle management.
+
+Key points:
+- Domains should represent how the business thinks (not how the tool thinks): align to functions, products, or value streams.
+- Tags are only useful when they’re consistent—agree on a small taxonomy and enforce it.
+- Workspaces should have clear purpose and ownership; “misc” workspaces are where governance goes to die.
+- Discoverability is a feature: good metadata reduces duplicate work and helps users find trusted assets.
+- Governance isn’t a one-time setup; it needs ongoing stewardship and periodic cleanup.
+
 ## Looking Forward
+
+
+If your tenant is getting noisy, define 5–10 standard tags and a simple domain structure, then pilot it with one business area. Once people see assets become easier to find, adoption of governance gets much easier.
 
 ## Episode Transcript
 

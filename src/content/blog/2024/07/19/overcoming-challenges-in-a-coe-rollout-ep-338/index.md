@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike and Tommy dig into the real-world friction points you hit when rolling out a Power BI / Fabric Center of Excellence (CoE), and what to do about them. The conversation focuses on governance, adoption, and how to keep the rollout moving without burning out the team."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy dig into the real-world friction points you hit when rolling out a Power BI / Fabric Center of Excellence (CoE), and what to do about them.
 
 <iframe 
@@ -42,6 +41,10 @@ Mike and Tommy dig into the real-world friction points you hit when rolling out 
 ## Main Discussion
 
 In this episode, the conversation focuses on the organizational (not just technical) realities of rolling out a Center of Excellence: how you set expectations, where governance helps vs. hurts, and what to do when adoption doesn’t match the plan.
+
+## Looking Forward
+
+Try this on one real project first: choose one idea from the discussion and apply it to a current report or model. Once it’s stable, write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 

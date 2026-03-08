@@ -18,7 +18,6 @@ tags:
 excerpt: "Mike and Tommy discuss how simplified data ingestion UIs in Microsoft Fabric can lead to unexpected issues, plus Mike previews his upcoming conference talks on report visualization and CI/CD."
 featuredImage: "./assets/featured.png"
 ---
-
 Easy-to-use data ingestion UIs are great—until they're not. Mike and Tommy explore how Copy Job's simplified experience can lead to unexpected issues, and discuss the balance between ease of use and proper data engineering practices.
 
 <iframe 
@@ -72,6 +71,10 @@ Mike previews two talks he's giving at the DevOps conference in St. Louis:
 ## Resources
 
 - [Simplifying Data Ingestion with Copy Job — Fabric Blog](https://blog.fabric.microsoft.com/en-US/blog/simplifying-data-ingestion-with-copy-job-incremental-copy-ga-lakehouse-upserts-and-new-connectors/?WT.mc_id=DP-MVP-5002621)
+
+## Looking Forward
+
+If you want to apply this episode, start by choose one idea from the discussion and apply it to a current report or model. Then write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 

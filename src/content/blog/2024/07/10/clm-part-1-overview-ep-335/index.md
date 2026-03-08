@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike and Tommy kick off a series on CLM (lifecycle management) for Power BI and Fabric, covering core concepts and why teams should care. They also share community links mentioned in the episode and set the stage for practical patterns you can apply in your own deployments."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy kick off a series on CLM (lifecycle management) for Power BI and Fabric, covering core concepts and why teams should care. They also share community links mentioned in the episode and set the stage for practical patterns you can apply in your own deployments.
 
 <iframe 
@@ -46,6 +45,10 @@ Mike and Tommy kick off a series on CLM (lifecycle management) for Power BI and 
 ## Main Discussion
 
 In this episode, Mike and Tommy introduce the first part of a CLM (lifecycle management) series and discuss why repeatable deployment practices matter as teams scale Power BI and Fabric solutions. They touch on common pain points teams run into, what to standardize early, and how roles and responsibilities evolve as the platform expands.
+
+## Looking Forward
+
+To move this forward, choose one idea from the discussion and apply it to a current report or model. From there, write down what changed (and what didn’t) so the lesson sticks so the approach is repeatable.
 
 ## Episode Transcript
 

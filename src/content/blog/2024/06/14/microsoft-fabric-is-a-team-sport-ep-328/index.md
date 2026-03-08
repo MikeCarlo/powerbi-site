@@ -27,7 +27,20 @@ In this episode of Explicit Measures, we discuss Microsoft Fabric is a Team Spor
 
 ## Main Discussion
 
+
+The main discussion is built around an article arguing that **Fabric is a team sport**—and the team agrees. Fabric collapses a lot of capabilities (engineering, modeling, governance, DevOps) into one platform, which means a single “Power BI person” can’t realistically cover everything at scale.
+
+Key points:
+- Successful Fabric adoption needs **multiple skill sets**: data engineering, semantic modeling, security/governance, and platform administration.
+- Clear ownership matters—decide who is responsible for pipelines, quality gates, permissions, and cost management.
+- The episode also highlights how the evolving **PBIP/PBIR** formats unlock better source control and collaboration, but require real Git practices.
+- Standard conventions (naming, workspace/domain structure, reusable models) prevent chaos as the platform grows.
+- The best “team sport” move: start small, prove the workflow, then expand the roster.
+
 ## Looking Forward
+
+
+A good next step is to map your Fabric responsibilities to actual people (or gaps) and pilot a repo-based workflow (PBIP/PBIR + review/merge) on one report/model. Once the collaboration model works, scaling Fabric becomes much less painful.
 
 ## Episode Transcript
 

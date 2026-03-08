@@ -15,7 +15,6 @@ tags:
 excerpt: "Mike and Tommy discuss how Microsoft Fabric is changing the day-to-day work of Power BI developers and analysts, plus share links and community resources mentioned in the episode."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy discuss how Microsoft Fabric is changing the day-to-day work of Power BI developers and analysts.
 
 <iframe 
@@ -44,6 +43,10 @@ Mike and Tommy discuss how Microsoft Fabric is changing the day-to-day work of P
 This episode digs into how Microsoft Fabric is changing the everyday reality for Power BI developers and analysts—what shifts in tooling and responsibilities, where the new “center of gravity” is for modeling and data prep, and how teams should think about building for maintainability.
 
 The conversation also touches on practical adoption patterns: what to learn first, how to avoid creating accidental complexity, and what to watch for as teams move from traditional Power BI-centric workflows into Fabric workspaces.
+
+## Looking Forward
+
+If you want to apply this episode, start by choose one idea from the discussion and apply it to a current report or model. Then write down what changed (and what didn’t) so the lesson sticks.
 
 ## Episode Transcript
 
@@ -300,4 +303,3 @@ The conversation also touches on practical adoption patterns: what to learn firs
 <a href="https://www.youtube.com/watch?v=rZQqTK9BUCA&t=3850s" target="_blank">64:10</a> to powerbi powerbi. com in that we're beginning to schedule them out and finally join us live every Tuesday and Thursday a. and join the conversation on all powerb tips social media channels I feel like we should stop sending Tomy you need to change your phrase here you need to stop asking for questions you need to start asking for money that's what we need to start start doing we lost the MVP if there's so many questions coming and we can't handle them all we're
 
 <a href="https://www.youtube.com/watch?v=rZQqTK9BUCA&t=3880s" target="_blank">64:40</a> and we can't handle them all we're having to schedule them out just kidding just send us questions this is all free We're not gonna we're not going to charge you for this one yet just kidding we're not going to ever do it thank you all very much we'll see you next time
-

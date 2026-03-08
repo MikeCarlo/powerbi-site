@@ -16,7 +16,6 @@ tags:
 excerpt: "Mike and Tommy talk through practical sharing strategies in the Power BI / Fabric world — what to share, how to share it, and how to avoid turning collaboration into chaos."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy talk through practical sharing strategies in the Power BI / Fabric world — what to share, how to share it, and how to avoid turning collaboration into chaos.
 
 <iframe 
@@ -50,6 +49,10 @@ They discuss the tradeoffs between sharing finished reports, sharing semantic mo
 ### Keep Collaboration From Turning Into Chaos
 
 They also talk through how organizations accidentally create a mess: ad-hoc sharing, unclear ownership, and building one-off artifacts that can’t be trusted or reused. A little structure up front (naming, ownership, and repeatable patterns) keeps sharing sustainable.
+
+## Looking Forward
+
+To move this forward, choose one idea from the discussion and apply it to a current report or model. From there, write down what changed (and what didn’t) so the lesson sticks so the approach is repeatable.
 
 ## Episode Transcript
 

@@ -15,7 +15,6 @@ tags:
 excerpt: "In this episode of Explicit Measures, we dig into Creative Solutions & Data Products - Power BI tips and what it means for Power BI practitioners."
 featuredImage: ./assets/featured.png
 ---
-
 Here’s the latest episode of the Explicit Measures Podcast—jump in for the news, the main discussion, and what’s coming next.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/Ey8je0yCGlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -28,11 +27,20 @@ Here’s the latest episode of the Explicit Measures Podcast—jump in for the n
 
 ## Main Discussion
 
-- Key takeaways and highlights coming soon.
+
+This episode is a tour through community ideas and “creative solutions” that are pushing Power BI/Fabric forward—paired with a recurring theme: treat reusable assets as **data products**, not one-off reports.
+
+Key points:
+- The admin/monitoring experiences are evolving (usage + adoption, tenant-level insights), and teams should actually use that data to guide cleanup and prioritization.
+- Templates, themes, and repeatable patterns reduce time-to-value—and keep teams consistent.
+- “Data products” means designing models and datasets for reuse: clear ownership, documentation, and a stable contract for consumers.
+- The best creativity isn’t novelty—it’s packaging best practices so others can adopt them quickly.
+- Small experiments are fine, but production needs a path: versioning, governance, and support.
 
 ## Looking Forward
 
-- What we’re watching next in the Power BI / Fabric space.
+
+Pick one high-traffic dataset/report and elevate it into a true “data product” (owner, description, metrics, and reuse guidance). Once you do it once, you can copy the pattern across the rest of your portfolio.
 
 ## Episode Transcript
 

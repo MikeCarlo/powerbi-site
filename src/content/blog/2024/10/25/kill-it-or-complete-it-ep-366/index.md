@@ -14,8 +14,6 @@ tags:
 excerpt: "Explicit Measures Podcast Episode 366."
 featuredImage: "./assets/featured.png"
 ---
-
-
 Explicit Measures Podcast Episode 366.
 
 <iframe 
@@ -36,11 +34,20 @@ Explicit Measures Podcast Episode 366.
 
 ## Main Discussion
 
-- 
+
+“Kill it or complete it” is a brutally useful lens for platform work. This episode talks about how preview features, half-finished initiatives, and perpetual “we’ll get back to it” projects create hidden cost—especially in BI platforms where consistency and trust matter.
+
+Key points:
+- Preview features are fine for learning, but production needs clarity: supportability, SLAs, and a migration plan when things change.
+- Half-implemented ideas multiply complexity (multiple patterns, multiple tools, inconsistent user experience).
+- Decide intentionally: either commit to finishing and standardizing, or stop and simplify.
+- Use roadmaps and constraints (time, risk, value) to make the decision—not enthusiasm.
+- “Complete it” includes documentation and enablement; otherwise it isn’t complete.
 
 ## Looking Forward
 
-- 
+
+Take one preview feature or side-project your team is dabbling in and run a quick decision review: production path, owner, and timeline—or shut it down. You’ll immediately reduce platform entropy.
 
 ## Episode Transcript
 

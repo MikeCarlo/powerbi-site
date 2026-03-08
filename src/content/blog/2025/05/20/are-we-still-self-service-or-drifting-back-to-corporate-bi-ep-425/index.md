@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy debate whether the Power BI and Fabric ecosystem is still truly self-service or quietly drifting back toward corporate BI, exploring semantic model-to-lakehouse sync, data contracts, managed self-service, and where the line between central IT and business users really falls."
 featuredImage: "./assets/featured.png"
 ---
-
 In Episode 425 of Explicit Measures, Mike and Tommy tackle a provocative question inspired by a Marco Russo and Rui Romano LinkedIn conversation: with Fabric adding git integration, deployment pipelines, lakehouses, and notebooks, are we still doing self-service BI—or have we quietly circled back to corporate BI? They unpack the definitions, debate where the ownership line falls, and explore how semantic model-to-lakehouse synchronization changes the game for both camps.
 
 <iframe 
@@ -38,7 +37,7 @@ Tommy shares his growing enthusiasm for pushing semantic model tables to a lakeh
 
 - [OneLake Integration for Semantic Models](https://learn.microsoft.com/en-us/power-bi/enterprise/onelake-integration-overview?WT.mc_id=DP-MVP-5002621) — Microsoft's new feature lets you automatically synchronize semantic model tables to a lakehouse in delta table format whenever the model refreshes. This opens the door for SQL queries, notebooks, and other Fabric experiences on data that was previously locked inside the semantic model. Mike highlights how this could be a strategic on-ramp for the 30 million Power BI monthly active users who haven't yet engaged with Fabric—just turn on auto-sync and suddenly those users can experiment with SQL, notebooks, and new reporting patterns without any additional data engineering.
 
-## Main Topic: Self-Service vs. Corporate BI
+## Main Discussion
 
 The core discussion was sparked by a [Marco Russo interview with Rui Romano on LinkedIn](https://www.linkedin.com/video/live/urn:li:ugcPost:7308073142726369281/) about the proliferation of professional tools in the Fabric ecosystem and what that means for self-service BI.
 
@@ -84,6 +83,10 @@ Both agree that Fabric's new features—git integration, deployment pipelines, e
 ### Reference
 
 - [Managed Self-Service BI Usage Scenario](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-usage-scenario-managed-self-service-bi?WT.mc_id=DP-MVP-5002621) — Microsoft's implementation planning guide for managed self-service BI, covering the governance patterns and architectural decisions that bridge corporate BI and self-service.
+
+## Looking Forward
+
+A good next step is to choose one idea from the discussion and apply it to a current report or model—and make sure you write down what changed (and what didn’t) so the lesson sticks before scaling.
 
 ## Transcript
 

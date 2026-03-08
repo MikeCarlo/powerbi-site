@@ -19,7 +19,6 @@ tags:
 excerpt: "Mike and Tommy break down what Copilot Standalone for Power BI is and why it changes the consumer experience for chat-with-your-data. Then they role-play a realistic rollout plan—starting with real problems, measurable wins, and AI-ready semantic models instead of a blanket mandate."
 featuredImage: "./assets/featured.png"
 ---
-
 Mike and Tommy break down what Copilot Standalone for Power BI is and why it changes the consumer experience for chat-with-your-data. Then they role-play a realistic rollout plan—starting with real problems, measurable wins, and AI-ready semantic models instead of a blanket mandate.
 
 <iframe 
@@ -80,6 +79,10 @@ Mike borrows an operations concept: measure how long common tasks take (“time 
 Both hosts come back to the same constraint: Copilot is only as good as the **semantic models and metadata** it can read. If the model lacks clear measures, definitions, relationships, and descriptions, “chat with your data” won’t be trustworthy—and adoption will stall.
 
 They also flag a likely next wave: once more teams turn it on, the community will have a real conversation about **capacity (CU) cost vs. business value**, and where Copilot is actually worth it.
+
+## Looking Forward
+
+If you want to apply this episode, start by pick one repetitive task (documentation, triage, code changes) to automate. Then add guardrails around permissions and measure time saved.
 
 ## Episode Transcript
 
