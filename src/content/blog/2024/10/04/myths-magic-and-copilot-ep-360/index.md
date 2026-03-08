@@ -1,5 +1,5 @@
 ---
-title: "Myths, Magic & CoPilot  Ep. 360"
+title: "Myths, Magic & CoPilot  Ep. 360"
 date: "2024-10-04"
 authors:
   - "Mike Carlo"
@@ -22,7 +22,7 @@ Mike and Tommy dig into the myths and magic around Copilot and what it really me
   width="100%" 
   height="415" 
   src="https://www.youtube.com/embed/qSLsZlZi_OI" 
-  title="Myths, Magic & CoPilot  Ep. 360"
+  title="Myths, Magic & CoPilot  Ep. 360"
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen
