@@ -235,6 +235,11 @@ const articleJsonLd = {
       .anchor-copy-btn[data-copied="1"] { opacity: 1; color: rgb(22 163 74); /* green-600 */ }
       .anchor-copy-btn[data-copied="0"] { opacity: 1; color: rgb(220 38 38); /* red-600 */ }
 
+      /* On touch devices there is no hover — show buttons by default */
+      @media (hover: none) {
+        .anchor-copy-btn { opacity: 1; }
+      }
+
       /* For users with reduced motion */
       @media (prefers-reduced-motion: reduce) {
         .anchor-copy-btn { transition: none; }
