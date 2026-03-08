@@ -1,5 +1,5 @@
 ---
-title: "Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World – Ep. 307"
+title: "Fabric Conference 2024 - Ep.307"
 date: "2024-04-03"
 authors:
   - "Mike Carlo"
@@ -9,11 +9,11 @@ categories:
 tags:
   - "Explicit Measures"
   - "Podcast"
-excerpt: "In this episode of the Explicit Measures podcast, Mike discuss Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World."
+excerpt: "Mike recaps FabCon 2024 in Las Vegas—key announcements, why task flows matter, and what the conference revealed about the Fabric roadmap (AI, OneLake, governance)."
 featuredImage: "./assets/featured.png"
 ---
 
-In this episode of the Explicit Measures podcast, Mike discuss Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World.
+Mike just got back from the Microsoft Fabric Community Conference (FabCon) and breaks down what stood out—from the biggest product announcements to what it means for real-world adoption. The conversation hits AI/Copilot, task flows, OneLake + open formats, governance/security, and practical takeaways for teams planning Fabric rollouts.
 
 <iframe 
   width="100%" 
@@ -31,14 +31,23 @@ In this episode of the Explicit Measures podcast, Mike discuss Fabric Conference
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World
+## Main Discussion
 
-In this episode, the team focuses on **Fabric Conference 2024 - Ep.307 - Power BI tips from the Real World**.
+Here are the core themes from the discussion (beyond just repeating the video title):
+
+- **On-the-ground FabCon recap**: Mike shares how the conference felt, what sessions were packed, and why the energy matters for adoption.
+- **What Mike presented**:
+  - Spark debugging in Fabric (how the experience has improved vs. earlier Synapse patterns).
+  - Migration path thinking for teams coming from ADF/Synapse into Fabric pipelines + notebooks.
+- **The ‘four promises’ framing** (from the conference blog): Fabric as a complete platform, lake-centric/open, empowering business users, and AI-powered—then which of those felt most real today.
+- **AI/Copilot practicality**: Where Copilot helps immediately (writing M/DAX/notebooks, chaining transformations) vs. where it’s still early and needs governance + structure.
+- **Task Flows as a potential game-changer**: A visual way to document and communicate end-to-end data projects (including tagging + built-in documentation), and why that matters for both engineering teams and self-service users.
+- **OneLake + open formats**: Why standardizing on an open lake format changes how compute engines can share data, plus the implications of shortcuts and cross-tenant/external sharing.
+- **Governance + security signals**: More emphasis on enterprise readiness (private networking, secure access patterns, governance story) and what’s still missing/immature.
 
 ## Looking Forward
 
 Keep an eye on upcoming updates in Fabric and Power BI, and let us know what topics you want us to cover next.
-
 ## Episode Transcript
 
 <a href="https://www.youtube.com/watch?v=XC2cmR_lEx0&t=31s" target="_blank">0:31</a> n good morning and welcome back to the explicit measures podcast with Tommy Seth and Seth and Mike good morning gentlemen and happy Tuesday we're back at it it's another week at it it's live again so we're live this is not a record episode we are back from well I am back from the fabric conference that just happened and yeah we're we're there's a lot of news to talk about now so we're we're probably going to take take this episode instead of going actually through like news or blogs or things that came out
