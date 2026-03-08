@@ -14,11 +14,11 @@ tags:
   - Future
   - Data
   - Visualization
-excerpt: "In this episode of Explicit Measures (Ep. 319), the crew dives into updates and practical Power BI learnings."
+excerpt: "The team explores the future of data visualization—where AI, natural language, and better storytelling fit, and why fundamentals like modeling, performance, and accessibility still matter."
 featuredImage: ./assets/featured.png
 ---
 
-In this episode of Explicit Measures (Ep. 319), the crew dives into updates and practical Power BI learnings.
+This episode looks at the **future of data visualization**: what’s changing (AI, interaction patterns) and what isn’t (clear definitions, good modeling, and performance).
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/s3JXs5G_XFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -27,9 +27,22 @@ In this episode of Explicit Measures (Ep. 319), the crew dives into updates and 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Future of Data Visualization
+## Main Discussion
+
+The conversation zooms out from product features to talk about how visualization is evolving—and what teams should focus on so their reports stay useful.
+
+Key points from the conversation:
+
+- **AI and new experiences**: how Copilot-style tools and natural-language interaction may change how people explore data.
+- **Storytelling over dashboards**: visuals need to support decisions, not just display numbers.
+- **Consistency and reuse**: why standards (themes, patterns, templates) matter more as organizations scale reporting.
+- **Performance and simplicity**: a “cool” visual isn’t helpful if it’s slow, confusing, or hard to maintain.
+- **Accessibility and clarity**: good visualization is still about communicating clearly to the widest audience.
 
 ## Looking Forward
+
+
+If you’re modernizing your visuals, start by standardizing themes and report patterns—then experiment with new interaction/AI features in a pilot before rolling them out broadly.
 
 ## Episode Transcript
 

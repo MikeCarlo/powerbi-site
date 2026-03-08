@@ -1,5 +1,5 @@
 ---
-title: "Why Quick Wins Are So Important - Ep.317 - Power BI tips – Ep. 317"
+title: "Why Quick Wins Are So Important - Ep. 317"
 date: 2024-05-08
 authors:
   - Mike Carlo
@@ -12,10 +12,11 @@ tags:
   - Power BI
   - Analytics
   - Data Modeling
-excerpt: "In Episode 317 of the Explicit Measures Podcast, we discuss why quick wins are so important - ep.317 - power bi tips and what it means for Power BI practitioners."
+excerpt: "Quick wins create momentum in BI projects. The team discusses how to pick the right wins, build trust, and avoid trading short-term speed for long-term maintainability."
 featuredImage: ./assets/featured.png
 ---
-This week on the Explicit Measures Podcast, we dive into **Why Quick Wins Are So Important - Ep.317 - Power BI tips** and share takeaways you can apply in your Power BI work.
+
+This episode is a reality check on **quick wins**: why they matter for stakeholder trust and adoption, and how to deliver them without creating long-term technical debt.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/5o1ZBOXPoGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -24,13 +25,23 @@ This week on the Explicit Measures Podcast, we dive into **Why Quick Wins Are So
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Why Quick Wins Are So Important - Ep.317 - Power BI tips
-- Key topic: Why Quick Wins Are So Important - Ep.317 - Power BI tips
-- How this impacts Power BI teams today
+## Main Discussion
+
+The main theme is that quick wins aren’t “small work”—they’re *strategic delivery* that builds confidence and creates room for larger initiatives.
+
+Key points from the conversation:
+
+- **Momentum + trust**: early wins prove value and help stakeholders buy into the next phase of the roadmap.
+- **Choosing the right win**: pick something visible and valuable, but avoid a shortcut that you’ll have to rebuild later.
+- **Iterate in public**: show progress (demos), get feedback, and keep scope tight so you can actually ship.
+- **Avoiding tech-debt traps**: quick doesn’t mean sloppy—keep the semantic model and governance in mind even for small deliverables.
+- **Use wins to fund the bigger work**: once you’ve earned trust, it becomes easier to get time for foundational improvements.
 
 ## Looking Forward
-What changes are you seeing in your organization around this topic? Share your thoughts and we may cover them in a future episode.
 
+Identify one high-impact deliverable you can ship in 1–2 weeks, demo it, then use the feedback to shape the next milestone on the longer roadmap.
+
+What changes are you seeing in your organization around this topic? Share your thoughts and we may cover them in a future episode.
 ## Episode Transcript
 
 <a href="https://www.youtube.com/watch?v=5o1ZBOXPoGM&t=34s" target="_blank">0:34</a> good morning and welcome back to the explicit measures podcast with Tommy Seth and Seth and Mike good morning everybody good morning good morning gentlemen and nowy Tuesday it's that was a good one that was a good one some someday maybe it's not going to be so good yeah maybe some there'll be a little trepidation with one of those PHR recording that's coming up never missed one yet we have not missed one yet yet all right jumping in today for our a couple introductions but before we go to

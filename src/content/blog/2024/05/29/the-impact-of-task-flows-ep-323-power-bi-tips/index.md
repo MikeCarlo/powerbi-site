@@ -4,11 +4,11 @@ date: 2024-05-29
 authors: [Mike Carlo, Tommy Puglia, Seth Bauer]
 categories: [Podcast, Power BI]
 tags: [Explicit Measures, Podcast, Task Flows, Impact, Task, Flows]
-excerpt: In this episode of Explicit Measures, the team discusses the impact of task flows and what it means for Power BI practitioners.
+excerpt: "Task Flows provide a visual way to map end-to-end Fabric work in a workspace. The team discusses why it’s a game-changer for documentation and navigation—and what’s still missing in preview."
 featuredImage: ./assets/featured.png
 ---
 
-In this episode of Explicit Measures, the team discusses The Impact of Task Flows and what it means for Power BI practitioners.
+This episode breaks down **Task Flows**—a new feature that helps teams visualize end-to-end work in Fabric. The conversation covers why it’s so valuable for communication and governance, plus the rough edges you’ll notice right away.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/DhMcUwr9YtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -18,9 +18,22 @@ In this episode of Explicit Measures, the team discusses The Impact of Task Flow
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: The Impact of Task Flows
+## Main Discussion
+
+Task flows are discussed as more than a UI tweak—they’re a way to make Fabric projects easier to understand and easier to govern.
+
+Key points from the conversation:
+
+- **Visual start-to-finish view**: task flows help show how data moves from ingestion to transformation to semantic models and reports.
+- **Living documentation**: you can add structure and context beyond lineage, which helps teams communicate architecture and intent.
+- **Navigation and organization**: a clearer workspace story reduces the “where is the thing?” problem as artifacts multiply.
+- **Templates/patterns**: the idea of reusable outlines for common architectures was called out as a big win.
+- **Preview limitations**: the team notes missing base functionality (for example, removing/unchecking items from a task flow is not straightforward yet).
 
 ## Looking Forward
+
+
+Use task flows first for documentation and stakeholder communication. Once the preview limitations improve, you can rely on it more heavily as part of day-to-day project delivery.
 
 ## Episode Transcript
 

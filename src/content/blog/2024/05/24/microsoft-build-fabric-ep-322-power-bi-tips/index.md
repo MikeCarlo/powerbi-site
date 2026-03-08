@@ -4,10 +4,11 @@ date: 2024-05-24
 authors: [Mike Carlo]
 categories: [Podcast, Power BI]
 tags: [Explicit Measures, Podcast, Microsoft, Build, Fabric]
-excerpt: In this episode of Explicit Measures, the team discusses Microsoft Build Fabric and what it means for Power BI practitioners.
+excerpt: "Mike reports from Microsoft Build with a rundown of what stood out—Copilot in more experiences, DAX Query View, and Fabric updates like task flows and real-time analytics."
 featuredImage: ./assets/featured.png
 ---
-In this episode of Explicit Measures, the team discusses Microsoft Build Fabric and what it means for Power BI practitioners.
+
+Mike joins from an early morning at Microsoft Build and shares what he’s seeing on the floor—especially how **Copilot** is showing up across experiences and what’s new/important for Fabric and Power BI practitioners.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/VR9PpXQ4uCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -17,9 +18,22 @@ In this episode of Explicit Measures, the team discusses Microsoft Build Fabric 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Microsoft Build Fabric
+## Main Discussion
+
+This episode is a Build conference recap with a Fabric/Power BI lens.
+
+Key points from the conversation:
+
+- **Build conference impressions**: what’s different about Build (developer-heavy) and the kinds of questions people are asking.
+- **Copilot everywhere**: the team talks about AI being woven into more product surfaces and what that means for day-to-day workflows.
+- **DAX Query View**: why a more code-centric modeling experience is useful, and how it changes the Copilot/demo story for modelers.
+- **Fabric updates worth watching**: the discussion calls out items like task flows and real-time analytics as meaningful “workflow” changes.
+- **How to keep up**: a practical approach to tracking announcements without chasing every feature.
 
 ## Looking Forward
+
+
+Pick one Build/Fabric announcement that directly impacts your current work (e.g., task flows or a modeling improvement), test it in a small sandbox, then decide whether it belongs in your production standards.
 
 ## Episode Transcript
 

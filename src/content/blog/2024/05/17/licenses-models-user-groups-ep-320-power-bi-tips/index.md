@@ -13,11 +13,11 @@ tags:
   - "Models"
   - "User"
   - "Groups"
-excerpt: "In this episode of Explicit Measures (Ep."
+excerpt: "A wide-ranging episode: Semantic Link gotchas, licensing for public portfolios, and practical modeling advice—plus why user groups and consistent routines help people keep learning."
 featuredImage: "./assets/featured.png"
 ---
 
-This week on **Explicit Measures (Ep. 320)**, we dig into Licenses, Models & User Groups - Ep.320 - Power BI tips and share practical takeaways you can apply right away.
+This episode mixes a few practical topics—**Semantic Link details**, a **licensing mailbag question** about sharing reports publicly, and a set of **modeling best practices** the team sees repeatedly at user groups.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FwAIT7UtDTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -25,9 +25,21 @@ This week on **Explicit Measures (Ep. 320)**, we dig into Licenses, Models & Use
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Licenses, Models & User Groups - Ep.320 - Power BI tips
+## Main Discussion
+
+This episode is more of a “grab bag” with real-world questions and lessons.
+
+Key points from the conversation:
+
+- **Semantic Link + Lakehouse gotcha**: writing tables via Semantic Link can introduce compatibility issues with the SQL endpoint depending on the Delta writing/versioning path.
+- **Licensing for a public portfolio**: the team answers when a Pro license is needed vs. when Desktop/free options are enough for simple demos and publishing.
+- **Modeling routines**: practical advice like trimming what you import, being deliberate with measures, and avoiding accidental modeling “defaults” that create clutter.
+- **User groups as learning engines**: why regular community routines (sharing, teaching, repeating fundamentals) compound skill growth over time.
 
 ## Looking Forward
+
+
+If you’re building a portfolio, keep the setup simple (free where possible), focus on clean modeling habits, and use a repeatable publish routine so you can keep shipping content.
 
 ## Episode Transcript
 

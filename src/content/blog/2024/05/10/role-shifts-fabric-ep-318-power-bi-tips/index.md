@@ -12,11 +12,11 @@ tags:
   - Microsoft Fabric
   - Career
   - Power BI
-excerpt: "In Episode 318 of the Explicit Measures Podcast, we discuss role shifts & fabric and what it means for Power BI and Microsoft Fabric."
+excerpt: "Fabric is shifting roles across BI teams. The discussion covers how report developers, modelers, and data engineers are converging—and what skills and processes help teams adapt."
 featuredImage: ./assets/featured.png
 ---
 
-This week on the Explicit Measures Podcast, we dive into **Role Shifts & Fabric** and share takeaways you can apply in your Power BI work.
+Fabric is changing how teams work. In this episode, Mike, Tommy, and Seth talk about **role shifts in a Fabric world** and what that means for staffing, skills, and ownership across the BI lifecycle.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/riRi8isakVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -26,13 +26,23 @@ This week on the Explicit Measures Podcast, we dive into **Role Shifts & Fabric*
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Role Shifts & Fabric
-- Key topic: Role Shifts & Fabric
-- How this impacts Power BI teams today
+## Main Discussion
+
+Fabric is pulling more of the end-to-end data lifecycle into one place, which changes how teams split responsibilities.
+
+Key points from the conversation:
+
+- **Roles are converging**: BI teams are increasingly touching engineering concepts (lakehouse/warehouse, notebooks, pipelines), not just visuals.
+- **Clear ownership still matters**: even if roles blur, someone must own ingestion, modeling, governance, and the reporting experience.
+- **New collaboration patterns**: the team discusses the need to “build a bridge from both sides”—data work and reporting work have to meet in the middle.
+- **Upskilling strategy**: how to level up existing Power BI talent while adding engineering capability where needed.
+- **Process + governance**: standards, documentation, and review become more important as more people can create more artifacts.
 
 ## Looking Forward
-What changes are you seeing in your organization around this topic? Share your thoughts and we may cover them in a future episode.
 
+Look at your current team and identify the biggest gap (engineering, modeling, or governance). Fill that first, then upskill the rest of the team around a shared delivery process.
+
+What changes are you seeing in your organization around this topic? Share your thoughts and we may cover them in a future episode.
 ## Episode Transcript
 
 <a href="https://www.youtube.com/watch?v=riRi8isakVM&t=31s" target="_blank">0:31</a> good morning and welcome back to the explicit measures podcast with Tommy Seth and Mike good morning everyone welcome back good morning gentlemen good morning Mike good morning Seth we've got a number of topics today we're going to jump in with a rols or shifting roles inside fabric how that's going to play out here a little bit so we're talking about the roles in fabric that we see and what's happening with existing roles in powerbi and what is happening as these things transition into fabric roles

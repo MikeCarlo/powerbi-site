@@ -4,11 +4,11 @@ date: 2024-06-05
 authors: ["Mike Carlo", "Tommy Puglia", "Seth Bauer"]
 categories: ["Podcast", "Power BI"]
 tags: ["Explicit Measures", "Podcast", "Data", "Exploration", "Spin", "Off"]
-excerpt: "In this episode of Explicit Measures (Ep. 325), the team covers what\u2019s new, key takeaways, and what to watch next."
+excerpt: "Exploration creates ideas—but it can also derail delivery. The team talks about how to capture “parking lot” ideas, set boundaries, and turn the best spinoffs into real projects."
 featuredImage: ./assets/featured.png
 ---
 
-Data Exploration & Spin Off Projects – Ep. 325 is live with another Explicit Measures episode—here are the highlights, key links, and what’s coming next.
+This episode is about balancing **data exploration** with actual delivery. Great analysis work often generates new ideas—so the question becomes: how do you capture spinoffs without blowing up scope and timelines?
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/5HKHank8f6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -18,9 +18,22 @@ Data Exploration & Spin Off Projects – Ep. 325 is live with another Explicit M
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Data Exploration & Spin Off Projects
+## Main Discussion
+
+The discussion uses an article as a jumping-off point and then shares practical ways teams manage exploration without losing focus.
+
+Key points from the conversation:
+
+- **Exploration is valuable (and risky)**: side investigations can create real value, but they can also overwhelm teams and delay delivery.
+- **Use a “parking lot”**: capture ideas for later so you can stay focused on the main deliverable.
+- **Define boundaries**: spinoff projects need clear scope, owners, timelines, and alignment with the main goals.
+- **Turn ideas into prototypes**: use proof-of-concepts (Power Apps, small demos) to validate quickly before committing to a full build.
+- **Culture and cadence**: regular brainstorming sessions can feed innovation—if you pair them with prioritization and execution discipline.
 
 ## Looking Forward
+
+
+Start tracking spinoff ideas explicitly (backlog/parking lot). Then pick *one* spinoff to prototype with tight timeboxing so you can validate value without derailing the main project.
 
 ## Episode Transcript
 

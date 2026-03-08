@@ -13,10 +13,11 @@ tags:
   - "Metrics"
   - "Hub"
   - "Hot"
-excerpt: "In this episode of the Explicit Measures Podcast, we discuss Metrics Hub, Hot New Feature."
+excerpt: "Metrics Hub is a new way to centralize and discover KPIs in Power BI. The team breaks down metric definitions, ownership, governance, and how to avoid metric sprawl."
 featuredImage: "./assets/featured.png"
 ---
-In this episode of the Explicit Measures Podcast, we discuss Metrics Hub, Hot New Feature.
+
+In this episode, the conversation digs into **Metrics Hub**—why it matters for KPI standardization, how it impacts adoption, and what governance you’ll need so “metrics” don’t turn into another scattered mess.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/WsyDzKYjWnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -24,14 +25,24 @@ In this episode of the Explicit Measures Podcast, we discuss Metrics Hub, Hot Ne
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Metrics Hub, Hot New Feature
+## Main Discussion
 
-(Summary coming soon.)
+Metrics Hub is positioned as a *better home for KPIs*: a place to find, reuse, and manage key business metrics across reports.
+
+Key points from the conversation:
+
+- **Why Metrics Hub matters**: it improves discoverability so people can find the “official” KPI instead of recreating variants in every report.
+- **Definition + ownership**: a KPI isn’t just a number—someone needs to own the definition, context, and lifecycle.
+- **Governance without bottlenecks**: how to enable teams to contribute while still preventing metric sprawl and duplicate definitions.
+- **Relationship to semantic models/measures**: metrics should build on trusted model logic rather than inventing new math in isolation.
+- **Adoption angle**: using shared metrics is one of the fastest ways to reduce conflicting numbers and build trust in reporting.
 
 ## Looking Forward
 
-(Key takeaways coming soon.)
 
+If you turn on Metrics Hub, start with a small set of “gold” KPIs with clear owners and definitions—then expand once people are actually reusing them.
+
+(Key takeaways coming soon.)
 ## Episode Transcript
 
 <a href="https://www.youtube.com/watch?v=WsyDzKYjWnE&t=30s" target="_blank">0:30</a> welcome back to the explicit measures podcast with Tommy Seth and Mike welcome back everyone to another great episode we've got some exciting things for you for you today or a new episode it is an exciting day because we're gonna bring something new a little bit this is the first time I believe today what we're about to do very standard episode we've never done before three we've done we've done one before but this is actually scheduled at the normal time it was a special

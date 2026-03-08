@@ -4,11 +4,11 @@ date: 2024-05-31
 authors: [Mike Carlo]
 categories: [Podcast, Power BI]
 tags: [Explicit Measures, Podcast, Data, Content, Modeling, Data Modeling]
-excerpt: In this episode of Explicit Measures, the team discusses the separation of data & content and what it means for building better Power BI solutions.
+excerpt: "A practical pattern: separating semantic models from report content so many creators can build thin reports securely. The team walks through roles, RLS, and workspace strategies."
 featuredImage: ./assets/featured.png
 ---
 
-In this episode of Explicit Measures, the team discusses the separation of data & content and what it means for building better Power BI solutions.
+This episode discusses **separating data and content** in Power BI/Fabric—how to centralize semantic models while enabling other creators to build reports safely (including the messy reality of roles and RLS).
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/ZePjofDFeP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -20,9 +20,22 @@ In this episode of Explicit Measures, the team discusses the separation of data 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: The Separation of Data & Content
+## Main Discussion
+
+The main discussion reviews an article and then expands into the team’s real-world pattern for scaling report creation.
+
+Key points from the conversation:
+
+- **Separate model workspace vs. report workspace**: keep semantic models in a controlled workspace, and let creators build thin reports elsewhere.
+- **RLS and permissions**: how row-level security still applies, and why “build” permission and workspace roles can get nuanced.
+- **Enable creators without breaking governance**: a practical way to scale report building while maintaining a single source of truth.
+- **Security groups and repeatability**: using groups and consistent permission patterns to avoid one-off access management.
+- **Why this matters**: it reduces duplication and prevents every report from inventing its own definitions.
 
 ## Looking Forward
+
+
+If you have many report authors, pilot the “central model + thin reports” pattern with one certified model, documented permissions, and a repeatable onboarding checklist.
 
 ## Episode Transcript
 

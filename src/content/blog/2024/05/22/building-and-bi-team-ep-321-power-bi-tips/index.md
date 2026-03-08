@@ -14,13 +14,12 @@ tags:
   - "Power"
   - "Team"
   - "Tips"
-excerpt: "In this episode of Explicit Measures, the team discusses Building and BI Team - Power BI Tips."
+excerpt: "What does a modern BI/Fabric team look like? The team talks roles, first hires, and how to bridge data engineering, modeling, and reporting so adoption actually happens."
 featuredImage: ./assets/featured.png
 ---
 
-In this episode of Explicit Measures, the team discusses Building and BI Team - Power BI Tips.
+This episode is about the people side of analytics: **building a BI team** (especially in a Fabric world) and how to structure roles so the organization can deliver end-to-end—from source to report.
 
-<!-- YouTube Embed -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mYQuckpoewU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## News & Announcements
@@ -28,14 +27,24 @@ In this episode of Explicit Measures, the team discusses Building and BI Team - 
 - **[PowerBI.tips Podcast](https://powerbi.tips/podcast)** — Subscribe and listen to the Explicit Measures podcast episodes and related content.
 - **[Power BI Theme Generator](https://themes.powerbi.tips)** — Create and download Power BI report themes using the PowerBI.tips theme generator.
 
-## Main Discussion: Building and BI Team - Power BI Tips
+## Main Discussion
 
-Highlights, takeaways, and a few practical next steps from the conversation.
+The discussion focuses on what a healthy BI team needs, especially as Fabric brings more “enterprise” tools closer to report builders.
+
+Key points from the conversation:
+
+- **Start with data engineering capability**: getting data in, shaped, and reliable is foundational—even before you perfect report design.
+- **Bridge data + reporting**: you can’t get to great reports without data, and you can’t build the right data without understanding reporting needs.
+- **Evolving roles in Fabric**: why modeling, engineering, and reporting are increasingly connected in day-to-day delivery.
+- **Hiring/upskilling strategy**: how to add the first key hire(s) and then grow the team responsibly as adoption increases.
+- **Operating model matters**: admin portal, workspace structure, and governance tasks don’t do themselves—someone has to own them.
 
 ## Looking Forward
 
-What this means for Power BI practitioners—and what to keep an eye on next.
 
+If you’re building the team from scratch, hire (or contract) for data engineering + modeling early, then scale report development and self-service enablement once the foundation is stable.
+
+What this means for Power BI practitioners—and what to keep an eye on next.
 ## Episode Transcript
 
 <a href="https://www.youtube.com/watch?v=mYQuckpoewU&t=30s" target="_blank">0:30</a> hello and welcome back to the explicit measures podcast with Tommy Seth and Mike you you may notice my voice is a little mourning and as well as my background is slightly different so I'm calling in live from the Microsoft build conference out here in Seattle so we have an opportunity to speak the conference I'm going to be a Microsoft expert ask the experts apparently for things around fabric so we'll see how long that mileage runs it may be good it may be good they may stump me a lot I don't know there's a couple other
