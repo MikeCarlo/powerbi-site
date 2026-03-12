@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import glob
+import html
 import os
 import re
 from dataclasses import dataclass
@@ -63,8 +64,12 @@ def mss(t: int) -> str:
 
 def clean_text(s: str) -> str:
     s = s.strip()
+    # Decode HTML entities first (e.g. &gt;&gt; -> >>)
+    s = html.unescape(s)
     # Remove VTT/HTML-like tags
     s = TAG_RE.sub('', s)
+    # Remove caption speaker markers like >> at start/mid-sentence
+    s = re.sub(r'(^|\s)>>\s*', ' ', s)
     # Remove embedded timestamps like 00:00:12.000 inside text
     s = re.sub(r"\b\d{1,2}:\d{2}:\d{2}(?:\.\d+)?\b", "", s)
     s = re.sub(r"\b\d{1,2}:\d{2}(?:\.\d+)?\b", "", s)
