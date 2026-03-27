@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
+import { extractFaqItems, extractHowToSteps } from '../utils/schema-helpers';
 
 function cleanSlug(id: string): string {
   return id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
@@ -18,6 +19,11 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+// Extract FAQ and HowTo structured data from raw markdown body
+const rawBody = post.body || '';
+const faqItems = extractFaqItems(rawBody);
+const howToSteps = extractHowToSteps(rawBody, post.data.categories || []);
+
 const allPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .map((entry) => ({
@@ -31,6 +37,6 @@ const next = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 const morePosts = allPosts.filter((entry) => entry.id !== post.id).slice(0, 3);
 ---
 
-<BlogPost entry={post} prev={prev} next={next} morePosts={morePosts}>
+<BlogPost entry={post} prev={prev} next={next} morePosts={morePosts} faqItems={faqItems} howToSteps={howToSteps}>
   <Content />
 </BlogPost>

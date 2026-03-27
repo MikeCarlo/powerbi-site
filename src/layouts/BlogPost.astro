@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const { entry, prev, next, morePosts } = Astro.props;
+const { entry, prev, next, morePosts, faqItems = [], howToSteps = [] } = Astro.props;
 const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;
 
 const slug = entry.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
@@ -37,9 +37,72 @@ const articleJsonLd = {
   ...(categories?.length && { articleSection: categories }),
   ...(tags?.length && { keywords: tags.join(', ') }),
 };
+
+// BreadcrumbList JSON-LD
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://powerbi.tips/',
+    },
+    ...(categories?.length ? [{
+      '@type': 'ListItem',
+      position: 2,
+      name: categories[0],
+      item: `https://powerbi.tips/category/${categories[0].toLowerCase().replace(/\s+/g, '-')}/`,
+    }] : []),
+    {
+      '@type': 'ListItem',
+      position: categories?.length ? 3 : 2,
+      name: title,
+      item: articleUrl,
+    },
+  ],
+};
+
+// FAQ JSON-LD (from faqItems prop — generated at page level)
+const faqJsonLd = faqItems.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+} : null;
+
+// HowTo JSON-LD (from howToSteps prop — generated at page level for tutorial posts)
+const howToJsonLd = howToSteps.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: title,
+  description: excerpt || '',
+  step: howToSteps.map((step, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: step.name,
+    text: step.text,
+    ...(step.url ? { url: step.url } : {}),
+  })),
+} : null;
+
+// Collect all JSON-LD schemas
+const allJsonLd = [
+  articleJsonLd,
+  breadcrumbJsonLd,
+  ...(faqJsonLd ? [faqJsonLd] : []),
+  ...(howToJsonLd ? [howToJsonLd] : []),
+];
 ---
 
-<BaseLayout title={`${title} | PowerBI.tips`} description={excerpt ?? ''} jsonLd={articleJsonLd}>
+<BaseLayout title={`${title} | PowerBI.tips`} description={excerpt ?? ''} jsonLd={allJsonLd}>
   <article class="max-w-none space-y-6 text-[1.05rem] leading-relaxed">
     <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
     

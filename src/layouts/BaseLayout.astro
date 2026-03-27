@@ -53,7 +53,10 @@ const webSiteSchema = {
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {jsonLd && Array.isArray(jsonLd) 
+      ? jsonLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)
+      : jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    }
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
