@@ -269,6 +269,47 @@ Edit `src/components/Header.astro` and `src/components/Footer.astro` to modify n
 
 ---
 
+## 🤖 AEO (Answer Engine Optimization)
+
+The site is optimized for AI crawlers and answer engines (ChatGPT, Perplexity, Google AI Overviews, etc.).
+
+### What's in Place
+
+| Feature | Status | Details |
+| :--- | :--- | :--- |
+| `llms.txt` | ✅ | AI-friendly site summary (`public/llms.txt`) |
+| `llms-full.txt` | ✅ | Extended content for LLM ingestion (`public/llms-full.txt`) |
+| `robots.txt` AI crawlers | ✅ | Explicitly welcomes GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc. |
+| `Sitemap` for `llms.txt` | ✅ | Proper `Sitemap:` directives in `robots.txt` for AI discovery |
+| Organization schema | ✅ | JSON-LD on every page (`BaseLayout.astro`) |
+| WebSite schema | ✅ | JSON-LD with SearchAction on every page |
+| Article schema | ✅ | JSON-LD on every blog post (`BlogPost.astro`) |
+| BreadcrumbList schema | ✅ | JSON-LD on every blog post (Home → Category → Post) |
+| FAQ schema (FAQPage) | ✅ | Auto-generated from question-like H2/H3 headings (~110 posts) |
+| HowTo schema | ✅ | Auto-generated for tutorial posts with step patterns |
+
+### How FAQ Schema Works
+
+The build automatically scans blog post markdown for H2/H3 headings that look like questions:
+- Contains `?` — e.g., `## What is Direct Lake?`
+- Starts with question words — `What`, `How`, `Why`, `When`, `Can`, `Should`, etc.
+
+The first paragraph after the heading becomes the answer. No manual frontmatter needed — just write good headings and it works.
+
+### How HowTo Schema Works
+
+Posts in tutorial/guide/walkthrough categories with `Step N:` heading patterns automatically get HowTo structured data. Each step heading becomes a `HowToStep`.
+
+### Files
+
+- `src/utils/schema-helpers.ts` — FAQ and HowTo extraction utilities
+- `src/layouts/BlogPost.astro` — Schema assembly (Article + BreadcrumbList + FAQ + HowTo)
+- `src/layouts/BaseLayout.astro` — Organization + WebSite schema, supports JSON-LD arrays
+- `public/llms.txt` — Concise site description for AI agents
+- `public/llms-full.txt` — Extended content with topic coverage and tool descriptions
+
+---
+
 ## 🤝 Contributing
 
 1. Create a new branch: `git checkout -b feature/your-feature`
