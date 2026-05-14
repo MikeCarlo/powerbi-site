@@ -4,7 +4,12 @@ import Logo from './Logo.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const navItems = [
+  { label: 'power bi', href: `${base}/power-bi/` },
+  { label: 'fabric', href: `${base}/microsoft-fabric/` },
   { label: 'podcast', href: `${base}/podcast/` },
+  { label: 'embedded', href: `${base}/power-bi-embedded/` },
+  { label: 'apps', href: `${base}/power-bi-apps/` },
+  { label: 'fabric apps', href: `${base}/fabric-apps/` },
   { label: 'power designer', href: `${base}/power-designer/` },
   { label: 'themes', href: 'https://themes.powerbi.tips' },
   { label: 'events', href: `${base}/events/` },

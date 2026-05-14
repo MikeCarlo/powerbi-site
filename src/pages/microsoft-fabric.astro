@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const allPosts = await getCollection('blog');
+const fabricPosts = allPosts
+  .filter((post) => {
+    const title = (post.data.title || '').toLowerCase();
+    const excerpt = (post.data.excerpt || '').toLowerCase();
+    const tags = (post.data.tags || []).map((t) => String(t).toLowerCase());
+    const cats = (post.data.categories || []).map((c) => String(c).toLowerCase());
+
+    return (
+      tags.includes('fabric') ||
+      tags.includes('microsoft-fabric') ||
+      title.includes('fabric') ||
+      excerpt.includes('fabric') ||
+      cats.some((c) => c.includes('fabric'))
+    );
+  })
+  .map((post) => {
+    const slug = post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+    return { ...post, slug };
+  })
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 24);
+---
+
+<BaseLayout
+  title="Microsoft Fabric Resources, Patterns & Podcast Episodes | PowerBI.tips"
+  description="PowerBI.tips is a one-stop shop for Microsoft Fabric knowledge — podcast episodes, posts, and practical guidance for analytics teams building on Fabric."
+>
+  <section class="mb-10">
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Microsoft Fabric</h1>
+    <p class="mt-3 max-w-3xl text-lg text-neutral-600">
+      PowerBI.tips isn’t just Power BI — it’s also a one-stop shop for <strong>Microsoft Fabric</strong> knowledge.
+      We cover what matters (and what to ignore) through practical posts and podcast episodes.
+    </p>
+  </section>
+
+  <section class="grid gap-6 md:grid-cols-2">
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Fabric on the Podcast</h2>
+      <p class="mt-2 text-neutral-600">
+        Many Explicit Measures episodes focus on Fabric strategy, features, and real-world adoption.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700" href={`${base}/podcast/`}>Browse podcast episodes</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=fabric`}>Search “fabric”</a>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Tools + workflows</h2>
+      <p class="mt-2 text-neutral-600">
+        We build and share tooling that helps teams create better outcomes faster.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800" href={`${base}/power-bi/`}>Power BI</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href="https://powerbi.tips/">Latest posts</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-neutral-900">Recent Fabric-related posts</h2>
+    <p class="mt-2 text-neutral-600 max-w-3xl">
+      A rolling set of posts and podcast write-ups that mention Fabric.
+    </p>
+
+    {fabricPosts.length ? (
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {fabricPosts.map((post) => (
+          <a href={`${base}/${post.slug}/`} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+              {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+            </div>
+            <div class="mt-2 font-semibold text-neutral-900">{post.data.title}</div>
+            {post.data.excerpt ? <div class="mt-2 text-sm text-neutral-600">{post.data.excerpt}</div> : null}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="mt-4 text-neutral-500">No Fabric-related posts found yet (based on tag/title/excerpt matching).</p>
+    )}
+  </section>

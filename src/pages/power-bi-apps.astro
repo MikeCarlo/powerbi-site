@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const apps = [
+  {
+    name: 'Theme Generator',
+    desc: 'The world’s most used and longest running Power BI theme generator.',
+    url: 'https://themes.powerbi.tips',
+  },
+  {
+    name: 'PowerBI.tips Tools',
+    desc: 'A hub of practical tools for Power BI builders.',
+    url: 'https://tools.powerbi.tips/',
+  },
+  {
+    name: 'Charticulator Support',
+    desc: 'Supporting the Charticulator project and custom visuals workflows.',
+    url: 'https://charts.powerbi.tips/',
+  },
+  {
+    name: 'Color Theme Gallery',
+    desc: 'The world’s largest color gallery of theme files.',
+    url: 'https://gallery.powerbi.tips/',
+  },
+  {
+    name: 'DAX Templates',
+    desc: 'Reusable DAX templates and patterns for faster modeling.',
+    url: 'https://dax.powerbi.tips/',
+  },
+  {
+    name: 'Dataflows Gen1 Model Builder',
+    desc: 'Build model files faster for Power BI Dataflows Gen1.',
+    url: 'https://model.powerbi.tips/',
+  },
+];
+---
+
+<BaseLayout
+  title="Power BI Apps & Tools | PowerBI.tips"
+  description="Explore PowerBI.tips apps and tools: Theme Generator, tools hub, Charticulator support, the largest theme color gallery, DAX templates, and a Dataflows Gen1 model file builder."
+>
+  <section class="mb-10">
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Power BI Apps</h1>
+    <p class="mt-3 max-w-3xl text-lg text-neutral-600">
+      Tools that make Power BI builders faster — from theme generation to DAX templates.
+    </p>
+  </section>
+
+  <section class="rounded-2xl border border-neutral-200 p-6">
+    <h2 class="text-2xl font-semibold text-neutral-900">Featured: Theme Generator</h2>
+    <p class="mt-2 text-neutral-600">
+      The <strong>world’s most used and longest running Theme Generator</strong> helps you create consistent, branded Power BI reports.
+    </p>
+    <div class="mt-4">
+      <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://themes.powerbi.tips" target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <h2 class="text-2xl font-semibold text-neutral-900">Apps & tools</h2>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {apps.map((app) => (
+        <a
+          href={app.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block rounded-xl border border-neutral-200 p-5 hover:shadow-md transition"
+        >
+          <div class="font-semibold text-neutral-900">{app.name}</div>
+          <div class="mt-2 text-sm text-neutral-600">{app.desc}</div>
+          <div class="mt-3 text-sm font-semibold text-blue-600">Visit →</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-neutral-900">Related</h2>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/power-bi/`}>Power BI</a>
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/microsoft-fabric/`}>Microsoft Fabric</a>
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/podcast/`}>Podcast</a>
+    </div>
+  </section>

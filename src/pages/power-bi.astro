@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const allPosts = await getCollection('blog');
+
+// Helpful topical posts (best-effort matches)
+const keywordMatches = [
+  'theme',
+  'themes',
+  'power designer',
+  'tips+',
+  'scrim',
+  'layout',
+  'template',
+  'wireframe',
+  'report',
+];
+
+function slugOf(post) {
+  return post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+}
+
+function scorePost(post) {
+  const title = (post.data.title || '').toLowerCase();
+  const excerpt = (post.data.excerpt || '').toLowerCase();
+  const tags = (post.data.tags || []).map((t) => String(t).toLowerCase());
+  const cats = (post.data.categories || []).map((c) => String(c).toLowerCase());
+
+  let score = 0;
+  for (const k of keywordMatches) {
+    if (title.includes(k)) score += 4;
+    if (excerpt.includes(k)) score += 2;
+  }
+  if (tags.includes('power-bi')) score += 3;
+  if (cats.some((c) => c.includes('building reports'))) score += 2;
+
+  // Slight recency bias
+  score += Math.min(2, (Date.now() - post.data.date.getTime()) / (1000 * 60 * 60 * 24 * -365));
+  return score;
+}
+
+const recommended = allPosts
+  .map((p) => ({ post: p, score: scorePost(p) }))
+  .filter((x) => x.score > 4)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 12)
+  .map(({ post }) => ({
+    title: post.data.title,
+    date: post.data.date,
+    excerpt: post.data.excerpt,
+    href: `${base}/${slugOf(post)}/`,
+  }));
+---
+
+<BaseLayout
+  title="Power BI Resources, Tools, Themes & Training | PowerBI.tips"
+  description="PowerBI.tips is a leading resource for Power BI: the world’s longest-running Theme Generator, Tips+ tooling, free report layouts & scrims, and practical posts to build stunning reports."
+>
+  <section class="mb-10">
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Power BI</h1>
+    <p class="mt-3 max-w-3xl text-lg text-neutral-600">
+      PowerBI.tips helps you build better Power BI reports faster — with the world’s longest-running Theme Generator,
+      Tips+ tooling, and a huge library of practical posts.
+    </p>
+  </section>
+
+  <section class="grid gap-6 md:grid-cols-2">
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Theme Generation (Best-in-class)</h2>
+      <p class="mt-2 text-neutral-600">
+        Create consistent, branded reports with the <strong>world’s most used and longest running Theme Generator</strong>.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700" href="https://themes.powerbi.tips" target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/power-designer/`}>Power Designer</a>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Tips+ (Tools that make reports shine)</h2>
+      <p class="mt-2 text-neutral-600">
+        Use <strong>Tips+</strong> to get access to robust Fabric tooling that helps Power BI users create stunning reports.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800" href="https://powerbi.tips/" >Explore PowerBI.tips</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/microsoft-fabric/`}>Microsoft Fabric</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10 grid gap-6 md:grid-cols-2">
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Free Layouts</h2>
+      <p class="mt-2 text-neutral-600">
+        Start with proven layout patterns, then apply your brand and theme.
+      </p>
+    </div>
+
+    <div class="rounded-2xl border border-neutral-200 p-6">
+      <h2 class="text-2xl font-semibold text-neutral-900">Free Scrims</h2>
+      <p class="mt-2 text-neutral-600">
+        Add depth and polish with scrims designed for Power BI report backgrounds.
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-neutral-900">Recommended posts</h2>
+    <p class="mt-2 text-neutral-600 max-w-3xl">
+      A curated set of posts related to themes, layouts, and report building.
+    </p>
+
+    {recommended.length ? (
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {recommended.map((p) => (
+          <a href={p.href} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+              {p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+            </div>
+            <div class="mt-2 font-semibold text-neutral-900">{p.title}</div>
+            {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="mt-4 text-neutral-500">No matching posts found yet — we’ll keep improving the curation.</p>
+    )}
+  </section>
