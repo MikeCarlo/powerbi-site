@@ -6,53 +6,54 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const allPosts = await getCollection('blog');
 
-// Helpful topical posts (best-effort matches)
-const keywordMatches = [
-  'theme',
-  'themes',
-  'power designer',
-  'tips+',
-  'scrim',
-  'layout',
-  'template',
-  'wireframe',
-  'report',
-];
-
 function slugOf(post) {
   return post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
 }
 
-function scorePost(post) {
+function matchesAny(post, needles) {
   const title = (post.data.title || '').toLowerCase();
   const excerpt = (post.data.excerpt || '').toLowerCase();
   const tags = (post.data.tags || []).map((t) => String(t).toLowerCase());
   const cats = (post.data.categories || []).map((c) => String(c).toLowerCase());
 
-  let score = 0;
-  for (const k of keywordMatches) {
-    if (title.includes(k)) score += 4;
-    if (excerpt.includes(k)) score += 2;
-  }
-  if (tags.includes('power-bi')) score += 3;
-  if (cats.some((c) => c.includes('building reports'))) score += 2;
-
-  // Slight recency bias
-  score += Math.min(2, (Date.now() - post.data.date.getTime()) / (1000 * 60 * 60 * 24 * -365));
-  return score;
+  return needles.some((n) => {
+    const k = n.toLowerCase();
+    return title.includes(k) || excerpt.includes(k) || tags.includes(k) || cats.some((c) => c.includes(k));
+  });
 }
 
-const recommended = allPosts
-  .map((p) => ({ post: p, score: scorePost(p) }))
-  .filter((x) => x.score > 4)
-  .sort((a, b) => b.score - a.score)
-  .slice(0, 12)
-  .map(({ post }) => ({
+function toCard(post) {
+  return {
     title: post.data.title,
     date: post.data.date,
     excerpt: post.data.excerpt,
     href: `${base}/${slugOf(post)}/`,
-  }));
+  };
+}
+
+const themePosts = allPosts
+  .filter((p) => matchesAny(p, ['theme', 'themes', 'power designer', 'gallery']))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6)
+  .map(toCard);
+
+const scrimPosts = allPosts
+  .filter((p) => matchesAny(p, ['scrim', 'scrims']))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6)
+  .map(toCard);
+
+const layoutPosts = allPosts
+  .filter((p) => matchesAny(p, ['layout', 'layouts', 'wireframe', 'template']))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6)
+  .map(toCard);
+
+const tipsPlusPosts = allPosts
+  .filter((p) => matchesAny(p, ['tips+', 'tips plus', 'tips plus themes subscription']))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6)
+  .map(toCard);
 ---
 
 <BaseLayout
@@ -69,7 +70,7 @@ const recommended = allPosts
 
   <section class="grid gap-6 md:grid-cols-2">
     <div class="rounded-2xl border border-neutral-200 p-6">
-      <h2 class="text-2xl font-semibold text-neutral-900">Theme Generation (Best-in-class)</h2>
+      <h2 class="text-2xl font-semibold text-neutral-900">Theme generation</h2>
       <p class="mt-2 text-neutral-600">
         Create consistent, branded reports with the <strong>world’s most used and longest running Theme Generator</strong>.
       </p>
@@ -80,52 +81,80 @@ const recommended = allPosts
     </div>
 
     <div class="rounded-2xl border border-neutral-200 p-6">
-      <h2 class="text-2xl font-semibold text-neutral-900">Tips+ (Tools that make reports shine)</h2>
+      <h2 class="text-2xl font-semibold text-neutral-900">Tips+ (Fabric tooling for report builders)</h2>
       <p class="mt-2 text-neutral-600">
-        Use <strong>Tips+</strong> to get access to robust Fabric tooling that helps Power BI users create stunning reports.
+        Use <strong>Tips+</strong> to access robust Fabric tooling that helps users create stunning Power BI reports.
       </p>
       <div class="mt-4 flex flex-wrap gap-3">
-        <a class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800" href="https://powerbi.tips/" >Explore PowerBI.tips</a>
-        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/microsoft-fabric/`}>Microsoft Fabric</a>
+        <a class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800" href={`${base}/microsoft-fabric/`}>Microsoft Fabric</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/power-bi-apps/`}>Power BI Apps</a>
       </div>
     </div>
   </section>
 
-  <section class="mt-10 grid gap-6 md:grid-cols-2">
-    <div class="rounded-2xl border border-neutral-200 p-6">
-      <h2 class="text-2xl font-semibold text-neutral-900">Free Layouts</h2>
-      <p class="mt-2 text-neutral-600">
-        Start with proven layout patterns, then apply your brand and theme.
-      </p>
-    </div>
-
-    <div class="rounded-2xl border border-neutral-200 p-6">
-      <h2 class="text-2xl font-semibold text-neutral-900">Free Scrims</h2>
-      <p class="mt-2 text-neutral-600">
-        Add depth and polish with scrims designed for Power BI report backgrounds.
-      </p>
-    </div>
-  </section>
-
-  <section class="mt-12">
-    <h2 class="text-2xl font-semibold text-neutral-900">Recommended posts</h2>
-    <p class="mt-2 text-neutral-600 max-w-3xl">
-      A curated set of posts related to themes, layouts, and report building.
-    </p>
-
-    {recommended.length ? (
-      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {recommended.map((p) => (
+  <section class="mt-12 grid gap-8 lg:grid-cols-2">
+    <div>
+      <h2 class="text-2xl font-semibold text-neutral-900">Theme generator posts</h2>
+      <div class="mt-4 space-y-3">
+        {themePosts.map((p) => (
           <a href={p.href} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
-            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-              {p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-            </div>
-            <div class="mt-2 font-semibold text-neutral-900">{p.title}</div>
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <div class="mt-1 font-semibold text-neutral-900">{p.title}</div>
             {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
           </a>
         ))}
       </div>
-    ) : (
-      <p class="mt-4 text-neutral-500">No matching posts found yet — we’ll keep improving the curation.</p>
-    )}
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold text-neutral-900">Tips+ posts</h2>
+      <div class="mt-4 space-y-3">
+        {tipsPlusPosts.length ? tipsPlusPosts.map((p) => (
+          <a href={p.href} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <div class="mt-1 font-semibold text-neutral-900">{p.title}</div>
+            {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
+          </a>
+        )) : <p class="text-neutral-500">No Tips+ matches found yet — we can improve curation.</p>}
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12 grid gap-8 lg:grid-cols-2">
+    <div>
+      <h2 class="text-2xl font-semibold text-neutral-900">Free layouts</h2>
+      <p class="mt-2 text-neutral-600">Layout patterns and wireframes that help you start strong.</p>
+      <div class="mt-4 space-y-3">
+        {layoutPosts.map((p) => (
+          <a href={p.href} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <div class="mt-1 font-semibold text-neutral-900">{p.title}</div>
+            {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold text-neutral-900">Free scrims</h2>
+      <p class="mt-2 text-neutral-600">Scrims add depth and polish to report backgrounds.</p>
+      <div class="mt-4 space-y-3">
+        {scrimPosts.map((p) => (
+          <a href={p.href} class="block rounded-xl border border-neutral-200 p-4 hover:shadow-md transition">
+            <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+            <div class="mt-1 font-semibold text-neutral-900">{p.title}</div>
+            {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-neutral-900">Explore more</h2>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=theme`}>Search: theme</a>
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=scrim`}>Search: scrim</a>
+      <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=layout`}>Search: layout</a>
+    </div>
   </section>
