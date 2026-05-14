@@ -33,7 +33,7 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemap
-Sitemap: https://powerbi.tips/sitemap-index.xml
+Sitemap: https://powerbi.tips/wp-sitemap.xml
 
 # RSS Feed
 # https://powerbi.tips/rss.xml

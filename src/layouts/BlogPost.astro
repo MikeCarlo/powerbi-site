@@ -10,6 +10,13 @@ const { title, date, authors, categories, tags, featuredImage, excerpt } = entry
 const slug = entry.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
 const articleUrl = `https://powerbi.tips/${slug}/`;
 
+// Best-effort social image (works for both string paths and imported assets)
+const socialImageUrl = featuredImage
+  ? (typeof featuredImage === 'string'
+      ? `https://powerbi.tips${featuredImage}`
+      : `https://powerbi.tips${base}/images/brand/powerbitips-logo.png`)
+  : `https://powerbi.tips${base}/images/brand/powerbitips-logo.png`;
+
 // Build Article JSON-LD
 const articleJsonLd = {
   '@context': 'https://schema.org',
@@ -102,7 +109,24 @@ const allJsonLd = [
 ];
 ---
 
-<BaseLayout title={`${title} | PowerBI.tips`} description={excerpt ?? ''} jsonLd={allJsonLd}>
+<BaseLayout
+  title={`${title} | PowerBI.tips`}
+  description={excerpt ?? ''}
+  jsonLd={allJsonLd}
+>
+  <head>
+    <!-- Page-level overrides for social cards (use the post featured image when available) -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={articleUrl} />
+    <meta property="og:title" content={`${title} | PowerBI.tips`} />
+    <meta property="og:description" content={excerpt ?? ''} />
+    <meta property="og:image" content={socialImageUrl} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | PowerBI.tips`} />
+    <meta name="twitter:description" content={excerpt ?? ''} />
+    <meta name="twitter:image" content={socialImageUrl} />
+  </head>
   <article class="max-w-none space-y-6 text-[1.05rem] leading-relaxed">
     <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
     

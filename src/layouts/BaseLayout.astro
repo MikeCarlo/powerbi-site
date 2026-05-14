@@ -5,7 +5,11 @@ import Footer from '../components/Footer.astro';
 
 const { title = 'PowerBI.tips', description = 'PowerBI.tips blog and resources.', fullWidth = false, jsonLd } = Astro.props;
 
+const canonicalUrl = Astro.url;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Default share image (used for OG/Twitter when a page doesn't provide a specific image)
+const defaultOgImage = `https://powerbi.tips${base}/images/brand/powerbitips-logo.png`;
 
 // Default Organization + WebSite schema (included on every page)
 const orgSchema = {
@@ -48,8 +52,30 @@ const webSiteSchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <title>{title}</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl.toString()} />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/rss+xml" title="PowerBI.tips RSS Feed" href={`${base}/rss.xml`} />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="PowerBI.tips" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl.toString()} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={defaultOgImage} />
+
+    <!-- X / Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PowerBITips" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={defaultOgImage} />
+
+    <!-- Hints to crawlers about core sitemaps -->
+    <link rel="sitemap" type="application/xml" href="/wp-sitemap.xml" />
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
