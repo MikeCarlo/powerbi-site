@@ -1,26 +1,79 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const allPosts = await getCollection('blog');
+const fabricPosts = allPosts
+  .filter((post) => {
+    const title = (post.data.title || '').toLowerCase();
+    const excerpt = (post.data.excerpt || '').toLowerCase();
+    const tags = (post.data.tags || []).map((t) => String(t).toLowerCase());
+    const cats = (post.data.categories || []).map((c) => String(c).toLowerCase());
+    return (
+      tags.includes('fabric') ||
+      tags.includes('microsoft-fabric') ||
+      title.includes('fabric') ||
+      excerpt.includes('fabric') ||
+      cats.some((c) => c.includes('fabric'))
+    );
+  })
+  .map((post) => {
+    const slug = post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+    return { ...post, slug };
+  })
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 12);
+
+const patterns = [
+  {
+    title: 'Build a Fabric-first semantic model',
+    desc: 'Create governed models that scale across reports and apps (and keep performance predictable).',
+    href: `${base}/microsoft-fabric/`,
+  },
+  {
+    title: 'Power BI for the front-end experience',
+    desc: 'Use Power BI as the reporting surface inside Fabric-enabled solutions.',
+    href: `${base}/power-bi/`,
+  },
+  {
+    title: 'Embedded analytics for product experiences',
+    desc: 'Ship analytics in portals and apps with Power BI Embedded + Databricks AI/BI dashboards.',
+    href: `${base}/power-bi-embedded/`,
+  },
+  {
+    title: 'Podcast-driven learning',
+    desc: 'Stay current with Fabric updates and real-world adoption stories.',
+    href: `${base}/podcast/`,
+  },
+];
 ---
 
 <BaseLayout
   title="Fabric Apps | Apps and Solutions Built on Microsoft Fabric | PowerBI.tips"
-  description="Explore Fabric apps and solutions: guidance, patterns, and tools for teams building analytics applications on Microsoft Fabric."
+  description="Fabric apps hub: patterns, guidance, and links to the best Microsoft Fabric posts and podcast episodes."
 >
   <section class="mb-10">
     <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Fabric Apps</h1>
     <p class="mt-3 max-w-3xl text-lg text-neutral-600">
       Fabric is more than a data platform — it’s the foundation for building modern analytics applications.
-      This page is the hub for how we think about <strong>Fabric apps</strong> and the tooling that supports them.
+      This page is the hub for how we think about <strong>Fabric apps</strong>, patterns that work, and the best content to learn fast.
     </p>
+
+    <div class="mt-5 flex flex-wrap gap-3">
+      <a class="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700" href={`${base}/microsoft-fabric/`}>Explore Microsoft Fabric</a>
+      <a class="rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800" href={`${base}/podcast/`}>Listen to the Podcast</a>
+      <a class="rounded-full bg-neutral-100 px-5 py-2.5 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=fabric`}>Search “fabric”</a>
+    </div>
   </section>
 
   <section class="grid gap-6 md:grid-cols-2">
     <div class="rounded-2xl border border-neutral-200 p-6">
       <h2 class="text-2xl font-semibold text-neutral-900">Start with Fabric fundamentals</h2>
       <p class="mt-2 text-neutral-600">
-        If you’re new to Fabric, begin with our Fabric hub and the Fabric-heavy podcast episodes.
+        New to Fabric? Start with the Fabric hub and the Fabric-heavy podcast episodes.
       </p>
       <div class="mt-4 flex flex-wrap gap-3">
         <a class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700" href={`${base}/microsoft-fabric/`}>Microsoft Fabric</a>
@@ -41,9 +94,54 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   </section>
 
   <section class="mt-12">
-    <h2 class="text-2xl font-semibold text-neutral-900">Next improvement</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900">Patterns for building Fabric apps</h2>
     <p class="mt-2 text-neutral-600 max-w-3xl">
-      Next, we should add a curated list of Fabric app patterns and link to the best Fabric-related posts.
-      This first version establishes the top-level SEO landing page and internal linking.
+      A few practical paths we see working repeatedly for teams adopting Fabric.
     </p>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-2">
+      {patterns.map((p) => (
+        <a href={p.href} class="block rounded-xl border border-neutral-200 p-5 hover:shadow-md transition">
+          <div class="font-semibold text-neutral-900">{p.title}</div>
+          <div class="mt-2 text-sm text-neutral-600">{p.desc}</div>
+          <div class="mt-3 text-sm font-semibold text-blue-600">Learn more →</div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl font-semibold text-neutral-900">Recent Fabric-related posts</h2>
+    <p class="mt-2 text-neutral-600 max-w-3xl">
+      A rolling set of posts and podcast write-ups that mention Fabric.
+    </p>
+
+    {fabricPosts.length ? (
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {fabricPosts.map((post) => (
+          <a href={`${base}/${post.slug}/`} class="block overflow-hidden rounded-xl border border-neutral-200 hover:shadow-md transition">
+            {post.data.featuredImage ? (
+              <div class="aspect-[16/9] w-full bg-neutral-100">
+                <Image
+                  src={post.data.featuredImage}
+                  alt={post.data.title}
+                  class="h-full w-full object-cover"
+                  widths={[400, 800]}
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                />
+              </div>
+            ) : null}
+            <div class="p-4">
+              <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </div>
+              <div class="mt-2 font-semibold text-neutral-900">{post.data.title}</div>
+              {post.data.excerpt ? <div class="mt-2 text-sm text-neutral-600">{post.data.excerpt}</div> : null}
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="mt-4 text-neutral-500">No Fabric-related posts found yet (based on tag/title/excerpt matching).</p>
+    )}
   </section>
