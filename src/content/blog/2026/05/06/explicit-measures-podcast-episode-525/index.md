@@ -30,7 +30,11 @@ In Episode 525 of Explicit Measures, Mike Carlo and Tommy Puglia unpack the late
 
 ## News & Announcements
 
-- No linked announcements were available in the episode description for this post.
+- [Discover items across workspaces with the OneLake Catalog Search API, MCP and CLI tools (Preview)](https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Discover-items-across-workspaces-with-the-OneLake-Catalog-Search/ba-p/5176768) — Introduces the OneLake Catalog Search REST API for cross-workspace discovery, plus built-in support in the Fabric Core MCP Server and the Fabric CLI `find` command. This is a big step toward letting scripts and agents locate Fabric items reliably (even when you don’t know the exact name).
+
+- [Pipelines are evolving beyond ETL](https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Pipelines-are-evolving-beyond-ETL/ba-p/5177527) — A perspective on how pipelines are shifting from simple ETL to end-to-end workflows, including human-in-the-loop patterns. The post highlights the new (preview) Approval activity and why observability and decision points are becoming first-class parts of orchestration.
+
+- [microsoft/fabric-task-flows](https://github.com/microsoft/fabric-task-flows/tree/main) — The Task Flows repo referenced in the episode. It’s the home for the patterns, diagrams, and the workflow/pipeline runner that turns a problem statement into a CI/CD-ready Fabric deployment script.
 
 ## Main Discussion
 
