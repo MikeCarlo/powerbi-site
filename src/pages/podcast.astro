@@ -4,6 +4,26 @@ import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
+// Agentic Thinking episodes (fetched at build time via internal API page)
+type AgenticEpisode = {
+  url: string;
+  episodeNumber: number;
+  title: string;
+  meta: string;
+};
+
+let agenticEpisodes: AgenticEpisode[] = [];
+try {
+  const agenticRes = await fetch(`${base}/api/agentic-thinking-episodes.json`);
+  if (agenticRes.ok) {
+    const data = await agenticRes.json();
+    agenticEpisodes = (data?.episodes ?? []) as AgenticEpisode[];
+  }
+} catch {
+  // swallow; page should still render if upstream fetch fails
+  agenticEpisodes = [];
+}
+
 // Get all podcast episodes
 const allPosts = await getCollection('blog');
 const podcastPosts = allPosts
@@ -189,6 +209,38 @@ const podcastPosts = allPosts
         loading="lazy"
       />
     </a>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-2">Agentic Thinking Episodes</h2>
+    <p class="text-neutral-600 mb-6">
+      Latest episodes pulled directly from <a class="text-blue-600 hover:underline" href="https://agenticthinking.show/episodes/" target="_blank" rel="noopener noreferrer">agenticthinking.show</a>.
+    </p>
+
+    {agenticEpisodes.length > 0 ? (
+      <div class="space-y-4">
+        {agenticEpisodes.map(ep => (
+          <a href={ep.url} class="block group" target="_blank" rel="noopener noreferrer">
+            <div class="flex items-baseline gap-3 py-2 border-b border-neutral-200 group-hover:border-neutral-400 transition-colors">
+              <span class="text-sm font-medium text-neutral-400 whitespace-nowrap">
+                Ep. {ep.episodeNumber}
+              </span>
+              <span class="text-neutral-900 group-hover:text-blue-600 transition-colors font-medium">
+                {ep.title}
+              </span>
+              <span class="text-sm text-neutral-400 whitespace-nowrap ml-auto">
+                {ep.meta}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-neutral-500">
+        Episodes are temporarily unavailable. You can still browse them on{' '}
+        <a class="text-blue-600 hover:underline" href="https://agenticthinking.show/episodes/" target="_blank" rel="noopener noreferrer">agenticthinking.show</a>.
+      </p>
+    )}
   </section>
 
   <section class="mb-12">
