@@ -20,32 +20,71 @@ const podcastPosts = allPosts
 ---
 
 <BaseLayout
-  title="Power BI Podcast | Explicit Measures Podcast (PowerBI.tips)"
-  description="Listen to the Explicit Measures Podcast: a Power BI and Microsoft Fabric podcast hosted by Mike Carlo and Tommy Puglia. Episodes, show notes, and links."
+  title="Podcasts | Explicit Measures + Agentic Thinking (PowerBI.tips)"
+  description="PowerBI.tips podcasts: Explicit Measures (Power BI + Microsoft Fabric) and Agentic Thinking (AI agents in production). Episodes, show notes, and where to listen."
 >
   <section class="mb-12">
-    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Power BI Podcast</h1>
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Podcasts</h1>
     <p class="mt-3 max-w-3xl text-lg text-neutral-600">
-      The Explicit Measures Podcast is the Power BI and Microsoft Fabric podcast from PowerBI.tips.
-      With <strong>500+ episodes</strong>, we cover what matters for builders, modelers, and analytics teams.
+      PowerBI.tips hosts two shows: <strong>Explicit Measures</strong> (Power BI + Microsoft Fabric) and
+      <strong>Agentic Thinking</strong> (agent systems and the infrastructure required to run LLMs in production).
     </p>
 
-    <img
-      src={`${base}/images/podcast/podcast-hero.jpg`}
-      alt="Explicit Measures Podcast"
-      class="rounded-2xl w-full max-w-4xl mt-6"
-      loading="lazy"
-    />
+    <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl">
+      <!-- Explicit Measures -->
+      <div class="rounded-2xl border border-neutral-200 bg-white p-6">
+        <h2 class="text-2xl font-semibold text-neutral-900">Explicit Measures Podcast</h2>
+        <p class="mt-2 text-neutral-600">
+          The Explicit Measures Podcast is the Power BI and Microsoft Fabric podcast from PowerBI.tips.
+          With <strong>500+ episodes</strong>, we cover what matters for builders, modelers, and analytics teams.
+        </p>
 
-    <p class="mt-4 max-w-3xl text-lg text-neutral-600">
-      The <a href="https://anchor.fm/explicitmeasures" class="text-blue-600 hover:underline">Explicit Measures Podcast</a> is a Power BI centric show with <a href="https://www.linkedin.com/in/michaelcarlo/" class="text-blue-600 hover:underline">Mike Carlo</a> and <a href="https://www.linkedin.com/in/tommypuglia/" class="text-blue-600 hover:underline">Tommy Puglia</a>.
-    </p>
+        <img
+          src={`${base}/images/podcast/explicit-measures-card.svg`}
+          alt="Explicit Measures Podcast artwork"
+          class="rounded-xl w-full mt-5"
+          loading="lazy"
+        />
+
+        <p class="mt-4 text-neutral-600">
+          Hosted by <a href="https://www.linkedin.com/in/michaelcarlo/" class="text-blue-600 hover:underline">Mike Carlo</a> and
+          <a href="https://www.linkedin.com/in/tommypuglia/" class="text-blue-600 hover:underline">Tommy Puglia</a>.
+        </p>
+      </div>
+
+      <!-- Agentic Thinking -->
+      <div class="rounded-2xl border border-neutral-200 bg-white p-6">
+        <h2 class="text-2xl font-semibold text-neutral-900">Agentic Thinking</h2>
+        <p class="mt-2 text-neutral-600">
+          CLI-native conversations on agent systems — orchestration, memory, tool use, evaluation, and the
+          unglamorous infrastructure that makes autonomous systems reliable.
+        </p>
+
+        <img
+          src={`${base}/images/podcast/agentic-thinking-card.svg`}
+          alt="Agentic Thinking podcast artwork"
+          class="rounded-xl w-full mt-5"
+          loading="lazy"
+        />
+
+        <p class="mt-4 text-neutral-600">
+          Hosted by <a href="https://www.linkedin.com/in/michaelcarlo/" class="text-blue-600 hover:underline">Mike Carlo</a> and
+          <a href="https://www.linkedin.com/in/mthierba/" class="text-blue-600 hover:underline">Mathias Thierbach</a>.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a class="rounded-full bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700" href="https://www.youtube.com/@PowerBITips" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href="https://agenticthinking.show/" target="_blank" rel="noopener noreferrer">Website</a>
+          <span class="rounded-full bg-neutral-50 px-4 py-2 text-sm font-semibold text-neutral-500 border border-neutral-200">More platforms coming soon</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Where to listen</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — Where to listen</h2>
     <p class="text-neutral-600 mb-4">
-      The Podcast airs live every Tuesday and Thursday at 7:30 AM CST (-6 UTC) on YouTube.
+      The show airs live every Tuesday and Thursday at 7:30 AM CST (-6 UTC) on YouTube.
       Episodes are also published to major podcast platforms the same day.
     </p>
 
@@ -65,7 +104,7 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Listen on Apple Podcasts</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — Listen on Apple Podcasts</h2>
     <a href="https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083?itsct=podcast_box_badge&itscg=30200" class="inline-block">
       <img 
         src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83" 
@@ -77,7 +116,7 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Listen on Spotify</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — Listen on Spotify</h2>
     <iframe 
       src="https://open.spotify.com/embed/show/230fp78XmHHRXTiYICRLVv?utm_source=generator" 
       width="100%" 
@@ -91,7 +130,7 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Join Us Live</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — Join Us Live</h2>
     <p class="text-neutral-600 mb-6">
       If just listening isn't enough, you can join us live on YouTube where every episode is streamed Live.
     </p>
@@ -112,14 +151,14 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">About the Podcast</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — About the show</h2>
     <p class="text-neutral-600 mb-4">
       We just love talking about Power BI. Many of our conversations would be common around your water cooler at work. So many available resources in the community focus on the "how" in Power BI — for example, how to do Drill Through, or how to use DAX. The Explicit Measures Podcast is all about the <strong>WHY</strong>.
     </p>
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Addressing the Why</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Explicit Measures — Addressing the Why</h2>
     <ul class="list-disc list-inside text-neutral-600 space-y-2">
       <li>Why use a particular feature</li>
       <li>Does it make sense for my users?</li>
@@ -132,7 +171,10 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-4">Mail Bag</h2>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-2">Explicit Measures — Mail Bag</h2>
+    <p class="text-neutral-600 mb-6 max-w-3xl">
+      Have an idea, question, or topic suggestion? Submit it here — <strong>this form is only for the Explicit Measures Podcast</strong>.
+    </p>
 
     <a
       href="https://forms.office.com/r/FhmKGs9WmT"
@@ -142,7 +184,7 @@ const podcastPosts = allPosts
     >
       <img
         src={`${base}/images/podcast/mailbag.jpg`}
-        alt="Mail Bag - click to submit a question"
+        alt="Explicit Measures Mail Bag - click to submit a question"
         class="rounded-xl max-w-sm w-full"
         loading="lazy"
       />
@@ -150,8 +192,8 @@ const podcastPosts = allPosts
   </section>
 
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold text-neutral-900 mb-2">Episodes</h2>
-    <p class="text-neutral-600 mb-6">Browse the full catalog ({podcastPosts.length}+ episodes).</p>
+    <h2 class="text-2xl font-semibold text-neutral-900 mb-2">Explicit Measures Episodes</h2>
+    <p class="text-neutral-600 mb-6">Browse the full Explicit Measures catalog ({podcastPosts.length}+ episodes).</p>
 
     {podcastPosts.length > 0 ? (
       <div class="space-y-4">
