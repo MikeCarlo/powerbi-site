@@ -13,6 +13,18 @@ const bundlePath = `${base}/pagefind/`;
 
   <div id="search" class="mt-8"></div>
 
+  <div class="mt-4">
+    <button
+      id="search-run"
+      type="button"
+      class="rounded-md bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+      disabled
+    >
+      Search
+    </button>
+    <span class="ml-3 text-sm text-neutral-500">Tip: share this page after pressing Search to keep the query in the URL.</span>
+  </div>
+
   <link rel="stylesheet" href={pagefindCss} />
   
   <script define:vars={{ pagefindJs, bundlePath }}>
@@ -26,6 +38,58 @@ const bundlePath = `${base}/pagefind/`;
             showSubResults: true,
             bundlePath: bundlePath
           });
+
+          // Support deep-links like /search?val=Jevons%20paradox (or ?q=...)
+          const params = new URLSearchParams(window.location.search);
+          const initial = (params.get('val') ?? params.get('q') ?? '').trim();
+
+          const start = Date.now();
+          const tryWire = () => {
+            const input = document.querySelector('.pagefind-ui__search-input');
+            const runBtn = document.querySelector('#search-run');
+
+            if (input && runBtn) {
+              // Prefill from URL but do NOT change the URL until user clicks Search.
+              if (initial) {
+                input.value = initial;
+                input.dispatchEvent(new Event('input', { bubbles: true }));
+              }
+
+              const runSearch = () => {
+                // Kick PagefindUI's search behavior
+                input.dispatchEvent(new Event('input', { bubbles: true }));
+                input.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', bubbles: true }));
+
+                // Update URL only on explicit Search click
+                const q = (input.value || '').trim();
+                const url = new URL(window.location.href);
+                if (q) {
+                  url.searchParams.set('val', q);
+                } else {
+                  url.searchParams.delete('val');
+                }
+                // Keep things canonical: we only use `val`
+                url.searchParams.delete('q');
+                window.history.replaceState({}, '', url);
+              };
+
+              runBtn.disabled = false;
+              runBtn.addEventListener('click', runSearch);
+
+              // Optional: hitting Enter in the input should behave like pressing Search
+              input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  runSearch();
+                }
+              });
+
+              return;
+            }
+
+            if (Date.now() - start < 2000) setTimeout(tryWire, 50);
+          };
+          tryWire();
         }
       };
       document.body.appendChild(script);
