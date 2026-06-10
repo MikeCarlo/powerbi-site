@@ -5,6 +5,7 @@
 
 import { writeFileSync } from 'fs';
 import { join } from 'path';
+import { fileURLToPath } from 'url';
 
 function generateUrlSet(urls) {
   const urlEntries = urls
@@ -90,7 +91,7 @@ export default function organizedSitemap() {
           }
         }
 
-        const outDir = dir.pathname;
+        const outDir = fileURLToPath(dir);
         const sitemapsGenerated = [];
 
         // Generate individual sitemaps
