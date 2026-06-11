@@ -34,6 +34,7 @@ FILLER_PATTERNS = [
 ]
 
 TAG_RE = re.compile(r"<[^>]+>")
+BRACKETED_NON_SPEECH_RE = re.compile(r"\[(?:music|laughter|applause|clears throat)\]", re.IGNORECASE)
 
 @dataclass
 class Cue:
@@ -68,18 +69,23 @@ def clean_text(s: str) -> str:
     s = html.unescape(s)
     # Remove VTT/HTML-like tags
     s = TAG_RE.sub('', s)
-    # Remove caption speaker markers like >> at start/mid-sentence
-    s = re.sub(r'(^|\s)>>\s*', ' ', s)
+    # Remove bracketed non-speech cues
+    s = BRACKETED_NON_SPEECH_RE.sub(' ', s)
+    # Remove caption speaker markers like >> anywhere in the sentence
+    s = re.sub(r'>>\s*', ' ', s)
+
     # Remove embedded timestamps like 00:00:12.000 inside text
     s = re.sub(r"\b\d{1,2}:\d{2}:\d{2}(?:\.\d+)?\b", "", s)
     s = re.sub(r"\b\d{1,2}:\d{2}(?:\.\d+)?\b", "", s)
     # Profanity policy
     s = re.sub(r"bullshit", "BS", s, flags=re.IGNORECASE)
+
     # Remove fillers (ONLY the approved list)
     for pat in FILLER_PATTERNS:
         s = re.sub(pat, "", s, flags=re.IGNORECASE)
     # Normalize whitespace only
     s = re.sub(r"\s+", " ", s).strip()
+
     # Clean stray punctuation spacing
     s = re.sub(r"\s+([,.!?;:])", r"\1", s)
     s = re.sub(r"([,.!?;:])(?=\w)", r"\1 ", s)
