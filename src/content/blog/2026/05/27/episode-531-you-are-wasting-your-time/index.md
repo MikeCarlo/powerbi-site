@@ -1,6 +1,6 @@
 ---
 title: "You Are Wasting Your Time! – Ep.531"
-date: "2026-06-10"
+date: "2026-05-27"
 authors:
   - "Mike Carlo"
   - "Tommy Puglia"
