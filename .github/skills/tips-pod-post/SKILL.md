@@ -28,6 +28,14 @@ click-to-seek.
 2. **Transcript links must use the episode's own video ID** — the same ID as the
    embed. If they disagree, the component refuses to bind the transcript (seeking
    would jump to the wrong video), and the feature is silently off.
+
+   > **If you hit a mismatch, do not just rewrite the ID.** Read the transcript
+   > first. A mismatch almost always means the transcript was downloaded from the
+   > wrong video, so the *text* belongs to a different episode — swapping the ID
+   > would leave a foreign transcript attached to this post, now pointing at
+   > timestamps in an unrelated video. Re-run the pipeline against the correct
+   > video instead. (Ep. 422 is a live example: its post carries Ep. 426's
+   > transcript.)
 3. **One entry per paragraph.** Every entry starts at the beginning of its own
    line with a blank line before it. Entries on consecutive lines merge into a
    single paragraph in markdown, putting several timestamps on one clickable line.

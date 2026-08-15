@@ -84,7 +84,12 @@ def check(path: str) -> tuple[list[str], list[str]]:
         errors.append(
             f'transcript links point at {", ".join(wrong)} but the episode embed is '
             f'{episode_id}. Click-to-seek is disabled on mismatched posts (it would '
-            f'jump to the wrong video). Fix whichever ID is wrong.'
+            f'jump to the wrong video).\n'
+            f'       Do NOT just swap the ID — read the transcript first. A mismatch '
+            f'usually means the transcript was downloaded from the wrong video, so the '
+            f'text belongs to another episode and rewriting the ID would silently '
+            f'attach a foreign transcript to this post. If the text is off-topic, '
+            f're-run the pipeline against the correct video instead.'
         )
 
     # --- 3. The embed has to come before the transcript, or a short embedded
