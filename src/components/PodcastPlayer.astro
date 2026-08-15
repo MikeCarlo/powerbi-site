@@ -1,0 +1,616 @@
+---
+/**
+ * PodcastPlayer.astro
+ *
+ * Progressive enhancement for Explicit Measures podcast posts.
+ *
+ * Every podcast post already ships two conventions from the `tips-pod-post` skill:
+ *   1. A YouTube embed:  <iframe src="https://www.youtube.com/embed/VIDEO_ID" ...>
+ *   2. A transcript of:  <a href="https://www.youtube.com/watch?v=VIDEO_ID&t=28s">0:28</a> spoken text
+ *
+ * This component upgrades that existing markup in place — no content rewrites required:
+ *   - The embed is re-created through the YouTube IFrame API so it can be controlled.
+ *   - Clicking any transcript line seeks the embedded player instead of leaving for YouTube.
+ *   - The line matching the playhead is highlighted as the episode plays.
+ *   - Once you scroll past the video it detaches into a sticky mini-player, so the
+ *     transcript stays clickable while the video stays visible.
+ *   - `#M:SS` deep links (from the existing copy-link buttons) seek on page load.
+ *
+ * The transcript stays in normal document flow, so all of its text remains indexable.
+ * With JavaScript disabled every link still opens YouTube at the right timestamp,
+ * exactly as it does today. Modifier-clicks and middle-clicks keep that behavior too.
+ */
+---
+
+{/*
+  `is:inline` (not `is:global`) on purpose: Astro hoists bundled component styles
+  into every page that imports the layout, even where the component never renders.
+  Inlining keeps this CSS on podcast pages only.
+*/}
+<style is:inline>
+  /* ---------- Transcript lines ---------- */
+
+  .prose p.pbi-pod-line {
+    scroll-margin-top: 6.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    border-left: 3px solid transparent;
+    border-radius: 0.375rem;
+    transition: background-color 120ms ease, border-color 120ms ease;
+  }
+
+  .prose p.pbi-pod-line:hover {
+    background-color: #f8fafc; /* slate-50 */
+  }
+
+  .prose p.pbi-pod-line.is-active {
+    background-color: #eff6ff; /* blue-50 */
+    border-left-color: #2f96f3;
+  }
+
+  /* The timestamp itself reads as a control once the player can be driven. */
+  .pbi-pod-enhanced .prose p.pbi-pod-line > a.pbi-pod-seek {
+    display: inline-block;
+    min-width: 3.25rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .pbi-pod-enhanced .prose p.pbi-pod-line > a.pbi-pod-seek:hover {
+    text-decoration: underline;
+  }
+
+  /* ---------- Transcript section hint ---------- */
+
+  .pbi-pod-hint {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: rgb(107 114 128); /* neutral-500 */
+  }
+
+  .pbi-pod-hint svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+
+  .pbi-pod-follow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    background: #fff;
+    font-size: 0.8125rem;
+    color: rgb(107 114 128);
+    cursor: pointer;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+  }
+
+  .pbi-pod-follow:hover {
+    border-color: #bfdbfe; /* blue-200 */
+    background: #eff6ff; /* blue-50 */
+    color: #1d4ed8; /* blue-700 */
+  }
+
+  .pbi-pod-follow[aria-pressed='true'] {
+    border-color: #2f96f3;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 600;
+  }
+
+  .pbi-pod-follow-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: #cbd5e1; /* slate-300 */
+  }
+
+  .pbi-pod-follow[aria-pressed='true'] .pbi-pod-follow-dot {
+    background: #2f96f3;
+  }
+
+  /* ---------- Sticky mini player ---------- */
+
+  /* Wrapper sits where the iframe originally was and holds its height when pinned. */
+  .pbi-pod-stage {
+    position: relative;
+  }
+
+  .pbi-pod-stage.is-pinned .pbi-pod-frame {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 60;
+    width: min(20rem, calc(100vw - 2.5rem));
+    margin: 0;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgb(15 23 42 / 0.28);
+    background: #000;
+  }
+
+  /* The embeds carry height="415", which beats `aspect-ratio` (that only applies
+     when a dimension is auto). Inline embeds keep that fixed height site-wide;
+     the mini-player releases it so the small frame stays 16:9. */
+  .prose .pbi-pod-stage.is-pinned .pbi-pod-frame iframe {
+    margin: 0;
+    display: block;
+    border-radius: 0;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Placeholder holds the article open when the frame goes fixed. Its height is
+     measured from the real frame at pin time, so pinning shifts nothing. */
+  .pbi-pod-placeholder {
+    display: none;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    border: 1px dashed #e5e7eb;
+    border-radius: 0.5rem;
+    background: #f8fafc;
+  }
+
+  .pbi-pod-stage.is-pinned .pbi-pod-placeholder {
+    display: block;
+  }
+
+  /* Bar only appears while pinned — gives back "unpin" and the play state. */
+  .pbi-pod-bar {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.5rem;
+    background: #0f172a; /* slate-900 */
+    color: #e2e8f0; /* slate-200 */
+    font-size: 0.75rem;
+  }
+
+  .pbi-pod-stage.is-pinned .pbi-pod-bar {
+    display: flex;
+  }
+
+  .pbi-pod-bar-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .pbi-pod-unpin {
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: 0.15rem 0.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background: transparent;
+    color: #e2e8f0;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+
+  .pbi-pod-unpin:hover {
+    background: rgb(255 255 255 / 0.12);
+  }
+
+  @media (max-width: 640px) {
+    .pbi-pod-stage.is-pinned .pbi-pod-frame {
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .prose p.pbi-pod-line {
+      transition: none;
+    }
+  }
+
+  /* Printing an episode should never carry the floating player. */
+  @media print {
+    .pbi-pod-stage.is-pinned .pbi-pod-frame {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+    }
+    .pbi-pod-bar,
+    .pbi-pod-placeholder,
+    .pbi-pod-hint {
+      display: none !important;
+    }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    'use strict';
+
+    var YT_API = 'https://www.youtube.com/iframe_api';
+    var POLL_MS = 400;
+
+    function parseSeconds(href) {
+      var m = /[?&]t=(\d+)s?/.exec(href || '');
+      return m ? parseInt(m[1], 10) : null;
+    }
+
+    function videoIdFromEmbed(src) {
+      var m = /youtube(?:-nocookie)?\.com\/embed\/([A-Za-z0-9_-]{6,})/.exec(src || '');
+      return m ? m[1] : null;
+    }
+
+    function fmtClock(s) {
+      s = Math.max(0, Math.floor(s || 0));
+      var h = Math.floor(s / 3600);
+      var m = Math.floor((s % 3600) / 60);
+      var ss = s % 60;
+      var mm = h ? String(m).padStart(2, '0') : String(m);
+      return (h ? h + ':' : '') + mm + ':' + String(ss).padStart(2, '0');
+    }
+
+    function loadYouTubeApi(cb) {
+      if (window.YT && window.YT.Player) {
+        cb();
+        return;
+      }
+      // Chain onto any existing handler so multiple consumers can coexist.
+      var prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function () {
+        if (typeof prev === 'function') {
+          try {
+            prev();
+          } catch (e) {
+            /* ignore a failing third-party handler */
+          }
+        }
+        cb();
+      };
+      if (!document.querySelector('script[data-pbi-pod-api]')) {
+        var tag = document.createElement('script');
+        tag.src = YT_API;
+        tag.setAttribute('data-pbi-pod-api', '1');
+        document.head.appendChild(tag);
+      }
+    }
+
+    function init() {
+      var root = document.querySelector('[data-anchor-links]');
+      if (!root) return;
+
+      // Transcript lines: the timestamp links the pod-post skill emits.
+      var links = Array.prototype.slice.call(
+        root.querySelectorAll('a[href*="youtube.com/watch"][href*="t="]')
+      );
+      if (!links.length) return;
+
+      // The episode embed — first YouTube iframe in the article.
+      var iframe = root.querySelector('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]');
+      if (!iframe) return;
+
+      var videoId = videoIdFromEmbed(iframe.getAttribute('src'));
+      if (!videoId) return;
+
+      // Only enhance lines that point at THIS episode, so an embedded short
+      // elsewhere in the post can never hijack the main player.
+      var entries = [];
+      links.forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('v=' + videoId) === -1) return;
+        var t = parseSeconds(href);
+        if (t === null) return;
+        var p = a.closest('p');
+        if (!p) return;
+        a.classList.add('pbi-pod-seek');
+        p.classList.add('pbi-pod-line');
+        entries.push({ t: t, a: a, p: p });
+      });
+      if (!entries.length) return;
+
+      entries.sort(function (x, y) {
+        return x.t - y.t;
+      });
+
+      document.documentElement.classList.add('pbi-pod-enhanced');
+
+      /* ---------- Build the sticky stage around the existing iframe ---------- */
+
+      var stage = document.createElement('div');
+      stage.className = 'pbi-pod-stage';
+
+      var placeholder = document.createElement('div');
+      placeholder.className = 'pbi-pod-placeholder';
+
+      var frame = document.createElement('div');
+      frame.className = 'pbi-pod-frame';
+
+      var bar = document.createElement('div');
+      bar.className = 'pbi-pod-bar';
+      var barTitle = document.createElement('span');
+      barTitle.className = 'pbi-pod-bar-title';
+      barTitle.textContent = '0:00';
+      var unpin = document.createElement('button');
+      unpin.type = 'button';
+      unpin.className = 'pbi-pod-unpin';
+      unpin.textContent = 'Back to video ↑';
+      bar.appendChild(barTitle);
+      bar.appendChild(unpin);
+
+      iframe.parentNode.insertBefore(stage, iframe);
+      stage.appendChild(placeholder);
+      stage.appendChild(frame);
+      frame.appendChild(bar);
+      frame.appendChild(iframe);
+
+      // The IFrame API needs an id and enablejsapi to take control of the embed.
+      if (!iframe.id) iframe.id = 'pbi-pod-player-' + videoId;
+      var src = iframe.getAttribute('src');
+      if (src.indexOf('enablejsapi=') === -1) {
+        src += (src.indexOf('?') === -1 ? '?' : '&') + 'enablejsapi=1&origin=' + encodeURIComponent(window.location.origin);
+        iframe.setAttribute('src', src);
+      }
+
+      var player = null;
+      var ready = false;
+      var follow = false;
+      var pinned = false;
+      var timer = null;
+      var activeIdx = -1;
+      var suppressFollowOff = false;
+
+      /* ---------- Pinning ---------- */
+
+      function setPinned(next) {
+        if (pinned === next) return;
+        // Freeze the placeholder at the frame's current height before detaching,
+        // so the surrounding article doesn't jump.
+        if (next) {
+          var h = frame.getBoundingClientRect().height;
+          if (h > 0) placeholder.style.height = h + 'px';
+        }
+        pinned = next;
+        stage.classList.toggle('is-pinned', pinned);
+      }
+
+      // Pin once the video scrolls out of view, but only while the reader is
+      // actually somewhere in the transcript.
+      var videoOffScreen = false;
+      var inTranscript = false;
+
+      function refreshPinned() {
+        setPinned(videoOffScreen && inTranscript);
+      }
+
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(
+          function (recs) {
+            videoOffScreen = !recs[0].isIntersecting;
+            refreshPinned();
+          },
+          { threshold: 0 }
+        ).observe(placeholder);
+
+        var firstLine = entries[0].p;
+        var lastLine = entries[entries.length - 1].p;
+        var edges = new IntersectionObserver(
+          function () {
+            var top = firstLine.getBoundingClientRect().top;
+            var bottom = lastLine.getBoundingClientRect().bottom;
+            inTranscript = top < window.innerHeight && bottom > 0;
+            refreshPinned();
+          },
+          { threshold: 0 }
+        );
+        edges.observe(firstLine);
+        edges.observe(lastLine);
+
+        // Scrolling between the two sentinels fires no observer callback, so keep
+        // a cheap scroll check in sync as well.
+        window.addEventListener(
+          'scroll',
+          function () {
+            var top = firstLine.getBoundingClientRect().top;
+            var bottom = lastLine.getBoundingClientRect().bottom;
+            inTranscript = top < window.innerHeight && bottom > 0;
+            refreshPinned();
+          },
+          { passive: true }
+        );
+      }
+
+      unpin.addEventListener('click', function () {
+        setPinned(false);
+        videoOffScreen = false;
+        placeholder.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      /* ---------- Follow mode ---------- */
+
+      var followBtn = null;
+
+      function setFollow(next) {
+        follow = next;
+        if (followBtn) followBtn.setAttribute('aria-pressed', follow ? 'true' : 'false');
+      }
+
+      // Any manual scroll opts the reader back out of auto-scrolling.
+      ['wheel', 'touchmove'].forEach(function (evt) {
+        window.addEventListener(
+          evt,
+          function () {
+            if (follow && !suppressFollowOff) setFollow(false);
+          },
+          { passive: true }
+        );
+      });
+
+      /* ---------- Active line tracking ---------- */
+
+      function highlight(t) {
+        var idx = -1;
+        for (var i = 0; i < entries.length; i++) {
+          if (t >= entries[i].t) idx = i;
+          else break;
+        }
+        if (idx === activeIdx) return;
+        if (activeIdx >= 0) entries[activeIdx].p.classList.remove('is-active');
+        activeIdx = idx;
+        if (activeIdx < 0) return;
+
+        var el = entries[activeIdx].p;
+        el.classList.add('is-active');
+
+        if (follow) {
+          var r = el.getBoundingClientRect();
+          if (r.top < 80 || r.bottom > window.innerHeight - 80) {
+            suppressFollowOff = true;
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            window.setTimeout(function () {
+              suppressFollowOff = false;
+            }, 700);
+          }
+        }
+      }
+
+      function startPolling() {
+        if (timer) window.clearInterval(timer);
+        timer = window.setInterval(function () {
+          if (!player || !player.getCurrentTime) return;
+          var t = player.getCurrentTime();
+          if (typeof t !== 'number') return;
+          barTitle.textContent = fmtClock(t);
+          highlight(t);
+        }, POLL_MS);
+      }
+
+      function stopPolling() {
+        if (timer) window.clearInterval(timer);
+        timer = null;
+      }
+
+      /* ---------- Seeking ---------- */
+
+      function seek(sec, opts) {
+        if (!ready || !player || !player.seekTo) return false;
+        player.seekTo(sec, true);
+        if (!opts || opts.play !== false) {
+          try {
+            player.playVideo();
+          } catch (e) {
+            /* autoplay can be blocked; the seek still lands */
+          }
+        }
+        barTitle.textContent = fmtClock(sec);
+        highlight(sec);
+        return true;
+      }
+
+      entries.forEach(function (entry) {
+        entry.p.addEventListener('click', function (ev) {
+          // Leave real navigation intact: new tab, middle click, text selection.
+          if (ev.defaultPrevented) return;
+          if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
+
+          var target = ev.target;
+          // A click on some *other* link in the line (rare) should still navigate.
+          var link = target.closest ? target.closest('a') : null;
+          if (link && link !== entry.a) return;
+          // The existing copy-link button has its own job.
+          if (target.closest && target.closest('.anchor-copy-btn')) return;
+          // Don't fight someone selecting transcript text to quote it.
+          var sel = window.getSelection();
+          if (sel && String(sel).length > 0) return;
+
+          if (seek(entry.t)) {
+            ev.preventDefault();
+            setFollow(true);
+          }
+        });
+      });
+
+      /* ---------- Transcript hint + follow toggle ---------- */
+
+      var heading = document.getElementById('episode-transcript');
+      if (heading) {
+        var hint = document.createElement('div');
+        hint.className = 'pbi-pod-hint';
+        hint.innerHTML =
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+          '<polygon points="5 3 19 12 5 21 5 3"></polygon></svg>' +
+          '<span>Click any line to jump the video to that moment.</span>';
+
+        followBtn = document.createElement('button');
+        followBtn.type = 'button';
+        followBtn.className = 'pbi-pod-follow';
+        followBtn.setAttribute('aria-pressed', 'false');
+        followBtn.innerHTML = '<span class="pbi-pod-follow-dot"></span><span>Follow along</span>';
+        followBtn.addEventListener('click', function () {
+          setFollow(!follow);
+          if (follow && activeIdx >= 0) {
+            suppressFollowOff = true;
+            entries[activeIdx].p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            window.setTimeout(function () {
+              suppressFollowOff = false;
+            }, 700);
+          }
+        });
+        hint.appendChild(followBtn);
+        heading.insertAdjacentElement('afterend', hint);
+      }
+
+      /* ---------- Deep links (#M:SS from the copy-link buttons) ---------- */
+
+      function seekFromHash() {
+        var hash = decodeURIComponent((window.location.hash || '').replace(/^#/, ''));
+        if (!/^\d{1,2}:\d{2}(:\d{2})?$/.test(hash)) return;
+        var el = document.getElementById(hash);
+        if (!el) return;
+        var t = parseSeconds(el.getAttribute('href'));
+        if (t === null) return;
+        // Land on the line without autoplaying an episode the reader didn't start.
+        seek(t, { play: false });
+        var p = el.closest('p');
+        if (p) p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      window.addEventListener('hashchange', seekFromHash);
+
+      /* ---------- Player ---------- */
+
+      loadYouTubeApi(function () {
+        player = new window.YT.Player(iframe.id, {
+          events: {
+            onReady: function () {
+              ready = true;
+              seekFromHash();
+            },
+            onStateChange: function (ev) {
+              if (ev.data === window.YT.PlayerState.PLAYING) startPolling();
+              else if (ev.data === window.YT.PlayerState.ENDED) {
+                stopPolling();
+                setFollow(false);
+              } else stopPolling();
+            },
+          },
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>

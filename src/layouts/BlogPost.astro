@@ -1,11 +1,19 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets';
+import PodcastPlayer from '../components/PodcastPlayer.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const { entry, prev, next, morePosts, faqItems = [], howToSteps = [] } = Astro.props;
 const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;
+
+// Episode posts get a seekable transcript: clicking a line drives the embedded
+// player. Only load it where both halves of the feature are actually present.
+const body = entry.body || '';
+const hasSeekableTranscript =
+  /youtube(?:-nocookie)?\.com\/embed\//.test(body) &&
+  /youtube\.com\/watch\?v=[A-Za-z0-9_-]+&t=\d+s/.test(body);
 
 const slug = entry.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
 const articleUrl = `https://powerbi.tips/${slug}/`;
@@ -175,6 +183,8 @@ const allJsonLd = [
     <div class="prose" data-anchor-links>
       <slot />
     </div>
+
+    {hasSeekableTranscript && <PodcastPlayer />}
 
     <script is:inline>
       (function () {
