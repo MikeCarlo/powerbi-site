@@ -516,8 +516,16 @@
         return true;
       }
 
+      // Normally one entry per paragraph, so the whole line is clickable. If a
+      // post ever merges entries into a single paragraph, bind that paragraph's
+      // timestamps individually instead of firing every handler on one click.
+      entries.forEach(function (e) {
+        e.p.__pbiEntries = (e.p.__pbiEntries || 0) + 1;
+      });
+
       entries.forEach(function (entry) {
-        entry.p.addEventListener('click', function (ev) {
+        var hit = entry.p.__pbiEntries > 1 ? entry.a : entry.p;
+        hit.addEventListener('click', function (ev) {
           // Leave real navigation intact: new tab, middle click, text selection.
           if (ev.defaultPrevented) return;
           if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
