@@ -27,7 +27,9 @@ ENTRY_RE = re.compile(
     r'<a\s+href="https?://(?:www\.)?youtube\.com/watch\?v=([A-Za-z0-9_-]+)&(?:amp;)?t=(\d+)s"'
     r'[^>]*>([^<]*)</a>'
 )
-CLOCK_RE = re.compile(r'^\d{1,2}:\d{2}(:\d{2})?$')
+# M:SS / MM:SS (minutes may run past 59 on long episodes) or H:MM:SS.
+# The seconds field — and the minutes field when hours are present — must be < 60.
+CLOCK_RE = re.compile(r'^(?:\d{1,2}:[0-5]\d:[0-5]\d|\d{1,3}:[0-5]\d)$')
 
 # Caption junk that must never survive cleaning.
 ARTIFACTS = [
