@@ -20,7 +20,7 @@ if [ -z "$EPISODE_NUM" ]; then
     exit 1
 fi
 
-echo "Searching for shorts matching '${EPISODE_NUM}:'..."
+echo "Searching for shorts starting with '${EPISODE_NUM}:' or '${EPISODE_NUM} -'..."
 echo ""
 
 # Search for shorts from the channel
@@ -30,7 +30,8 @@ echo ""
 yt-dlp --flat-playlist \
     --print "%(view_count)s|%(id)s|%(title)s" \
     --playlist-end 50 \
-    --match-filter "title~='${EPISODE_NUM}:'" \
+    --extractor-args "youtube:player_client=tv_embedded" \
+    --match-filter "title~='^${EPISODE_NUM}[ ]*[:-]'" \
     "$CHANNEL_URL" 2>/dev/null | \
     sort -t'|' -k1 -nr | \
     head -n "$OUTPUT_COUNT" | \
