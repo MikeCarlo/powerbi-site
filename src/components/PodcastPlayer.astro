@@ -541,7 +541,18 @@
 
       /* ---------- Transcript hint + follow toggle ---------- */
 
-      var heading = document.getElementById('episode-transcript');
+      // Most posts use "## Episode Transcript", but a handful say "Full Episode
+      // Transcript", "Video Transcript" or just "Transcript". Walk back from the
+      // first transcript line to whatever heading actually introduces it.
+      var heading = (function () {
+        var node = entries[0].p;
+        while (node) {
+          if (/^H[1-6]$/.test(node.tagName)) return node;
+          node = node.previousElementSibling;
+        }
+        return null;
+      })();
+
       if (heading) {
         var hint = document.createElement('div');
         hint.className = 'pbi-pod-hint';

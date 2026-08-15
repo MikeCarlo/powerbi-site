@@ -27,6 +27,16 @@ Power BI reports don’t just succeed because the model is clean—they succeed 
 
 If you’ve ever watched someone get lost bouncing between pages (or unknowingly filter themselves into a corner), this one’s for you.
 
+<iframe 
+  width="100%" 
+  height="415" 
+  src="https://www.youtube.com/embed/A1f80J5z_j0" 
+  title="New Buttons in PBI - Ep. 219 - Power BI tips"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
+
 ## News & Announcements
 
 - **[Button navigators in Power BI](https://learn.microsoft.com/power-bi/create-reports/button-navigators?WT.mc_id=DP-MVP-5002621)** — An overview of page and bookmark navigators, plus the design patterns that help you keep navigation consistent across pages without duplicating work.
