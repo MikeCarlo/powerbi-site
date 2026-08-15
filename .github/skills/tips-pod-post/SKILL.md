@@ -34,8 +34,8 @@ click-to-seek.
    > wrong video, so the *text* belongs to a different episode — swapping the ID
    > would leave a foreign transcript attached to this post, now pointing at
    > timestamps in an unrelated video. Re-run the pipeline against the correct
-   > video instead. (Ep. 422 is a live example: its post carries Ep. 426's
-   > transcript.)
+   > video instead. (Ep. 422 was the cautionary example — its post carried
+   > Ep. 426's transcript until it was regenerated against the correct video.)
 3. **One entry per paragraph.** Every entry starts at the beginning of its own
    line with a blank line before it. Entries on consecutive lines merge into a
    single paragraph in markdown, putting several timestamps on one clickable line.
@@ -61,6 +61,12 @@ This checks every requirement above and must pass with no errors. Use `--all` to
 sweep the whole archive.
 
 ## Prerequisites
+
+> **Running this from a cloud container or a scheduled job?** Read
+> [`AUTOMATION.md`](./AUTOMATION.md) first. YouTube blocks datacenter IPs, so
+> the plain `yt-dlp` commands below fail without extra flags; there is no
+> ffmpeg; and two helper scripts (`em-find-new-episodes.py`,
+> `em-prep-episode.py`) already wrap the whole mechanical half of this skill.
 
 This skill extends `pbitips-blog-post`. All base requirements apply:
 - ✅ Min 1 author (usually "Mike Carlo", "Tommy Puglia", or both)
@@ -103,7 +109,22 @@ The post and transcript are processed **in parallel** using sub-agents to avoid 
 
 ### Scripts
 
-Located in `~/projects/powerbi-site/scripts/`:
+Located in `scripts/` at the repo root:
+
+- **`em-find-new-episodes.py`** — Diffs the playlist against existing posts and
+  prints the episodes with no post yet. Start here.
+  ```bash
+  python3 scripts/em-find-new-episodes.py --limit 5
+  ```
+
+- **`em-prep-episode.py`** — Does steps 1–2 below in one shot for a single
+  episode: captions (with the retry behaviour YouTube requires), split, clean,
+  a digest to summarise from, and both images. Prefer this over running the
+  pieces by hand.
+  ```bash
+  python3 scripts/em-prep-episode.py --ep 554 --video-id K6_PwhIoAEU \
+      --slug fabric-as-a-backend-ep-554
+  ```
 
 - **`split-transcript.py`** — Splits VTT into N time-based chunks
   ```bash
@@ -142,7 +163,10 @@ not the post by hand — before build/commit.
 cd ~/projects/powerbi-site
 
 mkdir -p /tmp/epXXX
-yt-dlp --write-auto-sub --sub-lang en --skip-download -o "/tmp/epXXX/transcript" "VIDEO_URL"
+# --extractor-args is required from any datacenter IP; without it yt-dlp gets
+# "Sign in to confirm you're not a bot". Expect to retry. See AUTOMATION.md.
+yt-dlp --extractor-args "youtube:player_client=tv_embedded" \
+    --write-auto-sub --sub-lang en --skip-download -o "/tmp/epXXX/transcript" "VIDEO_URL"
 python3 scripts/split-transcript.py /tmp/epXXX/transcript.en.vtt /tmp/epXXX/chunks 6
 python3 scripts/clean-transcript-chunks.py /tmp/epXXX/chunks --video-id VIDEO_ID
 ```
@@ -229,8 +253,8 @@ Video ID: VIDEO_ID
 Work in ~/projects/powerbi-site. Do these steps:
 1. git pull
 2. Get the YouTube video description for news links
-3. Find shorts using: ./scripts/find-shorts.sh XXX
-4. Create featured image from YouTube thumbnail — scale to fit 800x500 preserving aspect ratio with white padding (no distortion). Also generate 300x169 thumbnail with same approach:
+3. Find shorts using: bash .github/skills/tips-pod-post/scripts/find-shorts.sh XXX
+4. Create featured image from YouTube thumbnail — scale to fit 800x500 preserving aspect ratio with white padding (no distortion). Also generate 300x169 thumbnail with same approach. (`em-prep-episode.py` already does this with Pillow; the ffmpeg commands below need ffmpeg installed, which cloud containers usually lack.):
    ```bash
    curl -o source.jpg "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
    ffmpeg -i source.jpg -vf "scale=800:500:force_original_aspect_ratio=decrease,pad=800:500:(ow-iw)/2:(oh-ih)/2:white" -update 1 -y assets/featured.png
@@ -459,9 +483,12 @@ For each URL in the video description:
 ### Using the Script
 
 ```bash
-cd ~/projects/powerbi-site
-./scripts/find-shorts.sh 501
+bash .github/skills/tips-pod-post/scripts/find-shorts.sh 501
 ```
+
+Shorts are titled `501 - Some title` (older ones use `501:`); the script
+matches both. They usually appear a few days after the episode, so a post
+written the same week may have none — that is fine, they are optional.
 
 ### Short Embed Format
 
@@ -511,6 +538,9 @@ Focus on:
 - [ ] Blank line between every transcript entry (one entry per paragraph)
 - [ ] Timestamp labels are bare `M:SS` / `H:MM:SS` and match their `t=` seconds
 - [ ] `python3 scripts/verify-podcast-post.py <post>` reports 0 errors
+- [ ] Built with `rm -f node_modules/.astro/data-store.json` first, and the new
+      page confirmed present in `dist/` — a cached build reports success while
+      silently omitting the post
 - [ ] Shorts embedded contextually in Main Discussion (not a separate section, never above the episode embed)
 - [ ] News links fetched and summarized (2-3 sentences each)
 - [ ] Main discussion summarized with Mike & Tommy's key points
