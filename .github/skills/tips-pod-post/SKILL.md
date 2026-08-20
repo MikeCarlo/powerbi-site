@@ -1,13 +1,72 @@
 ---
 name: tips-pod-post
-description: Create a blog post from a YouTube podcast episode for PowerBI.tips. Use when given a YouTube URL for an Explicit Measures podcast episode. Downloads transcript, finds top shorts, summarizes news links, and formats a complete blog post.
+description: Create a blog post from a YouTube podcast episode for PowerBI.tips. Use when given a YouTube URL for an Explicit Measures podcast episode. Downloads transcript, finds top shorts, summarizes news links, and formats a complete blog post with an interactive click-to-seek transcript.
 ---
 
 # PowerBI.tips Podcast Blog Post
 
 Create a full blog post from an Explicit Measures podcast episode on YouTube.
 
+## The transcript is interactive — read this first
+
+Episode posts are enhanced by `src/components/PodcastPlayer.astro`. On the
+published page, **clicking a transcript line seeks the embedded YouTube player**
+instead of navigating away to YouTube. The active line highlights as the episode
+plays, and the video detaches into a sticky mini-player once the reader scrolls
+into the transcript.
+
+Nothing extra goes in the post to enable this. The component reads the markup
+this skill already produces — which means **the format below is load-bearing, not
+cosmetic**. A post that drifts from it still renders, but silently loses
+click-to-seek.
+
+### Hard requirements
+
+1. **The episode `<iframe>` must be the first YouTube embed in the post.** Shorts
+   are embedded later, inside Main Discussion. The component treats the first
+   embed as the episode player.
+2. **Transcript links must use the episode's own video ID** — the same ID as the
+   embed. If they disagree, the component refuses to bind the transcript (seeking
+   would jump to the wrong video), and the feature is silently off.
+
+   > **If you hit a mismatch, do not just rewrite the ID.** Read the transcript
+   > first. A mismatch almost always means the transcript was downloaded from the
+   > wrong video, so the *text* belongs to a different episode — swapping the ID
+   > would leave a foreign transcript attached to this post, now pointing at
+   > timestamps in an unrelated video. Re-run the pipeline against the correct
+   > video instead. (Ep. 422 was the cautionary example — its post carried
+   > Ep. 426's transcript until it was regenerated against the correct video.)
+3. **One entry per paragraph.** Every entry starts at the beginning of its own
+   line with a blank line before it. Entries on consecutive lines merge into a
+   single paragraph in markdown, putting several timestamps on one clickable line.
+4. **The timestamp label is a bare clock** — `M:SS` or `H:MM:SS`, nothing else.
+   The copy-link button and `#M:SS` deep links parse this text.
+5. **`t=` is whole seconds** (`&t=1345s`) and must match the label it displays.
+   The player seeks using `t=`; a mismatch sends the reader to the wrong moment.
+6. **Use the plain embed URL.** Do not add `enablejsapi`, wrapper divs, or your
+   own player script — the component handles all of that at runtime.
+7. **Don't wrap the transcript in `<details>`.** It hides the transcript from
+   readers by default and buries the click-to-jump hint.
+
+Everything still degrades gracefully: with JavaScript off, each timestamp remains
+a plain YouTube link, and modifier-clicks always open YouTube.
+
+### Verify before committing
+
+```bash
+python3 scripts/verify-podcast-post.py src/content/blog/YYYY/MM/DD/slug/index.md
+```
+
+This checks every requirement above and must pass with no errors. Use `--all` to
+sweep the whole archive.
+
 ## Prerequisites
+
+> **Running this from a cloud container or a scheduled job?** Read
+> [`AUTOMATION.md`](./AUTOMATION.md) first. YouTube blocks datacenter IPs, so
+> the plain `yt-dlp` commands below fail without extra flags; there is no
+> ffmpeg; and two helper scripts (`em-find-new-episodes.py`,
+> `em-prep-episode.py`) already wrap the whole mechanical half of this skill.
 
 This skill extends `pbitips-blog-post`. All base requirements apply:
 - ✅ Min 1 author (usually "Mike Carlo", "Tommy Puglia", or both)
@@ -41,7 +100,8 @@ The post and transcript are processed **in parallel** using sub-agents to avoid 
 │ 4. Wait for all   │
 │ 5. Spawn next 3:  │ ← chunks 3, 4, 5 (if slots freed)
 │ 6. Merge          │ ← merge-transcript.py
-│ 7. Commit & push  │
+│ 7. Verify         │ ← verify-podcast-post.py (must be clean)
+│ 8. Commit & push  │
 └─────────────────┘
 ```
 
@@ -49,7 +109,22 @@ The post and transcript are processed **in parallel** using sub-agents to avoid 
 
 ### Scripts
 
-Located in `~/projects/powerbi-site/scripts/`:
+Located in `scripts/` at the repo root:
+
+- **`em-find-new-episodes.py`** — Diffs the playlist against existing posts and
+  prints the episodes with no post yet. Start here.
+  ```bash
+  python3 scripts/em-find-new-episodes.py --limit 5
+  ```
+
+- **`em-prep-episode.py`** — Does steps 1–2 below in one shot for a single
+  episode: captions (with the retry behaviour YouTube requires), split, clean,
+  a digest to summarise from, and both images. Prefer this over running the
+  pieces by hand.
+  ```bash
+  python3 scripts/em-prep-episode.py --ep 554 --video-id K6_PwhIoAEU \
+      --slug fabric-as-a-backend-ep-554
+  ```
 
 - **`split-transcript.py`** — Splits VTT into N time-based chunks
   ```bash
@@ -79,13 +154,19 @@ From the YouTube video:
 
 Preferred (deterministic) transcript cleaning: run the cleaner script after splitting. If you use this, you can skip transcript-cleaner sub-agents.
 
-Critical transcript guardrail: after cleaning/merge, verify the final post transcript contains none of these artifacts: `>>`, `&gt;&gt;`, `<c>`, `</c>`, embedded cue timestamps, or duplicated rolling caption fragments. If any appear, fix the cleaner output before build/commit.
+Critical transcript guardrail: after cleaning/merge, run `verify-podcast-post.py`
+(see Step 5). It fails on `>>`, `&gt;&gt;`, `<c>`, `</c>`, embedded cue
+timestamps, merged paragraphs, and video-ID mismatches. Fix the cleaner output —
+not the post by hand — before build/commit.
 
 ```bash
 cd ~/projects/powerbi-site
 
 mkdir -p /tmp/epXXX
-yt-dlp --write-auto-sub --sub-lang en --skip-download -o "/tmp/epXXX/transcript" "VIDEO_URL"
+# --extractor-args is required from any datacenter IP; without it yt-dlp gets
+# "Sign in to confirm you're not a bot". Expect to retry. See AUTOMATION.md.
+yt-dlp --extractor-args "youtube:player_client=tv_embedded" \
+    --write-auto-sub --sub-lang en --skip-download -o "/tmp/epXXX/transcript" "VIDEO_URL"
 python3 scripts/split-transcript.py /tmp/epXXX/transcript.en.vtt /tmp/epXXX/chunks 6
 python3 scripts/clean-transcript-chunks.py /tmp/epXXX/chunks --video-id VIDEO_ID
 ```
@@ -117,7 +198,29 @@ cd ~/projects/powerbi-site
 python3 scripts/merge-transcript.py /tmp/epXXX/chunks path/to/post/index.md
 ```
 
-### Step 5: Commit & Push
+`merge-transcript.py` writes one blank line between entries. If you ever edit the
+transcript by hand afterwards, keep those blank lines — see Step 5.
+
+### Step 5: Verify
+
+```bash
+cd ~/projects/powerbi-site
+python3 scripts/verify-podcast-post.py src/content/blog/YYYY/MM/DD/slug/index.md
+```
+
+Must report **0 errors** before committing. It enforces the interactive-transcript
+contract from the top of this skill: embed present and first, transcript links on
+the episode's own video ID, one entry per paragraph, bare `M:SS` labels agreeing
+with `t=`, and no caption artifacts.
+
+If you rebuilt the site and a content edit doesn't show up, clear Astro's content
+cache — it stores rendered markdown and can serve a stale copy:
+
+```bash
+rm -f node_modules/.astro/data-store.json
+```
+
+### Step 6: Commit & Push
 
 ```bash
 cd ~/projects/powerbi-site
@@ -127,7 +230,7 @@ git commit -m "Add podcast post: Ep. XXX"
 git push origin main
 ```
 
-### Step 6: Clean Up
+### Step 7: Clean Up
 
 ```bash
 rm -rf /tmp/epXXX
@@ -140,7 +243,9 @@ rm -rf /tmp/epXXX
 ```
 Write ONLY the blog post (NO transcript) for PowerBI.tips Episode XXX.
 
-Read ~/.openclaw/workspace/skills/podpost/SKILL.md first for the format template.
+Read .github/skills/tips-pod-post/SKILL.md first for the format template, including
+the "The transcript is interactive" section — the embed and transcript markup are
+load-bearing, not cosmetic.
 
 Episode: Ep. XXX: VIDEO_URL (TITLE)
 Video ID: VIDEO_ID
@@ -148,8 +253,8 @@ Video ID: VIDEO_ID
 Work in ~/projects/powerbi-site. Do these steps:
 1. git pull
 2. Get the YouTube video description for news links
-3. Find shorts using: ./scripts/find-shorts.sh XXX
-4. Create featured image from YouTube thumbnail — scale to fit 800x500 preserving aspect ratio with white padding (no distortion). Also generate 300x169 thumbnail with same approach:
+3. Find shorts using: bash .github/skills/tips-pod-post/scripts/find-shorts.sh XXX
+4. Create featured image from YouTube thumbnail — scale to fit 800x500 preserving aspect ratio with white padding (no distortion). Also generate 300x169 thumbnail with same approach. (`em-prep-episode.py` already does this with Pillow; the ffmpeg commands below need ffmpeg installed, which cloud containers usually lack.):
    ```bash
    curl -o source.jpg "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg"
    ffmpeg -i source.jpg -vf "scale=800:500:force_original_aspect_ratio=decrease,pad=800:500:(ow-iw)/2:(oh-ih)/2:white" -update 1 -y assets/featured.png
@@ -177,10 +282,17 @@ Input format:
 - Each input line is: TIMESTAMP|RAW_TEXT
 
 OUTPUT FORMAT (ABSOLUTELY STRICT):
+The published page makes these lines clickable — clicking one seeks the embedded
+player. The format below is what makes that work, so match it exactly.
 - Output must contain ONLY transcript entries.
 - Each entry is one line starting exactly with:
   <a href="https://www.youtube.com/watch?v=VIDEO_ID&t=XXs" target="_blank">M:SS</a> ...
-- Put a blank line between entries.
+- VIDEO_ID must be THIS episode's video — never a short's ID.
+- Put a blank line between entries. Two entries on consecutive lines merge into
+  one paragraph and break click-to-seek for that line.
+- The link text is a bare clock only (M:SS, or H:MM:SS past an hour). No labels,
+  no bold, no surrounding punctuation.
+- The `t=` seconds must equal the displayed clock (t=1345s ⇒ 22:25).
 
 Example:
 <a href="https://www.youtube.com/watch?v=VIDEO_ID&t=23s" target="_blank">0:23</a> Good morning and welcome back to the explicit measures podcast.
@@ -229,7 +341,8 @@ For every episode post, do **two writing passes**:
 ### Deep-link anchors (site feature)
 
 - Keep the standard H2 headings **exactly** as written (`## News & Announcements`, `## Main Discussion`, `## Looking Forward`, `## Episode Transcript`, `## Thank You`) so the page anchors stay consistent (e.g. `#main-discussion`).
-- Transcript timestamps must display as **M:SS** (or **H:MM:SS**) with no extra text; the site adds a copy-link button next to each timestamp and copies `.../#0:23` style links.
+- Transcript timestamps must display as **M:SS** (or **H:MM:SS**) with no extra text. The site adds a copy-link button next to each timestamp that copies a `.../#0:23` style link, and opening that link seeks the embedded player to that moment. Both features parse the label text, so anything other than a bare clock breaks them.
+- The transcript heading itself can be `## Episode Transcript` (standard) — the player finds whichever heading precedes the first entry, but stick to the standard so the `#episode-transcript` anchor stays stable.
 
 ```mdx
 ---
@@ -252,6 +365,8 @@ featuredImage: "./assets/featured.png"
 
 [Two sentence synopsis matching the excerpt — hook the reader]
 
+<!-- The episode embed. MUST be the first YouTube iframe in the post — the
+     transcript player binds to it. Plain embed URL, no enablejsapi. -->
 <iframe 
   width="100%" 
   height="415" 
@@ -336,6 +451,11 @@ The transcript is **verbatim spoken content** — NOT summaries. This serves SEO
 - Speaker changes = new timestamp (no `>>` markers)
 - Remove filler words: uh, um, you know, kind of, sort of, I mean
 - Aim for ~200 entries per hour of content
+- Blank line between every entry — this is what puts each one on its own
+  clickable line
+- The timestamp is also the deep-link anchor: the site gives each entry a
+  copy-link button that yields `.../#22:25`, and opening that link seeks the
+  player straight to that moment
 
 ### What NOT to Do
 
@@ -363,9 +483,12 @@ For each URL in the video description:
 ### Using the Script
 
 ```bash
-cd ~/projects/powerbi-site
-./scripts/find-shorts.sh 501
+bash .github/skills/tips-pod-post/scripts/find-shorts.sh 501
 ```
+
+Shorts are titled `501 - Some title` (older ones use `501:`); the script
+matches both. They usually appear a few days after the episode, so a post
+written the same week may have none — that is fine, they are optional.
 
 ### Short Embed Format
 
@@ -384,6 +507,11 @@ cd ~/projects/powerbi-site
 ### Shorts Integration
 
 **No dedicated "Top Shorts" section.** Embed shorts within the Main Discussion where they make contextual sense.
+
+**Never place a short above the episode embed.** The transcript player binds to
+the first YouTube iframe on the page; a short there would take over as the
+episode player. Shorts anywhere below it are fine — the player only binds
+transcript lines whose video ID matches the episode.
 
 ## Content Guidelines
 
@@ -404,8 +532,16 @@ Focus on:
 ## Checklist
 
 - [ ] Episode number extracted from title
-- [ ] YouTube iframe with correct VIDEO_ID
-- [ ] Shorts embedded contextually in Main Discussion (not a separate section)
+- [ ] YouTube iframe with correct VIDEO_ID, and it is the **first** embed in the post
+- [ ] Plain embed URL — no `enablejsapi`, no custom player wrapper
+- [ ] Transcript links all use the **episode's** VIDEO_ID (not a short's)
+- [ ] Blank line between every transcript entry (one entry per paragraph)
+- [ ] Timestamp labels are bare `M:SS` / `H:MM:SS` and match their `t=` seconds
+- [ ] `python3 scripts/verify-podcast-post.py <post>` reports 0 errors
+- [ ] Built with `rm -f node_modules/.astro/data-store.json` first, and the new
+      page confirmed present in `dist/` — a cached build reports success while
+      silently omitting the post
+- [ ] Shorts embedded contextually in Main Discussion (not a separate section, never above the episode embed)
 - [ ] News links fetched and summarized (2-3 sentences each)
 - [ ] Main discussion summarized with Mike & Tommy's key points
 - [ ] **Verbatim transcript** merged via parallel pipeline
