@@ -1,7 +1,6 @@
 ---
 title: Power BI Direct Query Composite Models = Amazing
-excerpt: Well Microsoft has done it again. They have added a great feature in the
-  Power BI desktop release for December 2020. Direct Query to Power BI data sou...
+excerpt: What is a Power BI composite model, and how does DirectQuery to a semantic model work?
 date: '2020-12-16'
 authors:
 - Mike Carlo
@@ -11,6 +10,8 @@ tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+**TL;DR.** A composite model mixes Import and DirectQuery in one Power BI model. DirectQuery to a Power BI dataset lets you query an enterprise semantic model, then add your own tables. One report can use HR and Engineering models without editing the governed one.
 
 Well Microsoft has done it again. They have added a great feature in the Power BI desktop release for December 2020. Direct Query to Power BI data sources is a thing. As a result, this means we unlock new Architectural patterns.
 
@@ -24,17 +25,29 @@ Read more about Composite [Models on the 2020 Power BI release plan](https://doc
 
 ## What is a Power BI Composite Model?
 
+A composite model is a Power BI data model that can mix sources. Import loads data into the file. DirectQuery leaves data in the source and queries it on demand.
+
 Quick background on Composite Models. A Composite model is a data model. More specifically, a Power BI data model. Typically Power BI models have multiple data sources. Such as, Excel, or SQL server. For certain data sources we load data in one of two ways, Importing, or Direct Query. The Import method loads data into the Power BI file. While, Direct Query leaves the data inside the data source, but sends queries to retrieve data on demand. Learn more about [Import](https://powerbi.tips/2017/11/power-bi-connections-import/) and [Direct Query](https://powerbi.tips/2017/11/power-bi-connections-import/) in these articles.
 
-Read more about Composite models from the [Microsoft documentation found here](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-composite-models).
+Read more about Composite models from the [Microsoft documentation found here](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-composite-models). Related: [Power BI Connection Types](/2017/10/16/power-bi-connection-types/).
 
-### Why is this Important?
+### Why does that matter?
+
+Teams keep their own models (HR, Engineering). A composite model lets one report use more than one of those models instead of sending someone to two reports.
 
 When we think of an organization there are likely hundreds of data models. These data models support by many different teams. Each model is solves some sort of problem. As an example, we can think about models developed for Human Resources. The Human Resource model informs the HR team about acquiring new talent, or track an interview process. Other teams such as Engineering track spend or project details.
 
 ![Organization Reporting](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2020/12/image-17.png)
 
 Using this method, imagine a user who needs to see data from both human resources and engineering. Thus, a user would need to visit two different reports. Obviously value can given by combining multiple data models. This would enable the creation of a single report using data from both sources.
+
+### How does DirectQuery to a semantic model work?
+
+DirectQuery to a Power BI dataset lets you make a model of models. The enterprise semantic model holds the tables and relationships. Your report model queries it instead of rebuilding it.
+
+### What stays in the enterprise model?
+
+The governed model stays put. You may not have rights to edit it. You DirectQuery it, then add your own data (an Excel file, for example) on top.
 
 ## Direct Query for Power BI datasets
 

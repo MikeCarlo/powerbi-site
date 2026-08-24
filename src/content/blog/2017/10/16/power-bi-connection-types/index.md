@@ -1,6 +1,6 @@
 ---
 title: "Power BI Connection Types"
-excerpt: "Get Data – Power BI Connection Types: An Introduction to understanding Import, Direct Query, and Live connections."
+excerpt: "What is the difference between Import, DirectQuery, and Live Connection in Power BI?"
 date: "2017-10-16"
 authors:
   - "Seth Bauer"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## What is the difference between Import, DirectQuery, and Live Connection in Power BI, and when do I pick each?
+
+**TL;DR.** Import loads data into the PBIX and unlocks the full Desktop. DirectQuery leaves data in the source and queries it as you click. Live Connection points at an existing SSAS or service model and turns data prep off. Use Import unless the data has to stay put.
+
+### When should I use Import?
+
+Import is the default for most sources, including Excel. Data is pulled into the PBIX. You get Report, Data, and Relationships, and you can mash up the model however you want.
+
+### When should I use DirectQuery?
+
+When the source supports it and you do not want the data copied into the file. Power BI sends queries to the source as you interact with visuals. The data never leaves the source.
+
+### When should I use Live Connection?
+
+When you already have an SSAS model (Multidimensional, Azure Tabular, or on-prem Tabular) or you connect to a dataset in the Power BI Service. Desktop is a report layer. Data prep is off.
+
+### What do I lose with DirectQuery?
+
+Relationships view is gone from the left nav. Power BI assumes the mashup already lives in the source, so you do not get the same local model work you get with Import.
+
+Related: [Power BI Connections: Import](/2017/11/16/power-bi-connections-import/), [Power BI Connections: Direct Query](/2017/12/29/power-bi-connections-direct-query/), and [Power BI Direct Query Composite Models](/2020/12/16/power-bi-direct-query-composite-models-amazing/).
 
 ### Get Data – Power BI Connection Types: An Introduction
 

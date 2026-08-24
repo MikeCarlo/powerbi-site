@@ -12,9 +12,33 @@ tags:
   - "Best Practices"
   - "Tips"
   - "Visual Switch"
-excerpt: "This article describes Power BI Bookmarks tips, tricks, and best practices. Bookmarks are a powerful feature that can greatly improve the reader's experience."
+excerpt: "How do I use Power BI bookmarks without making the report unmaintainable?"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I use Power BI bookmarks without making the report unmaintainable?
+
+**TL;DR.** Record bookmarks on Selected Visuals, not All Visuals. Rename every visual. Record on groups so later edits flow through. Group related bookmarks and give visuals and bookmarks a matching ID. One bookmark, one job: Data or Display, not both.
+
+### What is the difference between Selected Visuals and All Visuals?
+
+Selected Visuals only captures the visuals you had selected when you recorded the bookmark. All Visuals captures every setting on the page, including the filter pane. Use Selected Visuals.
+
+### What do Data and Display capture?
+
+Data captures filters and sort order. It does not capture visibility. Display captures whether an item is visible, without changing filters or sort. I try not to use both unless the bookmark really needs both.
+
+### Why record bookmarks on groups instead of single visuals?
+
+Edits inside the group flow through without re-recording. You need at least two visuals to make a group. A blank text box or shape works; you can delete it after and the group stays.
+
+### Why does All Visuals make a report hard to maintain?
+
+It records the whole page. Unintended filters, pane state, and extra visuals get baked in. Selected Visuals keeps the bookmark scoped to the action.
+
+### How should I name visuals and bookmarks?
+
+Visuals: `Visual - Description`. Bookmarks: `action name – function`. When a page has several bookmark sets, add a shared ID on the visual or group and on the bookmark so you can tell what touches what.
 
 This article describes Power BI Bookmarks tips, tricks, and best practices. Bookmarks are a powerful feature that can greatly improve the reader's experience. However, there are several settings you should be aware of. Used incorrectly, they can become hard to maintain and often not display the intended functionality.
 

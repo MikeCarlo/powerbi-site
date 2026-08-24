@@ -1,6 +1,6 @@
 ---
 title: "Using Variables within DAX"
-excerpt: "Every so often you find a hidden gem, something so valuable, just hiding there in plain sight.  Recently, I found out that I LOVE the using Variables..."
+excerpt: "How do I use CALCULATE and DAX variables to compare this year vs last year after a visual filter?"
 date: "2017-05-05"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,26 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I use CALCULATE and DAX variables to compare this year vs last year after a visual filter?
+
+**TL;DR.** Capture the year the visual selected with VAR and HASONEVALUE. CALCULATE plus ALL then filters that year minus one so prior-year sales still compute after a bar click. Percent change is selected year over prior year. Without CALCULATE, the visual filter would hide last year.
+
+### Why use a VAR here?
+
+The variable holds the year the user selected. HASONEVALUE returns that year; if more than one year is selected it returns blank. Then we subtract one to get the prior year.
+
+### What is ALL doing in the CALCULATE?
+
+ALL(ClothingSales) clears the current filter on the table so we can see the other year. Then we put back ClothingSales[Year] = selectedYear.
+
+### Why does this break without CALCULATE?
+
+A visual filter on 2014 would hide 2013. CALCULATE changes the filter context so prior-year sales can still be summed.
+
+### What does HASONEVALUE do?
+
+It checks that exactly one Year value is in context. If the user has not picked a single year, the variable goes blank and the prior-year measure does not pretend to have an answer.
 
 Every so often you find a hidden gem, something so valuable, just hiding there in plain sight.  Recently, I found out that I LOVE the using Variables with in a DAX expression.  Ok, brief introduction, I was trying to calculate sales changes between different years.  The data looked similar to the following table:
 
