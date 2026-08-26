@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
 import organizedSitemap from './src/integrations/organized-sitemap.mjs';
+import remarkPowerQuery from './src/remark-powerquery.mjs';
 
 const site = process.env.SITE || 'https://powerbi.tips';
 const base = process.env.BASE_PATH || '/';
@@ -15,6 +16,12 @@ export default defineConfig({
   base,
   output: 'static',
   trailingSlash: 'always',
+  markdown: {
+    remarkPlugins: [[remarkPowerQuery, {}]],
+    syntaxHighlight: {
+      excludeLangs: ['m', 'powerquery', 'power-query'],
+    },
+  },
   image: {
     formats: ['avif', 'webp'],
   },

@@ -2,8 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const pagefindCss = `${base}/pagefind/pagefind-ui.css`;
-const pagefindJs = `${base}/pagefind/pagefind-ui.js`;
 const bundlePath = `${base}/pagefind/`;
 ---
 
@@ -11,118 +9,170 @@ const bundlePath = `${base}/pagefind/`;
   <h1 class="text-3xl font-semibold">Search</h1>
   <p class="mt-2 text-neutral-600">Find posts, tips, and resources across the site.</p>
 
-  <div id="search" class="mt-8"></div>
+  <form id="search-form" class="mt-8" novalidate>
+    <label class="sr-only" for="search-input">Search the site</label>
+    <input
+      id="search-input"
+      type="search"
+      class="w-full rounded-lg border border-neutral-200 px-4 py-3"
+      placeholder="Search posts, tips, and resources"
+      autocomplete="off"
+    />
 
-  <div class="mt-4">
+    <div class="mt-4 flex flex-wrap items-center gap-3">
     <button
       id="search-run"
-      type="button"
+      type="submit"
       class="rounded-md bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
       disabled
     >
       Search
     </button>
-    <span class="ml-3 text-sm text-neutral-500">Tip: share this page after pressing Search to keep the query in the URL.</span>
+      <span class="text-sm text-neutral-500">Searches are saved in the URL when you submit.</span>
+    </div>
+  </form>
+
+  <div class="mt-5 border-l-4 border-blue-200 pl-4 text-sm text-neutral-600">
+    <p><strong class="font-semibold text-neutral-800">Search syntax</strong></p>
+    <ul class="mt-1 list-disc space-y-1 pl-5">
+      <li><code>"semantic model"</code> finds that exact phrase.</li>
+      <li><code>-"Power BI Desktop"</code> removes results containing that phrase.</li>
+      <li><code>fabric "semantic model" -"Power BI Desktop"</code> combines both.</li>
+    </ul>
   </div>
 
-  <link rel="stylesheet" href={pagefindCss} />
-  
-  <script define:vars={{ pagefindJs, bundlePath }}>
+  <p id="search-status" class="mt-8 text-sm text-neutral-600" aria-live="polite"></p>
+  <div id="search-results" class="mt-4"></div>
+
+  <script define:vars={{ bundlePath }}>
     window.addEventListener('DOMContentLoaded', function() {
-      var script = document.createElement('script');
-      script.src = pagefindJs;
-      script.onload = function() {
-        if (typeof PagefindUI !== 'undefined') {
-          new PagefindUI({ 
-            element: '#search', 
-            showSubResults: true,
-            bundlePath: bundlePath
-          });
+      const form = document.querySelector('#search-form');
+      const input = document.querySelector('#search-input');
+      const runBtn = document.querySelector('#search-run');
+      const status = document.querySelector('#search-status');
+      const results = document.querySelector('#search-results');
+      const params = new URLSearchParams(window.location.search);
+      let pagefind;
 
-          // Support deep-links like /search?val=Jevons%20paradox (or ?q=...)
-          const params = new URLSearchParams(window.location.search);
-          const initial = (params.get('val') ?? params.get('q') ?? '').trim();
+      const parseQuery = (query) => {
+        const include = [];
+        const exclude = [];
+        const pattern = /(-)?(?:"([^"]+)"|(\S+))/g;
+        let match;
 
-          const start = Date.now();
-          const tryWire = () => {
-            const input = document.querySelector('.pagefind-ui__search-input');
-            const runBtn = document.querySelector('#search-run');
+        while ((match = pattern.exec(query)) !== null) {
+          const term = (match[2] ?? match[3]).trim();
+          if (term) (match[1] ? exclude : include).push(term);
+        }
 
-            if (input && runBtn) {
-              // Prefill from URL but do NOT change the URL until user clicks Search.
-              if (initial) {
-                input.value = initial;
-                input.dispatchEvent(new Event('input', { bubbles: true }));
-              }
+        return { include, exclude };
+      };
 
-              const runSearch = () => {
-                // Kick PagefindUI's search behavior
-                input.dispatchEvent(new Event('input', { bubbles: true }));
-                input.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', bubbles: true }));
+      const matchesPhrase = (data, phrase) => {
+        const searchableText = [data.meta?.title, data.meta?.description, data.content]
+          .filter(Boolean)
+          .join(' ')
+          .toLocaleLowerCase();
+        return searchableText.includes(phrase.toLocaleLowerCase());
+      };
 
-                // Update URL only on explicit Search click
-                const q = (input.value || '').trim();
-                const url = new URL(window.location.href);
-                if (q) {
-                  url.searchParams.set('val', q);
-                } else {
-                  url.searchParams.delete('val');
-                }
-                // Keep things canonical: we only use `val`
-                url.searchParams.delete('q');
-                window.history.replaceState({}, '', url);
-              };
+      const renderResults = (items) => {
+        results.replaceChildren(...items.map((item) => {
+          const article = document.createElement('article');
+          article.className = 'search-result';
+          const heading = document.createElement('h2');
+          const link = document.createElement('a');
+          link.href = item.url;
+          link.textContent = item.meta.title || item.url;
+          heading.appendChild(link);
+          article.appendChild(heading);
+          if (item.excerpt) {
+            const excerpt = document.createElement('p');
+            excerpt.innerHTML = item.excerpt;
+            article.appendChild(excerpt);
+          }
+          return article;
+        }));
+      };
 
-              runBtn.disabled = false;
-              runBtn.addEventListener('click', runSearch);
+      const runSearch = async () => {
+        const query = input.value.trim();
+        const { include, exclude } = parseQuery(query);
+        results.replaceChildren();
 
-              // Optional: hitting Enter in the input should behave like pressing Search
-              input.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                  e.preventDefault();
-                  runSearch();
-                }
-              });
+        const url = new URL(window.location.href);
+        if (query) url.searchParams.set('val', query);
+        else url.searchParams.delete('val');
+        url.searchParams.delete('q');
+        window.history.replaceState({}, '', url);
 
-              return;
-            }
+        if (!query) {
+          status.textContent = 'Enter a search term to find posts.';
+          return;
+        }
+        if (!include.length) {
+          status.textContent = 'Add a search term before an exclusion, for example: fabric -"Power BI Desktop".';
+          return;
+        }
 
-            if (Date.now() - start < 2000) setTimeout(tryWire, 50);
-          };
-          tryWire();
+        status.textContent = 'Searching...';
+        runBtn.disabled = true;
+        try {
+          pagefind ??= await import(`${bundlePath}pagefind.js`);
+          const search = await pagefind.search(include.join(' '));
+          const resultData = await Promise.all(search.results.map((result) => result.data()));
+          const filtered = resultData.filter((data) =>
+            include.every((term) => matchesPhrase(data, term)) &&
+            exclude.every((term) => !matchesPhrase(data, term))
+          );
+          renderResults(filtered);
+          status.textContent = `${filtered.length} result${filtered.length === 1 ? '' : 's'} found.`;
+        } catch (error) {
+          console.error('Unable to search the site.', error);
+          status.textContent = 'Search is temporarily unavailable. Please try again shortly.';
+        } finally {
+          runBtn.disabled = false;
         }
       };
-      document.body.appendChild(script);
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        runSearch();
+      });
+
+      const initial = (params.get('val') ?? params.get('q') ?? '').trim();
+      if (initial) {
+        input.value = initial;
+        runSearch();
+      }
+      runBtn.disabled = false;
     });
   </script>
 
   <style is:global>
-    .pagefind-ui__result-link {
+    .search-result h2 a {
       color: #2563eb;
       font-weight: 600;
     }
-    .pagefind-ui__result-link:hover {
+    .search-result h2 a:hover {
       color: #1d4ed8;
     }
-    .pagefind-ui__search-input {
-      border-radius: 0.5rem;
-      border-color: #e5e5e5;
-      padding: 0.75rem 1rem;
-      width: 100%;
-    }
-    .pagefind-ui__search-input:focus {
+    #search-input:focus {
       border-color: #2563eb;
       outline: none;
       box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     }
-    .pagefind-ui__result {
+    .search-result {
       padding: 1rem;
       border-radius: 0.5rem;
       border: 1px solid #e5e5e5;
       margin-bottom: 0.5rem;
     }
-    .pagefind-ui__result:hover {
+    .search-result:hover {
       border-color: #d4d4d4;
+    }
+    .search-result p {
+      margin-top: 0.5rem;
     }
   </style>
 </BaseLayout>
