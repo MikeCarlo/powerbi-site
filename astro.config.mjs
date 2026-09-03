@@ -22,9 +22,6 @@ export default defineConfig({
       excludeLangs: ['m', 'powerquery', 'power-query'],
     },
   },
-  image: {
-    formats: ['avif', 'webp'],
-  },
   vite: {
     plugins: [tailwindcss()],
     build: {
@@ -38,6 +35,7 @@ export default defineConfig({
   },
   integrations: [mdx(), organizedSitemap()],
   redirects: {
+    '/tools/report-theme-generator-v3/': '/power-designer/',
     '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
     '/2026/03/07/is-power-bi-desktop-a-dev-tool-ep-376/': '/2024/11/29/is-power-bi-desktop-a-dev-tool-ep-376/',
     '/2024/11/22/the-power-of-a-good-agenda-ep-374-power-bi-tips-ep-374/': '/2024/11/22/the-power-of-a-good-agenda-ep-374/',
