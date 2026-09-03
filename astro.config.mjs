@@ -35,6 +35,8 @@ export default defineConfig({
   },
   integrations: [mdx(), organizedSitemap()],
   redirects: {
+    '/product/business-ops/': '/2026/09/02/business-ops-moved-to-github/',
+    '/product/business-ops-beta/': '/2026/09/02/business-ops-moved-to-github/',
     '/tools/report-theme-generator-v3/': '/power-designer/',
     '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
     '/2026/03/07/is-power-bi-desktop-a-dev-tool-ep-376/': '/2024/11/29/is-power-bi-desktop-a-dev-tool-ep-376/',
