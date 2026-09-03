@@ -35,6 +35,7 @@ export default defineConfig({
   },
   integrations: [mdx(), organizedSitemap()],
   redirects: {
+    '/tools/layouts/': '/2026/09/02/power-bi-layouts-pbir-gallery/',
     '/product/business-ops/': '/2026/09/02/business-ops-moved-to-github/',
     '/product/business-ops-beta/': '/2026/09/02/business-ops-moved-to-github/',
     '/tools/report-theme-generator-v3/': '/power-designer/',

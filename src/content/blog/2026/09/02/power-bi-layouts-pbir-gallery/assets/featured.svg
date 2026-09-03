@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Power BI Layouts PBIR Gallery</title>
+  <desc id="description">A modern Power BI report layout and PBIR download card.</desc>
+  <rect width="1200" height="630" fill="#f5f7fb"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#f2c811"/>
+  <rect x="72" y="76" width="480" height="478" rx="18" fill="#ffffff" stroke="#d9e0ea" stroke-width="2"/>
+  <rect x="108" y="120" width="148" height="14" rx="7" fill="#1f2937"/>
+  <rect x="108" y="154" width="94" height="10" rx="5" fill="#94a3b8"/>
+  <rect x="108" y="206" width="188" height="142" rx="12" fill="#e8eff8"/>
+  <rect x="318" y="206" width="198" height="66" rx="12" fill="#d9f1eb"/>
+  <rect x="318" y="292" width="198" height="56" rx="12" fill="#fce8c9"/>
+  <rect x="108" y="374" width="408" height="140" rx="12" fill="#f1f5f9"/>
+  <path d="M138 478 L198 422 L253 450 L322 397 L386 442 L474 398" fill="none" stroke="#2878d4" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="198" cy="422" r="8" fill="#f2c811"/>
+  <circle cx="322" cy="397" r="8" fill="#f2c811"/>
+  <circle cx="474" cy="398" r="8" fill="#f2c811"/>
+  <rect x="604" y="76" width="524" height="478" rx="18" fill="#1f2937"/>
+  <text x="660" y="170" fill="#f2c811" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">POWERBI.TIPS</text>
+  <text x="660" y="244" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">Layouts, now</text>
+  <text x="660" y="315" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">built for PBIR.</text>
+  <text x="660" y="371" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="25">Download a report project.</text>
+  <text x="660" y="405" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="25">Open it. Make it yours.</text>
+  <rect x="660" y="452" width="244" height="56" rx="10" fill="#f2c811"/>
+  <path d="M690 466 H721 L738 483 V496 H690 Z" fill="#1f2937"/>
+  <path d="M721 466 V483 H738" fill="none" stroke="#f2c811" stroke-width="4"/>
+  <text x="757" y="489" fill="#1f2937" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">PBIR GALLERY</text>
+  <circle cx="1064" cy="134" r="34" fill="#2878d4" opacity="0.9"/>
+  <circle cx="1012" cy="494" r="52" fill="#8ed1bd" opacity="0.9"/>
+</svg>
