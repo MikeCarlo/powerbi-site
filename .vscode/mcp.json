@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "clarity": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/.vscode/clarity-mcp.mjs"
+      ]
+    }
+  }
+}
