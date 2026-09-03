@@ -2,13 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Logo from '../../components/Logo.astro';
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 
 const posts = await getCollection('blog');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+type BlogPost = CollectionEntry<'blog'>;
+type Tag = { name: string; slug: string; posts: BlogPost[] };
 
 // Extract all unique tags with counts
-const tagMap = new Map();
+const tagMap = new Map<string, Tag>();
 
 posts.forEach(post => {
   post.data.tags?.forEach(tag => {
@@ -16,7 +19,9 @@ posts.forEach(post => {
     if (!tagMap.has(slug)) {
       tagMap.set(slug, { name: tag, slug, posts: [] });
     }
-    tagMap.get(slug).posts.push(post);
+    const tagEntry = tagMap.get(slug);
+    if (!tagEntry) return;
+    tagEntry.posts.push(post);
   });
 });
 

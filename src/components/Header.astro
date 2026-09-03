@@ -24,7 +24,7 @@ const primaryLabels = ['themes', 'power designer', 'podcast', 'training'];
 
 const primaryItems = primaryLabels
   .map((label) => allNavItems.find((i) => i.label === label))
-  .filter(Boolean);
+  .filter((item): item is (typeof allNavItems)[number] => item !== undefined);
 
 const moreItems = allNavItems.filter((i) => !primaryLabels.includes(i.label));
 

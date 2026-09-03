@@ -1,11 +1,24 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
 import PodcastPlayer from '../components/PodcastPlayer.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const { entry, prev, next, morePosts, faqItems = [], howToSteps = [] } = Astro.props;
+type BlogPost = CollectionEntry<'blog'>;
+type BlogPostWithSlug = BlogPost & { slug: string };
+type FaqItem = { question: string; answer: string };
+type HowToStep = { name: string; text: string; url?: string };
+
+const { entry, prev, next, morePosts, faqItems = [], howToSteps = [] } = Astro.props as {
+  entry: BlogPost;
+  prev: BlogPostWithSlug | null;
+  next: BlogPostWithSlug | null;
+  morePosts: BlogPostWithSlug[];
+  faqItems?: FaqItem[];
+  howToSteps?: HowToStep[];
+};
 const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;
 
 // Episode posts get a seekable transcript: clicking a line drives the embedded
