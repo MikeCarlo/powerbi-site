@@ -10,6 +10,9 @@ function cleanSlug(id: string): string {
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
+  // Page path comes from the file path under src/content/blog (via entry id),
+  // never from a frontmatter slug. Keep this inline — Astro extracts
+  // getStaticPaths and cannot see helpers defined in this module.
   return posts.map((post) => ({
     params: { slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '') },
     props: { post }

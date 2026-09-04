@@ -1,7 +1,6 @@
 ---
 title: "Exploring the Power of Semantic Link"
 date: "2024-07-26"
-slug: "exploring-the-power-of-semantic-link"
 authors:
   - "Stephanie Bruno"
   - "Mike Carlo"

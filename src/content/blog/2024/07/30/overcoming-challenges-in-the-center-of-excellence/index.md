@@ -1,7 +1,6 @@
 ---
 title: "Overcoming Challenges in the Center of Excellence"
 date: "2024-07-30"
-slug: "overcoming-challenges-in-the-center-of-excellence"
 authors:
   - "Mike Carlo"
 categories:

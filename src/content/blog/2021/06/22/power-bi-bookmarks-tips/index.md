@@ -1,7 +1,6 @@
 ---
 title: "Power BI Bookmarks Tips, Tricks, and Best Practices"
 date: "2021-06-22"
-slug: "power-bi-bookmarks-tips"
 authors:
   - "Mike Carlo"
 categories:
