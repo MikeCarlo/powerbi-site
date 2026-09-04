@@ -15,7 +15,7 @@ const posts = (await getCollection('blog'))
     slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')
   }));
 
-function plainTextExcerpt(value) {
+function plainTextExcerpt(value: unknown) {
   if (!value) return '';
   return String(value)
     // images: ![alt](url) → alt
@@ -131,4 +131,5 @@ function plainTextExcerpt(value) {
       })();
     </script>
   </section>
+</BaseLayout>
 </BaseLayout>

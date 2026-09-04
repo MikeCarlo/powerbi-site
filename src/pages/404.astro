@@ -13,7 +13,7 @@ const recentPosts = (await getCollection('blog'))
     slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')
   }));
 
-function plainTextExcerpt(value) {
+function plainTextExcerpt(value: unknown) {
   if (!value) return '';
   return String(value)
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '$1')
@@ -63,7 +63,7 @@ function plainTextExcerpt(value) {
   <section class="pb-16 px-4">
     <h2 class="text-xl font-semibold text-center mb-6">Recent Posts</h2>
     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-4xl mx-auto">
-      {recentPosts.map((post, index) => (
+      {recentPosts.map((post) => (
         <article class="rounded-xl border border-neutral-200 p-4 transition hover:-translate-y-1 hover:shadow-lg">
           {post.data.featuredImage && (
             <a href={`${base}/${post.slug}/`} class="block mb-3">
@@ -104,4 +104,6 @@ function plainTextExcerpt(value) {
       ))}
     </div>
   </section>
+</BaseLayout>
+
 </BaseLayout>

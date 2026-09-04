@@ -2,11 +2,19 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
+type AuthorPost = {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string | null;
+  featuredImageSrc: string | null;
+};
+
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
   // Extract all unique authors from all posts
-  const authorMap = new Map();
+  const authorMap = new Map<string, { name: string; slug: string; posts: AuthorPost[] }>();
 
   posts.forEach((post) => {
     post.data.authors?.forEach((author) => {
@@ -18,11 +26,13 @@ export async function getStaticPaths() {
       if (!authorMap.has(slug)) {
         authorMap.set(slug, { name: author, slug, posts: [] });
       }
+      const authorEntry = authorMap.get(slug);
+      if (!authorEntry) return;
 
       // IMPORTANT: `getStaticPaths` props must be serializable.
       // Content collection entries include non-serializable image metadata.
       // So we pass only the fields we need (including the resolved image `src`).
-      authorMap.get(slug).posts.push({
+      authorEntry.posts.push({
         slug: post.id.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, ''),
         title: post.data.title,
         date: post.data.date.toISOString(),
@@ -42,7 +52,7 @@ export async function getStaticPaths() {
 }
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const { author, posts } = Astro.props;
+const { author, posts } = Astro.props as { author: string; posts: AuthorPost[] };
 ---
 
 <BaseLayout title={`${author} | PowerBI.tips`} description={`All posts by ${author}`}>
@@ -87,4 +97,6 @@ const { author, posts } = Astro.props;
       </article>
     ))}
   </div>
+</BaseLayout>
+
 </BaseLayout>
