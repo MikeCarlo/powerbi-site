@@ -1,6 +1,6 @@
 ---
 title: "Load Multiple Excel (xls or xlsx) Files"
-excerpt: "Learn how to load multiple Excel files from a folder into Power BI using a custom function. Combine workbooks with multiple sheets into a single query."
+excerpt: "How do I load many Excel files from a folder in Power Query?"
 date: "2016-08-10"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,26 @@ categories:
 tags: ["Power Query", "Excel", "Data Loading", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I load many Excel files from a folder in Power Query?
+
+**TL;DR.** Point Get Data at a Folder, keep Content and Name, add a custom column with Excel.Workbook([Content]), expand the workbook, PromoteHeaders on the sheet table, then type the columns. One query loads every workbook in that folder.
+
+### Is this different for xls vs xlsx?
+
+Both are workbooks with sheets. That is the hard part, not the extension. A CSV is one dataset. An Excel file can be several sheets, so you have to pick which page of data to expand.
+
+### Do the files need the same layout?
+
+Yes. The sample workbooks share the same medals table (Rank, Country, Gold, Silver, Bronze, Total). The query promotes those headers and stacks the rows.
+
+### What happens when I add another file to the folder?
+
+The query reads the folder. A refresh includes the workbooks that are there. A new file with the same sheet layout lands in the same query.
+
+### Why do I expand the workbook and then PromoteHeaders?
+
+Excel.Workbook([Content]) returns the workbook objects (sheets). Expand that, then Table.PromoteHeaders on the sheet table so row 1 becomes column names before you stack the files.
 
 Previously we've done a tutorial on loading multiple text files within one query. This is nice, however we will also need to import multiple Excel files. First, to understand the procedure of querying multiple excel files you have to understand the basics between the CSV (comma separated values) file and an excel (.xls or .xlsx) file.
 

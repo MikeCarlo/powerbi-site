@@ -11,9 +11,35 @@ tags:
   - "Best Practices"
   - "Tips"
   - "Visual Switch"
-excerpt: "This article describes Power BI Bookmarks tips, tricks, and best practices. Bookmarks are a powerful feature that can greatly improve the reader's experience."
+excerpt: "How do I use Power BI bookmarks without making the report unmaintainable?"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I use Power BI bookmarks without making the report unmaintainable?
+
+**TL;DR.** Record Selected Visuals, not All Visuals. Rename visuals. Record on groups so edits flow through. Group related bookmarks. All Visuals captures the whole page and becomes hard to maintain.
+
+### Selected Visuals vs All Visuals?
+
+Selected Visuals only applies to what you had selected when you recorded. All Visuals captures every setting on the page, including filter pane state. Prefer Selected Visuals.
+
+### Data vs Display?
+
+Data captures filters and sort. Display captures visibility. Prefer one or the other for a given bookmark, not both.
+
+### Why record on groups?
+
+Edits inside the group flow through without re-recording every bookmark.
+
+### Why rename and group bookmarks?
+
+Naming and grouping keep multi-bookmark pages traceable for other developers.
+
+### Why does All Visuals break maintainability?
+
+It records everything on the page, so unrelated changes fight your bookmarks.
+
+Related: [Dynamic Visuals Using Buttons](/2019/08/08/dynamic-visuals-using-buttons/), [Consolidate Report Pages Easily with Visual Grouping](/2019/11/12/consolidate-report-pages-easily-with-visual-grouping/), and [More Visuals Mo Problems](/2019/12/06/more-visuals-mo-problems/).
 
 This article describes Power BI Bookmarks tips, tricks, and best practices. Bookmarks are a powerful feature that can greatly improve the reader's experience. However, there are several settings you should be aware of. Used incorrectly, they can become hard to maintain and often not display the intended functionality.
 
