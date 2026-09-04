@@ -69,6 +69,16 @@ export default defineConfig({
   integrations: [mdx(), organizedSitemap()],
   redirects: {
     ...legacyBlogRedirects,
+    // Bare /<slug>/ URLs that went live when Astro's glob loader used
+    // frontmatter slug as the entry id. Keep those links working.
+    '/power-bi-bookmarks-tips/': '/2021/06/22/power-bi-bookmarks-tips/',
+    '/revolutionizing-power-bi-theme-building-with-new-ai-capabilities-in-tips/': '/2023/12/09/revolutionizing-power-bi-theme-building-with-new-ai-capabilities-in-tips/',
+    '/exploring-the-power-of-semantic-link/': '/2024/07/26/exploring-the-power-of-semantic-link/',
+    '/overcoming-challenges-in-the-center-of-excellence/': '/2024/07/30/overcoming-challenges-in-the-center-of-excellence/',
+    '/devops-with-matthias-thierbach/': '/2025/07/21/devops-with-matthias-thierbach/',
+    '/data-science-with-ginger-grant/': '/2025/07/21/data-science-with-ginger-grant/',
+    '/two-things-happening-with-ai/': '/2026/02/04/two-things-happening-with-ai/',
+    '/being-a-data-analyst-in-the-era-of-ai/': '/2026/02/04/being-a-data-analyst-in-the-era-of-ai/',
     '/tools/': '/power-designer/',
     '/tools/layouts/': '/2026/09/02/power-bi-layouts-pbir-gallery/',
     '/product/field-finder-tool/': 'https://github.com/PowerBI-tips/Power-BI-Field-Finder',
