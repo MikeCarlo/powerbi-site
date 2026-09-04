@@ -17,27 +17,29 @@ featuredImage: "./assets/featured.png"
 
 ## How do I use Power BI bookmarks without making the report unmaintainable?
 
-**TL;DR.** Record bookmarks on Selected Visuals, not All Visuals. Rename every visual. Record on groups so later edits flow through. Group related bookmarks and give visuals and bookmarks a matching ID. One bookmark, one job: Data or Display, not both.
+**TL;DR.** Record Selected Visuals, not All Visuals. Rename visuals. Record on groups so edits flow through. Group related bookmarks. All Visuals captures the whole page and becomes hard to maintain.
 
-### What is the difference between Selected Visuals and All Visuals?
+### Selected Visuals vs All Visuals?
 
-Selected Visuals only captures the visuals you had selected when you recorded the bookmark. All Visuals captures every setting on the page, including the filter pane. Use Selected Visuals.
+Selected Visuals only applies to what you had selected when you recorded. All Visuals captures every setting on the page, including filter pane state. Prefer Selected Visuals.
 
-### What do Data and Display capture?
+### Data vs Display?
 
-Data captures filters and sort order. It does not capture visibility. Display captures whether an item is visible, without changing filters or sort. I try not to use both unless the bookmark really needs both.
+Data captures filters and sort. Display captures visibility. Prefer one or the other for a given bookmark, not both.
 
-### Why record bookmarks on groups instead of single visuals?
+### Why record on groups?
 
-Edits inside the group flow through without re-recording. You need at least two visuals to make a group. A blank text box or shape works; you can delete it after and the group stays.
+Edits inside the group flow through without re-recording every bookmark.
 
-### Why does All Visuals make a report hard to maintain?
+### Why rename and group bookmarks?
 
-It records the whole page. Unintended filters, pane state, and extra visuals get baked in. Selected Visuals keeps the bookmark scoped to the action.
+Naming and grouping keep multi-bookmark pages traceable for other developers.
 
-### How should I name visuals and bookmarks?
+### Why does All Visuals break maintainability?
 
-Visuals: `Visual - Description`. Bookmarks: `action name – function`. When a page has several bookmark sets, add a shared ID on the visual or group and on the bookmark so you can tell what touches what.
+It records everything on the page, so unrelated changes fight your bookmarks.
+
+Related: [Dynamic Visuals Using Buttons](/2019/08/08/dynamic-visuals-using-buttons/), [Consolidate Report Pages Easily with Visual Grouping](/2019/11/12/consolidate-report-pages-easily-with-visual-grouping/), and [More Visuals Mo Problems](/2019/12/06/more-visuals-mo-problems/).
 
 This article describes Power BI Bookmarks tips, tricks, and best practices. Bookmarks are a powerful feature that can greatly improve the reader's experience. However, there are several settings you should be aware of. Used incorrectly, they can become hard to maintain and often not display the intended functionality.
 
