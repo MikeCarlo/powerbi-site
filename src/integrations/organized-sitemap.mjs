@@ -71,9 +71,36 @@ export default function organizedSitemap() {
         const tags = [];
         const authors = [];
 
+        const redirectPathnames = new Set(
+          Object.keys(astroConfig?.redirects || {}).flatMap((from) => {
+            const normalized = String(from).replace(/^\//, '');
+            return [normalized, normalized.replace(/\/$/, ''), `${normalized.replace(/\/$/, '')}/`];
+          })
+        );
+
+        /** @param {string} path */
+        function isNotFoundPath(path) {
+          const normalized = String(path || '').replace(/^\//, '').replace(/\/+$/, '');
+          return normalized === '404' || normalized === '404.html';
+        }
+
+        /** @param {string} path */
+        function isRedirectPath(path) {
+          const normalized = String(path || '').replace(/^\//, '');
+          return (
+            redirectPathnames.has(normalized) ||
+            redirectPathnames.has(normalized.replace(/\/$/, '')) ||
+            redirectPathnames.has(`${normalized.replace(/\/$/, '')}/`)
+          );
+        }
+
         for (const page of pages) {
           const path = page.pathname;
-          const fullUrl = new URL(path, siteUrl).toString();
+
+          // Keep /404/ as a real error page; never list it for crawlers.
+          if (isNotFoundPath(path) || isRedirectPath(path)) continue;
+
+          const fullUrl = new URL(path || '.', siteUrl).toString();
 
           // Categorize URLs
           if (path.match(/^\d{4}\/\d{2}\/\d{2}\//)) {
@@ -85,8 +112,8 @@ export default function organizedSitemap() {
             tags.push(fullUrl);
           } else if (path.startsWith('author/') && path !== 'author/') {
             authors.push(fullUrl);
-          } else if (path && path !== 'category/' && path !== 'tag/' && path !== 'author/') {
-            // Static pages (about, training, etc.)
+          } else if (path !== 'category/' && path !== 'tag/' && path !== 'author/') {
+            // Static pages (homepage pathname is '', plus about, training, etc.)
             staticPages.push(fullUrl);
           }
         }
@@ -125,9 +152,11 @@ export default function organizedSitemap() {
           logger.info(`Generated wp-sitemap-users-1.xml (${authors.length} URLs)`);
         }
 
-        // Generate sitemap index
-        writeFileSync(join(outDir, 'wp-sitemap.xml'), generateSitemapIndex(sitemapsGenerated, siteUrl));
-        logger.info(`Generated wp-sitemap.xml index with ${sitemapsGenerated.length} sitemaps`);
+        // Generate sitemap index at both the live WordPress-era URL and /sitemap.xml
+        const indexXml = generateSitemapIndex(sitemapsGenerated, siteUrl);
+        writeFileSync(join(outDir, 'wp-sitemap.xml'), indexXml);
+        writeFileSync(join(outDir, 'sitemap.xml'), indexXml);
+        logger.info(`Generated wp-sitemap.xml and sitemap.xml index with ${sitemapsGenerated.length} sitemaps`);
       },
     },
   };
