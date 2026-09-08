@@ -32,12 +32,9 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Sitemap
+# Sitemap (XML indexes only — llms.txt / llms-full.txt stay crawlable via Allow)
+Sitemap: https://powerbi.tips/sitemap.xml
 Sitemap: https://powerbi.tips/wp-sitemap.xml
 
 # RSS Feed
 # https://powerbi.tips/rss.xml
-
-# LLM-optimized content
-Sitemap: https://powerbi.tips/llms.txt
-Sitemap: https://powerbi.tips/llms-full.txt

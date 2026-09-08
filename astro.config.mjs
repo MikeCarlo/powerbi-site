@@ -43,6 +43,52 @@ function addLegacyBlogRedirects(directory) {
 
 addLegacyBlogRedirects(blogDirectory);
 
+/**
+ * Astro static redirects are exact paths (no suffix wildcards). Emit both
+ * slash variants so Clarity hits on /path and /path/ both resolve.
+ * @param {Record<string, string>} map
+ * @returns {Record<string, string>}
+ */
+function withSlashVariants(map) {
+  /** @type {Record<string, string>} */
+  const out = {};
+  for (const [from, to] of Object.entries(map)) {
+    const trimmed = from.replace(/\/$/, '') || '/';
+    if (trimmed === '/') {
+      out['/'] = to;
+      continue;
+    }
+    out[trimmed] = to;
+    out[`${trimmed}/`] = to;
+  }
+  return out;
+}
+
+// Clarity 404s and retired WordPress/WooCommerce paths. Destinations verified
+// against src/content/blog and existing pages. /tools/ → /power-designer/ is
+// already configured below; /toolbox/ chains through /tools/ on purpose.
+const clarityRedirects = withSlashVariants({
+  '/blog/': '/posts/',
+  '/recent/': '/posts/',
+  '/toolbox/': '/tools/',
+  '/themes/': '/tag/themes/',
+  '/product-category/scrims/': '/2019/12/21/scrims-instructions/',
+  '/product-category/layouts/': '/power-designer/',
+  '/product-category/game/': '/posts/',
+  '/2012/10/06/using-the-powerbi-scanner-api-to-manage-entire-metadata/':
+    '/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/',
+  // Junk suffixes after a real post slug (Clarity offenders). Astro SSG cannot
+  // wildcard-strip /: /%3E tails, so these are explicit.
+  '/2019/10/23/make-pbids-files/:&Make': '/2019/10/23/make-pbids-files/',
+  '/2019/10/23/make-pbids-files/%3A%26Make': '/2019/10/23/make-pbids-files/',
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:%3EWhy':
+    '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:>Why':
+    '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/%3A%3EWhy':
+    '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
+});
+
 // https://astro.build/config
 export default defineConfig({
   site,
@@ -69,6 +115,7 @@ export default defineConfig({
   integrations: [mdx(), organizedSitemap()],
   redirects: {
     ...legacyBlogRedirects,
+    ...clarityRedirects,
     // Bare /<slug>/ URLs that went live when Astro's glob loader used
     // frontmatter slug as the entry id. Keep those links working.
     '/power-bi-bookmarks-tips/': '/2021/06/22/power-bi-bookmarks-tips/',
