@@ -57,6 +57,16 @@ a {
   color: #1d4ed8;
 }
 
+/* Primary button links must keep the pill CTA look inside blog prose */
+.prose a.rounded-full.bg-blue-600 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.prose a.rounded-full.bg-blue-600:hover {
+  color: #fff;
+}
+
 .prose strong {
   color: #111827;
   font-weight: 600;

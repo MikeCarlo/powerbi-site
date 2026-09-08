@@ -23,6 +23,10 @@ For years, PowerBI.tips Layouts have given report builders a head start on struc
 
 The new [PowerBI.tips Layouts Gallery](https://tools.powerbi.tips/themes/gallery) is the official place to browse layouts and download a PBIR file directly from the site.
 
+<p>
+  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
+</p>
+
 ## Download a PBIR File and Start Building
 
 [PBIR files](https://learn.microsoft.com/power-bi/developer/projects/projects-report) use the Power BI Project format, which stores a report as editable project files. Instead of beginning from a blank report canvas, you can download a layout from the gallery, open the PBIR project in Power BI Desktop, and start shaping it around your own data and business questions.
@@ -39,6 +43,8 @@ You can browse a growing collection of report layouts, preview the design that f
 
 Browse the collection and download a PBIR project to begin your next Power BI report:
 
-- [Open the PowerBI.tips Layouts Gallery](https://tools.powerbi.tips/themes/gallery)
+<p>
+  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
+</p>
 
 Whether you are building an executive dashboard, an operational report, or a reusable team template, the gallery gives you a solid report design foundation so you can spend more time on the insights that matter.
