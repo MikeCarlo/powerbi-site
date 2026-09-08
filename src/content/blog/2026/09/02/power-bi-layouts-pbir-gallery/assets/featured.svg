@@ -20,7 +20,7 @@
   <text x="660" y="315" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700">built for PBIR.</text>
   <text x="660" y="371" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="25">Download a report project.</text>
   <text x="660" y="405" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="25">Open it. Make it yours.</text>
-  <rect x="660" y="452" width="244" height="56" rx="10" fill="#f2c811"/>
+  <rect x="660" y="452" width="300" height="56" rx="10" fill="#f2c811"/>
   <path d="M690 466 H721 L738 483 V496 H690 Z" fill="#1f2937"/>
   <path d="M721 466 V483 H738" fill="none" stroke="#f2c811" stroke-width="4"/>
   <text x="757" y="489" fill="#1f2937" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">PBIR GALLERY</text>
