@@ -43,31 +43,11 @@ function addLegacyBlogRedirects(directory) {
 
 addLegacyBlogRedirects(blogDirectory);
 
-/**
- * Astro static redirects are exact paths (no suffix wildcards). Emit both
- * slash variants so Clarity hits on /path and /path/ both resolve.
- * @param {Record<string, string>} map
- * @returns {Record<string, string>}
- */
-function withSlashVariants(map) {
-  /** @type {Record<string, string>} */
-  const out = {};
-  for (const [from, to] of Object.entries(map)) {
-    const trimmed = from.replace(/\/$/, '') || '/';
-    if (trimmed === '/') {
-      out['/'] = to;
-      continue;
-    }
-    out[trimmed] = to;
-    out[`${trimmed}/`] = to;
-  }
-  return out;
-}
-
 // Clarity 404s and retired WordPress/WooCommerce paths. Destinations verified
-// against src/content/blog and existing pages. /tools/ → /power-designer/ is
-// already configured below; /toolbox/ chains through /tools/ on purpose.
-const clarityRedirects = withSlashVariants({
+// against src/content/blog and existing pages. trailingSlash: 'always' already
+// treats /path and /path/ as one route — only list the slashed form (same as
+// /tools/). /toolbox/ chains through /tools/ → /power-designer/; no loop.
+const clarityRedirects = {
   '/blog/': '/posts/',
   '/recent/': '/posts/',
   '/toolbox/': '/tools/',
@@ -79,15 +59,15 @@ const clarityRedirects = withSlashVariants({
     '/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/',
   // Junk suffixes after a real post slug (Clarity offenders). Astro SSG cannot
   // wildcard-strip /: /%3E tails, so these are explicit.
-  '/2019/10/23/make-pbids-files/:&Make': '/2019/10/23/make-pbids-files/',
-  '/2019/10/23/make-pbids-files/%3A%26Make': '/2019/10/23/make-pbids-files/',
-  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:%3EWhy':
+  '/2019/10/23/make-pbids-files/:&Make/': '/2019/10/23/make-pbids-files/',
+  '/2019/10/23/make-pbids-files/%3A%26Make/': '/2019/10/23/make-pbids-files/',
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:%3EWhy/':
     '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
-  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:>Why':
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/:>Why/':
     '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
-  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/%3A%3EWhy':
+  '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/%3A%3EWhy/':
     '/2026/04/21/why-im-burning-down-every-saas-tool-in-my-business/',
-});
+};
 
 // https://astro.build/config
 export default defineConfig({
