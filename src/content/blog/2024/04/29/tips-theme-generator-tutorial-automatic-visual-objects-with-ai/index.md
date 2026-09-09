@@ -15,6 +15,10 @@ featuredImage: ./assets/featured.png
 
 Welcome to today’s tutorial where we’ll explore an exciting feature implemented to streamline your background creation process in Power BI. If you’ve ever found yourself spending too much time tweaking and aligning visual elements, this AI-powered solution will be a game-changer for you. This new feature continues to simplify the report visualization experience and open doors for other teams to decide on the visualizations, develop the look & feel, and pass off a pbip object to Data Engineers or BI Developers to easily add data into.
 
+<p>
+  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=theme-tutorial-cta" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
+</p>
+
 If you prefer to follow along via video, you can check out the full walkthrough on the PowerBI.tips YouTube video here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YvY8gJlSqRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -9,6 +9,7 @@ import mdx from '@astrojs/mdx';
 
 import organizedSitemap from './src/integrations/organized-sitemap.mjs';
 import remarkPowerQuery from './src/remark-powerquery.mjs';
+import rehypeSiteUtm from './src/rehype-site-utm.mjs';
 
 const site = process.env.SITE || 'https://powerbi.tips';
 const base = process.env.BASE_PATH || '/';
@@ -47,6 +48,11 @@ addLegacyBlogRedirects(blogDirectory);
 // against src/content/blog and existing pages. trailingSlash: 'always' already
 // treats /path and /path/ as one route — only list the slashed form (same as
 // /tools/). /toolbox/ chains through /tools/ → /power-designer/; no loop.
+// /blog/ → /posts/ is listed once (trailingSlash: 'always' treats /blog and
+// /blog/ as the same Astro route; a slashless duplicate warns). Astro SSG
+// emits an HTML meta-refresh page (HTTP 200). GitHub Pages cannot send a
+// true 301. Fastly (same constraint as HTTP→HTTPS apex) must add:
+//   /blog  and  /blog/  →  301  /posts/
 const clarityRedirects = {
   '/blog/': '/posts/',
   '/recent/': '/posts/',
@@ -77,6 +83,7 @@ export default defineConfig({
   trailingSlash: 'always',
   markdown: {
     remarkPlugins: [[remarkPowerQuery, {}]],
+    rehypePlugins: [rehypeSiteUtm],
     syntaxHighlight: {
       excludeLangs: ['m', 'powerquery', 'power-query'],
     },

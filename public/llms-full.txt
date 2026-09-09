@@ -31,7 +31,7 @@ Building data-driven organizations: center of excellence strategies, KPI standar
 ## Developer Tools & Products
 
 ### Power BI Theme Generator — themes.powerbi.tips
-URL: https://themes.powerbi.tips
+URL: https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms-full
 
 The most popular Power BI theming tool in the community. Create custom color palettes from HEX codes or a color picker, generate JSON theme files for Power BI Desktop, browse and download pre-built themes from the gallery, and build complete report layouts using AI-powered wireframes and scrims (background images). Features include:
 - Color palette creation and management
@@ -342,7 +342,7 @@ All articles are available at https://powerbi.tips/{slug}/
 
 | Tool | URL |
 |------|-----|
-| Theme Generator | https://themes.powerbi.tips |
+| Theme Generator | https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms-full |
 | No-Code Custom Visuals | https://charts.powerbi.tips |
 | Custom Visual Gallery | https://gallery.powerbi.tips |
 | Entelexos (Embedded) | https://www.entelexos.com |

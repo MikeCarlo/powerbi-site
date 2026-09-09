@@ -15,7 +15,7 @@ PowerBI.tips is the leading independent resource for Microsoft Power BI and Micr
 
 ## Developer Tools
 
-- **[Power BI Theme Generator](https://themes.powerbi.tips)**: Create custom color palettes, themes, and JSON theme files for Power BI reports. Includes AI-powered wireframe layouts, scrim galleries, and template generation.
+- **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms)**: Create custom color palettes, themes, and JSON theme files for Power BI reports. Includes AI-powered wireframe layouts, scrim galleries, and template generation.
 - **[Power Designer](https://powerbi.tips/power-designer/)**: AI-powered report design tool — generate professional themes, report pages, layouts, and embedded experiences in minutes. Includes wireframes, gallery templates, and visual object automation.
 - **[No-Code Custom Visuals](https://charts.powerbi.tips)**: Build highly customized visuals using a web app and export them for Power BI Desktop.
 - **[Custom Visual Gallery](https://gallery.powerbi.tips)**: Community-curated gallery of downloadable custom visuals.
@@ -38,7 +38,7 @@ PowerBI.tips is the leading independent resource for Microsoft Power BI and Micr
 - Training: https://powerbi.tips/training/
 - Events: https://powerbi.tips/events/
 - Search: https://powerbi.tips/search/
-- Theme Generator: https://themes.powerbi.tips/
+- Theme Generator: https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms
 - Charts (Custom Visuals): https://charts.powerbi.tips/
 - Visual Gallery: https://gallery.powerbi.tips/
 - Entelexos (Embedded): https://www.entelexos.com/

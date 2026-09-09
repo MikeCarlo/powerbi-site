@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Logo from '../components/Logo.astro';
+import { withSiteUtm } from '../lib/site-utm.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const themeGeneratorHref = withSiteUtm('https://themes.powerbi.tips/', 'about');
+const wireframesHref = withSiteUtm('https://themes.powerbi.tips/themes/wireframes', 'about');
 ---
 
 <BaseLayout title="About | PowerBI.tips" description="About PowerBI.tips - Act Business, Think I.T.">
@@ -51,7 +54,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
 
     <p>
-      <a href="https://themes.powerbi.tips/" target="_blank" rel="noopener noreferrer">Power BI Theme &amp; Template Generator</a>
+      <a href={themeGeneratorHref} target="_blank" rel="noopener noreferrer">Power BI Theme &amp; Template Generator</a>
       – Use this tool to create color pallets from HEX codes or use our color picker to select individual colors. This tool
       works with the
       <a href="https://docs.microsoft.com/en-us/power-bi/desktop-report-themes" target="_blank" rel="noopener noreferrer">Import Theme</a>
@@ -60,7 +63,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </p>
 
     <p>
-      <a href="https://themes.powerbi.tips/themes/wireframes" target="_blank" rel="noopener noreferrer">Wireframes</a>
+      <a href={wireframesHref} target="_blank" rel="noopener noreferrer">Wireframes</a>
       – Get a massive jump start on creating engaging and beautiful looking reports with our ever growing library of Layouts.
       These are a combination of image backgrounds “Scrims”, and visuals laid out on a report page. Use our AI to quick add pages
       and visuals with a couple clicks
@@ -131,6 +134,4 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       PowerBI.tips is currently owned and operated by Mike Carlo.
     </p>
   </section>
-</BaseLayout>
-
 </BaseLayout>

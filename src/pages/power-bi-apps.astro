@@ -1,18 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withSiteUtm } from '../lib/site-utm.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const themeGeneratorHref = withSiteUtm('https://themes.powerbi.tips', 'power-bi-apps');
 
 const apps = [
   {
     name: 'Theme Generator',
     desc: 'The world’s most used and longest running Power BI theme generator.',
-    url: 'https://themes.powerbi.tips',
+    url: themeGeneratorHref,
   },
   {
     name: 'PowerBI.tips Tools',
     desc: 'A hub of practical tools for Power BI builders.',
-    url: 'https://tools.powerbi.tips/',
+    url: withSiteUtm('https://tools.powerbi.tips/', 'power-bi-apps'),
   },
   {
     name: 'Charticulator Support',
@@ -54,7 +56,7 @@ const apps = [
       The <strong>world’s most used and longest running Theme Generator</strong> helps you create consistent, branded Power BI reports.
     </p>
     <div class="mt-4">
-      <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://themes.powerbi.tips" target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
+      <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href={themeGeneratorHref} target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
     </div>
   </section>
 

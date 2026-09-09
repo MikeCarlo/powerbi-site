@@ -24,7 +24,7 @@ For years, PowerBI.tips Layouts have given report builders a head start on struc
 The new [PowerBI.tips Layouts Gallery](https://tools.powerbi.tips/themes/gallery) is the official place to browse layouts and download a PBIR file directly from the site.
 
 <p>
-  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
+  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=pbir-gallery-cta" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
 </p>
 
 ## Download a PBIR File and Start Building
@@ -44,7 +44,7 @@ You can browse a growing collection of report layouts, preview the design that f
 Browse the collection and download a PBIR project to begin your next Power BI report:
 
 <p>
-  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
+  <a class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700" href="https://tools.powerbi.tips/themes/gallery?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=pbir-gallery-cta" target="_blank" rel="noopener noreferrer">Get Free Layouts</a>
 </p>
 
 Whether you are building an executive dashboard, an operational report, or a reusable team template, the gallery gives you a solid report design foundation so you can spend more time on the insights that matter.

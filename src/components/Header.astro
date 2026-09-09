@@ -1,11 +1,12 @@
 ---
 import Logo from './Logo.astro';
+import { withSiteUtm } from '../lib/site-utm.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Keep one nav config; render rules split it into primary + more.
 const allNavItems = [
-  { label: 'themes', href: 'https://themes.powerbi.tips' },
+  { label: 'themes', href: withSiteUtm('https://themes.powerbi.tips', 'nav') },
   { label: 'power designer', href: `${base}/power-designer/` },
   { label: 'podcast', href: `${base}/podcast/` },
   { label: 'training', href: `${base}/training/` },
