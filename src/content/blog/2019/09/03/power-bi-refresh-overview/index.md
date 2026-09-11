@@ -1,6 +1,6 @@
 ---
 title: "Power BI Refresh Overview"
-excerpt: "There are different ways you can connect to a multitude of different data sources. I’ve written about the different connection types before and you ca..."
+excerpt: "How does Power BI data refresh work?"
 date: "2019-09-03"
 authors:
   - "Seth Bauer"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How does Power BI data refresh work?
+
+**TL;DR.** After you Import and publish, schedule dataset refresh in the service. On-premises sources need a gateway; OneDrive or SharePoint Online usually do not. Match gateway connection strings to the PBIX, enable the schedule, and remember service times are UTC.
+
+### Import vs DirectQuery refresh?
+
+This overview focuses on Import: after publish you schedule a dataset refresh so the service data updates without republishing the PBIX. Connection type choice (Import / DirectQuery / Live) is covered in the connection-types post linked below — pick the type first, then set refresh to match.
+
+### When do I need a gateway?
+
+On-premises sources — company servers, a local machine, or some cloud infrastructures treated as on-prem — need a gateway. Cloud sources such as OneDrive or SharePoint Online usually refresh without one.
+
+### Personal gateway vs enterprise gateway?
+
+Personal mode covers most sources with little setup. The non-personal (enterprise) gateway supports more sources, needs admin configuration, and should run on a server that stays on. Always set and save a recovery key.
+
+### What fails a refresh?
+
+Gateway data-source connection strings must match the PBIX exactly or the dataset will not refresh on that gateway. If the gateway machine is off, refresh stops. You can notify users or groups from the refresh-failure email settings.
+
+Related: [Power BI Connection Types](https://powerbi.tips/2017/10/16/power-bi-connection-types/), [Power BI Direct Query Composite Models](https://powerbi.tips/2020/12/16/power-bi-direct-query-composite-models-amazing/), and [Power BI datasets: A Method to the Madness](https://powerbi.tips/2019/10/02/power-bi-datasets-a-method-to-the-madness/).
 
 There are different ways you can connect to a multitude of different data sources. I’ve written about the different connection types before and you can find those articles [here](https://powerbi.tips/?s=Power+bi+connection) if you are unfamiliar with what I’m talking about.
 

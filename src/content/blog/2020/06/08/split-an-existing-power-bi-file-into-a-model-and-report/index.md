@@ -1,6 +1,6 @@
 ---
 title: "Split an existing Power BI file into a model and report"
-excerpt: "Shared datasets are a great way to share data models across the organization. This enables users to maintain one source of the truth and increase effi..."
+excerpt: "How do you split a Power BI file into a shared dataset and a separate report?"
 date: "2020-06-08"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do you split a Power BI file into a shared dataset and a separate report?
+
+**TL;DR.** Run the PowerShell splitter on a combined PBIX. It creates `_model` and `_report` copies. Publish the model, then reconnect the report with Get Data → Power BI datasets so many thin reports share one source of truth.
+
+### Why split the model from the report?
+
+Models should live separate from reports. One shared model keeps KPIs and refresh in one place instead of copying visuals by hand or rebuilding Power Query, relationships, and measures for every new report.
+
+### What do you gain from a shared dataset?
+
+Publish a model-only file, then build multiple live-connected reports on it. Global measures stay in the model file and every report reuses the same logic and refresh status.
+
+### Does the script overwrite my PBIX?
+
+No — it copies the file into `_model` and `_report` versions, then alters those copies. Keep a backup anyway. The script is not Microsoft-supported and changes internal PBIX parts.
+
+### Can you publish to the service after splitting?
+
+Yes. Publish the `_model` file first. Open `_report`, discard the broken connection if prompted, then Get Data → Power BI datasets and pick the published model. Publish the thin report when visuals come back.
+
+Related: [Power BI datasets: A Method to the Madness](https://powerbi.tips/2019/10/02/power-bi-datasets-a-method-to-the-madness/), [Power BI Direct Query Composite Models](https://powerbi.tips/2020/12/16/power-bi-direct-query-composite-models-amazing/), and [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/).
 
 Shared datasets are a great way to share data models across the organization. This enables users to maintain one source of the truth and increase efficiency. However, models should be built separate to reports. Meaning it can be difficult to transform an existing report into a shared dataset.
 

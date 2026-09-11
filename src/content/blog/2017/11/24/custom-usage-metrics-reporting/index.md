@@ -1,6 +1,6 @@
 ---
 title: "Custom Usage Metrics Reporting"
-excerpt: "One of the really cool features contained within the PowerBI.com service is the ability to monitor how often your dashboard or report is being viewed...."
+excerpt: "How do you build custom Power BI usage metrics reporting?"
 date: "2017-11-24"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do you build custom Power BI usage metrics reporting?
+
+**TL;DR.** Open Usage Metrics in the service, Save As a copy, remove the ReportGUID filter, then edit slicers and visuals so one report shows views across the workspace. Built-in usage is read-only and scoped to the report you opened.
+
+### What usage metrics does Power BI include?
+
+The built-in Usage Metrics report shows how often a dashboard or report is viewed. It covers the last 90 days. You need edit rights on the report and at least a Power BI Pro license to open it.
+
+### Custom vs built-in usage metrics?
+
+Built-in Usage Metrics is read-only and filtered to the one report or dashboard you opened. Custom means Save As a copy, clear the ReportGUID report filter, then edit slicers and visuals so you can see usage across every report in the workspace.
+
+### What events can you track?
+
+This tutorial works with report usage already in the metrics model — views per day, unique viewers per day, and report-page activity via slicers. It does not add separate click or interaction logging beyond that usage data.
+
+### Where does the usage data live?
+
+It lives in the Power BI service Usage Metrics report for the workspace. After Save As, the editable copy sits in that same workspace so you can reshape the visuals on top of the existing usage model.
+
+Related: [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/), [Power BI datasets: A Method to the Madness](https://powerbi.tips/2019/10/02/power-bi-datasets-a-method-to-the-madness/), and [Power BI Bookmarks Tips](https://powerbi.tips/2021/06/22/power-bi-bookmarks-tips/).
 
 One of the really cool features contained within the PowerBI.com service is the ability to monitor how often your dashboard or report is being viewed.  You’ll find this feature by opening up either a Dashboard or a Report, then clicking the button called **Usage Metrics**.  Clicking this button will generate a custom usage report.  For more details on Report Usage Metrics see [the following article from Microsoft](https://docs.microsoft.com/en-us/power-bi/service-usage-metrics).
 

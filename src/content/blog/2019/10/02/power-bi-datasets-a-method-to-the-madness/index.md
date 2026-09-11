@@ -1,6 +1,6 @@
 ---
 title: "Power BI datasets: A Method to the Madness"
-excerpt: "As report authors we sometimes get caught up in how easy it is to create a report and provide value to the business. Each report is an opportunity to..."
+excerpt: "How should you organize Power BI datasets for report authors?"
 date: "2019-10-02"
 authors:
   - "Seth Bauer"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How should you organize Power BI datasets for report authors?
+
+**TL;DR.** Publish a model-only PBIX named like Sales-Model. New reports connect with Get Data → Power BI datasets as a live connection. One model update reaches every thin report; report-only measures can still sit on the live report.
+
+### Dataset vs report?
+
+Publishing a report also publishes a dataset in the service. For reuse, publish a PBIX that only contains the model and treat that object as the dataset. Thin reports connect to it live instead of carrying their own copy of the model.
+
+### When should you share a dataset?
+
+When another report would otherwise copy the same PBIX and duplicate measures. Shared datasets let one calculation change update many reports, including across workspaces when you have edit permission.
+
+### Who owns the model?
+
+Keep model edits in the original model PBIX (the Sales-Model style file). Thin reports cannot change the model or ETL — go back to that dataset to update it. Report-only measures can still be added on the live connection.
+
+### How do thin reports connect?
+
+Get Data → Power BI datasets, pick a dataset you can edit, and Desktop attaches as a live connection — same idea as live SSAS, without standing up your own Analysis Services server.
+
+Related: [Split an existing Power BI file into a model and report](https://powerbi.tips/2020/06/08/split-an-existing-power-bi-file-into-a-model-and-report/), [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/), and [Power BI Connection Types](https://powerbi.tips/2017/10/16/power-bi-connection-types/).
 
 As report authors we sometimes get caught up in how easy it is to create a report and provide value to the business. Each report is an opportunity to make a big contribution to the organization. Power BI makes it easier than ever to turn many of those reports around quickly. This is a good thing of course. But, sometimes we can get caught up in the madness of turning out another report with only a flash of recall that we could have used the same or similar model done in a different report. The internal monologue kicks in.
 

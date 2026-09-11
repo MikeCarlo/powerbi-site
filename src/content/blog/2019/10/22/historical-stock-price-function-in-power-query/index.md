@@ -1,6 +1,6 @@
 ---
 title: "Historical Stock Price Function in Power Query"
-excerpt: "This post will walk through how to pull daily stock price from Yahoo! Finance, then transform the data using a technique called a query branch. It wil..."
+excerpt: "How do you get historical stock prices in Power Query?"
 date: "2019-10-22"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do you get historical stock prices in Power Query?
+
+**TL;DR.** Pull Yahoo Finance daily prices with a StockSymbol parameter. Branch the query for dates and adjusted close, merge on an index, then use RelativePath plus Skip connection test so the dataset can refresh in the service.
+
+### What source does this tutorial use?
+
+Yahoo Finance chart JSON via a Web URL split into base path, StockSymbol parameter, and `range` / `interval` parts. The walkthrough builds a reusable function from that query.
+
+### What is a query branch?
+
+A branch splits one query at a named step into two paths — here dates from `timestamp` and prices from `adjclose` — then merges them back on an index so dates and prices land in one table.
+
+### Can this refresh in the Power BI service?
+
+Yes, after you move the symbol into `Web.Contents` RelativePath (service blocks parameters in the base URL) and set Skip connection test on the Web credentials in dataset settings.
+
+### Do you need a gateway for this pattern?
+
+This tutorial refreshes a cloud Web source with RelativePath and Skip connection test. It does not set up an on-premises gateway. For on-prem gateway rules, see the refresh overview linked below.
+
+Related: [Load Multiple Excel (xls or xlsx) Files](https://powerbi.tips/2016/08/10/load-multiple-excel-xlsx-files/), [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/), and [Power BI Connection Types](https://powerbi.tips/2017/10/16/power-bi-connection-types/).
 
 This post will walk through how to pull daily stock price from Yahoo! Finance, then transform the data using a technique called a query branch. It will be completed all in the Power Query Editor. We will convert this to a function to reuse on any stock we want.
 
