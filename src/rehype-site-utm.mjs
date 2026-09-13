@@ -1,7 +1,7 @@
 import { utmContentFromFilePath, withSiteUtm } from './lib/site-utm.mjs';
 
 /**
- * Rewrite tools.powerbi.tips / themes.powerbi.tips hrefs in markdown/MDX
+ * Rewrite tools/themes/account.powerbi.tips hrefs in markdown/MDX
  * at build time. utm_content comes from the post slug (or `blog`).
  * Existing utm_* values are left intact (merge-if-absent).
  */

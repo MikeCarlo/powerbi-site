@@ -1,87 +1,170 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Logo from '../components/Logo.astro';
+import { extractFaqItems } from '../utils/schema-helpers';
+import { withSiteUtm } from '../lib/site-utm.mjs';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const tipsPlusHref = withSiteUtm('https://account.powerbi.tips', 'power-designer');
+const themeCiteHref = `${base}/power-bi-theme-generator/`;
+
+const title = 'Power Designer — Power BI report design in Fabric';
+const description = 'What is Power Designer?';
+
+// Owned H2 + five FAQ H3s. extractFaqItems reads this string — do not add
+// Entity as ## / ### (that heading would become a junk FAQPage item).
+const citeFaqMarkdown = `## What is Power Designer?
+
+**TL;DR.** Power Designer is the Tips+ report-design tool for Power BI and Fabric. Build wireframes, layouts, and themes — including AI auto-layout — then export a PBIP for Desktop. It is not the free Theme Generator, and it is not Entelexos.
+
+### What does Power Designer include?
+
+Wireframes, page layouts, theme and palette controls, gallery templates, and AI visual auto-layout. You leave with a designed report file for a model author — not a finished semantic model.
+
+### How is Power Designer different from the Theme Generator?
+
+The Theme Generator is the free visual editor that writes Power BI theme JSON. Power Designer is the Tips+ design product (web and Fabric workload) for pages, layouts, and gallery projects. Use the generator for a theme file; use Power Designer when you need the page.
+
+### What does Tips+ have to do with it?
+
+Power Designer unlocks with a Tips+ license. Manage that at the PowerBI.tips account portal. Tips+ is separate from a Microsoft Pro, PPU, or Fabric capacity license.
+
+### Does Power Designer run in Microsoft Fabric?
+
+Yes. Power Designer is also offered as a Fabric workload (Tips+ License & Power Designer on AppSource). Your tenant still has to allow the workload. The web / Tips+ app is the other entry.
+
+### How do I get a Power Designer file into Power BI Desktop?
+
+Export the project as a PBIP, extract it, and open it in Desktop. Tutorials on this site walk through gallery copy/edit and AI visual objects.
+`;
+
+const faqItems = extractFaqItems(citeFaqMarkdown);
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
 ---
 
-<BaseLayout title="Power Designer | PowerBI.tips" description="Unlock the power of professional Power BI report design and embedded analytics with Power Designer. Generate, manage, and share stunning themes, layouts, and reports effortlessly for internal and external users.">
-  <section class="mb-12">
-    <div class="mb-2">
-      <Logo href={import.meta.env.BASE_URL} class="h-6 w-auto" alt="PowerBI.tips" />
-    </div>
-    <h1 class="mt-3 text-4xl font-semibold tracking-tight text-neutral-900">
-      Power Designer: Revolutionize Your Power BI Reports and Embedded Analytics
-    </h1>
-    <p class="mt-4 max-w-2xl text-lg text-neutral-600">
-      Transform your Microsoft Fabric and Power BI projects with AI-powered tools that generate professional themes, report pages, layouts, and embedded experiences in minutes, not hours. Built for scalability and cost-efficiency, Power Designer empowers admins and users to manage, edit, and share reports seamlessly—internal or external.
-    </p>
-  </section>
+<BaseLayout title={title} description={description} jsonLd={faqJsonLd}>
+  <article>
+    <section class="mb-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
+    </section>
 
-  <section class="mb-12">
-    <div class="relative w-full aspect-video">
-      <iframe
-        src="https://www.youtube.com/embed/3QHZXkyQqFo"
-        title="Introducing Power Designer: Unleash Your Inner Report Wizard!"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="w-full h-full rounded-lg shadow-lg"
-      ></iframe>
-    </div>
-  </section>
+    <section class="prose max-w-none">
+      <h2>What is Power Designer?</h2>
+      <p>
+        <strong>TL;DR.</strong> Power Designer is the Tips+ report-design tool for Power BI and Fabric.
+        Build wireframes, layouts, and themes — including AI auto-layout — then export a PBIP for
+        Desktop. It is not the free Theme Generator, and it is not Entelexos.
+      </p>
+    </section>
 
-  <section class="prose max-w-none mb-12">
-    <h2>Why Choose Power Designer?</h2>
-    <p>
-      In today's fast-paced data world, creating visually stunning, functional, and embeddable Power BI reports shouldn't be a time sink or cost prohibitive. Power Designer, built by the experts at PowerBI.tips and Carlo Consulting, leverages cutting-edge AI and real-world consulting insights to automate design and embedding tasks, allowing you to focus on insights rather than infrastructure.
-    </p>
-    <p>
-      Drawing from our exclusive Microsoft Partner Showcase interview with Entelexos (watch the full showcase <a href="https://youtu.be/1gepvkN-5SE" target="_blank">here</a>), discover how Power Designer empowers BI professionals and organizations to deliver enterprise-grade, embedded reports faster, more efficiently, and at scale. As a Microsoft MVP with over 20 embedded solutions under our belt, we've identified repeatable patterns to solve common challenges like data extraction limits and per-user costs. Key highlights include:
-    </p>
-    <ul>
-      <li><strong>Time Savings & Automation:</strong> Generate complete themes, wireframes, and paginated reports in seconds, reducing design and deployment time by up to 80%. AI suggests visuals, backgrounds, and layouts tailored to your data story.</li>
-      <li><strong>Scalable Embedded Analytics:</strong> Embed reports for unlimited internal and external users without autoscaling hassles. Treat your data as a product—share securely across tenants and organizations with seamless multi-tenant support.</li>
-      <li><strong>Cost Optimization:</strong> Lower total cost per user by avoiding high per-user pricing. Our solution scales automatically, serving thousands without exponential costs, making it ideal for growing teams and customer-facing apps.</li>
-      <li><strong>Advanced Data Extraction:</strong> Overcome Power BI's row limits with custom RDL paginated reports and a powerful table builder. Export unlimited data rows directly from embedded views for deeper analysis.</li>
-      <li><strong>Admin & User Empowerment:</strong> Admins manage artifacts, groups, and security effortlessly. Users edit reports in full Power BI mode, create custom content, and discover via intuitive dashboards and folders—all with your branding.</li>
-      <li><strong>Seamless Microsoft Integration:</strong> Built for Fabric and Power BI, ensuring compatibility, rich interactions, and easy exports to Desktop or Service. Flexible for unique org structures and security patterns.</li>
-      <li><strong>Community-Driven Innovation:</strong> Join thousands who've elevated their reporting with tools born from real consulting—now accessible via Tips+ for quick setup and licensing.</li>
+    <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">What</dt>
+        <dd class="mt-1 text-neutral-700">
+          Tips+ report-design tool for Power BI / Fabric — wireframes, layouts, themes, gallery, AI
+          auto-layout; export PBIP.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Who</dt>
+        <dd class="mt-1 text-neutral-700">
+          Report authors who do not want to build every page by hand.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Cost</dt>
+        <dd class="mt-1 text-neutral-700">
+          Tips+ (account.powerbi.tips). No invented price. Separate from Pro / PPU / Fabric capacity.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Not</dt>
+        <dd class="mt-1 text-neutral-700">
+          Not Microsoft. Not the free Theme Generator. Not Entelexos.
+        </dd>
+      </div>
+    </dl>
+
+    <section class="prose max-w-none mt-10">
+      <h3>What does Power Designer include?</h3>
+      <p>
+        Wireframes, page layouts, theme and palette controls, gallery templates, and AI visual
+        auto-layout. You leave with a designed report file for a model author — not a finished
+        semantic model.
+      </p>
+
+      <h3>How is Power Designer different from the Theme Generator?</h3>
+      <p>
+        The Theme Generator is the free visual editor that writes Power BI theme JSON. Power Designer
+        is the Tips+ design product (web and Fabric workload) for pages, layouts, and gallery
+        projects. Use the generator for a theme file; use Power Designer when you need the page.
+      </p>
+
+      <h3>What does Tips+ have to do with it?</h3>
+      <p>
+        Power Designer unlocks with a Tips+ license. Manage that at the PowerBI.tips account portal.
+        Tips+ is separate from a Microsoft Pro, PPU, or Fabric capacity license.
+      </p>
+
+      <h3>Does Power Designer run in Microsoft Fabric?</h3>
+      <p>
+        Yes. Power Designer is also offered as a Fabric workload (Tips+ License & Power Designer on
+        AppSource). Your tenant still has to allow the workload. The web / Tips+ app is the other
+        entry.
+      </p>
+
+      <h3>How do I get a Power Designer file into Power BI Desktop?</h3>
+      <p>
+        Export the project as a PBIP, extract it, and open it in Desktop. Tutorials on this site walk
+        through gallery copy/edit and AI visual objects.
+      </p>
+    </section>
+
+    <ul class="mt-8 list-disc space-y-1 pl-6 text-neutral-700">
+      <li>Wireframes</li>
+      <li>Layouts</li>
+      <li>Themes</li>
+      <li>Gallery</li>
+      <li>AI auto-layout</li>
+      <li>PBIP export</li>
     </ul>
-    <p>
-      Whether you're a solo analyst, large BI team, or building customer apps, Power Designer streamlines workflows, enhances collaboration, optimizes costs, and delivers reports that wow stakeholders—inside or outside your organization.
-    </p>
-  </section>
 
-  <section class="prose max-w-none mb-12">
-    <h2>Key Features</h2>
-    <ul>
-      <li><strong>Theme & Layout Generator:</strong> AI-assisted JSON themes for colors, fonts, and professional layouts—export-ready for Power BI.</li>
-      <li><strong>Wireframe & Paginated Builder:</strong> Drag-and-drop designs with RDL support for multi-page reports and unlimited data exports.</li>
-      <li><strong>Embedded Editing Suite:</strong> Full Power BI editing in-app—no switching tools. Copy, remix, and customize community gallery designs.</li>
-      <li><strong>Admin Dashboard:</strong> Manage users, groups, security, and deployments across tenants. Custom landing pages with featured reports and folders.</li>
-      <li><strong>Scalable Sharing:</strong> Embed for internal/external audiences with row-level security and multi-tenant flexibility.</li>
-      <li><strong>AI Visuals & Insights:</strong> Auto-generate objects, backgrounds, and interactions tailored to your narrative.</li>
-      <li><strong>Cost & Performance Tools:</strong> Monitor usage, optimize embeds, and scale without premium per-user fees.</li>
-    </ul>
-  </section>
-
-  <section class="text-center mb-12">
-    <h2 class="text-2xl font-semibold mb-4">Get Started Today</h2>
-    <p class="mb-6">
-      Sign up for Tips+ to unlock Power Designer and supercharge your BI projects. As a Tips+ subscriber, manage your license, access exclusive content, and deploy in your tenant at <a href="https://account.powerbi.tips/about" target="_blank">our account portal</a>. Quick setup with Microsoft authentication and custom branding included.
+    <p class="mt-6 max-w-3xl text-neutral-700">
+      Entelexos is a different product (white-label embed), not this page.
     </p>
-    <a href="https://account.powerbi.tips" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      Sign Up Now
-    </a>
-  </section>
 
-  <section class="prose max-w-none">
-    <h2>What Users Are Saying</h2>
-    <blockquote>
-      "Power Designer has transformed how we approach report design and embedding. The AI features, cost savings, and easy admin tools save us hours every week—now we embed for thousands without breaking the bank!" - BI Analyst, Enterprise Corp
-    </blockquote>
-    <p>
-      Ready to unleash your inner report wizard? Dive into Power Designer, optimize your embeds, and elevate your Power BI game with scalable, professional analytics.
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a
+        class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+        href={tipsPlusHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Start with Tips+
+      </a>
+      <a
+        class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200"
+        href={themeCiteHref}
+      >
+        What is the Power BI Theme Generator?
+      </a>
+    </div>
+
+    <p class="mt-8 max-w-3xl text-neutral-700">
+      Related:
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2024/04/29/tips-theme-generator-tutorial-automatic-visual-objects-with-ai/`}>Tips+ Designer Tutorial: Automatic Visual Objects with AI</a>,
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2024/02/27/tips-theme-generator-tutorial-gallery-project-copy-edit/`}>Tips+ Designer Tutorial: Gallery Project Copy &amp; Edit</a>,
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={themeCiteHref}>What is the Power BI Theme Generator?</a>.
     </p>
-  </section>
-</BaseLayout>
+  </article>
 </BaseLayout>

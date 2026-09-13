@@ -1,5 +1,9 @@
 /** Hosts that should receive site referral UTMs. Not powerbi.tips itself. */
-export const SITE_UTM_HOSTS = new Set(['tools.powerbi.tips', 'themes.powerbi.tips']);
+export const SITE_UTM_HOSTS = new Set([
+  'tools.powerbi.tips',
+  'themes.powerbi.tips',
+  'account.powerbi.tips',
+]);
 
 export const SITE_UTM_DEFAULTS = {
   utm_source: 'powerbi.tips',
@@ -8,7 +12,7 @@ export const SITE_UTM_DEFAULTS = {
 };
 
 /**
- * Merge site UTMs onto a tools/themes.powerbi.tips URL.
+ * Merge site UTMs onto a tools/themes/account.powerbi.tips URL.
  * Existing query params are kept. Site UTM keys are filled only when absent
  * so podcast/campaign tracking (e.g. utm_source=videoDesc) is not overwritten.
  *

@@ -50,7 +50,7 @@ The most popular Power BI theming tool in the community. Create custom color pal
 ### Power Designer — powerbi.tips/power-designer
 URL: https://powerbi.tips/power-designer/
 
-AI-powered report design tool that generates professional Power BI themes, report pages, layouts, and embedded experiences in minutes. Built for scalability and cost-efficiency. Power Designer empowers admins and users to manage, edit, and share reports — for both internal and external audiences.
+Power Designer is the Tips+ report-design tool for Power BI and Fabric (wireframes, layouts, themes, gallery, AI auto-layout; export PBIP). Not the free Theme Generator. Not Entelexos.
 
 ### Entelexos — Power BI Embedded Platform
 URL: https://www.entelexos.com
