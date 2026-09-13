@@ -1,7 +1,6 @@
 ---
 title: 'PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes'
-excerpt: Power BI is a powerful business intelligence tool that helps organizations
-  to gain insights into their data. With its ability to create stunning visua...
+excerpt: How do I create a complex Power BI theme without writing JSON?
 date: '2023-02-28'
 authors:
 - Seth Bauer
@@ -11,6 +10,28 @@ tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+## How do I create a complex Power BI theme without writing JSON?
+
+**TL;DR.** Use the free PowerBI.tips Theme Generator. The UI writes theme JSON that matches Microsoft’s validation rules — colors, text, icons, and visual properties — so you skip hand-building the file. Download it, import it in Desktop. Saving a theme library is TipsPlus.
+
+### What does the Theme Generator create?
+
+It creates a Power BI theme JSON that can set colors, fonts, icons, and visual properties across a report. One reusable file beats restyling every visual by hand.
+
+### Is the generator free?
+
+Yes. The editor stays free. TipsPlus is how you save and reopen theme files in a library. Layout and gallery downloads are separate and free.
+
+### Why did Microsoft validation break old theme files?
+
+In February 2023 Microsoft released stricter theme validation so uploads must match the schema. Older hand-built or outdated files can fail. The generator targets the current schema and validation rules.
+
+### What else can the editor do besides colors?
+
+This update added upload of an existing theme, a code editor, icons, and the rest of the Microsoft schema properties. See the walkthroughs below in this post.
+
+Related: [Power BI Theme Generator](/power-bi-theme-generator/), [Power BI Themes](/2021/12/22/power-bi-themes/), and [Power BI Layouts Have Evolved: Download PBIR Files from the Gallery](/2026/09/02/power-bi-layouts-pbir-gallery/).
 
 Power BI is a powerful business intelligence tool that helps organizations to gain insights into their data. With its ability to create stunning visualizations, it’s no wonder that it’s become a popular tool among businesses. However, creating the perfect visualization requires more than just dragging and dropping data points onto a canvas. It requires a good understanding of design principles and a keen eye for detail. The time it takes to create a visual can be drastically reduced if a Theme is used.
 

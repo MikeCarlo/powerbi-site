@@ -1,7 +1,6 @@
 ---
 title: Power BI Themes
-excerpt: Themes are the bedrock of consistency. As report authors it is important
-  to create a consistent experience in a single, series or multitude of reports...
+excerpt: How do I use a Power BI theme to keep reports consistent?
 date: '2021-12-22'
 authors:
 - Seth Bauer
@@ -11,6 +10,28 @@ tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+## How do I use a Power BI theme to keep reports consistent?
+
+**TL;DR.** A Power BI theme is a reusable JSON file for colors, fonts, and visual properties so one report — or a whole set — looks the same. Desktop covers a simple palette. For a full theme, use the free PowerBI.tips Theme Generator instead of writing the file by hand.
+
+### What does a Power BI theme control?
+
+A theme sets color templates and global font and size properties. It can also pre-configure almost any visual property so every page starts consistent. One file applies or removes in Desktop.
+
+### Can I build a theme in Power BI Desktop alone?
+
+Desktop covers the simple palette and some globals. A comprehensive theme is a JSON file that has grown too complex to write by hand. That is why the generator exists.
+
+### Should I format visuals before I apply a theme?
+
+No. If you customize properties on the report first, those overrides are not replaced when the theme is applied. Apply the theme first, then override only what you must.
+
+### Where do I get a theme file?
+
+Use the free [Power BI Theme Generator](/power-bi-theme-generator/). It writes the JSON. The 2023 walkthrough covers the editor, validation, and saving a library.
+
+Related: [Power BI Theme Generator](/power-bi-theme-generator/), [PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes](/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/), and [Power BI Layouts Have Evolved: Download PBIR Files from the Gallery](/2026/09/02/power-bi-layouts-pbir-gallery/).
 
 Themes are the bedrock of consistency. As report authors it is important to create a consistent experience in a single, series or multitude of reports. With a little forethought you can easily build reports that exhibit the same fonts, properties and many other aspects with a Power BI Theme. If you aren’t using a theme and you build reports, its time you learn about them and put them into your arsenal.
 

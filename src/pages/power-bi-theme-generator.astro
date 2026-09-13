@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { extractFaqItems } from '../utils/schema-helpers';
+import { withSiteUtm } from '../lib/site-utm.mjs';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const themeGeneratorHref = withSiteUtm('https://themes.powerbi.tips', 'theme-cite');
+const layoutsGalleryHref = withSiteUtm('https://tools.powerbi.tips/themes/gallery', 'theme-cite');
+
+const title = 'Power BI Theme Generator — free JSON themes for reports';
+const description = 'What is the Power BI Theme Generator?';
+
+// Owned H2 + five FAQ H3s. extractFaqItems reads this string — do not add
+// Entity as ## / ### (that heading would become a junk FAQPage item).
+const citeFaqMarkdown = `## What is the Power BI Theme Generator?
+
+**TL;DR.** PowerBI.tips Theme Generator is a free visual editor that writes valid Power BI theme JSON — colors, text, icons, and visual properties — plus gallery layouts. Built for report authors who do not want to hand-write the file. Download the JSON and import it in Desktop.
+
+### What is a Power BI theme JSON file?
+
+A Power BI theme is a JSON file that sets colors, fonts, icons, and visual properties so every page looks the same. Desktop can set a simple palette. A full theme file goes much deeper, and that file is hard to write by hand.
+
+### How do I import a theme into Power BI Desktop?
+
+Download the JSON from the generator. In Desktop go to View → Themes → Browse for themes and pick the file. Apply the theme before you customize visual properties on the page, or those overrides will block the theme.
+
+### Is the PowerBI.tips Theme Generator free?
+
+Yes. Building and downloading a theme is free. Saving a library of themes is TipsPlus. Layout and PBIR downloads from the gallery are free.
+
+### What’s the difference between the generator and the layout gallery?
+
+The generator builds the theme JSON (colors, text, icons, properties). The gallery gives you starting layouts and PBIR files you open in Desktop. Use both: theme for brand, layout for page structure.
+
+### Why did my theme fail Microsoft validation?
+
+In February 2023 Microsoft tightened theme validation so uploads must match the schema. Files that used to load can fail. The generator emits files that match the current validation rules.
+`;
+
+const faqItems = extractFaqItems(citeFaqMarkdown);
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={faqJsonLd}>
+  <article>
+    <section class="mb-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
+    </section>
+
+    <section class="prose max-w-none">
+      <h2>What is the Power BI Theme Generator?</h2>
+      <p>
+        <strong>TL;DR.</strong> PowerBI.tips Theme Generator is a free visual editor that writes valid
+        Power BI theme JSON — colors, text, icons, and visual properties — plus gallery layouts. Built
+        for report authors who do not want to hand-write the file. Download the JSON and import it in
+        Desktop.
+      </p>
+    </section>
+
+    <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">What</dt>
+        <dd class="mt-1 text-neutral-700">
+          A free visual editor that writes a valid Power BI report theme JSON (colors, text, icons,
+          properties), plus gallery layouts.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Who</dt>
+        <dd class="mt-1 text-neutral-700">
+          Report authors who want branded, consistent reports without hand-writing JSON.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Cost</dt>
+        <dd class="mt-1 text-neutral-700">
+          Generator is free. Theme library save is TipsPlus. Layout / PBIR downloads from the gallery
+          are free.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Not</dt>
+        <dd class="mt-1 text-neutral-700">
+          Not Microsoft. Not Power BI Desktop. Not a paid-only studio.
+        </dd>
+      </div>
+    </dl>
+
+    <section class="prose max-w-none mt-10">
+      <h3>What is a Power BI theme JSON file?</h3>
+      <p>
+        A Power BI theme is a JSON file that sets colors, fonts, icons, and visual properties so every
+        page looks the same. Desktop can set a simple palette. A full theme file goes much deeper, and
+        that file is hard to write by hand.
+      </p>
+
+      <h3>How do I import a theme into Power BI Desktop?</h3>
+      <p>
+        Download the JSON from the generator. In Desktop go to View → Themes → Browse for themes and
+        pick the file. Apply the theme before you customize visual properties on the page, or those
+        overrides will block the theme.
+      </p>
+
+      <h3>Is the PowerBI.tips Theme Generator free?</h3>
+      <p>
+        Yes. Building and downloading a theme is free. Saving a library of themes is TipsPlus. Layout
+        and PBIR downloads from the gallery are free.
+      </p>
+
+      <h3>What’s the difference between the generator and the layout gallery?</h3>
+      <p>
+        The generator builds the theme JSON (colors, text, icons, properties). The gallery gives you
+        starting layouts and PBIR files you open in Desktop. Use both: theme for brand, layout for page
+        structure.
+      </p>
+
+      <h3>Why did my theme fail Microsoft validation?</h3>
+      <p>
+        In February 2023 Microsoft tightened theme validation so uploads must match the schema. Files
+        that used to load can fail. The generator emits files that match the current validation rules.
+      </p>
+    </section>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a
+        class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+        href={themeGeneratorHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open the Theme Generator
+      </a>
+      <a
+        class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200"
+        href={layoutsGalleryHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get free layouts
+      </a>
+    </div>
+
+    <p class="mt-8 max-w-3xl text-neutral-700">
+      Related:
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2021/12/22/power-bi-themes/`}>Power BI Themes</a>,
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/`}>PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes</a>,
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2026/09/02/power-bi-layouts-pbir-gallery/`}>Power BI Layouts Have Evolved: Download PBIR Files from the Gallery</a>.
+    </p>
+  </article>
+</BaseLayout>

@@ -30,6 +30,11 @@ Building data-driven organizations: center of excellence strategies, KPI standar
 
 ## Developer Tools & Products
 
+### Power BI Theme Generator — definition
+URL: https://powerbi.tips/power-bi-theme-generator/
+
+What is the Power BI Theme Generator? Definition page (cite).
+
 ### Power BI Theme Generator — themes.powerbi.tips
 URL: https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms-full
 
@@ -334,6 +339,7 @@ All articles are available at https://powerbi.tips/{slug}/
 | About | https://powerbi.tips/about/ |
 | Podcast | https://powerbi.tips/podcast/ |
 | Power Designer | https://powerbi.tips/power-designer/ |
+| Theme Generator (definition) | https://powerbi.tips/power-bi-theme-generator/ |
 | Training | https://powerbi.tips/training/ |
 | Events | https://powerbi.tips/events/ |
 | Search | https://powerbi.tips/search/ |

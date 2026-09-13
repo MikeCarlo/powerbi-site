@@ -9,7 +9,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const layoutsGalleryHref = withSiteUtm('https://tools.powerbi.tips/themes/gallery', 'power-bi-hub');
 const themeGeneratorHref = withSiteUtm('https://themes.powerbi.tips', 'power-bi-hub');
 
+const citePageHref = `${base}/power-bi-theme-generator/`;
+
 const hubDestinations = [
+  {
+    title: 'Theme Generator',
+    desc: 'What is the Power BI Theme Generator? Free JSON themes for reports.',
+    href: citePageHref,
+    external: false,
+  },
   {
     title: 'Power Designer',
     desc: 'AI-powered themes, layouts, and report design.',
@@ -71,11 +79,22 @@ function toCard(post: BlogPost) {
   };
 }
 
-const themePosts = allPosts
-  .filter((p) => matchesAny(p, ['theme', 'themes', 'power designer', 'gallery']))
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 6)
-  .map(toCard);
+const themeCiteCard = {
+  title: 'Power BI Theme Generator — free JSON themes for reports',
+  date: null,
+  excerpt: 'What is the Power BI Theme Generator?',
+  featuredImage: null,
+  href: citePageHref,
+};
+
+const themePosts = [
+  themeCiteCard,
+  ...allPosts
+    .filter((p) => matchesAny(p, ['theme', 'themes', 'power designer', 'gallery']))
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 5)
+    .map(toCard),
+];
 
 const scrimPosts = allPosts
   .filter((p) => matchesAny(p, ['scrim', 'scrims']))
@@ -108,7 +127,7 @@ const tipsPlusPosts = allPosts
     </p>
   </section>
 
-  <nav aria-label="Power BI destinations" class="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+  <nav aria-label="Power BI destinations" class="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {hubDestinations.map((item) => (
       <a
         href={item.href}
@@ -129,7 +148,8 @@ const tipsPlusPosts = allPosts
         Create consistent, branded reports with the <strong>world’s most used and longest running Theme Generator</strong>.
       </p>
       <div class="mt-4 flex flex-wrap gap-3">
-        <a class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700" href={themeGeneratorHref} target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
+        <a class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700" href={citePageHref}>Power BI Theme Generator</a>
+        <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={themeGeneratorHref} target="_blank" rel="noopener noreferrer">Open Theme Generator</a>
         <a class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/power-designer/`}>Power Designer</a>
       </div>
     </div>
@@ -172,7 +192,9 @@ const tipsPlusPosts = allPosts
               </div>
             ) : null}
             <div class="p-4">
-              <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                {p.date ? p.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'Theme Generator'}
+              </div>
               <div class="mt-1 font-semibold text-neutral-900">{p.title}</div>
               {p.excerpt ? <div class="mt-2 text-sm text-neutral-600">{p.excerpt}</div> : null}
             </div>

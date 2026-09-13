@@ -57,7 +57,7 @@ const clarityRedirects = {
   '/blog/': '/posts/',
   '/recent/': '/posts/',
   '/toolbox/': '/tools/',
-  '/themes/': '/tag/themes/',
+  '/themes/': '/power-bi-theme-generator/',
   '/product-category/scrims/': '/2019/12/21/scrims-instructions/',
   '/product-category/layouts/': '/power-designer/',
   '/product-category/game/': '/posts/',
