@@ -1,28 +1,37 @@
 # Organizes podcast episode files on the Desktop for two shows.
 #
-# Explicit Measures (file name contains "ep.544" or is already EMP-NNN):
-#   EMP-544.m4a
-#   EMP-544.mp4                 (portrait video - no suffix)
-#   EMP-544-landscape.mp4       (landscape video)
+# Explicit Measures (file name contains "ep.544", is already
+# ep.{NNN}-emp-{YYYY-MM-DD}, or is a drafted EMP-{NNN} name):
+#   ep.544-emp-2026-09-15.m4a
+#   ep.544-emp-2026-09-15.mp4              (portrait video - no suffix)
+#   ep.544-emp-2026-09-15-landscape.mp4    (landscape video)
 #   Moved to D:\<current year>  (e.g. D:\2026)
 #
 # Agentic Thinking (file name contains "agentic thinking", spaces,
 # hyphens, or underscores between the words all match; already-renamed
-# NNN-slug names; or already-short AG-NNN names):
-#   AG-029.m4a
-#   AG-029.mp4                  (portrait video - no suffix)
-#   AG-029-landscape.mp4        (landscape video)
+# NNN-slug names; drafted AG-{NNN} names; or already-short
+# ep.{NNN}-ag-{YYYY-MM-DD} names):
+#   ep.029-ag-2026-09-11.m4a
+#   ep.029-ag-2026-09-11.mp4               (portrait video - no suffix)
+#   ep.029-ag-2026-09-11-landscape.mp4     (landscape video)
 #   The episode number is pulled from the file name (e.g. "Ep 29", "#29",
-#   "029-agentic-thinking", "AG-029") and zero-padded to three digits.
+#   "029-agentic-thinking", "AG-029", "ep.029-ag-...") and zero-padded
+#   to three digits.
 #   Moved to D:\<current year> AT  (e.g. D:\2026 AT)
+#
+# {YYYY-MM-DD} is the episode/air/Restream date. Restream stamps like
+# Sep-15-2026 are parsed from the file name when present. If the name
+# has no date (old NNN-slug / drafted EMP-NNN / AG-NNN), LastWriteTime
+# is used.
 #
 # Supported extensions: .m4a, .mp4, .mkv
 #
 # Landscape is detected from the video's frame width/height properties
 # and from an existing "(landscape)" or "-landscape" token in the name.
 # Duplicate-download markers like " (1)" are stripped from the name.
-# Long Restream stems and older organized names (ep.544 - ..., 029-slug)
-# are migrated to the short form. Files already named EMP-NNN / AG-NNN
+# Long Restream stems, older organized names (ep.544 - ..., 029-slug),
+# and drafted EMP-{NNN} / AG-{NNN} names are migrated to the short form.
+# Files already on the ep.{NNN}-{emp|ag}-{YYYY-MM-DD}[-landscape] pattern
 # are just moved, so the script is safe to run repeatedly.
 #
 # The taskbar shortcut launches this file with powershell.exe -File and no
@@ -101,7 +110,8 @@ function Get-BaseNameWithoutDuplicateMarker {
 }
 
 # Episode id only: strip duplicate markers and landscape tokens so
-# EMP-563-landscape / AG-039 (1) / 029-slug (landscape) share one core.
+# ep.563-emp-2026-09-15-landscape / AG-039 (1) / 029-slug (landscape)
+# share one core.
 function Get-NameCore {
     param([string]$BaseName)
     $n = Get-BaseNameWithoutDuplicateMarker $BaseName
@@ -116,17 +126,71 @@ function Test-HasLandscapeToken {
     return [bool]($stripped -match '(?:\s*\(landscape\)|-landscape)$')
 }
 
+function Get-ShowTag {
+    param([string]$ShowKind)
+    if ($ShowKind -eq 'AG') { return 'ag' }
+    return 'emp'
+}
+
 function Test-IsCanonicalShortName {
     param(
         [string]$Name,
-        [string]$Prefix
+        [string]$ShowTag
     )
-    return [bool]($Name -match "^$Prefix-\d{3}(?:-landscape)?\.(?:m4a|mp4|mkv)$")
+    return [bool]($Name -match "^ep\.\d{3}-$ShowTag-\d{4}-\d{2}-\d{2}(?:-landscape)?\.(?:m4a|mp4|mkv)$")
+}
+
+function ConvertTo-IsoDate {
+    param(
+        [int]$Year,
+        [int]$Month,
+        [int]$Day
+    )
+    try {
+        return (Get-Date -Year $Year -Month $Month -Day $Day).ToString('yyyy-MM-dd')
+    } catch {
+        return $null
+    }
+}
+
+function Get-EpisodeDateStamp {
+    param(
+        [string]$BaseName,
+        [System.IO.FileInfo]$File
+    )
+    $core = Get-NameCore $BaseName
+
+    if ($core -match 'ep\.\d{1,3}-(?:emp|ag)-(\d{4}-\d{2}-\d{2})$') {
+        return $Matches[1]
+    }
+
+    # Restream stamps: Sep-15-2026, Jul_14_2026, "Sep 15 2026"
+    if ($core -match '(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[\s_-]+(\d{1,2})[\s_-]+(\d{4})') {
+        $monthMap = @{
+            jan = 1; feb = 2; mar = 3; apr = 4; may = 5; jun = 6
+            jul = 7; aug = 8; sep = 9; oct = 10; nov = 11; dec = 12
+        }
+        $monthName = $Matches[1].ToLower()
+        $iso = ConvertTo-IsoDate -Year ([int]$Matches[3]) -Month ([int]$monthMap[$monthName]) -Day ([int]$Matches[2])
+        if ($iso) { return $iso }
+    }
+
+    if ($core -match '(?<!\d)(\d{4}-\d{2}-\d{2})(?!\d)') {
+        return $Matches[1]
+    }
+
+    if ($File) {
+        return $File.LastWriteTime.ToString('yyyy-MM-dd')
+    }
+    return $null
 }
 
 function Get-ExplicitMeasuresEpisodeNumber {
     param([string]$BaseName)
     $core = Get-NameCore $BaseName
+    if ($core -match '^ep\.(\d{1,3})-emp-') {
+        return $Matches[1]
+    }
     if ($core -match '^EMP-(\d{1,3})$') {
         return $Matches[1]
     }
@@ -139,6 +203,9 @@ function Get-ExplicitMeasuresEpisodeNumber {
 function Get-AgenticThinkingEpisodeNumber {
     param([string]$BaseName)
     $core = Get-NameCore $BaseName
+    if ($core -match '^ep\.(\d{1,3})-ag-') {
+        return $Matches[1]
+    }
     if ($core -match '^AG-(\d{1,3})$') {
         return $Matches[1]
     }
@@ -172,14 +239,22 @@ function Get-AgenticThinkingEpisodeNumber {
 
 function Get-ShowKind {
     param([string]$BaseName)
-    if ($BaseName -match 'agentic[\s_-]*thinking' -or $BaseName -match '^\d{3}-') {
-        return 'AG'
-    }
     $core = Get-NameCore $BaseName
-    if ($core -match '^AG-\d{1,3}$') {
+
+    # AG short form must win before the EMP "ep.NNN" check — both start with ep.
+    if (
+        $core -match '^ep\.\d{1,3}-ag-\d{4}-\d{2}-\d{2}$' -or
+        $core -match '^AG-\d{1,3}$' -or
+        $BaseName -match 'agentic[\s_-]*thinking' -or
+        $BaseName -match '^\d{3}-'
+    ) {
         return 'AG'
     }
-    if ($core -match '^EMP-\d{1,3}$' -or $BaseName -match 'ep\.\d+') {
+    if (
+        $core -match '^ep\.\d{1,3}-emp-\d{4}-\d{2}-\d{2}$' -or
+        $core -match '^EMP-\d{1,3}$' -or
+        $BaseName -match 'ep\.\d+'
+    ) {
         return 'EMP'
     }
     return $null
@@ -206,23 +281,29 @@ function Get-LandscapeSuffix {
 function Get-CanonicalEpisodeFileName {
     param(
         [System.IO.FileInfo]$File,
-        [string]$Prefix,
+        [string]$ShowKind,
         [string]$EpisodeNumber
     )
     $epNum = '{0:D3}' -f [int]$EpisodeNumber
-    if (Test-IsCanonicalShortName -Name $File.Name -Prefix $Prefix) {
+    $showTag = Get-ShowTag -ShowKind $ShowKind
+    $date = Get-EpisodeDateStamp -BaseName $File.BaseName -File $File
+    if (-not $date) {
+        return $null
+    }
+
+    if (Test-IsCanonicalShortName -Name $File.Name -ShowTag $showTag) {
         $suffix = ''
         if (Test-HasLandscapeToken $File.BaseName) {
             $suffix = '-landscape'
         }
-        return "$Prefix-$epNum$suffix$($File.Extension)"
+        return "ep.$epNum-$showTag-$date$suffix$($File.Extension)"
     }
 
     $suffix = Get-LandscapeSuffix -File $File
     if ($null -eq $suffix) {
         return $null
     }
-    return "$Prefix-$epNum$suffix$($File.Extension)"
+    return "ep.$epNum-$showTag-$date$suffix$($File.Extension)"
 }
 
 $moved = @()
@@ -245,9 +326,9 @@ foreach ($file in $files) {
             $skipped += "$($file.Name) (Agentic Thinking file but no episode number found)"
             continue
         }
-        $newName = Get-CanonicalEpisodeFileName -File $file -Prefix 'AG' -EpisodeNumber $epNum
+        $newName = Get-CanonicalEpisodeFileName -File $file -ShowKind 'AG' -EpisodeNumber $epNum
         if ($null -eq $newName) {
-            $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
+            $problems += "$($file.Name) (could not read video dimensions or episode date - left unrenamed)"
             continue
         }
     }
@@ -258,9 +339,9 @@ foreach ($file in $files) {
             $skipped += "$($file.Name) (Explicit Measures file but no episode number found)"
             continue
         }
-        $newName = Get-CanonicalEpisodeFileName -File $file -Prefix 'EMP' -EpisodeNumber $epNum
+        $newName = Get-CanonicalEpisodeFileName -File $file -ShowKind 'EMP' -EpisodeNumber $epNum
         if ($null -eq $newName) {
-            $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
+            $problems += "$($file.Name) (could not read video dimensions or episode date - left unrenamed)"
             continue
         }
     }
