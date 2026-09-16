@@ -1,27 +1,32 @@
 # Organizes podcast episode files on the Desktop for two shows.
 #
-# Explicit Measures (file name contains "ep.544"):
-#   ep.544 - <original name>.m4a
-#   ep.544 - <original name>.mp4               (portrait video - no suffix)
-#   ep.544 - <original name> (landscape).mp4   (landscape video)
+# Explicit Measures (file name contains "ep.544" or is already EMP-NNN):
+#   EMP-544.m4a
+#   EMP-544.mp4                 (portrait video - no suffix)
+#   EMP-544-landscape.mp4       (landscape video)
 #   Moved to D:\<current year>  (e.g. D:\2026)
 #
 # Agentic Thinking (file name contains "agentic thinking", spaces,
-# hyphens, or underscores between the words all match):
-#   029-<episode name>.mp4                     (portrait video - no suffix)
-#   029-<episode name> (landscape).mp4         (landscape video)
+# hyphens, or underscores between the words all match; already-renamed
+# NNN-slug names; or already-short AG-NNN names):
+#   AG-029.m4a
+#   AG-029.mp4                  (portrait video - no suffix)
+#   AG-029-landscape.mp4        (landscape video)
 #   The episode number is pulled from the file name (e.g. "Ep 29", "#29",
-#   "029-agentic-thinking") and zero-padded to three digits. The show
-#   name, episode-number token, Restream date stamps (Jul-14-2026), and
-#   a trailing "restream" marker are stripped from the episode name.
+#   "029-agentic-thinking", "AG-029") and zero-padded to three digits.
 #   Moved to D:\<current year> AT  (e.g. D:\2026 AT)
 #
 # Supported extensions: .m4a, .mp4, .mkv
 #
-# Landscape is detected from the video's frame width/height properties.
+# Landscape is detected from the video's frame width/height properties
+# and from an existing "(landscape)" or "-landscape" token in the name.
 # Duplicate-download markers like " (1)" are stripped from the name.
-# Files already renamed (starting with "ep." or "NNN-") are just moved,
-# so the script is safe to run repeatedly.
+# Long Restream stems and older organized names (ep.544 - ..., 029-slug)
+# are migrated to the short form. Files already named EMP-NNN / AG-NNN
+# are just moved, so the script is safe to run repeatedly.
+#
+# The taskbar shortcut launches this file with powershell.exe -File and no
+# extra arguments. Keep that invocation working: same path, no required params.
 
 $ErrorActionPreference = 'Stop'
 
@@ -90,6 +95,136 @@ function Move-FileWithProgress {
     Write-Progress -Activity "Moving to $destFolder" -Completed
 }
 
+function Get-BaseNameWithoutDuplicateMarker {
+    param([string]$BaseName)
+    return ($BaseName -replace '\s*\(\d+\)\s*$', '')
+}
+
+# Episode id only: strip duplicate markers and landscape tokens so
+# EMP-563-landscape / AG-039 (1) / 029-slug (landscape) share one core.
+function Get-NameCore {
+    param([string]$BaseName)
+    $n = Get-BaseNameWithoutDuplicateMarker $BaseName
+    $n = $n -replace '\s*\(landscape\)\s*$', ''
+    $n = $n -replace '-landscape$', ''
+    return $n
+}
+
+function Test-HasLandscapeToken {
+    param([string]$BaseName)
+    $stripped = Get-BaseNameWithoutDuplicateMarker $BaseName
+    return [bool]($stripped -match '(?:\s*\(landscape\)|-landscape)$')
+}
+
+function Test-IsCanonicalShortName {
+    param(
+        [string]$Name,
+        [string]$Prefix
+    )
+    return [bool]($Name -match "^$Prefix-\d{3}(?:-landscape)?\.(?:m4a|mp4|mkv)$")
+}
+
+function Get-ExplicitMeasuresEpisodeNumber {
+    param([string]$BaseName)
+    $core = Get-NameCore $BaseName
+    if ($core -match '^EMP-(\d{1,3})$') {
+        return $Matches[1]
+    }
+    if ($core -match 'ep\.(\d+)') {
+        return $Matches[1]
+    }
+    return $null
+}
+
+function Get-AgenticThinkingEpisodeNumber {
+    param([string]$BaseName)
+    $core = Get-NameCore $BaseName
+    if ($core -match '^AG-(\d{1,3})$') {
+        return $Matches[1]
+    }
+    if ($core -match '^(\d{3})-') {
+        return $Matches[1]
+    }
+
+    # Strip export junk first so it can't confuse number extraction:
+    # Restream date stamps like "Jul-14-2026" and a trailing "restream"
+    # marker. Landscape tokens are already gone via Get-NameCore.
+    $cleanBase = $core -replace '[\s_-]*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[\s_-]*\d{1,2}[\s_-]*\d{4}', ''
+    $cleanBase = $cleanBase -replace '[\s_-]*restream\s*$', ''
+
+    # Pull the episode number: "Ep 29", "ep.29", "#29", a number next to
+    # the show name ("029-agentic-thinking" or "agentic thinking 29"),
+    # or a bare number as a fallback.
+    if ($cleanBase -match '(?:ep(?:isode)?\s*\.?\s*#?\s*|#\s*)(\d+)') {
+        return $Matches[1]
+    }
+    if ($cleanBase -match '(\d+)[\s_-]*agentic[\s_-]*thinking') {
+        return $Matches[1]
+    }
+    if ($cleanBase -match 'agentic[\s_-]*thinking[\s_-]*(\d+)') {
+        return $Matches[1]
+    }
+    if ($cleanBase -match '(?<!\d)(\d{1,3})(?!\d)') {
+        return $Matches[1]
+    }
+    return $null
+}
+
+function Get-ShowKind {
+    param([string]$BaseName)
+    if ($BaseName -match 'agentic[\s_-]*thinking' -or $BaseName -match '^\d{3}-') {
+        return 'AG'
+    }
+    $core = Get-NameCore $BaseName
+    if ($core -match '^AG-\d{1,3}$') {
+        return 'AG'
+    }
+    if ($core -match '^EMP-\d{1,3}$' -or $BaseName -match 'ep\.\d+') {
+        return 'EMP'
+    }
+    return $null
+}
+
+function Get-LandscapeSuffix {
+    param([System.IO.FileInfo]$File)
+    if ($File.Extension -notin '.mp4', '.mkv') {
+        return ''
+    }
+    if (Test-HasLandscapeToken $File.BaseName) {
+        return '-landscape'
+    }
+    $orientation = Get-VideoOrientation -FileName $File.Name
+    if ($null -eq $orientation) {
+        return $null
+    }
+    if ($orientation -eq 'landscape') {
+        return '-landscape'
+    }
+    return ''
+}
+
+function Get-CanonicalEpisodeFileName {
+    param(
+        [System.IO.FileInfo]$File,
+        [string]$Prefix,
+        [string]$EpisodeNumber
+    )
+    $epNum = '{0:D3}' -f [int]$EpisodeNumber
+    if (Test-IsCanonicalShortName -Name $File.Name -Prefix $Prefix) {
+        $suffix = ''
+        if (Test-HasLandscapeToken $File.BaseName) {
+            $suffix = '-landscape'
+        }
+        return "$Prefix-$epNum$suffix$($File.Extension)"
+    }
+
+    $suffix = Get-LandscapeSuffix -File $File
+    if ($null -eq $suffix) {
+        return $null
+    }
+    return "$Prefix-$epNum$suffix$($File.Extension)"
+}
+
 $moved = @()
 $skipped = @()
 $problems = @()
@@ -102,93 +237,31 @@ foreach ($file in $files) {
     $sourcePath = $file.FullName
     $destination = $null
 
-    if ($file.BaseName -match '(?i)agentic[\s_-]*thinking' -or $file.BaseName -match '^\d{3}-') {
-        # ----- Agentic Thinking -----
+    $showKind = Get-ShowKind -BaseName $file.BaseName
+    if ($showKind -eq 'AG') {
         $destination = $atDestination
-
-        if ($file.Name -match '^\d{3}-') {
-            # Already renamed (e.g. by a previous run) - just move it
-            $newName = $file.Name
+        $epNum = Get-AgenticThinkingEpisodeNumber -BaseName $file.BaseName
+        if (-not $epNum) {
+            $skipped += "$($file.Name) (Agentic Thinking file but no episode number found)"
+            continue
         }
-        else {
-            # Strip export junk first so it can't confuse number extraction:
-            # duplicate markers " (1)", Restream date stamps like "Jul-14-2026",
-            # and a trailing "restream" marker.
-            $cleanBase = $file.BaseName -replace '\s*\(\d+\)\s*$', ''
-            $cleanBase = $cleanBase -replace '(?i)[\s_-]*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[\s_-]*\d{1,2}[\s_-]*\d{4}', ''
-            $cleanBase = $cleanBase -replace '(?i)[\s_-]*restream\s*$', ''
-
-            # Pull the episode number: "Ep 29", "ep.29", "#29", a number next to
-            # the show name ("029-agentic-thinking" or "agentic thinking 29"),
-            # or a bare number as a fallback.
-            $epNum = $null
-            if ($cleanBase -match '(?i)(?:ep(?:isode)?\s*\.?\s*#?\s*|#\s*)(\d+)') {
-                $epNum = $Matches[1]
-            }
-            elseif ($cleanBase -match '(?i)(\d+)[\s_-]*agentic[\s_-]*thinking') {
-                $epNum = $Matches[1]
-            }
-            elseif ($cleanBase -match '(?i)agentic[\s_-]*thinking[\s_-]*(\d+)') {
-                $epNum = $Matches[1]
-            }
-            elseif ($cleanBase -match '(?<!\d)(\d{1,3})(?!\d)') {
-                $epNum = $Matches[1]
-            }
-            if (-not $epNum) {
-                $skipped += "$($file.Name) (Agentic Thinking file but no episode number found)"
-                continue
-            }
-            $epNum = '{0:D3}' -f [int]$epNum
-
-            # Build the episode name: strip the show name with any attached
-            # episode number, plus other episode-number tokens, then trim
-            # leftover separators.
-            $cleanBase = $cleanBase -replace '(?i)[\s_-]*\d*[\s_-]*agentic[\s_-]*thinking[\s_-]*\d*', ''
-            $cleanBase = $cleanBase -replace '(?i)(?:ep(?:isode)?\s*\.?\s*#?\s*|#\s*)\d+', ''
-            $cleanBase = $cleanBase -replace '\s{2,}', ' ' -replace '-{2,}', '-' -replace '_{2,}', '_'
-            $cleanBase = $cleanBase.Trim(' ', '-', '_', ':', '.', '|')
-            if (-not $cleanBase) {
-                $skipped += "$($file.Name) (no episode name left after cleaning)"
-                continue
-            }
-
-            $suffix = ''
-            if ($file.Extension -in '.mp4', '.mkv') {
-                $orientation = Get-VideoOrientation -FileName $file.Name
-                if ($null -eq $orientation) {
-                    $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
-                    continue
-                }
-                if ($orientation -eq 'landscape') { $suffix = ' (landscape)' }
-            }
-
-            $newName = "$epNum-$cleanBase$suffix$($file.Extension)"
+        $newName = Get-CanonicalEpisodeFileName -File $file -Prefix 'AG' -EpisodeNumber $epNum
+        if ($null -eq $newName) {
+            $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
+            continue
         }
     }
-    elseif ($file.BaseName -match 'ep\.(\d+)') {
-        # ----- Explicit Measures -----
+    elseif ($showKind -eq 'EMP') {
         $destination = $emDestination
-        $epNum = $Matches[1]
-
-        if ($file.Name -match '^ep\.\d+') {
-            # Already renamed (e.g. by a previous run) - just move it
-            $newName = $file.Name
+        $epNum = Get-ExplicitMeasuresEpisodeNumber -BaseName $file.BaseName
+        if (-not $epNum) {
+            $skipped += "$($file.Name) (Explicit Measures file but no episode number found)"
+            continue
         }
-        else {
-            # Strip duplicate-download markers like " (1)" from the end of the base name
-            $cleanBase = $file.BaseName -replace '\s*\(\d+\)\s*$', ''
-
-            $suffix = ''
-            if ($file.Extension -in '.mp4', '.mkv') {
-                $orientation = Get-VideoOrientation -FileName $file.Name
-                if ($null -eq $orientation) {
-                    $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
-                    continue
-                }
-                if ($orientation -eq 'landscape') { $suffix = ' (landscape)' }
-            }
-
-            $newName = "ep.$epNum - $cleanBase$suffix$($file.Extension)"
+        $newName = Get-CanonicalEpisodeFileName -File $file -Prefix 'EMP' -EpisodeNumber $epNum
+        if ($null -eq $newName) {
+            $problems += "$($file.Name) (could not read video dimensions - left unrenamed)"
+            continue
         }
     }
     else {
@@ -197,12 +270,16 @@ foreach ($file in $files) {
     }
 
     if ($newName -ne $file.Name) {
-        if (Test-Path (Join-Path $desktop $newName)) {
+        $desktopTarget = Join-Path $desktop $newName
+        $sameDesktopFile = [string]::Equals($file.FullName, $desktopTarget, [StringComparison]::OrdinalIgnoreCase)
+        if ((Test-Path -LiteralPath $desktopTarget) -and -not $sameDesktopFile) {
             $problems += "$($file.Name) (target already exists: $newName)"
             continue
         }
-        Rename-Item -LiteralPath $file.FullName -NewName $newName
-        $sourcePath = Join-Path $desktop $newName
+        if (-not $sameDesktopFile) {
+            Rename-Item -LiteralPath $file.FullName -NewName $newName
+            $sourcePath = $desktopTarget
+        }
     }
 
     $targetPath = Join-Path $destination $newName
