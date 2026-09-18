@@ -13,9 +13,31 @@ tags:
   - "Power BI Report Design"
   - "Power BI Templates"
   - "PowerBI.tips Gallery"
-excerpt: "PowerBI.tips Layouts have evolved into a dedicated Power BI gallery where you can download PBIR project files, open them in Power BI Desktop, and start building polished reports right away."
+excerpt: "How do I download a Power BI layout as a PBIR file from the gallery?"
 featuredImage: "./assets/featured.svg"
 ---
+
+## How do I download a Power BI layout as a PBIR file from the gallery?
+
+**TL;DR.** Open the PowerBI.tips Layouts Gallery, pick a report design, and download the PBIR project. Open that project in Power BI Desktop, swap in your data and visuals, then adjust the theme. You start from a finished page layout instead of a blank canvas.
+
+### What is a PBIR file?
+
+PBIR is the Power BI Project report format. It stores the report as editable project files so you can open a gallery layout in Desktop and reshape it around your own model.
+
+### Where do I download layouts?
+
+The official download location is the PowerBI.tips Layouts Gallery. Browse the collection, preview a design, and download the PBIR project from the gallery page.
+
+### Can I change a downloaded layout?
+
+Yes. Use the file as-is, replace the sample visuals, change the theme, or rebuild the page around your data. The gallery file is a starting layout, not a locked template.
+
+### Do I need to start from a blank report?
+
+No. Download a layout, open the PBIR project in Desktop, and start from the placed visuals and page structure instead of a blank canvas.
+
+Related: [Power BI Themes](https://powerbi.tips/2021/12/22/power-bi-themes/), [PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes](https://powerbi.tips/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
 
 ## A New Home for Power BI Layouts
 

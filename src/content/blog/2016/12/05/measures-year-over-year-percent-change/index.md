@@ -1,6 +1,6 @@
 ---
 title: "Measures – Year Over Year Percent Change"
-excerpt: "This tutorial is a variation on the month to month percent change tutorial. Th..."
+excerpt: "How do I calculate year-over-year percent change with DAX measures?"
 date: "2016-12-05"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I calculate year-over-year percent change with DAX measures?
+
+**TL;DR.** Load monthly sales with Month and Year columns. Create a Date Reference, then ThisYear and LastYear measures with CALCULATE and YEAR. YoY Percent Change is DIVIDE(ThisYear, LastYear, 0)-1. Format it as a percent and plot it on a categorical month axis.
+
+### How is this different from month-over-month percent change?
+
+This version compares the same month in two years (November 2016 vs November 2015). The earlier tutorial compares consecutive months. The DAX shape is similar; the filter is year, not the prior month.
+
+### What does Date Reference do?
+
+Date Reference is a measure set to a fixed date (DATE(2016,12,31) here). ThisYear and LastYear read YEAR from that date so both measures share one as-of point.
+
+### Why use DIVIDE and then subtract 1?
+
+DIVIDE(ThisYear, LastYear, 0) returns the ratio. Subtracting 1 turns that ratio into a percent change. Format the measure as % on the Modeling ribbon.
+
+### How should I chart the result?
+
+Use a stacked column chart, set the X-axis to Categorical so month 0 does not appear, and turn on diverging data colors (red below 0, green above). Change Month to a whole number so the axis has no decimals.
+
+Related: [Measures – Month to Month Percent Change](https://powerbi.tips/2016/07/14/measures-month-to-month-percent-change/), [Dynamic Percent Change using DAX](https://powerbi.tips/2016/06/10/dynamic-percent-change-using-dax/), and [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/).
 
 This tutorial is a variation on the [month to month percent change tutorial](http://powerbi.tips/2016/07/measures-month-to-month-percent-change/).  This specific exploration in year over year performance was born out of reviewing my google analytics information.  The specific analysis question I am trying to answer is, how did this current month of website visitors compare to the same month last year.  For example I want to compare the number of visitors for November 2016 to November 2015.  Did I have more users this year in this month or last year?  What was my percent changed between the two months?
 

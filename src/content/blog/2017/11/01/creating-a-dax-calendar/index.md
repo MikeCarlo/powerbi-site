@@ -1,6 +1,6 @@
 ---
 title: "Creating A DAX Calendar"
-excerpt: "There are many cases when you will need to create a date table within Power BI desktop.  This could be as simple as creating a master date table or mo..."
+excerpt: "How do I create a date table with DAX in Power BI?"
 date: "2017-11-01"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,28 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I create a date table with DAX in Power BI?
+
+**TL;DR.** On the Modeling ribbon click New Table. Use CALENDAR for a fixed range, CALENDARAUTO to follow dates already in the model, or NOW/TODAY so the range moves as the report refreshes. Add day, week, month, and year indexes to simplify time measures.
+
+### CALENDAR vs CALENDARAUTO?
+
+CALENDAR needs an explicit start and end date. CALENDARAUTO reads date columns already in the model and returns every day in those years, even if you only have one date in a year.
+
+### Do I have to refresh the date table?
+
+Yes. A DAX calculated table updates when the report refreshes. If you use NOW() or want the date list to grow, schedule refresh in the Power BI service.
+
+### Why add day, week, month, and year indexes?
+
+Indexes let you shift time in CALCULATE (last week, last five weeks) without rewriting date logic in every measure. Dates 5 in this tutorial builds those columns from TODAY().
+
+### How do I mark the start of the week?
+
+The Dates 5 example uses a startOfWeek variable: 1 is Sunday and 7 is Saturday. Change that number so weekly indexes line up with how your data starts a week.
+
+Related: [Start of Month DAX Calendar](https://powerbi.tips/2017/12/20/start-of-month-dax-calendar/), [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/), and [Measures – Year Over Year Percent Change](https://powerbi.tips/2016/12/05/measures-year-over-year-percent-change/).
 
 There are many cases when you will need to create a date table within Power BI desktop.  This could be as simple as creating a master date table or more complex such as creating a monthly or weekly index number tied to a date.  To create a date table there are two methods for creating a date table.  Method one, create the table directly in the Power BI Desktop, or method two load the date table from the data source.
 

@@ -1,6 +1,6 @@
 ---
 title: "Loading Excel Files from SharePoint"
-excerpt: "Learn how to connect Power BI Desktop to SharePoint document libraries and load Excel files. Enable scheduled data refreshes with SharePoint O365."
+excerpt: "How do I load Excel files from SharePoint into Power BI Desktop?"
 date: "2016-09-01"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,28 @@ categories:
 tags: ["SharePoint", "Excel", "Data Loading", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I load Excel files from SharePoint into Power BI Desktop?
+
+**TL;DR.** Copy the SharePoint site URL without SitePages/Home.aspx. In Desktop use Get Data, SharePoint Folder, sign in with an organizational account, then expand the Excel file and pick the table. Close and Apply, then check column types.
+
+### Why load Excel from SharePoint instead of a local folder?
+
+SharePoint can connect to the Power BI service, so the dataset can refresh on a schedule when you already have a SharePoint O365 account. A local folder usually cannot refresh the same way.
+
+### What URL do I paste into SharePoint Folder?
+
+Use the site root only, such as https://partner.onmicrosoft.com/sites/[Your Site Name]/. Drop SitePages/Home.aspx. Power BI needs the site name, not the home page address.
+
+### How do I authenticate?
+
+After you enter the URL, sign in with the credentials your IT group issued. In this walkthrough that was Organization Account, then Sign in, and the right apply-to level in the dropdown.
+
+### How do I get the Excel table after the folder lists?
+
+Click Edit on the preview, find the file (SampleData in SampleDocs here), expand it, then open the Excel table (MyDataTable). Close and Apply, and set each column data type on the Home ribbon.
+
+Related: [Load Multiple Excel (xls or xlsx) Files](https://powerbi.tips/2016/08/10/load-multiple-excel-xlsx-files/), [Folder of Files Loaded to Power BI Desktop](https://powerbi.tips/2016/04/07/folder-of-files-loaded-to-power-bi-desktop/), and [Power BI Refresh Overview](https://powerbi.tips/2019/09/03/power-bi-refresh-overview/).
 
 This is a quick tutorial on how to load Excel files from a SharePoint page. SharePoint is a nice landing place for your data because it can be connected to the PowerBI.com service and thus can be used to schedule refreshes of data within your company (if you already have a SharePoint O365 account).
 
