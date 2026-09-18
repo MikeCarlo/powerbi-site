@@ -13,25 +13,25 @@ featuredImage: "./assets/featured.png"
 
 ## How do I find where columns and measures are used in a Power BI report?
 
-**TL;DR.** Download Field Finder, open the PBIT, and point the file-path parameter at your PBIX. After load, the Columns and Measures tab shows usage by page. Click a field or a page thumbnail to see where that column or measure is used.
+**TL;DR.** Use Field Finder: open the PBIT, point the parameter at your PBIX path, and load. The report shows which pages use each column or measure, plus page and report filters. That beats clicking every visual by hand.
 
-### What is Field Finder?
+### Why do unused columns and measures matter?
 
-Field Finder is a Power BI template that reads a PBIX layout and shows which columns and measures appear in visuals, plus page and report filters. It answers the reverse of clicking a visual to see its fields.
+Extra columns and measures can slow the model and make it harder to maintain. Field Finder helps you see what is actually used on report pages.
 
-### Should I open the PBIT or the PBIX?
+### What do I download?
 
-Use the PBIT to run the tool as-is. Use the PBIX if you want to see how it works or change it. The download includes both.
+The download includes a PBIX and a PBIT. Use the template to run the tool as-is. Use the PBIX if you want to inspect or change how it works.
 
-### How do I point it at my report?
+### How do I point Field Finder at my report?
 
-When the PBIT opens, enter the full path and file name of the PBIX you want to analyze, then click Load. To switch files later, use Transform data, Edit parameters.
+Open the PBIT, enter the full path and filename of the PBIX to analyze as the parameter, then Load. You do not need to unzip the source file first.
 
 ### What do the Field Finder tabs show?
 
-Instructions covers setup. Columns and Measures shows page thumbnails and usage counts. Page Details zooms into one page and its visuals. Helpful Resources links the posts used to build the tool.
+Columns and Measures shows page thumbnails, usage counts per page, and page/report filters. Page Details drills into one page. Click a field or a thumbnail to cross-filter.
 
-Related: [Power BI Bookmarks Tips](https://powerbi.tips/2021/06/22/power-bi-bookmarks-tips/), [Consolidate Report Pages Easily with Visual Grouping](https://powerbi.tips/2019/11/12/consolidate-report-pages-easily-with-visual-grouping/), and [Split an existing Power BI file into a model and report](https://powerbi.tips/2020/06/08/split-an-existing-power-bi-file-into-a-model-and-report/).
+Related: [Power BI Bookmarks Tips](https://powerbi.tips/2021/06/22/power-bi-bookmarks-tips/), [Custom Usage Metrics Reporting](https://powerbi.tips/2017/11/24/custom-usage-metrics-reporting/), and [Split an existing Power BI file into a model and report](https://powerbi.tips/2020/06/08/split-an-existing-power-bi-file-into-a-model-and-report/).
 
 If you’re like me, building a data model in Power BI is an iterative process.  Sometimes, you try out different ways of writing measures before you hit on the one that’s right.  You end up with temporary measures that don’t actually end up being used in visuals.  You may also pull in more columns than you might end up needing, just in case.  The final result is your report masterpiece with measures and visuals, there are probably quite a few that you don’t need.  Two problems with this are that having extraneous columns and measures (1) can slow down your model and (2) can make it more difficult to maintain.  You may also want to know where on your report a change to a measure will have an impact. 
 

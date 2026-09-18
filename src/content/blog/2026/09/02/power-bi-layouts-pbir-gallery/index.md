@@ -19,25 +19,25 @@ featuredImage: "./assets/featured.svg"
 
 ## How do I download a Power BI layout as a PBIR file from the gallery?
 
-**TL;DR.** Open the PowerBI.tips Layouts Gallery, pick a report design, and download the PBIR project. Open that project in Power BI Desktop, swap in your data and visuals, then adjust the theme. You start from a finished page layout instead of a blank canvas.
+**TL;DR.** Open the PowerBI.tips Layouts Gallery, pick a layout, and download the PBIR project. Open that project in Power BI Desktop and replace sample visuals with your data. PBIR is the Power BI Project format, not a blank canvas start.
 
 ### What is a PBIR file?
 
-PBIR is the Power BI Project report format. It stores the report as editable project files so you can open a gallery layout in Desktop and reshape it around your own model.
+A PBIR file is a Power BI Project. It stores the report as editable project files you open in Desktop instead of starting from an empty page.
 
-### Where do I download layouts?
+### Where do I get free layouts?
 
-The official download location is the PowerBI.tips Layouts Gallery. Browse the collection, preview a design, and download the PBIR project from the gallery page.
+Use the PowerBI.tips Layouts Gallery. Browse layouts, preview the design, and download the PBIR without leaving the gallery. Use the Get Free Layouts buttons on this page.
 
-### Can I change a downloaded layout?
+### Can I change the layout after I download it?
 
-Yes. Use the file as-is, replace the sample visuals, change the theme, or rebuild the page around your data. The gallery file is a starting layout, not a locked template.
+Yes. Use it as-is, swap visuals, adjust the theme, or rebuild around your own data. It is a starting point, not a locked template.
 
-### Do I need to start from a blank report?
+### How is the gallery different from the old Layouts library?
 
-No. Download a layout, open the PBIR project in Desktop, and start from the placed visuals and page structure instead of a blank canvas.
+The old library was report templates with placements prepared. The gallery is the dedicated place to discover and download ready-to-use PBIR report designs.
 
-Related: [Power BI Themes](https://powerbi.tips/2021/12/22/power-bi-themes/), [PowerBI Tips Theme Generator: The Ultimate Tool for Creating Complex Themes](https://powerbi.tips/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
+Related: [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/), [Power Designer](https://powerbi.tips/power-designer/), and [Power BI Themes](https://powerbi.tips/2021/12/22/power-bi-themes/).
 
 ## A New Home for Power BI Layouts
 

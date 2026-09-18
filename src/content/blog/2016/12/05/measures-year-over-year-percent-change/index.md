@@ -13,25 +13,25 @@ featuredImage: "./assets/featured.png"
 
 ## How do I calculate year-over-year percent change with DAX measures?
 
-**TL;DR.** Load monthly sales with Month and Year columns. Create a Date Reference, then ThisYear and LastYear measures with CALCULATE and YEAR. YoY Percent Change is DIVIDE(ThisYear, LastYear, 0)-1. Format it as a percent and plot it on a categorical month axis.
+**TL;DR.** Load monthly data with Year and Month columns, then create LastYear and ThisYear measures with CALCULATE and a date reference. YoY Percent Change is DIVIDE([ThisYear], [LastYear], 0)-1, formatted as a percent on the Modeling ribbon.
 
-### How is this different from month-over-month percent change?
+### What question does this measure answer?
 
-This version compares the same month in two years (November 2016 vs November 2015). The earlier tutorial compares consecutive months. The DAX shape is similar; the filter is year, not the prior month.
+How this month (or period) compares to the same period last year, for example November visitors this year vs last year.
 
-### What does Date Reference do?
+### Which measures do I create?
 
-Date Reference is a measure set to a fixed date (DATE(2016,12,31) here). ThisYear and LastYear read YEAR from that date so both measures share one as-of point.
+Date Reference, LastYear, ThisYear, then YoY Percent Change. LastYear and ThisYear use VAR CurrentDate and CALCULATE with a year filter.
 
-### Why use DIVIDE and then subtract 1?
+### How is YoY percent change written?
 
-DIVIDE(ThisYear, LastYear, 0) returns the ratio. Subtracting 1 turns that ratio into a percent change. Format the measure as % on the Modeling ribbon.
+`YoY Percent Change = DIVIDE([ThisYear], [LastYear], 0)-1`, then set the measure format to percent on the Modeling ribbon.
 
-### How should I chart the result?
+### Is this the same as month-to-month percent change?
 
-Use a stacked column chart, set the X-axis to Categorical so month 0 does not appear, and turn on diverging data colors (red below 0, green above). Change Month to a whole number so the axis has no decimals.
+No. This post is the year-over-year variation of the earlier month-to-month tutorial. Same idea, different period.
 
-Related: [Measures – Month to Month Percent Change](https://powerbi.tips/2016/07/14/measures-month-to-month-percent-change/), [Dynamic Percent Change using DAX](https://powerbi.tips/2016/06/10/dynamic-percent-change-using-dax/), and [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/).
+Related: [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/), [Creating A DAX Calendar](https://powerbi.tips/2017/11/01/creating-a-dax-calendar/), and [Measures – Month to Month Percent Change](https://powerbi.tips/2016/07/14/measures-month-to-month-percent-change/).
 
 This tutorial is a variation on the [month to month percent change tutorial](http://powerbi.tips/2016/07/measures-month-to-month-percent-change/).  This specific exploration in year over year performance was born out of reviewing my google analytics information.  The specific analysis question I am trying to answer is, how did this current month of website visitors compare to the same month last year.  For example I want to compare the number of visitors for November 2016 to November 2015.  Did I have more users this year in this month or last year?  What was my percent changed between the two months?
 
