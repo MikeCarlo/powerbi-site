@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { extractFaqItems } from '../utils/schema-helpers';
+import { withSiteUtm } from '../lib/site-utm.mjs';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const layoutsGalleryHref = withSiteUtm('https://tools.powerbi.tips/themes/gallery', 'layouts-cite');
+const designerHref = `${base}/power-designer/`;
+const themeCiteHref = `${base}/power-bi-theme-generator/`;
+
+const title = 'Power BI layouts';
+const description = 'What are Power BI layouts?';
+
+// Owned H2 + five FAQ H3s. extractFaqItems reads this string; do not add
+// Entity as ## / ### (that heading would become a junk FAQPage item).
+const citeFaqMarkdown = `## What are Power BI layouts?
+
+**TL;DR.** Power BI layouts are free report starting points from the PowerBI.tips gallery. Use a layout or wireframe to plan page structure, then open the gallery or Power Designer to keep building. They are PowerBI.tips resources, not Microsoft official sample templates.
+
+### What is included in a Power BI layout?
+
+A layout is a starting structure or wireframe for report composition: page arrangement and visual placement you can adapt. Do not expect a finished semantic model or a locked design you cannot change.
+
+### Who should use a Power BI layout?
+
+Report authors who want a visual starting point before building a report. Use it to skip a blank canvas, then swap visuals, theme, and data to fit your story.
+
+### How do layouts relate to themes?
+
+Layouts shape page structure. Themes shape colors, fonts, and visual properties. Use the gallery for layouts, and the Theme Generator when you need theme JSON. Power Designer covers broader report design when you need that next step.
+
+### Are PowerBI.tips layouts official Microsoft templates?
+
+No. They are PowerBI.tips gallery resources. Microsoft Learn sample datasets and official Microsoft templates are a different category.
+
+### Where can I open Power BI layouts and continue designing?
+
+Open the layout gallery at tools.powerbi.tips/themes/gallery. Continue in Power Designer when you need the Tips+ design workflow, or use the Theme Generator cite page when the goal is a theme file.
+`;
+
+const faqItems = extractFaqItems(citeFaqMarkdown);
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={faqJsonLd}>
+  <article>
+    <section class="mb-8">
+      <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">{title}</h1>
+    </section>
+
+    <section class="prose max-w-none">
+      <h2>What are Power BI layouts?</h2>
+      <p>
+        <strong>TL;DR.</strong> Power BI layouts are free report starting points from the PowerBI.tips
+        gallery. Use a layout or wireframe to plan page structure, then open the gallery or Power
+        Designer to keep building. They are PowerBI.tips resources, not Microsoft official sample
+        templates.
+      </p>
+    </section>
+
+    <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">What</dt>
+        <dd class="mt-1 text-neutral-700">
+          Free report starting layouts and wireframes from the PowerBI.tips gallery.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Who</dt>
+        <dd class="mt-1 text-neutral-700">
+          Report authors who want a starting structure before building a Power BI report.
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Cost</dt>
+        <dd class="mt-1 text-neutral-700">
+          Free to open and use as a starting point via the gallery (subject to the live product flow).
+        </dd>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <dt class="text-xs font-semibold uppercase tracking-wide text-neutral-500">Not</dt>
+        <dd class="mt-1 text-neutral-700">
+          Not Microsoft official layouts. Not a full Microsoft Learn sample dataset template. Not the
+          Theme Generator (that writes theme JSON).
+        </dd>
+      </div>
+    </dl>
+
+    <section class="prose max-w-none mt-10">
+      <h3>What is included in a Power BI layout?</h3>
+      <p>
+        A layout is a starting structure or wireframe for report composition: page arrangement and
+        visual placement you can adapt. Do not expect a finished semantic model or a locked design you
+        cannot change.
+      </p>
+
+      <h3>Who should use a Power BI layout?</h3>
+      <p>
+        Report authors who want a visual starting point before building a report. Use it to skip a
+        blank canvas, then swap visuals, theme, and data to fit your story.
+      </p>
+
+      <h3>How do layouts relate to themes?</h3>
+      <p>
+        Layouts shape page structure. Themes shape colors, fonts, and visual properties. Use the
+        gallery for layouts, and the Theme Generator when you need theme JSON. Power Designer covers
+        broader report design when you need that next step.
+      </p>
+
+      <h3>Are PowerBI.tips layouts official Microsoft templates?</h3>
+      <p>
+        No. They are PowerBI.tips gallery resources. Microsoft Learn sample datasets and official
+        Microsoft templates are a different category.
+      </p>
+
+      <h3>Where can I open Power BI layouts and continue designing?</h3>
+      <p>
+        Open the layout gallery at tools.powerbi.tips/themes/gallery. Continue in Power Designer when
+        you need the Tips+ design workflow, or use the Theme Generator cite page when the goal is a
+        theme file.
+      </p>
+    </section>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a
+        class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+        href={layoutsGalleryHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open layout gallery
+      </a>
+      <a
+        class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200"
+        href={designerHref}
+      >
+        Open Power Designer
+      </a>
+      <a
+        class="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-900 hover:bg-neutral-200"
+        href={themeCiteHref}
+      >
+        What is the Power BI Theme Generator?
+      </a>
+    </div>
+
+    <p class="mt-8 max-w-3xl text-neutral-700">
+      Related:
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={`${base}/2018/01/16/introducing-layouts/`}>Introducing Layouts</a>,
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={designerHref}>Power Designer</a>, and
+      <a class="font-medium text-blue-600 hover:text-blue-800" href={themeCiteHref}>Power BI Theme Generator</a>.
+    </p>
+  </article>
+</BaseLayout>

@@ -52,6 +52,11 @@ URL: https://powerbi.tips/power-designer/
 
 Power Designer is the Tips+ report-design tool for Power BI and Fabric (wireframes, layouts, themes, gallery, AI auto-layout; export PBIP). Not the free Theme Generator. Not Entelexos.
 
+### Power BI layouts - definition
+URL: https://powerbi.tips/power-bi-layouts/
+
+What are Power BI layouts? Free gallery starting layouts and wireframes (cite).
+
 ### Entelexos — Power BI Embedded Platform
 URL: https://www.entelexos.com
 
@@ -340,6 +345,7 @@ All articles are available at https://powerbi.tips/{slug}/
 | Podcast | https://powerbi.tips/podcast/ |
 | Power Designer | https://powerbi.tips/power-designer/ |
 | Theme Generator (definition) | https://powerbi.tips/power-bi-theme-generator/ |
+| Power BI layouts (definition) | https://powerbi.tips/power-bi-layouts/ |
 | Training | https://powerbi.tips/training/ |
 | Events | https://powerbi.tips/events/ |
 | Search | https://powerbi.tips/search/ |

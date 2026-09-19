@@ -1,6 +1,6 @@
 ---
 title: "Introducing Layouts"
-excerpt: "PowerBI.tips is extremely happy to be part of, and contribute to, the Power BI Community. We’re constantly trying to think of new and interesting ways..."
+excerpt: "How do I get free Power BI layouts for my reports?"
 date: "2018-01-16"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I get free Power BI layouts for my reports?
+
+**TL;DR.** Start with a free PowerBI.tips layout from the gallery, use it as a report structure or wireframe, and continue in Power Designer when you need to shape the report. These layouts are starting resources, not Microsoft official sample dataset templates.
+
+### Where can I find free Power BI layouts?
+
+Open the PowerBI.tips layout gallery. Browse layouts and wireframes there, then download or open the starting design that fits your report.
+
+### What is a Power BI layout used for?
+
+A layout gives you a report page structure to start from: visual placement and composition you can change. It saves time versus building every page from a blank canvas.
+
+### Are these layouts official Microsoft templates?
+
+No. They are PowerBI.tips resources. Microsoft official templates and Microsoft Learn sample datasets are separate.
+
+### Can I use a layout with Power Designer?
+
+Yes. Use the gallery for free starting layouts, then continue in Power Designer when you need the Tips+ report-design workflow.
+
+### How is a layout different from a full sample dataset template?
+
+A layout is about report structure and wireframing. A Microsoft Learn sample dataset template is a different kind of starter that centers on sample data and models. Do not treat them as the same thing.
+
+Related: [Power BI layouts](https://powerbi.tips/power-bi-layouts/), [Open layout gallery](https://tools.powerbi.tips/themes/gallery), [Power Designer](https://powerbi.tips/power-designer/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
 
 PowerBI.tips is extremely happy to be part of, and contribute to, the Power BI Community. We’re constantly trying to think of new and interesting ways we can enhance the Power BI experience for everyone by providing helpful tips & tools. Some examples of what we’ve done so far are Power BI Desktop Theme generator, and the Power BI toolbox:
 

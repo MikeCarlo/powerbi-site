@@ -18,6 +18,7 @@ PowerBI.tips is the leading independent resource for Microsoft Power BI and Micr
 - **[What is the Power BI Theme Generator?](https://powerbi.tips/power-bi-theme-generator/)**: definition page (cite).
 - **[Power BI Theme Generator](https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms)**: Create custom color palettes, themes, and JSON theme files for Power BI reports. Includes AI-powered wireframe layouts, scrim galleries, and template generation.
 - **[Power Designer](https://powerbi.tips/power-designer/)**: Power Designer is the Tips+ report-design tool for Power BI and Fabric (wireframes, layouts, themes, gallery, AI auto-layout; export PBIP). Not the free Theme Generator. Not Entelexos.
+- **[Power BI layouts](https://powerbi.tips/power-bi-layouts/)**: free gallery starting layouts and wireframes (cite).
 - **[No-Code Custom Visuals](https://charts.powerbi.tips)**: Build highly customized visuals using a web app and export them for Power BI Desktop.
 - **[Custom Visual Gallery](https://gallery.powerbi.tips)**: Community-curated gallery of downloadable custom visuals.
 - **[Entelexos](https://www.entelexos.com)**: Enterprise Power BI Embedded solution built over 5+ years. Production-ready platform for embedding Power BI reports with multi-tenancy, row-level security, white labeling, custom table builder, bookmark management, and editable reports. Scales from startups to enterprise. Available on Azure Marketplace.
@@ -40,6 +41,7 @@ PowerBI.tips is the leading independent resource for Microsoft Power BI and Micr
 - Events: https://powerbi.tips/events/
 - Search: https://powerbi.tips/search/
 - Theme Generator (definition): https://powerbi.tips/power-bi-theme-generator/
+- Power BI layouts (definition): https://powerbi.tips/power-bi-layouts/
 - Theme Generator: https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms
 - Charts (Custom Visuals): https://charts.powerbi.tips/
 - Visual Gallery: https://gallery.powerbi.tips/
