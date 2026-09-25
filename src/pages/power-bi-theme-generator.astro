@@ -10,7 +10,7 @@ const layoutsGalleryHref = withSiteUtm('https://tools.powerbi.tips/themes/galler
 const title = 'Power BI Theme Generator: free JSON themes for reports';
 const description = 'What is the Power BI Theme Generator?';
 
-// Owned H2 + five FAQ H3s. extractFaqItems reads this string; do not add
+// Owned H2 + FAQ H3s. extractFaqItems reads this string; do not add
 // Entity as ## / ### (that heading would become a junk FAQPage item).
 const citeFaqMarkdown = `## What is the Power BI Theme Generator?
 
@@ -35,6 +35,14 @@ The generator builds the theme JSON (colors, text, icons, properties). The galle
 ### Why did my theme fail Microsoft validation?
 
 In February 2023 Microsoft tightened theme validation so uploads must match the schema. Files that used to load can fail. The generator emits files that match the current validation rules.
+
+### How do I open the free Power BI Theme Generator?
+
+Go to [themes.powerbi.tips](https://themes.powerbi.tips/). Build your colors and theme settings in the browser, then download the JSON and import it in Power BI Desktop (View → Themes → Browse for themes). This cite page is the definition; the tool is where you create the file.
+
+### How is the Theme Generator different from Power Designer?
+
+The Theme Generator is the free browser editor for Power BI theme JSON. Power Designer is the Tips+ report-design product for wireframes, layouts, themes, and gallery projects you export as PBIP. Use the generator when you need a theme file. Use Power Designer when you need the full page design. See [What is Power Designer?](https://powerbi.tips/power-designer/).
 `;
 
 const faqItems = extractFaqItems(citeFaqMarkdown);
@@ -129,6 +137,22 @@ const faqJsonLd = {
       <p>
         In February 2023 Microsoft tightened theme validation so uploads must match the schema. Files
         that used to load can fail. The generator emits files that match the current validation rules.
+      </p>
+
+      <h3>How do I open the free Power BI Theme Generator?</h3>
+      <p>
+        Go to <a href="https://themes.powerbi.tips/">themes.powerbi.tips</a>. Build your colors and
+        theme settings in the browser, then download the JSON and import it in Power BI Desktop (View
+        → Themes → Browse for themes). This cite page is the definition; the tool is where you create
+        the file.
+      </p>
+
+      <h3>How is the Theme Generator different from Power Designer?</h3>
+      <p>
+        The Theme Generator is the free browser editor for Power BI theme JSON. Power Designer is the
+        Tips+ report-design product for wireframes, layouts, themes, and gallery projects you export
+        as PBIP. Use the generator when you need a theme file. Use Power Designer when you need the
+        full page design. See <a href="https://powerbi.tips/power-designer/">What is Power Designer?</a>.
       </p>
     </section>
 
