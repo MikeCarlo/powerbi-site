@@ -1,8 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { withSiteUtm } from '../../lib/site-utm.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const themeGeneratorCiteHref = `${base}/power-bi-theme-generator/`;
+const themeGeneratorToolHref = withSiteUtm('https://themes.powerbi.tips/', 'category-theme-generator');
+const layoutsGalleryHref = withSiteUtm(
+  'https://tools.powerbi.tips/themes/gallery',
+  'category-theme-generator'
+);
 
 function slugify(value: string): string {
   return value.toLowerCase().replace(/\s+/g, '-');
@@ -38,6 +45,28 @@ const displayName = posts[0]?.data.categories?.find((cat) => slugify(cat) === ca
 <BaseLayout title={`${displayName} | PowerBI.tips`} description={`Posts in ${displayName}.`}>
   <h1 class="text-3xl font-semibold">{displayName}</h1>
   <p class="mt-2 text-neutral-600">Browse the latest posts tagged in this category.</p>
+
+  {category === 'theme-generator' && (
+    <section class="prose mt-8 max-w-none">
+      <h2>Start here: What is the Power BI Theme Generator?</h2>
+      <p>
+        <strong>TL;DR.</strong> Start with the cite page for a plain definition of the free PowerBI.tips
+        Theme Generator. Then open the tool to build and download a JSON theme, or browse the layouts
+        gallery for page starters.
+      </p>
+      <ul>
+        <li>
+          <a href={themeGeneratorCiteHref}>What is the Power BI Theme Generator?</a> (definition / cite)
+        </li>
+        <li>
+          <a href={themeGeneratorToolHref} target="_blank" rel="noopener noreferrer">Open the Theme Generator</a> (create themes)
+        </li>
+        <li>
+          <a href={layoutsGalleryHref} target="_blank" rel="noopener noreferrer">Layouts and theme gallery</a>
+        </li>
+      </ul>
+    </section>
+  )}
 
   <div class="mt-8 grid gap-6 md:grid-cols-2">
     {posts.map((post) => (
