@@ -1,6 +1,6 @@
 ---
 title: "Building a Gateway Cluster"
-excerpt: "Power BI requires a gateway for refreshing on premises data sources. There are a myriad of different data sources that you can create and two differen..."
+excerpt: "How do I build a Power BI gateway cluster?"
 date: "2019-10-29"
 authors:
   - "Seth Bauer"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I build a Power BI gateway cluster?
+
+**TL;DR.** Install On-premises data gateway (recommended) on the first server and save the recovery key. On a second server, install again and choose Add to an existing gateway cluster with that key. Use the cluster for disaster recovery or load distribution.
+
+### Why cluster gateways?
+
+A cluster keeps refreshes available during maintenance or when a server goes offline. You can also distribute refresh load across nodes.
+
+### Which gateway install should I use?
+
+Use **On-premises data gateway (recommended)** (formerly Enterprise Gateway), not personal mode. That is the install for wider audience deployments and permission management.
+
+### How do I add a second gateway to the cluster?
+
+On the second server, run the same installer, toggle **Add to an existing gateway cluster**, and enter the recovery key from the first gateway. That links the nodes into one cluster in the service.
+
+### Can I combine disaster recovery and load balancing?
+
+At the time of this post, you either distribute load across all gateways or leave distribution off (default DR). There is no combined mode of both methods.
+
+### How do I fully remove a gateway from the cluster?
+
+Uninstall alone is not enough. Run `Remove-OnPremisesDataGateway` to detach the gateway from the Power BI service. Otherwise defunct nodes keep raising errors.
+
+Related: [Power BI Connection Types](https://powerbi.tips/2017/10/16/power-bi-connection-types/), [Hot Swap Power BI Report Connections](https://powerbi.tips/2020/05/29/hot-swap-power-bi-report-connections/), [Power BI Connections: Direct Query](https://powerbi.tips/2017/12/29/power-bi-connections-direct-query/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
 
 Power BI requires a gateway for refreshing on premises data sources. There are a myriad of different data sources that you can create and two different ways you can set up the gateway. The first way you can install a gateway is in the “personal mode”. The second method for installation uses the “On-premises data gateway (recommended)” (OPDG), this used to be called the “Enterprise Gateway”. The second gateway method is what you need to set up and configure appropriately in order to manage permissions. The recommended gateway to use when deploying reports to a wider audience is the OPDG.
 

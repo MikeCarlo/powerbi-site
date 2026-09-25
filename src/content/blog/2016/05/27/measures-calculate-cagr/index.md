@@ -1,6 +1,6 @@
 ---
 title: "Measures – Dynamic CAGR Calculation in DAX"
-excerpt: "Learn how to calculate a dynamic Compound Annual Growth Rate (CAGR) in Power BI using DAX. The calculation updates automatically as you select different data points."
+excerpt: "How do I calculate dynamic CAGR in DAX?"
 date: "2016-05-27"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["DAX", "Measures", "CAGR", "Tutorial", "Finance"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I calculate dynamic CAGR in DAX?
+
+**TL;DR.** Build Beginning Value, Ending Value, and # of Years with CALCULATE, MIN, and MAX on Year. CAGR = ([Ending Value]/[Beginning Value])^(1/[# of Years])-1. Format as Percentage. Page selections update the CAGR for the filtered data.
+
+### What does dynamic CAGR mean here?
+
+As you select different items (for example on a bar chart), the CAGR recalculates for only the selected data, not a static whole-table number.
+
+### What is the CAGR formula used in this post?
+
+CAGR = (Ending Value / Beginning Value)^(1 / # of Years) - 1 (Investopedia reference in the article).
+
+### Which supporting measures do I create first?
+
+Beginning Value (SUM of GDP at MIN Year), Ending Value (SUM at MAX Year), and # of Years (MAX Year minus MIN Year).
+
+### How is the final CAGR measure written?
+
+`CAGR = ([Ending Value]/[Beginning Value])^(1/[# of Years])-1`, then set Format to Percentage on the Modeling ribbon. Optional: wrap with IFERROR(..., 0) when a single year would fail.
+
+### Can I put the whole formula in one measure?
+
+Yes. The Pro Tip shows one large measure that inlines the CALCULATE / MIN / MAX logic instead of three helper measures.
+
+Related: [Measures – Month to Month Percent Change](https://powerbi.tips/2016/07/14/measures-month-to-month-percent-change/), [Measures – Year Over Year Percent Change](https://powerbi.tips/2016/12/05/measures-year-over-year-percent-change/), [Dynamic Percent Change using DAX](https://powerbi.tips/2016/06/10/dynamic-percent-change-using-dax/), [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/), and [Creating A DAX Calendar](https://powerbi.tips/2017/11/01/creating-a-dax-calendar/).
 
 This tutorial walks through calculating a dynamic Compound Annual Growth Rate (CAGR). By dynamic we mean as you select different items on a bar chart for example the CAGR calculation will update to reveal the CAGR calculation only for the selected data.
 

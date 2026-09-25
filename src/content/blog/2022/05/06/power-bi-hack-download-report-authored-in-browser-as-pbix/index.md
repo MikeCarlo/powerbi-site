@@ -1,7 +1,6 @@
 ---
 title: 'Power BI Hack: Download Report Authored in Browser as PBIX'
-excerpt: '## The Problem  Most of you have probably run into a situation where someone
-  in your organization has authored a report in the Power BI web service, a...'
+excerpt: "How do I download a Power BI report authored in the browser as a PBIX?"
 date: '2022-05-06'
 authors:
 - Mike Carlo
@@ -11,6 +10,32 @@ tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+## How do I download a Power BI report authored in the browser as a PBIX?
+
+**TL;DR.** Browser-authored reports will not download as PBIX. Publish a blank PBIX, copy the browser report content into it with the Power BI REST API (Update Report Content In Group), then download that PBIX. The linked PowerShell function wraps the API calls.
+
+### Why can I not download a browser-authored report as PBIX?
+
+If the report was never created as a PBIX, the Power BI service will not offer a PBIX download. Only reports that originated as PBIX files can be downloaded that way.
+
+### What is the workaround?
+
+Publish a blank PBIX to the service, then copy the browser-authored report content into that blank report. Because the target started as a PBIX, you can download it afterward.
+
+### Which API endpoint does this use?
+
+The Power BI REST API endpoint **Update Report Content In Group**. Manual API calls are messy. The linked PowerShell function wraps those steps.
+
+### What PowerShell module do I need?
+
+Install the **MicrosoftPowerBIMgmt.Profile** module. Run the linked script, then call `Copy-PowerBIReportContentToBlankPBIXFile` from the same PowerShell window.
+
+### Which parameters does the function take?
+
+`sourceReportId`, `sourceWorkspaceId`, `targetReportId`, and optional `targetWorkspaceId`. If you omit the target workspace, the function assumes source and target share one workspace.
+
+Related: [Split an existing Power BI file into a model and report](https://powerbi.tips/2020/06/08/split-an-existing-power-bi-file-into-a-model-and-report/), [Updating PBIX files in SharePoint: Dos and Don'ts](https://powerbi.tips/2019/09/17/updating-pbix-files-in-sharepoint-dos-donts/), [Power BI Layouts PBIR Gallery](https://powerbi.tips/2026/09/02/power-bi-layouts-pbir-gallery/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
 
 ## The Problem
 

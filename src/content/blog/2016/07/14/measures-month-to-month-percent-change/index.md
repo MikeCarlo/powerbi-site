@@ -1,6 +1,6 @@
 ---
 title: "Measures – Month to Month Percent Change"
-excerpt: "Learn how to calculate month-to-month percent change in Power BI using DAX. Use PREVIOUSMONTH to compare current month sales against prior month values."
+excerpt: "How do I calculate month-to-month percent change in DAX?"
 date: "2016-07-14"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["DAX", "Measures", "Time Intelligence", "Tutorial"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I calculate month-to-month percent change in DAX?
+
+**TL;DR.** Create Total Scans as a SUM, Prior Month Scans with CALCULATE and PREVIOUSMONTH on the date column, then % Change is DIVIDE([Total Scans], [Prior Month Scans], blank())-1. Format % Change as Percentage on the Modeling ribbon.
+
+### What question does this measure answer?
+
+How badge scans (or any monthly total) compare to the prior month, so you can see month-to-month increase or decrease in a time series.
+
+### Which three measures do I build?
+
+Total Scans, Prior Month Scans, and % Change. Prior Month Scans uses `PREVIOUSMONTH` on the date field.
+
+### How is Prior Month Scans written?
+
+`Prior Month Scans = CALCULATE([Total Scans], PREVIOUSMONTH('Employee IDs'[Date]))`.
+
+### How is month-to-month percent change written?
+
+`% Change = DIVIDE([Total Scans], [Prior Month Scans], blank())-1`, then set Format to Percentage.
+
+### Is this the same as year-over-year percent change?
+
+No. This post is month-to-month with PREVIOUSMONTH. The later YoY tutorial uses the same idea with a different period.
+
+Related: [Measures – Year Over Year Percent Change](https://powerbi.tips/2016/12/05/measures-year-over-year-percent-change/), [Measures – Dynamic CAGR Calculation in DAX](https://powerbi.tips/2016/05/27/measures-calculate-cagr/), [Dynamic Percent Change using DAX](https://powerbi.tips/2016/06/10/dynamic-percent-change-using-dax/), [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/), and [Creating A DAX Calendar](https://powerbi.tips/2017/11/01/creating-a-dax-calendar/).
 
 I had an interesting comment come up in conversation about how to calculate a percent change within a time series data set. For this instance we have data of employee badges that have been scanned into a building by date. Thus, there is a list of Badge IDs and date fields.
 
