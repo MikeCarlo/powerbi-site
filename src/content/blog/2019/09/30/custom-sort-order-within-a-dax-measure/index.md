@@ -1,6 +1,6 @@
 ---
 title: "Custom Sort Order Within a DAX Measure"
-excerpt: "This post will answer how to sort a measure that returns text values to a custom order, without affecting other columns. It will utilize the DAX funct..."
+excerpt: "How do I set a custom sort order inside a DAX measure?"
 date: "2019-09-30"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I set a custom sort order inside a DAX measure?
+
+**TL;DR.** Prefix each text label in the measure with invisible zero-width spaces using `UNICHAR(8203)` and `REPT()`. More spaces sort earlier alphabetically, so you can order Bad, Warning, Good without a Sort by Column that affects every visual.
+
+### What problem does this solve?
+
+You need a text measure sorted in a custom order (for example Bad, then Warning, then Good) in one table, without changing sort behavior on every other visual.
+
+### Why not use Sort by Column?
+
+A conditional column plus Sort by Column can work, but it can get complicated on complex measures and it sorts every visual that uses that column. This pattern keeps the order inside one measure.
+
+### Which DAX functions create the invisible prefix?
+
+`UNICHAR(8203)` returns a zero-width space (invisible, still a character). `REPT()` repeats that character. Concatenate with `&` in front of each label.
+
+### How do more zero-width spaces change the order?
+
+Spaces sort before letters. Repeating the zero-width space more times pushes that label earlier in an alphabetical ascending sort. Example in the post: Bad three times, Warning twice, Good once.
+
+### How do I apply the sort in the visual?
+
+Add the measure to a table, then sort that visual by the measure ascending. The invisible prefixes control alphabetical order without showing extra characters.
+
+Related: [Using Variables within DAX](https://powerbi.tips/2017/05/05/using-variables-within-dax/), [Power BI Field Finder](https://powerbi.tips/2020/01/29/power-bi-field-finder/), [Creating A DAX Calendar](https://powerbi.tips/2017/11/01/creating-a-dax-calendar/), and [Power BI Theme Generator](https://powerbi.tips/power-bi-theme-generator/).
 
 This post will answer how to sort a measure that returns text values to a custom order, without affecting other columns. It will utilize the DAX functions of REPT() and UNICHAR(8203) – a Zero width space.
 
