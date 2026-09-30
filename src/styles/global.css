@@ -20,7 +20,7 @@ a {
 /* Prose styles for blog content */
 .prose {
   color: #374151;
-  max-width: 65ch;
+  max-width: none;
   line-height: 1.75;
 }
 
