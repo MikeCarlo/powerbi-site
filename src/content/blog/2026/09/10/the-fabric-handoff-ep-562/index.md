@@ -16,6 +16,7 @@ tags:
   - "Competency center"
   - "AI agents"
 excerpt: "Tommy Puglia and Mike Carlo spend this episode on how a Microsoft Fabric project moves to a team that has to run it. Their model is I build, we build, then you build, and it holds when leadership, trust, and the team's own context stay in place after the builder steps back."
+featuredImage: "./assets/featured.png"
 ---
 
 Handing work off in Microsoft Fabric means pipelines, notebooks, and capacity a team may be seeing for the first time. Tommy Puglia and Mike Carlo walk the path they use, from the builder's first version to a joint build to the client building alone, and they stay with the leadership and trust that make that last step real.

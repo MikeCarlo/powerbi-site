@@ -16,6 +16,7 @@ tags:
   - "Copilot Studio"
   - "Semantic models"
 excerpt: "Foundry can now find Fabric data agents in the OneLake catalog and attach more than one of them to a single agent. Tommy Puglia and Mike Carlo walk through what that changes, from the 15,000-character instruction limit to a CU bill that still deserves a hard look."
+featuredImage: "./assets/featured.png"
 ---
 
 Fabric data agents just got easier to wire into Microsoft Foundry and Copilot Studio, and Explicit Measures spends this episode on what that is actually for. Tommy Puglia and Mike Carlo treat the update as a change in role: the data agent is the specialist another agent calls when it needs governed answers from a semantic model, a lakehouse, or a warehouse.

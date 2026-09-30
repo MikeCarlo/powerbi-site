@@ -15,6 +15,7 @@ tags:
   - "AI agents"
   - "Skills"
 excerpt: "Tommy Puglia, Mike Carlo, and Kurt Buhler spend this episode on what is left of the Power BI identity once Microsoft Fabric and agents are part of the job. The skill that still decides the work is judgment: listening to the business, and staying critical of what an agent hands back."
+featuredImage: "./assets/featured.png"
 ---
 
 Tommy Puglia, Mike Carlo, and Kurt Buhler spend this Explicit Measures episode on a title Mike had to shorten: your identity is bigger than Power BI. Microsoft Fabric and agents have shaken the years when "I build reports" was a complete professional answer, and the hour is about what you keep, what you hand to a tool, and what you still have to judge yourself.

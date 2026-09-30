@@ -15,6 +15,7 @@ tags:
   - "pbir-cli"
   - "Tabular Editor"
 excerpt: "Kurt Buhler tells Tommy Puglia and Mike Carlo that a full Power BI report from an agent went from a bad idea to a half-hour build in the span of a week. The catch, in his telling, is the report format, the context you bring, and a requirements process that now has to scale past a single page."
+featuredImage: "./assets/featured.png"
 ---
 
 Kurt Buhler is back for the last day of a four-episode run, and the topic he asked for is agentic development of Power BI reports. Tommy Puglia and Mike Carlo spend the hour on why reports have lagged semantic models, what Kurt says changed in the week before the show, and the planning that still has to exist before an agent touches a visual.
