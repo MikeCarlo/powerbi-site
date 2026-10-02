@@ -1,8 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const bundlePath = `${base}/pagefind/`;
 ---
 
 <BaseLayout title="Search | PowerBI.tips" description="Search the PowerBI.tips blog.">
@@ -44,8 +41,12 @@ const bundlePath = `${base}/pagefind/`;
   <p id="search-status" class="mt-8 text-sm text-neutral-600" aria-live="polite"></p>
   <div id="search-results" class="mt-4"></div>
 
-  <script define:vars={{ bundlePath }}>
-    window.addEventListener('DOMContentLoaded', function() {
+  <script>
+    import { parseSearchQuery, searchWithSyntax } from '../lib/search-query.mjs';
+
+    const bundlePath = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/pagefind/`;
+
+    const start = () => {
       const form = document.querySelector('#search-form');
       const input = document.querySelector('#search-input');
       const runBtn = document.querySelector('#search-run');
@@ -53,28 +54,6 @@ const bundlePath = `${base}/pagefind/`;
       const results = document.querySelector('#search-results');
       const params = new URLSearchParams(window.location.search);
       let pagefind;
-
-      const parseQuery = (query) => {
-        const include = [];
-        const exclude = [];
-        const pattern = /(-)?(?:"([^"]+)"|(\S+))/g;
-        let match;
-
-        while ((match = pattern.exec(query)) !== null) {
-          const term = (match[2] ?? match[3]).trim();
-          if (term) (match[1] ? exclude : include).push(term);
-        }
-
-        return { include, exclude };
-      };
-
-      const matchesPhrase = (data, phrase) => {
-        const searchableText = [data.meta?.title, data.meta?.description, data.content]
-          .filter(Boolean)
-          .join(' ')
-          .toLocaleLowerCase();
-        return searchableText.includes(phrase.toLocaleLowerCase());
-      };
 
       const renderResults = (items) => {
         results.replaceChildren(...items.map((item) => {
@@ -97,7 +76,7 @@ const bundlePath = `${base}/pagefind/`;
 
       const runSearch = async () => {
         const query = input.value.trim();
-        const { include, exclude } = parseQuery(query);
+        const parsed = parseSearchQuery(query);
         results.replaceChildren();
 
         const url = new URL(window.location.href);
@@ -110,7 +89,7 @@ const bundlePath = `${base}/pagefind/`;
           status.textContent = 'Enter a search term to find posts.';
           return;
         }
-        if (!include.length) {
+        if (!parsed.includeTerms.length && !parsed.includePhrases.length) {
           status.textContent = 'Add a search term before an exclusion, for example: fabric -"Power BI Desktop".';
           return;
         }
@@ -119,12 +98,7 @@ const bundlePath = `${base}/pagefind/`;
         runBtn.disabled = true;
         try {
           pagefind ??= await import(`${bundlePath}pagefind.js`);
-          const search = await pagefind.search(include.join(' '));
-          const resultData = await Promise.all(search.results.map((result) => result.data()));
-          const filtered = resultData.filter((data) =>
-            include.every((term) => matchesPhrase(data, term)) &&
-            exclude.every((term) => !matchesPhrase(data, term))
-          );
+          const { results: filtered } = await searchWithSyntax(pagefind, query);
           renderResults(filtered);
           status.textContent = `${filtered.length} result${filtered.length === 1 ? '' : 's'} found.`;
         } catch (error) {
@@ -146,7 +120,10 @@ const bundlePath = `${base}/pagefind/`;
         runSearch();
       }
       runBtn.disabled = false;
-    });
+    };
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+    else start();
   </script>
 
   <style is:global>
