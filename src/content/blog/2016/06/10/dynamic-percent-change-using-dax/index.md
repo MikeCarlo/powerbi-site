@@ -1,6 +1,6 @@
 ---
 title: "Measures – Dynamic Percent Change – Using DAX"
-excerpt: "Build a DAX measure that dynamically calculates percent change as you select different items in Power BI visuals. Learn to use DIVIDE and FILTER functions."
+excerpt: "How do I calculate percent change between the minimum and maximum year selected in DAX?"
 date: "2016-06-10"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["DAX", "Measures", "Tutorial", "Percent Change"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I calculate percent change between the minimum and maximum year selected in DAX?
+
+**TL;DR.** % Change is DIVIDE of MAX-year production over MIN-year production, else 0, then minus 1. Format it as Percentage. Only a new first or last year changes the number. Here, 2007 to 2013 is 19.15%, not a fixed 2014 over 2013.
+
+### How is % Change written on this page?
+
+It is DIVIDE of two CALCULATE sums on `'Auto Production'[Production]`. The numerator filters Year to MAX. The denominator filters Year to MIN. DIVIDE's third argument is 0. Then subtract 1.
+
+### Why DIVIDE instead of a slash?
+
+Building the Dynamic Percent Change Measure says a zero denominator would error. DIVIDE can return zero instead.
+
+### Which selections actually change the number?
+
+Years 2013 and 2007 produce 19.15% (smallest 2007, largest 2013). A year between those ends does not change it. Selecting 2014 does, because the end year changed.
+
+### How is the measure formatted?
+
+Change % Change from General to Percentage on the Modeling ribbon, under Formatting.
+
+### How is this different from the previous percent tutorial?
+
+The previous tutorial locked 2014 and 2013 (`Total 2014`, `Total 2013`, then divide minus 1) on `'Global Production'`. This page uses `'Auto Production'` and divides MAX-year production by MIN-year production. It is not month-to-month, year-over-year, or CAGR.
+
+Related: [Measures – Calculating % Change](/2016/05/02/measures-calculating-change/), [Measures – Dynamic CAGR Calculation in DAX](/2016/05/27/measures-calculate-cagr/), and [Measures – Month to Month Percent Change](/2016/07/14/measures-month-to-month-percent-change/).
 
 This tutorial will produce a measure that will dynamically calculate a percent change every time an item is selected in a visual. The previous tutorial can be found [here](/2016/05/02/measures-calculating-change/). In the previous tutorial we calculated the percent change between two time periods, 2014 and 2013. In practice it is not always desirable to force your measure to only look at two time periods. Rather it would be nice that your measure calculations change with changes in your selections on visuals. Thus, for this tutorial we will add some dynamic intelligence to the measures.
 

@@ -1,6 +1,6 @@
 ---
 title: "Measures – Calculating a Sum"
-excerpt: "Learn how to create measures in Power BI to calculate totals using the SUM function in DAX. Watch how totals dynamically change as you select different data points."
+excerpt: "How do I calculate a total with a DAX measure that changes when I select data on the page?"
 date: "2016-05-07"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["DAX", "Measures", "Tutorial", "Beginner"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I calculate a total with a DAX measure that changes when I select data on the page?
+
+**TL;DR.** On the Home ribbon, New Measure: Total Sales = SUM(SampleData[Sales]) on a Card. A stacked bar of Category and Sales filters it (Apples 283, Oranges 226). Set ID to Don't Summarize. Do not add SUMX or other totals.
+
+### What is the Total Sales formula on this page?
+
+Creating the SUM Measure starts with New Measure on the Home ribbon and writes `Total Sales = SUM(SampleData[Sales])`.
+
+### Why does the card change when a bar is clicked?
+
+Clicking a bar filters the Card to that subset. Apples shows 283 and Oranges shows 226. The conclusion says the measure totals one numeric column for the filtered subset.
+
+### Why set ID to Don't Summarize?
+
+In Setting Up the Data, the table was aggregating ID. Don't Summarize is what lists the unique rows.
+
+### Which visuals does the tutorial actually build?
+
+A table of Category, Sales, and ID; a Card of Total Sales; and a stacked bar with Category on Axis and Legend and Sales on Value.
+
+### Which Desktop build does the post name?
+
+Materials for this Tutorial names April 2016, version 2.34.4372.322. That build is historical. You do not need to match it today.
+
+Related: [Import CSV file to Power BI](/2016/04/01/import-csv-file-to-power-bi/), [Measures – Calculating % Change](/2016/05/02/measures-calculating-change/), and [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/).
 
 Often there are times when you will want to display a totals. Using measures to calculate a total are extremely easy to use. The power of using a measure is when you are slicing and selecting different data points on a page. As you select different data points the sum will change to reflect the selected data.
 

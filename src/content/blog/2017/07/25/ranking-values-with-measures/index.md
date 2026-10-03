@@ -1,6 +1,6 @@
 ---
 title: "Ranking Values with Measures"
-excerpt: "In many reports we produce we often need a method to score or rank data.  For example, we may need to list the sales totals for the sales team and ran..."
+excerpt: "How do I rank categories with a DAX measure that updates when the slicer changes?"
 date: "2017-07-25"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I rank categories with a DAX measure that updates when the slicer changes?
+
+**TL;DR.** Total Sales sums Clothing Sales[Sales]. Wrap that sum in CALCULATE with ALLSELECTED on the whole table. Rank with RANKX on ALLSELECTED of the Category column, not the table name. The slicer re-ranks the rows. Do not pass a RANKX order argument.
+
+### Which two measures come before Ranking?
+
+The page writes `Total Sales = SUM ( 'Clothing Sales'[Sales] )`, then `Total Sales ALLSELECTED = CALCULATE( sum( 'Clothing Sales'[Sales] ) , ALLSELECTED( 'Clothing Sales' ) )`.
+
+### What does ALLSELECTED show when nothing is selected?
+
+With no slicer selection, every row of Total Sales ALLSELECTED shows the same total. The page calls that total 55k.
+
+### What changes when Jeans and Pants are selected?
+
+Ctrl plus click selects both. The ALLSELECTED total is the total of all the selected sales, not each category's own total. ALLSELECTED keeps the slicer and drops the row category.
+
+### How is the Ranking measure written?
+
+`Ranking = RANKX( ALLSELECTED( 'Clothing Sales'[Category] ) , CALCULATE( SUM( 'Clothing Sales'[Sales] ) ) )`. The page names no RANKX order argument. Do not add one.
+
+### Why name the Category column inside RANKX?
+
+The closing note says the table name alone will not work. Rank uses the category filter context, so ALLSELECTED takes the Category column.
+
+Related: [Measures – Calculating a Sum](/2016/05/07/measures-calculating-a-sum/), [Using Variables within DAX](/2017/05/05/using-variables-within-dax/), and [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/).
 
 In many reports we produce we often need a method to score or rank data.  For example, we may need to list the sales totals for the sales team and rank them from highest sales to lowest sales.  Ranking can be done as a calculated column, or as a measure.  When using a measure, the ranking becomes dynamic and takes on the filter context of the table, or visual, that is showing the data.  Calculating a rank as a measure can be useful if you want to allow the user to select different categorical values such as product type and then have the report automatically rank the selected items.  When the report filter context changes the items are automatically re-ranked.
 

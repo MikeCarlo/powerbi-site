@@ -1,6 +1,6 @@
 ---
 title: "Loading Data From Folder"
-excerpt: "Learn how to automatically load only the most recent file from a folder in Power BI. Perfect for automated reports that receive daily data files."
+excerpt: "How do I load only the newest file from a folder in Power Query?"
 date: "2016-06-16"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["Power Query", "Data Loading", "Tutorial", "Automation"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I load only the newest file from a folder in Power Query?
+
+**TL;DR.** Get Data, Folder, then Edit. Sort Name descending on YYYY-MM-DD names, not Date Created or Accessed. Keep Top Rows 1 and open that file from Content. Close and Apply. Refresh loads the newest name. A changed column layout can fail the query.
+
+### Which connector does the tutorial use?
+
+Get Data, All, Folder, Connect. The sample is the unzipped Monthly Data folder (Feb 2016 through April 2016). Click Edit. This path does not load every file.
+
+### Why sort by Name?
+
+Sorting and Filtering Files says Date Accessed and Date Created were inconsistent after moves or copies. Names that start with YYYY-MM-DD, then Sort Descending on Name, put the newest file first. Newest means newest by that name sort.
+
+### How does it keep a single file?
+
+On the Home ribbon: Keep Rows, Keep Top Rows, enter 1. Then click the Load File control in the Content column. Close and Apply.
+
+### How is refresh tested?
+
+Delete `2016-04-01 April`, then Refresh on the Home ribbon. March is what remains. Edit Queries, Refresh Preview: the Applied Step Kept First Rows shows March.
+
+### When does the page say this breaks?
+
+The closing note says this fits an automated drop that keeps the same file format. A naming change, a different column count, or moved columns will most likely make the query fail.
+
+Related: [Folder of Files Loaded to Power BI Desktop](/2016/04/07/folder-of-files-loaded-to-power-bi-desktop/), [Load Multiple Excel (xls or xlsx) Files](/2016/08/10/load-multiple-excel-xlsx-files/), and [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/).
 
 Let me setup a scenario for you. You get a data file from an automated system, it has the same number of columns but the data changes for every new file. Being the data savvy person that you are you've spent some time working in excel to make a template where you can copy your new data into and then automatically all your equations and graphs magically work. You pat yourself on the back and happily send out your fantastic report to everyone you know. Then tomorrow when the data comes to you again you repeat the same process over again. Still enamored by your awesome report, you send it out again knowing you have saved yourself so much time not having to do the analysis or creation of your reports over and over again.
 

@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Visuals using Buttons"
-excerpt: "Sometimes, we want the users to see different metrics, but do not want to take up too much space on our page. The scenario we are going to walk throug..."
+excerpt: "How do I use buttons to switch one chart between Volume, Dollars, and Margin?"
 date: "2019-08-08"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I use buttons to switch one chart between Volume, Dollars, and Margin?
+
+**TL;DR.** Disconnected Control table. SWITCH on Number_ID returns Volume, Dollars, or Margin, default Volume. Bookmark only the slicer: Selected Visuals on, Display and Current Page off. Button Action runs it. Color the button from Number_ID. Title uses the type field. Hide the slicer.
+
+### What is the control table?
+
+Home, Enter Data: a numeric ID and a description. The table must not relate to other tables. The measure reads `Control[Number_ID]`. The page never names the description column in the formula. The title step calls it the type field.
+
+### What does the measure return?
+
+`Selected Calculation` is SWITCH on `SELECTEDVALUE(Control[Number_ID])`: 1 returns `SUM(Sales[Volume])`, 2 returns `SUM(Sales[Dollars])`, 3 returns `SUM(Sales[Margin])`, and the last argument (the default) is Volume again.
+
+### How are the three bookmarks recorded?
+
+From the View ribbon, turn on the Selection Pane and the Bookmark Pane. Select one Number_ID, select only the slicer, Add Bookmark, and rename it Select 1, Select 2, or Select 3. Untick Display and Current Page. Tick Selected Visuals.
+
+### How does a button change the chart?
+
+Blank buttons named Button_Volume, Button_Dollars, and Button_Margin. Action on, type Bookmark, mapped to Select 1, Select 2, and Select 3. The bar keeps Category on the axis and uses Selected Calculation as the value.
+
+### How does the page show which button is selected?
+
+Button background: if Number_ID is 1, blue, otherwise white. Dollars uses 2. Margin uses 3. Hide the slicer with the eye in the Selection pane and turn visual headers off. The chart title is conditional formatting, field value, using the type field.
+
+Related: [Power BI Bookmarks Tips, Tricks, and Best Practices](/2021/06/22/power-bi-bookmarks-tips/) and [Consolidate Report Pages Easily with Visual Grouping](/2019/11/12/consolidate-report-pages-easily-with-visual-grouping/).
 
 Sometimes, we want the users to see different metrics, but do not want to take up too much space on our page. The scenario we are going to walk through is how to build just one visual (in this case a bar graph). It will include a toggle that allows the user to select their desired calculation, either the sum of Volume, Dollars or Margin.
 
