@@ -43,7 +43,7 @@ Alright, let’s jump into the data!
 
 Open PowerBI Desktop, Click the Get Data button on the Home ribbon and select **Blank Query**.  Click **Connect** to open the Query Editor.  On the View ribbon click the **Advanced Editor button**.  While in the Advanced Editor paste the following code into the editor window, click **Done** to complete the data load.
 
-_Note: If you need some more help loading the data follow this tutorial about_ [**_loading data using the Advanced Query Editor_**](http://powerbi.tips/2016/05/query-editor-editing-m-code/)_.  This tutorial teaches you how to copy and paste M code into the Advanced Editor._
+_Note: If you need some more help loading the data follow this tutorial about_ [**_loading data using the Advanced Query Editor_**](/2016/05/19/query-editor-editing-m-code/)_.  This tutorial teaches you how to copy and paste M code into the Advanced Editor._
 
 ```powerquery
 let
