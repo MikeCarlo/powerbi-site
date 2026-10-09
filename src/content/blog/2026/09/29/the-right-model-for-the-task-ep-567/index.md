@@ -18,7 +18,7 @@ excerpt: "Tommy Puglia and Mike Carlo use Kurt Buhler and Eugene Meidinger's Tab
 featuredImage: "./assets/featured.png"
 ---
 
-Kurt Buhler and Eugene Meidinger's August article on picking an AI model is already two months old, and Tommy Puglia and Mike Carlo spend the hour testing whether it still holds. They walk purpose, capability, effort, and cost through real Fabric work, then open the FabCon Barcelona posts on Fabric apps and semantic views.
+Kurt Buhler and Eugene Meidinger's August article on picking an AI model is just over a month old, and Tommy Puglia and Mike Carlo spend the hour testing whether it still holds. They walk purpose, capability, effort, and cost through real Fabric work, then open the FabCon Barcelona posts on Fabric apps and semantic views.
 
 <iframe
   width="100%"
