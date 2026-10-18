@@ -1,6 +1,6 @@
 ---
 title: "The Dynamic Time Matrix"
-excerpt: "Time and time again when I begin talking with Excel users and ask to see what current reports they are using, they usually show me a table with a mixe..."
+excerpt: "How do I build a Power BI matrix that shows days, weeks, months, and years up to today?"
 date: "2019-07-11"
 authors:
   - "Seth Bauer"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I build a Power BI matrix that shows days, weeks, months, and years up to today?
+
+**TL;DR.** Build a DAX Date table with IsInCurrentYear/Month/Week flags off NOW(). A disconnected TimeRange table UNIONs By Year, By Month, By Week, By Day, plus Goal and Forecast rows. One TimeValue measure uses SWITCH. In the matrix, Expand all down one level.
+
+### What data does the pattern need?
+
+You need a grouping column, a date column, and a value column. The sample is Adventure Works style data (ModelName, StartDate, ListPrice) loaded from Excel. The post's Date table and sample data stop at 2020, so set MinYear and MaxYear to fit your own data.
+
+### What is the TimeRange table for?
+
+TimeRange is a disassociated DAX table, so it has no relationship to the rest of the model. Each SUMMARIZE builds one group (By Year, By Month, By Week, By Day) with an Index from 4 to 1 and a DayIndex that keeps dates in sort order. SELECTCOLUMNS then renames the columns to Value, Group, Index, and DayIndex.
+
+### How does one measure fill every column?
+
+A base measure, `List Price = SUM(Data[ListPrice])`, feeds TimeValue, which switches on `SELECTEDVALUE('TimeRange'[Group])`. It uses TOTALYTD for By Year, TOTALMTD for By Month, and CALCULATE with week or date filters for By Week and By Day, all capped at TODAY(). The result goes through `FORMAT(Val, "CURRENCY")`, so the measure returns text.
+
+### Why does the matrix change by itself?
+
+The date flags and measure filters use NOW() and TODAY(), so the view never goes past the current day. Seth describes it as "set it and forget it." The only relationship in the model is 'Date'[Date] to 'Data'[StartDate].
+
+### What are the Goal and Forecast columns?
+
+They are two DATATABLE rows in the Overall group. In the sample, Goal is `[List Price] * 1.2` and Forecast is `[List Price] * RAND()`, which is a random placeholder value. A comment in the measure says to remove that inner SWITCH if you only want the time ranges.
+
+Related: [Creating A DAX Calendar](/2017/11/01/creating-a-dax-calendar/), [Improved Matrix Headers](/2017/02/16/improved-matrix-headers/), and [Measures – Year Over Year Percent Change](/2016/12/05/measures-year-over-year-percent-change/).
 
 Time and time again when I begin talking with Excel users and ask to see what current reports they are using, they usually show me a table with a mixed bag of columns split by different time ranges. A comparison of month over month, or year over year, mixed in with a few daily totals or cumulative totals all rolled up from values on other tabs to produce their preferred view (or dashboard). Typically, the first approach I take is to describe how we can break up this single table view of things and start looking at the aggregations of these values in easily digestible pieces and slice and dice them in different times ranges. I’ve explained that the goal should be to produce easy to consume visuals for comparison using measures and plotting these out in different ways to glean insights quicker. Most of the time, this works, but other times… it is second best to what the analyst or uber Excel user wants to see… they want to see their numbers, and they want to see them the same way they have them in Excel.
 

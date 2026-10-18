@@ -1,6 +1,6 @@
 ---
 title: "Adding Data Types Within Query Editor"
-excerpt: "If you have spent any time working in Power BI, your very first step is to, wait for it… Get Data.  Using Get Data will start loading your data into t..."
+excerpt: "How do I set a custom column's data type in Power Query without an extra Changed Type step?"
 date: "2018-01-31"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I set a custom column's data type in Power Query without an extra Changed Type step?
+
+**TL;DR.** After Add Column, Custom Column ("Increase Sales"), clicking ABC123 and Whole Number adds a separate Changed Type1 step. I delete it and add `Int64.Type` as the last argument of `Table.AddColumn` in the formula bar. `Number.Type`, `Date.Type`, and `Text.Type` also work.
+
+### Why does the new custom column show the ABC123 icon?
+
+Power BI thinks the new column could hold Text or a Number, so it shows the ABC123 icon. The note in the post explains that Changed Type steps exist because not every M equation can handle data types.
+
+### What does the edited formula look like?
+
+Click the X next to Changed Type1 to delete it, select the Added Custom step, and change the formula bar to `= Table.AddColumn(#"Changed Type", "Increase Sales", each [Sales] * 1.1, Int64.Type)`. Press Enter, and the column type is set with one less step.
+
+### Which data types does the post list?
+
+The post lists four types and their syntax. Whole Number is `Int64.Type`, Decimal Number is `Number.Type`, Dates is `Date.Type`, and Text is `Text.Type`.
+
+### Why bother removing one step?
+
+Fewer Applied Steps make long queries easier to read and maintain. Setting the type when the column is created also heads off data type errors later, like joining tables on columns with different types or trying to SUM a column that is still text. It won't cut every query in half, but it does remove extra steps.
+
+### Where is the formula bar if it is hidden?
+
+Turn it on from the View ribbon with the Formula Bar check box.
+
+Related: [Query Settings – Fixing a Missing File](/2016/04/11/query-settings-fixing-a-missing-file/), [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/), and [Power Query – Get Started!](/2019/10/15/power-query-get-started/).
 
 If you have spent any time working in Power BI, your very first step is to, wait for it… Get Data.  Using Get Data will start loading your data into the Query Editor for Extracting, Transforming and Loading (ETL).  When you start out in Power BI it is likely that you don’t spend much time in the Query Editor.  However, the longer you use Power BI desktop, and the more you learn, you find that the Query Editor is highly under-rated.  There are so many amazing transformations that you can perform on your data.  After some time getting comfortable you’ll be building larger queries with many, many, steps.  Eventually, it may look something like this:
 

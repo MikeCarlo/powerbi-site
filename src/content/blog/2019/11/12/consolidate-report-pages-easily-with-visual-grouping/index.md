@@ -1,6 +1,6 @@
 ---
 title: "Consolidate Report Pages Easily with Visual Grouping"
-excerpt: "We do a ton of Layouts here at powerbi.tips and with the introduction of the new visual grouping feature I wa..."
+excerpt: "How do I consolidate several report pages into one page with visual groups and bookmarks?"
 date: "2019-11-12"
 authors:
   - "Seth Bauer"
@@ -11,7 +11,33 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
-We do a ton of [Layouts](https://powerbi.tips/tools-2/layouts/) here at powerbi.tips and with the introduction of the new visual grouping feature I was looking for different ways I could utilize that functionality to make templates for different reporting scenarios. First, if you aren’t familiar with how to build a visual group, be sure to check out a [blog](https://powerbi.tips/2019/09/grouping-with-style/) Mike wrote on this a little while ago on the subject.
+## How do I consolidate several report pages into one page with visual groups and bookmarks?
+
+**TL;DR.** Group and rename each page's objects in the Selection pane (Page 1, Page 2). Copy Page 2 onto page 1 and hide it. Bookmark each visibility state and set Blank buttons to Action Type Bookmark. Test with Ctrl + Click in Desktop.
+
+### How do I group everything on a page?
+
+In the Selection pane, click the top object, Shift + Click the last one, right-click, and choose Group. A "Group 1" appears, and you can double-click it to rename it Page 1. You can also click the report canvas, press Ctrl + A, right-click, and Group.
+
+### How do the second page's visuals get onto the main page?
+
+Select the Page 2 group, press Ctrl + C, go to page 1, and press Ctrl + V. The page looks like a mess until you turn the Page 2 group's visibility off in the Selection pane.
+
+### How are the two bookmarks set up?
+
+Open the Bookmarks pane from the View ribbon, click Add, and rename the bookmark Page 1. Hide the Page 1 group, show the Page 2 group, and add a second bookmark named Page 2. If the Page 2 visuals sit out of alignment, select the group and resize it as one object.
+
+### How do the buttons switch views?
+
+On the Home ribbon, click Buttons and pick Blank, turn on Button Text, and type Page 1; copy that button for Page 2. Turn Action on for each one, set Type to Bookmark, and pick the matching bookmark. In Desktop, Ctrl + Click a button to test it.
+
+### Do all the hidden visuals slow the page down?
+
+The post says no, because hidden objects don't render until a button makes them visible. You can check it yourself with Performance Analyzer on the View ribbon.
+
+Related: [Grouping with Style](/2019/09/26/grouping-with-style/), [Power BI Bookmarks Tips, Tricks, and Best Practices](/2021/06/22/power-bi-bookmarks-tips/), and [Dynamic Visuals using Buttons](/2019/08/08/dynamic-visuals-using-buttons/).
+
+We do a ton of [Layouts](/power-bi-layouts/) here at powerbi.tips and with the introduction of the new visual grouping feature I was looking for different ways I could utilize that functionality to make templates for different reporting scenarios. First, if you aren’t familiar with how to build a visual group, be sure to check out a [blog](/2019/09/26/grouping-with-style/) Mike wrote on this a little while ago on the subject.
 
 While I was exploring an idea of how I might leverage this new feature, a challenge I’d seen re-occurring in the Power BI Community forums popped to the forefront of my mind. This new feature gives a perfect solution for answering the question of Report page consolidation.
 

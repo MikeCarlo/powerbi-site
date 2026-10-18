@@ -1,6 +1,6 @@
 ---
 title: "Start of Month DAX Calendar"
-excerpt: "While on a recent project I needed to build a variation of the DAX date table with start-of-month dates. Here's how to create one."
+excerpt: "How do I build a DAX date table with only the first day of each month?"
 date: "2017-12-20"
 authors:
   - "Mike Carlo"
@@ -11,7 +11,33 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
-While on a recent project I needed to build a variation of the DAX date table.  In my previous post, found here [Creating DAX Date Tables](https://powerbi.tips/2017/11/creating-a-dax-calendar/) I was built a date table for every day of the month for multiple years.  I’ve only ever needed to consume a fully populated date calendar, but in this instance because the data I was collecting was already aggregated to the first of the month I only needed a date calendar with each month’s start date.  After some playing around with my previous DAX functions I think I was able to come up with an elegant solution.
+## How do I build a DAX date table with only the first day of each month?
+
+**TL;DR.** On the Modeling ribbon, click New Table and enter `GENERATE(GENERATESERIES(1,12), VAR inc = [Value] RETURN ROW("date", DATE(2017,inc,1)))`. Use 48 instead of 12 for four years of month starts. Add `EOMONTH(DATE(2017,inc,1), 0)` for a Month End column.
+
+### Why build a start-of-month table instead of a full calendar?
+
+My project data was already aggregated to the first of each month, so a daily calendar was more than I needed. One row per month start matched the data.
+
+### How does the start-of-month formula work?
+
+The formula starts with GENERATESERIES(1,12), which makes a list of numbers 1 to 12 in a column called [Value]. VAR inc captures each number, and DATE(2017, inc, 1) returns the first day of that month.
+
+### How do I cover more than one year?
+
+Change GENERATESERIES(1,12) to GENERATESERIES(1,48). That one number change gives you four years of month starts.
+
+### How do I add a month-end column?
+
+Inside ROW, put a comma after the first date pair and add `"Month End", EOMONTH( DATE(2017,inc,1), 0)`. The table then shows the last day of each month next to its start date.
+
+### Why does Date show up as a hierarchy in the table visual?
+
+Power BI adds Date as a Date Hierarchy when you drag it into the visual. Click the drop-down arrow next to Date and choose Date to remove the Year, Quarter, Month, and Day levels.
+
+Related: [Creating A DAX Calendar](/2017/11/01/creating-a-dax-calendar/), [Building Date Table from Scratch](/2016/08/31/building-date-table-from-scratch/), and [Measures – Month to Month Percent Change](/2016/07/14/measures-month-to-month-percent-change/).
+
+While on a recent project I needed to build a variation of the DAX date table.  In my previous post, found here [Creating DAX Date Tables](/2017/11/01/creating-a-dax-calendar/) I was built a date table for every day of the month for multiple years.  I’ve only ever needed to consume a fully populated date calendar, but in this instance because the data I was collecting was already aggregated to the first of the month I only needed a date calendar with each month’s start date.  After some playing around with my previous DAX functions I think I was able to come up with an elegant solution.
 
 Let’s get into it.
 
@@ -65,7 +91,7 @@ Start of Month Date Table
 
 _Note: I already removed the Date Hierarchy using the instructions listed above in the previous note._
 
-This new DAX Date table is first generating a list of numbers 1 to 12 one for each month.  Then it iterates through the list and produces a date using the Date function were we manually provide the Year, and the day.  You can see the Generate function produces a column of data called \[Value\].  The variable denoted by VAR _inc_ is capturing the number for each month.  So, now what if we want to produce more than one year of dates?  Super simple, just change the generate series from 1 to 12 to 1 to 48.  This will produce three years of dates.
+This new DAX Date table is first generating a list of numbers 1 to 12 one for each month.  Then it iterates through the list and produces a date using the Date function were we manually provide the Year, and the day.  You can see the Generate function produces a column of data called \[Value\].  The variable denoted by VAR _inc_ is capturing the number for each month.  So, now what if we want to produce more than one year of dates?  Super simple, just change the generate series from 1 to 12 to 1 to 48.  This will produce four years of dates.
 
 Change your Start of Months Dates to the following:
 

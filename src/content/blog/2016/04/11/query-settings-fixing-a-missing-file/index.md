@@ -10,9 +10,35 @@ tags:
   - "Power Query"
   - "Troubleshooting"
   - "Tutorial"
-excerpt: "Learn how to troubleshoot and fix broken file connections in Power BI Desktop when your data source has moved or can't be found."
+excerpt: "How do I fix a Power BI Desktop query when its Excel source file has moved?"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I fix a Power BI Desktop query when its Excel source file has moved?
+
+**TL;DR.** When a local Excel file moves, Refresh fails with a can't-find-file error. Click Home, Edit Queries, then Go To Error to land on the Source step. Edit Settings, Browse to Book1, Open, OK. The Formula Bar (View ribbon) shows each step's M.
+
+### Why does Refresh say the file can't be found?
+
+I built the original query against an Excel file sitting on my desktop. Connections to local files break when the file moves to a different folder, so Refresh can no longer find it.
+
+### How do I find the step that failed?
+
+Close the message, then click Edit Queries on the Home ribbon. In the yellow error bar, click Go To Error, and Applied Steps in Query Settings jumps to the Source step, which is where the query failed.
+
+### How do I point the query at the new location?
+
+Click Edit Settings in the second yellow error box. In the Load Excel window, click Browse, pick Book1 in its new folder, click Open, then OK. Click through Source, Navigation, Promoted Headers, and Changed Type to watch the data come back step by step.
+
+### How do I see the M code behind a step?
+
+Check Formula Bar on the View ribbon, then click a step to see its code. For the Changed Type step it reads `Table.TransformColumnTypes(#"Promoted Headers",{{"ID", Int64.Type}, {"Sales", Int64.Type}, {"Category", type text}})`.
+
+### Why does the formula say #"Promoted Headers"?
+
+The previous step is named Promoted Headers, with a space, so M wraps the name in a pound sign and quotes. A step named PromotedHeaders, with no space, would show up bare.
+
+Related: [Import an Excel file into PowerBI](/2016/03/29/import-an-excel-file-into-powerbi/), [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/), and [Adding Data Types Within Query Editor](/2018/01/31/adding-data-types-within-query-editor/).
 
 One of the most important concepts to learn within Power BI Desktop is how to build a Data Model.
 
