@@ -122,6 +122,15 @@ export default defineConfig({
     '/theme-generator/powerbi-tips-tools-now-in-fabric/': '/power-designer/',
     '/2026/03/07/is-power-bi-desktop-a-dev-tool-ep-376/': '/2024/11/29/is-power-bi-desktop-a-dev-tool-ep-376/',
     '/2024/11/22/the-power-of-a-good-agenda-ep-374-power-bi-tips-ep-374/': '/2024/11/22/the-power-of-a-good-agenda-ep-374/',
+    // Clarity 404s with real visitors (Oct 2026). The powerbi.tips zone is
+    // DNS-only in Cloudflare (gray cloud, not proxied) and lives outside the
+    // connected Cloudflare account, so these are Astro meta-refresh redirects
+    // (HTTP 200 + canonical to the destination), not true 301s.
+    '/tools/theme-generator/': '/power-bi-theme-generator/',
+    '/tools/color-theme-generator/': '/power-bi-theme-generator/',
+    '/layouts/': '/power-bi-layouts/',
+    '/2016/06/dynamic-percent-change-daxl/': '/2016/06/10/dynamic-percent-change-using-dax/',
+    '/2019/07/the-dynamic-time-matrix/embed/': '/2019/07/11/the-dynamic-time-matrix/',
   },
   compressHTML: true,
 });
