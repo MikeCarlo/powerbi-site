@@ -60,6 +60,18 @@ The deployment plan was announced at the Fabric conference in Barcelona. Per the
 
 - **Deplavity was born.** Mid-sentence, Mike tripped over his words and coined [deplavity](https://deplavity.com), and Tommy told him to trademark it before Microsoft takes it. The episode closed with a mock prescription drug ad that Mike credited to John: "Ask your capacity admin about deplavity." Today's sponsor, for the first time, was deplavity.
 
+Here's the [deplavity](https://deplavity.com) moment, in case you missed it live:
+
+<iframe
+  width="100%"
+  height="415"
+  src="https://www.youtube.com/embed/tDgajeKE_5c"
+  title="Deplavity - Because your artifacts deserve to arrive where you sent them"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+
 ## Looking Forward
 
 If deployment pipelines keep tripping over data that isn't there yet, rebuild Microsoft's sales example in a dev workspace and see whether a post-deploy notebook fixes it, then wait for GA before anything reaches production.
