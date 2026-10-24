@@ -10,11 +10,37 @@ tags:
   - "DAX"
   - "Visualization"
   - "Tutorial"
-excerpt: "Learn how to create histograms with custom bins in Power BI using DAX measures to categorize and visualize your data distributions."
+excerpt: "How do I build a histogram with custom bins in Power BI using DAX?"
 featuredImage: "./assets/featured.png"
 ---
 
-Alright to start this Tutorial off right we are going to incorporate the new feature released this spring from Power BI, called publish to web. Below you can view last weeks tutorial and interact with the data. Feel free to click around to see how the visualization works (you can click the shaded states or on the state names at the bottom).
+## How do I build a histogram with custom bins in Power BI using DAX?
+
+**TL;DR.** Use Enter Data to make a Buckets table (Name, Min, Max). A Bins measure counts US Census rows where 2010 Census falls between MIN(Buckets[Min]) and MAX(Buckets[Max]). Chart it in a Stacked Column Chart with Axis = Name, Value = Bins.
+
+### What data does the histogram tutorial use?
+
+The tutorial uses state population data from the 2010 and 2015 Census, built in the earlier From Wikipedia to a Colorful Map tutorial. The goal is to see how many states fall in a population range, such as 4 million or less in 2010.
+
+### How do I create the bins table?
+
+Click Enter Data on the Home ribbon, type in your bucket ranges, name the table Buckets, and click Load. The post shows its own bucket values only in a screenshot, so pick ranges that fit your data.
+
+### What does the Bins measure count?
+
+It counts the rows in US Census where 2010 Census falls between the bucket's Min and Max: `Bins = CALCULATE(COUNTROWS(FILTER('US Census', AND([2010 Census] >= MIN(Buckets[Min]), [2010 Census] <= MAX(Buckets[Max])))))`. In the 2016 post, you add it from the ellipsis next to US Census, then New Measure.
+
+### How do I turn the measure into a histogram chart?
+
+Add a Stacked Column Chart with Axis = Name (from Buckets), Legend = Name, and Value = Bins. Then open the chart's ellipsis, choose Sort By, and pick Bins to order the buckets by count, descending.
+
+### Can the same bins color a map?
+
+Yes. On the map, remove % Change from Values, add Bins, and put Name from Buckets in Legend. Clicking a bar in the chart then filters both the table and the map.
+
+Related: [From Wikipedia to a Colorful Map](/2016/04/20/from-wikipedia-to-colorful-map/), [Manually Enter Data](/2016/04/13/manually-enter-data/), and [Fixing the Truncating Bar Chart](/2017/11/14/fixing-the-truncating-bar-chart/).
+
+Alright to start this Tutorial off right we are going to incorporate the new feature released this spring from Power BI, called publish to web. Below you can view last week's tutorial and interact with the data. Feel free to click around to see how the visualization works (you can click the shaded states or on the state names at the bottom).
 
 For this tutorial we will build upon the last tutorial, From [Wikipedia to Colorful Map](/2016/04/20/from-wikipedia-to-colorful-map/). If you want to follow along in this tutorial click on the link and complete the previous tutorial.
 

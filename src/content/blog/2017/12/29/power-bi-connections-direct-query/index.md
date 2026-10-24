@@ -1,6 +1,6 @@
 ---
 title: "Power BI Connections: Direct Query"
-excerpt: "Now that we've covered the basics of connection types, let's dive into Direct Query and when to use it for your Power BI reports."
+excerpt: "What does DirectQuery limit in Power BI, and when is it worth using?"
 date: "2017-12-29"
 authors:
   - "Seth Bauer"
@@ -11,13 +11,39 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
-Now that we've solidly gotten through the basics in terms of what connection types are in the opening blog, found [here](https://powerbi.tips/2017/10/power-bi-connection-types/), and detailed out what is included in the default connection type of Import found [here](https://powerbi.tips/2017/11/power-bi-connections-import/), let's get on with some of the more interesting connections.
+## What does DirectQuery limit in Power BI, and when is it worth using?
+
+**TL;DR.** DirectQuery leaves data in the source, querying it per visual. Most Edit Queries transforms fail on load, the Data tab is disabled, and speed depends on the source. Use it for huge datasets or the most current data. Expect slower than Import.
+
+### What does "live" mean for a DirectQuery connection?
+
+It means the data stays in the source system, and Power BI sends queries that return only what the visuals need. With Import, the data is a snapshot that refreshes on a periodic basis.
+
+### Which Power Query steps still work with DirectQuery?
+
+Simple actions such as removing columns still work. The Query Editor will let you build other transformations, but loading them to the model will most likely throw an error, so the post assumes the mashup is already done in the backend.
+
+### Why is the Data tab missing in a DirectQuery model?
+
+The post says the Data tab is disabled in the model layer, so formatting and data transformations need to be finished in the source. Only minor format adjustments are left in Power BI, which is a heavy restriction if you can't get to the source.
+
+### How does query reduction help DirectQuery reports?
+
+Query reduction, added in the November 2017 release, puts an Apply button on slicers and filters so you set all your selections before Power BI sends the query. Before that, every selection fired a query at the source. The post turns it on under File, Options and Settings, Options, Query Reduction.
+
+### Do DirectQuery reports need a scheduled refresh?
+
+No. No data is ingested, so there is nothing to schedule. Deployment needs the gateway the post refers to as the Enterprise Gateway (different from the personal gateway), and the report shows the latest data as users interact with it.
+
+Related: [Power BI Connection Types](/2017/10/16/power-bi-connection-types/), [Power BI Connections: Import](/2017/11/16/power-bi-connections-import/), and [Power BI Connections: Live Connection](/2018/02/26/power-bi-connections-live-connection/).
+
+Now that we've solidly gotten through the basics in terms of what connection types are in the opening blog, found [here](/2017/10/16/power-bi-connection-types/), and detailed out what is included in the default connection type of Import found [here](/2017/11/16/power-bi-connections-import/), let's get on with some of the more interesting connections.
 
 ![Connection Type Outline](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/11/Connection-Type-Outline.png)
 
 _Connection Type Outline_
 
-Direct Query is the first connection type that we will discuss that extends, but at the same time limits functionality in the tool itself. In terms of data access this connection type allows us to access our data in the source system. The supported data sources for direct query can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources). This is distinctly different than what we observed in the [import method](https://powerbi.tips/2017/11/power-bi-connections-import/).  When using Import, the data is a snapshot and refreshed on a periodic basis, but with Direct Query it is live. "Live" means that with Direct Query the data stays in the source system and Power BI sends queries to the source system to return only the data it needs in order to display the visualizations properly. There are some pros and cons in using this connection so it is important to understand when you might use it, and when you should probably avoid this connection.
+Direct Query is the first connection type that we will discuss that extends, but at the same time limits functionality in the tool itself. In terms of data access this connection type allows us to access our data in the source system. The supported data sources for direct query can be found [here](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources). This is distinctly different than what we observed in the [import method](/2017/11/16/power-bi-connections-import/).  When using Import, the data is a snapshot and refreshed on a periodic basis, but with Direct Query it is live. "Live" means that with Direct Query the data stays in the source system and Power BI sends queries to the source system to return only the data it needs in order to display the visualizations properly. There are some pros and cons in using this connection so it is important to understand when you might use it, and when you should probably avoid this connection.
 
 #### **Cons:**
 
@@ -41,7 +67,7 @@ _Data Tab No Longer Present_
 #### **Pros:**
 
 *   The Direct Query connection does not store any data. It constantly sends queries to the source to display the visuals with the appropriate filter contexts selected.
-*   In the November 2017 release there is a new capability in Power BI allows you to reduce the traffic and enhance this connection method exponentially. The feature is called Query reduction, and allows you to enable an "apply" button on a slicer or filter. The benefit with this option is that you can set all your selections of a filter prior to Power BI executing the query. Before this feature was available, every selection you made would fire off a query to the source database. To enable this feature, go to File -> Options and Settings -> Options -> Query Reduction you will find these options to help with Direct Query Performance.
+*   In the November 2017 release there is a new capability in Power BI that allows you to reduce the traffic and enhance this connection method exponentially. The feature is called Query reduction, and allows you to enable an "apply" button on a slicer or filter. The benefit with this option is that you can set all your selections of a filter prior to Power BI executing the query. Before this feature was available, every selection you made would fire off a query to the source database. To enable this feature, go to File -> Options and Settings -> Options -> Query Reduction you will find these options to help with Direct Query Performance.
 
 ![Query Reduction Options](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/12/Query-Reduction-Options.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "Fixing the Truncating Bar Chart"
-excerpt: "The more you work with Power BI Desktop it is more than likely you will find some tool limitations that impact your overall design pursuits.  As I hav..."
+excerpt: "How do I stop a Power BI bar chart used as a slicer from cutting off its category labels?"
 date: "2017-11-14"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I stop a Power BI bar chart used as a slicer from cutting off its category labels?
+
+**TL;DR.** In the 2017 post, a stacked bar chart slicer truncates long y-axis text, and tiny bars (10 next to 1,300) are hard to click. Switch to the Matrix visual, set Matrix style None, Row subtotals Off, then Conditional formatting, Data bars On.
+
+### Why does a stacked bar chart cut off long category labels?
+
+In the post, the text next to each bar gets truncated when it is too long. The only fix inside the chart is stretching the visual to a ridiculous length, which defeats the point of a compact "slicer" that filters the page in minimal space.
+
+### Why are small bars hard to click?
+
+When very small values sit next to large ones, the small bar is almost impossible to click. In the example, 1,300 is easy to hit and 10 is not, and clicking the bar's text value does not filter the page.
+
+### Which settings turn a matrix into a bar chart?
+
+On the Visualizations pane, pick the Matrix visual, change Matrix style to None, then open Subtotals and set Row subtotals to Off. Open Conditional formatting and turn Data bars On. Those are the pane names as written in the 2017 post.
+
+### How do I select a small value in the matrix version?
+
+After the switch, you can resize the text labels, and selecting a small value such as 10 shows a little grey selector bar. Small values become clickable, so they filter the page like the big ones.
+
+### Can I hide the matrix grid and headers?
+
+Yes. The post's closing note says you can match the grid and column title colors to your background to hide them, or pick one of the grid style options. This is one look among many ways to format the matrix.
+
+Related: [Stacked Bar Chart](/2019/11/05/stacked-bar-chart/), [Improved Matrix Headers](/2017/02/16/improved-matrix-headers/), and [Segmented Filtering with Slicers](/2018/06/20/segmented-filtering-with-slicers/).
 
 The more you work with Power BI Desktop it is more than likely you will find some tool limitations that impact your overall design pursuits.  As I have worked with data visualization software, I find there is always a balance between what I want to make and what is possible.  The more you become familiar with your visualization tool, the better you think of report designs that are both beautiful and feasible.  One such design style that I use is to limit the use of slicers on the report page as much as possible.  My solution for removing slicers is adding a stacked bar chart or a stacked column chart.  The chart can be used as a slicer because you can click on the data bars and filter the page of data.  One of the visualization limitations I’ve had to work around was the ability to make a stacked bar chart with long y-axis titles. In order to overcome this limitation we need to fire up our creativity to figure out another way to more accurately control the y-axis labels and the associated bar chart.
 
@@ -21,13 +47,13 @@ First issue, when you have text along the y-axis in the stacked bar chart, the t
 
 Stacked Bar Chart
 
-_Note: All the text next to each bar is truncated if the text is to long.  This can be fixed by extending the visual to a ridiculous length, as illustrated by the following picture.  While this solves the text issue, this totally defeats the purpose of this visual, provide a “slicer” that can be used to filter the report page with minimal space consumption._
+_Note: All the text next to each bar is truncated if the text is too long.  This can be fixed by extending the visual to a ridiculous length, as illustrated by the following picture.  While this solves the text issue, this totally defeats the purpose of this visual, provide a “slicer” that can be used to filter the report page with minimal space consumption._
 
 ![Super Long Stacked Bar Chart](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/11/Super-Long-Stacked-Bar-Chart.png)
 
 Super Long Stacked Bar Chart
 
-Second issue, when there are super small values next to large values, it is almost nearly impossible to click on the bar to enable the filtering.  In the example image above, it’s easy to click on the value of 1,300 but almost impossible to click on the value of 10.  Womp, Womp, and clicking on the bar text value does not enable filtering, insert [ridiculous horn sound](https://www.youtube.com/watch?v=Ss7SRjiOCCs), or other [familiar but annoying horn sound](https://www.youtube.com/watch?v=27evSVwjzzI) (as recommended by one of our readers Terence).
+Second issue, when there are super small values next to large values, it is nearly impossible to click on the bar to enable the filtering.  In the example image above, it’s easy to click on the value of 1,300 but almost impossible to click on the value of 10.  Womp, Womp, and clicking on the bar text value does not enable filtering, insert [ridiculous horn sound](https://www.youtube.com/watch?v=Ss7SRjiOCCs), or other [familiar but annoying horn sound](https://www.youtube.com/watch?v=27evSVwjzzI) (as recommended by one of our readers Terence).
 
 After some playing around with various visuals here is what I came up with.  First, you must change the visual from a stacked bar chart to the matrix visual.  On the **Visualizations** pane click on the **Matrix** visual.
 
@@ -59,6 +85,6 @@ When you compare all three items side by side you can see that the most condense
 
 Comparison of Bar Charts
 
-_Note: There are many ways you can format your matrix to get the desired look. This tutorial is simply covering one type of look.  Additionally, you could hide the text and grid completely by making the grid and column title colors of those match the color of your background, or use could choose one of the many of the grid type options to fit your style needs._ 
+_Note: There are many ways you can format your matrix to get the desired look. This tutorial is simply covering one type of look.  Additionally, you could hide the text and grid completely by making the grid and column title colors of those match the color of your background, or you could choose one of the many of the grid type options to fit your style needs._ 
 
 Thanks for following along, as always if you found this helpful please share it with someone who might find this helpful.
