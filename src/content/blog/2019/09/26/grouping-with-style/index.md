@@ -11,7 +11,7 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
-# Grouping with Style
+## Grouping with Style
 
 The release of grouping visuals was an extremely welcomed feature. As one who builds lots of reports grouping elements together is essential to stay organized and to increase report building speed. Since I’ve been using this great new, I found an interesting design element to style groupings for reporting impact. The grouped visuals feature enables a new property, background color.  This can be applied for the entire group of visuals.
 

@@ -49,7 +49,7 @@ You will first need to log into [PowerBI.com](https://powerbi.microsoft.com/en-u
 
 Navigate to a Dashboard or Report
 
-For this tutorial I will use a report but the same steps will work for both the Dashboard and Report usage metric reports.  Open up the report that your interested in viewing the metrics.  I am using my report called **Home** for this example, this report is used on PowerBI.Tips, and you can [view the report here](https://powerbi.tips/top-tutorials/) if your interested.  Now that we have opened the report, click on the **Usage Metrics** link on the top navigation bar.  This will open up a usage metrics report.   This report is read only and does not allow changes.
+For this tutorial I will use a report but the same steps will work for both the Dashboard and Report usage metric reports.  Open up the report that your interested in viewing the metrics.  I am using my report called **Home** for this example, this report is used on PowerBI.Tips, and you can [view the report here](/posts/) if your interested.  Now that we have opened the report, click on the **Usage Metrics** link on the top navigation bar.  This will open up a usage metrics report.   This report is read only and does not allow changes.
 
 ![Link to Report Metrics](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/11/Link-to-Report-Metrics.png)
 

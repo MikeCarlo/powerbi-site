@@ -67,4 +67,4 @@ Here are the highlights from Ruth's video:
 
 Curbal has been generating a lot of great content. To learn about more information you can visit the website [found here](https://curbal.com/dax-fridays-by-curbal), or visit the [YouTube Channel](https://www.youtube.com/channel/UCJ7UhloHSA4wAqPzyi6TOkw).
 
-For more great videos about Power BI check out our [videos page](/videos/).
+For more great videos about Power BI check out our [videos page](https://www.youtube.com/@PowerBITips).

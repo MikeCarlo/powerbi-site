@@ -20,7 +20,7 @@ On the latest [Explicit Measures Podcast (Episode 5)](https://www.youtube.com/wa
 
 How can you properly gauge whether reports and data is satisfying the role in a company? At least from the opinion of the Explicit Measures Podcast, the basis starts with the ability to provide value, trust, and insights to an organization through their data. Starting with this as the end-goal, a BI Team can and must strategize on translating success into measurable targets. Let’s break this out into three distinct elements of success, with examples of KPIs for a BI Team.
 
-# Elements of Success
+## Elements of Success
 
 ## Adoption
 
@@ -34,7 +34,7 @@ While most BI professionals do not directly create revenue, there is no question
 
 Anyone who has worked in Business Intelligence can tell you – once teams lose trust in the data, it is an awfully long and difficult road to gain it back. If users cannot trust the data in Power BI reports, that both reverts adoption and users will find other means to get their data. BI teams must be able to monitor how up-to-date published reports are, and ensure that the content that is available is current and accurate.
 
-# Examples of Success KPI’s
+## Examples of Success KPI’s
 
 The following are examples of what a Power BI team or Pro can use to evaluate their own success based the pillars of Adoption, Value, and Quality. This is by no means an exhaustive list – this is an amazing community that consistently contributes new and innovate ideas – however there is no current standard for a BI Team success KPIs.
 

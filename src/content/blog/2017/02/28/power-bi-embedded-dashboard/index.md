@@ -19,4 +19,4 @@ If you haven’t already make sure you go check out [Adam’s site](https://guyi
 
 For more great videos about Power BI click the image below:
 
-[![PBI Videos](https://powerbitips.azurewebsites.net/wp-content/uploads/2017/04/PBI-Videos-e1491326922444.png)](https://powerbi.tips/videos/)
+[![PBI Videos](https://powerbitips.azurewebsites.net/wp-content/uploads/2017/04/PBI-Videos-e1491326922444.png)](https://www.youtube.com/@PowerBITips)

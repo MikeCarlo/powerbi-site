@@ -51,7 +51,7 @@ We went through 10 different tutorials in 50 minutes.  Needless to say we went 
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/06/2.png)
 
-1\. Color Theme Generator ( [Link to Tutorial](https://powerbi.tips/2017/03/color-themes-import/), [Link to Advanced Color Theme Generator](https://powerbi.tips/tools/advanced-color-theme-generator/) )
+1\. Color Theme Generator ( [Link to Tutorial](https://powerbi.tips/2017/03/color-themes-import/), [Link to Advanced Color Theme Generator](/power-bi-theme-generator/) )
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/06/1.png)
 

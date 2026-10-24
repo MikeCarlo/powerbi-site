@@ -45,7 +45,7 @@ In Ep. 210, the team walks through how they dissect other people’s reports in 
 
 - **[Subscribe: The Explicit Measures Podcast](https://powerbi.tips/podcast)** — The main subscription page for the show, with links to recent episodes and platforms.
 
-- **[Explicit Measures Podcast (show page)](https://powerbi.tips/explicit-measures-power-bi-podcast/)** — A central hub for the series and episode archive if you’re sharing it internally or catching up.
+- **[Explicit Measures Podcast (show page)](/podcast/)** — A central hub for the series and episode archive if you’re sharing it internally or catching up.
 
 ## Main Discussion
 

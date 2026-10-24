@@ -12,7 +12,7 @@ tags:
 featuredImage: ./assets/featured.png
 ---
 
-In this episode of the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/), we discuss the values of adding Python knowledge. It is well known that more organizations are moving to cloud platforms. Because of this, we should ask the following questions:
+In this episode of the [Explicit Measures Podcast](/podcast/), we discuss the values of adding Python knowledge. It is well known that more organizations are moving to cloud platforms. Because of this, we should ask the following questions:
 
 *   What will be the needed skills for Power BI professionals?
 *   Is this for the Business or for a Data Engineer?

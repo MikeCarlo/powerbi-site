@@ -14,7 +14,7 @@ featuredImage: ./assets/featured.png
 
 Where does the Power BI Mobile app fit within your report building plan? This topic is widely un-discussed within the Power BI community. Many blogs and tutorials focus mainly on developing Power BI reports for a desktop screen.  More specifically, a report design that fits a wide screen monitor. However, building reports for the mobile app require additional considerations.
 
-# The Current State of Mobile
+## The Current State of Mobile
 
 First before we get to the recommendations for mobile reporting developments, let us discuss the current status of building a mobile report. To create a mobile centric view Power BI desktop follow these steps:
 
@@ -37,7 +37,7 @@ View of building reports in the mobile view.
 
 The report canvas is greatly simplified. Meaning you don’t get all the advanced features of a normal report page. Stacking visuals on top of each other is not an option. Changing the color of the background is not an option on this screen. Instead, to change the mobile page background color you have to leave the mobile view.  Return to desktop mode change the color and then return to the mobile view.
 
-# An Alternative Approach
+## An Alternative Approach
 
 Due to the limitations mentioned above. We propose that you build a report page with custom dimensions.  From my experimentation a width of a page from 600 to 800 pixels meets my needs. The page length can be as long as you need it so that all the required visuals can fit on the page. Previously pages have grown to 1000 to 2000 pixels in length. 
 

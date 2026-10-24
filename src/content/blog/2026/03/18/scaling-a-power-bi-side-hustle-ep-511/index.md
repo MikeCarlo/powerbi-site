@@ -269,6 +269,6 @@ If you are serious about growing your Power BI side hustle, pick one repeatable 
 
 Want to catch us live? Join every Tuesday and Thursday at 7:30 AM Central on YouTube and LinkedIn.
 
-Got a question? Head to [powerbi.tips/empodcast](https://powerbi.tips/empodcast) and submit your topic ideas.
+Got a question? Head to [powerbi.tips/podcast](/podcast/) and submit your topic ideas.
 
 Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or wherever you get your podcasts.

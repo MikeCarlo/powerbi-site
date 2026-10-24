@@ -44,7 +44,7 @@ There are many workarounds in the community to best provide discoverability of d
 
 One idea is creating a Data Lexicon for an organization, which includes a company’s report catalog and terminology. A Data Lexicon should include helpful content for consumers, such as a report’s purpose, intended audience, and refresh schedule. Using the Scanner API, anytime a dataset is added to the tenant, report authors can easily integrate these custom fields with active datasets.
 
-# Understanding the Goal
+## Understanding the Goal
 
 This article is not going to cover the intricate details of the API requests and parameters. Rather, the TL;DR version of the required calls / steps of the API are:
 
@@ -61,7 +61,7 @@ The goal here is then to try to accomplish the following:
 *   Transform the metadata into a structured model (Tables, relationships, etc)
 *   Use the structured tables in multiple products (Data Flows, Power BI, Power Apps)
 
-# Building the Solution
+## Building the Solution
 
 The majority of credit needs to go to [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/) who initially created a viable solution that can easily be integrated into a report. He created a [GitHub repo](https://github.com/ferrybouwman/Power-BI-Read-Only-REST-API) that included a Power Automate flow that truly covers the entire process of automating the API call.
 
@@ -88,7 +88,7 @@ The solution includes the following to implement:
 
 [Download the Solution on GitHub.](https://github.com/pugliathomas/powerbiscannermetadata)
 
-# Installing & Using
+## Installing & Using
 
 #### Import the API Scanner Flow
 
@@ -150,7 +150,7 @@ _Entering in the Parameters in the Power BI Template_
 
 Once you enter the parameters, click on load, and wait for the magic to happen!
 
-# Using the Scanner API Report
+## Using the Scanner API Report
 
 The Report contains tons of information across the entire organization’s content in Power BI. From Datasets all the way to the DAX expressions per table and report. The template and report is meant to be a starting point for authors to further build out additional functionality to meet their needs. Much thanks to [Rui Romano’s Scanner Template](https://github.com/RuiRomano/pbimonitor) as well:
 
@@ -214,7 +214,7 @@ Understanding needs to get the metadata displayed as a list, the Details page pr
 
 _Details Page showing all of the underlying information_
 
-# Conclusion
+## Conclusion
 
 The ability for a Power BI champion to have full visibility into the organization’s Power BI content has and will be a vital piece of adoption and governance of Power BI. The amount of information available and to act on will allow admins to readily understand the activity happening at all times.
 

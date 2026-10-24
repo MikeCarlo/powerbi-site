@@ -28,7 +28,7 @@ The why is the question around every BI pro’s water cooler. You may ask this y
   
 Today this is why I am excited to introduce the new [Explicit Measures Podcast](https://www.youtube.com/playlist?list=PLn1m_aBmgsbHr83c1P6uqaWF5PLdFzOjj), available every Tuesday and Thursday live at 7:30am CST.
 
-# The Background of the Podcast
+## The Background of the Podcast
 
 ## Being a Power BI Author
 

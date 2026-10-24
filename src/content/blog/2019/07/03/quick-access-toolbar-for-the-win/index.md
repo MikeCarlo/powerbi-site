@@ -55,7 +55,7 @@ To take this further you can string together multiple key presses to dig even de
 
 The downside with multiple commands it takes more time to learn the key strokes to be fast.  As a personal preference I like to use one-step key press options (Ctrl + s or Ctrl + z).  It is easier for my simple mind to remember and commit to memory.  If you use Adobe products for images or video, you will be familiar with this technique.  From my opinion Adobe has some of the best most useful shortcuts that enhance productivity.
 
-# Make it Custom
+## Make it Custom
 
 Let’s begin customizing our menu. 
 

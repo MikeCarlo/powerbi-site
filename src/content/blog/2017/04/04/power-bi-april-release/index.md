@@ -25,4 +25,4 @@ Check out the Add Column by Example demo:
 
 For other great Power BI videos click the image below:
 
-[![PBI Videos](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/04/PBI-Videos-e1491326922444.png)](https://powerbi.tips/videos/)
+[![PBI Videos](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/04/PBI-Videos-e1491326922444.png)](https://www.youtube.com/@PowerBITips)

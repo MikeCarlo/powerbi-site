@@ -36,7 +36,7 @@ FabCon Barcelona landed more features than one episode can cover, so Tommy Pugli
 
 - **[Power BI's next chapter](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi%E2%80%99s-next-chapter-the-evolution-of-business-intelligence/5369131)** — This is the post behind the "analytics to application creation" section Tommy reads from the Barcelona announcements. The experience he describes lets someone start from a semantic model, describe an application, and generate a Fabric app. Mike has not seen the Desktop demo, and he wants structure around an agent that builds an app. Tommy is not ready to split Fabric apps into a report tool and an application tool.
 
-- **[Power BI](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-september-2026-feature-summary/5325831) and [Fabric](https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/fabric-september-2026-feature-summary/5325825) September 2026 feature summaries** — These roundups are the draft board. They do not walk every line. The picks they do take are below, and they ask anyone who wanted a different feature in the comments or at [powerbi.tips/empodcast](https://powerbi.tips/empodcast).
+- **[Power BI](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-september-2026-feature-summary/5325831) and [Fabric](https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/fabric-september-2026-feature-summary/5325825) September 2026 feature summaries** — These roundups are the draft board. They do not walk every line. The picks they do take are below, and they ask anyone who wanted a different feature in the comments or at [powerbi.tips/podcast](/podcast/).
 
 ## Main Discussion
 
@@ -340,6 +340,6 @@ Send the FabCon feature you want unpacked, either in the comments or through the
 
 Want to catch us live? Join every Tuesday and Thursday at 7:30 AM Central on YouTube and LinkedIn.
 
-Got a question? Head to [powerbi.tips/empodcast](https://powerbi.tips/empodcast) and submit your topic ideas.
+Got a question? Head to [powerbi.tips/podcast](/podcast/) and submit your topic ideas.
 
 Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or wherever you get your podcasts.

@@ -57,11 +57,11 @@ Default Color Scheme
 
 Now we will load the new color theme.  But before we can load the color theme we have to generate the color theme first.  The color theme has some requirements.  First the color theme must be written as a JSON file and must adhere to the JSON format.  For developers this will be a very simple google search to accomplish this.  However, I know there are some out there that do not enjoy doing development work.  So, in a PowerBI.Tips first, I have developed a custom tool to make the color theme generation super simple.
 
-Introducing the [PowerBI.Tips Color Theme Generator (CTG)](http://powerbi.tips/color-theme-generator/) to help Power BI users create quick and easy JSON code files to input into Power BI for the color themes. Not everyone has a coding background, and though there will be tutorials and examples of how to set up the JSON, if you aren’t familiar with the language a small typo could have you spending precious time troubleshooting the issue.
+Introducing the [PowerBI.Tips Color Theme Generator (CTG)](/power-bi-theme-generator/) to help Power BI users create quick and easy JSON code files to input into Power BI for the color themes. Not everyone has a coding background, and though there will be tutorials and examples of how to set up the JSON, if you aren’t familiar with the language a small typo could have you spending precious time troubleshooting the issue.
 
-update 3/15/17: The Advanced Theme Generator has been released.  [Find the tool here.](https://powerbi.tips/tools/advanced-color-theme-generator/)
+update 3/15/17: The Advanced Theme Generator has been released.  [Find the tool here.](/power-bi-theme-generator/)
 
-Click the following link to open up the [PowerBI.Tips Color Theme Generator in a different Browser window](http://powerbi.tips/color-theme-generator/).  Once the browser loads the Color Theme Generator follow the instructions listed at the top of the page to select your colors.  The only required fields are the Name, and at least one color.  For this tutorial I selected a number of nice pastel colors.  Click the **Download Color Theme** button to download the JSON file that we will use in Power BI.
+Click the following link to open up the [PowerBI.Tips Color Theme Generator in a different Browser window](/power-bi-theme-generator/).  Once the browser loads the Color Theme Generator follow the instructions listed at the top of the page to select your colors.  The only required fields are the Name, and at least one color.  For this tutorial I selected a number of nice pastel colors.  Click the **Download Color Theme** button to download the JSON file that we will use in Power BI.
 
 _Note: The Generator was tested on Google Chrome.  Also, clicking the Download button will download the JSON file to your browser’s default location.  You will need to know this file location to load the file into Power BI Desktop._ 
 

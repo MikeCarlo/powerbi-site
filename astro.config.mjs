@@ -131,6 +131,13 @@ export default defineConfig({
     '/layouts/': '/power-bi-layouts/',
     '/2016/06/dynamic-percent-change-daxl/': '/2016/06/10/dynamic-percent-change-using-dax/',
     '/2019/07/the-dynamic-time-matrix/embed/': '/2019/07/11/the-dynamic-time-matrix/',
+    // More Clarity 404s with real visitors (Oct 21-23, 2026). Same meta-refresh
+    // pattern as above (HTTP 200 + noindex + canonical), not true 301s.
+    '/tools/power-bi-helper/': '/2021/10/19/business-ops-new-and-updated-external-tools/',
+    '/tools/advanced-color-theme-generator/': '/power-bi-theme-generator/',
+    '/tools/report-theme-generator/': '/power-bi-theme-generator/',
+    '/2021/10/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/embed/':
+      '/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/',
   },
   compressHTML: true,
 });

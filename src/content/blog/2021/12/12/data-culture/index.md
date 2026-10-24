@@ -30,7 +30,7 @@ Massive thank you to Matthew our presenter. Huge shout out to James Bartlett and
 
 ## Other Data Culture Projects
 
-Matthew has also worked on many other impactful projects. One such project has been the Power BI Roadmap. This the best guide for individuals wanting to start their Power BI journey. On the [Explicit Measures Podcast](https://powerbi.tips/explicit-measures-power-bi-podcast/) we discuss the Power BI roadmap quite often. Thus, we feel it adds a ton of value. Check it out for yourself.
+Matthew has also worked on many other impactful projects. One such project has been the Power BI Roadmap. This the best guide for individuals wanting to start their Power BI journey. On the [Explicit Measures Podcast](/podcast/) we discuss the Power BI roadmap quite often. Thus, we feel it adds a ton of value. Check it out for yourself.
 
 [Visit the Power BI Adoption Roadmap here](https://docs.microsoft.com/en-us/power-bi/guidance/powerbi-adoption-roadmap-overview)
 
