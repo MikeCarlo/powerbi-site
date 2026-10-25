@@ -1,0 +1,122 @@
+---
+// Episode summary box for Explicit Measures episode pages. Rendered by
+// BlogPost.astro only when the post passes isPodcastEpisode(). Every block is
+// derived from frontmatter or the rendered body; nothing is invented.
+import {
+  AGENTIC_THINKING_URL,
+  APPLE_PODCASTS_URL,
+  SPOTIFY_SHOW_URL,
+  isExternalUrl,
+} from '../utils/podcast-episode';
+
+type Related = { label: string; url: string };
+type Faq = { q: string; a: string };
+
+const {
+  tldr,
+  faq = [],
+  related = [],
+  headingSlugs = [],
+  youtubeId,
+} = Astro.props as {
+  tldr?: string;
+  faq?: Faq[];
+  related?: Related[];
+  headingSlugs?: string[];
+  youtubeId?: string;
+};
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const jumpLinks = [
+  { slug: 'main-discussion', label: 'Main discussion' },
+  { slug: 'looking-forward', label: 'Looking forward' },
+  { slug: 'episode-transcript', label: 'Transcript' },
+].filter((link) => headingSlugs.includes(link.slug));
+
+const external = { target: '_blank', rel: 'noopener noreferrer' };
+const linkAttrs = (url: string) => (isExternalUrl(url) ? external : {});
+const hrefFor = (url: string) => (isExternalUrl(url) ? url : `${base}${url}`);
+
+const pill = 'rounded-full px-4 py-2 text-sm font-semibold';
+const pillNeutral = `${pill} bg-neutral-100 text-neutral-900 hover:bg-neutral-200`;
+const label = 'text-xs font-semibold uppercase tracking-wide text-neutral-500';
+---
+
+<aside
+  class="space-y-4 rounded-2xl border border-neutral-200 bg-white p-6 text-base"
+  aria-label="Episode guide"
+  data-podcast-episode-box
+>
+  {tldr && (
+    <p class="text-neutral-900"><strong>TL;DR.</strong> {tldr}</p>
+  )}
+
+  {jumpLinks.length > 0 && (
+    <nav aria-label="Jump to section">
+      <p class={label}>Jump to</p>
+      <ul class="mt-2 flex flex-wrap gap-2">
+        {jumpLinks.map((link) => (
+          <li>
+            <a
+              class="rounded-full bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-blue-100"
+              href={`#${link.slug}`}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  <div>
+    <p class={label}>Watch or listen</p>
+    <div class="mt-2 flex flex-wrap gap-3">
+      {youtubeId && (
+        <a
+          class={`${pill} bg-blue-600 text-white hover:bg-blue-700`}
+          href={`https://www.youtube.com/watch?v=${youtubeId}`}
+          {...external}
+        >
+          YouTube
+        </a>
+      )}
+      <a class={`${pill} bg-neutral-900 text-white hover:bg-neutral-800`} href={SPOTIFY_SHOW_URL} {...external}>Spotify</a>
+      <a class={pillNeutral} href={APPLE_PODCASTS_URL} {...external}>Apple Podcasts</a>
+      <a class={pillNeutral} href={`${base}/podcast/`}>All episodes</a>
+    </div>
+  </div>
+
+  <div>
+    <p class={label}>Across PowerBI.tips</p>
+    <ul class="mt-2 space-y-1">
+      <li>
+        <a class="text-blue-600 hover:underline" href={AGENTIC_THINKING_URL} {...external}>
+          Agentic Thinking, our other show
+        </a>
+      </li>
+      {related.map((item) => (
+        <li>
+          <a class="text-blue-600 hover:underline" href={hrefFor(item.url)} {...linkAttrs(item.url)}>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {faq.length > 0 && (
+    <details class="rounded-xl border border-neutral-200 p-4">
+      <summary class="cursor-pointer font-semibold text-neutral-900">Quick answers</summary>
+      <div class="mt-3 space-y-4">
+        {faq.map((item) => (
+          <div>
+            <h3 class="text-base font-semibold text-neutral-900">{item.q.endsWith('?') ? item.q : `${item.q}?`}</h3>
+            <p class="mt-1 text-neutral-600">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </details>
+  )}
+</aside>

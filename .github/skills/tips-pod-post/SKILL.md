@@ -328,7 +328,21 @@ For every episode post, do **two writing passes**:
 
 **Polish pass rules (do not break builds):**
 
-- Do **NOT** change or add any frontmatter keys outside the allowed schema.
+- Do **NOT** change or add any frontmatter keys outside the allowed schema (`src/content.config.ts`). Allowed keys: `title`, `date`, `authors`, `categories`, `tags`, `featuredImage`, `excerpt`, plus the optional episode keys below.
+- Optional episode keys (rendered by `PodcastEpisodeBox.astro`; omit a key rather than leave it empty):
+  - `tldr`: one string, 35-42 words, no em dashes. Shown as the TL;DR line above the post. Do not copy the excerpt.
+  - `faq`: 3-5 items of `{ q, a }` (schema max 5). Questions a listener would search. Each answer opens with a sentence longer than 20 characters and states only what the episode's Main Discussion or Looking Forward says. This is the only FAQPage source on episode pages; section headings are no longer parsed into FAQ.
+  - `related`: 0-3 items of `{ label, url }`. `url` is an absolute `https://` URL or a root-relative path starting with `/`. Add one only when a real matching page exists (matching Agentic Thinking episode, dated powerbi.tips post, or Tips tool) and you checked it returns 200.
+
+  ```yaml
+  tldr: "35-42 word summary of the episode."
+  faq:
+    - q: "What does a Fabric deployment plan add over a deployment pipeline?"
+      a: "One or two sentence answer drawn from the Main Discussion."
+  related:
+    - label: "Fabric Deployment Plan (Ep.573)"
+      url: "/2026/10/20/fabric-deployment-plan-ep-573/"
+  ```
 - Do **NOT** change section headings (keep anchors stable: `## News & Announcements`, `## Main Discussion`, `## Looking Forward`, `## Episode Transcript`, `## Thank You`).
 - Do **NOT** modify the transcript section formatting or timestamp links.
 - Improve:

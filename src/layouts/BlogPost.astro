@@ -3,6 +3,8 @@ import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import PodcastPlayer from '../components/PodcastPlayer.astro';
+import PodcastEpisodeBox from '../components/PodcastEpisodeBox.astro';
+import { episodeNumberFromTitle, youtubeIdFromBody } from '../utils/podcast-episode';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -11,15 +13,17 @@ type BlogPostWithSlug = BlogPost & { slug: string };
 type FaqItem = { question: string; answer: string };
 type HowToStep = { name: string; text: string; url?: string };
 
-const { entry, prev, next, morePosts, faqItems = [], howToSteps = [] } = Astro.props as {
+const { entry, prev, next, morePosts, faqItems = [], howToSteps = [], isEpisode = false, headingSlugs = [] } = Astro.props as {
   entry: BlogPost;
   prev: BlogPostWithSlug | null;
   next: BlogPostWithSlug | null;
   morePosts: BlogPostWithSlug[];
   faqItems?: FaqItem[];
   howToSteps?: HowToStep[];
+  isEpisode?: boolean;
+  headingSlugs?: string[];
 };
-const { title, date, authors, categories, tags, featuredImage, excerpt } = entry.data;
+const { title, date, authors, categories, tags, featuredImage, excerpt, tldr, faq, related } = entry.data;
 
 // Episode posts get a seekable transcript: clicking a line drives the embedded
 // player. Only load it where both halves of the feature are actually present.
@@ -121,12 +125,41 @@ const howToJsonLd = howToSteps.length > 0 ? {
   })),
 } : null;
 
+// PodcastEpisode JSON-LD (episode pages only). Every value is derived from
+// the post; episodeNumber and associatedMedia are omitted when not derivable.
+const youtubeId = isEpisode ? youtubeIdFromBody(body) : undefined;
+const episodeNumber = isEpisode ? episodeNumberFromTitle(title) : undefined;
+const podcastEpisodeJsonLd = isEpisode ? {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastEpisode',
+  name: title,
+  url: articleUrl,
+  datePublished: date.toISOString(),
+  ...(episodeNumber !== undefined ? { episodeNumber } : {}),
+  description: excerpt || '',
+  partOfSeries: {
+    '@type': 'PodcastSeries',
+    name: 'Explicit Measures Podcast',
+    url: 'https://powerbi.tips/podcast/',
+  },
+  ...(youtubeId ? {
+    associatedMedia: {
+      '@type': 'MediaObject',
+      contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+    },
+  } : {}),
+  ...(authors?.length && {
+    author: authors.map((a) => ({ '@type': 'Person', name: a })),
+  }),
+} : null;
+
 // Collect all JSON-LD schemas
 const allJsonLd = [
   articleJsonLd,
   breadcrumbJsonLd,
   ...(faqJsonLd ? [faqJsonLd] : []),
   ...(howToJsonLd ? [howToJsonLd] : []),
+  ...(podcastEpisodeJsonLd ? [podcastEpisodeJsonLd] : []),
 ];
 ---
 
@@ -190,6 +223,16 @@ const allJsonLd = [
         class="w-full rounded-xl object-cover"
         widths={[400, 800, 1200]}
         sizes="(max-width: 800px) 100vw, 800px"
+      />
+    )}
+
+    {isEpisode && (
+      <PodcastEpisodeBox
+        tldr={tldr}
+        faq={faq}
+        related={related}
+        headingSlugs={headingSlugs}
+        youtubeId={youtubeId}
       />
     )}
 

@@ -18,7 +18,21 @@ const blog = defineCollection({
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     featuredImage: image().optional(),
-    excerpt: z.string().optional()
+    excerpt: z.string().optional(),
+    // Podcast episode extras (all optional; see .github/skills/tips-pod-post).
+    // tldr: 35-42 words. faq: 3-5 voiced Q&A pairs, the only FAQPage source
+    // on episode pages. related: up to 3 links, absolute https or root-relative.
+    tldr: z.string().optional(),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).max(5).optional(),
+    related: z
+      .array(
+        z.object({
+          label: z.string(),
+          url: z.string().regex(/^(https:\/\/[^\s/]+\S*|\/(?!\/)\S*)$/, 'related.url must be an absolute https URL or a root-relative path')
+        })
+      )
+      .max(3)
+      .optional()
   })
 });
 
