@@ -138,6 +138,8 @@ export default defineConfig({
     '/tools/report-theme-generator/': '/power-bi-theme-generator/',
     '/2021/10/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/embed/':
       '/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/',
+    // Old Explicit Measures podcast URL, still said aloud in episode transcripts.
+    '/empodcast/': '/podcast/',
   },
   compressHTML: true,
 });
