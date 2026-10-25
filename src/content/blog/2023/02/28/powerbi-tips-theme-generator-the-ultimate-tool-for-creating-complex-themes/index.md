@@ -43,7 +43,7 @@ That’s where the Power BI Tips Theme Generator comes in. This powerful tool ha
 
 **The Power BI Tips Theme Generator now supports all the properties found in the new Microsoft schema.** **Moreover, it also ensures that the theme file aligns to the new validation rules.** In February 2023, Microsoft released a new version of Themes validation. They understood the complexity of creating files, and this change ensures that the files uploaded match exactly to their specifications. However, this caused quite a few problems for users that didn’t have valid files _(see video below)_. This validation is great for the Power BI, except that it creates a bigger hurdle for users. Everyone wants the benefit of Themes, without the challenge of having to create one.
 
-**(UPDATE!):** Be sure to check out all the additional features we’ve included (Upload existing files, Code Editor, Icons & more! [New Theme Generator Updates](https://powerbi.tips/2023/06/unlock-your-creativity-with-the-power-bi-tips-theme-generator-exciting-new-features/)
+**(UPDATE!):** Be sure to check out all the additional features we’ve included (Upload existing files, Code Editor, Icons & more! [New Theme Generator Updates](/2023/06/07/unlock-your-creativity-with-the-power-bi-tips-theme-generator-exciting-new-features/)
 
 ## Why You Should Use the PowerBI Tips Theme Generator
 

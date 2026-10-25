@@ -1,6 +1,6 @@
 ---
 title: Using the Power BI Scanner API to Manage Tenant's Entire Metadata
-excerpt: "Learn how to use the Power BI Scanner API to manage your tenant's entire metadata. Thanks to Ferry Bouwman and Rui Romano for their contributions."
+excerpt: "How do I collect my whole Power BI tenant's metadata with the Scanner API?"
 date: '2021-10-06'
 authors:
 - Mike Carlo
@@ -10,6 +10,32 @@ tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+## How do I collect my whole Power BI tenant's metadata with the Scanner API?
+
+**TL;DR.** The Scanner API lets a Power BI admin pull tenant metadata, including tables, columns, measures with DAX, and M expressions. Set up a service principal and tenant setting. A Power Automate flow triggers scans, saving JSON to SharePoint for a template report.
+
+### What do I set up before calling the Scanner API?
+
+The post lists four prerequisites. Enable service principal authentication for the read-only admin APIs, create an Azure AD app with a client secret and no Power BI admin-consent-required permissions, add the app to a new security group, and enable the tenant setting that lets service principals use read-only Power BI admin APIs. Those are the 2021 setting names from the post.
+
+### Which API calls does a tenant scan make?
+
+A scan starts with a call whose body lists the workspaces to scan. The post gives the limit as 100 workspaces per call, so you loop the request when you have more than 100, wait until the scan completes, then get the scan result as a JSON array.
+
+### How does the PowerBI.tips solution automate the scan?
+
+In Power Automate, you import the `pbitips_ScannerAPI` flow and set tenant, clientId, clientSecret, the SharePoint library, the folder location, and a separate trigger folder. A second flow, `PBI_Scanner_Refresh`, runs it daily. Scan results land in SharePoint as JSON files that the Power BI template reads.
+
+### Why does my first scan return only part of the metadata?
+
+The post says the first call to the Scanner API returns only a subset of the metadata, and running it daily returns more complete metadata over time. You know the flow works once three JSON files (metadata, workspace array, and request status) land in your folder.
+
+### What does the template report show?
+
+The template has Summary, Dataset drill through, Datasets, Tables, Data Sources, Users, and Details pages. The drill through shows each table's M query and the DAX behind measures and calculated columns. The Users page uses `getArtifactUsers=true` to show who has access.
+
+Related: [Building a Power BI Admin View using Power BI APIs](/2020/11/18/building-a-power-bi-admin-view-using-power-bi-apis/), [Power BI Field Finder](/2020/01/29/power-bi-field-finder/), and [Certified vs Promoted Dataset](/2022/02/10/certified-vs-promoted-dataset/).
 
 _Much thanks must go to both [Ferry Bouwman](https://www.linkedin.com/in/ferrybouwman/)_ _and [Rui Romano](https://www.linkedin.com/in/ruiromano/) for inspiration and building off the work they have done already for the use cases for the Scanner API. Ferry created the initial Microsoft Flow to automate the request and pull of data, and design ideas were taken by Rui Romano’s existing Report. Please give them a shoutout because this would not be possible without them!_
 

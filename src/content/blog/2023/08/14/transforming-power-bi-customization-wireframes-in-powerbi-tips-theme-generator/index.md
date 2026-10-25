@@ -30,11 +30,11 @@ To ensure you make the most of this groundbreaking feature, we’ve prepared thi
 
 ### **Setting New Standards: Unparalleled Capabilities**
 
-One of the most remarkable aspects of the [PowerBI.Tips Theme Generator](https://themes.powerbi.tips/themes/palette) is that it remains unrivaled in the market. There simply are no other tools that offer the comprehensive range of features and capabilities that our platform does. The addition of WireFrames to the Theme Generator shows how dedicated we are to pushing the boundaries of what Power BI customization can be.
+One of the most remarkable aspects of the [PowerBI.Tips Theme Generator](https://themes.powerbi.tips/) is that it remains unrivaled in the market. There simply are no other tools that offer the comprehensive range of features and capabilities that our platform does. The addition of WireFrames to the Theme Generator shows how dedicated we are to pushing the boundaries of what Power BI customization can be.
 
 ### **Unlock the Full Potential with a Subscription**
 
-In the ever-evolving world of data-driven insights, the PowerBI.Tips Theme Generator is a foundation for a successful visual outcome. Elevate your data visualizations, streamline your design process, and create truly impactful reports and dashboards that resonate with your audience. Embrace the future of Power BI customization today use the [Theme Generato](https://themes.powerbi.tips/themes/palette)[r](https://themes.powerbi.tips/themes/palette)!
+In the ever-evolving world of data-driven insights, the PowerBI.Tips Theme Generator is a foundation for a successful visual outcome. Elevate your data visualizations, streamline your design process, and create truly impactful reports and dashboards that resonate with your audience. Embrace the future of Power BI customization today use the [Theme Generator](https://themes.powerbi.tips/)!
 
 Ready to take your Power BI experience to the next level? With a [**Tips+** subscription](https://themes.powerbi.tips/login?post_redirect_url=https://themes.powerbi.tips/accounts) to the Theme Generator, you gain access to the full suite of Theme Generator capabilities.
 

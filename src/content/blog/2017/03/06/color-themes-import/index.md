@@ -1,6 +1,6 @@
 ---
 title: "Import Color Theme & Color Theme Generator"
-excerpt: "March is an exciting month, and with this release of Power BI we have been given some long asked for features. One such feature is the ability to impo..."
+excerpt: "How do I give every Power BI visual my company colors with a color theme?"
 date: "2017-03-06"
 authors:
   - "Mike Carlo"
@@ -10,6 +10,32 @@ tags:
   - "power-bi"
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I give every Power BI visual my company colors with a color theme?
+
+**TL;DR.** The March 2017 Power BI Desktop release added Import Theme. A color theme is a JSON file that sets the starting colors for every visual, so no visual needs recoloring by hand. Build it in the PowerBI.tips generator, then import it.
+
+### What does a Power BI color theme change?
+
+A color theme sets the starting colors for your visuals. Before Import Theme, you had to recolor each visual by hand. Themes help most when a report should use colors that resemble your company's product or logo.
+
+### What format does a theme file have to be in?
+
+A theme has to be a JSON file that follows JSON format, and a small typo can cost you troubleshooting time. That is why I built the PowerBI.tips Color Theme Generator. In the 2017 generator, the only required fields were a Name and at least one color.
+
+### Which buttons import the theme in the 2017 release?
+
+In the March 2017 post, you click Switch Theme on the Home ribbon, then Import Theme, pick the downloaded JSON file (the post's file is named PowerBI-Tips Color Theme), and click Open. Power BI shows a success message, so click Close. Those are the 2017 button names as written in the post.
+
+### How do I go back to the default colors?
+
+In the 2017 post, you click Switch Theme, then Default Theme, and the normal Power BI colors come back. Keep your JSON file, because you can edit it and reuse it in future projects.
+
+### Where do I build a Power BI theme today?
+
+The 2017 Color Theme Generator was followed by the Advanced Theme Generator in the post's 3/15/17 update. Today the tool lives at themes.powerbi.tips as the [Power BI Theme Generator](https://themes.powerbi.tips/).
+
+Related: [Power BI Themes](/2021/12/22/power-bi-themes/), [PowerBI.tips Theme Generator: The Ultimate Tool for Creating Complex Themes](/2023/02/28/powerbi-tips-theme-generator-the-ultimate-tool-for-creating-complex-themes/), and [Wireframes in the PowerBI.tips Theme Generator](/2023/08/14/transforming-power-bi-customization-wireframes-in-powerbi-tips-theme-generator/).
 
 March is an exciting month, and with this release of Power BI we have been given some long asked for features. One such feature is the ability to import a color theme. The color theme defines the starting colors for your visuals. Before the ability to import a theme one would have to first define each color that they want to use in a Power BI report by changing each visual to have the correct color scheme. Color themes are useful when trying to make a dashboard and you want to use colors that resemble a company’s product or logo. Alright, let’s get started and make and add our own color theme to a report.
 
@@ -97,4 +123,4 @@ Tada, now we have a custom color scheme that we create and loaded.  Also, now t
 
 Loaded Custom Color Theme
 
-Thanks for following along.  If you liked this tutorial please be sure to share.  Also if you want to know more about me you can visit my [About](http://powerbi.tips/about/) page and follow me on [twitter](https://twitter.com/PowerBITips) or [Linkedin](https://www.linkedin.com/in/michaelcarlo) for updates.
+Thanks for following along.  If you liked this tutorial please be sure to share.  Also if you want to know more about me you can visit my [About](/about/) page and follow me on [twitter](https://twitter.com/PowerBITips) or [Linkedin](https://www.linkedin.com/in/michaelcarlo) for updates.

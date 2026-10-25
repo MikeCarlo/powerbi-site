@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
+import { extractFaqItems } from '../utils/schema-helpers';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -49,11 +50,65 @@ const patterns = [
     href: `${base}/podcast/`,
   },
 ];
+// Owned H2 + TL;DR + five FAQ H3s (Aero Batch 8 lock, Marko voice). extractFaqItems reads
+// this string for FAQPage JSON-LD; the visible FAQ below renders from the same items.
+const faqMarkdown = `## What are Fabric Apps, and when should a Power BI team build one?
+
+**TL;DR.** Fabric Apps (preview) are TypeScript web apps on the Rayfin SDK, deployed to a Fabric workspace with SQL database, Entra ID sign-in, and hosting managed for you. Use one for writeback or custom interactions; keep KPI reporting in Power BI.
+
+### How does a Fabric App work?
+
+You define data models as TypeScript classes with decorators such as \`@entity()\`, \`@text()\`, and \`@uuid()\`, and Fabric Apps generates the database schema and GraphQL endpoints (Microsoft Learn). Running \`npx rayfin up\` creates the Fabric Apps item in your workspace with a SQL database in Fabric, Microsoft Entra ID single sign-on, and static hosting for the frontend.
+
+### What is Rayfin?
+
+Rayfin is the SDK that Fabric Apps is built on (Microsoft Learn, Rayfin SDK overview). It is decorator-driven, so you describe the schema once in TypeScript and get GraphQL APIs and type-safe clients. The Rayfin CLI scaffolds a project, runs it locally, and deploys it to Fabric.
+
+### When is a Fabric App a better fit than a Power BI report?
+
+In Explicit Measures Ep.563, Kurt Buhler points to control of every pixel, custom interactions, and integrations such as planning, writeback, or managing something that already lives in Fabric. The episode leaves the month-to-date sales report and the executive KPI page in Power BI until the design system, permission model, and token bill are real. Microsoft Learn lists prototypes, internal tools, data exploration, and AI agent backends as good fits, and complex multi-step transactions or custom auth providers as poor fits.
+
+### Can people outside my tenant use a Fabric App?
+
+Deployed apps sign users in with Microsoft Entra ID single sign-on (Microsoft Learn). For a public write such as a contact form, a tenant admin can enable anonymous data access, which Ep.555 calls an authorization option, not a replacement for authentication. Put the anonymous role on that one public table and keep everything else on a signed-in role. Agentic Thinking Ep.34 tries it live with a public intake form.
+
+### Where can I watch Fabric Apps being built?
+
+On Explicit Measures, watch Ep.547: The Hype of Rayfin, Ep.554: Fabric as a Backend, Ep.555: Anonymous Rayfin Fabric Apps, and Ep.563: Fabric Apps Fit into the PBI World. On Agentic Thinking, the sister show from PowerBI.tips, watch Ep.19: Rayfin, Ep.20: Rayfin Build, Ep.22: Fabric App - Rayfin Templates Build, Ep.23: Fabric Apps Rayfin, Ep.25: Replit and Fabric Apps Rayfin, Ep.34: Fabric SQL w Anonymous Access, and Ep.43: Rayfin Hot new Features.
+`;
+
+const faqItems = extractFaqItems(faqMarkdown);
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+const [ownedFaq, ...faqRest] = faqItems;
+
+const fabricAppsLinks = [
+  { label: "The Hype of Rayfin - Ep.547", href: "/2026/07/21/the-hype-of-rayfin-ep-547/" },
+  { label: "Fabric as a Backend - Ep.554", href: "/2026/08/13/fabric-as-a-backend-ep-554/" },
+  { label: "Anonymous Rayfin Fabric Apps - Ep.555", href: "/2026/08/18/anonymous-rayfin-fabric-apps-ep-555/" },
+  { label: "Fabric Apps Fit into the PBI World - Ep.563", href: "/2026/09/15/fabric-apps-fit-into-the-pbi-world-ep-563/" },
+  { label: "Agentic Thinking Ep.19: Rayfin", href: "https://agenticthinking.show/episodes/ep019-rayfin/" },
+  { label: "Agentic Thinking Ep.20: Rayfin Build", href: "https://agenticthinking.show/episodes/ep020-rayfin-build/" },
+  { label: "Agentic Thinking Ep.22: Fabric App - Rayfin Templates Build", href: "https://agenticthinking.show/episodes/ep022-fabric-app-rayfin-templates-build/" },
+  { label: "Agentic Thinking Ep.23: Fabric Apps Rayfin", href: "https://agenticthinking.show/episodes/ep023-fabric-apps-rayfin/" },
+  { label: "Agentic Thinking Ep.25: Replit and Fabric Apps Rayfin", href: "https://agenticthinking.show/episodes/ep025-replit-and-fabric-apps-rayfin/" },
+  { label: "Agentic Thinking Ep.34: Fabric SQL w Anonymous Access", href: "https://agenticthinking.show/episodes/ep034-fabric-sql-w-anonymous-access/" },
+  { label: "Agentic Thinking Ep.43: Rayfin Hot new Features", href: "https://agenticthinking.show/episodes/ep043-rayfin-hot-new-features/" },
+  { label: "What is Fabric Apps (Preview)? - Microsoft Learn", href: "https://learn.microsoft.com/en-us/fabric/apps/overview" },
+];
 ---
 
 <BaseLayout
-  title="Fabric Apps | Apps and Solutions Built on Microsoft Fabric | PowerBI.tips"
-  description="Fabric apps hub: patterns, guidance, and links to the best Microsoft Fabric posts and podcast episodes."
+  title="Fabric Apps (Rayfin) for Power BI teams | PowerBI.tips"
+  description="What are Fabric Apps, and when should a Power BI team build one?"
+  jsonLd={faqJsonLd}
 >
   <section class="mb-10">
     <h1 class="text-4xl font-semibold tracking-tight text-neutral-900">Fabric Apps</h1>
@@ -67,6 +122,29 @@ const patterns = [
       <a class="rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800" href={`${base}/podcast/`}>Listen to the Podcast</a>
       <a class="rounded-full bg-neutral-100 px-5 py-2.5 text-sm font-semibold text-neutral-900 hover:bg-neutral-200" href={`${base}/search/?q=fabric`}>Search “fabric”</a>
     </div>
+  </section>
+
+  <section class="mb-12 prose max-w-none">
+    <h2>{ownedFaq.question}</h2>
+    <p><strong>TL;DR.</strong> {ownedFaq.answer.replace(/^TL;DR\.\s*/, '')}</p>
+    {faqRest.map((item) => (
+      <>
+        <h3>{item.question}</h3>
+        <p>{item.answer}</p>
+      </>
+    ))}
+    <h3 class="not-prose mt-8 text-lg font-semibold text-neutral-900">Watch and read</h3>
+    <ul>
+      {fabricAppsLinks.map((link) => (
+        <li>
+          {link.href.startsWith('/') ? (
+            <a href={`${base}${link.href}`}>{link.label}</a>
+          ) : (
+            <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
+          )}
+        </li>
+      ))}
+    </ul>
   </section>
 
   <section class="grid gap-6 md:grid-cols-2">
@@ -145,6 +223,4 @@ const patterns = [
       <p class="mt-4 text-neutral-500">No Fabric-related posts found yet (based on tag/title/excerpt matching).</p>
     )}
   </section>
-</BaseLayout>
-
 </BaseLayout>
