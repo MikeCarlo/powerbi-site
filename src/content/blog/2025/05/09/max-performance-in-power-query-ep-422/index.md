@@ -389,7 +389,7 @@ Try this on one real project first: profile one slow query with Query Diagnostic
 <a href="https://www.youtube.com/watch?v=kpzsNvL2cGA&t=4137s" target="_blank">68:57</a> Get out.
 ## Podcast Info
 
-- Find us on [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1527618264), [Spotify](https://open.spotify.com/show/5CFDaFWIhRMOdJHsfymJqb), or wherever you get your podcasts
+- Find us on [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083), [Spotify](https://open.spotify.com/show/5CFDaFWIhRMOdJHsfymJqb), or wherever you get your podcasts
 - Submit questions and topics at [powerbi.tips/podcast](https://powerbi.tips/podcast)
 - Join the live show every Tuesday and Thursday at 7:30 AM Central
 - Follow [Mike](https://www.linkedin.com/in/michaelcarlo), [Tommy](https://www.linkedin.com/in/tommypuglia), and [Alex](https://www.linkedin.com/in/alexmpowers/) on LinkedIn

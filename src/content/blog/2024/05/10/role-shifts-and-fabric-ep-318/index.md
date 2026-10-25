@@ -296,6 +296,6 @@ What changes are you seeing in your organization around this topic? Share your t
 Thanks for listening to the Explicit Measures Podcast. If you enjoyed this episode, consider subscribing and sharing it with a friend.
 
 • YouTube: https://www.youtube.com/@ExplicitMeasures
-• Apple Podcasts: https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568949453
+• Apple Podcasts: https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083
 • Spotify: https://open.spotify.com/show/6kK8G1nPpQvQ0MyoVo9hw3
 • Mike Carlo: https://powerbi.tips

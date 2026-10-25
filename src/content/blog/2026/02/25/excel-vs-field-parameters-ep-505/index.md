@@ -584,4 +584,4 @@ Thanks for tuning into Explicit Measures Episode 505! Catch us live Tuesdays and
 
 Got questions or topic ideas? Submit at [powerbi.tips/podcast](/podcast/).
 
-Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast-power-bi-podcast/id1534447935), or your favorite platform. Join our membership for early access and bonus content—March is packed with pre-recorded episodes!
+Listen on [Spotify](https://open.spotify.com/show/230fp78XmHHRXTiYICRLVv), [Apple Podcasts](https://podcasts.apple.com/us/podcast/explicit-measures-podcast/id1568944083), or your favorite platform. Join our membership for early access and bonus content—March is packed with pre-recorded episodes!
