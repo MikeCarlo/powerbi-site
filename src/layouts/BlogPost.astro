@@ -24,7 +24,7 @@ const { entry, prev, next, morePosts, faqItems = [], howToSteps = [], isEpisode 
   isEpisode?: boolean;
   headingSlugs?: string[];
 };
-const { title, date, authors, categories, tags, featuredImage, excerpt, tldr, faq, related } = entry.data;
+const { title, date, authors, categories, tags, featuredImage, excerpt, tldr, faq, related, hidePromo } = entry.data;
 
 // Episode posts get a seekable transcript: clicking a line drives the embedded
 // player. Only load it where both halves of the feature are actually present.
@@ -243,7 +243,7 @@ const allJsonLd = [
 
     {hasSeekableTranscript && <PodcastPlayer />}
 
-    <Promo placement="popover" content={slug.split('/').pop()} />
+    {!hidePromo && <Promo placement="popover" content={slug.split('/').pop()} />}
 
     <script is:inline>
       (function () {

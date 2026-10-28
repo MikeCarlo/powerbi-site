@@ -12,6 +12,7 @@
  *   - `home`    inline card at the top of the home page, above Recent Posts.
  *   - `popover` floating, dismissible card on every blog post page.
  * Only the first active promo per placement is shown.
+ * Posts can opt out of the popover with `hidePromo: true` in frontmatter.
  *
  * Every link gets UTMs: utm_source=powerbi.tips, utm_medium=promo_card (home)
  * or promo_popover (post), utm_campaign=<id>, utm_content=home or the post slug.
