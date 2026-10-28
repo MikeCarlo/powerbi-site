@@ -19,6 +19,8 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     featuredImage: image().optional(),
     excerpt: z.string().optional(),
+    // Set true to hide the floating promo popover on this post (e.g. it already has its own CTA).
+    hidePromo: z.boolean().optional(),
     // Podcast episode extras (all optional; see .github/skills/tips-pod-post).
     // tldr: 35-42 words. faq: 3-5 voiced Q&A pairs, the only FAQPage source
     // on episode pages. related: up to 3 links, absolute https or root-relative.
