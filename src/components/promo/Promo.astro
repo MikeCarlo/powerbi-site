@@ -18,7 +18,7 @@ const Card = promo ? promoCards[promo.card] : undefined;
 const href = promo ? promoHref(promo, placement, content) : '';
 ---
 {promo && Card && placement === 'home' && (
-  <section class="promo-home" data-promo data-promo-id={promo.id} data-promo-placement="home" aria-label="Featured">
+  <section class="promo-home" data-promo data-promo-id={promo.id} data-promo-placement="home" aria-label="Featured" style={`--promo-home-max:${promo.homeMaxWidth ?? 400}px`}>
     <Card href={href} label={promo.label} />
   </section>
 )}
@@ -40,7 +40,7 @@ const href = promo ? promoHref(promo, placement, content) : '';
 )}
 
 <style is:global>
-  .promo-home { max-width: 960px; margin: 0 auto 3rem; }
+  .promo-home { width: 100%; max-width: var(--promo-home-max, 400px); margin: -1.5rem auto 2rem; }
   .promo-pop {
     position: fixed; z-index: 60; right: 24px; bottom: 24px; width: 320px;
     border-radius: 22px; filter: drop-shadow(0 18px 40px rgba(26, 11, 46, .28));
