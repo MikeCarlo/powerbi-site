@@ -34,6 +34,8 @@ export interface Promo {
   /** Optional ISO date window. Checked at build time. */
   start?: string;
   end?: string;
+  /** Max width in px of the inline home card (default 400). The card scales with its width. */
+  homeMaxWidth?: number;
   /** Days the popover stays hidden after the X is clicked. */
   dismissDays?: number;
 }
@@ -47,6 +49,7 @@ export const promos: Promo[] = [
     placements: ['home', 'popover'],
     enabled: true,
     dismissDays: 7,
+    homeMaxWidth: 400,
   },
 ];
 
