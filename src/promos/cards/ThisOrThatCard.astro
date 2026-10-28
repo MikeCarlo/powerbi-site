@@ -1,0 +1,111 @@
+---
+/**
+ * This or That promo card (variant B). Pure HTML/CSS animation.
+ * Classes are prefixed `tot-card` so the global CSS cannot clash with site styles.
+ * The card scales with its container width (container queries), so the same
+ * markup works in the wide home slot and the small post popover.
+ */
+interface Props { href: string; label: string }
+const { href, label } = Astro.props;
+---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@800&display=swap" />
+<a class="tot-card" href={href} aria-label={label} data-promo-link>
+  <span class="tot-card__bg" aria-hidden="true"></span>
+  <span class="tot-card__deck" aria-hidden="true">
+    <span class="tot-card__slot tot-card__slot--a"><span class="tot-card__pc"><span class="tot-card__face"><span class="tot-card__word">THIS</span></span><span class="tot-card__face tot-card__face--back"></span></span></span>
+    <span class="tot-card__slot tot-card__slot--b"><span class="tot-card__pc"><span class="tot-card__face"><span class="tot-card__word">OR</span></span><span class="tot-card__face tot-card__face--back"></span></span></span>
+    <span class="tot-card__slot tot-card__slot--c"><span class="tot-card__pc"><span class="tot-card__face"><span class="tot-card__word">THAT</span></span><span class="tot-card__face tot-card__face--back"></span></span></span>
+  </span>
+  <span class="tot-card__cta"><span>Play now</span><svg class="tot-card__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h12M11 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+</a>
+<style is:global>
+.tot-card {
+  --teal:#00d6bb; --purple:#6857ff; --pink:#ff2368; --hot:#ff4d00; --yellow:#ffd719; --ink:#1a0b2e; --bg:#131927;
+  --w:20cqw; --h:28cqw; --spread:14cqw; --tilt:14deg; --lift:0cqw; --deck-y:46%; --hover-spread:3cqw;
+  container-type:inline-size; position:relative; display:block; box-sizing:border-box;
+  width:min(100%,1200px); aspect-ratio:1200/630; margin:0 auto; overflow:hidden; border-radius:2.35cqw;
+  cursor:pointer; color:#fff; text-decoration:none; font-family:'Nunito',system-ui,sans-serif; background:var(--bg);
+  box-shadow:0 1.6cqw 4cqw #1a0b2e55, 0 0 3cqw #ff236833;
+  transform:perspective(1400px) translateY(0) rotateX(0) rotateY(0);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease; -webkit-tap-highlight-color:transparent;
+}
+.tot-card__bg { position:absolute; inset:0; z-index:0;
+  background:radial-gradient(60% 80% at 12% 0%,#ff2368c0,#ff236850 42%,transparent 70%),
+    radial-gradient(50% 70% at 95% 100%,#6857ffb0,transparent 70%),
+    radial-gradient(40% 50% at 85% 5%,#00d6bb55,transparent 70%), var(--bg);
+  animation:totc-glow 2.4s ease-in-out infinite alternate; }
+@keyframes totc-glow { from { transform:scale(1); } to { transform:scale(1.12) translate(2%,3%); } }
+
+/* Deck: centered fan, words ride on the card faces */
+.tot-card__deck { position:absolute; left:50%; top:var(--deck-y); width:0; height:0; z-index:2; perspective:90cqw; }
+.tot-card__slot { position:absolute; left:calc(var(--w) / -2); top:calc(var(--h) / -2); width:var(--w); height:var(--h);
+  transform-origin:50% 120%; animation:totc-fan 2.4s cubic-bezier(.45,0,.25,1) infinite; }
+.tot-card__slot--a { --x:calc(var(--spread) * -1); --r:calc(var(--tilt) * -1); --y:var(--lift); }
+.tot-card__slot--b { --x:0px; --r:0deg; --y:0px; z-index:1; }
+.tot-card__slot--c { --x:var(--spread); --r:var(--tilt); --y:var(--lift); }
+@keyframes totc-fan { 0%,100% { transform:translate(0,0) rotate(0); } 15%,85% { transform:translate(var(--x),var(--y)) rotate(var(--r)); } }
+.tot-card__pc { position:relative; display:block; width:100%; height:100%; transform-style:preserve-3d; animation:totc-pick 2.4s ease-in-out infinite; }
+.tot-card__slot--b .tot-card__pc { animation-delay:.4s; } .tot-card__slot--c .tot-card__pc { animation-delay:.8s; }
+.tot-card__face { position:absolute; inset:0; display:grid; place-items:center; border-radius:1.8cqw; border:.25cqw solid #ffffff55;
+  box-shadow:0 1.2cqw 3cqw #0007; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+.tot-card__face--back { transform:rotateY(180deg); }
+.tot-card__slot--a .tot-card__face { background:linear-gradient(160deg,var(--purple),var(--teal)); }
+.tot-card__slot--b .tot-card__face { background:linear-gradient(135deg,var(--hot),var(--pink)); }
+.tot-card__slot--c .tot-card__face { background:linear-gradient(200deg,var(--pink),var(--purple)); }
+.tot-card__face--back::after { content:''; width:40%; aspect-ratio:1; border-radius:50%; border:.5cqw dashed #ffffff55; }
+@keyframes totc-pick { 0%,18%,48%,100% { transform:translateY(0) rotateY(0) scale(1); }
+  30% { transform:translateY(-2.6cqw) rotateY(180deg) scale(1.08); } 40% { transform:translateY(-.8cqw) rotateY(360deg) scale(1.02); } }
+
+/* Lettering on the cards */
+.tot-card__word { font-family:'Luckiest Guy','Arial Black',sans-serif; font-size:var(--word,5.6cqw); line-height:1; letter-spacing:.02em; padding-top:.5cqw;
+  color:#fff; filter:drop-shadow(.28cqw 0 0 var(--ink)) drop-shadow(-.28cqw 0 0 var(--ink)) drop-shadow(0 .28cqw 0 var(--ink)) drop-shadow(0 -.28cqw 0 var(--ink)) drop-shadow(0 .55cqw 0 var(--ink)) drop-shadow(0 1cqw 1cqw #0008);
+  animation:totc-bounce 2.4s cubic-bezier(.3,.7,.3,1) infinite; }
+.tot-card__slot--a .tot-card__word { background:linear-gradient(180deg,#fff,#c9fff7 45%,#7ff5e4); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.tot-card__slot--b .tot-card__word { background:linear-gradient(180deg,#fff,#ffe8a0); -webkit-background-clip:text; background-clip:text; color:transparent; animation-delay:.15s; }
+.tot-card__slot--c .tot-card__word { background:linear-gradient(180deg,#fff,#ffd0e0 45%,#ffb38a); -webkit-background-clip:text; background-clip:text; color:transparent; animation-delay:.3s; }
+@keyframes totc-bounce { 0%,60%,100% { translate:0 0; } 70% { translate:0 -.8cqw; } 80% { translate:0 .2cqw; } }
+
+/* Play now */
+.tot-card__cta { position:absolute; z-index:4; display:inline-flex; align-items:center; justify-content:center; gap:1cqw; overflow:hidden;
+  padding:1.5cqw 3.4cqw; border-radius:999px; font-family:'Luckiest Guy','Arial Black',sans-serif; font-size:3.2cqw; letter-spacing:.03em; line-height:1; text-transform:uppercase; color:var(--ink);
+  background:linear-gradient(90deg,var(--yellow),#ffb319 50%,var(--yellow));
+  box-shadow:0 0 0 .4cqw var(--ink), 0 .6cqw 0 .4cqw var(--ink), 0 0 0 0 #ffd719aa;
+  animation:totc-pulse 2.4s ease-out infinite; transition:scale .2s ease; }
+.tot-card__cta > span { padding-top:.35cqw; }
+.tot-card__cta::after { content:''; position:absolute; inset:0; transform:translateX(-120%) skewX(-20deg); background:linear-gradient(90deg,transparent,#ffffffcc,transparent); animation:totc-shine 2.4s ease-in-out infinite; }
+.tot-card__arrow { width:1.1em; height:1.1em; flex:0 0 auto; animation:totc-nudge 1.2s ease-in-out infinite; }
+@keyframes totc-pulse { 0% { box-shadow:0 0 0 .4cqw var(--ink),0 .6cqw 0 .4cqw var(--ink),0 0 0 0 #ffd719aa; } 70%,100% { box-shadow:0 0 0 .4cqw var(--ink),0 .6cqw 0 .4cqw var(--ink),0 0 0 2.4cqw #ffd71900; } }
+@keyframes totc-shine { 0%,40% { transform:translateX(-120%) skewX(-20deg); } 75%,100% { transform:translateX(160%) skewX(-20deg); } }
+@keyframes totc-nudge { 0%,100% { translate:0 0; } 50% { translate:.6cqw 0; } }
+
+/* Hover / focus / press */
+.tot-card:hover,.tot-card:focus-visible,.tot-card.is-hover { --spread:calc(var(--spread-base) + var(--hover-spread));
+  transform:perspective(1400px) translateY(-1.2cqw) rotateX(4deg) rotateY(-5deg);
+  box-shadow:0 3cqw 6cqw #1a0b2e88,0 0 6cqw #ff2368aa,0 0 9cqw #6857ff88; }
+
+.tot-card:hover .tot-card__cta,.tot-card.is-hover .tot-card__cta { scale:1.07; }
+.tot-card:focus-visible { outline:.5cqw solid var(--yellow); outline-offset:.6cqw; }
+.tot-card:active { transform:perspective(1400px) translateY(.3cqw) scale(.985); transition-duration:.08s; }
+@media (prefers-reduced-motion: reduce) {
+  .tot-card,.tot-card * { animation:none !important; transition:none !important; }
+  .tot-card__slot { transform:translate(var(--x),var(--y)) rotate(var(--r)); }
+}
+/* ---- variant ---- */
+.tot-card { --w:24cqw; --h:37cqw; --spread-base:17.5cqw; --spread:17.5cqw; --tilt:9deg; --deck-y:50%; --word:7cqw; --hover-spread:2.4cqw; }
+.tot-card__slot--b .tot-card__word { translate:0 -5cqw; }
+.tot-card__slot--a .tot-card__face--front-word, .tot-card__slot--a .tot-card__word { margin-right:5cqw; }
+.tot-card__slot--c .tot-card__word { margin-left:5cqw; }
+.tot-card__slot--b .tot-card__word { animation-name:totc-bounce-b; }
+@keyframes totc-bounce-b { 0%,60%,100% { translate:0 -5cqw; } 70% { translate:0 -5.8cqw; } 80% { translate:0 -4.8cqw; } }
+.tot-card__cta { left:50%; top:63%; translate:-50% 0; rotate:-6deg; font-size:2.9cqw; padding:1.4cqw 2.8cqw; border-radius:1.4cqw;
+  background:linear-gradient(135deg,#fff36b,var(--yellow) 45%,#ffb319); }
+.tot-card:hover .tot-card__cta,.tot-card.is-hover .tot-card__cta { rotate:-3deg; }
+/* Square (add class tot-card--square) */
+.tot-card--square { width:min(100%,1080px); aspect-ratio:1/1; --w:31cqw; --h:47cqw; --spread-base:24cqw; --spread:24cqw; --tilt:9deg; --deck-y:47%; --word:9cqw; --hover-spread:3cqw; }
+.tot-card--square .tot-card__slot--a .tot-card__word { margin-right:6cqw; }
+.tot-card--square .tot-card__slot--c .tot-card__word { margin-left:6cqw; }
+.tot-card--square .tot-card__slot--b .tot-card__word { animation-name:totc-bounce-sq; translate:0 -7cqw; }
+@keyframes totc-bounce-sq { 0%,60%,100% { translate:0 -7cqw; } 70% { translate:0 -8cqw; } 80% { translate:0 -6.7cqw; } }
+.tot-card--square .tot-card__cta { font-size:4.4cqw; padding:2cqw 4cqw; border-radius:2cqw; top:62%; }
+/* ===== END CARD CSS ===== */
+</style>

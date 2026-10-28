@@ -324,3 +324,7 @@ Posts in tutorial/guide/walkthrough categories with `Step N:` heading patterns a
 ## 📄 License
 
 © PowerBI.tips LLC. All rights reserved.
+
+## Promo cards
+
+Reusable promo cards for our apps and products live in `src/promos/promos.ts` (config, docs at the top) and `src/components/promo/Promo.astro` (the slot). `<Promo placement="home" />` renders above Recent Posts on the home page, and `<Promo placement="popover" />` renders a dismissible floating card on every blog post. To add a promo, add a card component in `src/promos/cards/`, register it in `Promo.astro`, and add a config entry. Links get UTMs and Clarity gets `promo_view`, `promo_click` and `promo_dismiss` events.
