@@ -1,0 +1,134 @@
+---
+/**
+ * Reusable promo slot. See src/promos/promos.ts for the config and how to add one.
+ *   <Promo placement="home" />
+ *   <Promo placement="popover" content={slug} />
+ */
+import { activePromo, promoHref, type PromoPlacement } from '../../promos/promos';
+import ThisOrThatCard from '../../promos/cards/ThisOrThatCard.astro';
+
+const promoCards: Record<string, any> = {
+  'this-or-that': ThisOrThatCard,
+};
+
+interface Props { placement: PromoPlacement; content?: string }
+const { placement, content = placement } = Astro.props;
+const promo = activePromo(placement);
+const Card = promo ? promoCards[promo.card] : undefined;
+const href = promo ? promoHref(promo, placement, content) : '';
+---
+{promo && Card && placement === 'home' && (
+  <section class="promo-home" data-promo data-promo-id={promo.id} data-promo-placement="home" aria-label="Featured">
+    <Card href={href} label={promo.label} />
+  </section>
+)}
+{promo && Card && placement === 'popover' && (
+  <aside
+    class="promo-pop"
+    data-promo
+    data-promo-id={promo.id}
+    data-promo-placement="popover"
+    data-promo-dismiss-days={promo.dismissDays ?? 7}
+    aria-label="Featured app"
+    hidden
+  >
+    <button type="button" class="promo-pop__close" data-promo-close aria-label="Dismiss this promo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg>
+    </button>
+    <Card href={href} label={promo.label} />
+  </aside>
+)}
+
+<style is:global>
+  .promo-home { max-width: 960px; margin: 0 auto 3rem; }
+  .promo-pop {
+    position: fixed; z-index: 60; right: 24px; bottom: 24px; width: 320px;
+    border-radius: 22px; filter: drop-shadow(0 18px 40px rgba(26, 11, 46, .28));
+    opacity: 0; transform: translateY(16px) scale(.97);
+    transition: opacity .45s ease, transform .45s cubic-bezier(.2, .8, .2, 1);
+  }
+  .promo-pop[hidden] { display: none; }
+  .promo-pop.is-open { opacity: 1; transform: none; }
+  .promo-pop .tot-card { border-radius: 22px; }
+  .promo-pop__close {
+    position: absolute; z-index: 5; top: -14px; right: -14px; width: 36px; height: 36px;
+    display: grid; place-items: center; padding: 0; border-radius: 999px; cursor: pointer;
+    background: #fff; color: #1a0b2e; border: 1px solid rgba(26, 11, 46, .15);
+    box-shadow: 0 4px 14px rgba(26, 11, 46, .25); transition: transform .15s ease, background .15s ease;
+  }
+  .promo-pop__close::before { content: ''; position: absolute; inset: -6px; } /* 48px tap target */
+  .promo-pop__close svg { width: 18px; height: 18px; }
+  .promo-pop__close:hover { background: #f4f1ff; transform: scale(1.08); }
+  .promo-pop__close:focus-visible { outline: 3px solid #6857ff; outline-offset: 2px; }
+  /* Wide desktop: sit in the empty right gutter beside the article, near the top. */
+  @media (min-width: 1700px) {
+    .promo-pop { top: 120px; bottom: auto; right: max(24px, calc((100vw - 72rem) / 2 - 340px)); }
+  }
+  /* Phones: compact card pinned to the bottom, centered. */
+  @media (max-width: 640px) {
+    .promo-pop { left: 50%; right: auto; bottom: 14px; width: min(300px, calc(100vw - 48px)); transform: translate(-50%, 16px); }
+    .promo-pop.is-open { transform: translate(-50%, 0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .promo-pop { transition: opacity .2s linear; transform: none !important; }
+    .promo-pop.is-open { transform: none !important; }
+    @media (max-width: 640px) { .promo-pop, .promo-pop.is-open { transform: translateX(-50%) !important; } }
+  }
+</style>
+
+<script>
+  type Clarity = (...args: unknown[]) => void;
+  function track(name: string, id: string, placement: string) {
+    const c = (window as unknown as { clarity?: Clarity }).clarity;
+    if (typeof c !== 'function') return;
+    try {
+      c('set', 'promo_id', id);
+      c('set', 'promo_placement', placement);
+      c('event', name);
+      c('event', `${name}_${id}_${placement}`);
+    } catch { /* never break the page for analytics */ }
+  }
+  const KEY = (id: string) => `promo:dismissed:${id}`;
+  function isDismissed(id: string) {
+    try { const until = Number(localStorage.getItem(KEY(id)) || 0); return until > Date.now(); } catch { return false; }
+  }
+
+  for (const el of document.querySelectorAll<HTMLElement>('[data-promo]')) {
+    if (el.dataset.promoReady) continue;
+    el.dataset.promoReady = '1';
+    const id = el.dataset.promoId || '';
+    const placement = el.dataset.promoPlacement || '';
+    el.querySelector('[data-promo-link]')?.addEventListener('click', () => track('promo_click', id, placement));
+
+    if (placement === 'home') {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) { track('promo_view', id, placement); io.disconnect(); }
+      }, { threshold: 0.5 });
+      io.observe(el);
+      continue;
+    }
+
+    if (isDismissed(id)) continue;
+    const days = Number(el.dataset.promoDismissDays || 7);
+    let shown = false;
+    const show = () => {
+      if (shown) return; shown = true;
+      window.removeEventListener('scroll', onScroll);
+      el.hidden = false;
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('is-open')));
+      track('promo_view', id, placement);
+    };
+    const onScroll = () => { if (window.scrollY > 400) show(); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    setTimeout(show, 6000);
+
+    const close = () => {
+      try { localStorage.setItem(KEY(id), String(Date.now() + days * 864e5)); } catch {}
+      track('promo_dismiss', id, placement);
+      el.classList.remove('is-open');
+      setTimeout(() => { el.hidden = true; }, 350);
+    };
+    el.querySelector('[data-promo-close]')?.addEventListener('click', close);
+    el.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+</script>
