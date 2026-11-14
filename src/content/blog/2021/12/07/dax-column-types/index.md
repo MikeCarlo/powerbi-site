@@ -1,16 +1,41 @@
 ---
 title: All Columns have Data Types in DAX, Or do they?
-excerpt: To say this another way. Not all columns have datatypes in DAX, specifically
-  speaking to using dynamic ranking with an “Other” category. Let me explai...
+excerpt: "Do all columns in DAX have a data type?"
 date: '2021-12-07'
 authors:
-- Mike Carlo
+  - "Greg Baldini"
 categories:
   - "Building Reports"
 tags:
 - power-bi
 featuredImage: ./assets/featured.png
 ---
+
+## Do all columns in DAX have a data type?
+
+**TL;DR.** Tabular columns have an explicit type, but DAX columns are Variant: each row's type follows its value. A rank that returns numbers 1 to 4 and the text Other will not match a text Rank Selector until you FORMAT numbers as text.
+
+### Do columns in the Tabular model have data types?
+
+Yes, every column in a Tabular model table has an explicitly defined type. The post says this holds whether the table is imported, calculated, or DirectQuery.
+
+### How is DAX's type system different from the model?
+
+DAX has less type discipline than the Tabular model, and implicit type conversions are common. Measures can have a Variant data type, and a DAX expression can return a whole table. Columns projected in a DAX table have no explicit type, so each row's type depends on its value.
+
+### Why did the variant rank measure fail against the Rank Selector?
+
+The 'Rank Selector'[Rank] column is Text, with the values "1", "2", "3", "4", and "Other", while [_Rank (variant)] returns a number for ranks 1 to 4 and the string "Other". In DAX, 1 = "1" throws a type error, so the FILTER with [@rank] IN rankContext only matched "Other".
+
+### What is the fix in this post?
+
+Make the ranking measure always return Text. The post's [_Rank (typed)] helper uses FORMAT(rawRank, "0") for ranks 1 to 4 and returns "Other" otherwise, so every row is a string and IN matches the Rank Selector values. Then [Ranked Agg (typed)] uses that helper inside ADDCOLUMNS.
+
+### How can I see the type difference in DAX Studio?
+
+Run the post's EVALUATE query in DAX Studio and check the alignment: Variant-typed values right-align and Text-typed values left-align. Maxim Zelensky pointed out that Power BI Desktop has no type indication, and the post's sample PBIX shows similar alignment in its table visuals.
+
+Related: [Ranking Values with Measures](/2017/07/25/ranking-values-with-measures/), [Adding Data Types Within Query Editor](/2018/01/31/adding-data-types-within-query-editor/), and [Introduction to DAX Studio](/2020/05/14/introduction-to-dax-studio/).
 
 To say this another way. Not all columns have datatypes in DAX, specifically speaking to using dynamic ranking with an “Other” category. Let me explain.
 
@@ -22,7 +47,7 @@ DAX is the language of the Tabular model. It has less type discipline than table
 
 Here is the scenario where I discovered this. I was helping a colleague with a dynamic ranking measure and aggregation. The requirement read:
 
-> Show the top for production plants as ranks 1 through 4. Group all others ranked 5 or lower together as “Other”.
+> Show the top four production plants as ranks 1 through 4. Group all others ranked 5 or lower together as “Other”.
 
 We have three tables:
 
@@ -88,9 +113,7 @@ When we visualize this measure against `'Rank Selector'[Rank]`, we get the resu
 
 A table visualization showing only the `'Rank Selector'[Rank]` value “Other” and “**Total**”. Specifically, we do not see any value for ranks “1”, “2”, “3”, or “4”.
 
-A table visualization showing only the `'Rank Selector'[Rank]` value “Other” and “**Total**”. Specifically, we do not see any value for ranks “1”, “2”, “3”, or “4”.
-
-What is going on here? We see data only for the `Rank Selector'[Rank]` label “Other” but none of the numbers. Let us walk through the measure step-by-step to understand this result.
+What is going on here? We see data only for the `'Rank Selector'[Rank]` label “Other” but none of the numbers. Let us walk through the measure step-by-step to understand this result.
 
 ```
 VAR rankContext = VALUES ( 'Rank Selector'[Rank] )
@@ -111,7 +134,7 @@ VAR ranked =
 
 The critical part of both the ranking logic and the phenomenon we are exploring is in `currentRank`. This is a subset of the table, `ranked`, holding only the row or rows which have a `[@rank]` value that exists in the filter context captured in `rankContext` (again, one or a collection of the values “1”, “2”, “3”, “4”, and “Other”).
 
-Note, that we see data only for the `Rank Selector'[Rank]` label “Other”. As you recall, our `[_Rank (variant)]` seemed to work correctly above – it definitely returned ranks 1-4, not just “Other”. `'Rank Selector'[Rank]` has the correct values. We checked that our logic in `[Ranked Agg (variant)]` was correct. We verified in DAX Studio that `ranked` held the correct table. We even got to the point that we checked whether `VALUES` was behaving as we expected in `rankContext`. (I will note that if you find yourself verifying the behavior of an expression as basic as `VALUES ( 'Rank Selector'[Rank] )`, then you, too, may find yourself questioning what has brought you to this point.)
+Note, that we see data only for the `'Rank Selector'[Rank]` label “Other”. As you recall, our `[_Rank (variant)]` seemed to work correctly above – it definitely returned ranks 1-4, not just “Other”. `'Rank Selector'[Rank]` has the correct values. We checked that our logic in `[Ranked Agg (variant)]` was correct. We verified in DAX Studio that `ranked` held the correct table. We even got to the point that we checked whether `VALUES` was behaving as we expected in `rankContext`. (I will note that if you find yourself verifying the behavior of an expression as basic as `VALUES ( 'Rank Selector'[Rank] )`, then you, too, may find yourself questioning what has brought you to this point.)
 
 ```
 VAR currentRank = FILTER ( ranked, [@rank] IN rankContext )

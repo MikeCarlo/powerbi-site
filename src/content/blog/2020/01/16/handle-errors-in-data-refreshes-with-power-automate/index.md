@@ -1,6 +1,6 @@
 ---
 title: "Handle Errors in Data Refreshes with Power Automate"
-excerpt: "This article examines using the advanced editor in Power Query to better handle when things go wrong. It will also allow custom actions to be triggere..."
+excerpt: "How do I get alerted when a Power BI dataset refresh fails?"
 date: "2020-01-16"
 authors:
   - "Mike Carlo"
@@ -11,10 +11,36 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
+## How do I get alerted when a Power BI dataset refresh fails?
+
+**TL;DR.** An error in any Power Query step can stop the entire report refresh, and service alerts can be unspecific. Wrap the query in try otherwise: on failure, Power Automate emails you and the rest of the data can still refresh.
+
+### Why isn't a Power BI service refresh alert enough?
+
+Service alerts can be unspecific, and the post notes they can leave you digging deep into the report to find the cause. This technique sends a specific alert for the exact step where the error occurred, and the rest of the data keeps refreshing.
+
+### How does the Power Automate flow get triggered?
+
+The 2020 post creates an Instant flow on the Power Automate website with the trigger When an HTTP request is received. After you save, that step shows a generated URL, and visiting the URL runs the flow. The post's example action is Send an email (V2), and those names are from 2020, as written in the post.
+
+### How does Power Query choose between loading data and calling the flow?
+
+Power Query's try otherwise statement makes the choice. The try block runs the source query, which in the post is a Yahoo Finance web request for Microsoft stock metadata. If that errors, the otherwise block calls Web.Contents on the flow URL, which sends the email.
+
+### Can one flow cover more than one dataset?
+
+Yes, as an optional step in the post. Set the flow to accept a JSON POST body with a datasetName property, then add datasetName and utcNow() to the email so you can see which dataset failed and when. In Power Query, pass datasetName to Web.Contents with JSON headers and content.
+
+### What are the limits of this pattern?
+
+The post says this technique uses premium Power Automate features and a valid license is required, though only one service account license is needed. The query returns blank data when it fails, which could break your model if that data is required. The post also does not cover securing the endpoint, so anyone who finds the URL could trigger the email.
+
+Related: [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/), [Historical Stock Price Function in Power Query](/2019/10/22/historical-stock-price-function-in-power-query/), and [Power BI Refresh Overview](/2019/09/03/power-bi-refresh-overview/).
+
 This article examines using the advanced editor in Power Query to better handle when things go wrong. It will also allow custom actions to be triggered using Power Automate, allowing the rest of the data to be refreshed while alerting the owner by email of data source errors.
 
 _Note that this article requires edit Power Query (M) code. If you want to review this, consider reading this article:  
-[Query Editor – Editing M Code](https://powerbi.tips/2016/05/query-editor-editing-m-code/)_
+[Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/)_
 
 ## Data Sources
 
@@ -26,7 +52,7 @@ The technique laid out here allows to receive a specific alert of the exact step
 
 ## **Step 1 –** Base Query
 
-First we need to set up the query that we want to error handle. For this example, I’m going to send a web request to get some information about the Microsoft stock price. For more information on this API or to pull other stock data, [check out this article](https://powerbi.tips/2019/10/historical-stock-price-function-in-power-query/).
+First we need to set up the query that we want to error handle. For this example, I’m going to send a web request to get some information about the Microsoft stock price. For more information on this API or to pull other stock data, [check out this article](/2019/10/22/historical-stock-price-function-in-power-query/).
 
 **Open** Power Query and **Select** the **New Source > Web** on the Home ribbon.
 
@@ -38,7 +64,7 @@ First we need to set up the query that we want to error handle. For this example
 
 This will automatically return a JSON object and parse it for us.
 
-_Note: This link returns 5 years of daily daily historical stock price._
+_Note: This link returns 5 years of daily historical stock price._
 
 For simplicity, I will just return the meta data to ensure the API call is working. The automatic parsing will return a table with clickable elements. To explore into the JSON we, **click** through the following steps:
 
@@ -63,7 +89,7 @@ let
     #"meta" = result1[meta],
     #"Converted to Table" = Record.ToTable(#"meta")
 in
-    #"Converted to Table
+    #"Converted to Table"
 ```
 
 Rename this “Stock Query” by editing the name in the properties pane on the right.
@@ -84,7 +110,7 @@ I’ll **search** for the item **Send an email (V2)**. Make sure you **fill** in
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2020/01/image-3.png)
 
-That’s our flow! **Hit** Save. After you have saved, **click** on the **When a HTTP request is received** step to **expand** it. You’ll see that a URL has been generated. **Copy** the link using the **Copy** button on the right. You’ll need this to enter it into Power BI.
+That’s our flow! **Hit** Save. After you have saved, **click** on the **When an HTTP request is received** step to **expand** it. You’ll see that a URL has been generated. **Copy** the link using the **Copy** button on the right. You’ll need this to enter it into Power BI.
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2020/01/image-4.png)
 
@@ -106,7 +132,7 @@ Next, **open** the Advanced Editor and the code should look like this:
 
 ![](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2020/01/image-7.png)
 
-Now we will employ the [try … otherwise statement](https://docs.microsoft.com/en-us/power-query/handlingerrors#catching-an-error-with-try-and-otherwise). This is Power Query’s error handing statement. We can add a placeholder for now.  
+Now we will employ the [try … otherwise statement](https://docs.microsoft.com/en-us/power-query/handlingerrors#catching-an-error-with-try-and-otherwise). This is Power Query’s error handling statement. We can add a placeholder for now.  
 **Replace** the step:
 
 Source = "" 
@@ -147,7 +173,7 @@ Go back to the try..otherwise and **paste** everything between the two parenthes
 
 ## Step 6 – Tidying the Code Up
 
-The URLs are prone to change so it is code practice to **separate** them as a variable. To do this, you can simply state them at the beginning of the query as a step.  
+The URLs are prone to change so it is good practice to **separate** them as a variable. To do this, you can simply state them at the beginning of the query as a step.  
 Here, **add** the URLs to variables called **WebURL** and **FlowURL**.  
 To add WebURL, at the beginning of query after the let keyword, add the line:
 
@@ -168,7 +194,7 @@ Final code to copy (you will need to update to your correct URLS):
 ```
 let
     flowURL ="https://prod-68.westus.logic.azure.com:443/workflows/ RestofURL",
-    webURL = "https://query1.finance.yahoo.com/v8/finance/chart/MSFaaT?range=5y&interval=1d",
+    webURL = "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=5y&interval=1d",
     
     Output =   
     try 
@@ -235,7 +261,7 @@ The final step is to **pass** this in from Power BI. In our query, **open** the 
     headers = [ #"Content-Type"="application/json"],
 ```
 
-dataset name is the name of the datset we pass into the flow and ultimately appear in the email. Right now it’s set to Stock Query, but this is what we can edit for each dataset we use this query to pass a different name.
+dataset name is the name of the dataset we pass into the flow and ultimately appear in the email. Right now it’s set to Stock Query, but this is what we can edit for each dataset we use this query to pass a different name.
 
 content and headers build the correct format to pass into the API call. This will create a POST request and provide the correct format.
 
@@ -257,7 +283,7 @@ let
     content = " { ""datasetName"": """ & datasetName & """}",
     headers = [ #"Content-Type"="application/json"],
     flowURL ="https://prod-68.westus.logic.azure.com:443/workflows/RestofURL",
-    webURL = "https://query1.finance.yahoo.com/v8/finance/chart/MSFaaT?range=5y&interval=1d",
+    webURL = "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=5y&interval=1d",
     
     Output =   
     try 

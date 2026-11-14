@@ -1,6 +1,6 @@
 ---
 title: "Pareto Charting in PowerBI"
-excerpt: "Build a Pareto chart in Power BI using DAX measures for cumulative totals and percentages. Identify which products comprise the majority of your sales."
+excerpt: "How do I build a Pareto chart in Power BI?"
 date: "2016-10-17"
 authors: ["Mike Carlo"]
 categories:
@@ -8,6 +8,32 @@ categories:
 tags: ["DAX", "Visuals", "Tutorial", "Analysis"]
 featuredImage: "./assets/featured.png"
 ---
+
+## How do I build a Pareto chart in Power BI?
+
+**TL;DR.** A Pareto chart plots each category as a bar and a cumulative percent as a line, so you can see which products make up most of your sales. This 2016 tutorial builds the chart with a Summary table and four DAX measures.
+
+### What does a Pareto chart show in this tutorial?
+
+Each product or category shows up as a bar, and a cumulative line compares all of the bars. The post points to failure mode analysis, causes of a problem, and product portfolio balances as good uses. In the sample, the first 4 bars total approximately 50% of all sales.
+
+### How do I load the sample data?
+
+The 2016 post starts in Power BI Desktop: click Get Data on the Home ribbon, select Blank Query, then open Advanced Editor on the View ribbon and paste the post's M code, which loads Sample-Data.xlsx from the post's URL. Rename the query to Data and click Close & Apply. Those button names are from 2016, as written in the post.
+
+### Why do I need a Summary table?
+
+The loaded data repeats values, with Category 1 and Item 1 showing up 9 times, so each grouping has to be summarized first. Add a Blend column, `Blend = Data[Segment] & "-" & Data[Item]`, then build a Summary table with SUMMARIZE on Blend and Sum Sales.
+
+### Which DAX measures support the Pareto chart?
+
+There are four measures on the Summary table. Ranking uses RANKX on Sum Sales, Cumulative Total sums Sum Sales over ALLSELECTED Summary for rows whose Ranking is less than or equal to the current MAX Ranking, Total Sales sums Sum Sales over ALLSELECTED Summary, and Cumulative Percent divides Cumulative Total by Total Sales. Set Cumulative Percent to the Percentage format on the Modeling ribbon.
+
+### How do I finish the chart visual?
+
+Add a Line and Stacked Column Chart with Blend on Shared Axis, Sum Sales in Column values, and Cumulative Percent in Line values. Then open the visual's ellipsis and pick Sort By Sum Sales so the bars run in descending order. Those are the 2016 visual and field names from the post.
+
+Related: [Ranking Values with Measures](/2017/07/25/ranking-values-with-measures/), [Power BI Histogram with Bins – Includes DAX](/2016/04/27/power-bi-histogram-with-bins/), and [SUM & SUMX Tutorial – Curbal](/2017/04/06/sum-sumx-tutorial-curbal/).
 
 The Pareto chart is a handy visual, but is not so easy to build in either Excel or PowerBI. In a Pareto chart, information is provided about an individual product or category as a bar, and a cumulative scale as a line which compares all bars. This type of visual can be extremely helpful when conducting failure mode analysis, causes of a problem, or even product portfolio balances.
 

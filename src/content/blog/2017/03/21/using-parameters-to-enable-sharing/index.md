@@ -1,6 +1,6 @@
 ---
 title: "Using Parameters to Enable Sharing"
-excerpt: "This week I had a number of team members tell me how difficult it was to share a PBIX file and the corresponding data between team members.  The depar..."
+excerpt: "How do I use Power Query parameters so a PBIX works for anyone I share it with?"
 date: "2017-03-21"
 authors:
   - "Mike Carlo"
@@ -11,13 +11,39 @@ tags:
 featuredImage: "./assets/featured.png"
 ---
 
-This week I had a number of team members tell me how difficult it was to share a PBIX file and the corresponding data between team members.  The department hasn’t committed 100% to the idea of using PowerBI.com, and thus wanted to share the actual report.  I pointed my team mates to my earlier tutorial about [using variables for file locations](https://powerbi.tips/2016/08/using-variables-for-file-locations/).  After reading the tutorial the team came back with a bunch of griping about how they didn’t want to go into the query editor, people name variables different things, and thus it’s hard to understand what another team member was doing, blah, blah, blah…
+## How do I use Power Query parameters so a PBIX works for anyone I share it with?
+
+**TL;DR.** The April 2016 Power Query Parameters feature stores a folder path so a shared PBIX works on someone else's machine. Recipients click Edit Queries, then Edit Parameters, enter their folder location, and click Apply Changes, without editing query variables.
+
+### When did Power BI add query parameters?
+
+The post says the Parameters feature in the Query Editor was released in April 2016. I used it in this 2017 post so teammates could share a PBIX and its data folder without digging through the query editor for variables each person named differently.
+
+### How do I create the Folder parameter?
+
+In the 2017 post, click the top half of Edit Queries to open the Query Editor, then click Manage Parameters on the Home ribbon and click New. Name it Folder, leave Required checked, set Type to Text and Suggested Values to Any value, and put the location of the Medal-Count files in Current Value. Those are the 2017 Query Editor names from the post.
+
+### How does the folder query use the parameter?
+
+Click New Source, pick Folder, then click the ABC button at the right of the Folder Path bar, change it to Parameter, and select Folder. From there you combine and edit the files the way the post does with the Olympic medal count sample.
+
+### How does a coworker point the PBIX at their own folder?
+
+Your coworker clicks the bottom half of Edit Queries on the Home ribbon and selects Edit Parameters. They enter their own folder location, click OK, then click Apply Changes, and Power BI reloads the data from that folder. Nobody has to open the query editor to rename variables.
+
+### What happens if the folder is renamed after the PBIX is saved?
+
+The next Refresh fails with an error, just like the post's test after the folder is renamed to Olympic Medals. Fix it the same way: Edit Queries, Edit Parameters, update the Folder value, click OK, then click Apply Changes.
+
+Related: [Using Variables for File Locations](/2016/08/04/using-variables-for-file-locations/), [Folder of Files Loaded to Power BI Desktop](/2016/04/07/folder-of-files-loaded-to-power-bi-desktop/), and [Query Editor – Editing M Code](/2016/05/19/query-editor-editing-m-code/).
+
+This week I had a number of team members tell me how difficult it was to share a PBIX file and the corresponding data between team members.  The department hasn’t committed 100% to the idea of using PowerBI.com, and thus wanted to share the actual report.  I pointed my team mates to my earlier tutorial about [using variables for file locations](/2016/08/04/using-variables-for-file-locations/).  After reading the tutorial the team came back with a bunch of griping about how they didn’t want to go into the query editor, people name variables different things, and thus it’s hard to understand what another team member was doing, blah, blah, blah…
 
 So, in order to make peace I took another look at trying to make the sharing of a PBIX file easier.  This time I decided to use the [Parameters](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) feature within PowerBI.  This feature within the Query Editor was released all the way back in April of 2016.  I read about it, thought it was interesting but couldn’t find a really good use case.  In my current predicament, the parameters feature is the perfect solution.
 
 By using a parameter to store a folder and or file location you enhance the user experience by making it easier for a user to change the Query.
 
-To modify a parameter after it has already been built click on the bottom half  of the **Edit Queries** button, found on the **Home** ribbon.  A menu will pop up and you can select **Edit Parameters**.
+To modify a parameter after it has already been built click on the bottom half of the **Edit Queries** button, found on the **Home** ribbon.  A menu will pop up and you can select **Edit Parameters**.
 
 ![Edit Queries](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Edit-Queries.png)
 
@@ -29,7 +55,7 @@ The Enter Parameters screen will pop up.  This is where you would change the pa
 
 Enter Parameters Screen
 
-Let’s begin the tutorial.  To start we will need to work with some data.  In my earlier tutorial, I used the Olympic Medals Count.  We will reuse this dataset.  Start by downloading the zipped folder Olympic Metal Count files from the [following location](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2016/08/Medal-Counts.zip).  Once you have downloaded the sample data, extract the folder and subsequent files from the zipped file.  In windows 10, which I am using, you can right click on the downloaded file and select **Extract All..**
+Let’s begin the tutorial.  To start we will need to work with some data.  In my earlier tutorial, I used the Olympic Medals Count.  We will reuse this dataset.  Start by downloading the zipped folder Olympic Medal Count files from the [following location](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2016/08/Medal-Counts.zip).  Once you have downloaded the sample data, extract the folder and subsequent files from the zipped file.  In windows 10, which I am using, you can right click on the downloaded file and select **Extract All..**
 
 ![Extract All from Zipped Folder](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Extract-All-from-Zipped-Folder.png)
 
@@ -47,13 +73,13 @@ We now have a folder with all our data.
 
 Extracted Folder
 
-With the data prepared we can now make the parameters within PowerBI.  Open PowerBI and click the top half of the **Edit Queries** button.  The Query Editor will open.  Click the **Mange Parameters** found on the **Home** ribbon.  The Parameters screen will open.  Click the blue **New** button at the top left.  Enter the name **Folder**, and include a brief description of this parameter.  Since the folder parameter is essential to the query we must leave the **Required** box checked.  Change the **Type** to **Text**, and leave the **Suggested Values** to **Any** value.  Finally enter the **Folder Location** where our Medal-Count file is located into the **Current Value**.  Click **OK** to complete the parameter.
+With the data prepared we can now make the parameters within PowerBI.  Open PowerBI and click the top half of the **Edit Queries** button.  The Query Editor will open.  Click the **Manage Parameters** found on the **Home** ribbon.  The Parameters screen will open.  Click the blue **New** button at the top left.  Enter the name **Folder**, and include a brief description of this parameter.  Since the folder parameter is essential to the query we must leave the **Required** box checked.  Change the **Type** to **Text**, and leave the **Suggested Values** to **Any** value.  Finally enter the **Folder Location** where our Medal-Count file is located into the **Current Value**.  Click **OK** to complete the parameter.
 
 ![Make Parameter](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Make-Parameter.png)
 
 Make Parameter
 
-Next, we will create the actual query to load the folder containing our Metal Counts.  Click on the **New Source** button.  This will open the **Get Data** window.  Select the **Folder** option located in the list on the right.  Click **Connect** to complete the Get Data.
+Next, we will create the actual query to load the folder containing our Medal Counts.  Click on the **New Source** button.  This will open the **Get Data** window.  Select the **Folder** option located in the list on the right.  Click **Connect** to complete the Get Data.
 
 ![Connect to Folder](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Connect-to-Folder.png)
 
@@ -83,11 +109,11 @@ Select Sheet1
 
 _Note: For users that have been working with PowerBI for a while, this Combine Files screen flow is a newer feature.  I feel that this greatly simplifies the process and makes it easier to detect issues when loading data._ 
 
-PowerBI now loads the files into the Query Editor.  The Query that we want to use is labeled Query2, change the **Query2** name to **Metal Count.**
+PowerBI now loads the files into the Query Editor.  The Query that we want to use is labeled Query2, change the **Query2** name to **Medal Count.**
 
-![Metal Count](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Metal-Count.png)
+![Medal Count](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Metal-Count.png)
 
-Metal Count
+Medal Count
 
 What you’ll also notice is there is a lot more queries on the left side of the screen under **Queries**.  These queries were auto generated when we navigated through the menu screens. Click **Close & Apply** to complete the data load.
 
@@ -97,7 +123,7 @@ Build the following Stacked Column Chart:
 
 Stacked Column Chart
 
-Click the **Ellipsis** on the upper right hand corner of the chart and select **Sort By Total** to sort all the items in the bar chart according to how many metals each country won.
+Click the **Ellipsis** on the upper right hand corner of the chart and select **Sort By Total** to sort all the items in the bar chart according to how many medals each country won.
 
 ![Sort by Total](https://powerbitips03.blob.core.windows.net/blobpowerbitips03/wp-content/uploads/2017/03/Sort-by-Total.png)
 
