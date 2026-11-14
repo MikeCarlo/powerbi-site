@@ -1,7 +1,6 @@
 ---
 title: 'Transforming Power BI Customization: Wire Frames in PowerBI.Tips Designer'
-excerpt: '### **Introducing the New PowerBI.Tips WireFrames Feature**  In the dynamic
-  landscape of data visualization, staying ahead of the curve is crucial. Th...'
+excerpt: "Introducing the New PowerBI.Tips WireFrames Feature in the PowerBI.Tips Theme Generator. This feature opens doors for UI/UX teams and designers to interact with Power BI developers."
 date: '2023-08-14'
 authors:
 - Seth Bauer

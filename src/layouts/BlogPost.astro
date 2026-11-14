@@ -6,6 +6,7 @@ import PodcastPlayer from '../components/PodcastPlayer.astro';
 import PodcastEpisodeBox from '../components/PodcastEpisodeBox.astro';
 import Promo from '../components/promo/Promo.astro';
 import { episodeNumberFromTitle, youtubeIdFromBody } from '../utils/podcast-episode';
+import { plainTextExcerpt } from '../utils/schema-helpers';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -25,6 +26,7 @@ const { entry, prev, next, morePosts, faqItems = [], howToSteps = [], isEpisode 
   headingSlugs?: string[];
 };
 const { title, date, authors, categories, tags, featuredImage, excerpt, tldr, faq, related, hidePromo } = entry.data;
+const metaDescription = plainTextExcerpt(excerpt || '');
 
 // Episode posts get a seekable transcript: clicking a line drives the embedded
 // player. Only load it where both halves of the feature are actually present.
@@ -48,7 +50,7 @@ const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: title,
-  description: excerpt || '',
+  description: metaDescription,
   url: articleUrl,
   datePublished: date.toISOString(),
   dateModified: date.toISOString(),
@@ -116,7 +118,7 @@ const howToJsonLd = howToSteps.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: title,
-  description: excerpt || '',
+  description: metaDescription,
   step: howToSteps.map((step, i) => ({
     '@type': 'HowToStep',
     position: i + 1,
@@ -137,7 +139,7 @@ const podcastEpisodeJsonLd = isEpisode ? {
   url: articleUrl,
   datePublished: date.toISOString(),
   ...(episodeNumber !== undefined ? { episodeNumber } : {}),
-  description: excerpt || '',
+  description: metaDescription,
   partOfSeries: {
     '@type': 'PodcastSeries',
     name: 'Explicit Measures Podcast',
@@ -166,7 +168,7 @@ const allJsonLd = [
 
 <BaseLayout
   title={`${title} | PowerBI.tips`}
-  description={excerpt ?? ''}
+  description={metaDescription}
   jsonLd={allJsonLd}
 >
   <head>
@@ -174,12 +176,12 @@ const allJsonLd = [
     <meta property="og:type" content="article" />
     <meta property="og:url" content={articleUrl} />
     <meta property="og:title" content={`${title} | PowerBI.tips`} />
-    <meta property="og:description" content={excerpt ?? ''} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:image" content={socialImageUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${title} | PowerBI.tips`} />
-    <meta name="twitter:description" content={excerpt ?? ''} />
+    <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={socialImageUrl} />
   </head>
   <article class="max-w-none space-y-6 text-[1.05rem] leading-relaxed">
@@ -502,7 +504,7 @@ const allJsonLd = [
                 {post.data.title}
               </a>
             </h3>
-            {post.data.excerpt && <p class="mt-2 text-sm text-neutral-600">{post.data.excerpt}</p>}
+            {post.data.excerpt && <p class="mt-2 text-sm text-neutral-600">{plainTextExcerpt(post.data.excerpt)}</p>}
           </article>
         ))}
       </div>

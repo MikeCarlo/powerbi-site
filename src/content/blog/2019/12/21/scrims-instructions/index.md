@@ -1,6 +1,6 @@
 ---
 title: "Scrims Instructions"
-excerpt: "Thanks for your interest in our product Scrims. For more details on what is a scrim click this link to Learn More.  **Download** a scrim from the prod..."
+excerpt: "Thanks for your interest in our product Scrims. Download a scrim from the products page. After downloading, you will have a Zip file stored on your computer."
 date: "2019-12-21"
 authors:
   - "Mike Carlo"

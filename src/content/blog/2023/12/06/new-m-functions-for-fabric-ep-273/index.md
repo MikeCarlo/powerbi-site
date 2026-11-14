@@ -16,7 +16,8 @@ tags:
   - "Power Query"
   - "DAX"
 featuredImage: "./assets/featured.png"
-excerpt: "Ep. 273 breaks down two power-user additions: DAX Query View in Power BI Desktop (plus Performance Analyzer integration) and Fabric’s new `DeltaLake.Table` M function—bringing Power Query closer to Delta tables."
+excerpt: "Ep. 273 breaks down two power-user additions: DAX Query View in Power BI Desktop (plus Performance Analyzer integration) and Fabric's new DeltaLake.Table M function, bringing Power Query closer to Delta tables."
+
 ---
 
 

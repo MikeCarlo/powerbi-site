@@ -1,6 +1,6 @@
 ---
 title: "Grouping with Style"
-excerpt: "# Grouping with Style  The release of grouping visuals was an extremely welcomed feature. As one who builds lots of reports grouping elements together..."
+excerpt: "The release of grouping visuals was an extremely welcomed feature. As one who builds lots of reports grouping elements together is essential to stay organized and to increase report building speed."
 date: "2019-09-26"
 authors:
   - "Mike Carlo"

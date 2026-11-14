@@ -1,27 +1,57 @@
 /**
+ * Shared helpers for FAQPage extraction and plain-text excerpts.
+ */
+
+/**
+ * Strip wrapping bold, italic, and code markers from a heading so
+ * `**What are Scrims?**` is classified as `What are Scrims?`.
+ */
+export function unwrapHeadingMarkup(text: string): string {
+  let t = text.trim();
+  let prev = '';
+  while (t !== prev) {
+    prev = t;
+    t = t.replace(/^\*\*(.*)\*\*$/s, '$1').trim();
+    t = t.replace(/^__(.*)__$/s, '$1').trim();
+    t = t.replace(/^\*(.*)\*$/s, '$1').trim();
+    t = t.replace(/^_(.*)_$/s, '$1').trim();
+    t = t.replace(/^`(.*)`$/s, '$1').trim();
+  }
+  return t;
+}
+
+/**
+ * A heading becomes a FAQPage item only when, after unwrapHeadingMarkup,
+ * it already ends with `?`.
+ *
+ * This drops section titles that start with What/How/Why/When/Where and
+ * similar but are not questions, such as "What We're Building" (live
+ * FAQPage used to append a "?" and emit "What We're Building?"). It also
+ * ignores a `?` in the middle of a heading. It does not invent a trailing
+ * `?`. Comparison FAQs that already end in `?` (`Import vs DirectQuery
+ * refresh?`) are kept.
+ */
+export function isFaqQuestionHeading(text: string): boolean {
+  return unwrapHeadingMarkup(text).endsWith('?');
+}
+
+/**
  * Extract FAQ items from markdown content.
- * Looks for H2/H3 headings that are phrased as questions (contain "?")
- * or common question patterns (What, How, Why, When, Where, Which, Can, Is, Does, Should, Will).
- * Returns the heading as question and the first paragraph after it as the answer.
+ * Only H2/H3 headings that already end in `?` (after wrapping markup is
+ * stripped) are used. The first paragraph after the heading is the answer.
  */
 export function extractFaqItems(rawBody: string): { question: string; answer: string }[] {
   const lines = rawBody.split('\n');
   const faqItems: { question: string; answer: string }[] = [];
-  
+
   const questionPattern = /^#{2,3}\s+(.+)$/;
-  const isQuestion = (text: string) => {
-    const t = text.trim();
-    if (t.includes('?')) return true;
-    // Common question starters
-    return /^(what|how|why|when|where|which|can|is|does|should|will|do)\b/i.test(t);
-  };
 
   for (let i = 0; i < lines.length; i++) {
     const match = lines[i].match(questionPattern);
     if (!match) continue;
 
-    const heading = match[1].trim();
-    if (!isQuestion(heading)) continue;
+    const heading = unwrapHeadingMarkup(match[1]);
+    if (!isFaqQuestionHeading(heading)) continue;
 
     // Collect the first meaningful paragraph after the heading
     let answer = '';
@@ -43,13 +73,35 @@ export function extractFaqItems(rawBody: string): { question: string; answer: st
     }
 
     if (answer && answer.length > 20) {
-      // Ensure question ends with ?
-      const question = heading.endsWith('?') ? heading : `${heading}?`;
-      faqItems.push({ question, answer });
+      faqItems.push({ question: heading, answer });
     }
   }
 
   return faqItems;
+}
+
+/**
+ * Turn a frontmatter excerpt into plain text for meta tags and cards.
+ * Strips heading markers, links, emphasis, code ticks, and leftover
+ * markdown punctuation without treating mid-sentence `#` (C#, Ep #286)
+ * as a heading.
+ */
+export function plainTextExcerpt(value: unknown): string {
+  if (!value) return '';
+  return String(value)
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '$1')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/^\s{0,3}>\s?/gm, '')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/__([^_]+)__/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/(^|[\s(])_([^_]+)_(?=[\s).,!?:;]|$)/g, '$1$2')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/[*_`~]/g, '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 /**

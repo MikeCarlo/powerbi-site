@@ -1,7 +1,6 @@
 ---
 title: How to Build Your Power BI Skills
-excerpt: '**One of the biggest improvements you can make to your life and career is
-  embracing a learning mentality.** If you are here, I assume one of your inte...'
+excerpt: "One of the biggest improvements you can make to your life and career is embracing a learning mentality. If you are here, I assume one of your interest areas is Power BI."
 date: '2021-04-25'
 authors:
 - Seth Bauer

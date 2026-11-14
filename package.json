@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "node --test src/lib/search-query.test.mjs"
+    "test": "node --test src/lib/search-query.test.mjs && node --experimental-strip-types --test src/utils/schema-helpers.test.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
