@@ -4,8 +4,15 @@ import { withSiteUtm } from '../lib/site-utm.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
+type NavItem = {
+  label: string;
+  href: string;
+  /** Off-site link. The More menu has no other external items, so this opens a new tab. */
+  external?: boolean;
+};
+
 // Keep one nav config; render rules split it into primary + more.
-const allNavItems = [
+const allNavItems: NavItem[] = [
   { label: 'theme generator', href: `${base}/power-bi-theme-generator/` },
   { label: 'themes', href: withSiteUtm('https://themes.powerbi.tips', 'nav') },
   { label: 'power designer', href: `${base}/power-designer/` },
@@ -19,7 +26,8 @@ const allNavItems = [
   { label: 'apps', href: `${base}/power-bi-apps/` },
   { label: 'fabric apps', href: `${base}/fabric-apps/` },
   { label: 'events', href: `${base}/events/` },
-  { label: 'about', href: `${base}/about/` }
+  { label: 'about', href: `${base}/about/` },
+  { label: 'store', href: 'https://powerbitips-shop.fourthwall.com/', external: true }
 ];
 
 const primaryLabels = ['theme generator', 'themes', 'power designer', 'podcast', 'training'];
@@ -75,6 +83,8 @@ const searchHref = `${base}/search/`;
               class="block rounded-md px-3 py-2 text-sm font-medium uppercase tracking-wide hover:bg-slate-900/5"
               href={item.href}
               role="menuitem"
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
             >
               {item.label}
             </a>
@@ -121,7 +131,12 @@ const searchHref = `${base}/search/`;
 
       {moreItems.map((item) => (
         <li>
-          <a class="block text-sm font-medium uppercase tracking-wide hover:text-white/80" href={item.href}>
+          <a
+            class="block text-sm font-medium uppercase tracking-wide hover:text-white/80"
+            href={item.href}
+            target={item.external ? '_blank' : undefined}
+            rel={item.external ? 'noopener noreferrer' : undefined}
+          >
             {item.label}
           </a>
         </li>
