@@ -140,6 +140,9 @@ export default defineConfig({
       '/2021/10/06/using-the-power-bi-scanner-api-to-manage-tenants-entire-metadata/',
     // Old Explicit Measures podcast URL, still said aloud in episode transcripts.
     '/empodcast/': '/podcast/',
+    // Legacy WordPress Terms of Use. Astro SSG emits a meta-refresh page
+    // (HTTP 200 + canonical). GitHub Pages cannot send a true 301.
+    '/about/terms-of-use/': '/terms-of-service/',
   },
   compressHTML: true,
 });
