@@ -1,0 +1,114 @@
+---
+/**
+ * RayFin games promo card. Pure HTML/CSS animation that plays once on load
+ * (animation-iteration-count: 1, fill-mode: both) and ends on a static frame.
+ * prefers-reduced-motion shows the final frame with no motion.
+ * Classes are prefixed `rf-card` so global CSS cannot clash with site styles.
+ * Scales with its container width (container queries), like ThisOrThatCard.
+ */
+import { rayfinGames } from '../../data/rayfin-games';
+interface Props { href: string; label: string }
+const { href, label } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const thumbs = rayfinGames.slice(0, 6);
+---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@800&display=swap" />
+<a class="rf-card" href={href} aria-label={label} data-promo-link>
+  <span class="rf-card__bg" aria-hidden="true"></span>
+  <span class="rf-card__grid" aria-hidden="true"></span>
+  <span class="rf-card__copy" aria-hidden="true">
+    <span class="rf-card__kicker">Built on Fabric Apps</span>
+    <span class="rf-card__title">
+      <span class="rf-card__word rf-card__word--a">RayFin</span>
+      <span class="rf-card__word rf-card__word--b">Games</span>
+    </span>
+    <span class="rf-card__count">{rayfinGames.length} free games</span>
+    <span class="rf-card__cta"><span>Play now</span><svg class="rf-card__arrow" viewBox="0 0 24 24"><path d="M4 12h12M11 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </span>
+  <span class="rf-card__tiles" aria-hidden="true">
+    {thumbs.map((g, i) => (
+      <span class="rf-card__tile" style={`--i:${i}`}>
+        <img src={`${base}/images/rayfin-games/${g.slug}.webp`} alt="" loading="lazy" decoding="async" width="960" height="540" />
+      </span>
+    ))}
+  </span>
+  <span class="rf-card__shine" aria-hidden="true"></span>
+</a>
+<style is:global>
+.rf-card {
+  --cyan:#22e4ff; --blue:#3b82f6; --violet:#8b5cf6; --pink:#ff3d9a; --yellow:#ffd719; --ink:#0b1024; --bg:#0b1024;
+  --dur:2.6s; --ease:cubic-bezier(.2,.8,.2,1);
+  container-type:inline-size; position:relative; display:block; box-sizing:border-box;
+  width:min(100%,1200px); aspect-ratio:1200/630; margin:0 auto; overflow:hidden; border-radius:2.35cqw;
+  cursor:pointer; color:#fff; text-decoration:none; font-family:'Nunito',system-ui,sans-serif; background:var(--bg);
+  box-shadow:0 1.6cqw 4cqw #0b102455, 0 0 3cqw #22e4ff33;
+  transform:perspective(1400px) translateY(0) rotateX(0) rotateY(0);
+  transition:transform .35s var(--ease), box-shadow .35s ease; -webkit-tap-highlight-color:transparent;
+}
+.rf-card *, .rf-card *::before, .rf-card *::after { box-sizing:border-box; }
+/* Every animation in this card runs once and holds its last frame. */
+a.rf-card *, a.rf-card *::before, a.rf-card *::after { animation-iteration-count:1; animation-fill-mode:both; } /* (0,1,1) beats the per-element shorthands */
+
+.rf-card__bg { position:absolute; inset:0; z-index:0;
+  background:radial-gradient(55% 80% at 8% 0%,#3b82f6c0,#3b82f640 45%,transparent 72%),
+    radial-gradient(55% 75% at 100% 100%,#8b5cf6c0,transparent 70%),
+    radial-gradient(35% 45% at 70% 0%,#22e4ff55,transparent 70%), var(--bg);
+  animation:rfc-bg var(--dur) var(--ease); }
+@keyframes rfc-bg { from { transform:scale(1.25); opacity:0; } 40% { opacity:1; } to { transform:scale(1); opacity:1; } }
+.rf-card__grid { position:absolute; inset:-10% -10% 0; z-index:1; opacity:.35;
+  background-image:linear-gradient(#22e4ff33 1px,transparent 1px),linear-gradient(90deg,#22e4ff33 1px,transparent 1px);
+  background-size:5cqw 5cqw; transform:perspective(60cqw) rotateX(55deg) translateY(28cqw);
+  mask-image:linear-gradient(transparent,#000 60%); -webkit-mask-image:linear-gradient(transparent,#000 60%);
+  animation:rfc-grid var(--dur) linear; }
+@keyframes rfc-grid { from { background-position:0 -20cqw; opacity:0; } to { background-position:0 0; opacity:.35; } }
+
+/* Copy */
+.rf-card__copy { position:absolute; z-index:3; left:6cqw; top:50%; transform:translateY(-50%); display:flex; flex-direction:column; gap:1.2cqw; width:44cqw; align-items:flex-start; }
+.rf-card__kicker { font-size:2.2cqw; letter-spacing:.18em; text-transform:uppercase; color:var(--cyan); animation:rfc-fade .6s .2s var(--ease); }
+.rf-card__title { display:flex; flex-direction:column; line-height:.92; font-family:'Luckiest Guy','Arial Black',sans-serif; letter-spacing:.02em; }
+.rf-card__word { display:block; font-size:10.5cqw; padding-top:.6cqw;
+  filter:drop-shadow(.3cqw 0 0 var(--ink)) drop-shadow(-.3cqw 0 0 var(--ink)) drop-shadow(0 .3cqw 0 var(--ink)) drop-shadow(0 .7cqw 0 var(--ink)) drop-shadow(0 0 2cqw #22e4ff88);
+  -webkit-background-clip:text; background-clip:text; color:transparent; }
+.rf-card__word--a { background-image:linear-gradient(180deg,#fff,#bff6ff 45%,var(--cyan)); animation:rfc-drop .7s .35s cubic-bezier(.3,1.5,.5,1); }
+.rf-card__word--b { background-image:linear-gradient(180deg,#fff,#ffd0ea 45%,var(--pink)); animation:rfc-drop .7s .55s cubic-bezier(.3,1.5,.5,1); }
+@keyframes rfc-drop { from { opacity:0; transform:translateY(-6cqw) scale(1.25) rotate(-6deg); } to { opacity:1; transform:none; } }
+.rf-card__count { font-size:2.8cqw; color:#dbe4ff; animation:rfc-fade .6s 1s var(--ease); }
+@keyframes rfc-fade { from { opacity:0; transform:translateY(1.5cqw); } to { opacity:1; transform:none; } }
+
+/* Game tiles: fly in from the right and settle into a tilted 2x3 wall */
+.rf-card__tiles { position:absolute; z-index:2; right:-3cqw; top:50%; width:46cqw;
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1.6cqw; transform:translateY(-50%) perspective(80cqw) rotateY(-16deg) rotateZ(4deg); }
+.rf-card__tile { display:block; aspect-ratio:16/9; border-radius:1.4cqw; overflow:hidden; border:.3cqw solid #ffffff55;
+  box-shadow:0 1.2cqw 3cqw #0009, 0 0 2cqw #22e4ff44; background:#1b2340;
+  animation:rfc-tile .8s calc(.25s + var(--i) * .12s) cubic-bezier(.25,1.4,.5,1); }
+.rf-card__tile img { display:block; width:100%; height:100%; object-fit:cover; }
+@keyframes rfc-tile { from { opacity:0; transform:translateX(30cqw) rotate(12deg) scale(.6); } to { opacity:1; transform:none; } }
+
+/* Play now */
+.rf-card__cta { position:relative; z-index:4; margin-top:1.2cqw; display:inline-flex; align-items:center; gap:1cqw; overflow:hidden;
+  padding:1.4cqw 2.8cqw; border-radius:1.4cqw; rotate:-4deg;
+  font-family:'Luckiest Guy','Arial Black',sans-serif; font-size:2.9cqw; letter-spacing:.03em; line-height:1; text-transform:uppercase; color:var(--ink);
+  background:linear-gradient(135deg,#fff36b,var(--yellow) 45%,#ffb319);
+  box-shadow:0 0 0 .4cqw var(--ink), 0 .6cqw 0 .4cqw var(--ink);
+  animation:rfc-pop .6s 1.25s cubic-bezier(.3,1.7,.5,1); transition:scale .2s ease, rotate .2s ease; }
+.rf-card__cta > span { padding-top:.35cqw; }
+.rf-card__arrow { width:1.1em; height:1.1em; flex:0 0 auto; }
+@keyframes rfc-pop { from { opacity:0; scale:.2; } to { opacity:1; scale:1; } }
+
+/* One light sweep across the whole card at the end */
+.rf-card__shine { position:absolute; inset:0; z-index:5; pointer-events:none;
+  background:linear-gradient(105deg,transparent 35%,#ffffff55 50%,transparent 65%);
+  transform:translateX(-110%); animation:rfc-shine .9s 1.7s ease-in-out; }
+@keyframes rfc-shine { from { transform:translateX(-110%); } to { transform:translateX(110%); } }
+
+/* Hover / focus / press */
+.rf-card:hover,.rf-card:focus-visible { transform:perspective(1400px) translateY(-1.2cqw) rotateX(4deg) rotateY(-5deg);
+  box-shadow:0 3cqw 6cqw #0b102488,0 0 6cqw #22e4ffaa,0 0 9cqw #8b5cf688; }
+.rf-card:hover .rf-card__cta { scale:1.07; rotate:-2deg; }
+.rf-card:focus-visible { outline:.5cqw solid var(--yellow); outline-offset:.6cqw; }
+.rf-card:active { transform:perspective(1400px) translateY(.3cqw) scale(.985); transition-duration:.08s; }
+@media (prefers-reduced-motion: reduce) {
+  .rf-card,.rf-card * { animation:none !important; transition:none !important; }
+  .rf-card__shine { display:none; }
+}
+</style>

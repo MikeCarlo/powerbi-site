@@ -4,23 +4,34 @@
  *   <Promo placement="home" />
  *   <Promo placement="popover" content={slug} />
  */
-import { activePromo, promoHref, type PromoPlacement } from '../../promos/promos';
+import { activePromo, activePromos, promoHref, type PromoPlacement } from '../../promos/promos';
 import ThisOrThatCard from '../../promos/cards/ThisOrThatCard.astro';
+import RayFinCard from '../../promos/cards/RayFinCard.astro';
 
 const promoCards: Record<string, any> = {
   'this-or-that': ThisOrThatCard,
+  'rayfin-games': RayFinCard,
 };
 
 interface Props { placement: PromoPlacement; content?: string }
 const { placement, content = placement } = Astro.props;
-const promo = activePromo(placement);
+const promo = placement === 'popover' ? activePromo(placement) : undefined;
 const Card = promo ? promoCards[promo.card] : undefined;
 const href = promo ? promoHref(promo, placement, content) : '';
+const homePromos = placement === 'home'
+  ? activePromos('home')
+      .filter((p) => promoCards[p.card])
+      .map((p) => ({ promo: p, Card: promoCards[p.card], href: promoHref(p, 'home', content) }))
+  : [];
 ---
-{promo && Card && placement === 'home' && (
-  <section class="promo-home" data-promo data-promo-id={promo.id} data-promo-placement="home" aria-label="Featured" style={`--promo-home-max:${promo.homeMaxWidth ?? 400}px`}>
-    <Card href={href} label={promo.label} />
-  </section>
+{homePromos.length > 0 && (
+  <div class="promo-home-row">
+    {homePromos.map(({ promo: p, Card: HomeCard, href: homeHref }) => (
+      <section class="promo-home" data-promo data-promo-id={p.id} data-promo-placement="home" aria-label="Featured" style={`--promo-home-max:${p.homeMaxWidth ?? 400}px`}>
+        <HomeCard href={homeHref} label={p.label} />
+      </section>
+    ))}
+  </div>
 )}
 {promo && Card && placement === 'popover' && (
   <aside
@@ -40,7 +51,8 @@ const href = promo ? promoHref(promo, placement, content) : '';
 )}
 
 <style is:global>
-  .promo-home { width: 100%; max-width: var(--promo-home-max, 400px); margin: -1.5rem auto 2rem; }
+  .promo-home-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem; margin: -1.5rem auto 2rem; }
+  .promo-home { flex: 1 1 300px; width: 100%; max-width: var(--promo-home-max, 400px); }
   .promo-pop {
     position: fixed; z-index: 60; right: 24px; bottom: 24px; width: 320px;
     border-radius: 22px; filter: drop-shadow(0 18px 40px rgba(26, 11, 46, .28));

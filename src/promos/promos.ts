@@ -11,7 +11,9 @@
  * Placements:
  *   - `home`    inline card at the top of the home page, above Recent Posts.
  *   - `popover` floating, dismissible card on every blog post page.
- * Only the first active promo per placement is shown.
+ * The home slot shows every active home promo side by side (wrapping on small
+ * screens). The popover shows only the first active popover promo.
+ * `href` can be an on-site path starting with `/` (no UTMs are added to those).
  * Posts can opt out of the popover with `hidePromo: true` in frontmatter.
  *
  * Every link gets UTMs: utm_source=powerbi.tips, utm_medium=promo_card (home)
@@ -52,6 +54,15 @@ export const promos: Promo[] = [
     dismissDays: 7,
     homeMaxWidth: 400,
   },
+  {
+    id: 'rayfin_games',
+    href: '/rayfin-games/',
+    label: 'Play the RayFin games, built on Microsoft Fabric Apps',
+    card: 'rayfin-games',
+    placements: ['home'],
+    enabled: true,
+    homeMaxWidth: 400,
+  },
 ];
 
 export const UTM_MEDIUM: Record<PromoPlacement, string> = {
@@ -59,17 +70,27 @@ export const UTM_MEDIUM: Record<PromoPlacement, string> = {
   popover: 'promo_popover',
 };
 
-export function activePromo(placement: PromoPlacement, now = new Date()): Promo | undefined {
-  return promos.find(
-    (p) =>
-      p.enabled &&
-      p.placements.includes(placement) &&
-      (!p.start || new Date(p.start) <= now) &&
-      (!p.end || new Date(p.end) >= now),
+function isActive(p: Promo, placement: PromoPlacement, now: Date): boolean {
+  return (
+    p.enabled &&
+    p.placements.includes(placement) &&
+    (!p.start || new Date(p.start) <= now) &&
+    (!p.end || new Date(p.end) >= now)
   );
 }
 
+export function activePromos(placement: PromoPlacement, now = new Date()): Promo[] {
+  return promos.filter((p) => isActive(p, placement, now));
+}
+
+export function activePromo(placement: PromoPlacement, now = new Date()): Promo | undefined {
+  return promos.find((p) => isActive(p, placement, now));
+}
+
 export function promoHref(promo: Promo, placement: PromoPlacement, content: string): string {
+  if (promo.href.startsWith('/')) {
+    return `${import.meta.env.BASE_URL.replace(/\/$/, '')}${promo.href}`;
+  }
   const url = new URL(promo.href);
   url.searchParams.set('utm_source', 'powerbi.tips');
   url.searchParams.set('utm_medium', UTM_MEDIUM[placement]);
