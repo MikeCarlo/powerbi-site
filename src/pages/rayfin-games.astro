@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { rayfinGames } from '../data/rayfin-games';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout
+  title="RayFin Games: free games built on Microsoft Fabric Apps | PowerBI.tips"
+  description="Play free browser games built with Rayfin on Microsoft Fabric Apps, right here on PowerBI.tips: Angry Data, Bit Drop, Data Shuffle, Paginated Report Bear, Squishy Bob and Hunt Ring."
+>
+  <section class="mb-10">
+    <p class="text-sm font-semibold uppercase tracking-wide text-blue-600">Built on Fabric Apps</p>
+    <h1 class="mt-1 text-4xl font-semibold tracking-tight text-neutral-900">RayFin Games</h1>
+    <p class="mt-3 max-w-3xl text-lg text-neutral-600">
+      Games we built with Rayfin and host on Microsoft Fabric Apps. Pick one and it plays right here on PowerBI.tips.
+      Curious how they are made? Read about <a class="font-semibold text-blue-600 hover:text-blue-700" href={`${base}/fabric-apps/`}>Fabric Apps</a>.
+    </p>
+  </section>
+
+  <section aria-label="Games">
+    <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {rayfinGames.map((game) => (
+        <li>
+          <a
+            href={`${base}/rayfin-games/${game.slug}/`}
+            class="group block h-full overflow-hidden rounded-2xl border border-neutral-200 bg-white transition hover:-translate-y-1 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600"
+            data-rayfin-tile={game.slug}
+          >
+            <div class="relative aspect-[16/9] w-full overflow-hidden bg-neutral-900">
+              <img
+                src={`${base}/images/rayfin-games/${game.slug}.webp`}
+                alt={`${game.title} screenshot`}
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+              />
+              <span class="absolute inset-0 grid place-items-center bg-neutral-900/0 transition group-hover:bg-neutral-900/40">
+                <span class="rounded-full bg-white/95 px-5 py-2 text-sm font-semibold text-neutral-900 opacity-0 shadow transition group-hover:opacity-100">▶ Play</span>
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="text-xs font-semibold uppercase tracking-wide text-neutral-500">{game.genre}</div>
+              <h2 class="mt-1 text-xl font-semibold text-neutral-900">{game.title}</h2>
+              <p class="mt-2 text-sm text-neutral-600">{game.description}</p>
+              <div class="mt-3 text-sm font-semibold text-blue-600">Play now →</div>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
