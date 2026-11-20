@@ -12,6 +12,10 @@ export interface RayFinGame {
   genre: string;
   /** Extra iframe permissions beyond the defaults (autoplay; fullscreen; gamepad). */
   extraAllow?: string[];
+  /** Game needs the camera, which browsers block inside an iframe. Adds a centered "open in new window" button to the player bar. */
+  needsCamera?: boolean;
+  /** Label for the new-window button (defaults to "Open <title> in new window (camera)"). */
+  newWindowLabel?: string;
 }
 
 export const rayfinGames: RayFinGame[] = [
@@ -36,6 +40,9 @@ export const rayfinGames: RayFinGame[] = [
     title: 'Data Shuffle',
     url: 'https://good-drift-cdbed37a76-northcentralus.webapp.fabricapps.net/',
     genre: 'Rhythm',
+    needsCamera: true,
+    newWindowLabel: 'Open Groove in new window (camera)',
+    extraAllow: ['camera', 'microphone'],
     description:
       'A three-lane rhythm game set to original Carlo Solutions tracks. Hit the arrows as they cross the line, hold the long notes and keep your energy up from Warm Up to Boss Level.',
   },
