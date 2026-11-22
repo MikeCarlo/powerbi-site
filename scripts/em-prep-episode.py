@@ -104,7 +104,7 @@ def main() -> None:
     vtt = download_captions(vid, work)
     run(["python3", f"{REPO}/scripts/split-transcript.py", vtt, f"{work}/chunks", str(CHUNKS)])
     run(["python3", f"{REPO}/scripts/clean-transcript-chunks.py", f"{work}/chunks",
-         "--video-id", vid])
+         f"--video-id={vid}"])
 
     entries: list[str] = []
     for i in range(CHUNKS):
