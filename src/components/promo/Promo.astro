@@ -4,7 +4,7 @@
  *   <Promo placement="home" />
  *   <Promo placement="popover" content={slug} />
  */
-import { activePromo, activePromos, promoHref, type PromoPlacement } from '../../promos/promos';
+import { activePromos, promoHref, type PromoPlacement } from '../../promos/promos';
 import ThisOrThatCard from '../../promos/cards/ThisOrThatCard.astro';
 import RayFinCard from '../../promos/cards/RayFinCard.astro';
 
@@ -15,9 +15,11 @@ const promoCards: Record<string, any> = {
 
 interface Props { placement: PromoPlacement; content?: string }
 const { placement, content = placement } = Astro.props;
-const promo = placement === 'popover' ? activePromo(placement) : undefined;
-const Card = promo ? promoCards[promo.card] : undefined;
-const href = promo ? promoHref(promo, placement, content) : '';
+const popPromos = placement === 'popover'
+  ? activePromos('popover')
+      .filter((p) => promoCards[p.card])
+      .map((p) => ({ promo: p, Card: promoCards[p.card], href: promoHref(p, 'popover', content) }))
+  : [];
 const homePromos = placement === 'home'
   ? activePromos('home')
       .filter((p) => promoCards[p.card])
@@ -33,14 +35,14 @@ const homePromos = placement === 'home'
     ))}
   </div>
 )}
-{promo && Card && placement === 'popover' && (
+{popPromos.map(({ promo, Card, href }) => (
   <aside
     class="promo-pop"
     data-promo
     data-promo-id={promo.id}
     data-promo-placement="popover"
     data-promo-dismiss-days={promo.dismissDays ?? 7}
-    aria-label="Featured app"
+    aria-label="Featured"
     hidden
   >
     <button type="button" class="promo-pop__close" data-promo-close aria-label="Dismiss this promo">
@@ -48,16 +50,16 @@ const homePromos = placement === 'home'
     </button>
     <Card href={href} label={promo.label} />
   </aside>
-)}
+))}
 
 <style is:global>
   .promo-home-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 1.5rem; margin: -1.5rem auto 2rem; }
   .promo-home { flex: 1 1 300px; width: 100%; max-width: var(--promo-home-max, 400px); }
   .promo-pop {
-    position: fixed; z-index: 60; right: 24px; bottom: 24px; width: 320px;
+    position: fixed; z-index: 60; right: 24px; bottom: calc(24px + var(--pod-stack, 0px)); width: 320px;
     border-radius: 22px; filter: drop-shadow(0 18px 40px rgba(26, 11, 46, .28));
     opacity: 0; transform: translateY(16px) scale(.97);
-    transition: opacity .45s ease, transform .45s cubic-bezier(.2, .8, .2, 1);
+    transition: opacity .45s ease, transform .45s cubic-bezier(.2, .8, .2, 1), bottom .25s ease;
   }
   .promo-pop[hidden] { display: none; }
   .promo-pop.is-open { opacity: 1; transform: none; }
@@ -78,7 +80,7 @@ const homePromos = placement === 'home'
   }
   /* Phones: compact card pinned to the bottom, centered. */
   @media (max-width: 640px) {
-    .promo-pop { left: 50%; right: auto; bottom: 14px; width: min(300px, calc(100vw - 48px)); transform: translate(-50%, 16px); }
+    .promo-pop { left: 50%; right: auto; bottom: calc(14px + var(--pod-stack, 0px)); width: min(300px, calc(100vw - 48px)); transform: translate(-50%, 16px); }
     .promo-pop.is-open { transform: translate(-50%, 0); }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -99,6 +101,16 @@ const homePromos = placement === 'home'
       c('event', name);
       c('event', `${name}_${id}_${placement}`);
     } catch { /* never break the page for analytics */ }
+  }
+  // Popover promos: show ONE at random per page load (static site, so pick client-side).
+  // ?promo=<id> forces a variant. Dismissed promos are skipped.
+  const pops = Array.from(document.querySelectorAll<HTMLElement>('[data-promo-placement="popover"]'));
+  if (pops.length > 1) {
+    const forced = new URLSearchParams(location.search).get('promo');
+    const dismissedNow = (id: string) => { try { return Number(localStorage.getItem(`promo:dismissed:${id}`) || 0) > Date.now(); } catch { return false; } };
+    const pool = pops.filter((el) => !dismissedNow(el.dataset.promoId || ''));
+    const pick = pops.find((el) => el.dataset.promoId === forced) || pool[Math.floor(Math.random() * pool.length)];
+    for (const el of pops) if (el !== pick) el.remove();
   }
   const KEY = (id: string) => `promo:dismissed:${id}`;
   function isDismissed(id: string) {

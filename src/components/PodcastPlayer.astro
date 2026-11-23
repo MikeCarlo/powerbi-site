@@ -381,7 +381,18 @@
         }
         pinned = next;
         stage.classList.toggle('is-pinned', pinned);
+        updateStack();
       }
+
+      // Tell the floating promo how tall the pinned player is so it stacks above it.
+      var rootStyle = document.documentElement.style;
+      function updateStack() {
+        if (!pinned) { rootStyle.removeProperty('--pod-stack'); return; }
+        var h = frame.getBoundingClientRect().height;
+        rootStyle.setProperty('--pod-stack', Math.ceil(h) + 8 + 'px');
+      }
+      if ('ResizeObserver' in window) new ResizeObserver(updateStack).observe(frame);
+      window.addEventListener('resize', updateStack);
 
       // Pin once the video scrolls out of view, but only while the reader is
       // actually somewhere in the transcript.
