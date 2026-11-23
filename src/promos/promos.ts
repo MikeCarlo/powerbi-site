@@ -12,7 +12,7 @@
  *   - `home`    inline card at the top of the home page, above Recent Posts.
  *   - `popover` floating, dismissible card on every blog post page.
  * The home slot shows every active home promo side by side (wrapping on small
- * screens). The popover shows only the first active popover promo.
+ * screens). The popover shows ONE active popover promo, picked at random in the browser on each page load.
  * `href` can be an on-site path starting with `/` (no UTMs are added to those).
  * Posts can opt out of the popover with `hidePromo: true` in frontmatter.
  *
@@ -59,8 +59,9 @@ export const promos: Promo[] = [
     href: '/rayfin-games/',
     label: 'Play the RayFin games, built on Microsoft Fabric Apps',
     card: 'rayfin-games',
-    placements: ['home'],
+    placements: ['home', 'popover'],
     enabled: true,
+    dismissDays: 7,
     homeMaxWidth: 400,
   },
 ];
