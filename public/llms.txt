@@ -40,12 +40,23 @@ PowerBI.tips is the leading independent resource for Microsoft Power BI and Micr
 - Training: https://powerbi.tips/training/
 - Events: https://powerbi.tips/events/
 - Search: https://powerbi.tips/search/
+- RayFin Games: https://powerbi.tips/rayfin-games/
 - Theme Generator (definition): https://powerbi.tips/power-bi-theme-generator/
 - Power BI layouts (definition): https://powerbi.tips/power-bi-layouts/
 - Theme Generator: https://themes.powerbi.tips/?utm_source=powerbi.tips&utm_medium=referral&utm_campaign=site&utm_content=llms
 - Charts (Custom Visuals): https://charts.powerbi.tips/
 - Visual Gallery: https://gallery.powerbi.tips/
 - Entelexos (Embedded): https://www.entelexos.com/
+
+## RayFin Games
+
+- **[RayFin Games](https://powerbi.tips/rayfin-games/)**: Hub page for six browser games built with Rayfin by the PowerBI.tips team. Each game plays in an embedded player on PowerBI.tips.
+- **[Angry Data](https://powerbi.tips/rayfin-games/angry-data/)**: Physics slingshot game. Launch data heroes to topple towers and squash software bugs.
+- **[Bit Drop](https://powerbi.tips/rayfin-games/bit-drop/)**: Falling-block puzzle. Match four same-colored squares to clear target blocks, with adjustable board width, target count and speed.
+- **[Data Shuffle](https://powerbi.tips/rayfin-games/data-shuffle/)**: Three-lane rhythm game set to original Carlo Solutions tracks. Camera play opens in a new window.
+- **[Paginated Report Bear](https://powerbi.tips/rayfin-games/paginated-report-bear/)**: Pixel platformer with a tie-wearing teddy bear and report-themed levels.
+- **[Squishy Bob](https://powerbi.tips/rayfin-games/squishy-bob/)**: Neon platformer with an 18-sector story campaign, speedrun mode and an endless run.
+- **[Hunt Ring](https://powerbi.tips/rayfin-games/hunt-ring/)**: GPS tag battle royale for phones. Seekers hunt Runners inside a shrinking ring; friends join a match by QR code, or play against bots.
 
 ## Social & Community
 
