@@ -4,6 +4,7 @@ import {
   extractFaqItems,
   isFaqQuestionHeading,
   plainTextExcerpt,
+  selectPostFaqItems,
   unwrapHeadingMarkup,
 } from './schema-helpers.ts';
 
@@ -76,4 +77,14 @@ test('plainTextExcerpt strips heading markers, links, and emphasis, but not mid-
     plainTextExcerpt("Fabric's new `DeltaLake.Table` M function and C# scripting in ep #286."),
     "Fabric's new DeltaLake.Table M function and C# scripting in ep #286.",
   );
+});
+
+test('selectPostFaqItems drops the TL;DR lead question and keeps at most 5 FAQs', () => {
+  const qs = ['One?', 'Two?', 'Three?', 'Four?', 'Five?', 'Six?']
+    .map((q) => `### ${q}\n\nAn answer that is long enough to count as an answer.\n`)
+    .join('\n');
+  const md = `## How do I do the thing?\n\n**TL;DR.** Do the thing in three clicks, it is long enough.\n\n${qs}`;
+  const items = selectPostFaqItems(extractFaqItems(md));
+  assert.equal(items.length, 5);
+  assert.deepEqual(items.map((i) => i.question), ['One?', 'Two?', 'Three?', 'Four?', 'Five?']);
 });

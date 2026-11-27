@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BlogPost from '../layouts/BlogPost.astro';
-import { extractFaqItems, extractHowToSteps } from '../utils/schema-helpers';
+import { extractFaqItems, extractHowToSteps, selectPostFaqItems } from '../utils/schema-helpers';
 import { isPodcastEpisode } from '../utils/podcast-episode';
 
 function cleanSlug(id: string): string {
@@ -31,7 +31,7 @@ const rawBody = post.body || '';
 const isEpisode = isPodcastEpisode(post.data.title, post.data.categories || [], rawBody);
 const faqItems = isEpisode
   ? (post.data.faq ?? []).map(({ q, a }) => ({ question: q.endsWith('?') ? q : `${q}?`, answer: a }))
-  : extractFaqItems(rawBody);
+  : selectPostFaqItems(extractFaqItems(rawBody));
 const headingSlugs = headings.map((heading) => heading.slug);
 const howToSteps = extractHowToSteps(rawBody, post.data.categories || []);
 

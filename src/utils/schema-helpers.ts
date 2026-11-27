@@ -80,6 +80,24 @@ export function extractFaqItems(rawBody: string): { question: string; answer: st
   return faqItems;
 }
 
+/** Most FAQ items a blog post's FAQPage JSON-LD carries (AEO standard: 5). */
+export const MAX_POST_FAQ_ITEMS = 5;
+
+/**
+ * Pick the FAQPage items for a blog post body. The AEO lead question H2
+ * is answered by its TL;DR paragraph; that is the summary, not an FAQ, so
+ * items whose answer starts with "TL;DR" are dropped. The rest are capped
+ * at MAX_POST_FAQ_ITEMS, keeping document order. Static pages that render
+ * the owned H2 from extractFaqItems (fabric-apps) do not use this.
+ */
+export function selectPostFaqItems(
+  items: { question: string; answer: string }[],
+): { question: string; answer: string }[] {
+  return items
+    .filter((item) => !/^tl;?dr\b/i.test(item.answer.trim()))
+    .slice(0, MAX_POST_FAQ_ITEMS);
+}
+
 /**
  * Turn a frontmatter excerpt into plain text for meta tags and cards.
  * Strips heading markers, links, emphasis, code ticks, and leftover
