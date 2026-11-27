@@ -25,8 +25,8 @@ const { entry, prev, next, morePosts, faqItems = [], howToSteps = [], isEpisode 
   isEpisode?: boolean;
   headingSlugs?: string[];
 };
-const { title, date, authors, categories, tags, featuredImage, excerpt, tldr, faq, related, hidePromo } = entry.data;
-const metaDescription = plainTextExcerpt(excerpt || '');
+const { title, date, authors, categories, tags, featuredImage, excerpt, metaDescription: metaDescriptionOverride, tldr, faq, related, hidePromo } = entry.data;
+const metaDescription = plainTextExcerpt(metaDescriptionOverride || excerpt || '');
 
 // Episode posts get a seekable transcript: clicking a line drives the embedded
 // player. Only load it where both halves of the feature are actually present.

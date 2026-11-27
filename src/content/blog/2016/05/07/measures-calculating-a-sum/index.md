@@ -1,6 +1,7 @@
 ---
-title: "Measures – Calculating a Sum"
+title: "Power BI SUM Measure: Total a Column in DAX"
 excerpt: "How do I calculate a total with a DAX measure that changes when I select data on the page?"
+metaDescription: "How to sum a column in Power BI with a DAX measure. Total Sales = SUM(SampleData[Sales]) on a Card updates when you click a bar in the chart."
 date: "2016-05-07"
 authors: ["Mike Carlo"]
 categories:

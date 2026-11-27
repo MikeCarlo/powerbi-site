@@ -1,5 +1,5 @@
 ---
-title: "Query Settings – Fixing a Missing File"
+title: "Power BI: Fix a Moved Excel Source File"
 date: "2016-04-11"
 authors:
   - "Mike Carlo"
@@ -11,6 +11,7 @@ tags:
   - "Troubleshooting"
   - "Tutorial"
 excerpt: "How do I fix a Power BI Desktop query when its Excel source file has moved?"
+metaDescription: "Power BI refresh can't find your Excel file after it moved? Use Go To Error, then Edit Settings and Browse to the new path. See the M behind each step."
 featuredImage: "./assets/featured.png"
 ---
 

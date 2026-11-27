@@ -19,6 +19,9 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     featuredImage: image().optional(),
     excerpt: z.string().optional(),
+    // Optional SEO meta description. Overrides the excerpt for <meta name="description">,
+    // og:description and twitter:description. The excerpt (question H2 on AEO posts) stays as is.
+    metaDescription: z.string().max(160).optional(),
     // Set true to hide the floating promo popover on this post (e.g. it already has its own CTA).
     hidePromo: z.boolean().optional(),
     // Podcast episode extras (all optional; see .github/skills/tips-pod-post).

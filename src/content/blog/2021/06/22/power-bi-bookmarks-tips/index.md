@@ -1,5 +1,5 @@
 ---
-title: "Power BI Bookmarks Tips, Tricks, and Best Practices"
+title: "Power BI Bookmarks: Tips and Best Practices"
 date: "2021-06-22"
 authors:
   - "Mike Carlo"
@@ -12,6 +12,7 @@ tags:
   - "Tips"
   - "Visual Switch"
 excerpt: "How do I use Power BI bookmarks without making the report unmaintainable?"
+metaDescription: "How to use bookmarks in Power BI without breaking the report: record Selected Visuals, rename visuals, record on groups, and group your bookmarks."
 featuredImage: "./assets/featured.png"
 ---
 

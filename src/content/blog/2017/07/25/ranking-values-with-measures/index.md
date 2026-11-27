@@ -1,6 +1,7 @@
 ---
-title: "Ranking Values with Measures"
+title: "Power BI Ranking: RANKX Measure with Slicers"
 excerpt: "How do I rank categories with a DAX measure that updates when the slicer changes?"
+metaDescription: "How to rank in Power BI with a RANKX measure that re-ranks when the slicer changes. Uses ALLSELECTED on the Category column, with the full DAX."
 date: "2017-07-25"
 authors:
   - "Mike Carlo"

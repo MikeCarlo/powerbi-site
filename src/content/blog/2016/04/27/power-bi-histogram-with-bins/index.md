@@ -1,5 +1,5 @@
 ---
-title: "Power BI Histogram with Bins – Includes DAX"
+title: "Power BI Histogram with Custom Bins (DAX)"
 date: "2016-04-27"
 authors:
   - "Mike Carlo"
@@ -11,6 +11,7 @@ tags:
   - "Visualization"
   - "Tutorial"
 excerpt: "How do I build a histogram with custom bins in Power BI using DAX?"
+metaDescription: "How to create a histogram in Power BI: make a Buckets table with Enter Data, count rows per bin with a DAX measure, then chart it as a column chart."
 featuredImage: "./assets/featured.png"
 ---
 

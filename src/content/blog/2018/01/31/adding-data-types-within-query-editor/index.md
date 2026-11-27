@@ -1,6 +1,7 @@
 ---
-title: "Adding Data Types Within Query Editor"
+title: "Power Query Int64.Type: Set Type in AddColumn"
 excerpt: "How do I set a custom column's data type in Power Query without an extra Changed Type step?"
+metaDescription: "Set a custom column's type in Power Query by adding Int64.Type to Table.AddColumn, with no extra Changed Type step. Number.Type, Date.Type, Text.Type too."
 date: "2018-01-31"
 authors:
   - "Mike Carlo"

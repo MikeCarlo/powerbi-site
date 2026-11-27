@@ -1,6 +1,7 @@
 ---
-title: "Handle Errors in Data Refreshes with Power Automate"
+title: "Power BI Refresh Failed? Get an Email Alert"
 excerpt: "How do I get alerted when a Power BI dataset refresh fails?"
+metaDescription: "Catch Power BI dataset refresh errors with try otherwise in Power Query. On failure, Power Automate emails you and the rest of the data refreshes."
 date: "2020-01-16"
 authors:
   - "Mike Carlo"
